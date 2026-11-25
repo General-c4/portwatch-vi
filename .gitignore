@@ -1,5 +1,8 @@
 node_modules/
 .local-qa/
+.sync/
+automation/node_modules/
+__pycache__/
 _site/
 .claude/settings.local.json
 .env.local

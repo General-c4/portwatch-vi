@@ -4,6 +4,7 @@ import { coverHtml, articlePath } from './news-shared.js';
 import { fillPinned } from './pinned.js';
 import { initI18n, t, tr, locale } from './i18n.js';
 import { contentText } from './content-i18n.js';
+import {loadTracker,loadPinned,startLiveUpdates,restoreLiveView} from './live-data.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -67,18 +68,18 @@ const ICON = {
   gh: '<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.5 15.6c.4 0 .5-.2.5-.4v-1.5c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.4.7 0-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8a7.5 7.5 0 0 1 4 0c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.8-3.6 4 .3.3.6.8.6 1.5v2.2c0 .2.1.5.6.4A8 8 0 0 0 8 0Z"/></svg>',
 };
 
-const state = { data: null, filter: 'all', sort: 'score' };
+const restoredView = restoreLiveView();
+const state = { data: null, filter: restoredView?.filter || 'all', sort: restoredView?.sort || 'score' };
 
 async function main() {
   // The pinned message is optional: it loads alongside and never holds up or breaks the page.
-  const pinned = fetch(`data/pinned.json?ts=${Math.floor(Date.now() / 6e4)}`, { cache: 'no-cache' })
-    .then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const pinned = loadPinned();
   // Translations load alongside the data; initI18n never throws and falls back to English.
-  const [res] = await Promise.all([
-    fetch(`data/tracker.json?ts=${Math.floor(Date.now() / 6e4)}`, { cache: 'no-cache' }),
+  const [data] = await Promise.all([
+    loadTracker(),
     initI18n(),
   ]);
-  const data = await res.json();
+  startLiveUpdates(structuredClone(data),pinned,()=>({filter:state.filter,sort:state.sort}));
   state.data = data;
   for (const e of data.efforts) Object.assign(e, { _s: scoreEffort(e) });
 
@@ -95,6 +96,12 @@ async function main() {
   renderMethod();
   bindControls();
   bindFolds();
+  if(restoredView){
+    $('#sort').value=state.sort;
+    $$('.chip[data-filter]').forEach(el=>el.classList.toggle('is-on',el.dataset.filter===state.filter));
+    for(const id of restoredView.folds||[]){const fold=document.getElementById(id);if(fold?.matches('details.fold'))fold.open=true;}
+    requestAnimationFrame(()=>scrollTo(0,restoredView.scrollY||0));
+  }
   observeBars();
   trackView('/').then(watchViewers); // afterwards, so this visitor is in the count
 }
@@ -273,6 +280,13 @@ function drawMarkers(ranked, leader) {
                 ${priv ? `<span class="mk-face">${face}<span class="bp-lock"><span class="pb-lock" aria-hidden="true"></span></span></span>` : face}
               </a>`;
     }).join('');
+  // New upstream leaders can have longer names. Keep their label inside the viewport without
+  // moving the measured marker, its connector, or any non-directional artwork.
+  for(const label of box.querySelectorAll('.mk-name')){
+    const bounds=label.getBoundingClientRect();
+    const shift=Math.min(0,document.documentElement.clientWidth-20-bounds.right)+Math.max(0,20-bounds.left);
+    if(shift)label.style.transform=`translateX(${shift}px)`;
+  }
 }
 
 // Milestone labels sit under their ticks, 10% apart up to Playable. When neighbours would touch
@@ -333,6 +347,11 @@ function renderChanges(changes) {
 /* ---------- Race ---------- */
 function isGtaSpecific(e) { return /gta/i.test(e.target || ''); }
 
+// Official upstream GPU tags, retaining Arabic plain-text translation and escaping.
+const GPU_CLASS = { AMD: 'tag-amd', NVIDIA: 'tag-nvidia' };
+const gpuTags = (e) => (Array.isArray(e.gpu) ? e.gpu : []).filter((v) => GPU_CLASS[v])
+  .map((v) => `<span class="tag ${GPU_CLASS[v]}" title="${esc(t('effort.gpuTitle', { v }))}">${esc(v)}</span>`).join('');
+
 function renderRace() {
   const { data, filter, sort } = state;
   // Only public code is ranked; private builds get their own unranked list below the race.
@@ -390,9 +409,11 @@ function privateCard(e) {
     </div>
     <div class="tags">
       ${bases ? `<span class="tag tag-based">${t('private.basedOn', { names: bases })}</span>` : ''}
+      ${gpuTags(e)}
       ${e.evidence ? `<span class="tag tag-self" title="${esc(t('private.evidenceTitle'))}">${esc(t('private.evidence', { x: contentText(e.evidence) }))}</span>` : ''}
       <span class="tag tag-stale">${esc(t('private.noCode'))}</span>
     </div>
+    ${e.proof?.url ? `<a class="tag tag-proof" href="${esc(safeHttp(e.proof.url))}" target="_blank" rel="noopener nofollow">${esc(contentText(e.proof.label || t('effort.watch')))} ↗</a>` : ''}
     <p class="e-summary">${esc(contentText(e.summary))}</p>
     <div class="pb-ladder">${ladderCells(e)}</div>
     ${url ? `<a class="pb-more" href="${esc(url)}">${esc(t('private.article'))} ${locale() === 'ar' ? '←' : '→'}</a>` : ''}
@@ -495,6 +516,7 @@ function effortCard(e, rank, open, overallRank = null) {
   const tags = [
     e.approach && `<span class="tag">${esc(contentText(e.approach))}</span>`,
     e.target && `<span class="tag ${isGtaSpecific(e) ? 'tag-gta' : ''}">${esc(contentText(e.target))}</span>`,
+    gpuTags(e),
     e.verification === 'reproduced'
       ? `<span class="tag tag-ok">${esc(t('effort.reproduced'))}</span>`
       // The owner has seen the build run (owner's call): stronger than the README alone.
@@ -575,7 +597,7 @@ function renderWatchlist(data) {
     rows.map((e) => `
     <div class="w-row" role="row" id="effort-${esc(e.id)}">
       <div class="w-name"><a href="${esc(repoUrl(e.repo, e.branch))}" target="_blank" rel="noopener">${esc(e.name)}</a><p>${esc(contentText(e.summary))}</p></div>
-      <span class="w-muted">${esc(contentText(e.approach))}${e.target && /gta|ps5/i.test(e.target) ? ` · ${esc(contentText(e.target))}` : ''}</span>
+      <span class="w-muted">${esc(contentText(e.approach))}${e.target && /gta|ps5/i.test(e.target) ? ` · ${esc(contentText(e.target))}` : ''}${e.gpu?.length ? `<span class="w-gpu">${gpuTags(e)}</span>` : ''}</span>
       <div class="w-bar"><div class="bar-track"><div class="bar-fill" data-width="${e._s.score}"></div></div><b>${pct(e._s.score)}%</b></div>
       <span class="w-muted">★ ${fmtK(e.stats?.stars)}</span>
       <span class="w-muted">${esc(ago(e.stats?.pushedAt))}</span>

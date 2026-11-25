@@ -57,6 +57,12 @@ export async function initI18n() {
   en = base;
   if (lang !== 'en' && !own) lang = 'en';
   dict = lang === 'en' ? en : own;
+  if(lang==='ar'){
+    const [automatic,autoSources,reviewedSources]=await Promise.all([load('ar.auto').catch(()=>({})),load('ar.auto.sources').catch(()=>({})),load('ar.sources').catch(()=>({}))]);
+    const validAuto=Object.fromEntries(Object.entries(automatic).filter(([key])=>autoSources[key]===en[key]));
+    const validHuman=Object.fromEntries(Object.entries(dict).filter(([key])=>reviewedSources[key]===undefined||reviewedSources[key]===en[key]));
+    dict={...validAuto,...validHuman};
+  }
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   await loadContentTranslations(lang);

@@ -1,0 +1,7 @@
+.git
+.sync
+.local-qa
+node_modules
+automation/node_modules
+.env*
+docs/screenshots

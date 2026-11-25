@@ -1,0 +1,51 @@
+name: Synchronize upstream source
+on:
+  schedule:
+    - cron: '13 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+concurrency:
+  group: mirror-writes
+  cancel-in-progress: false
+jobs:
+  integrate:
+    if: github.repository == 'General-c4/portwatch-vi'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/arabic-rtl-localization
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - id: plan
+        run: node automation/source-sync.mjs --check-only
+      - if: steps.plan.outputs.source_changed == 'true'
+        run: npm ci --prefix automation --ignore-scripts --no-audit --no-fund
+      - if: steps.plan.outputs.source_changed == 'true'
+        run: npx --prefix automation playwright install --with-deps chromium
+      - id: source
+        if: steps.plan.outputs.source_changed == 'true'
+        run: node automation/source-sync.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PW_SOURCE_BROWSER_CHECK: '1'
+          PW_BROWSER: chromium
+      - if: steps.source.outputs.integrated == 'true'
+        run: gh workflow run arabic-preview.yml --ref feat/arabic-rtl-localization
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-sync-status
+          path: .sync/*status.json
+          retention-days: 7

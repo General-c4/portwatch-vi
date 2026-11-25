@@ -1,0 +1,15 @@
+services:
+  portwatch-detector:
+    build:
+      context: .
+      dockerfile: automation/Dockerfile
+    restart: unless-stopped
+    environment:
+      GH_TOKEN: ${PW_SYNC_DISPATCH_TOKEN:?Provide a repository-scoped Actions write token}
+      PW_POLL_MS: ${PW_POLL_MS:-60000}
+    volumes:
+      - sync-state:/state
+    ports:
+      - "127.0.0.1:8788:8788"
+volumes:
+  sync-state:

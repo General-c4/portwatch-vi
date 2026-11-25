@@ -5,7 +5,9 @@ if (getLang() === 'ar') {
   document.querySelector('#pin-input')?.setAttribute('dir','auto');
   for (const el of document.querySelectorAll('input[type="email"],input[type="password"]')) el.setAttribute('dir','ltr');
   const response = await fetch(new URL('../assets/i18n/dashboard/ar.json', import.meta.url), {cache:'no-cache'}).catch(()=>null);
-  const dictionary = response?.ok ? await response.json().catch(()=>({})) : {};
+  const human = response?.ok ? await response.json().catch(()=>({})) : {};
+  const automatic=await fetch(new URL('../assets/i18n/dashboard/ar.auto.json',import.meta.url),{cache:'no-cache'}).then(r=>r.ok?r.json():{}).catch(()=>({}));
+  const dictionary = {...automatic,...human};
   const translate = (source) => {
     if (Object.hasOwn(dictionary,source)) return dictionary[source];
     const patterns = [

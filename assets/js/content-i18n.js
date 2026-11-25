@@ -18,7 +18,8 @@ export async function loadContentTranslations(lang) {
   setContentTranslations();
   if (lang !== 'ar') return;
   try {
-    const response = await fetch(new URL('../i18n/content/ar.json', import.meta.url), { cache: 'no-cache' });
-    if (response.ok) setContentTranslations(await response.json());
+    const get=async file=>{try{const r=await fetch(new URL(`../i18n/content/${file}`,import.meta.url),{cache:'no-cache'});return r.ok?await r.json():{};}catch{return{};}};
+    const [automatic,human]=await Promise.all([get('ar.auto.json'),get('ar.json')]);
+    setContentTranslations({...automatic,...human});
   } catch { /* Optional content must never block the tracker or English fallback. */ }
 }

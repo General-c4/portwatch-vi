@@ -1,0 +1,94 @@
+{
+  "name": "portwatch-public",
+  "baseUrl": "https://portwatch-vi.xyz",
+  "operations": [
+    {
+      "name": "pinned",
+      "description": "Public pinned message",
+      "request": {
+        "method": "GET",
+        "url": "https://portwatch-vi.xyz/data/pinned.json",
+        "headers": {
+          "accept": "application/json"
+        }
+      },
+      "slots": [],
+      "volatile": [],
+      "trigger": {
+        "url": "https://portwatch-vi.xyz/"
+      },
+      "match": {
+        "method": "GET",
+        "host": "portwatch-vi.xyz",
+        "path": "/data/pinned.json"
+      },
+      "response": {
+        "format": "json",
+        "contentType": "application/json"
+      },
+      "params": [],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false
+    },
+    {
+      "name": "interface",
+      "description": "English interface source strings",
+      "request": {
+        "method": "GET",
+        "url": "https://portwatch-vi.xyz/assets/i18n/en.json",
+        "headers": {
+          "accept": "application/json"
+        }
+      },
+      "slots": [],
+      "volatile": [],
+      "trigger": {
+        "url": "https://portwatch-vi.xyz/"
+      },
+      "match": {
+        "method": "GET",
+        "host": "portwatch-vi.xyz",
+        "path": "/assets/i18n/en.json"
+      },
+      "response": {
+        "format": "json",
+        "contentType": "application/json"
+      },
+      "params": [],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false
+    },
+    {
+      "name": "tracker",
+      "description": "Complete canonical public tracker object",
+      "request": {
+        "method": "GET",
+        "url": "https://portwatch-vi.xyz/data/tracker.json",
+        "headers": {
+          "accept": "application/json"
+        }
+      },
+      "slots": [],
+      "volatile": [],
+      "trigger": {
+        "url": "https://portwatch-vi.xyz/"
+      },
+      "match": {
+        "method": "GET",
+        "host": "portwatch-vi.xyz",
+        "path": "/data/tracker.json"
+      },
+      "response": {
+        "format": "json",
+        "contentType": "application/json",
+        "extract": "."
+      },
+      "params": [],
+      "readOnly": true,
+      "minTier": 1,
+      "learnedLoggedIn": false
+    }
+  ]
+}
