@@ -19,7 +19,7 @@ try{
    await atomicJSON('.sync/gemini-news-smoke.json',result);
    console.log(JSON.stringify({status:result.status,model:result.model,requests,durationMs,usage}));break;
   }catch(error){
-   const code=newsErrorCode(error);attempts.push({status:'failed',code,phase,durationMs:Math.round(performance.now()-started),usage,...(phase==='validation'?{field:error.field,reason:error.reason}:{})});
+   const code=newsErrorCode(error);attempts.push({status:'failed',code,phase,durationMs:Math.round(performance.now()-started),usage,...(phase==='validation'?{field:error.field,reason:error.reason,copiedSource:error.copiedSource,copiedProtectedSource:error.copiedProtectedSource}:{})});
    if(attempt===1||['authentication','unsupported_model','quota_or_rate_limit','invalid_request_or_model'].includes(code))throw error;
    await new Promise(r=>setTimeout(r,2000));
   }
