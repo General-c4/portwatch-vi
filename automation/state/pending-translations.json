@@ -13,19 +13,6 @@
     "reviewRequired": false
   },
   {
-    "id": "ee7a53ba9d00f72e21af974b2ec120c1566deff0680dde9fbfb6577ed867085e",
-    "sourceHash": "7ce65ee855fe927ac94c3f3af8593d4bc19eae27a406166a76d7569e8d23e8e3",
-    "scope": "content",
-    "key": "Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.",
-    "source": "Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.",
-    "refs": [
-      "pinned.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "e34f6e4ac4d2c8b7d45009ee68fa5fbfaa4bafafec3fe712adf4035b10df5c3c",
     "sourceHash": "cb941bb4422b9d76bc23188d7a571dff383112ccf0aff2b2c25b97e3955833d4",
     "scope": "content",
@@ -355,19 +342,6 @@
     "reviewRequired": false
   },
   {
-    "id": "7569f41d244fed4f9ebbf360fdb9411854b6e6c0558ad04a18c2c161c9c095e8",
-    "sourceHash": "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f",
-    "scope": "content",
-    "key": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-    "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-    "refs": [
-      "efforts:dexnom.blockers.0"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
     "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
     "scope": "content",
@@ -407,13 +381,13 @@
     "reviewRequired": false
   },
   {
-    "id": "4fcc5beb12d7d67c15c9640c8050663841026951d53999c95d893e7bf57d9137",
-    "sourceHash": "6d6e43edf408ec2478eb457231254eed1909662dde09907acc9af02d10462202",
+    "id": "032553284c4d745bdf4d28dffbed36eb7eca41eb20bcd60188bd61f0a475f664",
+    "sourceHash": "8b876fad4ea7b4ab81920cf2b72da2e6459b7bdf16164d049df37ff18bfcf135",
     "scope": "content",
-    "key": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
-    "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
+    "key": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
+    "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
     "refs": [
-      "efforts:dexnom.blockers.1"
+      "headlines:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5.title"
     ],
     "attempts": 0,
     "lastError": null,
@@ -431,34 +405,6 @@
     "attempts": 0,
     "lastError": null,
     "reviewRequired": false
-  },
-  {
-    "id": "e0e5f29cc24ce75372cb6e42f6b050c20196c9a73ad023d487514d9c25302642",
-    "sourceHash": "e38481fd1016812fc6164c3336e73a487e2158fd263dd58d7d47f600a2787718",
-    "scope": "content",
-    "key": "Working in private · built on JoshuuDev's victory-amd",
-    "source": "Working in private · built on JoshuuDev's victory-amd",
-    "refs": [
-      "efforts:doomsday.byline"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "العمل في القطاع الخاص بناء على JoshuuDev victory-amd"
-  },
-  {
-    "id": "f03a71e1ceb8e00be7b04f0e343238deed90652819d056609a6f602a7bcd5fb1",
-    "sourceHash": "2d36d0b0a65359790c4ca23efb68a62096fd80530c504fec945de403851ac9fa",
-    "scope": "content",
-    "key": "Almost never crashes, and gets as far into the story as the leading public builds",
-    "source": "Almost never crashes, and gets as far into the story as the leading public builds",
-    "refs": [
-      "efforts:doomsday.highlights.1"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "تقريباً لا تنهار أبداً و تتدخل في القصة كما يبني الجمهور الرئيسي"
   },
   {
     "id": "39ef715b1334f941853fe1a0f470a38c06f2e32fad030538f383fe78884c35f0",
@@ -484,32 +430,6 @@
     ],
     "attempts": 3,
     "lastError": "Rendering terminology requires review",
-    "reviewRequired": true
-  },
-  {
-    "id": "f5f6e11e2bf2b608a832e9fdc02225520000b5bb0417243e01d05ccceee9af9a",
-    "sourceHash": "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702",
-    "scope": "content",
-    "key": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-    "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-    "refs": [
-      "efforts:doomsday.highlights.0"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "0a6e324b687dff2aefc4e7ca254eb69019bd4360271766e5ca3f06af6c6aed3c",
-    "sourceHash": "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925",
-    "scope": "content",
-    "key": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
-    "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
-    "refs": [
-      "efforts:doomsday.highlights.3"
-    ],
-    "attempts": 3,
-    "lastError": "Frame-rate terminology requires review",
     "reviewRequired": true
   },
   {

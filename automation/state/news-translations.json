@@ -60,7 +60,7 @@
   "cache": {
     "6f8a7a966831c57e11f924e21f9bf305429031ac01052f5e28b35e7802b476a5": {
       "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
-      "ar": "إن قدرة أي نسخة أصلية رسمية مخصصة للحاسب الشخصي PC من لعبة GTA 6 على تقديم طور منظور شخص أول مناسب ستكون ورقتها الرابحة الكبرى، بحسب ما أرى كخائن",
+      "ar": "إن قدرة أي نسخة رسمية مخصصة للحاسب الشخصي من GTA 6 PC على تقديم وضع منظور الشخص الأول بشكل متقن ستكون ورقتها الرابحة الأكبر، حسبما أرى، وأنا خائن",
       "model": "gemini-3.6-flash"
     },
     "77cc73d98da20d30ff789132a0c6df0d3920e59cedb376e40791afdc02d239a9": {
@@ -145,12 +145,12 @@
     },
     "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f": {
       "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-      "ar": "حوالي 1 fps مع تفعيل الإضاءة وتتبع الأشعة ray-traced؛ ومن 3.5-4 إلى fps في الأماكن المغلقة داخل مدينة الفصل 1 بدونها (تقرير اختباره)",
+      "ar": "حوالي 1 fps مع تفعيل الإضاءة بتتبع الأشعة؛ و3.5-4 fps داخل المباني في مدينة الفصل 1 بدونها (وفقًا لتقرير الاختبار الخاص به)",
       "model": "gemini-3.6-flash"
     },
     "6d6e43edf408ec2478eb457231254eed1909662dde09907acc9af02d10462202": {
       "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
-      "ar": "ما يزال ملف README الخاص به يصف إضاءة تتبع الأشعة ray-traced بأنها تجريبية، ويجد تقرير اختباره أن الإضاءة الداخلية غير صحيحة (مداخل أبواب مفرطة التعريض، وأجسام مظلمة)",
+      "ar": "لا يزال ملف README الخاص به يصف الإضاءة بتتبع الأشعة بأنها تجريبية، كما يجد تقرير الاختبار الخاص به أن الإضاءة الداخلية غير صحيحة (مداخل الأبواب شديدة التعريض للضوء، والأجسام مظلمة)",
       "model": "gemini-3.6-flash"
     },
     "cad8a40e12c21ecd76609f666466eccefc91cda8429dddf701787d498c53ce85": {
@@ -175,7 +175,7 @@
     },
     "19b9d63a6a8aeccd3ae04b29a5b9679e245a0a8ca7adeaecd33d1f213308c0ae": {
       "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
-      "ar": "نسخ الحاسب الشخصي PC من لعبة GTA 6 تصل إلى مرحلة قابليتها للعب على الرغم من إشعار الإزالة بموجب قانون حقوق المؤلف DMCA الذي أرسلته Take-Two إلى GitHub",
+      "ar": "مشاريع نقل GTA 6 إلى PC تصل إلى مرحلة أسلوب اللعب على الرغم من إشعارات إزالة DMCA الخاصة بـ Take-Two على GitHub",
       "model": "gemini-3.6-flash"
     },
     "ae879a8831ce9f807fc8810587a3937237a6baa18f42ed30fb61f9b45c7ede63": {
@@ -222,25 +222,50 @@
       "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
       "ar": "حذف نسخ الـ PC من لعبة GTA 6 المُنشأة بواسطة الـ AI- في حملة إزالة يُزعم أن Rockstar شنّتها، في حين وصف مطور سابق لدى Bungie ما حدث بأنه \"أكثر كارثة سخافة على الإطلاق\"",
       "model": "gemini-3.6-flash"
+    },
+    "63f616c334dadf516a47f862e1d8233b9c735732259c5a1663018acd047c0135": {
+      "source": "Anyone saying they have gameplay over +10 FPS (in free roam) is probably lying, we haven't found any evidence that someone has reached that point.",
+      "ar": "أي شخص يدعي أن لديه أسلوب لعب يتجاوز +10 FPS (في التجوال الحر) فهو كاذب على الأرجح، إذ لم نجد أي دليل على أن شخصًا ما قد وصل إلى تلك المرحلة.",
+      "model": "gemini-3.6-flash"
+    },
+    "e38481fd1016812fc6164c3336e73a487e2158fd263dd58d7d47f600a2787718": {
+      "source": "Working in private · built on JoshuuDev's victory-amd",
+      "ar": "العمل يجري بشكل خاص · مبني على نسخة victory-amd الخاصة بـ JoshuuDev",
+      "model": "gemini-3.6-flash"
+    },
+    "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702": {
+      "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+      "ar": "إضاءة بتتبع الأشعة بمعدل 3-5 fps تقريبًا، مع التحقق منها بواسطة PortWatch",
+      "model": "gemini-3.6-flash"
+    },
+    "2d36d0b0a65359790c4ca23efb68a62096fd80530c504fec945de403851ac9fa": {
+      "source": "Almost never crashes, and gets as far into the story as the leading public builds",
+      "ar": "لا ينهار تقريبًا أبدًا، ويصل في القصة إلى المرحلة نفسها التي تصل إليها أبرز الإصدارات العامة",
+      "model": "gemini-3.6-flash"
+    },
+    "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925": {
+      "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
+      "ar": "يعمل أساسًا على بطاقات AMD؛ ويعمل أيضًا على بطاقات NVIDIA بمعدل إطارات أقل",
+      "model": "gemini-3.6-flash"
     }
   },
   "pending": {},
   "daily": {
     "day": "2026-11-25",
-    "requests": 16,
-    "accountedTokens": 99444,
-    "inputTokens": 25507,
-    "outputTokens": 11256,
-    "thinkingTokens": 10746
+    "requests": 18,
+    "accountedTokens": 123243,
+    "inputTokens": 28004,
+    "outputTokens": 12271,
+    "thinkingTokens": 14733
   },
   "totals": {
-    "requests": 16,
+    "requests": 18,
     "successful": 0,
     "failed": 0,
     "cachedFields": 0,
-    "inputTokens": 25507,
-    "outputTokens": 11256,
-    "thinkingTokens": 10746
+    "inputTokens": 28004,
+    "outputTokens": 12271,
+    "thinkingTokens": 14733
   },
   "dynamic": {
     "version": 1,
@@ -269,45 +294,13 @@
         "lastError": "quota_or_rate_limit",
         "nextAttemptAt": "2026-11-25T19:52:31.281Z"
       },
-      "[\"project:doomsday\",\"byline\"]": {
-        "id": "project:doomsday",
-        "field": "byline",
-        "sourceHash": "e38481fd1016812fc6164c3336e73a487e2158fd263dd58d7d47f600a2787718",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:doomsday\",\"highlights.0\"]": {
-        "id": "project:doomsday",
-        "field": "highlights.0",
-        "sourceHash": "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:doomsday\",\"highlights.1\"]": {
-        "id": "project:doomsday",
-        "field": "highlights.1",
-        "sourceHash": "2d36d0b0a65359790c4ca23efb68a62096fd80530c504fec945de403851ac9fa",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"project:doomsday\",\"highlights.2\"]": {
         "id": "project:doomsday",
         "field": "highlights.2",
         "sourceHash": "9013cc96b45a21f5f316068f235333de9429cf9542743d971c60cd8fb3cd64f7",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:doomsday\",\"highlights.3\"]": {
-        "id": "project:doomsday",
-        "field": "highlights.3",
-        "sourceHash": "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "quota_or_rate_limit",
+        "nextAttemptAt": "2026-11-25T20:02:08.701Z"
       },
       "[\"project:doomsday\",\"blockers.0\"]": {
         "id": "project:doomsday",
@@ -445,70 +438,44 @@
         "lastError": "quota_or_rate_limit",
         "nextAttemptAt": "2026-11-25T19:52:31.281Z"
       },
-      "[\"project:dexnom\",\"blockers.0\"]": {
-        "id": "project:dexnom",
-        "field": "blockers.0",
-        "sourceHash": "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:dexnom\",\"blockers.1\"]": {
-        "id": "project:dexnom",
-        "field": "blockers.1",
-        "sourceHash": "6d6e43edf408ec2478eb457231254eed1909662dde09907acc9af02d10462202",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"project:doomsday\",\"summary\"]": {
         "id": "project:doomsday",
         "field": "summary",
         "sourceHash": "5828f8f7ba21816f3d8c0184b16e382418f6f4b0bcced52bce89edf06af683e7",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"pinned:current\",\"text\"]": {
-        "id": "pinned:current",
-        "field": "text",
-        "sourceHash": "7ce65ee855fe927ac94c3f3af8593d4bc19eae27a406166a76d7569e8d23e8e3",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5",
-        "field": "title",
-        "sourceHash": "19b9d63a6a8aeccd3ae04b29a5b9679e245a0a8ca7adeaecd33d1f213308c0ae",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5",
-        "field": "title",
-        "sourceHash": "6f8a7a966831c57e11f924e21f9bf305429031ac01052f5e28b35e7802b476a5",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "quota_or_rate_limit",
+        "nextAttemptAt": "2026-11-25T20:02:08.701Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
         "field": "title",
         "sourceHash": "8b876fad4ea7b4ab81920cf2b72da2e6459b7bdf16164d049df37ff18bfcf135",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "quota_or_rate_limit",
+        "nextAttemptAt": "2026-11-25T20:02:08.701Z"
       }
     },
     "totals": {
-      "requests": 16,
-      "translatedFields": 38,
-      "failedFields": 39,
-      "inputTokens": 25507,
-      "outputTokens": 11256,
-      "thinkingTokens": 10746
+      "requests": 18,
+      "translatedFields": 47,
+      "failedFields": 45,
+      "inputTokens": 28004,
+      "outputTokens": 12271,
+      "thinkingTokens": 14733
+    },
+    "providerBlock": {
+      "code": "quota_or_rate_limit",
+      "nextAttemptAt": "2026-11-25T20:02:08.701Z",
+      "quota": {
+        "quotas": [
+          {
+            "period": "day",
+            "unit": "requests",
+            "limit": 20
+          }
+        ],
+        "retryAfterMs": 46671000
+      }
     }
   }
 }

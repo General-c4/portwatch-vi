@@ -58,6 +58,14 @@
         "blockers.2": {
           "source": "Tested on one AMD card only; not yet reproduced by others",
           "ar": "تم اختباره على بطاقة AMD واحدة فقط؛ ولم يتم إعادة إنتاجه من قبل آخرين بعد"
+        },
+        "blockers.0": {
+          "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
+          "ar": "حوالي 1 fps مع تفعيل الإضاءة بتتبع الأشعة؛ و3.5-4 fps داخل المباني في مدينة الفصل 1 بدونها (وفقًا لتقرير الاختبار الخاص به)"
+        },
+        "blockers.1": {
+          "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
+          "ar": "لا يزال ملف README الخاص به يصف الإضاءة بتتبع الأشعة بأنها تجريبية، كما يجد تقرير الاختبار الخاص به أن الإضاءة الداخلية غير صحيحة (مداخل الأبواب شديدة التعريض للضوء، والأجسام مظلمة)"
         }
       }
     },
@@ -170,6 +178,50 @@
         "title": {
           "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
           "ar": "مخترق GTA 6 المدعو Arion Kurtaj يُحكم عليه لمدة 7 أعوام ويُطلق سراحه في اليوم نفسه"
+        }
+      }
+    },
+    "pinned:current": {
+      "fields": {
+        "text": {
+          "source": "Anyone saying they have gameplay over +10 FPS (in free roam) is probably lying, we haven't found any evidence that someone has reached that point.",
+          "ar": "أي شخص يدعي أن لديه أسلوب لعب يتجاوز +10 FPS (في التجوال الحر) فهو كاذب على الأرجح، إذ لم نجد أي دليل على أن شخصًا ما قد وصل إلى تلك المرحلة."
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5": {
+      "fields": {
+        "title": {
+          "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
+          "ar": "مشاريع نقل GTA 6 إلى PC تصل إلى مرحلة أسلوب اللعب على الرغم من إشعارات إزالة DMCA الخاصة بـ Take-Two على GitHub"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5": {
+      "fields": {
+        "title": {
+          "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
+          "ar": "إن قدرة أي نسخة رسمية مخصصة للحاسب الشخصي من GTA 6 PC على تقديم وضع منظور الشخص الأول بشكل متقن ستكون ورقتها الرابحة الأكبر، حسبما أرى، وأنا خائن"
+        }
+      }
+    },
+    "project:doomsday": {
+      "fields": {
+        "byline": {
+          "source": "Working in private · built on JoshuuDev's victory-amd",
+          "ar": "العمل يجري بشكل خاص · مبني على نسخة victory-amd الخاصة بـ JoshuuDev"
+        },
+        "highlights.0": {
+          "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+          "ar": "إضاءة بتتبع الأشعة بمعدل 3-5 fps تقريبًا، مع التحقق منها بواسطة PortWatch"
+        },
+        "highlights.1": {
+          "source": "Almost never crashes, and gets as far into the story as the leading public builds",
+          "ar": "لا ينهار تقريبًا أبدًا، ويصل في القصة إلى المرحلة نفسها التي تصل إليها أبرز الإصدارات العامة"
+        },
+        "highlights.3": {
+          "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
+          "ar": "يعمل أساسًا على بطاقات AMD؛ ويعمل أيضًا على بطاقات NVIDIA بمعدل إطارات أقل"
         }
       }
     }

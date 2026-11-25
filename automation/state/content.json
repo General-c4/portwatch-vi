@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "latestUpstreamCommitSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
-  "latestSynchronizedCommitSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
+  "latestUpstreamCommitSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+  "latestSynchronizedCommitSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "latestDeployedCommitSha": "9c6377c33d8d1015bf508b08b05b5fd5359a1097",
+  "latestDeployedCommitSha": "f6f35b25fddf5b11ea58ea56142484ae8be1b40c",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-25T18:52:30.187Z",
-  "lastUpstreamCheckTime": "2026-11-25T18:52:30.187Z",
+  "lastSuccessfulSyncTime": "2026-11-25T19:01:34.555Z",
+  "lastUpstreamCheckTime": "2026-11-25T19:01:34.555Z",
   "authoritativeSource": "repository",
   "upstreamUpdated": "2026-11-25T16:22:16.626Z",
   "records": {
@@ -47,10 +47,10 @@
     }
   },
   "translation": {
-    "coverage": 94.25,
-    "translated": 1049,
+    "coverage": 95.51,
+    "translated": 1063,
     "total": 1113,
-    "pending": 62,
+    "pending": 48,
     "completed": 0,
     "provider": "none"
   },
@@ -75,15 +75,22 @@
     "outputTokens": 0,
     "thinkingTokens": 0,
     "errors": [],
-    "pending": 45,
+    "pending": 32,
     "durationMs": 4,
     "coverage": {
+      "pinned": {
+        "total": 1,
+        "translated": 0,
+        "exempt": 0,
+        "missing": 1,
+        "coverage": 0
+      },
       "headlines": {
         "total": 30,
-        "translated": 12,
+        "translated": 26,
         "exempt": 0,
-        "missing": 18,
-        "coverage": 40
+        "missing": 4,
+        "coverage": 86.67
       },
       "changes": {
         "total": 12,
@@ -123,11 +130,11 @@
     }
   },
   "latency": {
-    "sourceCheckMs": 840,
-    "dataSyncMs": 168,
-    "translationMs": 1,
+    "sourceCheckMs": 837,
+    "dataSyncMs": 6,
+    "translationMs": 0,
     "deploymentMs": null,
-    "totalMs": 1024
+    "totalMs": 859
   },
   "apiAnything": {
     "ok": false,
@@ -150,27 +157,27 @@
     }
   ],
   "retryAttempts": [],
-  "upstreamSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
+  "upstreamSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
   "head": {
-    "sha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
-    "node_id": "C_kwDOV3EveNoAKGRhM2Q0OGE3NmI0YzBmOGQ4MGY2OGU4NjNiNzgwMTNkNTUzNzMzNzI",
+    "sha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+    "node_id": "C_kwDOV3EveNoAKGI2NmNjNjg0NDMxN2JiOWNkNjQzM2MwMmU2MmNhMDA3ZGQxMGNkMzg",
     "commit": {
       "author": {
         "name": "4lwayz",
         "email": "alwayzbooster45@gmail.com",
-        "date": "2026-11-25T18:49:03Z"
+        "date": "2026-11-25T18:57:32Z"
       },
       "committer": {
         "name": "4lwayz",
         "email": "alwayzbooster45@gmail.com",
-        "date": "2026-11-25T18:49:03Z"
+        "date": "2026-11-25T18:57:32Z"
       },
-      "message": "Pinned message: \"Anyone saying they have gameplay over +10 FPS is probably...\"",
+      "message": "Pinned message: \"Anyone saying they have gameplay over +10 FPS (in free ro...\"",
       "tree": {
-        "sha": "c24035b30f547551b78d3057b9668d398b305409",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/c24035b30f547551b78d3057b9668d398b305409"
+        "sha": "8be559508ba26ffde5211d3c0bcb657d6aad5d87",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/8be559508ba26ffde5211d3c0bcb657d6aad5d87"
       },
-      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/da3d48a76b4c0f8d80f68e863b78013d55373372",
+      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -180,9 +187,9 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/da3d48a76b4c0f8d80f68e863b78013d55373372",
-    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/da3d48a76b4c0f8d80f68e863b78013d55373372",
-    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/da3d48a76b4c0f8d80f68e863b78013d55373372/comments",
+    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38/comments",
     "author": {
       "login": "4lwayz",
       "id": 359682649,
@@ -227,9 +234,9 @@
     },
     "parents": [
       {
-        "sha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/7c5608c4fc24a2d47a8100432585b37c1746e235"
+        "sha": "54496c436d8c337ff11e5af7ee1ac25cd6ed8178",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/54496c436d8c337ff11e5af7ee1ac25cd6ed8178",
+        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/54496c436d8c337ff11e5af7ee1ac25cd6ed8178"
       }
     ],
     "stats": {
@@ -239,27 +246,27 @@
     },
     "files": [
       {
-        "sha": "022bee46e95739177556d14202bb5f9917343b98",
+        "sha": "4eba4b29d3b0fff2ae2e08d812363962b16ca53e",
         "filename": "data/pinned.json",
         "status": "modified",
         "additions": 2,
         "deletions": 2,
         "changes": 4,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/da3d48a76b4c0f8d80f68e863b78013d55373372/data%2Fpinned.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/da3d48a76b4c0f8d80f68e863b78013d55373372/data%2Fpinned.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Fpinned.json?ref=da3d48a76b4c0f8d80f68e863b78013d55373372",
-        "patch": "@@ -2,6 +2,6 @@\n   \"show\": true,\n   \"name\": \"4lwayz\",\n   \"avatar\": \"assets/img/4lwayz-2.jpg\",\n-  \"text\": \"Like and retweet my new post on X: https://x.com/lithuaniangroyp/status/2125617475157139690\",\n-  \"updated\": \"2026-11-25T16:17:00Z\"\n+  \"text\": \"Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.\",\n+  \"updated\": \"2026-11-25T18:49:02Z\"\n }"
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data%2Fpinned.json",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data%2Fpinned.json",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Fpinned.json?ref=b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+        "patch": "@@ -2,7 +2,7 @@\n   \"show\": true,\n   \"name\": \"4lwayz\",\n   \"avatar\": \"assets/img/4lwayz-2.jpg\",\n-  \"text\": \"Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.\",\n+  \"text\": \"Anyone saying they have gameplay over +10 FPS (in free roam) is probably lying, we haven't found any evidence that someone has reached that point.\",\n   \"gif\": \"assets/img/pinned/whiplash.gif\",\n-  \"updated\": \"2026-11-25T18:49:02Z\"\n+  \"updated\": \"2026-11-25T18:57:31Z\"\n }"
       }
     ]
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"d9e916c8782a44eee4c1eafb69895a33674400e5c5f73b5aa17b5c185963ecec\"",
-      "hash": "dcb2a4c1db070095979a19b44aaec80f99e94acffee0da58289398a182d78a69"
+      "etag": "W/\"64a52d57fafef7299cc0a5e19d9b7e6670f5f3561c69634258c3494e6a266f35\"",
+      "hash": "4bbb5a539d484b78d0f98282a23cd307f09fc5d2a984b9570a3aa5426372c6a1"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
-      "etag": "W/\"8a834d84809ea9bbf194bf6616be50b4\"",
-      "hash": "06ed7e4814cb9941b63ab01dad0f02511075f22f5fc5e5406db71d6f22b32865"
+      "etag": "W/\"9975cb573a5ecc81b70bb9719cb010db\"",
+      "hash": "84fa0e23e72104558a670880b29c1760026acd9cfa2f2de812813905449501ad"
     },
     "https://portwatch-vi.xyz/data/tracker.json": {
       "etag": "W/\"7186125879b4b557811ad69bcf45729c\"",
@@ -278,8 +285,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b072ceb-d5\"",
-      "hash": "4328e21b9b2cd67e960c4577b06c03351bd96253fe05fe99856b8ce242245d79"
+      "etag": "\"6b072f91-d5\"",
+      "hash": "8b16c6bd2a447d4a2295f2adc182525494d10a3d709dd106ce3d69d9dd1328cb"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",
@@ -326,6 +333,18 @@
       "hash": "06ed7e4814cb9941b63ab01dad0f02511075f22f5fc5e5406db71d6f22b32865"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/da3d48a76b4c0f8d80f68e863b78013d55373372/assets/i18n/en.json": {
+      "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
+      "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data/pinned.json": {
+      "etag": "W/\"f735d9bcc0e8df9ecdd119f8345d59eab1799ff8bc3c7e7140a26e41bda75ef5\"",
+      "hash": "84fa0e23e72104558a670880b29c1760026acd9cfa2f2de812813905449501ad"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data/tracker.json": {
+      "etag": "W/\"745d3eca966f69562990590ae00a81db8916770eafe253494bbd1444479c0f34\"",
+      "hash": "1e344f5715b36827627e4445973f035754bdbd6b40317956ca987078bfa5f8d4"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/b66cc6844317bb9cd6433c02e62ca007dd10cd38/assets/i18n/en.json": {
       "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
       "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
     }

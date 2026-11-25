@@ -53,17 +53,17 @@
   "after": {
     "pinned": {
       "total": 1,
-      "translated": 0,
+      "translated": 1,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 0
+      "missing": 0,
+      "coverage": 100
     },
     "headlines": {
       "total": 30,
-      "translated": 26,
+      "translated": 28,
       "exempt": 0,
-      "missing": 4,
-      "coverage": 86.67
+      "missing": 2,
+      "coverage": 93.33
     },
     "changes": {
       "total": 12,
@@ -81,62 +81,59 @@
     },
     "projectDetails": {
       "total": 84,
-      "translated": 71,
+      "translated": 72,
       "exempt": 1,
-      "missing": 12,
-      "coverage": 85.54
+      "missing": 11,
+      "coverage": 86.75
     },
     "highlights": {
       "total": 94,
-      "translated": 88,
+      "translated": 91,
       "exempt": 0,
-      "missing": 6,
-      "coverage": 93.62
+      "missing": 3,
+      "coverage": 96.81
     },
     "blockers": {
       "total": 91,
-      "translated": 88,
+      "translated": 90,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 96.7
+      "missing": 1,
+      "coverage": 98.9
     }
   },
   "audit": {
-    "legacyPending": 45,
-    "approvedEntries": 20,
+    "legacyPending": 48,
+    "approvedEntries": 23,
     "unrelatedEntries": 25
   },
   "stats": {
-    "requests": 0,
-    "translatedFields": 0,
-    "failedFields": 0,
+    "requests": 2,
+    "translatedFields": 9,
+    "failedFields": 6,
     "cachedFields": 0,
-    "inputTokens": 0,
-    "outputTokens": 0,
-    "thinkingTokens": 0,
-    "errors": [],
-    "pending": 32,
-    "durationMs": 9
+    "inputTokens": 2497,
+    "outputTokens": 1015,
+    "thinkingTokens": 3987,
+    "errors": [
+      "invalid_fluency",
+      "protected_facts_or_language_invalid",
+      "quota_or_rate_limit"
+    ],
+    "model": "gemini-3.6-flash",
+    "quota": {
+      "quotas": [
+        {
+          "period": "day",
+          "unit": "requests",
+          "limit": 20
+        }
+      ],
+      "retryAfterMs": 46671000
+    },
+    "pending": 23,
+    "durationMs": 33222
   },
   "missing": [
-    {
-      "id": "pinned:current",
-      "field": "text",
-      "source": "Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5",
-      "field": "title",
-      "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5",
-      "field": "title",
-      "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
-      "reason": "request_or_token_limit"
-    },
     {
       "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
       "field": "title",
@@ -147,7 +144,7 @@
       "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
       "field": "title",
       "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
@@ -186,52 +183,16 @@
       "reason": "quota_or_rate_limit"
     },
     {
-      "id": "project:dexnom",
-      "field": "blockers.0",
-      "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:dexnom",
-      "field": "blockers.1",
-      "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
-      "reason": "request_or_token_limit"
-    },
-    {
       "id": "project:doomsday",
       "field": "summary",
       "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:doomsday",
-      "field": "byline",
-      "source": "Working in private · built on JoshuuDev's victory-amd",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:doomsday",
-      "field": "highlights.0",
-      "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:doomsday",
-      "field": "highlights.1",
-      "source": "Almost never crashes, and gets as far into the story as the leading public builds",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:doomsday",
       "field": "highlights.2",
       "source": "The in-game phone renders really well; the map menu runs at a higher frame rate",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:doomsday",
-      "field": "highlights.3",
-      "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:doomsday",
