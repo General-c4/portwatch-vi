@@ -1,0 +1,10 @@
+{
+  "upstream": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
+  "base": "a1397083b4d567d587c248aeb28eae76516ddb4f",
+  "files": [
+    "EDITOR.md"
+  ],
+  "conflicts": [],
+  "reasons": [],
+  "reviewRequired": false
+}
