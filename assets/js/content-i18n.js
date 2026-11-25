@@ -6,10 +6,10 @@ const NEWS_POLL_MS=60000;
 let newsWatching=false,newsReload=()=>location.reload();
 export function setNewsReloadHandler(handler){newsReload=handler;}
 function watchNewsCatalog(){
- if(newsWatching)return;newsWatching=true;
+ if(newsWatching||typeof document==='undefined'||typeof document.addEventListener!=='function')return;newsWatching=true;
  const signature=JSON.stringify(newsTranslations);let running=false,failures=0,nextAttempt=0;
  const check=async()=>{
-  if(running||document.hidden||Date.now()<nextAttempt||document.querySelector('dialog[open]')||document.activeElement?.matches('input,textarea,select'))return;
+  if(running||document.documentElement.lang!=='ar'||document.hidden||Date.now()<nextAttempt||document.querySelector('dialog[open]')||document.activeElement?.matches('input,textarea,select'))return;
   running=true;
   try{
    const url=new URL('../i18n/news/ar.json',import.meta.url);url.searchParams.set('v',Math.floor(Date.now()/NEWS_POLL_MS));
