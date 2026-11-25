@@ -923,7 +923,7 @@ html[lang="ar"] { --body: "Segoe UI", Tahoma, Arial, sans-serif; --display: "Seg
 html[lang="ar"] :is(h1,h2,h3,h4,.kicker,.eyebrow,.mini-title,.cd-label,.pin-label,.tag,.story-cat) { letter-spacing: normal; }
 html[lang="ar"] :is(h1,h2,h3,h4,.hero h1,.section-head h2,.reader h2,.reader-page h1) { line-height: 1.4; }
 :is(.brand,.e-by,.pin-name,.mk-name,.e-score b,.big-score,.num,.cd-digits,.w-bar b,.gh-link) { unicode-bidi: isolate; }
-html[dir="rtl"] :is(.brand,.e-by,.pin-name,.mk-name,.e-score b,.big-score,.num,.cd-digits,.w-bar b,.gh-link) { direction: ltr; }
+html[dir="rtl"] :is(.brand,.pin-name,.mk-name,.e-score b,.big-score,.num,.cd-digits,.w-bar b,.gh-link) { direction: ltr; }
 /* Coordinates in these visual scales are measured left-to-right in app.js. */
 html[dir="rtl"] :is(.mega,.bar,.gw-bar,.ov-history) { direction: ltr; }
 html[dir="rtl"] :is(.mega-label,.mega-zone) { direction: rtl; }

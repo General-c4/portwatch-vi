@@ -11,7 +11,7 @@ const data=JSON.parse(await readFile('data/tracker.json','utf8'));
 const catalog=JSON.parse(await readFile('assets/i18n/content/ar.json','utf8'));
 const ar=JSON.parse(await readFile('assets/i18n/ar.json','utf8'));
 const browser=await chromium.launch({channel:process.env.PW_BROWSER || 'msedge',headless:true});
-const results=[],errors=[],resourceFailures=[];
+const results=[],errors=[],resourceFailures=[],consoleErrors=[];
 const sizes=[[1920,1080],[2560,1440],[768,1024],[390,844],[360,800]];
 async function open(lang,width,height,url=base){
  const context=await browser.newContext({viewport:{width,height},locale:lang==='ar'?'ar-SA':lang,colorScheme:'light'});
@@ -23,6 +23,7 @@ async function open(lang,width,height,url=base){
  await context.route('**/api/live',route=>route.fulfill({json:{n:null}}));
  const page=await context.newPage();
  page.on('pageerror',e=>errors.push({url:page.url(),message:e.message}));
+ page.on('console',m=>{if(m.type()==='error')consoleErrors.push({page:page.url(),text:m.text(),location:m.location()});});
  page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)resourceFailures.push({url:r.url(),status:r.status()});});
  await page.goto(url,{waitUntil:'domcontentloaded'});
  return {context,page};
@@ -101,6 +102,6 @@ try {
  assert.deepEqual(unexpected,[]);
  console.log(`Passed ${results.length} browser cases; no uncaught JavaScript errors or unexpected local resource failures.`);
 } finally {
- await writeFile(`${out}/browser-results.json`,JSON.stringify({results,errors,resourceFailures},null,2));await browser.close();
+ await writeFile(`${out}/browser-results.json`,JSON.stringify({results,errors,resourceFailures,consoleErrors},null,2));await browser.close();
 }
 
