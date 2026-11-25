@@ -8,7 +8,7 @@
     "refs": [
       "efforts:dexnom.highlights.0"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
     "reviewRequired": false
   },
@@ -49,8 +49,8 @@
     "refs": [
       "headlines:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp.title"
     ],
-    "attempts": 1,
-    "lastError": "Untranslated prose requires review",
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -132,7 +132,7 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5.title"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Untranslated prose requires review",
     "reviewRequired": false
   },
@@ -145,7 +145,7 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5.title"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -158,7 +158,7 @@
     "refs": [
       "candidates:grzegorz2047/TrinityXSX.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": false
   },
@@ -171,7 +171,7 @@
     "refs": [
       "efforts:dexnom.blockers.1"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Ray tracing terminology requires review",
     "reviewRequired": false
   },
@@ -184,7 +184,7 @@
     "refs": [
       "candidates:Itsbatt/victory-unified.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ11QXZ",
     "reviewRequired": false
   },
@@ -211,7 +211,7 @@
     "refs": [
       "candidates:xcl-dev/xcl.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -224,7 +224,7 @@
     "refs": [
       "efforts:anyxboxx.claims.0.text"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -237,8 +237,8 @@
     "refs": [
       "changes.69.text"
     ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ5QXZ",
     "reviewRequired": false
   },
   {
@@ -250,7 +250,7 @@
     "refs": [
       "candidates:kellysix/kelly.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -263,7 +263,7 @@
     "refs": [
       "candidates:realblastex/flamingo.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
     "reviewRequired": false
   },
@@ -276,7 +276,7 @@
     "refs": [
       "candidates:RickyDivjakovski/Revenge.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": false
   },
@@ -289,7 +289,7 @@
     "refs": [
       "changes.68.text"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
     "reviewRequired": false
   },
@@ -302,7 +302,7 @@
     "refs": [
       "efforts:anyxboxx.summary"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
     "reviewRequired": false
   },
@@ -315,7 +315,7 @@
     "refs": [
       "changes.70.text"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": false
   },
@@ -328,8 +328,8 @@
     "refs": [
       "efforts:doomsday.summary"
     ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -341,7 +341,7 @@
     "refs": [
       "efforts:dexnom.summary"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
@@ -356,9 +356,9 @@
       "candidates:Wertrex/Americas.signals.0",
       "candidates:fablinoo/kelvaroq.signals.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "2864c656cf723da3a13e2fd22f4881a7b45e7f68fcd6e0e2d911b081443d2179",
@@ -369,9 +369,9 @@
     "refs": [
       "candidates:xcl-dev/xcl.sources.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "39ef715b1334f941853fe1a0f470a38c06f2e32fad030538f383fe78884c35f0",
@@ -382,9 +382,9 @@
     "refs": [
       "efforts:doomsday.proof.label"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "a4334df2bb5b5c5d13aeb70cfcd01aa26304adeae3eff09a5180894ab85df5c8",
@@ -395,9 +395,9 @@
     "refs": [
       "efforts:doomsday.blockers.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Rendering terminology requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "0b7090dff5dcef684e5cce96708994e69c76aab23dfd31e98b74535fd689a083",
@@ -408,9 +408,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMikwFBVV95cUxQMFZtR205RU4xam5uTFJ6czkxSVVCZHdISFhVMkF2Vzl0emVENG1rY0hYSlZEbE1NOFFaal9yZGJWVHlHUEFhVHVEOE1WdEkwc2ttaHE1Zi1TcjFucV9EYVVzbnBGOERoZ2luRi1pSWhkWXplb2ktVnk3QmFNV1YwbFR3Z3d5TFk0aWtldGl3Ny1pQlU?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "3172905443cd80d307355ac703a958af7765ddd42c43159dc0da152eb3a101ef",
@@ -421,9 +421,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "319a6d3f727ab8056a760a4544e870035d55d4fb3b5c9e91f538ace0bf8c14a6",
@@ -434,9 +434,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "f5f6e11e2bf2b608a832e9fdc02225520000b5bb0417243e01d05ccceee9af9a",
@@ -447,9 +447,9 @@
     "refs": [
       "efforts:doomsday.highlights.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "d4be826b458193a3e321a875279bb83d03322b052c915d8313613ded27ec1d17",
@@ -460,9 +460,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "8a3f65ceee69cfa4e8e5f0a2b1999ffc94153bd355de1c722c5120ec0b8c6620",
@@ -473,9 +473,9 @@
     "refs": [
       "scout.lastSummary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "0a6e324b687dff2aefc4e7ca254eb69019bd4360271766e5ca3f06af6c6aed3c",
@@ -486,9 +486,9 @@
     "refs": [
       "efforts:doomsday.highlights.3"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Frame-rate terminology requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4aaf3422921c06dbcf3a4b0ef9fcf4fd3545ce3ef7596fdbbea564d91e21925a",
@@ -499,9 +499,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "63f1d258fd002e4c7db6572f27ee6b19e31fab8808d8b6ce64365bb6941d79f6",
@@ -512,9 +512,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "58a4f52899bbee7f7fbcf14910920e5bdcec1343c0f6cd2aa2d4b7b4b2e6302a",
@@ -525,9 +525,9 @@
     "refs": [
       "efforts:dexnom.highlights.4"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "efee0c378f08d24e91da924d66d8e4a93e3858ba2c67278b909fa93175849117",
@@ -538,9 +538,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4eec6ae0563b499e5cd877a24f6d59bdacf19599c666e69c88bbdd95551e0aeb",
@@ -551,9 +551,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "c7943dfe38fa01f89a793d613c1f5231df25e0bdc639432a9b1f2b6d41ea9c78",
@@ -564,9 +564,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "f796c0bb0ff374f3fc048785438c1d8a4dcc986cb1805dd1f4420d3e99987fcd",
@@ -577,9 +577,9 @@
     "refs": [
       "candidates:fablinoo/kelvaroq.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "c7918699f69636fcf6205d2a46c4a79ed460a0c0fb5d999bd93161f02365f08e",
@@ -590,9 +590,9 @@
     "refs": [
       "efforts:doomsday.highlights.2"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Rendering terminology requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "2ae9910ff9e309cb55dec85da58321e2601245873f0d5c933a28d48e73816e4e",
@@ -603,9 +603,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "2d1f02ee06458b50984a1c23f67cb488e05c9a18a40dc8834f22fe7cfbd52247",
@@ -616,9 +616,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7b19e73826a3c9d7893668c2d2a06ef6c19eff886f9845e783e0380a96f235da",
@@ -629,9 +629,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFRlX2lWbnlGcDhqcGRnSTB4Zmd1US1WOWYtbTBpTERKWl83SHRPalQ0OWQtOURCb1gwZFNRWXZVSDNUclpRSGNfM3VQM3dGMW84SjM4VXZsdUZKYVFwbW9JR204WDI1d3JJSGJfWkM3Tm5vLU8zUWM2aUpWR1dtWlRlMW9LclpoVW5scmxjanp6OGhIQ09JN1pRUWtNNEoxZUl3OThBMXJvQkdmb0pDREVmbW1wNlhW?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "60cf4999b993e71f86883c1fb0d510c0968eb3e92ab315ae83eec5330b939d87",

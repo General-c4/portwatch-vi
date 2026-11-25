@@ -5,8 +5,8 @@
   "latestIntegratedSourceCommitSha": "a1397083b4d567d587c248aeb28eae76516ddb4f",
   "latestDeployedCommitSha": null,
   "lastDeploymentStatus": "unknown",
-  "lastSuccessfulSyncTime": "2026-11-25T17:14:57.943Z",
-  "lastUpstreamCheckTime": "2026-11-25T17:14:57.943Z",
+  "lastSuccessfulSyncTime": "2026-11-25T17:15:49.527Z",
+  "lastUpstreamCheckTime": "2026-11-25T17:15:49.527Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-25T16:22:16.626Z",
   "records": {
@@ -52,14 +52,14 @@
     "total": 1102,
     "pending": 58,
     "completed": 0,
-    "provider": "none"
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "latency": {
-    "sourceCheckMs": 1470,
-    "dataSyncMs": 1510,
-    "translationMs": 1,
+    "sourceCheckMs": 705,
+    "dataSyncMs": 723,
+    "translationMs": 14189,
     "deploymentMs": null,
-    "totalMs": 1480
+    "totalMs": 14902
   },
   "apiAnything": {
     "ok": false,
@@ -72,6 +72,11 @@
   "recentErrors": [
     {
       "at": "2026-11-25T17:14:57.943Z",
+      "source": "deployment monitoring",
+      "message": "HTTP 404 from general-c4.github.io"
+    },
+    {
+      "at": "2026-11-25T17:15:49.527Z",
       "source": "deployment monitoring",
       "message": "HTTP 404 from general-c4.github.io"
     }
@@ -181,7 +186,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"f5332fb48370d63bb7112d3b4bb6378ccdc04a48422a6c26550f81180ddffbec\"",
+      "etag": "W/\"c78364ab514d84008219e02447473c54a017ea29a516331c31996d4c567f31d5\"",
       "hash": "c2472a1286b9411caad6411450d2811a19ac8233e839755eeabf6eb37e627c23"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
