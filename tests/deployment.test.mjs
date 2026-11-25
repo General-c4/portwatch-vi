@@ -7,7 +7,7 @@ import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
 import {hash} from '../automation/lib/state.mjs';
 test('deployment verifier fails on a bad release and recovers from stale CDN metadata without a false success',async()=>{
- const root=await mkdtemp(join(tmpdir(),'pw-deploy-'));await mkdir(join(root,'_site'));await mkdir(join(root,'.sync'));
+ const root=await mkdtemp(join(tmpdir(),'pw-deploy-'));await mkdir(join(root,'_site'));
  const tracker={updated:'2026-11-25T10:00:00Z',efforts:[{id:'project',name:'Project'}],tools:[],news:[]};
  const metadata={commit:'a'.repeat(40),dataHash:hash(tracker),builtAt:new Date().toISOString()};
  await writeFile(join(root,'_site/deployment.json'),JSON.stringify(metadata));
