@@ -1,10 +1,19 @@
 {
-  "upstream": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "base": "a1397083b4d567d587c248aeb28eae76516ddb4f",
+  "upstream": "9c7bcd1c0d86a6102f97312a3a867b209be59b80",
+  "base": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
   "files": [
-    "EDITOR.md"
+    "EDITOR.md",
+    "assets/js/app.js",
+    "assets/js/news-shared.js",
+    "scripts/lib/news.mjs",
+    "scripts/lib/site-build.mjs"
   ],
-  "conflicts": [],
-  "reasons": [],
-  "reviewRequired": false
+  "conflicts": [
+    "assets/js/app.js"
+  ],
+  "reasons": [
+    "Sensitive or structural file: scripts/lib/news.mjs",
+    "Sensitive or structural file: scripts/lib/site-build.mjs"
+  ],
+  "reviewRequired": true
 }

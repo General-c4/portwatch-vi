@@ -51,10 +51,12 @@ The GitHub Actions scout (every 3 hours) does the mechanical work: stats, discov
 6. **News (at most 2 per day).** Write an article only for something meaningful and verified that isn't already in `news`: a takedown, ban or lawsuit, a confirmed leak, a legal update, a scam wave, an official announcement, or a real port milestone. Use this shape:
 
    ```
-   { "id": "<date>-<slug>", "date": "YYYY-MM-DD", "category": "Leak|Takedown|Legal|Security|Official|Port|Safety",
+   { "id": "<date>-<slug>", "date": "YYYY-MM-DD", "publishedAt": "YYYY-MM-DDTHH:MM:SSZ",
+     "category": "Leak|Takedown|Legal|Security|Official|Port|Safety",
      "title": "<under 90 chars>", "dek": "<one sentence>", "body": ["<3–4 short paragraphs, 120–220 words total>"],
      "sources": [{ "outlet", "title", "url" }], "image": { "url", "credit", "link" } | null, "by": "claude" }
    ```
+   `publishedAt` is the current UTC time when you add the article. The site shows it as the post's timestamp: in the reader's time zone on the homepage, and in UTC on the news pages and in RSS. Posts without it show the day alone.
 
    The `id` becomes the article's public URL (`news/<id>.html`, built at deploy and listed in the sitemap), so use only lowercase letters, digits and hyphens, and never change an id once it's published. For `image`, use the main source's `og:image`. Fetch the page with `curl -sL -A "Mozilla/5.0"` and read `<meta property="og:image">`; use `null` if there isn't one. Add new articles to the front of `news` and keep at most 40.
 7. **Finish.**
