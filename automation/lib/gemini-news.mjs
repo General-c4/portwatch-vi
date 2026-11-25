@@ -45,11 +45,19 @@ export function validateNewsResponse(request,raw){
  for(const key of ['title','summary',...expectedBody]){
   const source=request.fields[key];
   if(!source){if(values[key])throw new Error('unexpected_content');continue;}
-  let value;
-  try{value=restoreTranslation(source,values[key],request.protectedFields[key].tokens);}catch(error){
+  let value,rawValue=values[key];
+  // A literal original identifier is as safe as its placeholder. Normalize only exact originals,
+  // outside existing placeholders, then apply the same strict facts/number validation.
+  const tokens=request.protectedFields[key].tokens;
+  for(const {token,original}of [...tokens].sort((a,b)=>b.original.length-a.original.length))if(!rawValue.includes(token)){
+   const pieces=rawValue.split(/(ZXQ\d+QXZ)/g);let replaced=false;
+   rawValue=pieces.map(part=>{if(replaced||/^ZXQ\d+QXZ$/.test(part)||!part.includes(original))return part;replaced=true;return part.replace(original,token);}).join('');
+  }
+  try{value=restoreTranslation(source,rawValue,tokens);}catch(error){
    const reason=/Protected token/.test(error.message)?'protected_token':/Untranslated prose/.test(error.message)?'untranslated_prose':/Negation/.test(error.message)?'negation':/qualifier/.test(error.message)?'evidence_qualifier':/Numeric/.test(error.message)?'numbers':/Arabic/.test(error.message)?'language':/terminology/.test(error.message)?'terminology':'format_or_length';
    throw Object.assign(new Error('protected_facts_or_language_invalid'),{field:key,reason});
   }
+  for(const original of new Set(tokens.map(t=>t.original)))if(value.split(original).length!==source.split(original).length)throw new Error('protected_facts_or_language_invalid');
   if(/(?:javascript|data|vbscript)\s*:/i.test(value))throw new Error('unsafe_content');
   // Paragraph and Markdown structure, including literal code, stays intact.
   const structure=s=>({lines:(s.match(/\n/g)||[]).length,backticks:(s.match(/`/g)||[]).length,bold:(s.match(/\*\*/g)||[]).length,links:(s.match(/\]\(/g)||[]).length,lists:s.split('\n').filter(l=>/^\s*(?:[-*+] |\d+\. )/.test(l)).length});

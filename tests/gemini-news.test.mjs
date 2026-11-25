@@ -52,6 +52,9 @@ test('new articles publish separate structured Arabic, cache unchanged fields an
 test('structured output rejects omissions, extra fields, invented numbers, damaged links, HTML and altered certainty',()=>{
  const a=article(),request=prepareNewsRequest({title:a.title,summary:a.dek,'body.0':a.body[0]},['https://example.com/report'],['GTA VI']);
  const valid=responseFor(request);assert.match(validateNewsResponse(request,valid).title,/يسجل/);
+ const expanded=structuredClone(valid);
+ for(const key of ['title','summary'])for(const{token,original}of request.protectedFields[key].tokens)expanded[key]=expanded[key].replace(token,original);
+ assert.equal(validateNewsResponse(request,expanded).title,validateNewsResponse(request,valid).title);
  assert.throws(()=>validateNewsResponse(request,'broken'));
  for(const mutate of [o=>delete o.title,o=>o.unexpected='claim',o=>o.sourceUrls=[],o=>o.body=[],o=>o.summary+=' 999',o=>o.title='<script>alert(1)</script>',o=>o.body[0].text=o.body[0].text.replace('قد ','')]){const output=structuredClone(valid);mutate(output);assert.throws(()=>validateNewsResponse(request,output));}
 });
