@@ -17,7 +17,7 @@
 .db-pin-empty { margin: 30px 0; text-align: center; font-size: 13px; color: rgba(255, 255, 255, .75); }
 .db-pin-token { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
 .db-pin-token summary { cursor: pointer; font-size: 13px; font-weight: 700; color: var(--ink-2); }
-.db-pin-token ol { margin: 10px 0; padding-left: 20px; display: grid; gap: 3px; }
+.db-pin-token ol { margin: 10px 0; padding-inline-start: 20px; display: grid; gap: 3px; }
 .db-pin-tokenrow { display: flex; flex-wrap: wrap; gap: 8px; }
 .db-pin-tokenrow input { flex: 1; min-width: 220px; font: inherit; padding: 8px 12px; border: 1px solid var(--input-line); border-radius: 10px; background: var(--surface); color: var(--ink); }
 .db-pin-tokenrow button { cursor: pointer; }

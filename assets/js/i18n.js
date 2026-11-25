@@ -1,6 +1,6 @@
 // Interface translations for the public pages (index.html, board.html).
 // UI strings live in assets/i18n/<code>.json; en.json is the fallback for any key a language lacks.
-// Tracker data (project summaries, news, changes) stays in English, so the scout needs no changes.
+// Canonical tracker data stays in English; Arabic editorial text uses the optional content catalog.
 // Milestone, groundwork and stability names come from scoring.js in English and are translated under
 // the ms.*, gw.* and stab.* keys of each non-English file. See assets/i18n/README.md.
 
@@ -85,7 +85,7 @@ export function tr(key, english, vars) {
   return fill(lang !== 'en' && typeof dict[key] === 'string' ? dict[key] : english, vars);
 }
 
-// Counted strings: key_one for exactly 1, key_other otherwise (right for en, pt-BR and es).
+// Arabic uses all six CLDR categories; existing languages retain one/other selection.
 export function tn(key, n, vars) {
   const form = lang === 'ar' ? new Intl.PluralRules('ar').select(n) : n === 1 ? 'one' : 'other';
   return t(`${key}_${dict[`${key}_${form}`] ? form : n === 1 ? 'one' : 'other'}`, { n, ...vars });

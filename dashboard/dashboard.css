@@ -40,3 +40,11 @@
 .db-feed li { display: flex; gap: 8px; color: var(--ink-2); }
 .db-feed time { color: var(--faint); font-variant-numeric: tabular-nums; flex: none; }
 @media (max-width: 900px) { .db-tiles { grid-template-columns: repeat(3, 1fr); } .db-grid { grid-template-columns: 1fr; } }
+html[dir="rtl"] .db-chart { direction: ltr; }
+html[dir="rtl"] .db-tile b { direction: ltr; unicode-bidi: isolate; }
+@media (max-width: 760px) {
+  html[dir="rtl"] .nav-inner { flex-wrap: wrap; padding-block: 10px; gap: 10px; }
+  html[dir="rtl"] .db-badge { white-space: nowrap; }
+  html[dir="rtl"] .db-login form { flex-wrap: wrap; }
+  html[dir="rtl"] .db-login input { min-width: 0; }
+}
