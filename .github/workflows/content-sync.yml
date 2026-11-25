@@ -78,4 +78,5 @@ jobs:
         with:
           name: content-sync-status
           path: .sync/*.json
+          include-hidden-files: true
           retention-days: 7

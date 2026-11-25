@@ -24,6 +24,8 @@ async function open(lang,width,height,url=base){
    sessionStorage.setItem('pw_sid','00000100000000000000');
  },{lang});
  await context.route('**/api/live',route=>route.fulfill({json:{n:null}}));
+ // Render the committed fixture deterministically; live upstream polling has its own browser test.
+ await context.route('**/assets/js/sync-config.js',route=>route.fulfill({contentType:'text/javascript',body:'export const LIVE_SYNC=false;export const SCORING_HASH="";export const POLL_MS=60000;'}));
  const page=await context.newPage();
  page.on('pageerror',e=>errors.push({url:page.url(),message:e.message}));
  page.on('console',m=>{if(m.type()==='error')consoleErrors.push({page:page.url(),text:m.text(),location:m.location()});});

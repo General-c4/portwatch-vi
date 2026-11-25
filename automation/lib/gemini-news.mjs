@@ -75,7 +75,7 @@ export async function createGeminiNewsClient({apiKey=process.env.GEMINI_API_KEY,
  if(!/^gemini-[\w.-]*flash[\w.-]*$/.test(model))throw new Error('invalid_request_or_model');
  const {GoogleGenAI}=await import('@google/genai');
  const client=new GoogleGenAI({apiKey,vertexai:false,httpOptions:{timeout:timeoutMs,retryOptions:{attempts:1}}});
- return {model,maxOutputTokens,generate:async request=>{
+ return {model,maxOutputTokens,getModel:async()=>{const info=await client.models.get({model});return{name:info.name,supportedActions:info.supportedActions};},generate:async request=>{
   // No tools, URL fetching, browser calls or executable output. A single server-side SDK request.
   const response=await client.models.generateContent({model,contents:request.prompt,config:{systemInstruction:NEWS_SYSTEM_INSTRUCTION,responseMimeType:'application/json',responseJsonSchema:NEWS_RESPONSE_SCHEMA,maxOutputTokens,temperature:0.1,thinkingConfig:{thinkingLevel:'LOW'},httpOptions:{timeout:timeoutMs,retryOptions:{attempts:1}}}});
   return {text:response.text,usage:response.usageMetadata||{},finishReason:response.candidates?.[0]?.finishReason};

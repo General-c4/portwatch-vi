@@ -11,6 +11,7 @@ try {
  const page=await browser.newPage({locale:'ar-SA'});
  await page.addInitScript(()=>{localStorage.setItem('pw-lang','ar');sessionStorage.setItem('pw_sid','00000100000000000000');});
  await page.route('**/api/live',r=>r.fulfill({json:{n:null}}));
+ await page.route('**/assets/js/sync-config.js',r=>r.fulfill({contentType:'text/javascript',body:'export const LIVE_SYNC=false;export const SCORING_HASH="";export const POLL_MS=60000;'}));
  await page.route('**/i18n/content/ar.json',r=>r.fulfill({json:{...dict,[data.efforts[0].summary]:malicious,[data.news[0].body[0]]:malicious,[url]:'javascript:window.translationExecuted=true',belobug:'wrong-id'}}));
  const base=process.env.PW_BASE_URL || 'http://127.0.0.1:8080/';
  await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForSelector('.effort');
