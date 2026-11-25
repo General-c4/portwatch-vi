@@ -84,6 +84,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   recentErrors:[...(state.recentErrors||[]),...errors].slice(-20),retryAttempts:[...(state.retryAttempts||[]),...retryAttempts].slice(-20),
  };
  // All inputs were validated before replacing canonical data. A journal keeps a recoverable release pair.
+ const persistenceStart=performance.now();
  if(changed){
   await atomicJSON(file('.sync/last-known-good.json'),{data:before,pinned:oldPinned});
   await atomicJSON(file('data/tracker.json'),data);await atomicJSON(file('data/pinned.json'),pinned);
@@ -94,9 +95,11 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   const records=await readJSON(file('automation/state/translation-cache.json'),{});
   for(const record of translated.records)records[record.id]=record;
   await atomicJSON(file('automation/state/translation-cache.json'),records);
-  status.latency.dataSyncMs=Math.round(performance.now()-started)-translationMs;
+  status.latency.dataSyncMs=Math.round(performance.now()-persistenceStart);
+  status.latency.totalMs=Math.round(performance.now()-started);
   await atomicJSON(file('automation/state/content.json'),{...status,upstreamSha:head.sha,head,sources:state.sources});
  }
+ if(!changed){status.latency.dataSyncMs=0;status.latency.totalMs=Math.round(performance.now()-started);}
  await atomicJSON(file('.sync/status.json'),status);
  log('content-sync',{changed,dataChanged,records:delta,translations:status.translation,ms:Math.round(performance.now()-started)});
  return{changed,dataChanged,upstreamChanged,publish:dataChanged||hash(automatic)!==originalAuto,status};
