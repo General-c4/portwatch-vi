@@ -6,7 +6,7 @@ import {contentInventory} from '../scripts/lib/content-coverage.mjs';
 import {buildSite} from '../scripts/lib/site-build.mjs';
 import {scoreEffort} from '../assets/js/scoring.js';
 import {hash} from '../automation/lib/state.mjs';
-import {resolvedLegacyReferences} from '../assets/js/editorial-scope.js';
+import {resolvedLegacyReferences,changeRecordId} from '../assets/js/editorial-scope.js';
 const read=async p=>JSON.parse(await readFile(new URL(p,import.meta.url),'utf8'));
 const data=await read('../data/tracker.json');
 const dict=await read('../assets/i18n/content/ar.json');
@@ -14,12 +14,16 @@ test('every current editorial field is translated or durably queued with its exa
  const automatic=await read('../assets/i18n/content/ar.auto.json');
  const scoped=await read('../assets/i18n/news/ar.json');
  const resolved=resolvedLegacyReferences(data,{human:dict,automatic,catalog:scoped});
+ const scopedPending=(await read('../automation/state/news-translations.json')).dynamic?.pending||{};
  let queue=[];try{queue=await read('../automation/state/pending-translations.json');}catch(error){if(error.code!=='ENOENT')throw error;}
  for(const {path,source} of contentInventory(data)){
   if(typeof (dict[source]??automatic[source])==='string')continue;
   const [section,index,...rest]=path.split('.'),record=data[section]?.[Number(index)];
   const ref=record&&(record.id||record.repo||record.link)?`${section}:${record.id||record.repo||record.link}.${rest.join('.')}`:path;
   if(resolved.has(`${ref}\0${source}`))continue;
+  const scopedId=section==='efforts'?`project:${record.id}`:section==='headlines'?`headline:${record.link}`:section==='changes'?changeRecordId(record):null;
+  const scopedField=section==='headlines'&&rest.join('.')==='dek'?'summary':rest.join('.');
+  if(scopedId&&scopedPending[JSON.stringify([scopedId,scopedField])]?.sourceHash===hash(source))continue;
   assert.ok(queue.some(entry=>entry.scope==='content'&&entry.source===source&&entry.sourceHash===hash(source)),path);
  }
 });

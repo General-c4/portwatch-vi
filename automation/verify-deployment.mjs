@@ -10,7 +10,7 @@ for(let attempt=0;attempt<6;attempt++){
   const deployed=await(await get('deployment.json')).json();if(deployed.commit!==expected.commit||deployed.dataHash!==expected.dataHash)throw new Error('CDN still serves a previous release');
   const tracker=validateTracker(await(await get('data/tracker.json')).json());
   if(createHash('sha256').update(JSON.stringify(tracker)).digest('hex')!==expected.dataHash)throw new Error('Deployed data hash mismatch');
-  for(const path of ['assets/i18n/ar.json','assets/i18n/content/ar.json','assets/i18n/content/ar.auto.json','assets/i18n/news/ar.json','assets/js/live-data.js','assets/js/tracker-source.js','assets/js/sync-config.js','assets/css/style.css','news/'])await get(path);
+  for(const path of ['assets/i18n/ar.json','assets/i18n/content/ar.json','assets/i18n/content/ar.auto.json','assets/i18n/news/ar.json','assets/js/editorial-scope.js','assets/js/live-data.js','assets/js/tracker-source.js','assets/js/sync-config.js','assets/css/style.css','news/'])await get(path);
   for(const news of tracker.news)await get(`news/${news.id}.html`);
   let sync={};try{sync=JSON.parse(await readFile('automation/state/content.json','utf8'));}catch{}
   const verifiedAt=new Date().toISOString();

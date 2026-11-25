@@ -34,10 +34,20 @@ export function protectedTerms(data){
  for(const e of [...(data.efforts||[]),...(data.tools||[])]){if(e.name)names.push(e.name);if(e.repo)names.push(e.repo,e.repo.split('/')[0]);}
  return [...new Set(names)].filter(Boolean).sort((a,b)=>b.length-a.length);
 }
-export function protectText(source,terms=[]){
+export function protectText(source,terms=[],options={}){
  const escaped=terms.map(v=>v.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
- const pattern=new RegExp(`https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b[A-Z][a-z]+(?:[A-Z][a-z]+)+\\b|\\b[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+\\b|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
- const tokens=[];const text=source.replace(pattern,original=>{const token=`ZXQ${tokens.length}QXZ`;tokens.push({token,original});return token;});
+ const compound=options.nested?'(?!)':'\\b[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+\\b';
+ const pattern=new RegExp(`https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b[A-Z][a-z]+(?:[A-Z][a-z]+)+\\b|${compound}|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
+ const tokens=[];const text=source.replace(pattern,original=>{
+  if(!options.nested&&options.isProseCompound?.(original)){
+   const nested=protectText(original,terms,{nested:true});
+   // Keep names/numbers inside ordinary hyphenated prose, while allowing the prose to translate.
+   const mappings=new Map();for(const entry of nested.tokens){if(entry.original===original){continue;}const token=`ZXQ${tokens.length}QXZ`;tokens.push({token,original:entry.original});mappings.set(entry.token,token);}
+   if(!mappings.size)return original;
+   return nested.text.replace(/ZXQ\d+QXZ/g,token=>mappings.get(token)||original);
+  }
+  const token=`ZXQ${tokens.length}QXZ`;tokens.push({token,original});return token;
+ });
  return{text,tokens};
 }
 export function restoreTranslation(source,translated,tokens){
@@ -54,15 +64,16 @@ export function restoreTranslation(source,translated,tokens){
  if(JSON.stringify(numbers(source))!==JSON.stringify(numbers(value)))throw new Error('Numeric facts changed');
  const placeholders=s=>[...s.matchAll(/\{\w+\}/g)].map(m=>m[0]).sort();
  if(JSON.stringify(placeholders(source))!==JSON.stringify(placeholders(value)))throw new Error('Placeholders changed');
+ const plain=value.normalize('NFKC').replace(/[\u064B-\u065F\u0670]/g,'');
  // Conservative guard, not a claim of semantic proof. Keep English queued when negation disappears.
- if(/\b(?:not|never|no|without|cannot|can't|isn't|hasn't|won't|doesn't)\b/i.test(source)&&!/(?:لا|لم|لن|ليس|غير|دون|بدون|ليست)/.test(value))throw new Error('Negation requires review');
+ if(/\b(?:not|never|no|without|cannot|can't|isn't|hasn't|won't|doesn't)\b/i.test(source)&&!/(?:لا|لم|لن|ليس|غير|دون|بدون|ليست)/.test(plain))throw new Error('Negation requires review');
  if((source.match(/\n/g)||[]).length!==(value.match(/\n/g)||[]).length)throw new Error('Line breaks changed');
- if(/\bcode\b/i.test(source)&&!/شيفر|شفر|كود|برمج/.test(value))throw new Error('Technical code terminology requires review');
- if(/\brender(?:ing|s)?\b/i.test(source)&&!/رسوم|رسم|عرض|تصيير|إظهار/.test(value))throw new Error('Rendering terminology requires review');
- if(/\bframe rate\b/i.test(source)&&!/إطار|إطارات|FPS|fps/.test(value))throw new Error('Frame-rate terminology requires review');
- if(/ray.trac/i.test(source)&&!/تتبع الأشعة/.test(value))throw new Error('Ray tracing terminology requires review');
- const qualifiers=[[/\b(?:unverified|not verified)\b/i,/غير مؤكد|غير متحقق|لم.*تحقق|دون.*تحقق|غير موثق/],[/\bself-reported\b/i,/ذات|صاحب|أصحاب|المشروع|إبلاغ/],[/\b(?:claims?|allegedly)\b/i,/يدعي|تدعي|يزعم|تزعم|ادعاء|زعم|بحسب/]];
- for(const [english,arabic]of qualifiers)if(english.test(source)&&!arabic.test(value))throw new Error('Evidence qualifier requires review');
+ if(/\bcode\b/i.test(source)&&!/شيفر|شفر|كود|برمج/.test(plain))throw new Error('Technical code terminology requires review');
+ if(/\brender(?:ing|s)?\b/i.test(source)&&!/رسوم|رسم|عرض|تصيير|إظهار/.test(plain))throw new Error('Rendering terminology requires review');
+ if(/\bframe rate\b/i.test(source)&&!/إطار|إطارات|FPS|fps/.test(plain))throw new Error('Frame-rate terminology requires review');
+ if(/ray.trac/i.test(source)&&!/تتبع الأشعة/.test(plain))throw new Error('Ray tracing terminology requires review');
+ const qualifiers=[[/\b(?:unverified|not verified)\b/i,/غير مؤكد|غير متحقق|لم.*تحقق|دون.*تحقق|غير موثق/],[/\bself-reported\b/i,/ذات|صاحب|أصحاب|المشروع|إبلاغ|إفادة|مطور|بحسب.*تقرير/],[/\b(?:claims?|allegedly)\b/i,/يدعي|تدعي|يزعم|تزعم|ادعاء|زعم|بحسب/]];
+ for(const [english,arabic]of qualifiers)if(english.test(source)&&!arabic.test(plain))throw new Error('Evidence qualifier requires review');
  return value.trim();
 }
 export function deterministicTranslation(source){

@@ -1,4 +1,5 @@
 // Shared, explicit scope for translation, coverage and rendering. No numerical/machine fields.
+import {editorialQualityIssue} from './editorial-quality.js';
 export const changeRecordId=c=>`change:${c.id||`${c.date}:${c.kind}:${c.text}`}`;
 export function projectTextFields(e){
  const fields={};
@@ -25,8 +26,9 @@ export function resolvedLegacyReferences(data,catalogs){
 }
 export function scopedTranslation(source,id,field,{human={},automatic={},catalog={}}={}){
  if(Object.hasOwn(human,source)&&typeof human[source]==='string')return{value:human[source],method:'reviewed'};
- const entry=catalog.articles?.[id]?.fields?.[field];
- if(entry?.source===source&&typeof entry.ar==='string'&&entry.ar.trim())return{value:entry.ar,method:'gemini'};
+ const record=catalog.articles&&Object.hasOwn(catalog.articles,id)?catalog.articles[id]:null;
+ const entry=record?.fields&&Object.hasOwn(record.fields,field)?record.fields[field]:null;
+ if(entry?.source===source&&typeof entry.ar==='string'&&entry.ar.trim()&&!editorialQualityIssue(source,entry.ar))return{value:entry.ar,method:'gemini'};
  if(Object.hasOwn(automatic,source)&&typeof automatic[source]==='string')return{value:automatic[source],method:'automatic'};
  return{value:source,method:'fallback'};
 }

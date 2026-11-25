@@ -448,6 +448,102 @@
         "attempts": 0,
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5",
+        "field": "title",
+        "sourceHash": "6f8a7a966831c57e11f924e21f9bf305429031ac01052f5e28b35e7802b476a5",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5",
+        "field": "title",
+        "sourceHash": "77cc73d98da20d30ff789132a0c6df0d3920e59cedb376e40791afdc02d239a9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5",
+        "field": "title",
+        "sourceHash": "060be3d7f7ba3cc7216f20e21a4fe1a48722aa923ada522b56118405963ee9d6",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxOWHNNSU9kcGRYZlhaVDVQVHpmRzQtc0xkNnZLMVRwLXUyMzdaaTc1YjZ5NFJmR1V4N05MY1Z2cXc2SWhQZXhoM0ctY0JxTGIxLWhUMXViN2FvaGo5RERaeFUzLUFhd2tjYnhPdWxVcjAwUk5IeE5MTkxucTdMUWNIaW9ZSHJtN2ZrMjhDd1ptR1dfZ0xTWGIxdkE3X3hNUzJXTDAwa2tubjBILTFHbU5OMkNR?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxOWHNNSU9kcGRYZlhaVDVQVHpmRzQtc0xkNnZLMVRwLXUyMzdaaTc1YjZ5NFJmR1V4N05MY1Z2cXc2SWhQZXhoM0ctY0JxTGIxLWhUMXViN2FvaGo5RERaeFUzLUFhd2tjYnhPdWxVcjAwUk5IeE5MTkxucTdMUWNIaW9ZSHJtN2ZrMjhDd1ptR1dfZ0xTWGIxdkE3X3hNUzJXTDAwa2tubjBILTFHbU5OMkNR?oc=5",
+        "field": "title",
+        "sourceHash": "9bcdc4b0864bb7923c28bbe9bb7d3e1a4eb11f81e2991528b16882221a5a52fb",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp",
+        "field": "title",
+        "sourceHash": "27f36cac482ef57ec34c5044e0d1f7e6689afccba8ccd2cffffb67e1abcc74b6",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.\",\"text\"]": {
+        "id": "change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+        "field": "text",
+        "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-25:flag:ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.\",\"text\"]": {
+        "id": "change:2026-11-25:flag:ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+        "field": "text",
+        "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:dexnom\",\"highlights.1\"]": {
+        "id": "project:dexnom",
+        "field": "highlights.1",
+        "sourceHash": "ef915b7033c3abbc200d2ac89f36006708339e18ed71bb06935ea69d232d5f9a",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:dexnom\",\"highlights.3\"]": {
+        "id": "project:dexnom",
+        "field": "highlights.3",
+        "sourceHash": "3cce31c15b3474a8dd7999a7c9524230226101999877c37dbc2aea6b7cc3f04f",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:dexnom\",\"blockers.0\"]": {
+        "id": "project:dexnom",
+        "field": "blockers.0",
+        "sourceHash": "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:dexnom\",\"blockers.1\"]": {
+        "id": "project:dexnom",
+        "field": "blockers.1",
+        "sourceHash": "6d6e43edf408ec2478eb457231254eed1909662dde09907acc9af02d10462202",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"summary\"]": {
+        "id": "project:doomsday",
+        "field": "summary",
+        "sourceHash": "5828f8f7ba21816f3d8c0184b16e382418f6f4b0bcced52bce89edf06af683e7",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
       }
     },
     "totals": {

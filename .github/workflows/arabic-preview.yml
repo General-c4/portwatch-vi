@@ -39,6 +39,11 @@ jobs:
         run: node automation/gemini-news-browser.mjs _site
         env:
           PW_BROWSER: chromium
+      - name: Actual dynamic editorial text coverage and rendering
+        run: node automation/dynamic-coverage-browser.mjs _site
+        env:
+          PW_BROWSER: chromium
+          PW_ALLOW_QUEUED_TRANSLATIONS: '1'
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

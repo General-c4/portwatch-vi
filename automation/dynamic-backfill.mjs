@@ -8,7 +8,7 @@ await withLock('.sync/content.lock',async()=>{
  const pending=await readJSON('automation/state/pending-translations.json');
  const approved=new Set(dynamicEditorialRecords(data).flatMap(r=>Object.values(r.fields)));
  const audit={legacyPending:pending.length,approvedEntries:pending.filter(e=>approved.has(e.source)).length,unrelatedEntries:pending.filter(e=>!approved.has(e.source)).length};
- const result=await syncDynamicEditorial({data,state,catalog,human,automatic});
+ const result=await syncDynamicEditorial({data,state,catalog,human,automatic,onProgress:progress=>console.log(JSON.stringify({phase:'dynamic-backfill',...progress}))});
  const resolved=resolvedLegacyReferences(data,{human,automatic,catalog:result.catalog});
  const remaining=pending.flatMap(entry=>{const refs=entry.refs.filter(ref=>!resolved.has(`${ref}\0${entry.source}`));return refs.length?[{...entry,refs}]:[];});
  const report={before:result.before.sections,after:result.coverage.sections,audit,stats:result.stats,missing:result.coverage.missing.map(({id,field,source})=>({id,field,source,reason:result.state.dynamic.pending[JSON.stringify([id,field])]?.lastError||'not_attempted'}))};

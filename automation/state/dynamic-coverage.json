@@ -2,17 +2,17 @@
   "before": {
     "headlines": {
       "total": 30,
-      "translated": 9,
+      "translated": 12,
       "exempt": 0,
-      "missing": 21,
-      "coverage": 30
+      "missing": 18,
+      "coverage": 40
     },
     "changes": {
       "total": 12,
-      "translated": 9,
+      "translated": 10,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 75
+      "missing": 2,
+      "coverage": 83.33
     },
     "projectDescriptions": {
       "total": 35,
@@ -30,40 +30,40 @@
     },
     "highlights": {
       "total": 94,
-      "translated": 85,
+      "translated": 88,
       "exempt": 0,
-      "missing": 9,
-      "coverage": 90.43
+      "missing": 6,
+      "coverage": 93.62
     },
     "blockers": {
       "total": 91,
-      "translated": 86,
+      "translated": 88,
       "exempt": 0,
-      "missing": 5,
-      "coverage": 94.51
+      "missing": 3,
+      "coverage": 96.7
     }
   },
   "after": {
     "headlines": {
       "total": 30,
-      "translated": 17,
+      "translated": 12,
       "exempt": 0,
-      "missing": 13,
-      "coverage": 56.67
+      "missing": 18,
+      "coverage": 40
     },
     "changes": {
       "total": 12,
-      "translated": 12,
+      "translated": 10,
       "exempt": 0,
-      "missing": 0,
-      "coverage": 100
+      "missing": 2,
+      "coverage": 83.33
     },
     "projectDescriptions": {
       "total": 35,
-      "translated": 32,
+      "translated": 31,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 91.43
+      "missing": 4,
+      "coverage": 88.57
     },
     "projectDetails": {
       "total": 84,
@@ -74,40 +74,35 @@
     },
     "highlights": {
       "total": 94,
-      "translated": 90,
+      "translated": 88,
       "exempt": 0,
-      "missing": 4,
-      "coverage": 95.74
+      "missing": 6,
+      "coverage": 93.62
     },
     "blockers": {
       "total": 91,
-      "translated": 90,
+      "translated": 88,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 98.9
+      "missing": 3,
+      "coverage": 96.7
     }
   },
   "audit": {
-    "legacyPending": 71,
-    "approvedEntries": 45,
+    "legacyPending": 50,
+    "approvedEntries": 24,
     "unrelatedEntries": 26
   },
   "stats": {
-    "requests": 10,
-    "translatedFields": 21,
-    "failedFields": 30,
+    "requests": 0,
+    "translatedFields": 0,
+    "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 17615,
-    "outputTokens": 9998,
+    "inputTokens": 0,
+    "outputTokens": 0,
     "thinkingTokens": 0,
-    "errors": [
-      "source_links_changed",
-      "protected_facts_or_language_invalid",
-      "service_unavailable"
-    ],
-    "model": "gemini-3.6-flash",
-    "pending": 33,
-    "durationMs": 347148
+    "errors": [],
+    "pending": 45,
+    "durationMs": 8
   },
   "missing": [
     {
@@ -147,10 +142,34 @@
       "reason": "source_links_changed"
     },
     {
+      "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5",
+      "field": "title",
+      "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5",
+      "field": "title",
+      "source": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
+      "reason": "request_or_token_limit"
+    },
+    {
       "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
       "field": "title",
       "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
       "reason": "protected_facts_or_language_invalid"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5",
+      "field": "title",
+      "source": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxOWHNNSU9kcGRYZlhaVDVQVHpmRzQtc0xkNnZLMVRwLXUyMzdaaTc1YjZ5NFJmR1V4N05MY1Z2cXc2SWhQZXhoM0ctY0JxTGIxLWhUMXViN2FvaGo5RERaeFUzLUFhd2tjYnhPdWxVcjAwUk5IeE5MTkxucTdMUWNIaW9ZSHJtN2ZrMjhDd1ptR1dfZ0xTWGIxdkE3X3hNUzJXTDAwa2tubjBILTFHbU5OMkNR?oc=5",
+      "field": "title",
+      "source": "GTA VI publisher has launched a DMCA campaign against videos of the PC version of the game.",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5",
@@ -189,6 +208,24 @@
       "reason": "service_unavailable"
     },
     {
+      "id": "headline:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp",
+      "field": "title",
+      "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+      "field": "text",
+      "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "change:2026-11-25:flag:ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+      "field": "text",
+      "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+      "reason": "request_or_token_limit"
+    },
+    {
       "id": "project:belobug",
       "field": "summary",
       "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
@@ -199,6 +236,36 @@
       "field": "summary",
       "source": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
       "reason": "service_unavailable"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "highlights.1",
+      "source": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "highlights.3",
+      "source": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "blockers.0",
+      "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "blockers.1",
+      "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "summary",
+      "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "project:doomsday",

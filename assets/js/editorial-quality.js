@@ -1,0 +1,16 @@
+// Editorial prose is translatable; code/repository/hardware identifiers remain protected.
+const prose=new Set(['ray-traced','ray-tracing','in-game','in-world','close-to-retail','open-world','all-amd','first-run','self-reported','real-time','off-screen','shader-heavy','stand-in','one-to-one','ai-generated','fan-made','proof-of-concept','frame-rate','wine-style','french-language']);
+export const isProseCompound=s=>prose.has(s.toLowerCase())||/^\d+-(?:hour|year|day|month|week)(?:-old)?$/i.test(s);
+export function editorialQualityIssue(source,ar){
+ const text=ar.normalize('NFKC').replace(/[\u064B-\u065F\u0670]/g,'');
+ for(const word of source.match(/[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+/g)||[])if(isProseCompound(word)&&ar.toLowerCase().includes(word.toLowerCase()))return 'untranslated_prose';
+ if(/\bshaders?\b/i.test(source)&&!/(?:تظليل|مظلل)/.test(text))return 'shader_terminology';
+ if(/DMCA/.test(source)&&/إلقاء الضوء/.test(text))return 'dmca_terminology';
+ if(/\ba traitor\b/i.test(source)&&!/(?:خائن|خيانة)/.test(text))return 'omitted_qualification';
+ if(/vibecoders?/i.test(source)&&!/(?:ذكاء الاصطناعي|الذكاء الاصطناعي|Vibe)/i.test(text))return 'vibecoding_terminology';
+ if(/ينطوح|(?:إلى|من)\s*fps/i.test(text))return 'invalid_fluency';
+ if(source.includes('Arion Kurtaj')&&!ar.includes('Arion Kurtaj'))return 'identifier_changed';
+ const account=/the ([A-Za-z0-9_.-]+) account/.exec(source);if(account&&text.includes(`على ${account[1]}`))return 'invented_platform';
+ if(/rising to [\d.]+%/.test(source)&&/(?:ارتفع|يرتفع|ليرتفع) الأداء/.test(text))return 'score_meaning_changed';
+ return null;
+}

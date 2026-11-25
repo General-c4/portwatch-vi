@@ -4,11 +4,22 @@ import {initializeNewsState} from '../automation/lib/news-sync.mjs';
 import {syncDynamicEditorial} from '../automation/lib/dynamic-editorial.mjs';
 import {newsLimits} from '../automation/lib/news-sync.mjs';
 import {setContentTranslations,setNewsTranslations,editorialText,contentText} from '../assets/js/content-i18n.js';
+import {prepareNewsRequest} from '../automation/lib/gemini-news.mjs';
+import {editorialQualityIssue} from '../assets/js/editorial-quality.js';
 const fixture=()=>({news:[{id:'archive',date:'2020-01-01',title:'Never send this archive',body:['Never send this archive body']}],headlines:[{title:'A project reaches 12.5 fps.',link:'https://example.com/headline',date:'2020-01-01',outlet:'Publisher'}],changes:[{date:'2026-11-25',kind:'up',text:'Performance improves to 12.5 fps.'}],efforts:[{id:'alpha',name:'Alpha',tier:'tracked',repo:'dev/alpha',summary:'A project at 12.5 fps.',provenOn:'Small sample games.',highlights:['Rendering works.'],blockers:['Not playable yet.'],target:'GTA VI',gta:{fps:12.5,stability:'often'}},{id:'beta',name:'Beta',tier:'tracked',summary:'Another project runs.',highlights:[],blockers:[]},{id:'gone',tier:'tracked',nuked:{at:'2020-01-01'},summary:'A removed project'}],tools:[{desc:'Unrelated tool'}],candidates:[{description:'Unrelated candidate'}]});
 const ar={'A project reaches 12.5 fps.':'مشروع يصل إلى 12.5 fps.','Performance improves to 12.5 fps.':'يتحسن الأداء إلى 12.5 fps.','A project at 12.5 fps.':'مشروع يعمل بمعدل 12.5 fps.','Small sample games.':'ألعاب تجريبية صغيرة.','Rendering works.':'التصيير الرسومي يعمل.','Not playable yet.':'غير قابل للعب بعد.','Another project runs.':'يعمل مشروع آخر.'};
 const args=()=>{const data=fixture();return{data,state:initializeNewsState(data),catalog:{version:1,articles:{}},limits:{...newsLimits(),maxRequests:10,dailyTokens:500000,maxInputBytes:30000},sleep:async()=>{}};};
 function response(request){return{title:'',summary:'',body:Object.entries(request.fields).map(([key,source])=>{let text=ar[source];assert.ok(text,source);for(const{token,original}of request.protectedFields[key].tokens)text=text.replace(original,token);return{index:Number(key.slice(5)),text};}),sourceUrls:request.sourceUrls};}
 const client=calls=>async()=>({model:'gemini-3.6-flash',generate:async req=>{calls.push(req);return{text:JSON.stringify(response(req)),finishReason:'STOP',usage:{promptTokenCount:100,candidatesTokenCount:100,totalTokenCount:200}};}});
+test('ordinary hyphenated prose is translated while embedded names, numbers and real identifiers stay protected',()=>{
+ const r=prepareNewsRequest({title:'An all-AMD ray-traced 24-Hour build from victory-fork.'},[],['AMD']);
+ assert(r.protectedFields.title.text.includes('ray-traced'));assert(!r.protectedFields.title.tokens.some(t=>t.original==='ray-traced'));
+ assert(r.protectedFields.title.tokens.some(t=>t.original==='AMD'));assert(r.protectedFields.title.tokens.some(t=>t.original==='24'));assert(r.protectedFields.title.tokens.some(t=>t.original==='victory-fork'));
+ assert.equal(editorialQualityIssue('Translates shaders','يترجم مضللات'),'shader_terminology');
+ assert.equal(editorialQualityIssue('DMCA campaign','حملة حقوق إلقاء الضوء DMCA'),'dmca_terminology');
+ assert.equal(editorialQualityIssue('Ray-traced lighting','إضاءة Ray-traced'),'untranslated_prose');
+ assert.equal(editorialQualityIssue('Ray-traced lighting','إضاءة بتتبُّع الأشعة'),null);
+});
 test('expanded scope includes current old-dated RSS and every active project, excluding historical articles and unrelated records',()=>{
  const data=fixture(),original=JSON.stringify(data),records=dynamicEditorialRecords(data);
  assert(records.some(r=>r.id==='project:alpha'&&r.fields.provenOn));assert(records.some(r=>r.id==='project:beta'));
@@ -28,14 +39,17 @@ test('backfill validates and batches current dynamic text, preserves numbers/URL
  assert(resolvedLegacyReferences(a.data,{catalog:result.catalog}).has('efforts:alpha.summary\0A project at 12.5 fps.'));
 });
 test('reviewed fields are never sent, only source edits retranslate, and stable records survive changelog index shifts',async()=>{
- const a=args(),calls=[];const first=await syncDynamicEditorial({...a,human:{'A project at 12.5 fps.':'نص بشري'},clientFactory:client(calls)});
+ const a=args(),calls=[],human={'A project at 12.5 fps.':'نص بشري'};
+ const history=Array.from({length:11},(_,i)=>({date:'2026-11-24',kind:'up',text:`Reviewed old event ${i}`}));for(const c of history)human[c.text]='حدث تمت مراجعته';
+ a.data.changes=[...history,...a.data.changes];
+ const first=await syncDynamicEditorial({...a,human,clientFactory:client(calls)});
  assert(!calls.some(r=>Object.values(r.fields).includes('A project at 12.5 fps.')));
  a.data.changes.unshift({date:'2020-01-01',kind:'up',text:'Older unrelated history'});
- // The added item is outside the 12-item visible window only when the feed already contains 12.
- a.data.changes.shift();a.data.efforts[0].summary='Another project runs.';
- const next=await syncDynamicEditorial({...a,state:first.state,catalog:first.catalog,human:{'A project at 12.5 fps.':'نص بشري'},clientFactory:client(calls)});
+ a.data.efforts[0].summary='Another project runs.';
+ const next=await syncDynamicEditorial({...a,state:first.state,catalog:first.catalog,human,clientFactory:client(calls)});
  assert.equal(next.coverage.missing.length,0);assert.equal(next.stats.requests,0);assert(next.stats.cachedFields>0);
  assert.equal(first.catalog.articles['project:alpha'].fields.summary,undefined);
+ assert(resolvedLegacyReferences(a.data,{human,catalog:next.catalog}).has('changes.12.text\0Performance improves to 12.5 fps.'));
 });
 test('one invalid field does not discard validated fields; retry stays bounded and cached successes are not resent',async()=>{
  const a=args(),calls=[];const result=await syncDynamicEditorial({...a,clientFactory:async()=>({model:'gemini-3.6-flash',generate:async req=>{

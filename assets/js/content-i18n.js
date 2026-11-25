@@ -1,5 +1,6 @@
 // Optional editorial translations. Exact source matching prevents stale translations after scout updates.
 // This module never modifies tracker objects, identifiers, sources, scores or URLs.
+import {scopedTranslation} from './editorial-scope.js';
 let translations = {};
 let reviewedTranslations={},newsTranslations={};
 const NEWS_POLL_MS=60000;
@@ -29,9 +30,8 @@ export function setNewsTranslations(value={}) {newsTranslations=value?.version==
 export function newsText(value,id,field){
  if(typeof value!=='string')return value;
  if(Object.hasOwn(reviewedTranslations,value)&&typeof reviewedTranslations[value]==='string')return reviewedTranslations[value];
- const article=Object.hasOwn(newsTranslations,id)?newsTranslations[id]:null;
- const entry=article?.fields&&Object.hasOwn(article.fields,field)?article.fields[field]:null;
- return entry?.source===value&&typeof entry.ar==='string'&&entry.ar.trim()?entry.ar:contentText(value);
+ const translated=scopedTranslation(value,id,field,{human:reviewedTranslations,catalog:{articles:newsTranslations}});
+ return translated.method==='gemini'?translated.value:contentText(value);
 }
 export const editorialText=newsText;
 export function contentText(value) {
