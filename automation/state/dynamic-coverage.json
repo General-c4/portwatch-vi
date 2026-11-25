@@ -1,11 +1,18 @@
 {
   "before": {
+    "pinned": {
+      "total": 1,
+      "translated": 0,
+      "exempt": 0,
+      "missing": 1,
+      "coverage": 0
+    },
     "headlines": {
       "total": 30,
-      "translated": 12,
+      "translated": 26,
       "exempt": 0,
-      "missing": 18,
-      "coverage": 40
+      "missing": 4,
+      "coverage": 86.67
     },
     "changes": {
       "total": 12,
@@ -44,12 +51,19 @@
     }
   },
   "after": {
-    "headlines": {
-      "total": 30,
-      "translated": 29,
+    "pinned": {
+      "total": 1,
+      "translated": 0,
       "exempt": 0,
       "missing": 1,
-      "coverage": 96.67
+      "coverage": 0
+    },
+    "headlines": {
+      "total": 30,
+      "translated": 26,
+      "exempt": 0,
+      "missing": 4,
+      "coverage": 86.67
     },
     "changes": {
       "total": 12,
@@ -88,32 +102,52 @@
     }
   },
   "audit": {
-    "legacyPending": 62,
-    "approvedEntries": 36,
-    "unrelatedEntries": 26
+    "legacyPending": 45,
+    "approvedEntries": 20,
+    "unrelatedEntries": 25
   },
   "stats": {
-    "requests": 6,
-    "translatedFields": 17,
-    "failedFields": 9,
+    "requests": 0,
+    "translatedFields": 0,
+    "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 7892,
-    "outputTokens": 1258,
-    "thinkingTokens": 10746,
-    "errors": [
-      "protected_facts_or_language_invalid",
-      "quota_or_rate_limit"
-    ],
-    "model": "gemini-3.6-flash",
-    "pending": 28,
-    "durationMs": 210850
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "thinkingTokens": 0,
+    "errors": [],
+    "pending": 32,
+    "durationMs": 9
   },
   "missing": [
+    {
+      "id": "pinned:current",
+      "field": "text",
+      "source": "Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5",
+      "field": "title",
+      "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5",
+      "field": "title",
+      "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
+      "reason": "request_or_token_limit"
+    },
     {
       "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
       "field": "title",
       "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
       "reason": "protected_facts_or_language_invalid"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
+      "field": "title",
+      "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",

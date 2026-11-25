@@ -90,6 +90,15 @@ export function newsErrorCode(error){
  if(error?.name==='AbortError'||error?.name==='TimeoutError'||/timeout/i.test(String(error?.message)))return 'timeout';
  return 'network_or_provider';
 }
+export function googleQuotaInfo(error){
+ if(Number(error?.status)!==429)return null;
+ try{
+  const details=JSON.parse(error.message)?.error?.details||[],violations=details.flatMap(d=>Array.isArray(d.violations)?d.violations:[]);
+  const quotas=violations.map(v=>({period:/PerDay|daily/i.test(v.quotaId||'')?'day':/PerMinute/i.test(v.quotaId||'')?'minute':'unknown',unit:/token/i.test(v.quotaMetric||v.quotaId||'')?'tokens':'requests',limit:Number.isFinite(Number(v.quotaValue))?Number(v.quotaValue):null}));
+  const delay=details.find(d=>/RetryInfo$/.test(d['@type']||''))?.retryDelay;
+  return{quotas,retryAfterMs:/^\d+(?:\.\d+)?s$/.test(delay||'')?Math.ceil(parseFloat(delay)*1000):null};
+ }catch{return{quotas:[],retryAfterMs:null};}
+}
 export async function createGeminiNewsClient({apiKey=process.env.GEMINI_API_KEY,model=process.env.GEMINI_MODEL||DEFAULT_GEMINI_MODEL,maxOutputTokens=8192,timeoutMs=45000,thinkingLevel='LOW',systemInstruction=NEWS_SYSTEM_INSTRUCTION}={}){
  if(!apiKey)return null;
  if(!/^gemini-[\w.-]*flash[\w.-]*$/.test(model))throw new Error('invalid_request_or_model');

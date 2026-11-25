@@ -4,7 +4,7 @@ import {initializeNewsState} from '../automation/lib/news-sync.mjs';
 import {syncDynamicEditorial} from '../automation/lib/dynamic-editorial.mjs';
 import {newsLimits} from '../automation/lib/news-sync.mjs';
 import {setContentTranslations,setNewsTranslations,editorialText,contentText} from '../assets/js/content-i18n.js';
-import {prepareNewsRequest} from '../automation/lib/gemini-news.mjs';
+import {prepareNewsRequest,googleQuotaInfo} from '../automation/lib/gemini-news.mjs';
 import {editorialQualityIssue} from '../assets/js/editorial-quality.js';
 const fixture=()=>({news:[{id:'archive',date:'2020-01-01',title:'Never send this archive',body:['Never send this archive body']}],headlines:[{title:'A project reaches 12.5 fps.',link:'https://example.com/headline',date:'2020-01-01',outlet:'Publisher'}],changes:[{date:'2026-11-25',kind:'up',text:'Performance improves to 12.5 fps.'}],efforts:[{id:'alpha',name:'Alpha',tier:'tracked',repo:'dev/alpha',summary:'A project at 12.5 fps.',provenOn:'Small sample games.',highlights:['Rendering works.'],blockers:['Not playable yet.'],target:'GTA VI',gta:{fps:12.5,stability:'often'}},{id:'beta',name:'Beta',tier:'tracked',summary:'Another project runs.',highlights:[],blockers:[]},{id:'gone',tier:'tracked',nuked:{at:'2020-01-01'},summary:'A removed project'}],tools:[{desc:'Unrelated tool'}],candidates:[{description:'Unrelated candidate'}]});
 const ar={'A project reaches 12.5 fps.':'مشروع يصل إلى 12.5 fps.','Performance improves to 12.5 fps.':'يتحسن الأداء إلى 12.5 fps.','A project at 12.5 fps.':'مشروع يعمل بمعدل 12.5 fps.','Small sample games.':'ألعاب تجريبية صغيرة.','Rendering works.':'التصيير الرسومي يعمل.','Not playable yet.':'غير قابل للعب بعد.','Another project runs.':'يعمل مشروع آخر.'};
@@ -27,6 +27,16 @@ test('expanded scope includes current old-dated RSS and every active project, ex
  assert.equal(JSON.stringify(data),original);
  const old=fixture();old.changes=Array.from({length:13},(_,i)=>({date:'2026-11-25',kind:'up',text:String(i)}));
  assert.equal(dynamicEditorialRecords(old).filter(r=>r.section==='changes').length,12);assert(!dynamicEditorialRecords(old).some(r=>r.id===changeRecordId(old.changes[0])));
+});
+test('published pinned text is in scope while author, timestamp and links remain canonical',async()=>{
+ const a=args(),pinned={show:true,name:'4lwayz',updated:'2026-11-25T18:49:02Z',avatar:'assets/img/author.jpg',text:'Not playable yet.'},original=JSON.stringify(pinned),calls=[];
+ const result=await syncDynamicEditorial({...a,pinned,clientFactory:client(calls)});
+ assert.equal(result.catalog.articles['pinned:current'].fields.text.ar,ar[pinned.text]);assert.equal(JSON.stringify(pinned),original);
+ assert(!calls.some(r=>r.prompt.includes('4lwayz')));assert.equal(result.coverage.sections.pinned.coverage,100);
+});
+test('quota diagnostics retain safe limits and retry timing, never server messages or credentials',()=>{
+ const info=googleQuotaInfo({status:429,message:JSON.stringify({error:{message:'SECRET',details:[{violations:[{quotaId:'RequestsPerMinutePerProject',quotaMetric:'requests',quotaValue:'5',secret:'SECRET'}]},{'@type':'type.googleapis.com/google.rpc.RetryInfo',retryDelay:'32.5s'}]}})});
+ assert.deepEqual(info,{quotas:[{period:'minute',unit:'requests',limit:5}],retryAfterMs:32500});assert(!JSON.stringify(info).includes('SECRET'));
 });
 test('backfill validates and batches current dynamic text, preserves numbers/URLs and reaches actual field coverage',async()=>{
  const a=args(),calls=[],original=JSON.stringify(a.data);const result=await syncDynamicEditorial({...a,clientFactory:client(calls)});

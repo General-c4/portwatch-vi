@@ -63,7 +63,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   if(autoSources[entry.key]!==entry.source)delete automatic.interface[entry.key];
  }
  const queued=queueTranslations(inventory,effectiveHuman,automatic,previousQueue);
- const approvedDynamicSources=new Set(dynamicEditorialRecords(data).flatMap(r=>Object.values(r.fields)));
+ const approvedDynamicSources=new Set(dynamicEditorialRecords(data,pinned).flatMap(r=>Object.values(r.fields)));
  const scopedPending=queued.pending.filter(e=>approvedDynamicSources.has(e.source));
  let translated={remaining:queued.pending,completed:0,records:[]};let provider;
  const translationStart=performance.now();
@@ -77,10 +77,10 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  let news,dynamic;
  try{
   news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
-  dynamic=await syncDynamicEditorial({data,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+  dynamic=await syncDynamicEditorial({data,pinned,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
   news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged||=dynamic.stateChanged;news.catalogChanged||=dynamic.catalogChanged;
  }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}
- const resolved=resolvedLegacyReferences(data,{human:human.content,automatic:automatic.content,catalog:news?.catalog||{}});
+ const resolved=resolvedLegacyReferences(data,{human:human.content,automatic:automatic.content,catalog:news?.catalog||{}},pinned);
  translated.remaining=translated.remaining.flatMap(entry=>{const refs=entry.refs.filter(ref=>!resolved.has(`${ref}\0${entry.source}`));return refs.length?[{...entry,refs}]:[];});
  const covered=inventory.filter(item=>typeof effectiveHuman[item.scope]?.[item.key]==='string'||typeof automatic[item.scope]?.[item.key]==='string'||resolved.has(`${item.ref}\0${item.source}`)).length;
  const coverage={total:inventory.length,translated:covered,coverage:Math.round(covered/inventory.length*10000)/100};

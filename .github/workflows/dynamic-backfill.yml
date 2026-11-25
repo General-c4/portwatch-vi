@@ -34,6 +34,7 @@ jobs:
           GEMINI_NEWS_DAILY_REQUESTS: '100'
           GEMINI_NEWS_DAILY_TOKENS: '500000'
           GEMINI_NEWS_MAX_INPUT_BYTES: '30000'
+          GEMINI_EDITORIAL_BATCH_FIELDS: '12'
       - run: node --test tests/*.test.mjs
       - name: Commit validated catalog and durable state
         run: |

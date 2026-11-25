@@ -1,18 +1,18 @@
 import {hash} from './state.mjs';
 import {dynamicEditorialRecords,editorialCoverage,isTechnicalLiteral,scopedTranslation} from '../../assets/js/editorial-scope.js';
 import {protectedTerms} from './translations.mjs';
-import {prepareNewsRequest,parseNewsResponse,validateNewsResponse,createGeminiNewsClient,newsErrorCode,NEWS_SYSTEM_INSTRUCTION} from './gemini-news.mjs';
+import {prepareNewsRequest,parseNewsResponse,validateNewsResponse,createGeminiNewsClient,newsErrorCode,googleQuotaInfo,NEWS_SYSTEM_INSTRUCTION} from './gemini-news.mjs';
 import {newsLimits} from './news-sync.mjs';
 import {editorialQualityIssue} from '../../assets/js/editorial-quality.js';
 const SYSTEM=NEWS_SYSTEM_INSTRUCTION+`\nيشمل العمل عناوين الأخبار وتحديثات المشاريع ووصف أدائها واختباراتها، لا المقالات فقط. راجع الترجمة جملة بجملة، دون حذف أو اختصار أو إضافة ادعاءات. برامج shaders هي برامج التظليل وليست مضللات. Vertex shaders: برامج تظليل الرؤوس. Texture streaming: بث الخامات. Compatibility layer: طبقة توافق. Ray-traced lighting: الإضاءة بتتبع الأشعة. Retail game: النسخة التجارية من اللعبة. DMCA: قانون حقوق المؤلف وإشعارات الإزالة؛ ليس إلقاء الضوء. Vibecoders: المبرمجون بمساعدة الذكاء الاصطناعي. النسب المئوية في تحديثات ترتيب المشاريع درجات تقدّم وليست معدلات إطارات. احتفظ بالتعليقات والقيود والسخرية إن وردت في العنوان. حافظ على نسبة الادعاءات إلى تقرير المشروع ولا تعرضها كتأكيد مستقل. اسم الحساب ليس منصة جديدة: حساب Zettrox يخص GitHub ولا تنسبه إلى منصة اسمها Zettrox. sourceUrls هنا معرّفات مراجع محمية وليست روابط قابلة لإعادة الكتابة؛ أعدها حرفيًا. راجع سلامة الأرقام والمصطلحات والنحو قبل الإخراج.`;
 
-export async function syncDynamicEditorial({data,state,catalog,human={},automatic={},clientFactory=createGeminiNewsClient,limits=newsLimits(),now=new Date().toISOString(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),onProgress=()=>{}}){
+export async function syncDynamicEditorial({data,pinned,state,catalog,human={},automatic={},clientFactory=createGeminiNewsClient,limits=newsLimits(),now=new Date().toISOString(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),onProgress=()=>{},batchFields=Math.max(1,Math.min(20,Number(process.env.GEMINI_EDITORIAL_BATCH_FIELDS)||6)),requestIntervalMs=13000}){
  const stateBefore=hash(state),catalogBefore=hash(catalog),started=performance.now();state=structuredClone(state);catalog=structuredClone(catalog);
  if(state.daily.day!==now.slice(0,10))state.daily={day:now.slice(0,10),requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0};
  state.dynamic??={version:1,pending:{},totals:{requests:0,translatedFields:0,failedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0}};
  const d=state.dynamic,stats={requests:0,translatedFields:0,failedFields:0,cachedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0,errors:[]};
- const before=editorialCoverage(data,{human,automatic,catalog});
- const records=dynamicEditorialRecords(data),tasks=[],active=new Set();
+ const before=editorialCoverage(data,{human,automatic,catalog},pinned);
+ const records=dynamicEditorialRecords(data,pinned),tasks=[],active=new Set();
  const terms=[...protectedTerms(data),'Bungie','Marvis','Marvisak','Rock Paper Shotgun','Unreal Engine','GDK','DXVK','PSO','RAM','GPU','CPU','Arion Kurtaj','Minecraft Preview','Unicorn Overlord','Concept Destruction','The Matrix Awakens','Trackmania','Terraria','Fortnite','Freedoom','Wine','Scarlett','VIctory'];
  // Freeze full hardware identifiers rather than allowing a model to reorder their component words.
  for(const r of records)for(const s of Object.values(r.fields))for(const m of s.matchAll(/(?:Radeon )?RX \d{3,5}(?: XT[X]?)?|(?:GeForce )?RTX \d{3,5}(?: Ti)?|Ryzen \d \d{4,5}[A-Z0-9]*/g))terms.push(m[0]);
@@ -40,16 +40,18 @@ export async function syncDynamicEditorial({data,state,catalog,human={},automati
   request.prompt+='\nEditorial field context (metadata only): '+JSON.stringify(items.map((t,i)=>({index:i,section:t.record.section,field:t.field,priorValidationError:t.pending.lastError})));
   return request;
  };
- let client,stop=false;
+ let client,stop=Date.parse(d.providerBlock?.nextAttemptAt||'')>Date.parse(now),lastRequestAt=0;
+ if(stop)for(const t of tasks)t.pending.lastError=d.providerBlock.code;
  while(tasks.length&&!stop&&stats.requests<limits.maxRequests){
   let batch=[];
-  while(tasks.length&&batch.length<6){const next=tasks[0],candidate=[...batch,next];const req=makeRequest(candidate);if(Buffer.byteLength(SYSTEM+req.prompt)+1024>limits.maxInputBytes){if(!batch.length){next.pending.lastError='input_limit';tasks.shift();continue;}break;}batch.push(tasks.shift());}
+  while(tasks.length&&batch.length<batchFields){const next=tasks[0],candidate=[...batch,next];const req=makeRequest(candidate);if(Buffer.byteLength(SYSTEM+req.prompt)+1024>limits.maxInputBytes){if(!batch.length){next.pending.lastError='input_limit';tasks.shift();continue;}break;}batch.push(tasks.shift());}
   if(!batch.length)continue;
   if(!client){try{client=await clientFactory({maxOutputTokens:limits.maxOutputTokens,thinkingLevel:'MEDIUM',timeoutMs:90000,systemInstruction:SYSTEM});}catch(error){stats.errors.push(newsErrorCode(error));}if(!client){for(const t of batch)t.pending.lastError='provider_unconfigured';break;}}
   stats.model=client.model;
   for(let attempt=0;attempt<2&&batch.length;attempt++){
    const request=makeRequest(batch),reservation=Buffer.byteLength(SYSTEM+request.prompt)+1024+limits.maxOutputTokens;
    if(stats.requests>=limits.maxRequests||state.daily.requests>=limits.dailyRequests||state.daily.accountedTokens+reservation>limits.dailyTokens){for(const t of batch)t.pending.lastError='request_or_token_limit';stop=true;break;}
+   await sleep(Math.max(0,requestIntervalMs-(Date.now()-lastRequestAt)));lastRequestAt=Date.now();
    stats.requests++;d.totals.requests++;state.totals.requests++;state.daily.requests++;state.daily.accountedTokens+=reservation;
    for(const t of batch)t.pending.attempts++;
    let output;
@@ -61,6 +63,10 @@ export async function syncDynamicEditorial({data,state,catalog,human={},automati
     output=parseNewsResponse(request,response.text);
    }catch(error){
     const code=newsErrorCode(error);stats.errors.push(code);for(const t of batch)t.pending.lastError=code;
+    if(code==='quota_or_rate_limit'){
+     const quota=googleQuotaInfo(error);stats.quota=quota;const daily=quota?.quotas.some(q=>q.period==='day');
+     d.providerBlock={code,nextAttemptAt:new Date(Date.parse(now)+Math.round(performance.now()-started)+(daily?3600000:Math.max(60000,quota?.retryAfterMs||60000))).toISOString(),quota};
+    }
     if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model'].includes(code))stop=true;
    }
    const failed=[];
@@ -74,8 +80,9 @@ export async function syncDynamicEditorial({data,state,catalog,human={},automati
      state.cache[hash(t.source)]={source:t.source,ar,model:client.model};delete d.pending[t.key];stats.translatedFields++;d.totals.translatedFields++;
     }catch(error){
      const code=error.safeCode||newsErrorCode(error);t.pending.lastError=code;stats.failedFields++;d.totals.failedFields++;stats.errors.push(code);
-     const delay=['authentication','unsupported_model','invalid_request_or_model'].includes(code)?86400000:code==='quota_or_rate_limit'?3600000:Math.min(86400000,300000*2**Math.min(t.pending.attempts-1,8));
-     t.pending.nextAttemptAt=new Date(Date.parse(now)+delay).toISOString();failed.push(t);
+     const eventTime=Date.parse(now)+Math.round(performance.now()-started);
+     const delay=['authentication','unsupported_model','invalid_request_or_model'].includes(code)?86400000:code==='quota_or_rate_limit'?Math.max(60000,Date.parse(d.providerBlock?.nextAttemptAt||'')-eventTime||60000):Math.min(86400000,300000*2**Math.min(t.pending.attempts-1,8));
+     t.pending.nextAttemptAt=new Date(eventTime+delay).toISOString();failed.push(t);
     }
    }
    batch=failed;onProgress({requests:stats.requests,translatedFields:stats.translatedFields,failedFields:stats.failedFields,remainingInBatch:batch.length});if(stop)break;if(batch.length&&attempt===0&&stats.requests<limits.maxRequests)await sleep(1500);
@@ -83,6 +90,6 @@ export async function syncDynamicEditorial({data,state,catalog,human={},automati
  }
  for(const t of tasks)t.pending.lastError??=stop?(stats.errors.at(-1)||'request_or_token_limit'):stats.requests>=limits.maxRequests?'request_or_token_limit':'not_attempted';
  stats.errors=[...new Set(stats.errors)];stats.pending=Object.keys(d.pending).length;stats.durationMs=Math.round(performance.now()-started);
- const coverage=editorialCoverage(data,{human,automatic,catalog});
+ const coverage=editorialCoverage(data,{human,automatic,catalog},pinned);
  return{state,catalog,stats,before,coverage,stateChanged:stateBefore!==hash(state),catalogChanged:catalogBefore!==hash(catalog)};
 }

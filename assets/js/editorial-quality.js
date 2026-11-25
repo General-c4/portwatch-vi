@@ -8,8 +8,12 @@ export function editorialQualityIssue(source,ar){
  if(/DMCA/.test(source)&&/إلقاء الضوء/.test(text))return 'dmca_terminology';
  if(/\ba traitor\b/i.test(source)&&!/(?:خائن|خيانة)/.test(text))return 'omitted_qualification';
  if(/vibecoders?/i.test(source)&&!/(?:ذكاء الاصطناعي|الذكاء الاصطناعي|Vibe)/i.test(text))return 'vibecoding_terminology';
- if(/ينطوح|(?:إلى|من)\s*fps/i.test(text))return 'invalid_fluency';
+ if(/ينطوح|(?:إلى|من)\s*fps|\bAI-(?:\s|[،.])/i.test(text))return 'invalid_fluency';
+ if(/reach gameplay/i.test(source)&&/قابلية|قابليتها|قابل للعب/.test(text))return 'milestone_meaning_changed';
+ if(/\bports?\b/i.test(source)&&!/\b(?:native|original)\b/i.test(source)&&/نسخة أصلية|نسخ أصلية|النسخة الأصلية/.test(text))return 'port_classification_changed';
  if(source.includes('Arion Kurtaj')&&!ar.includes('Arion Kurtaj'))return 'identifier_changed';
+ if(/\bprobably\b/i.test(source)&&!/(?:ربما|الأرجح|غالبا|يرجح|قد)/.test(text))return 'certainty_changed';
+ if(/\bhaven't\b/i.test(source)&&!/(?:لم|ليس|لا|غير|دون)/.test(text))return 'negation_changed';
  const account=/the ([A-Za-z0-9_.-]+) account/.exec(source);if(account&&text.includes(`على ${account[1]}`))return 'invented_platform';
  if(/rising to [\d.]+%/.test(source)&&/(?:ارتفع|يرتفع|ليرتفع) الأداء/.test(text))return 'score_meaning_changed';
  return null;
