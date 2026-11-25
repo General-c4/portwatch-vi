@@ -2,7 +2,7 @@
 // Build news pages with scripts/preview-build.mjs, serve _site, and set PW_BASE_URL.
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
-import {contentText,newsText,setContentTranslations,setNewsTranslations} from '../assets/js/content-i18n.js';
+import {contentText,newsText,editorialText,setContentTranslations,setNewsTranslations} from '../assets/js/content-i18n.js';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 const base=process.env.PW_BASE_URL || 'http://127.0.0.1:8080/';
 const baseline=process.env.PW_BASELINE_URL;
@@ -51,7 +51,7 @@ try {
   if(!english)english=rankings;else assert.deepEqual(rankings,english,`${lang}: scores/rankings`);
   if(lang==='ar'){
    const firstId=(await page.locator('.effort').first().getAttribute('id')).replace(/^effort-/,'');
-   assert.equal(await page.locator('.e-summary').first().textContent(),contentText(data.efforts.find(e=>e.id===firstId).summary));
+   assert.equal(await page.locator('.e-summary').first().textContent(),editorialText(data.efforts.find(e=>e.id===firstId).summary,`project:${firstId}`,'summary'));
   }
   await capture(page,`${out}/screenshots/after-${lang}-${width}.png`);
   const filters=[];

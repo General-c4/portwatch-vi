@@ -7,7 +7,9 @@ import {translationInventory,queueTranslations,translatePending,protectedTerms,d
 import {validateTracker,validatePinned,newerSnapshot} from '../assets/js/tracker-source.js';
 import {apiAnythingRead} from './lib/api-anything.mjs';
 import {createProvider} from './lib/provider.mjs';
-import {syncNews} from './lib/news-sync.mjs';
+import {syncNews,newsLimits} from './lib/news-sync.mjs';
+import {syncDynamicEditorial} from './lib/dynamic-editorial.mjs';
+import {dynamicEditorialRecords,resolvedLegacyReferences} from '../assets/js/editorial-scope.js';
 
 export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,providerFactory=createProvider,newsClientFactory,root='.',maxTranslations=40}={}){
  const started=performance.now(),now=new Date().toISOString();
@@ -61,19 +63,28 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   if(autoSources[entry.key]!==entry.source)delete automatic.interface[entry.key];
  }
  const queued=queueTranslations(inventory,effectiveHuman,automatic,previousQueue);
+ const approvedDynamicSources=new Set(dynamicEditorialRecords(data).flatMap(r=>Object.values(r.fields)));
+ const scopedPending=queued.pending.filter(e=>approvedDynamicSources.has(e.source));
  let translated={remaining:queued.pending,completed:0,records:[]};let provider;
  const translationStart=performance.now();
  try{
   provider=providerFactory();
-  translated=await translatePending(queued.pending,{human:effectiveHuman,automatic,translate:provider.translate,terms:protectedTerms(data),limit:maxTranslations,provider:provider.name,publishMachine:process.env.PW_TRANSLATION_REMOTE_APPROVED==='1'&&provider.name==='libretranslate-configured'});
+  translated=await translatePending(queued.pending.filter(e=>!approvedDynamicSources.has(e.source)),{human:effectiveHuman,automatic,translate:provider.translate,terms:protectedTerms(data),limit:maxTranslations,provider:provider.name,publishMachine:process.env.PW_TRANSLATION_REMOTE_APPROVED==='1'&&provider.name==='libretranslate-configured'});
+  translated.remaining.push(...scopedPending);
  }catch(error){errors.push({at:now,source:'translation provider',message:String(error.message).slice(0,200)});}
  finally{provider?.close();}
  const translationMs=Math.round(performance.now()-translationStart);
- let news;
+ let news,dynamic;
  try{
-  news=await syncNews({before,data,human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+  dynamic=await syncDynamicEditorial({data,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+  news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged||=dynamic.stateChanged;news.catalogChanged||=dynamic.catalogChanged;
  }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}
- const coverage=queueTranslations(inventory,effectiveHuman,automatic,translated.remaining);
+ const resolved=resolvedLegacyReferences(data,{human:human.content,automatic:automatic.content,catalog:news?.catalog||{}});
+ translated.remaining=translated.remaining.flatMap(entry=>{const refs=entry.refs.filter(ref=>!resolved.has(`${ref}\0${entry.source}`));return refs.length?[{...entry,refs}]:[];});
+ const covered=inventory.filter(item=>typeof effectiveHuman[item.scope]?.[item.key]==='string'||typeof automatic[item.scope]?.[item.key]==='string'||resolved.has(`${item.ref}\0${item.source}`)).length;
+ const coverage={total:inventory.length,translated:covered,coverage:Math.round(covered/inventory.length*10000)/100};
+ if(dynamic)await atomicJSON(file('.sync/dynamic-coverage.json'),{before:dynamic.before.sections,after:dynamic.coverage.sections,missing:dynamic.coverage.missing.map(({id,field,source})=>({id,field,source,reason:dynamic.state.dynamic.pending[JSON.stringify([id,field])]?.lastError||'not_attempted'})),stats:dynamic.stats});
  const dataChanged=hash(before)!==hash(data)||hash(oldPinned)!==hash(pinned);
  const changed=dataChanged||hash(automatic)!==originalAuto||hash(previousQueue)!==hash(translated.remaining)||upstreamChanged||news?.stateChanged||news?.catalogChanged;
  const delta=recordDiff(before,data);
@@ -85,6 +96,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   lastSuccessfulSyncTime:now,lastUpstreamCheckTime:now,authoritativeSource:data===live?'official-live':'repository',upstreamUpdated:data.updated,
   records:delta,translation:{coverage:coverage.coverage,translated:coverage.translated,total:coverage.total,pending:translated.remaining.length,completed:translated.completed,provider:provider?.name||'unavailable'},
   newsTranslation:news?.stats||{errors:['news_pipeline_unavailable'],requests:0},
+  dynamicTranslation:dynamic?{...dynamic.stats,coverage:dynamic.coverage.sections}:null,
   latency:{sourceCheckMs:Math.round(translationStart-started),dataSyncMs:null,translationMs,deploymentMs:null,totalMs:Math.round(performance.now()-started)},
   apiAnything:{ok:api.ok,skipped:api.skipped||false,reason:api.reason||null,changes:api.changes||null,ms:api.ms||null,repaired:api.repaired||false},
   recentErrors:[...(state.recentErrors||[]),...errors].slice(-20),retryAttempts:[...(state.retryAttempts||[]),...retryAttempts].slice(-20),

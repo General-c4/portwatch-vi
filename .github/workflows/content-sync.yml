@@ -48,8 +48,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
           GEMINI_NEWS_MAX_REQUESTS: '3'
-          GEMINI_NEWS_DAILY_REQUESTS: '20'
-          GEMINI_NEWS_DAILY_TOKENS: '100000'
+          GEMINI_NEWS_DAILY_REQUESTS: '100'
+          GEMINI_NEWS_DAILY_TOKENS: '500000'
       - name: Regression tests
         run: node --test tests/*.test.mjs
       - name: Commit only changed content/state

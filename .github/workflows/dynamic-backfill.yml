@@ -1,0 +1,58 @@
+name: Backfill approved dynamic Arabic content
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: mirror-writes
+  cancel-in-progress: false
+jobs:
+  backfill:
+    if: github.repository == 'General-c4/portwatch-vi'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/arabic-rtl-localization
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --prefix automation --ignore-scripts --no-audit --no-fund
+      - name: Refresh the authoritative snapshot without unrelated translations
+        run: node automation/content-sync.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEMINI_NEWS_MAX_REQUESTS: '0'
+      - id: translate
+        run: node automation/dynamic-backfill.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
+          GEMINI_NEWS_MAX_REQUESTS: '10'
+          GEMINI_NEWS_DAILY_REQUESTS: '100'
+          GEMINI_NEWS_DAILY_TOKENS: '500000'
+          GEMINI_NEWS_MAX_INPUT_BYTES: '30000'
+      - run: node --test tests/*.test.mjs
+      - name: Commit validated catalog and durable state
+        run: |
+          git config user.name 'portwatch-sync[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data assets/i18n/news/ar.json automation/state
+          if ! git diff --cached --quiet; then
+            git commit -m 'i18n: backfill approved dynamic editorial content'
+            git push origin HEAD:feat/arabic-rtl-localization
+          fi
+      - if: steps.translate.outputs.publish == 'true'
+        run: gh workflow run arabic-preview.yml --repo General-c4/portwatch-vi --ref feat/arabic-rtl-localization
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Require complete current dynamic coverage
+        run: node -e "const r=require('./.sync/dynamic-coverage.json');if(r.missing.length)throw Error(r.missing.length+' eligible fields remain queued; see artifact')"
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dynamic-translation-coverage
+          path: .sync/dynamic-coverage.json
+          retention-days: 7

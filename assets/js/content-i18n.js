@@ -33,6 +33,7 @@ export function newsText(value,id,field){
  const entry=article?.fields&&Object.hasOwn(article.fields,field)?article.fields[field]:null;
  return entry?.source===value&&typeof entry.ar==='string'&&entry.ar.trim()?entry.ar:contentText(value);
 }
+export const editorialText=newsText;
 export function contentText(value) {
   if (typeof value !== 'string') return value;
   if (Object.hasOwn(translations, value) && typeof translations[value] === 'string') return translations[value];

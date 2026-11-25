@@ -3,7 +3,8 @@ import { getLiveViewers, trackView } from './backend.js';
 import { coverHtml, articlePath } from './news-shared.js';
 import { fillPinned } from './pinned.js';
 import { initI18n, t, tr, locale } from './i18n.js';
-import { contentText, newsText, setNewsReloadHandler } from './content-i18n.js';
+import { contentText, newsText, editorialText, setNewsReloadHandler } from './content-i18n.js';
+import {changeRecordId} from './editorial-scope.js';
 import {loadTracker,loadPinned,startLiveUpdates,restoreLiveView} from './live-data.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -277,7 +278,7 @@ function drawMarkers(ranked, leader) {
       // Private builds float, with a lock badge; the tooltip names what they build on.
       const tip = priv
         ? `${msLabel(it.r.reached)} · ${t('private.markerTip', { names: (e.basedOn || []).map(effortName).join(', ') || '-' })}`
-        : `${msLabel(it.r.reached)} · ${contentText(e.approach) || ''}`;
+        : `${msLabel(it.r.reached)} · ${editorialText(e.approach,`project:${e.id}`,'approach') || ''}`;
       return `<a class="marker ${e === leader ? 'is-leader' : ''}${priv ? ' is-private' : ''}" href="#effort-${esc(e.id)}" style="left:${it.a}px;bottom:${H - avatarY - 32}px;--i:${i}"
                 data-tip-title="${esc(e.name)} · ${pct(it.r.score)}%" data-tip="${esc(tip)}">
                 <span class="mk-name">${esc(e.name)} · ${pct(it.r.score)}%</span>
@@ -345,7 +346,7 @@ function renderChanges(changes) {
   const items = [...changes].reverse().slice(0, 12);
   if (!items.length) { $('#changes').hidden = true; return; }
   const cls = { up: 'ck-up', down: 'ck-down', flag: 'ck-flag', new: 'ck-new', removed: 'ck-down', claim: 'ck-flag' };
-  list.innerHTML = items.map((c) => `<li><span class="ck ${cls[c.kind] || ''}"></span><time>${esc(new Date(`${c.date}T12:00:00Z`).toLocaleDateString(locale(), { day: 'numeric', month: 'short' }))}</time><span>${esc(contentText(c.text))}</span></li>`).join('');
+  list.innerHTML = items.map((c) => `<li><span class="ck ${cls[c.kind] || ''}"></span><time>${esc(new Date(`${c.date}T12:00:00Z`).toLocaleDateString(locale(), { day: 'numeric', month: 'short' }))}</time><span>${esc(editorialText(c.text,changeRecordId(c),'text'))}</span></li>`).join('');
 }
 
 /* ---------- Race ---------- */
@@ -407,18 +408,18 @@ function privateCard(e) {
       ${src ? `<img class="e-avatar" src="${esc(src)}" alt="" loading="lazy" data-hide-on-error>` : `<span class="pb-avatar" aria-hidden="true">${esc(e.name.slice(0, 2))}</span>`}
       <div class="e-title">
         <h3>${url ? `<a href="${esc(url)}">${esc(e.name)}</a>` : esc(e.name)}</h3>
-        <p class="e-by" dir="auto">${esc(contentText(e.byline || ''))}</p>
+        <p class="e-by" dir="auto">${esc(editorialText(e.byline || '',`project:${e.id}`,'byline'))}</p>
       </div>
       <div class="pb-stage"><b>${pct(e._s.score)}<span>%</span></b><small>${esc(t('private.notRanked', { stage: msLabel(e._s.reached) }))}</small></div>
     </div>
     <div class="tags">
       ${bases ? `<span class="tag tag-based">${t('private.basedOn', { names: bases })}</span>` : ''}
       ${gpuTags(e)}
-      ${e.evidence ? `<span class="tag tag-self" title="${esc(t('private.evidenceTitle'))}">${esc(t('private.evidence', { x: contentText(e.evidence) }))}</span>` : ''}
+      ${e.evidence ? `<span class="tag tag-self" title="${esc(t('private.evidenceTitle'))}">${esc(t('private.evidence', { x: editorialText(e.evidence,`project:${e.id}`,'evidence') }))}</span>` : ''}
       <span class="tag tag-stale">${esc(t('private.noCode'))}</span>
     </div>
-    ${e.proof?.url ? `<a class="tag tag-proof" href="${esc(safeHttp(e.proof.url))}" target="_blank" rel="noopener nofollow">${esc(contentText(e.proof.label || t('effort.watch')))} ↗</a>` : ''}
-    <p class="e-summary">${esc(contentText(e.summary))}</p>
+    ${e.proof?.url ? `<a class="tag tag-proof" href="${esc(safeHttp(e.proof.url))}" target="_blank" rel="noopener nofollow">${esc(editorialText(e.proof.label || t('effort.watch'),`project:${e.id}`,'proof.label'))} ↗</a>` : ''}
+    <p class="e-summary">${esc(editorialText(e.summary,`project:${e.id}`,'summary'))}</p>
     <div class="pb-ladder">${ladderCells(e)}</div>
     ${url ? `<a class="pb-more" href="${esc(url)}">${esc(t('private.article'))} ${locale() === 'ar' ? '←' : '→'}</a>` : ''}
   </li>`;
@@ -518,8 +519,8 @@ function effortCard(e, rank, open, overallRank = null) {
   const ticks = MILESTONES.slice(1, -1).map((m) => `<i style="left:${m.at}%"></i>`).join('');
   const stale = st.pushedAt && daysSince(st.pushedAt) > 3;
   const tags = [
-    e.approach && `<span class="tag">${esc(contentText(e.approach))}</span>`,
-    e.target && `<span class="tag ${isGtaSpecific(e) ? 'tag-gta' : ''}">${esc(contentText(e.target))}</span>`,
+    e.approach && `<span class="tag">${esc(editorialText(e.approach,`project:${e.id}`,'approach'))}</span>`,
+    e.target && `<span class="tag ${isGtaSpecific(e) ? 'tag-gta' : ''}">${esc(editorialText(e.target,`project:${e.id}`,'target'))}</span>`,
     gpuTags(e),
     e.verification === 'reproduced'
       ? `<span class="tag tag-ok">${esc(t('effort.reproduced'))}</span>`
@@ -527,18 +528,18 @@ function effortCard(e, rank, open, overallRank = null) {
       : e.verification === 'portwatch'
         ? `<span class="tag tag-ok" title="${esc(t('effort.verifiedTitle'))}">${esc(t('effort.verified'))}</span>`
         : `<span class="tag tag-self" title="${esc(t('effort.selfTitle'))}">${esc(t('effort.self'))}</span>`,
-    e.provenOn && ladderValue(e.groundwork?.proven) > 0 && `<span class="tag tag-proven" title="${esc(t('effort.runsTitle'))}">${esc(t('effort.runs', { x: e.provenOn }))}</span>`,
+    e.provenOn && ladderValue(e.groundwork?.proven) > 0 && `<span class="tag tag-proven" title="${esc(t('effort.runsTitle'))}">${esc(t('effort.runs', { x: editorialText(e.provenOn,`project:${e.id}`,'provenOn') }))}</span>`,
     stale && `<span class="tag tag-stale">${esc(t('effort.quiet', { n: Math.floor(daysSince(st.pushedAt)) }))}</span>`,
     st.missing && `<span class="tag tag-stale">${esc(t('effort.gone'))}</span>`,
     st.dmca && `<a class="tag tag-stale" href="${esc(safeHttp(st.dmca.url))}" target="_blank" rel="noopener" title="${esc(t('effort.dmcaTitle'))}">${esc(t('effort.dmca', { date: st.dmca.date || '' }))}</a>`,
     // A recording that backs the entry up (owner-added), opened off-site.
-    e.proof?.url && `<a class="tag tag-proof" href="${esc(safeHttp(e.proof.url))}" target="_blank" rel="noopener nofollow" title="${esc(e.proof.url)}">${esc(contentText(e.proof.label || t('effort.watch')))} ↗</a>`,
+    e.proof?.url && `<a class="tag tag-proof" href="${esc(safeHttp(e.proof.url))}" target="_blank" rel="noopener nofollow" title="${esc(e.proof.url)}">${esc(editorialText(e.proof.label || t('effort.watch'),`project:${e.id}`,'proof.label'))} ↗</a>`,
   ].filter(Boolean).join('');
   const gwRows = GROUNDWORK.map((g) => {
     const v = Math.max(0, Math.min(1, +(e.groundwork?.[g.key]) || 0));
     return `<div class="gw-row" title="${esc(gwDesc(g))}"><span>${esc(gwLabel(g))}</span><b>${Math.round(v * 100)}%</b><div class="gw-bar"><i data-width="${v * 100}"></i></div></div>`;
   }).join('');
-  const claims = (e.claims || []).slice(0, 2).map((c) => `<div class="claim"><b>${esc(t('effort.claim'))}</b> “${esc(contentText(c.text))}”, ${esc(t('effort.mayMean'))} <em>${esc(claimLabel(c.milestone))}</em>. ${esc(t('effort.awaiting'))}</div>`).join('');
+  const claims = (e.claims || []).slice(0, 2).map((c,i) => `<div class="claim"><b>${esc(t('effort.claim'))}</b> “${esc(editorialText(c.text,`project:${e.id}`,`claims.${i}.text`))}”, ${esc(t('effort.mayMean'))} <em>${esc(claimLabel(c.milestone))}</em>. ${esc(t('effort.awaiting'))}</div>`).join('');
   const src = effortAvatar(e);
   const url = effortUrl(e);
   const external = hasRepo(e) ? ' target="_blank" rel="noopener"' : '';
@@ -546,17 +547,17 @@ function effortCard(e, rank, open, overallRank = null) {
   <li class="effort ${rank && rank <= 3 ? 'is-top' : ''}${e.nuked ? ' is-nuked' : ''}" id="effort-${esc(e.id)}">
     <div class="e-rank">${e.nuked ? `<span class="nuke-rank" title="${esc(t('effort.nukedTitle', { date: e.nuked.at || '' }))}">${ICON.nuke}</span>` : rank}${overallRank ? `<small class="e-rank-overall" title="${esc(t('race.overallTitle'))}">${esc(t('race.overall', { n: overallRank }))}</small>` : ''}</div>
     <div class="e-main">
-      ${e.nuked ? `<div class="nuke-banner" title="${esc(t('effort.nukedTitle', { date: e.nuked.at || '' }))}">${ICON.nuke}<b>${esc(t('effort.nuked'))}</b><span>${esc(contentText(e.nuked.note || ''))}</span></div>` : ''}
+      ${e.nuked ? `<div class="nuke-banner" title="${esc(t('effort.nukedTitle', { date: e.nuked.at || '' }))}">${ICON.nuke}<b>${esc(t('effort.nuked'))}</b><span>${esc(editorialText(e.nuked.note || '',`project:${e.id}`,'nuked.note'))}</span></div>` : ''}
       <div class="e-top">
         ${src ? `<img class="e-avatar" src="${esc(src)}" alt="" loading="lazy" data-hide-on-error>` : ''}
         <div class="e-title">
           <h3>${url ? `<a href="${esc(url)}"${external}>${esc(e.name)}</a>` : esc(e.name)}</h3>
-          <p class="e-by" dir="auto">${hasRepo(e) ? `${esc(e.repo)}${e.branch && !['main', 'master'].includes(e.branch) ? ` · ${esc(t('effort.branch', { b: e.branch }))}` : ''}` : esc(contentText(e.byline || ''))}</p>
+          <p class="e-by" dir="auto">${hasRepo(e) ? `${esc(e.repo)}${e.branch && !['main', 'master'].includes(e.branch) ? ` · ${esc(t('effort.branch', { b: e.branch }))}` : ''}` : esc(editorialText(e.byline || '',`project:${e.id}`,'byline'))}</p>
         </div>
         <div class="e-score"><b>${pct(s.score)}<span>%</span></b><small>${esc(msLabel(s.reached))}</small></div>
       </div>
       <div class="tags">${tags}</div>
-      <p class="e-summary">${esc(contentText(e.summary))}</p>
+      <p class="e-summary">${esc(editorialText(e.summary,`project:${e.id}`,'summary'))}</p>
       ${onThisCode(e, kids)}
       <div class="bar${pins ? ' has-pins' : ''}"${pins?.maxLevel ? ` style="margin-top:${50 + pins.maxLevel * 46}px"` : ''} aria-label="${esc(t('effort.progressLabel', { name: e.name, n: pct(s.score) }))}">
         ${pins ? pins.html : ''}
@@ -568,11 +569,11 @@ function effortCard(e, rank, open, overallRank = null) {
         ${e.groundwork ? `<div class="gw">
           <h4>${esc(t('effort.gwBreakdown'))}</h4>
           ${gwRows}
-          ${e.provenOn ? `<p class="gw-proven">${esc(t('effort.provenOn', { x: e.provenOn }))}</p>` : ''}
+          ${e.provenOn ? `<p class="gw-proven">${esc(t('effort.provenOn', { x: editorialText(e.provenOn,`project:${e.id}`,'provenOn') }))}</p>` : ''}
         </div>` : ''}
         <div class="notes">
-          <div class="works"><h4>${esc(t('effort.works'))}</h4><ul>${(e.highlights || []).map((h) => `<li>${esc(contentText(h))}</li>`).join('')}</ul></div>
-          <div class="blocks"><h4>${esc(t('effort.blocking'))}</h4><ul>${(e.blockers || []).map((h) => `<li>${esc(contentText(h))}</li>`).join('')}</ul></div>
+          <div class="works"><h4>${esc(t('effort.works'))}</h4><ul>${(e.highlights || []).map((h,i) => `<li>${esc(editorialText(h,`project:${e.id}`,`highlights.${i}`))}</li>`).join('')}</ul></div>
+          <div class="blocks"><h4>${esc(t('effort.blocking'))}</h4><ul>${(e.blockers || []).map((h,i) => `<li>${esc(editorialText(h,`project:${e.id}`,`blockers.${i}`))}</li>`).join('')}</ul></div>
         </div>
       </div>
       <div class="e-foot">
@@ -600,8 +601,8 @@ function renderWatchlist(data) {
     <div class="w-row w-head" role="row">${head}</div>` +
     rows.map((e) => `
     <div class="w-row" role="row" id="effort-${esc(e.id)}">
-      <div class="w-name"><a href="${esc(repoUrl(e.repo, e.branch))}" target="_blank" rel="noopener">${esc(e.name)}</a><p>${esc(contentText(e.summary))}</p></div>
-      <span class="w-muted">${esc(contentText(e.approach))}${e.target && /gta|ps5/i.test(e.target) ? ` · ${esc(contentText(e.target))}` : ''}${e.gpu?.length ? `<span class="w-gpu">${gpuTags(e)}</span>` : ''}</span>
+      <div class="w-name"><a href="${esc(repoUrl(e.repo, e.branch))}" target="_blank" rel="noopener">${esc(e.name)}</a><p>${esc(editorialText(e.summary,`project:${e.id}`,'summary'))}</p></div>
+      <span class="w-muted">${esc(editorialText(e.approach,`project:${e.id}`,'approach'))}${e.target && /gta|ps5/i.test(e.target) ? ` · ${esc(editorialText(e.target,`project:${e.id}`,'target'))}` : ''}${e.gpu?.length ? `<span class="w-gpu">${gpuTags(e)}</span>` : ''}</span>
       <div class="w-bar"><div class="bar-track"><div class="bar-fill" data-width="${e._s.score}"></div></div><b>${pct(e._s.score)}%</b></div>
       <span class="w-muted">★ ${fmtK(e.stats?.stars)}</span>
       <span class="w-muted">${esc(ago(e.stats?.pushedAt))}</span>
