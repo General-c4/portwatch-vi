@@ -62,7 +62,7 @@ Manual operation: `gh workflow run content-sync.yml --ref feat/arabic-rtl-locali
 
 ## Verification evidence
 
-- 17 Node tests passed: conditional 304, rate limits, network timeout, invalid JSON, source rejection, exact-hash queues, protected facts, provider failure, locks/restarts, worker deduplication, real Git conflict, transactional content synchronization and deployment/CDN failure handling.
+- 18 Node tests passed: conditional 304, rate limits, network timeout, invalid JSON, source rejection, exact-hash queues, new static dashboard labels, protected facts, provider failure, locks/restarts, worker deduplication, real Git conflict, transactional content synchronization and deployment/CDN failure handling.
 - Real source browser gate passed Arabic/English at 1920, 768, 390 and 360 pixel widths, including filters, sort, dialogs, direction, JavaScript errors and overflow.
 - Browser fixture exercised new/changed/deleted remote records, new news, English fallback, state preservation and rejection of a corrupt next response. Measured detection plus reload: 1,083 ms with a deliberately shortened 1,000 ms test poll; production remains 60,000 ms. This is not a production 1-second claim.
 - Real content cycle measured source check 1,060 ms, data synchronization 1,104 ms, translation/draft work 23,734 ms, total 24,804 ms. These are execution durations, not scheduler wait guarantees. Deployment duration is recorded separately in the deployment status artifact.

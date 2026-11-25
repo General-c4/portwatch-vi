@@ -1,5 +1,14 @@
 import {contentInventory} from '../../scripts/lib/content-coverage.mjs';
 import {hash} from './state.mjs';
+export function dashboardSources(html=''){
+ // Inventory static UI only. Never execute dashboard code or inspect private user data.
+ const decode=s=>s.replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&(?:amp|lt|gt|quot|apos|nbsp);/g,m=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&nbsp;':' '})[m]).replace(/\s+/g,' ').trim();
+ const clean=html.replace(/<!--[^]*?-->/g,'').replace(/<(script|style|textarea)\b[^>]*>[^]*?<\/\1\s*>/gi,'');
+ const values=[];
+ for(const tag of clean.match(/<[^>]+>/g)||[])for(const match of tag.matchAll(/\b(?:placeholder|aria-label)\s*=\s*(["'])(.*?)\1/gi))values.push(decode(match[2]));
+ for(const match of clean.matchAll(/>([^<>]+)</g))values.push(decode(match[1]));
+ return [...new Set(values.filter(v=>/[A-Za-z]{2}/.test(v)&&!/^https?:/.test(v)))];
+}
 export function translationInventory(data,pinned,english={},dashboard={}){
  const result=contentInventory(data).map(({path,source})=>{
   const [section,index,...rest]=path.split('.'),record=data[section]?.[Number(index)];

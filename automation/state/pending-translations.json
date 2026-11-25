@@ -1,15 +1,67 @@
 [
   {
-    "id": "804c0804f28d24bbc60f9cce6745788255f6e1e952aed0d804ad1df9174e34ad",
-    "sourceHash": "68e8da676162f50d95abb5bedeb06fc55e09734bec8c0d33301767f9530e73d9",
-    "scope": "content",
-    "key": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
-    "source": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
+    "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
+    "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
+    "scope": "dashboard",
+    "key": "VI",
+    "source": "VI",
     "refs": [
-      "efforts:dexnom.highlights.0"
+      "dashboard.dc7b94e12cff"
     ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "48c495dab8672d3377a6f61b79f788760d44cd5f7da0f88ca7f8d11f8502a5f2",
+    "sourceHash": "536fe4600f95bc3718ba7e824f979ecd061afd34a0ffbfb7bfefaaa3b967bcd5",
+    "scope": "dashboard",
+    "key": "4lwayz",
+    "source": "4lwayz",
+    "refs": [
+      "dashboard.536fe4600f95"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "75df85235b9e3758b1bccb5dc9b2c2e4fc72fb795c0647e068ec715d70fc7068",
+    "sourceHash": "4f5f737c1e4ced6eaab61ff2b330b6e0cbf735556691029516fae2975b923c6a",
+    "scope": "dashboard",
+    "key": "PortWatch",
+    "source": "PortWatch",
+    "refs": [
+      "dashboard.4f5f737c1e4c"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8770dd31532ebf7a82a1d1c73f8081d6650b13d8b8248c64ee51f7f2e7c953d4",
+    "sourceHash": "cf0922a651ba1545bd575a6965e39304eeadc3a932125fcd9f9664a594446784",
+    "scope": "dashboard",
+    "key": "github_pat_…",
+    "source": "github_pat_…",
+    "refs": [
+      "dashboard.cf0922a651ba"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
+    "sourceHash": "55ce932f5d6e4506fe43427334e5f3e52b4fdb2133cde39464ad6b2e6a1fda16",
+    "scope": "dashboard",
+    "key": "4lwayz/portwatch-vi",
+    "source": "4lwayz/portwatch-vi",
+    "refs": [
+      "dashboard.55ce932f5d6e"
+    ],
+    "attempts": 0,
+    "lastError": null,
     "reviewRequired": false
   },
   {
@@ -39,19 +91,6 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "اختبار على بطاقة واحدة من طراز AMD فقط؛ لم يستنسخها آخرون بعد"
-  },
-  {
-    "id": "7bd60cfb54896139b542bf6063eb2b0406612f71385c0209cc91c2bdc5c410c6",
-    "sourceHash": "27f36cac482ef57ec34c5044e0d1f7e6689afccba8ccd2cffffb67e1abcc74b6",
-    "scope": "content",
-    "key": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
-    "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
-    "refs": [
-      "headlines:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp.title"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
   },
   {
     "id": "ccca50e0dd2c02c1657c64b490dfa43edb5a0ae292494a5b73e0a0f8a212903b",
@@ -124,6 +163,176 @@
     "draft": "مثل و إعادة تصفيف موقعي الجديد على X: https://x.com/lithuaniangroyp/status/2125617475157139690"
   },
   {
+    "id": "574360da0b0a0dcc4fa82005437ebb0a6ce9f5c00ab33d73fa75c493fd4e1817",
+    "sourceHash": "a5e15f05c8be0095fa3dec93467b406f04d9b1c39d1560c018ffbbf54e8bbb0f",
+    "scope": "content",
+    "key": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
+    "source": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
+    "refs": [
+      "candidates:ka1qux/BRVIctory-ka1qux.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "ويدير عنواناً من طراز Xbox Series محلياً في Windows: طبقة توافقية، وشكل VIctory و victory-fork، وطور وقاس على طراز AMD Radeon RX 7800 XT."
+  },
+  {
+    "id": "804c0804f28d24bbc60f9cce6745788255f6e1e952aed0d804ad1df9174e34ad",
+    "sourceHash": "68e8da676162f50d95abb5bedeb06fc55e09734bec8c0d33301767f9530e73d9",
+    "scope": "content",
+    "key": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
+    "source": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
+    "refs": [
+      "efforts:dexnom.highlights.0"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "7bd60cfb54896139b542bf6063eb2b0406612f71385c0209cc91c2bdc5c410c6",
+    "sourceHash": "27f36cac482ef57ec34c5044e0d1f7e6689afccba8ccd2cffffb67e1abcc74b6",
+    "scope": "content",
+    "key": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
+    "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
+    "refs": [
+      "headlines:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp.title"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "60cf4999b993e71f86883c1fb0d510c0968eb3e92ab315ae83eec5330b939d87",
+    "sourceHash": "3c614c7a1f82a557047a6702ca5fb55b269ea6abe8cd95e37dd97024bbbf70fd",
+    "scope": "content",
+    "key": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
+    "source": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
+    "refs": [
+      "candidates:voidopcode/vilocity.description"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "850cb188b35645cc96815b48400a78d74a84a801f4d9daa52bf80f740e31b6fd",
+    "sourceHash": "ef915b7033c3abbc200d2ac89f36006708339e18ed71bb06935ea69d232d5f9a",
+    "scope": "content",
+    "key": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
+    "source": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
+    "refs": [
+      "efforts:dexnom.highlights.1"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "13362a5e92e2009ac21f17151e82f6da1591cb0b4bf28d205099374f88af67f2",
+    "sourceHash": "f1675eea9cf96c9c4d49082b8f78184f03d18873c358dd6abea1174f9a5e192c",
+    "scope": "content",
+    "key": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
+    "source": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
+    "refs": [
+      "candidates:Wertrex/Americas.description"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "eb8a5c5de0a853f7f2cfa6507059c9b4ba1d5500d21a0aff37c1b06558822431",
+    "sourceHash": "43e5abc1c0b878ec502900479a5dc5f2a257092bd4eaf4a8e27efb22afb5f81d",
+    "scope": "content",
+    "key": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
+    "source": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5.title"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "67db332e461717eb6ce3ee321545273dc384df1fe029f6c7132b1e2ddc4e885a",
+    "sourceHash": "15212b81e3ce48a9d35744534bd91a0c8fd2f283a0d96f82b65f789382f3bc55",
+    "scope": "content",
+    "key": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
+    "source": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5.title"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ4QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "451d747d46a685397feb0170644e1c239d61c434190a5937e80c68073b56051b",
+    "sourceHash": "4a54e355f75fa3390f2dc0d1eaec11120d63d15d76f93f109be8f24b24a47279",
+    "scope": "content",
+    "key": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
+    "source": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVXBSdGh4bFZTS0ptMG5kd0Y4UVdrb1luR3RuWnhVU0xFZXFYSmNTd3VlNlNKYnZad3h2cG5nVm94VldTQ0dYRjhqT01wSFpxOEltUG5KQzR2QUlwaTRRcUVMOExjY0FGS2x0bmk1ekdrbERLUHdoWTExQ0I5cWZGTUE5ZWtrY3JxanlDVWk0RFM2SDVCeVJuYnBCbTRySUh0RDVmYXE4Ukxua2lUakRMcjBpZ25lTXNkaHhnZXJNQzNvTjhValFvQUk0ZzRQcjVrTF9fZjhWQmg4bHFzZGZyVzVyYTk?oc=5.title"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "7569f41d244fed4f9ebbf360fdb9411854b6e6c0558ad04a18c2c161c9c095e8",
+    "sourceHash": "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f",
+    "scope": "content",
+    "key": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
+    "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
+    "refs": [
+      "efforts:dexnom.blockers.0"
+    ],
+    "attempts": 2,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "88df3008483894a02b10e6664db0098c5815fcf88eb0079047fb7df0183bb21e",
+    "sourceHash": "31d9f3390dd3208872f08a2f649543ee5843a8193e8dae9801258948f71ef83c",
+    "scope": "content",
+    "key": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
+    "source": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
+    "refs": [
+      "candidates:kfedora/GTAVI-Xbox2PC.description"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "fd2b451cdaa547d36b370a3a8c79b03d3425d448109ff111e5a96b34cbfa67fb",
+    "sourceHash": "77cc73d98da20d30ff789132a0c6df0d3920e59cedb376e40791afdc02d239a9",
+    "scope": "content",
+    "key": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
+    "source": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5.title"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "7b30e80a46ad34a6628ccc2a1cdcc01b4068ad5d8a29c8b58769561fd6b8b8a9",
+    "sourceHash": "3cce31c15b3474a8dd7999a7c9524230226101999877c37dbc2aea6b7cc3f04f",
+    "scope": "content",
+    "key": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+    "source": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+    "refs": [
+      "efforts:dexnom.highlights.3"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "reviewRequired": false
+  },
+  {
     "id": "2ec16a96ef6634b09386923fcd83e897ea60bd84eb3675cacfd1dc594fefcace",
     "sourceHash": "6f8a7a966831c57e11f924e21f9bf305429031ac01052f5e28b35e7802b476a5",
     "scope": "content",
@@ -187,20 +396,6 @@
     "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ11QXZ",
     "reviewRequired": false
-  },
-  {
-    "id": "574360da0b0a0dcc4fa82005437ebb0a6ce9f5c00ab33d73fa75c493fd4e1817",
-    "sourceHash": "a5e15f05c8be0095fa3dec93467b406f04d9b1c39d1560c018ffbbf54e8bbb0f",
-    "scope": "content",
-    "key": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
-    "source": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
-    "refs": [
-      "candidates:ka1qux/BRVIctory-ka1qux.description"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "ويدير عنواناً من طراز Xbox Series محلياً في Windows: طبقة توافقية، وشكل VIctory و victory-fork، وطور وقاس على طراز AMD Radeon RX 7800 XT."
   },
   {
     "id": "54e1047a2c37cc7615d8417e319fe674156cc3ac57bee389f8d0b52f79132399",
@@ -632,135 +827,5 @@
     "attempts": 3,
     "lastError": "Missing Arabic output",
     "reviewRequired": true
-  },
-  {
-    "id": "60cf4999b993e71f86883c1fb0d510c0968eb3e92ab315ae83eec5330b939d87",
-    "sourceHash": "3c614c7a1f82a557047a6702ca5fb55b269ea6abe8cd95e37dd97024bbbf70fd",
-    "scope": "content",
-    "key": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
-    "source": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
-    "refs": [
-      "candidates:voidopcode/vilocity.description"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "850cb188b35645cc96815b48400a78d74a84a801f4d9daa52bf80f740e31b6fd",
-    "sourceHash": "ef915b7033c3abbc200d2ac89f36006708339e18ed71bb06935ea69d232d5f9a",
-    "scope": "content",
-    "key": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
-    "source": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
-    "refs": [
-      "efforts:dexnom.highlights.1"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "13362a5e92e2009ac21f17151e82f6da1591cb0b4bf28d205099374f88af67f2",
-    "sourceHash": "f1675eea9cf96c9c4d49082b8f78184f03d18873c358dd6abea1174f9a5e192c",
-    "scope": "content",
-    "key": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
-    "source": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
-    "refs": [
-      "candidates:Wertrex/Americas.description"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "eb8a5c5de0a853f7f2cfa6507059c9b4ba1d5500d21a0aff37c1b06558822431",
-    "sourceHash": "43e5abc1c0b878ec502900479a5dc5f2a257092bd4eaf4a8e27efb22afb5f81d",
-    "scope": "content",
-    "key": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
-    "source": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5.title"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "67db332e461717eb6ce3ee321545273dc384df1fe029f6c7132b1e2ddc4e885a",
-    "sourceHash": "15212b81e3ce48a9d35744534bd91a0c8fd2f283a0d96f82b65f789382f3bc55",
-    "scope": "content",
-    "key": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
-    "source": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5.title"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "451d747d46a685397feb0170644e1c239d61c434190a5937e80c68073b56051b",
-    "sourceHash": "4a54e355f75fa3390f2dc0d1eaec11120d63d15d76f93f109be8f24b24a47279",
-    "scope": "content",
-    "key": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
-    "source": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVXBSdGh4bFZTS0ptMG5kd0Y4UVdrb1luR3RuWnhVU0xFZXFYSmNTd3VlNlNKYnZad3h2cG5nVm94VldTQ0dYRjhqT01wSFpxOEltUG5KQzR2QUlwaTRRcUVMOExjY0FGS2x0bmk1ekdrbERLUHdoWTExQ0I5cWZGTUE5ZWtrY3JxanlDVWk0RFM2SDVCeVJuYnBCbTRySUh0RDVmYXE4Ukxua2lUakRMcjBpZ25lTXNkaHhnZXJNQzNvTjhValFvQUk0ZzRQcjVrTF9fZjhWQmg4bHFzZGZyVzVyYTk?oc=5.title"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "7569f41d244fed4f9ebbf360fdb9411854b6e6c0558ad04a18c2c161c9c095e8",
-    "sourceHash": "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f",
-    "scope": "content",
-    "key": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-    "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
-    "refs": [
-      "efforts:dexnom.blockers.0"
-    ],
-    "attempts": 2,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
-  },
-  {
-    "id": "88df3008483894a02b10e6664db0098c5815fcf88eb0079047fb7df0183bb21e",
-    "sourceHash": "31d9f3390dd3208872f08a2f649543ee5843a8193e8dae9801258948f71ef83c",
-    "scope": "content",
-    "key": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
-    "source": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
-    "refs": [
-      "candidates:kfedora/GTAVI-Xbox2PC.description"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "fd2b451cdaa547d36b370a3a8c79b03d3425d448109ff111e5a96b34cbfa67fb",
-    "sourceHash": "77cc73d98da20d30ff789132a0c6df0d3920e59cedb376e40791afdc02d239a9",
-    "scope": "content",
-    "key": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
-    "source": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5.title"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "7b30e80a46ad34a6628ccc2a1cdcc01b4068ad5d8a29c8b58769561fd6b8b8a9",
-    "sourceHash": "3cce31c15b3474a8dd7999a7c9524230226101999877c37dbc2aea6b7cc3f04f",
-    "scope": "content",
-    "key": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
-    "source": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
-    "refs": [
-      "efforts:dexnom.highlights.3"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
   }
 ]

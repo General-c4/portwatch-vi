@@ -1,4 +1,4 @@
-import {readFile,writeFile} from 'node:fs/promises';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {validateTracker} from '../assets/js/tracker-source.js';
 const base=process.env.PW_SITE_URL||'https://general-c4.github.io/portwatch-vi/';
@@ -14,6 +14,7 @@ for(let attempt=0;attempt<6;attempt++){
   for(const news of tracker.news)await get(`news/${news.id}.html`);
   let sync={};try{sync=JSON.parse(await readFile('automation/state/content.json','utf8'));}catch{}
   const verifiedAt=new Date().toISOString();
+  await mkdir('.sync',{recursive:true});
   await writeFile('.sync/deployment-status.json',JSON.stringify({...sync,status:'success',lastDeploymentStatus:'success',latestDeployedCommitSha:deployed.commit,verifiedAt,upstreamUpdated:tracker.updated,attempts:attempt+1,latency:{...sync.latency,deploymentMs:Date.parse(verifiedAt)-Date.parse(deployed.builtAt)}}));
   console.log(`Verified deployed commit ${deployed.commit}, data hash, catalogs, assets and ${tracker.news.length} articles.`);process.exit(0);
  }catch(e){error=e;if(attempt<5)await new Promise(r=>setTimeout(r,Math.max(1,Number(process.env.PW_VERIFY_RETRY_MS||10000))));}

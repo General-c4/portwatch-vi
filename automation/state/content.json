@@ -3,10 +3,10 @@
   "latestUpstreamCommitSha": "a1397083b4d567d587c248aeb28eae76516ddb4f",
   "latestSynchronizedCommitSha": "a1397083b4d567d587c248aeb28eae76516ddb4f",
   "latestIntegratedSourceCommitSha": "a1397083b4d567d587c248aeb28eae76516ddb4f",
-  "latestDeployedCommitSha": null,
-  "lastDeploymentStatus": "unknown",
-  "lastSuccessfulSyncTime": "2026-11-25T17:15:49.527Z",
-  "lastUpstreamCheckTime": "2026-11-25T17:15:49.527Z",
+  "latestDeployedCommitSha": "a9bd48be2ffeb561537ef6e52e5e7c6c19950288",
+  "lastDeploymentStatus": "verified-live",
+  "lastSuccessfulSyncTime": "2026-11-25T17:16:39.669Z",
+  "lastUpstreamCheckTime": "2026-11-25T17:16:39.669Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-25T16:22:16.626Z",
   "records": {
@@ -47,19 +47,19 @@
     }
   },
   "translation": {
-    "coverage": 94.56,
+    "coverage": 94.13,
     "translated": 1042,
-    "total": 1102,
-    "pending": 58,
+    "total": 1107,
+    "pending": 63,
     "completed": 0,
-    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
+    "provider": "none"
   },
   "latency": {
-    "sourceCheckMs": 705,
-    "dataSyncMs": 723,
-    "translationMs": 14189,
+    "sourceCheckMs": 1293,
+    "dataSyncMs": 1352,
+    "translationMs": 1,
     "deploymentMs": null,
-    "totalMs": 14902
+    "totalMs": 1305
   },
   "apiAnything": {
     "ok": false,
@@ -186,7 +186,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"c78364ab514d84008219e02447473c54a017ea29a516331c31996d4c567f31d5\"",
+      "etag": "W/\"f5332fb48370d63bb7112d3b4bb6378ccdc04a48422a6c26550f81180ddffbec\"",
       "hash": "c2472a1286b9411caad6411450d2811a19ac8233e839755eeabf6eb37e627c23"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -208,6 +208,10 @@
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/a1397083b4d567d587c248aeb28eae76516ddb4f/data/tracker.json": {
       "etag": "W/\"affa31194263cecad4a55044e6a25611f54bb36a79aeaa7451d4d2479988deed\"",
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
+    },
+    "https://general-c4.github.io/portwatch-vi/deployment.json": {
+      "etag": "\"6b0717d4-d5\"",
+      "hash": "a957939e6861961f051ea3bf4fc31cd95663be8ee43c27a7c97ad46f72565a1f"
     }
   }
 }

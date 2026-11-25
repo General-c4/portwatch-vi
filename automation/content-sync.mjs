@@ -3,7 +3,7 @@ import {pathToFileURL} from 'node:url';
 import {conditionalJSON} from './lib/http.mjs';
 import {atomicJSON,hash,readJSON,withLock,log} from './lib/state.mjs';
 import {recordDiff} from './lib/diff.mjs';
-import {translationInventory,queueTranslations,translatePending,protectedTerms} from './lib/translations.mjs';
+import {translationInventory,queueTranslations,translatePending,protectedTerms,dashboardSources} from './lib/translations.mjs';
 import {validateTracker,validatePinned,newerSnapshot} from '../assets/js/tracker-source.js';
 import {apiAnythingRead} from './lib/api-anything.mjs';
 import {createProvider} from './lib/provider.mjs';
@@ -51,7 +51,9 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  const originalAuto=hash(automatic),previousQueue=await readJSON(file('automation/state/pending-translations.json'),[]);
  const reviewedSources=await readJSON(file('assets/i18n/ar.sources.json'),{}),autoSources=await readJSON(file('assets/i18n/ar.auto.sources.json'),{});
  const localEnglish=await readJSON(file('assets/i18n/en.json'));
- const inventory=translationInventory(data,pinned,{...localEnglish,...(english||{})},human.dashboard);
+ const dashboardHTML=await readFile(file('dashboard/index.html'),'utf8').catch(()=>'');
+ const dashboardInventory={...human.dashboard,...Object.fromEntries(dashboardSources(dashboardHTML).map(source=>[source,null]))};
+ const inventory=translationInventory(data,pinned,{...localEnglish,...(english||{})},dashboardInventory);
  const effectiveHuman={...human,interface:{...human.interface}};
  for(const entry of inventory.filter(e=>e.scope==='interface')){
   if(reviewedSources[entry.key]!==undefined&&reviewedSources[entry.key]!==entry.source)delete effectiveHuman.interface[entry.key];

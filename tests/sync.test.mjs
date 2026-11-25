@@ -7,12 +7,18 @@ import {execFileSync} from 'node:child_process';
 import {conditionalJSON} from '../automation/lib/http.mjs';
 import {validateTracker,newerSnapshot} from '../assets/js/tracker-source.js';
 import {recordDiff} from '../automation/lib/diff.mjs';
-import {translationInventory,queueTranslations,protectText,restoreTranslation,translatePending} from '../automation/lib/translations.mjs';
+import {translationInventory,queueTranslations,protectText,restoreTranslation,translatePending,dashboardSources} from '../automation/lib/translations.mjs';
 import {classifySourceChanges} from '../automation/lib/source-policy.mjs';
 import {atomicJSON,readJSON,withLock,hash} from '../automation/lib/state.mjs';
 import {syncContent} from '../automation/content-sync.mjs';
 import {detectAndDispatch} from '../automation/worker.mjs';
 const fixture=()=>({updated:'2026-11-25T10:00:00Z',efforts:[{id:'alpha',name:'Alpha',summary:'A project',gta:{fps:3,menu:1}}],news:[{id:'one',title:'A report',date:'2026-11-25',body:['A paragraph']}],tools:[{repo:'owner/tool',name:'Tool',desc:'A tool'}],changes:[]});
+test('new static dashboard labels enter the queue without evaluating scripts or editable content',()=>{
+ const sources=dashboardSources('<div>New warning &amp; status</div><input placeholder="New entry"><script>privateCode()</script><textarea>Private text</textarea>');
+ assert.deepEqual(sources,['New entry','New warning & status']);
+ const queued=queueTranslations(translationInventory(fixture(),null,{},Object.fromEntries(sources.map(s=>[s,null]))),{content:{},interface:{},dashboard:{}});
+ assert(queued.pending.some(item=>item.scope==='dashboard'&&item.source==='New entry'));
+});
 test('record diff handles new/modified/deleted news and projects without recomputing progress',()=>{
  const before=fixture(),after=structuredClone(before);after.efforts[0].gta.fps=30;after.efforts[0].summary='Changed';after.efforts.push({id:'beta',name:'Beta'});after.news=[];
  const delta=recordDiff(before,after);assert.deepEqual(delta.sections.efforts,{new:1,updated:1,deleted:0});assert.equal(delta.sections.news.deleted,1);
