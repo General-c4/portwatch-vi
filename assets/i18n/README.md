@@ -10,7 +10,7 @@ fallback: any key missing from another language shows in English.
 - **`ms.*`, `gw.*` and `stab.*`** translate the milestone, groundwork and stability names. Their English
   lives in `assets/js/scoring.js`, so `en.json` doesn't repeat them.
 - **Text only:** translations are inserted as plain text, so HTML in a value shows up literally.
-- **Not translated:** project summaries, news articles and other content from `data/tracker.json` stay in
-  English, and so do the article pages under `news/`.
+- **Editorial content:** Arabic uses an optional `content/ar.json` catalog for tracker content and
+  generated news pages. Other languages keep English content. See [Arabic localization](ARABIC.md).
 
 Contributions are welcome through a pull request.

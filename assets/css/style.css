@@ -100,8 +100,8 @@ button, select { font: inherit; color: inherit; }
 h1, h2, h3, h4 { font-family: var(--display); letter-spacing: -.02em; margin: 0; }
 .wrap { width: min(var(--wrap), calc(100% - 40px)); margin-inline: auto; }
 .num, .big-score, .cd-digits span, .e-score b { font-variant-numeric: tabular-nums; }
-.skip { position: absolute; left: -9999px; }
-.skip:focus { left: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
+.skip { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.skip:focus { width: auto; height: auto; clip-path: none; inset-inline-start: 16px; top: 12px; z-index: 100; background: var(--surface); padding: 8px 12px; border-radius: 8px; }
 :focus-visible { outline: 3px solid rgba(122, 92, 255, .45); outline-offset: 2px; border-radius: 6px; }
 
 .card {

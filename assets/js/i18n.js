@@ -4,6 +4,8 @@
 // Milestone, groundwork and stability names come from scoring.js in English and are translated under
 // the ms.*, gw.* and stab.* keys of each non-English file. See assets/i18n/README.md.
 
+import { loadContentTranslations } from './content-i18n.js';
+
 export const LANGS = [
   { code: 'en', name: 'English', short: 'EN' },
   { code: 'pt-BR', name: 'Português (Brasil)', short: 'PT' },
@@ -57,6 +59,7 @@ export async function initI18n() {
   dict = lang === 'en' ? en : own;
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  await loadContentTranslations(lang);
   if (lang !== 'en') applyStatic();
   if (typeof window.pwSetThemeLabels === 'function') {
     window.pwSetThemeLabels({ system: t('theme.system'), light: t('theme.light'), dark: t('theme.dark') }, t('theme.label'));
@@ -69,6 +72,11 @@ const fill = (s, vars) => (vars ? s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ?
 
 // Active language, then English, then the key itself.
 export function t(key, vars) {
+  if (lang === 'ar' && vars && 'n' in vars) {
+    const n = Number(String(vars.n).replace(/[٠-٩]/g, (c) => '٠١٢٣٤٥٦٧٨٩'.indexOf(c)).replace(/[,٬]/g, ''));
+    const counted = Number.isFinite(n) ? dict[`${key}_${new Intl.PluralRules('ar').select(n)}`] : null;
+    if (typeof counted === 'string') return fill(counted, vars);
+  }
   return fill(dict[key] ?? en[key] ?? key, vars);
 }
 
