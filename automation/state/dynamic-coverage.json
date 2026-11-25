@@ -1,0 +1,312 @@
+{
+  "before": {
+    "headlines": {
+      "total": 30,
+      "translated": 9,
+      "exempt": 0,
+      "missing": 21,
+      "coverage": 30
+    },
+    "changes": {
+      "total": 12,
+      "translated": 9,
+      "exempt": 0,
+      "missing": 3,
+      "coverage": 75
+    },
+    "projectDescriptions": {
+      "total": 35,
+      "translated": 31,
+      "exempt": 0,
+      "missing": 4,
+      "coverage": 88.57
+    },
+    "projectDetails": {
+      "total": 84,
+      "translated": 71,
+      "exempt": 1,
+      "missing": 12,
+      "coverage": 85.54
+    },
+    "highlights": {
+      "total": 94,
+      "translated": 85,
+      "exempt": 0,
+      "missing": 9,
+      "coverage": 90.43
+    },
+    "blockers": {
+      "total": 91,
+      "translated": 86,
+      "exempt": 0,
+      "missing": 5,
+      "coverage": 94.51
+    }
+  },
+  "after": {
+    "headlines": {
+      "total": 30,
+      "translated": 17,
+      "exempt": 0,
+      "missing": 13,
+      "coverage": 56.67
+    },
+    "changes": {
+      "total": 12,
+      "translated": 12,
+      "exempt": 0,
+      "missing": 0,
+      "coverage": 100
+    },
+    "projectDescriptions": {
+      "total": 35,
+      "translated": 32,
+      "exempt": 0,
+      "missing": 3,
+      "coverage": 91.43
+    },
+    "projectDetails": {
+      "total": 84,
+      "translated": 71,
+      "exempt": 1,
+      "missing": 12,
+      "coverage": 85.54
+    },
+    "highlights": {
+      "total": 94,
+      "translated": 90,
+      "exempt": 0,
+      "missing": 4,
+      "coverage": 95.74
+    },
+    "blockers": {
+      "total": 91,
+      "translated": 90,
+      "exempt": 0,
+      "missing": 1,
+      "coverage": 98.9
+    }
+  },
+  "audit": {
+    "legacyPending": 71,
+    "approvedEntries": 45,
+    "unrelatedEntries": 26
+  },
+  "stats": {
+    "requests": 10,
+    "translatedFields": 21,
+    "failedFields": 30,
+    "cachedFields": 0,
+    "inputTokens": 17615,
+    "outputTokens": 9998,
+    "thinkingTokens": 0,
+    "errors": [
+      "source_links_changed",
+      "protected_facts_or_language_invalid",
+      "service_unavailable"
+    ],
+    "model": "gemini-3.6-flash",
+    "pending": 33,
+    "durationMs": 347148
+  },
+  "missing": [
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5",
+      "field": "title",
+      "source": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5",
+      "field": "title",
+      "source": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5",
+      "field": "title",
+      "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM0JIZjZ1Yk4tazRtZThXRUNjSDBoUFBIdGViOHM0eGRTZEhyZ1JCWEs2YWhfc2NqY2o2eE83RVFTb2haUFRNMTVhQ2R5Snk0enZLRDdvTFdxRTBRNXZiSlRPOFpxSDVQWWJWX0kzRHZTMV84dGFnelRVdDRteGNLd2FfRnkzZDlhZEVUNEpKdEVwbDZSVFpKZnZCUUp0X1ZXUWs2QXMtTmlGRExKNHRqWHE2R0dVRG1PeWtyRjJRaTRqSXdnMkVhM1ZCN3d1NE4zeWc?oc=5",
+      "field": "title",
+      "source": "GTA 6 hacker sentenced to seven years, walks free the same day after Rockstar Games leak",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5",
+      "field": "title",
+      "source": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5",
+      "field": "title",
+      "source": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
+      "reason": "source_links_changed"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
+      "field": "title",
+      "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
+      "reason": "protected_facts_or_language_invalid"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5",
+      "field": "title",
+      "source": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5",
+      "field": "title",
+      "source": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5",
+      "field": "title",
+      "source": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
+      "field": "title",
+      "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5",
+      "field": "title",
+      "source": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5",
+      "field": "title",
+      "source": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:belobug",
+      "field": "summary",
+      "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "summary",
+      "source": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "byline",
+      "source": "Working in private · built on JoshuuDev's victory-amd",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "highlights.0",
+      "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "highlights.1",
+      "source": "Almost never crashes, and gets as far into the story as the leading public builds",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "highlights.2",
+      "source": "The in-game phone renders really well; the map menu runs at a higher frame rate",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "highlights.3",
+      "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "blockers.0",
+      "source": "Rendering slightly behind DexNom's",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "proof.label",
+      "source": "Doomsday on X",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:xbox-emulator",
+      "field": "provenOn",
+      "source": "Trackmania: races drive; Terraria: in-world; Fortnite: lobby (self-reported)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:xcl",
+      "field": "provenOn",
+      "source": "Minecraft Preview and Unicorn Overlord: playable",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:scarlettx",
+      "field": "provenOn",
+      "source": "Concept Destruction and Unicorn Overlord: playable",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:tuxbox",
+      "field": "provenOn",
+      "source": "The Matrix Awakens: menu + cinematic (Linux)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:openscarlett",
+      "field": "provenOn",
+      "source": "Six Scarlett GDK samples and a Freedoom homebrew port (not retail)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:scarlett-layer",
+      "field": "provenOn",
+      "source": "Terraria (GDK build): menus and audio (self-reported)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:anyxboxx",
+      "field": "summary",
+      "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:anyxboxx",
+      "field": "provenOn",
+      "source": "GDK sample games (not retail)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:anyxboxx",
+      "field": "claims.0.text",
+      "source": "- ✅ The Xbox Series 1.0.2.1 build of GTA VI launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:xvalkyrie",
+      "field": "provenOn",
+      "source": "GDK samples draw; it reports two retail Series titles playable",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:openscarlett-ce",
+      "field": "provenOn",
+      "source": "Minecraft Preview: playable; The Matrix Awakens: opening chase (self-reported)",
+      "reason": "request_or_token_limit"
+    }
+  ]
+}

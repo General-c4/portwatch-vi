@@ -57,23 +57,406 @@
     "headline:https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMXUxNHNaT1R2THAtOExmYmU1aGljRlc2dDNNdC1RZXdMM1RoenVUUG5yTzdQY180dmlIWWNKS2diNjVIS3lwUXBtajdKWXA3ZGZ1blJHemo5T1ItUXBZMndFZ1ZBWTJWUWVQSmVCY1dWdklmdEtRb3VSMURUVTQ5b2pENmtGVEwxYkRv?oc=5"
   ],
   "eligible": {},
-  "cache": {},
+  "cache": {
+    "6f8a7a966831c57e11f924e21f9bf305429031ac01052f5e28b35e7802b476a5": {
+      "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
+      "ar": "إن قدرة أي نسخة رسمية مخصصة للحاسب الشخصي من GTA 6 PC على تقديم وضع المنظور الشخصي الأول بشكل ملائم ستكون ورقتها الرابحة الكبرى، بحسب ما أراه.",
+      "model": "gemini-3.6-flash"
+    },
+    "77cc73d98da20d30ff789132a0c6df0d3920e59cedb376e40791afdc02d239a9": {
+      "source": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
+      "ar": "يبدو أن شركة Take-Two تحاول إزالة مشاريع نقل لعبة GTA 6 إلى الحاسب الشخصي PC من شبكة الإنترنت، بينما يتسابق المطورون لتحقيق إنجاز عالمي مثير للجدل.",
+      "model": "gemini-3.6-flash"
+    },
+    "060be3d7f7ba3cc7216f20e21a4fe1a48722aa923ada522b56118405963ee9d6": {
+      "source": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
+      "ar": "مشروع نقل GTA 6 إلى الحاسب الشخصي PC الذي تم في خلال 24-Hour ساعة هو بمثابة جرس إنذار وليس منتجًا نهائيًا.",
+      "model": "gemini-3.6-flash"
+    },
+    "9bcdc4b0864bb7923c28bbe9bb7d3e1a4eb11f81e2991528b16882221a5a52fb": {
+      "source": "GTA VI publisher has launched a DMCA campaign against videos of the PC version of the game.",
+      "ar": "ناشر لعبة GTA VI يطلق حملة حقوق إلقاء الضوء DMCA ضد مقاطع الفيديو التي تعرض نسخة الحاسب الشخصي PC من اللعبة.",
+      "model": "gemini-3.6-flash"
+    },
+    "8f3afc8d61e11c44c3a20ddb99fdb46dbac959f9dcc78e338cb21de3cda1eeeb": {
+      "source": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
+      "ar": "هل تتوفر لعبة GTA 6 على الحاسب الشخصي PC في مارس 2027؟ تسريبات 1 وتأكيدات 0 من Rockstar.",
+      "model": "gemini-3.6-flash"
+    },
+    "590bcdca774d771f7805d5abae8c7cb34443b6126ce12014edb9bc7650b511cf": {
+      "source": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
+      "ar": "إزالة مشاريع نقل GTA 6 غير الرسمية إلى PC وأكثر من 3,000 مستودع برمجي بعد اتخاذ شركة Take-Two إجراءات قانونية.",
+      "model": "gemini-3.6-flash"
+    },
+    "4a54e355f75fa3390f2dc0d1eaec11120d63d15d76f93f109be8f24b24a47279": {
+      "source": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
+      "ar": "تطوير نسخ GTA VI غير الرسمية المخصصة لـ PC ما يزال مستمرًا رغم محاولات شركة Take-Two لإغلاقها.",
+      "model": "gemini-3.6-flash"
+    },
+    "27f36cac482ef57ec34c5044e0d1f7e6689afccba8ccd2cffffb67e1abcc74b6": {
+      "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
+      "ar": "الحكم على مخترق GTA 6 أر يون كورتاج بالسجن لمدة 7 سنوات وإطلاق سراحه في اليوم نفسه.",
+      "model": "gemini-3.6-flash"
+    },
+    "4eeedde42a4effce3f6d5fda63292b0a3fc80ed891d01abc71d4642de4a2a073": {
+      "source": "omonkey's private build, streamed on Rumble, has been taken down and leaves the board.",
+      "ar": "إغلاق إصدار البناء الخاص بالمطور omonkey الذي تم بثه على منصة Rumble، وخروجه من قائمة التنافس.",
+      "model": "gemini-3.6-flash"
+    },
+    "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9": {
+      "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+      "ar": "تسارع أداء إصدار البناء الخاص بـ Belobug من حوالي 3 إلى 4 fps (في حين يذكر ملف README معدل 5-7)، ليرتفع الأداء إلى 77.7% ويستقر خلف DexNom مباشرة.",
+      "model": "gemini-3.6-flash"
+    },
+    "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f": {
+      "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+      "ar": "إغلاق مشروع ZETTROX بالكامل: حيث حُذف مستودع GitHub الخاص به Zettrox/ztrx وحسابه على Zettrox، ليغادر سباق التطوير دون نشر أي إشعار DMCA حتى الآن.",
+      "model": "gemini-3.6-flash"
+    },
+    "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96": {
+      "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+      "ar": "حول معدل إطارات 4 fps؛ يذكر ملف README الخاص بالمشروع تحقيق معدل 5-7 fps (ويقل عن ذلك أثناء القيادة) ويصف اللعبة بأنها \"غير قابلة للعب بعد\".",
+      "model": "gemini-3.6-flash"
+    },
+    "68e8da676162f50d95abb5bedeb06fc55e09734bec8c0d33301767f9530e73d9": {
+      "source": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
+      "ar": "المنصة: AMD Radeon RX 7900 XTX، نظام Windows بمعمارية x64",
+      "model": "gemini-3.6-flash"
+    },
+    "ef915b7033c3abbc200d2ac89f36006708339e18ed71bb06935ea69d232d5f9a": {
+      "source": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
+      "ar": "عمل الإضاءة بتتبع الأشعة Ray-traced، وفق ما شوهد بواسطة فريق PortWatch: وهو أول إصدار برمجي لبطاقات AMD على لوحتنا يحقق هذه الميزة",
+      "model": "gemini-3.6-flash"
+    },
+    "6cf5fb5711b55feaa1d5a630c8cc17f490d7b438dd1ef5cee3b7ac75012a9484": {
+      "source": "The open world looks close to the retail game and plays through missions",
+      "ar": "يبدو العالم المفتوح قريبًا من النسخة النهائية للمستهلك مع إمكانية لعب المهمات",
+      "model": "gemini-3.6-flash"
+    },
+    "3cce31c15b3474a8dd7999a7c9524230226101999877c37dbc2aea6b7cc3f04f": {
+      "source": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+      "ar": "يترجم 25,742 من أصل 25,758 مضللًا في أرشيف اختباره؛ وتجتاز جميع مضللات الرؤوس البالغ عددها 2,191 أداة التحقق من صحة DXIL الخاصة بـ Microsoft (تقريرها)",
+      "model": "gemini-3.6-flash"
+    },
+    "29ab03aefd5a119ae88a035d700fe05b611b8bf4dda941896c440c897a84ed9b": {
+      "source": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
+      "ar": "يُبنى من المصدر باستخدام ملف Setup.cmd الخاص به؛ لا توجد تنزيلات مسبقة البناء؛ ترخيص GPL-3.0",
+      "model": "gemini-3.6-flash"
+    },
+    "0242fb04cecf023a6cb6ca817c79a66bac050db0ed91e41df73f307f82dbdc0f": {
+      "source": "About 1 fps with ray-traced lighting on; 3.5-4 fps indoors in Chapter 1's city without it (its test report)",
+      "ar": "حوالي 1 fps مع تفعيل الإضاءة وتتبع الأشعة ray-traced؛ ومن 3.5-4 إلى fps في الأماكن المغلقة داخل مدينة الفصل 1 بدونها (تقرير اختباره)",
+      "model": "gemini-3.6-flash"
+    },
+    "6d6e43edf408ec2478eb457231254eed1909662dde09907acc9af02d10462202": {
+      "source": "Its README still calls ray-traced lighting experimental, and its test report finds interior lighting wrong (overexposed doorways, dark objects)",
+      "ar": "ما يزال ملف README الخاص به يصف إضاءة تتبع الأشعة ray-traced بأنها تجريبية، ويجد تقرير اختباره أن الإضاءة الداخلية غير صحيحة (مداخل أبواب مفرطة التعريض، وأجسام مظلمة)",
+      "model": "gemini-3.6-flash"
+    },
+    "cad8a40e12c21ecd76609f666466eccefc91cda8429dddf701787d498c53ce85": {
+      "source": "Tested on one AMD card only; not yet reproduced by others",
+      "ar": "تم اختباره على بطاقة AMD واحدة فقط؛ ولم يتم إعادة إنتاجه من قبل آخرين بعد",
+      "model": "gemini-3.6-flash"
+    },
+    "5828f8f7ba21816f3d8c0184b16e382418f6f4b0bcced52bce89edf06af683e7": {
+      "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
+      "ar": "إصدار بناء لمجموعة خاصة على نسخة victory-amd المتفرعة من VIctory والمطورة بواسطة JoshuuDev، تم التحقق منه بواسطة PortWatch. يشغّل لعبة GTA VI مع إضاءة تتبع الأشعة ray-traced بمعدل ينطوح بين 3-5 fps تقريبًا، ونادرًا ما ينهار، ويصل إلى مرحلة متقدمة في القصة تعادل أفضل الإصدارات العامة المتاحة. يتم تصيير الهاتف in-game بشكل جيد جدًا، وتعمل قائمة الخريطة بمعدل إطارات أعلى. تم بناؤه أساسًا لبطاقات AMD ويعمل أيضًا على بطاقات NVIDIA، ولكن بمعدل إطارات أقل. الكود البرمجي ليس عامًا.",
+      "model": "gemini-3.6-flash"
+    }
+  },
   "pending": {},
   "daily": {
     "day": "2026-11-25",
-    "requests": 0,
-    "accountedTokens": 0,
-    "inputTokens": 0,
-    "outputTokens": 0,
+    "requests": 10,
+    "accountedTokens": 60605,
+    "inputTokens": 17615,
+    "outputTokens": 9998,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 0,
+    "requests": 10,
     "successful": 0,
     "failed": 0,
     "cachedFields": 0,
-    "inputTokens": 0,
-    "outputTokens": 0,
+    "inputTokens": 17615,
+    "outputTokens": 9998,
     "thinkingTokens": 0
+  },
+  "dynamic": {
+    "version": 1,
+    "pending": {
+      "[\"headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5",
+        "field": "title",
+        "sourceHash": "458e1c4a7779adc6be97f4161667ce7773431eb83de4dc5429d7c953e28fcef6",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5",
+        "field": "title",
+        "sourceHash": "58db7d5a4d59355eaf3e63f6984dd0bb4bfae1c409ac7662e73e29a84a1c3912",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5",
+        "field": "title",
+        "sourceHash": "19b9d63a6a8aeccd3ae04b29a5b9679e245a0a8ca7adeaecd33d1f213308c0ae",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM0JIZjZ1Yk4tazRtZThXRUNjSDBoUFBIdGViOHM0eGRTZEhyZ1JCWEs2YWhfc2NqY2o2eE83RVFTb2haUFRNMTVhQ2R5Snk0enZLRDdvTFdxRTBRNXZiSlRPOFpxSDVQWWJWX0kzRHZTMV84dGFnelRVdDRteGNLd2FfRnkzZDlhZEVUNEpKdEVwbDZSVFpKZnZCUUp0X1ZXUWs2QXMtTmlGRExKNHRqWHE2R0dVRG1PeWtyRjJRaTRqSXdnMkVhM1ZCN3d1NE4zeWc?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM0JIZjZ1Yk4tazRtZThXRUNjSDBoUFBIdGViOHM0eGRTZEhyZ1JCWEs2YWhfc2NqY2o2eE83RVFTb2haUFRNMTVhQ2R5Snk0enZLRDdvTFdxRTBRNXZiSlRPOFpxSDVQWWJWX0kzRHZTMV84dGFnelRVdDRteGNLd2FfRnkzZDlhZEVUNEpKdEVwbDZSVFpKZnZCUUp0X1ZXUWs2QXMtTmlGRExKNHRqWHE2R0dVRG1PeWtyRjJRaTRqSXdnMkVhM1ZCN3d1NE4zeWc?oc=5",
+        "field": "title",
+        "sourceHash": "ae879a8831ce9f807fc8810587a3937237a6baa18f42ed30fb61f9b45c7ede63",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5",
+        "field": "title",
+        "sourceHash": "e3ddd2af9618c47ff04de6667e5b6058a58ca0e39c65440de5192b9a4bc00061",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5",
+        "field": "title",
+        "sourceHash": "cd42f10b379e3dc92ce7939d0c7ddb5fa52f3524cd9d4b58b66e7a4166c81394",
+        "attempts": 2,
+        "lastError": "source_links_changed",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
+        "field": "title",
+        "sourceHash": "8cc01960ca146b0287ffebee4e5e6e3dd5a869c816b170580228a992e0b9d485",
+        "attempts": 2,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5",
+        "field": "title",
+        "sourceHash": "ca37cf74ed20cc8bec16260d013c51338fe66c53bd81aa5f2bf06c51bcb7e66e",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5",
+        "field": "title",
+        "sourceHash": "15212b81e3ce48a9d35744534bd91a0c8fd2f283a0d96f82b65f789382f3bc55",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5",
+        "field": "title",
+        "sourceHash": "dc028860c47c56c4c843b180a4a21c3310ce9604385a3369225ac0274d7ec1cc",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
+        "field": "title",
+        "sourceHash": "8b876fad4ea7b4ab81920cf2b72da2e6459b7bdf16164d049df37ff18bfcf135",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5",
+        "field": "title",
+        "sourceHash": "8cc6a1a5d6c7355bf1ab1c86f73b5d2e6b17ca97be33381ff3c8bd727ff8d312",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5",
+        "field": "title",
+        "sourceHash": "43e5abc1c0b878ec502900479a5dc5f2a257092bd4eaf4a8e27efb22afb5f81d",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"project:belobug\",\"summary\"]": {
+        "id": "project:belobug",
+        "field": "summary",
+        "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"project:dexnom\",\"summary\"]": {
+        "id": "project:dexnom",
+        "field": "summary",
+        "sourceHash": "985428669c4f15260a42511690e558504ab55c519bfe474c585ee2daf7eb8369",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-25T18:49:13.829Z"
+      },
+      "[\"project:doomsday\",\"byline\"]": {
+        "id": "project:doomsday",
+        "field": "byline",
+        "sourceHash": "e38481fd1016812fc6164c3336e73a487e2158fd263dd58d7d47f600a2787718",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"highlights.0\"]": {
+        "id": "project:doomsday",
+        "field": "highlights.0",
+        "sourceHash": "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"highlights.1\"]": {
+        "id": "project:doomsday",
+        "field": "highlights.1",
+        "sourceHash": "2d36d0b0a65359790c4ca23efb68a62096fd80530c504fec945de403851ac9fa",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"highlights.2\"]": {
+        "id": "project:doomsday",
+        "field": "highlights.2",
+        "sourceHash": "9013cc96b45a21f5f316068f235333de9429cf9542743d971c60cd8fb3cd64f7",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"highlights.3\"]": {
+        "id": "project:doomsday",
+        "field": "highlights.3",
+        "sourceHash": "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"blockers.0\"]": {
+        "id": "project:doomsday",
+        "field": "blockers.0",
+        "sourceHash": "0ac17eed324fa8f36abae11096dd6c7894bb64d7d26e76a989cf91093d1dfaa2",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"proof.label\"]": {
+        "id": "project:doomsday",
+        "field": "proof.label",
+        "sourceHash": "45bc0eb865842e0b5e3af8c86babc3616b752451319c9f32161eeb5f89c6f917",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:xbox-emulator\",\"provenOn\"]": {
+        "id": "project:xbox-emulator",
+        "field": "provenOn",
+        "sourceHash": "ebf45d17f8f9fbb739d5c9093a8b7b433c571ccba997940b67479692339f7355",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:xcl\",\"provenOn\"]": {
+        "id": "project:xcl",
+        "field": "provenOn",
+        "sourceHash": "b6b2ef672ce47e891d369ad9b2177012b7638cdbfa18f0bd2663aca5a4a08534",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:scarlettx\",\"provenOn\"]": {
+        "id": "project:scarlettx",
+        "field": "provenOn",
+        "sourceHash": "f21f6a1531cf4571c62afa139d16b2503b6b5daca239531a8cbe285900134a9a",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:tuxbox\",\"provenOn\"]": {
+        "id": "project:tuxbox",
+        "field": "provenOn",
+        "sourceHash": "d318beaa6b914b22a3020996af1bb9163069a8ef6d3e0b4df00a863b12813130",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:openscarlett\",\"provenOn\"]": {
+        "id": "project:openscarlett",
+        "field": "provenOn",
+        "sourceHash": "f43194fd0a7dea8a10ec1d6aecd1aea1bb3ef1d94b934d9f400e4a6b75ee2c08",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:scarlett-layer\",\"provenOn\"]": {
+        "id": "project:scarlett-layer",
+        "field": "provenOn",
+        "sourceHash": "b7bc7b62519dea309d71f48851916268b5be5509f974b347883d22c2c563f394",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:anyxboxx\",\"summary\"]": {
+        "id": "project:anyxboxx",
+        "field": "summary",
+        "sourceHash": "78d749c95896468e2b47ccfd39d37bf28f3a03a44fe47dd3b63da8959c210fea",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:anyxboxx\",\"provenOn\"]": {
+        "id": "project:anyxboxx",
+        "field": "provenOn",
+        "sourceHash": "fa6fd80bbff372e6170542beed7dcde549a218b3239a667c22107110535e6877",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:anyxboxx\",\"claims.0.text\"]": {
+        "id": "project:anyxboxx",
+        "field": "claims.0.text",
+        "sourceHash": "d521ff9d74005f96092c5daef6c542d90e7cb0a4677fea96ab6f33cdee98fdfc",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:xvalkyrie\",\"provenOn\"]": {
+        "id": "project:xvalkyrie",
+        "field": "provenOn",
+        "sourceHash": "9213d1dc10dba548c005fa1ab0e5d5bf2226c3beff1e8564beebc9ad9a20b1f7",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:openscarlett-ce\",\"provenOn\"]": {
+        "id": "project:openscarlett-ce",
+        "field": "provenOn",
+        "sourceHash": "24e42c7dd837f7101a41eb51ab87b4009e9e562cb63835b8929bd13c51296d9c",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      }
+    },
+    "totals": {
+      "requests": 10,
+      "translatedFields": 21,
+      "failedFields": 30,
+      "inputTokens": 17615,
+      "outputTokens": 9998,
+      "thinkingTokens": 0
+    }
   }
 }
