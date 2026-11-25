@@ -1,44 +1,5 @@
 [
   {
-    "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
-    "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
-    "scope": "dashboard",
-    "key": "VI",
-    "source": "VI",
-    "refs": [
-      "dashboard.dc7b94e12cff"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "48c495dab8672d3377a6f61b79f788760d44cd5f7da0f88ca7f8d11f8502a5f2",
-    "sourceHash": "536fe4600f95bc3718ba7e824f979ecd061afd34a0ffbfb7bfefaaa3b967bcd5",
-    "scope": "dashboard",
-    "key": "4lwayz",
-    "source": "4lwayz",
-    "refs": [
-      "dashboard.536fe4600f95"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "75df85235b9e3758b1bccb5dc9b2c2e4fc72fb795c0647e068ec715d70fc7068",
-    "sourceHash": "4f5f737c1e4ced6eaab61ff2b330b6e0cbf735556691029516fae2975b923c6a",
-    "scope": "dashboard",
-    "key": "PortWatch",
-    "source": "PortWatch",
-    "refs": [
-      "dashboard.4f5f737c1e4c"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
     "id": "8770dd31532ebf7a82a1d1c73f8081d6650b13d8b8248c64ee51f7f2e7c953d4",
     "sourceHash": "cf0922a651ba1545bd575a6965e39304eeadc3a932125fcd9f9664a594446784",
     "scope": "dashboard",
@@ -51,19 +12,6 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "(غيثوب)"
-  },
-  {
-    "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
-    "sourceHash": "55ce932f5d6e4506fe43427334e5f3e52b4fdb2133cde39464ad6b2e6a1fda16",
-    "scope": "dashboard",
-    "key": "4lwayz/portwatch-vi",
-    "source": "4lwayz/portwatch-vi",
-    "refs": [
-      "dashboard.55ce932f5d6e"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
   },
   {
     "id": "e0e5f29cc24ce75372cb6e42f6b050c20196c9a73ad023d487514d9c25302642",
@@ -164,58 +112,6 @@
     "draft": "مثل و إعادة تصفيف موقعي الجديد على X: https://x.com/lithuaniangroyp/status/2125617475157139690"
   },
   {
-    "id": "32db91e831fc948383ce403d00095767bdecadc2fb54d3fae89874fe8859559e",
-    "sourceHash": "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96",
-    "scope": "content",
-    "key": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-    "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-    "refs": [
-      "efforts:belobug.blockers.0"
-    ],
-    "attempts": 2,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
-  },
-  {
-    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
-    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
-    "scope": "content",
-    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "refs": [
-      "efforts:zettrox.nuked.note"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
-    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
-    "scope": "content",
-    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-    "refs": [
-      "changes.81.text"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
-    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
-    "scope": "content",
-    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-    "refs": [
-      "changes.80.text"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
     "id": "574360da0b0a0dcc4fa82005437ebb0a6ce9f5c00ab33d73fa75c493fd4e1817",
     "sourceHash": "a5e15f05c8be0095fa3dec93467b406f04d9b1c39d1560c018ffbbf54e8bbb0f",
     "scope": "content",
@@ -230,6 +126,110 @@
     "draft": "ويدير عنواناً من طراز Xbox Series محلياً في Windows: طبقة توافقية، وشكل VIctory و victory-fork، وطور وقاس على طراز AMD Radeon RX 7800 XT."
   },
   {
+    "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
+    "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
+    "scope": "dashboard",
+    "key": "VI",
+    "source": "VI",
+    "refs": [
+      "dashboard.dc7b94e12cff"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "48c495dab8672d3377a6f61b79f788760d44cd5f7da0f88ca7f8d11f8502a5f2",
+    "sourceHash": "536fe4600f95bc3718ba7e824f979ecd061afd34a0ffbfb7bfefaaa3b967bcd5",
+    "scope": "dashboard",
+    "key": "4lwayz",
+    "source": "4lwayz",
+    "refs": [
+      "dashboard.536fe4600f95"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "75df85235b9e3758b1bccb5dc9b2c2e4fc72fb795c0647e068ec715d70fc7068",
+    "sourceHash": "4f5f737c1e4ced6eaab61ff2b330b6e0cbf735556691029516fae2975b923c6a",
+    "scope": "dashboard",
+    "key": "PortWatch",
+    "source": "PortWatch",
+    "refs": [
+      "dashboard.4f5f737c1e4c"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
+    "sourceHash": "55ce932f5d6e4506fe43427334e5f3e52b4fdb2133cde39464ad6b2e6a1fda16",
+    "scope": "dashboard",
+    "key": "4lwayz/portwatch-vi",
+    "source": "4lwayz/portwatch-vi",
+    "refs": [
+      "dashboard.55ce932f5d6e"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "32db91e831fc948383ce403d00095767bdecadc2fb54d3fae89874fe8859559e",
+    "sourceHash": "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96",
+    "scope": "content",
+    "key": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "refs": [
+      "efforts:belobug.blockers.0"
+    ],
+    "attempts": 3,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": true
+  },
+  {
+    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
+    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
+    "scope": "content",
+    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "refs": [
+      "efforts:zettrox.nuked.note"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
+    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+    "scope": "content",
+    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "refs": [
+      "changes.81.text"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
+    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+    "scope": "content",
+    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "refs": [
+      "changes.80.text"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
     "id": "77728b006aaf2189dffd6fc3c1aad889c3d5736b71197bad2ee2f7a089ee93eb",
     "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
     "scope": "content",
@@ -238,9 +238,9 @@
     "refs": [
       "efforts:belobug.summary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",

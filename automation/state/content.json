@@ -3,15 +3,15 @@
   "latestUpstreamCommitSha": "9c7bcd1c0d86a6102f97312a3a867b209be59b80",
   "latestSynchronizedCommitSha": "9c7bcd1c0d86a6102f97312a3a867b209be59b80",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "latestDeployedCommitSha": "82d3143808906701a08eb3d44441f0feb437c954",
+  "latestDeployedCommitSha": "5d9e4e73659e0fab6d2a17ba20a7cd335a0c8748",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-25T18:07:33.847Z",
-  "lastUpstreamCheckTime": "2026-11-25T18:07:33.847Z",
-  "authoritativeSource": "repository",
+  "lastSuccessfulSyncTime": "2026-11-25T18:15:53.178Z",
+  "lastUpstreamCheckTime": "2026-11-25T18:15:53.178Z",
+  "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-25T16:22:16.626Z",
   "records": {
     "new": 0,
-    "updated": 19,
+    "updated": 0,
     "deleted": 0,
     "sections": {
       "efforts": {
@@ -21,7 +21,7 @@
       },
       "news": {
         "new": 0,
-        "updated": 19,
+        "updated": 0,
         "deleted": 0
       },
       "tools": {
@@ -67,16 +67,16 @@
     "errors": []
   },
   "latency": {
-    "sourceCheckMs": 1418,
-    "dataSyncMs": 11,
-    "translationMs": 2074,
+    "sourceCheckMs": 667,
+    "dataSyncMs": 10,
+    "translationMs": 2035,
     "deploymentMs": null,
-    "totalMs": 3519
+    "totalMs": 2723
   },
   "apiAnything": {
     "ok": false,
-    "skipped": false,
-    "reason": "no site \"portwatch-public\" on this machine, and this install is local-only, so the shared catalog was not asked",
+    "skipped": true,
+    "reason": "No content change; read skipped",
     "changes": null,
     "ms": null,
     "repaired": false
@@ -258,7 +258,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"590026be009bb981383fcfac95418d4819919125d8b7b9a4136466d4c1ab5b72\"",
+      "etag": "W/\"6e559f5a674672588bc322f700a51fd66773b93acd10aebae401b027092fb8a6\"",
       "hash": "699bbcc3bf920a11926c6bf163a6ca7eb67b9f858183b560adc61702fe225858"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -282,8 +282,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b072367-d5\"",
-      "hash": "08747ac90390a1489833b91a683957334106dd6c4173ce0f2e2a74e8eddeba7e"
+      "etag": "\"6b0724c3-d5\"",
+      "hash": "96d5d2184d6e6fc0f07583332c5c2a8162bb08acb4063b785741e4a2ffdb1f97"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",
