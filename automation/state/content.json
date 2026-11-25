@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "latestUpstreamCommitSha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
-  "latestSynchronizedCommitSha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
+  "latestUpstreamCommitSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
+  "latestSynchronizedCommitSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "latestDeployedCommitSha": "44fb31266d74bb65d52fb6420e6db20c4ed1ed0a",
+  "latestDeployedCommitSha": "9c6377c33d8d1015bf508b08b05b5fd5359a1097",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-25T18:39:13.053Z",
-  "lastUpstreamCheckTime": "2026-11-25T18:39:13.053Z",
+  "lastSuccessfulSyncTime": "2026-11-25T18:52:30.187Z",
+  "lastUpstreamCheckTime": "2026-11-25T18:52:30.187Z",
   "authoritativeSource": "repository",
   "upstreamUpdated": "2026-11-25T16:22:16.626Z",
   "records": {
-    "new": 1,
-    "updated": 4,
+    "new": 0,
+    "updated": 0,
     "deleted": 0,
     "sections": {
       "efforts": {
         "new": 0,
-        "updated": 4,
+        "updated": 0,
         "deleted": 0
       },
       "news": {
@@ -40,17 +40,17 @@
         "deleted": 0
       },
       "changes": {
-        "new": 1,
+        "new": 0,
         "updated": 0,
         "deleted": 0
       }
     }
   },
   "translation": {
-    "coverage": 93.44,
-    "translated": 1040,
+    "coverage": 94.25,
+    "translated": 1049,
     "total": 1113,
-    "pending": 71,
+    "pending": 62,
     "completed": 0,
     "provider": "none"
   },
@@ -75,22 +75,22 @@
     "outputTokens": 0,
     "thinkingTokens": 0,
     "errors": [],
-    "pending": 54,
-    "durationMs": 2,
+    "pending": 45,
+    "durationMs": 4,
     "coverage": {
       "headlines": {
         "total": 30,
-        "translated": 9,
+        "translated": 12,
         "exempt": 0,
-        "missing": 21,
-        "coverage": 30
+        "missing": 18,
+        "coverage": 40
       },
       "changes": {
         "total": 12,
-        "translated": 9,
+        "translated": 10,
         "exempt": 0,
-        "missing": 3,
-        "coverage": 75
+        "missing": 2,
+        "coverage": 83.33
       },
       "projectDescriptions": {
         "total": 35,
@@ -108,26 +108,26 @@
       },
       "highlights": {
         "total": 94,
-        "translated": 85,
+        "translated": 88,
         "exempt": 0,
-        "missing": 9,
-        "coverage": 90.43
+        "missing": 6,
+        "coverage": 93.62
       },
       "blockers": {
         "total": 91,
-        "translated": 86,
+        "translated": 88,
         "exempt": 0,
-        "missing": 5,
-        "coverage": 94.51
+        "missing": 3,
+        "coverage": 96.7
       }
     }
   },
   "latency": {
-    "sourceCheckMs": 711,
-    "dataSyncMs": 6,
-    "translationMs": 0,
+    "sourceCheckMs": 840,
+    "dataSyncMs": 168,
+    "translationMs": 1,
     "deploymentMs": null,
-    "totalMs": 727
+    "totalMs": 1024
   },
   "apiAnything": {
     "ok": false,
@@ -150,27 +150,27 @@
     }
   ],
   "retryAttempts": [],
-  "upstreamSha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
+  "upstreamSha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
   "head": {
-    "sha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
-    "node_id": "C_kwDOV3EveNoAKDdjNTYwOGM0ZmMyNGEyZDQ3YTgxMDA0MzI1ODViMzdjMTc0NmUyMzU",
+    "sha": "da3d48a76b4c0f8d80f68e863b78013d55373372",
+    "node_id": "C_kwDOV3EveNoAKGRhM2Q0OGE3NmI0YzBmOGQ4MGY2OGU4NjNiNzgwMTNkNTUzNzMzNzI",
     "commit": {
       "author": {
         "name": "4lwayz",
-        "email": "359682649+4lwayz@users.noreply.github.com",
-        "date": "2026-11-25T18:31:06Z"
+        "email": "alwayzbooster45@gmail.com",
+        "date": "2026-11-25T18:49:03Z"
       },
       "committer": {
         "name": "4lwayz",
-        "email": "359682649+4lwayz@users.noreply.github.com",
-        "date": "2026-11-25T18:31:06Z"
+        "email": "alwayzbooster45@gmail.com",
+        "date": "2026-11-25T18:49:03Z"
       },
-      "message": "Race: filter by graphics card (AMD / NVIDIA), not GTA-specific vs any-game (owner's request)\n\nThe race's chips are now \"All\" plus one per brand that at least one\nrace build has run on, built from the `gpu` field. Intel and Mac are\nsupported values with their own outlined tags (blue, grey); their chips\nappear only once such a build is in the race. Today that's AMD and\nNVIDIA only.\n\nIntel tags for Xbox2Windows, OpenScarlett and OpenScarlett CE (Arc /\nIris Xe runs in their READMEs; all on the watchlist). No project has\nrun on a Mac. The old filter's strings are gone; EDITOR.md updated.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+      "message": "Pinned message: \"Anyone saying they have gameplay over +10 FPS is probably...\"",
       "tree": {
-        "sha": "e23ad92b7a28c1bd1a4198e6a3be26a30723ba8b",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/e23ad92b7a28c1bd1a4198e6a3be26a30723ba8b"
+        "sha": "c24035b30f547551b78d3057b9668d398b305409",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/c24035b30f547551b78d3057b9668d398b305409"
       },
-      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/7c5608c4fc24a2d47a8100432585b37c1746e235",
+      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/da3d48a76b4c0f8d80f68e863b78013d55373372",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -180,9 +180,9 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/7c5608c4fc24a2d47a8100432585b37c1746e235",
-    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/7c5608c4fc24a2d47a8100432585b37c1746e235",
-    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/7c5608c4fc24a2d47a8100432585b37c1746e235/comments",
+    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/da3d48a76b4c0f8d80f68e863b78013d55373372",
+    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/da3d48a76b4c0f8d80f68e863b78013d55373372",
+    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/da3d48a76b4c0f8d80f68e863b78013d55373372/comments",
     "author": {
       "login": "4lwayz",
       "id": 359682649,
@@ -227,123 +227,39 @@
     },
     "parents": [
       {
-        "sha": "96e0593781db3a17f433e30ff436f36b2b812f57",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/96e0593781db3a17f433e30ff436f36b2b812f57",
-        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/96e0593781db3a17f433e30ff436f36b2b812f57"
+        "sha": "7c5608c4fc24a2d47a8100432585b37c1746e235",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/7c5608c4fc24a2d47a8100432585b37c1746e235",
+        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/7c5608c4fc24a2d47a8100432585b37c1746e235"
       }
     ],
     "stats": {
-      "total": 54,
-      "additions": 34,
-      "deletions": 20
+      "total": 4,
+      "additions": 2,
+      "deletions": 2
     },
     "files": [
       {
-        "sha": "15901853ce54f72c141a0f99da28aa37962492d8",
-        "filename": "EDITOR.md",
+        "sha": "022bee46e95739177556d14202bb5f9917343b98",
+        "filename": "data/pinned.json",
         "status": "modified",
-        "additions": 1,
-        "deletions": 1,
-        "changes": 2,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/EDITOR.md",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/EDITOR.md",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/EDITOR.md?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -92,7 +92,7 @@ These stand until the evidence named here changes. If it has, say what changed i\n - **DexNom (2026-11-25, owner's call):** `DexNom/VIctory` (GitHub fork of VIctory, GPL-3.0, created 12:14 UTC, found by the scout on 4chan /v/) joined the race at #2, `verification: \"portwatch\"`. It's an AMD Radeon build on ZSlayerHQ's victory-world-runtime, tested on an RX 7900 XTX (its BENCHMARK.md: 3.5-4 fps indoors in Chapter 1's city, wrong interior lighting, ray-traced lighting off by default). The owner says it's at the same point as Belobug with the same progress bars, about 0.5 behind: Belobug's values with `render: 0.81` instead of 0.85 (same \"Close to the console\" step), 76.9%. Later that day the owner raised `render` to 0.9 because PortWatch saw ray-traced lighting working, which puts DexNom #1 at 78%. The owner called it the first to achieve ray tracing, but hyphennn's card already says his streams showed ray-traced lighting, so the site says \"the first AMD build on our board to get it\". Its README still calls ray-traced lighting experimental; that stays in `blockers`. The owner reports DexNom runs at about 1 fps with ray tracing on (in its summary and blockers; `fps` stays 3).\n - **Doomsday (2026-11-25, owner's call):** a private group, verified by PortWatch, on `JoshuuDev/victory-amd` (a GitHub fork of `myokex/victory-amd`, not tracked, so `basedOn` is empty and the byline names it). The owner says it has ray-traced lighting at 3-5 fps, almost no crashes and the same story progress as Belobug and DexNom, with rendering a bit behind DexNom's; the phone renders well and the map menu runs faster. Mostly AMD, also works on NVIDIA at lower fps. Values: `story: 0.5`, `render: 0.85`, `fps: 4`, `stability: 0.8` (ZETTROX's value for \"almost never crashes\"): 78.7%. It leads the headline; DexNom stays #1 in the race. The card links the group's X, `x.com/Stu9ao`, as a `proof` link (private cards show `proof` since this change). The avatar `assets/img/efforts/doomsday.jpg` is the owner's picture, cropped. Keep the values; don't lower them or remove the entry on your own. Its Setup.cmd only builds from source with cargo and adds a Start-menu shortcut; Initialize-FormatTables.ps1 downloads one data file from Marvisak/VIctory at a pinned commit and checks its SHA-256 (read on 2026-11-25). Recheck both scripts if they change, and never link a prebuilt download from it. Keep the values; don't lower them or remove the entry on your own.\n - **A shorter board (2026-11-25, owner's call):** the race now holds only public builds scored at or above XCL (35% that day: Belobug, ZETTROX, hyphennn, Uilian, VIctory, XCL). Everything below XCL went to the watchlist: Xbox2Windows, TuxBox, xbox-emulator, ScarlettX, OpenScarlett (Community Edition), OpenScarlett, scarlett-layer, XValkyrie, AnyXboxX. Keep that rule: a project joins the race only when it passes XCL, and one that falls behind XCL moves to the watchlist. The watchlist and the toolkit start collapsed. The \"New candidates\" and \"Fake downloads\" sections are gone from the site; `candidates` and `flagged` stay in tracker.json for your review. Nuked entries (Leonida, americas-recomp) are no longer shown anywhere, but keep them in `efforts`: their repo names stop the scout listing their copies as candidates.\n-- **Graphics-card tags (2026-11-25, owner's request):** each effort can have `gpu`: `[\"AMD\"]`, `[\"NVIDIA\"]` or both, main one first. It's the cards the build has actually run on, from its README's test machine or the owner's report; offline compiles and the WARP software adapter don't count. Cards show outlined AMD / NVIDIA tags, including private builds and watchlist rows. Leave the field out when nobody has said (on 2026-11-25: suri, omonkey, CGBJ and 11 watchlist projects). When you add or review an effort, set it from the README.\n+- **Graphics-card tags (2026-11-25, owner's request):** each effort can have `gpu`: any of `\"AMD\"`, `\"NVIDIA\"`, `\"Intel\"` and `\"Mac\"` (runs on a Mac), main one first. The race's filter chips are \"All\" plus one per brand that at least one race build has, so the Intel and Mac chips appear by themselves once such a build is in the race. They replaced the old \"GTA VI-specific\" / \"Any-game layers\" filter (owner's request). Intel on 2026-11-25: Xbox2Windows, OpenScarlett and OpenScarlett CE (Arc / Iris Xe runs in their READMEs, all on the watchlist). No project ran on a Mac. It's the cards the build has actually run on, from its README's test machine or the owner's report; offline compiles and the WARP software adapter don't count. Cards show outlined AMD / NVIDIA tags, including private builds and watchlist rows. Leave the field out when nobody has said (on 2026-11-25: suri, omonkey, CGBJ and 11 watchlist projects). When you add or review an effort, set it from the README.\n - **Stability as a number (2026-11-25):** `gta.stability` takes a STABILITY label or, for the owner's hand ratings, a number from 0 to 1 (`scoring.js`); the card shows the nearest label. Keep the owner's numbers as numbers.\n - **Leonida (2026-11-23): nuked.** Its Discord went at about 23:07 UTC, its GitHub repo (moved to `ProjectLeonida/Leonida` at 22:08) answered 404 by 23:47, and its creator posted on X that he quit. The entry keeps its last values and has a `nuked` field, so the site greys it out, puts it last without a rank and leaves it out of the headline numbers. Don't remove the field or re-rank it unless the project itself comes back. Contributor forks (for example `ASTROWwwW/Leonida`) are separate efforts: treat them as candidates.\n - **omonkey (2026-11-25): nuked**, on the owner's word. It had no public code, so there was nothing to check; Swaggely's Rumble channel, where it streamed, still loaded at 18:18 UTC. Its entry keeps its values with a `nuked` field, so it's hidden from the private builds and the headline. Its article stays as it was. Don't remove the field unless the owner says it's back."
-      },
-      {
-        "sha": "30e26de79c8ec8ac0f861b7aa672af94f3b26616",
-        "filename": "assets/css/style.css",
-        "status": "modified",
-        "additions": 7,
-        "deletions": 3,
-        "changes": 10,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fcss%2Fstyle.css",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fcss%2Fstyle.css",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/assets%2Fcss%2Fstyle.css?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -50,6 +50,8 @@\n   --fg-red: #b4262b;\n   --fg-amd: #c8102e;\n   --fg-nvidia: #4a7a00;\n+  --fg-intel: #0a5fb4;\n+  --fg-mac: #4b5160;\n   --fg-orange: #a14708;\n   --fg-claim: #8c3d06;\n }\n@@ -67,7 +69,7 @@\n     --ok-bg: #0f2a1f; --ok-line: #1d5a3f; --no-bg: #2c1214; --no-line: #5c2428;\n     --fg-pink: #ff7aa8; --fg-gold: #ffcf70; --fg-green: #4fd69a; --fg-violet: #ad9bff;\n     --fg-red: #ff8a8e; --fg-orange: #ffa66b; --fg-claim: #ffb27a;\n-    --fg-amd: #ff7b7b; --fg-nvidia: #a3d94a;\n+    --fg-amd: #ff7b7b; --fg-nvidia: #a3d94a; --fg-intel: #6cb6ff; --fg-mac: #c9ced8;\n     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .35);\n     --shadow-lg: 0 2px 4px rgba(0, 0, 0, .3), 0 24px 60px rgba(0, 0, 0, .5);\n   }\n@@ -83,7 +85,7 @@\n   --ok-bg: #0f2a1f; --ok-line: #1d5a3f; --no-bg: #2c1214; --no-line: #5c2428;\n   --fg-pink: #ff7aa8; --fg-gold: #ffcf70; --fg-green: #4fd69a; --fg-violet: #ad9bff;\n   --fg-red: #ff8a8e; --fg-orange: #ffa66b; --fg-claim: #ffb27a;\n-  --fg-amd: #ff7b7b; --fg-nvidia: #a3d94a;\n+  --fg-amd: #ff7b7b; --fg-nvidia: #a3d94a; --fg-intel: #6cb6ff; --fg-mac: #c9ced8;\n   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .35);\n   --shadow-lg: 0 2px 4px rgba(0, 0, 0, .3), 0 24px 60px rgba(0, 0, 0, .5);\n }\n@@ -511,9 +513,11 @@ html:not([lang=\"en\"]) .nav-links a { padding-inline: 9px; }\n .tag-proven { background: rgba(122, 92, 255, .1); color: var(--fg-violet); }\n .tag-proof { background: rgba(255, 46, 126, .1); color: var(--fg-pink); }\n /* Graphics-card tags: outlined, so they read apart from the filled status tags. */\n-.tag-amd, .tag-nvidia { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; font-weight: 700; letter-spacing: .02em; }\n+.tag-amd, .tag-nvidia, .tag-intel, .tag-mac { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; font-weight: 700; letter-spacing: .02em; }\n .tag-amd { color: var(--fg-amd); }\n .tag-nvidia { color: var(--fg-nvidia); }\n+.tag-intel { color: var(--fg-intel); }\n+.tag-mac { color: var(--fg-mac); }\n .w-gpu { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }\n .w-gpu .tag { font-size: 11px; padding: 2px 8px; }\n a.tag-proof:hover { text-decoration: underline; }"
-      },
-      {
-        "sha": "e002a8ea21ca79349d701e1e6c5751f828baeb9a",
-        "filename": "assets/i18n/en.json",
-        "status": "modified",
-        "additions": 1,
+        "additions": 2,
         "deletions": 2,
-        "changes": 3,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fen.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fen.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/assets%2Fi18n%2Fen.json?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -81,8 +81,6 @@\n   \"race.sub\": \"The efforts with public code, ranked by how close each is to running the game. Scores come from each project's public README, commits and issues. Self-reported claims are labelled. Private builds are listed below the race, without a rank.\",\n   \"race.filterLabel\": \"Filter efforts\",\n   \"race.all\": \"All\",\n-  \"race.gta\": \"GTA VI-specific\",\n-  \"race.generic\": \"Any-game layers\",\n   \"race.sort\": \"Sort\",\n   \"race.sortScore\": \"Progress\",\n   \"race.sortStars\": \"Stars\",\n@@ -96,6 +94,7 @@\n   \"effort.reproduced\": \"Independently reproduced\",\n   \"effort.verified\": \"Verified by PortWatch\",\n   \"effort.gpuTitle\": \"Runs on {v} graphics cards\",\n+  \"effort.macTitle\": \"Runs on a Mac\",\n   \"effort.verifiedTitle\": \"PortWatch has seen this build running\",\n   \"effort.self\": \"Self-reported\",\n   \"effort.selfTitle\": \"Based on the project's own README; not yet reproduced by others\","
-      },
-      {
-        "sha": "f50fb8d27642748aa9c558e79bb1702374440fc7",
-        "filename": "assets/i18n/es.json",
-        "status": "modified",
-        "additions": 1,
-        "deletions": 2,
-        "changes": 3,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fes.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fes.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/assets%2Fi18n%2Fes.json?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -81,8 +81,6 @@\n   \"race.sub\": \"Los proyectos con código público, ordenados según lo cerca que están de ejecutar el juego. Las puntuaciones salen del README público, los commits y los issues de cada proyecto. Las afirmaciones de los propios proyectos están marcadas. Las versiones privadas aparecen debajo, sin puesto.\",\n   \"race.filterLabel\": \"Filtrar proyectos\",\n   \"race.all\": \"Todos\",\n-  \"race.gta\": \"Específicos de GTA VI\",\n-  \"race.generic\": \"Capas para cualquier juego\",\n   \"race.sort\": \"Ordenar\",\n   \"race.sortScore\": \"Progreso\",\n   \"race.sortStars\": \"Estrellas\",\n@@ -150,6 +148,7 @@\n   \"effort.reproduced\": \"Reproducido por terceros\",\n   \"effort.verified\": \"Verificado por PortWatch\",\n   \"effort.gpuTitle\": \"Funciona con tarjetas gráficas {v}\",\n+  \"effort.macTitle\": \"Funciona en un Mac\",\n   \"effort.verifiedTitle\": \"PortWatch ha visto esta build funcionando\",\n   \"effort.self\": \"Autodeclarado\",\n   \"effort.selfTitle\": \"Basado en el propio README del proyecto; aún no reproducido por otros\","
-      },
-      {
-        "sha": "5b5391cc8df368c335772de8a14366a53cd49c2c",
-        "filename": "assets/i18n/pt-BR.json",
-        "status": "modified",
-        "additions": 1,
-        "deletions": 2,
-        "changes": 3,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fpt-BR.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fi18n%2Fpt-BR.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/assets%2Fi18n%2Fpt-BR.json?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -81,8 +81,6 @@\n   \"race.sub\": \"Os projetos com código público, ordenados pela proximidade de rodar o jogo. As pontuações vêm do README público, dos commits e das issues de cada projeto. Alegações dos próprios projetos são sinalizadas. Versões privadas aparecem abaixo, sem posição.\",\n   \"race.filterLabel\": \"Filtrar projetos\",\n   \"race.all\": \"Todos\",\n-  \"race.gta\": \"Específicos do GTA VI\",\n-  \"race.generic\": \"Camadas para qualquer jogo\",\n   \"race.sort\": \"Ordenar\",\n   \"race.sortScore\": \"Progresso\",\n   \"race.sortStars\": \"Estrelas\",\n@@ -150,6 +148,7 @@\n   \"effort.reproduced\": \"Reproduzido por terceiros\",\n   \"effort.verified\": \"Verificado pelo PortWatch\",\n   \"effort.gpuTitle\": \"Roda em placas de vídeo {v}\",\n+  \"effort.macTitle\": \"Roda em um Mac\",\n   \"effort.verifiedTitle\": \"O PortWatch viu esta build rodando\",\n   \"effort.self\": \"Autodeclarado\",\n   \"effort.selfTitle\": \"Baseado no próprio README do projeto; ainda não reproduzido por outros\","
-      },
-      {
-        "sha": "37bfb2c72461db86ad4aec13d1e14ea9837b8ae8",
-        "filename": "assets/js/app.js",
-        "status": "modified",
-        "additions": 16,
-        "deletions": 4,
-        "changes": 20,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fjs%2Fapp.js",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/assets%2Fjs%2Fapp.js",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/assets%2Fjs%2Fapp.js?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -87,6 +87,7 @@ async function main() {\n   pinned.then((p) => fillPinned($('#pinned'), p, { ago, when: (iso) => new Date(iso).toLocaleString(locale()) }));\n   renderOverall(data);\n   renderChanges(data.changes || []);\n+  renderFilterChips();\n   renderRace();\n   renderNews(data.news || []);\n   renderWatchlist(data);\n@@ -334,18 +335,29 @@ function isGtaSpecific(e) { return /gta/i.test(e.target || ''); }\n \n // The graphics cards a build has been run on (`gpu`: [\"AMD\"], [\"NVIDIA\"] or both, main one first),\n // from its README's test machine or the owner's report. Left off when nobody has said.\n-const GPU_CLASS = { AMD: 'tag-amd', NVIDIA: 'tag-nvidia' };\n+// \"Mac\" means it runs on a Mac (Apple's own graphics).\n+const GPU_CLASS = { AMD: 'tag-amd', NVIDIA: 'tag-nvidia', Intel: 'tag-intel', Mac: 'tag-mac' };\n+const gpuTitle = (v) => (v === 'Mac' ? t('effort.macTitle') : t('effort.gpuTitle', { v }));\n const gpuTags = (e) => (Array.isArray(e.gpu) ? e.gpu : []).filter((v) => GPU_CLASS[v])\n-  .map((v) => `<span class=\"tag ${GPU_CLASS[v]}\" title=\"${esc(t('effort.gpuTitle', { v }))}\">${esc(v)}</span>`).join('');\n+  .map((v) => `<span class=\"tag ${GPU_CLASS[v]}\" title=\"${esc(gpuTitle(v))}\">${esc(v)}</span>`).join('');\n+\n+// The race's filter chips: \"All\", then one per brand that at least one build in the race has run on,\n+// so Intel or Mac chips only appear once such a build is in the race.\n+function renderFilterChips() {\n+  const inRace = state.data.efforts.filter((e) => e.tier === 'tracked' && !e.nuked && !isPrivateBuild(e));\n+  const brands = Object.keys(GPU_CLASS).filter((v) => inRace.some((e) => Array.isArray(e.gpu) && e.gpu.includes(v)));\n+  $('#race-chips').innerHTML = `<button class=\"chip is-on\" data-filter=\"all\">${esc(t('race.all'))}</button>` +\n+    brands.map((v) => `<button class=\"chip\" data-filter=\"${esc(v)}\" title=\"${esc(gpuTitle(v))}\">${esc(v)}</button>`).join('');\n+}\n \n function renderRace() {\n   const { data, filter, sort } = state;\n   // Only public code is ranked; private builds get their own unranked list below the race.\n   // Nuked efforts (taken offline) aren't shown (owner's call, 2026-11-25). They stay in tracker.json,\n   // where their repo names keep the scout from listing copies of them as new candidates.\n   let list = data.efforts.filter((e) => e.tier === 'tracked' && !e.nuked && !isPrivateBuild(e));\n-  if (filter === 'gta') list = list.filter(isGtaSpecific);\n-  if (filter === 'generic') list = list.filter((e) => !isGtaSpecific(e));\n+  // The AMD / NVIDIA chips keep the builds that have run on that brand of card (`gpu`).\n+  if (GPU_CLASS[filter]) list = list.filter((e) => Array.isArray(e.gpu) && e.gpu.includes(filter));\n   const byScore = (a, b) => Number(!!a.nuked) - Number(!!b.nuked) || b._s.score - a._s.score || byStars(a, b);\n   const sorters = {\n     score: byScore,"
-      },
-      {
-        "sha": "af1257e1c044f2b10fe51d9215bbf34775f67243",
-        "filename": "data/tracker.json",
-        "status": "modified",
-        "additions": 6,
-        "deletions": 3,
-        "changes": 9,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/data%2Ftracker.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/data%2Ftracker.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Ftracker.json?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -1617,7 +1617,8 @@\n       \"branch\": \"main\",\n       \"tier\": \"watchlist\",\n       \"gpu\": [\n-        \"NVIDIA\"\n+        \"NVIDIA\",\n+        \"Intel\"\n       ],\n       \"approach\": \"Compatibility layer\",\n       \"target\": \"Any Xbox Series game\",\n@@ -1731,7 +1732,8 @@\n       \"tier\": \"watchlist\",\n       \"gpu\": [\n         \"NVIDIA\",\n-        \"AMD\"\n+        \"AMD\",\n+        \"Intel\"\n       ],\n       \"approach\": \"Static recompilation\",\n       \"target\": \"Any Xbox Series game\",\n@@ -2549,7 +2551,8 @@\n       \"branch\": \"main\",\n       \"tier\": \"watchlist\",\n       \"gpu\": [\n-        \"NVIDIA\"\n+        \"NVIDIA\",\n+        \"Intel\"\n       ],\n       \"approach\": \"Compatibility layer\",\n       \"target\": \"Any Xbox Series game\","
-      },
-      {
-        "sha": "f83c4aefc69e18026863b9a1bde2075c2076f1d3",
-        "filename": "index.html",
-        "status": "modified",
-        "additions": 1,
-        "deletions": 3,
         "changes": 4,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/7c5608c4fc24a2d47a8100432585b37c1746e235/index.html",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/7c5608c4fc24a2d47a8100432585b37c1746e235/index.html",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/index.html?ref=7c5608c4fc24a2d47a8100432585b37c1746e235",
-        "patch": "@@ -226,10 +226,8 @@ <h2 id=\"race-title\" data-i18n=\"race.title\">The race</h2>\n           <p class=\"sub\" data-i18n=\"race.sub\">The efforts with public code, ranked by how close each is to running the game. Scores come from each project's public README, commits and issues. Self-reported claims are labelled. Private builds are listed below the race, without a rank.</p>\n         </div>\n         <div class=\"controls\">\n-          <div class=\"chips\" role=\"group\" aria-label=\"Filter efforts\" data-i18n-attr=\"aria-label:race.filterLabel\">\n+          <div class=\"chips\" id=\"race-chips\" role=\"group\" aria-label=\"Filter efforts\" data-i18n-attr=\"aria-label:race.filterLabel\">\n             <button class=\"chip is-on\" data-filter=\"all\" data-i18n=\"race.all\">All</button>\n-            <button class=\"chip\" data-filter=\"gta\" data-i18n=\"race.gta\">GTA VI-specific</button>\n-            <button class=\"chip\" data-filter=\"generic\" data-i18n=\"race.generic\">Any-game layers</button>\n           </div>\n           <label class=\"sort\"><span data-i18n=\"race.sort\">Sort</span>\n             <select id=\"sort\">"
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/da3d48a76b4c0f8d80f68e863b78013d55373372/data%2Fpinned.json",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/da3d48a76b4c0f8d80f68e863b78013d55373372/data%2Fpinned.json",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Fpinned.json?ref=da3d48a76b4c0f8d80f68e863b78013d55373372",
+        "patch": "@@ -2,6 +2,6 @@\n   \"show\": true,\n   \"name\": \"4lwayz\",\n   \"avatar\": \"assets/img/4lwayz-2.jpg\",\n-  \"text\": \"Like and retweet my new post on X: https://x.com/lithuaniangroyp/status/2125617475157139690\",\n-  \"updated\": \"2026-11-25T16:17:00Z\"\n+  \"text\": \"Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.\",\n+  \"updated\": \"2026-11-25T18:49:02Z\"\n }"
       }
     ]
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"aa82167b9fcfd8564e5d430adeb10b01c14442df435f7207518a80b11d2743b1\"",
-      "hash": "19a40923d7d1296721a7cc8bb953a5d193ff9f65540de7e0948e8bf6644cdace"
+      "etag": "W/\"d9e916c8782a44eee4c1eafb69895a33674400e5c5f73b5aa17b5c185963ecec\"",
+      "hash": "dcb2a4c1db070095979a19b44aaec80f99e94acffee0da58289398a182d78a69"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
-      "etag": "W/\"c15c276d40a17178d2c0e2063d8a2794\"",
-      "hash": "6e406d014af331bf4473de3c79b1021f0901650a2901d509c30a92df3112dada"
+      "etag": "W/\"8a834d84809ea9bbf194bf6616be50b4\"",
+      "hash": "06ed7e4814cb9941b63ab01dad0f02511075f22f5fc5e5406db71d6f22b32865"
     },
     "https://portwatch-vi.xyz/data/tracker.json": {
       "etag": "W/\"7186125879b4b557811ad69bcf45729c\"",
@@ -362,8 +278,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b07266d-d5\"",
-      "hash": "aabe58bcb4b1f686f257e3fe8450ea078d7190c27f75c7116888532a643021b6"
+      "etag": "\"6b072ceb-d5\"",
+      "hash": "4328e21b9b2cd67e960c4577b06c03351bd96253fe05fe99856b8ce242245d79"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",
@@ -398,6 +314,18 @@
       "hash": "1e344f5715b36827627e4445973f035754bdbd6b40317956ca987078bfa5f8d4"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/7c5608c4fc24a2d47a8100432585b37c1746e235/assets/i18n/en.json": {
+      "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
+      "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/da3d48a76b4c0f8d80f68e863b78013d55373372/data/tracker.json": {
+      "etag": "W/\"745d3eca966f69562990590ae00a81db8916770eafe253494bbd1444479c0f34\"",
+      "hash": "1e344f5715b36827627e4445973f035754bdbd6b40317956ca987078bfa5f8d4"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/da3d48a76b4c0f8d80f68e863b78013d55373372/data/pinned.json": {
+      "etag": "W/\"4459ac42c69e18771ccc06b9f000f67a73b87208670e35923d76931fc7711b6b\"",
+      "hash": "06ed7e4814cb9941b63ab01dad0f02511075f22f5fc5e5406db71d6f22b32865"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/da3d48a76b4c0f8d80f68e863b78013d55373372/assets/i18n/en.json": {
       "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
       "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
     }
