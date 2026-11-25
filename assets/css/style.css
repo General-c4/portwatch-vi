@@ -934,5 +934,7 @@ html[dir="rtl"] :is(.e-summary,.w-name p,.article p,.dek,.pin-text) { unicode-bi
 html[dir="rtl"] .p-no { float: left; }
 html[dir="rtl"] .more-link::after { content: "←"; }
 html[dir="rtl"] #ov-boot { direction: ltr; unicode-bidi: isolate; text-align: end; }
+html[dir="rtl"] .e-by { text-align: match-parent; }
+html[dir="rtl"] .e-score b { text-align: start; }
 html[dir="rtl"] .hero h1 { max-width: 14ch; }
 html[dir="rtl"] .hero :is(.lede,.hero-lede) { max-width: 62ch; }
