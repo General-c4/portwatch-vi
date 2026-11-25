@@ -3,7 +3,7 @@ import { getLiveViewers, trackView } from './backend.js';
 import { coverHtml, articlePath } from './news-shared.js';
 import { fillPinned } from './pinned.js';
 import { initI18n, t, tr, locale } from './i18n.js';
-import { contentText, newsText } from './content-i18n.js';
+import { contentText, newsText, setNewsReloadHandler } from './content-i18n.js';
 import {loadTracker,loadPinned,startLiveUpdates,restoreLiveView} from './live-data.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -79,6 +79,10 @@ async function main() {
     loadTracker(),
     initI18n(),
   ]);
+  setNewsReloadHandler(()=>{
+    try{sessionStorage.setItem('pw-live-view',JSON.stringify({filter:state.filter,sort:state.sort,scrollY:scrollY,folds:[...document.querySelectorAll('details.fold[open]')].map(e=>e.id)}));}catch{}
+    location.reload();
+  });
   startLiveUpdates(structuredClone(data),pinned,()=>({filter:state.filter,sort:state.sort}));
   state.data = data;
   for (const e of data.efforts) Object.assign(e, { _s: scoreEffort(e) });

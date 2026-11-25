@@ -43,6 +43,8 @@ The SDK's hidden retries and automatic continuation are disabled so request coun
 
 `content-sync-status`/`deployment-verification` artifacts include a `newsTranslation` section: requests, prompt/output/thinking tokens, duration, successful/failed translations, cached fields, pending news and safe error codes. The existing five-minute content schedule and 60-second visible-page data checks are unchanged. Arabic translation arrives after the next successful server sync and Pages deployment; the browser never calls Gemini. CDN caching and GitHub scheduler delays still apply.
 
+Arabic pages also check the deployed news catalog every 60 seconds while visible, with failure backoff. A newly completed translation therefore replaces an English fallback even when the official tracker itself has not changed. Open readers and input controls postpone refresh; homepage filter/sort/scroll state is retained. The same catalog check works on static news articles and the archive. Its shortened 500-ms browser fixture verifies this English-to-Arabic replacement without altering production timing.
+
 ## Testing and operation
 
 Run `node --test tests/*.test.mjs`. Routine tests inject mocked Gemini responses and require no key. `automation/gemini-news-browser.mjs _site` checks scoped cards/feed/dialog/article/archive rendering, unchanged project text, English, RTL and source links at desktop/mobile sizes using synthetic browser-only fixtures. Existing full browser tests now account for the already-supported English fallback and identify the actual project rather than assuming a fixed leader.
@@ -54,3 +56,19 @@ Normal operation uses the existing `content-sync.yml`: validated news results an
 Files added: `automation/lib/gemini-news.mjs`, `news-sync.mjs`, `gemini-news-smoke.mjs`, `gemini-news-browser.mjs`, `automation/state/news-translations.json`, `assets/i18n/news/ar.json`, `tests/gemini-news.test.mjs`, the manual smoke workflow and this report. Modified: content sync/preview workflows, isolated SDK lock/package files, content/news display helpers and news-only call sites, deployment asset verification and existing browser-test expectations.
 
 Selection evidence: Gemini 3.8 returned generation HTTP 503 during real checks; 3.5 Flash-Lite produced responses rejected by the facts/language guard. Gemini 3.6 Flash returned a validated synthetic translation in 2031 ms (978 input, 195 output tokens); inspection then identified a duplicated Arabic verb, so a fluency rejection rule and regression were added before final acceptance. No synthetic story was published.
+
+## Real API result and remaining limits
+
+The final fluency-guarded [real API check succeeded](https://github.com/General-c4/portwatch-vi/actions/runs/45672323154) using **gemini-3.6-flash** in one generation request: **27932 ms**, **1019 input tokens**, **143 output tokens**, **1162 total tokens**. No separate thinking-token count was reported. This is the final measured request duration; the earlier 2031-ms result is not a latency guarantee. On the owner's confirmed unbilled Free-tier project the estimated charge is **$0**. At the documented November 2026 standard paid rates ($0.75 input/$3.75 output per million), the same final request would be approximately **$0.0013005**; paid billing was not enabled.
+
+Synthetic source headline: `Leonida Reforge reports 12.5 fps in an unverified test`.
+
+Validated Arabic: `مشروع Leonida Reforge يسجل 12.5 fps في اختبار غير مؤكد`.
+
+Synthetic source paragraph: `The developers say rendering may improve. This is an unverified claim, not an independent benchmark.`
+
+Validated Arabic: `صرح المطورون بأن التصيير الرسومي قد يتحسن. يُعد هذا ادعاءً غير مؤكد وليس اختبار أداء مستقلًا.`
+
+All 24 Node tests, 141 existing full-browser cases, five private-dashboard viewport checks, the malicious-catalog isolation check, and the new scoped-news desktop/mobile browser fixture passed. Reviewed dictionaries remain byte-for-byte unchanged in content: 366 interface entries, 601 editorial entries and 79 dashboard entries. A missing Git identity was discovered when the existing source synchronizer first staged an upstream merge on a clean runner; its merge command now explicitly supplies the same bot identity as its commit commands, and the source workflow subsequently succeeded.
+
+No genuinely new eligible upstream story was available during acceptance, so no historical story or the old pending queue was translated for demonstration. Live deployment verifies the new catalog and UI; the first production article translation remains contingent on an eligible upstream publication. Free-tier 503 responses occurred during checks; bounded retries, a persistent queue and English fallback handle recurrence. Prompting and validation are safeguards, not proof that every future translation is semantically or grammatically perfect.

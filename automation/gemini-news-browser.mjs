@@ -21,11 +21,13 @@ try{
  for(let i=0;i<30;i++){if(await ready())break;await new Promise(r=>setTimeout(r,100));}
  browser=await chromium.launch({channel:process.env.PW_BROWSER||'msedge',headless:true});
  for(const width of [1920,390]){
+  let serveCatalog=true;
   const context=await browser.newContext({viewport:{width,height:900}}),page=await context.newPage(),errors=[];
   await page.addInitScript(()=>{if(!localStorage.getItem('pw-lang'))localStorage.setItem('pw-lang','ar');});page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/assets/js/sync-config.js',r=>r.fulfill({contentType:'text/javascript',body:'export const LIVE_SYNC=false;export const SCORING_HASH="";export const POLL_MS=60000;'}));
   await page.route('**/data/tracker.json',r=>r.fulfill({json:data}));
-  await page.route('**/assets/i18n/news/ar.json',r=>r.fulfill({json:catalog}));
+  await page.route('**/assets/i18n/news/ar.json*',r=>r.fulfill({json:serveCatalog?catalog:{version:1,articles:{}}}));
+  await page.route('**/assets/js/content-i18n.js',async r=>r.fulfill({contentType:'text/javascript',body:(await readFile(resolve(root,'assets/js/content-i18n.js'),'utf8')).replace('const NEWS_POLL_MS=60000;','const NEWS_POLL_MS=500;')}));
   await page.route(/^http:\/\/127\.0\.0\.1:8098\/news\//,r=>{const path=new URL(r.request().url()).pathname.slice(1);return files[path]?r.fulfill({contentType:'text/html',body:files[path]}):r.continue();});
   const base='http://127.0.0.1:8098/';
   await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForSelector('.effort');
@@ -35,6 +37,11 @@ try{
   await page.locator(`[data-story="${story.id}"]`).click();await page.waitForSelector('#reader[open]');
   assert.equal(await page.locator('#reader-title').textContent(),ar.title);assert.equal(await page.locator('#reader .article p').textContent(),ar['body.0']);
   assert.equal(await page.locator('#reader .sources a').first().getAttribute('href'),story.sources[0].url);
+  await page.keyboard.press('Escape');serveCatalog=false;await page.reload({waitUntil:'domcontentloaded'});await page.waitForSelector('.effort');
+  assert.equal(await page.locator(`[data-story="${story.id}"] h3`).textContent(),story.title);
+  await page.selectOption('#sort','stars');await page.locator('h1').click();serveCatalog=true;
+  await page.waitForFunction(({id,title})=>document.querySelector(`[data-story="${id}"] h3`)?.textContent===title,{id:story.id,title:ar.title},{timeout:10000});
+  assert.equal(await page.locator('#sort').inputValue(),'stars');
   await page.goto(base+`news/${story.id}.html`,{waitUntil:'domcontentloaded'});
   await page.waitForFunction(title=>document.querySelector('.reader-page h1')?.textContent===title,ar.title);
   assert.equal(await page.locator('.article p').textContent(),ar['body.0']);assert.equal(await page.locator('html').getAttribute('dir'),'rtl');
