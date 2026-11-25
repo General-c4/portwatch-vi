@@ -391,5 +391,14 @@
     "key": "14 technical terms",
     "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
     "at": "2026-11-25T17:02:11.193Z"
+  },
+  "8770dd31532ebf7a82a1d1c73f8081d6650b13d8b8248c64ee51f7f2e7c953d4": {
+    "id": "8770dd31532ebf7a82a1d1c73f8081d6650b13d8b8248c64ee51f7f2e7c953d4",
+    "sourceHash": "cf0922a651ba1545bd575a6965e39304eeadc3a932125fcd9f9664a594446784",
+    "scope": "dashboard",
+    "key": "github_pat_…",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-25T17:54:58.561Z"
   }
 }

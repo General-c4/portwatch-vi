@@ -8,8 +8,8 @@
     "refs": [
       "dashboard.dc7b94e12cff"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -21,8 +21,8 @@
     "refs": [
       "dashboard.536fe4600f95"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -34,8 +34,8 @@
     "refs": [
       "dashboard.4f5f737c1e4c"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -47,9 +47,10 @@
     "refs": [
       "dashboard.cf0922a651ba"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "(غيثوب)"
   },
   {
     "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
@@ -60,8 +61,73 @@
     "refs": [
       "dashboard.55ce932f5d6e"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "32db91e831fc948383ce403d00095767bdecadc2fb54d3fae89874fe8859559e",
+    "sourceHash": "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96",
+    "scope": "content",
+    "key": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "refs": [
+      "efforts:belobug.blockers.0"
+    ],
+    "attempts": 1,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
+    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
+    "scope": "content",
+    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "refs": [
+      "efforts:zettrox.nuked.note"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
+    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+    "scope": "content",
+    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "refs": [
+      "changes.81.text"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
+    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+    "scope": "content",
+    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "refs": [
+      "changes.80.text"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "77728b006aaf2189dffd6fc3c1aad889c3d5736b71197bad2ee2f7a089ee93eb",
+    "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
+    "scope": "content",
+    "key": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+    "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+    "refs": [
+      "efforts:belobug.summary"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -185,9 +251,9 @@
     "refs": [
       "efforts:dexnom.highlights.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7bd60cfb54896139b542bf6063eb2b0406612f71385c0209cc91c2bdc5c410c6",
@@ -198,9 +264,9 @@
     "refs": [
       "headlines:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "60cf4999b993e71f86883c1fb0d510c0968eb3e92ab315ae83eec5330b939d87",
@@ -211,9 +277,9 @@
     "refs": [
       "candidates:voidopcode/vilocity.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "850cb188b35645cc96815b48400a78d74a84a801f4d9daa52bf80f740e31b6fd",
@@ -224,9 +290,9 @@
     "refs": [
       "efforts:dexnom.highlights.1"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "13362a5e92e2009ac21f17151e82f6da1591cb0b4bf28d205099374f88af67f2",
@@ -237,9 +303,9 @@
     "refs": [
       "candidates:Wertrex/Americas.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "eb8a5c5de0a853f7f2cfa6507059c9b4ba1d5500d21a0aff37c1b06558822431",
@@ -250,9 +316,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "67db332e461717eb6ce3ee321545273dc384df1fe029f6c7132b1e2ddc4e885a",
@@ -263,9 +329,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "451d747d46a685397feb0170644e1c239d61c434190a5937e80c68073b56051b",
@@ -276,9 +342,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVXBSdGh4bFZTS0ptMG5kd0Y4UVdrb1luR3RuWnhVU0xFZXFYSmNTd3VlNlNKYnZad3h2cG5nVm94VldTQ0dYRjhqT01wSFpxOEltUG5KQzR2QUlwaTRRcUVMOExjY0FGS2x0bmk1ekdrbERLUHdoWTExQ0I5cWZGTUE5ZWtrY3JxanlDVWk0RFM2SDVCeVJuYnBCbTRySUh0RDVmYXE4Ukxua2lUakRMcjBpZ25lTXNkaHhnZXJNQzNvTjhValFvQUk0ZzRQcjVrTF9fZjhWQmg4bHFzZGZyVzVyYTk?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7569f41d244fed4f9ebbf360fdb9411854b6e6c0558ad04a18c2c161c9c095e8",
@@ -289,9 +355,9 @@
     "refs": [
       "efforts:dexnom.blockers.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "88df3008483894a02b10e6664db0098c5815fcf88eb0079047fb7df0183bb21e",
@@ -302,9 +368,9 @@
     "refs": [
       "candidates:kfedora/GTAVI-Xbox2PC.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "fd2b451cdaa547d36b370a3a8c79b03d3425d448109ff111e5a96b34cbfa67fb",
@@ -315,9 +381,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7b30e80a46ad34a6628ccc2a1cdcc01b4068ad5d8a29c8b58769561fd6b8b8a9",
@@ -328,9 +394,9 @@
     "refs": [
       "efforts:dexnom.highlights.3"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "2ec16a96ef6634b09386923fcd83e897ea60bd84eb3675cacfd1dc594fefcace",
@@ -341,9 +407,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "032553284c4d745bdf4d28dffbed36eb7eca41eb20bcd60188bd61f0a475f664",
@@ -354,9 +420,9 @@
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "b57c68a0abf810ee5f08e5d7a589cda544bf835868ffe7571cdec7aebedfcf66",
@@ -367,9 +433,9 @@
     "refs": [
       "candidates:grzegorz2047/TrinityXSX.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4fcc5beb12d7d67c15c9640c8050663841026951d53999c95d893e7bf57d9137",
@@ -380,9 +446,9 @@
     "refs": [
       "efforts:dexnom.blockers.1"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Ray tracing terminology requires review",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "a2ab74b2747cfbffd389870644b384a78b68bc0dcb8ea07eda5fa9a1bf8813d0",
@@ -393,9 +459,9 @@
     "refs": [
       "candidates:Itsbatt/victory-unified.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ11QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "54e1047a2c37cc7615d8417e319fe674156cc3ac57bee389f8d0b52f79132399",
@@ -406,9 +472,9 @@
     "refs": [
       "candidates:xcl-dev/xcl.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "12bb6a7d4a2c80accd1d0729e9f0571043b265de757675646ccf11b0dc3374d3",
@@ -419,9 +485,9 @@
     "refs": [
       "efforts:anyxboxx.claims.0.text"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "9175bfb85ae1238df711a9f93a44ebdf6740ca61e3652ef3592eca611501687f",
@@ -432,9 +498,9 @@
     "refs": [
       "changes.69.text"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "20ca8dab3c0e19d327343052c58afdeba0be83794271703a509f53870d20b004",
@@ -445,9 +511,9 @@
     "refs": [
       "candidates:kellysix/kelly.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "53274f05967265b117aedc20575f8f1aebcf2cb3f65249c64dafdec80137e774",
@@ -458,9 +524,9 @@
     "refs": [
       "candidates:realblastex/flamingo.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "09328b0522a87b8fcb457e6411a781914634c4e38bd6a884874056e9eff44445",
@@ -471,9 +537,9 @@
     "refs": [
       "candidates:RickyDivjakovski/Revenge.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "1493173b10ec86e5f229a857e723067e707d5a5e9da568d1a0d9c58d20f2286a",
@@ -484,9 +550,9 @@
     "refs": [
       "changes.68.text"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "25ef32f5aa241e3e3fadecf7f3085f4adcfb6e0138d35bb653a990859e41d786",
@@ -497,9 +563,9 @@
     "refs": [
       "efforts:anyxboxx.summary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "0b1b9ee377940024174ea2c871c11a4962036d4b5960ee415dd7726024a1f14b",
@@ -510,9 +576,9 @@
     "refs": [
       "changes.70.text"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "6adaa75c7b733a586f14dc104a17d1baa6071fd4c2d35aede8164ed8a0c948a9",
@@ -523,9 +589,9 @@
     "refs": [
       "efforts:doomsday.summary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "5691f071b50d6189744af8ca24f224c263b71541b5ba114369591f08486ac4d8",
@@ -536,9 +602,9 @@
     "refs": [
       "efforts:dexnom.summary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
