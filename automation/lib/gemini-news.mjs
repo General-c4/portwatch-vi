@@ -46,7 +46,10 @@ export function validateNewsResponse(request,raw){
   const source=request.fields[key];
   if(!source){if(values[key])throw new Error('unexpected_content');continue;}
   let value;
-  try{value=restoreTranslation(source,values[key],request.protectedFields[key].tokens);}catch{throw new Error('protected_facts_or_language_invalid');}
+  try{value=restoreTranslation(source,values[key],request.protectedFields[key].tokens);}catch(error){
+   const reason=/Protected token/.test(error.message)?'protected_token':/Untranslated prose/.test(error.message)?'untranslated_prose':/Negation/.test(error.message)?'negation':/qualifier/.test(error.message)?'evidence_qualifier':/Numeric/.test(error.message)?'numbers':/Arabic/.test(error.message)?'language':/terminology/.test(error.message)?'terminology':'format_or_length';
+   throw Object.assign(new Error('protected_facts_or_language_invalid'),{field:key,reason});
+  }
   if(/(?:javascript|data|vbscript)\s*:/i.test(value))throw new Error('unsafe_content');
   // Paragraph and Markdown structure, including literal code, stays intact.
   const structure=s=>({lines:(s.match(/\n/g)||[]).length,backticks:(s.match(/`/g)||[]).length,bold:(s.match(/\*\*/g)||[]).length,links:(s.match(/\]\(/g)||[]).length,lists:s.split('\n').filter(l=>/^\s*(?:[-*+] |\d+\. )/.test(l)).length});

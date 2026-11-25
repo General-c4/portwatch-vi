@@ -13,6 +13,6 @@ try{
  await atomicJSON('.sync/gemini-news-smoke.json',result);
  console.log(JSON.stringify({status:result.status,model:result.model,requests:1,durationMs,usage:response.usage}));
 }catch(error){
- const code=newsErrorCode(error);await atomicJSON('.sync/gemini-news-smoke.json',{status:'failed',code,phase,httpStatus:Number(error?.status)||null,modelInfo,synthetic:true,published:false});
+ const code=newsErrorCode(error);await atomicJSON('.sync/gemini-news-smoke.json',{status:'failed',code,phase,httpStatus:Number(error?.status)||null,modelInfo,...(phase==='validation'?{field:error.field,reason:error.reason}:{}),synthetic:true,published:false});
  console.error(`Gemini smoke check failed: ${code} (${phase})`);process.exitCode=1;
 }
