@@ -3,6 +3,8 @@ on:
   push:
     branches: [feat/arabic-rtl-localization]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
 permissions:
   contents: read
   pages: write
@@ -26,6 +28,7 @@ jobs:
       - run: node scripts/preview-build.mjs
         env:
           PW_PREVIEW: '1'
+          PW_REFRESH_UPSTREAM: '1'
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:
