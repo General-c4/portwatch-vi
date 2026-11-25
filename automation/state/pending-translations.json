@@ -8,7 +8,7 @@
     "refs": [
       "dashboard.dc7b94e12cff"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -21,7 +21,7 @@
     "refs": [
       "dashboard.536fe4600f95"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -34,7 +34,7 @@
     "refs": [
       "dashboard.4f5f737c1e4c"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
@@ -61,73 +61,8 @@
     "refs": [
       "dashboard.55ce932f5d6e"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "32db91e831fc948383ce403d00095767bdecadc2fb54d3fae89874fe8859559e",
-    "sourceHash": "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96",
-    "scope": "content",
-    "key": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-    "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-    "refs": [
-      "efforts:belobug.blockers.0"
-    ],
-    "attempts": 1,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
-  },
-  {
-    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
-    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
-    "scope": "content",
-    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "refs": [
-      "efforts:zettrox.nuked.note"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
-    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
-    "scope": "content",
-    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-    "refs": [
-      "changes.81.text"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
-    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
-    "scope": "content",
-    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-    "refs": [
-      "changes.80.text"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "77728b006aaf2189dffd6fc3c1aad889c3d5736b71197bad2ee2f7a089ee93eb",
-    "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
-    "scope": "content",
-    "key": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
-    "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
-    "refs": [
-      "efforts:belobug.summary"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -229,6 +164,58 @@
     "draft": "مثل و إعادة تصفيف موقعي الجديد على X: https://x.com/lithuaniangroyp/status/2125617475157139690"
   },
   {
+    "id": "32db91e831fc948383ce403d00095767bdecadc2fb54d3fae89874fe8859559e",
+    "sourceHash": "6418291278bd9e314599628ba0386ae22ab291491576b549f646a9b8935a7a96",
+    "scope": "content",
+    "key": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
+    "refs": [
+      "efforts:belobug.blockers.0"
+    ],
+    "attempts": 2,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
+    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
+    "scope": "content",
+    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "refs": [
+      "efforts:zettrox.nuked.note"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
+    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+    "scope": "content",
+    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "refs": [
+      "changes.81.text"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
+    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+    "scope": "content",
+    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "refs": [
+      "changes.80.text"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
     "id": "574360da0b0a0dcc4fa82005437ebb0a6ce9f5c00ab33d73fa75c493fd4e1817",
     "sourceHash": "a5e15f05c8be0095fa3dec93467b406f04d9b1c39d1560c018ffbbf54e8bbb0f",
     "scope": "content",
@@ -241,6 +228,73 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "ويدير عنواناً من طراز Xbox Series محلياً في Windows: طبقة توافقية، وشكل VIctory و victory-fork، وطور وقاس على طراز AMD Radeon RX 7800 XT."
+  },
+  {
+    "id": "77728b006aaf2189dffd6fc3c1aad889c3d5736b71197bad2ee2f7a089ee93eb",
+    "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
+    "scope": "content",
+    "key": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+    "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
+    "refs": [
+      "efforts:belobug.summary"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
+    "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
+    "scope": "content",
+    "key": "Python",
+    "source": "Python",
+    "refs": [
+      "candidates:grzegorz2047/TrinityXSX.signals.0",
+      "candidates:Wertrex/Americas.signals.0",
+      "candidates:fablinoo/kelvaroq.signals.0"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "2864c656cf723da3a13e2fd22f4881a7b45e7f68fcd6e0e2d911b081443d2179",
+    "sourceHash": "6181cc3a8737db7e421270778cf4c16c53a399642205868376abec2f6365a514",
+    "scope": "content",
+    "key": "4chan /vg/",
+    "source": "4chan /vg/",
+    "refs": [
+      "candidates:xcl-dev/xcl.sources.0"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "39ef715b1334f941853fe1a0f470a38c06f2e32fad030538f383fe78884c35f0",
+    "sourceHash": "45bc0eb865842e0b5e3af8c86babc3616b752451319c9f32161eeb5f89c6f917",
+    "scope": "content",
+    "key": "Doomsday on X",
+    "source": "Doomsday on X",
+    "refs": [
+      "efforts:doomsday.proof.label"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "a4334df2bb5b5c5d13aeb70cfcd01aa26304adeae3eff09a5180894ab85df5c8",
+    "sourceHash": "0ac17eed324fa8f36abae11096dd6c7894bb64d7d26e76a989cf91093d1dfaa2",
+    "scope": "content",
+    "key": "Rendering slightly behind DexNom's",
+    "source": "Rendering slightly behind DexNom's",
+    "refs": [
+      "efforts:doomsday.blockers.0"
+    ],
+    "attempts": 3,
+    "lastError": "Rendering terminology requires review",
+    "reviewRequired": true
   },
   {
     "id": "804c0804f28d24bbc60f9cce6745788255f6e1e952aed0d804ad1df9174e34ad",
@@ -256,6 +310,110 @@
     "reviewRequired": true
   },
   {
+    "id": "0b7090dff5dcef684e5cce96708994e69c76aab23dfd31e98b74535fd689a083",
+    "sourceHash": "8f3afc8d61e11c44c3a20ddb99fdb46dbac959f9dcc78e338cb21de3cda1eeeb",
+    "scope": "content",
+    "key": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
+    "source": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMikwFBVV95cUxQMFZtR205RU4xam5uTFJ6czkxSVVCZHdISFhVMkF2Vzl0emVENG1rY0hYSlZEbE1NOFFaal9yZGJWVHlHUEFhVHVEOE1WdEkwc2ttaHE1Zi1TcjFucV9EYVVzbnBGOERoZ2luRi1pSWhkWXplb2ktVnk3QmFNV1YwbFR3Z3d5TFk0aWtldGl3Ny1pQlU?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ4QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "3172905443cd80d307355ac703a958af7765ddd42c43159dc0da152eb3a101ef",
+    "sourceHash": "ca37cf74ed20cc8bec16260d013c51338fe66c53bd81aa5f2bf06c51bcb7e66e",
+    "scope": "content",
+    "key": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
+    "source": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "319a6d3f727ab8056a760a4544e870035d55d4fb3b5c9e91f538ace0bf8c14a6",
+    "sourceHash": "060be3d7f7ba3cc7216f20e21a4fe1a48722aa923ada522b56118405963ee9d6",
+    "scope": "content",
+    "key": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
+    "source": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "f5f6e11e2bf2b608a832e9fdc02225520000b5bb0417243e01d05ccceee9af9a",
+    "sourceHash": "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702",
+    "scope": "content",
+    "key": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+    "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
+    "refs": [
+      "efforts:doomsday.highlights.0"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "d4be826b458193a3e321a875279bb83d03322b052c915d8313613ded27ec1d17",
+    "sourceHash": "19b9d63a6a8aeccd3ae04b29a5b9679e245a0a8ca7adeaecd33d1f213308c0ae",
+    "scope": "content",
+    "key": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
+    "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "8a3f65ceee69cfa4e8e5f0a2b1999ffc94153bd355de1c722c5120ec0b8c6620",
+    "sourceHash": "d66e3bdffdd1885f0e996e58064dad0350a2c92d8151719cda06ebff475f918a",
+    "scope": "content",
+    "key": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
+    "source": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
+    "refs": [
+      "scout.lastSummary"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "0a6e324b687dff2aefc4e7ca254eb69019bd4360271766e5ca3f06af6c6aed3c",
+    "sourceHash": "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925",
+    "scope": "content",
+    "key": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
+    "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
+    "refs": [
+      "efforts:doomsday.highlights.3"
+    ],
+    "attempts": 3,
+    "lastError": "Frame-rate terminology requires review",
+    "reviewRequired": true
+  },
+  {
+    "id": "4aaf3422921c06dbcf3a4b0ef9fcf4fd3545ce3ef7596fdbbea564d91e21925a",
+    "sourceHash": "8cc01960ca146b0287ffebee4e5e6e3dd5a869c816b170580228a992e0b9d485",
+    "scope": "content",
+    "key": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
+    "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
     "id": "7bd60cfb54896139b542bf6063eb2b0406612f71385c0209cc91c2bdc5c410c6",
     "sourceHash": "27f36cac482ef57ec34c5044e0d1f7e6689afccba8ccd2cffffb67e1abcc74b6",
     "scope": "content",
@@ -266,6 +424,136 @@
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "63f1d258fd002e4c7db6572f27ee6b19e31fab8808d8b6ce64365bb6941d79f6",
+    "sourceHash": "458e1c4a7779adc6be97f4161667ce7773431eb83de4dc5429d7c953e28fcef6",
+    "scope": "content",
+    "key": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+    "source": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "58a4f52899bbee7f7fbcf14910920e5bdcec1343c0f6cd2aa2d4b7b4b2e6302a",
+    "sourceHash": "29ab03aefd5a119ae88a035d700fe05b611b8bf4dda941896c440c897a84ed9b",
+    "scope": "content",
+    "key": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
+    "source": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
+    "refs": [
+      "efforts:dexnom.highlights.4"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "efee0c378f08d24e91da924d66d8e4a93e3858ba2c67278b909fa93175849117",
+    "sourceHash": "58db7d5a4d59355eaf3e63f6984dd0bb4bfae1c409ac7662e73e29a84a1c3912",
+    "scope": "content",
+    "key": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
+    "source": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "4eec6ae0563b499e5cd877a24f6d59bdacf19599c666e69c88bbdd95551e0aeb",
+    "sourceHash": "dc028860c47c56c4c843b180a4a21c3310ce9604385a3369225ac0274d7ec1cc",
+    "scope": "content",
+    "key": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
+    "source": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": true
+  },
+  {
+    "id": "c7943dfe38fa01f89a793d613c1f5231df25e0bdc639432a9b1f2b6d41ea9c78",
+    "sourceHash": "8cc6a1a5d6c7355bf1ab1c86f73b5d2e6b17ca97be33381ff3c8bd727ff8d312",
+    "scope": "content",
+    "key": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
+    "source": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "f796c0bb0ff374f3fc048785438c1d8a4dcc986cb1805dd1f4420d3e99987fcd",
+    "sourceHash": "4402efbd4c1711f63ddcd4e2ff332a4390eff1fe35431bcf75806ae93e797361",
+    "scope": "content",
+    "key": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
+    "source": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
+    "refs": [
+      "candidates:fablinoo/kelvaroq.description"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "c7918699f69636fcf6205d2a46c4a79ed460a0c0fb5d999bd93161f02365f08e",
+    "sourceHash": "9013cc96b45a21f5f316068f235333de9429cf9542743d971c60cd8fb3cd64f7",
+    "scope": "content",
+    "key": "The in-game phone renders really well; the map menu runs at a higher frame rate",
+    "source": "The in-game phone renders really well; the map menu runs at a higher frame rate",
+    "refs": [
+      "efforts:doomsday.highlights.2"
+    ],
+    "attempts": 3,
+    "lastError": "Rendering terminology requires review",
+    "reviewRequired": true
+  },
+  {
+    "id": "2ae9910ff9e309cb55dec85da58321e2601245873f0d5c933a28d48e73816e4e",
+    "sourceHash": "e3ddd2af9618c47ff04de6667e5b6058a58ca0e39c65440de5192b9a4bc00061",
+    "scope": "content",
+    "key": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
+    "source": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ5QXZ",
+    "reviewRequired": true
+  },
+  {
+    "id": "2d1f02ee06458b50984a1c23f67cb488e05c9a18a40dc8834f22fe7cfbd52247",
+    "sourceHash": "cd42f10b379e3dc92ce7939d0c7ddb5fa52f3524cd9d4b58b66e7a4166c81394",
+    "scope": "content",
+    "key": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
+    "source": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "7b19e73826a3c9d7893668c2d2a06ef6c19eff886f9845e783e0380a96f235da",
+    "sourceHash": "590bcdca774d771f7805d5abae8c7cb34443b6126ce12014edb9bc7650b511cf",
+    "scope": "content",
+    "key": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
+    "source": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFRlX2lWbnlGcDhqcGRnSTB4Zmd1US1WOWYtbTBpTERKWl83SHRPalQ0OWQtOURCb1gwZFNRWXZVSDNUclpRSGNfM3VQM3dGMW84SjM4VXZsdUZKYVFwbW9JR204WDI1d3JJSGJfWkM3Tm5vLU8zUWM2aUpWR1dtWlRlMW9LclpoVW5scmxjanp6OGhIQ09JN1pRUWtNNEoxZUl3OThBMXJvQkdmb0pDREVmbW1wNlhW?oc=5.title"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
     "reviewRequired": true
   },
   {
@@ -604,294 +892,6 @@
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
-    "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
-    "scope": "content",
-    "key": "Python",
-    "source": "Python",
-    "refs": [
-      "candidates:grzegorz2047/TrinityXSX.signals.0",
-      "candidates:Wertrex/Americas.signals.0",
-      "candidates:fablinoo/kelvaroq.signals.0"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "2864c656cf723da3a13e2fd22f4881a7b45e7f68fcd6e0e2d911b081443d2179",
-    "sourceHash": "6181cc3a8737db7e421270778cf4c16c53a399642205868376abec2f6365a514",
-    "scope": "content",
-    "key": "4chan /vg/",
-    "source": "4chan /vg/",
-    "refs": [
-      "candidates:xcl-dev/xcl.sources.0"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "39ef715b1334f941853fe1a0f470a38c06f2e32fad030538f383fe78884c35f0",
-    "sourceHash": "45bc0eb865842e0b5e3af8c86babc3616b752451319c9f32161eeb5f89c6f917",
-    "scope": "content",
-    "key": "Doomsday on X",
-    "source": "Doomsday on X",
-    "refs": [
-      "efforts:doomsday.proof.label"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "a4334df2bb5b5c5d13aeb70cfcd01aa26304adeae3eff09a5180894ab85df5c8",
-    "sourceHash": "0ac17eed324fa8f36abae11096dd6c7894bb64d7d26e76a989cf91093d1dfaa2",
-    "scope": "content",
-    "key": "Rendering slightly behind DexNom's",
-    "source": "Rendering slightly behind DexNom's",
-    "refs": [
-      "efforts:doomsday.blockers.0"
-    ],
-    "attempts": 3,
-    "lastError": "Rendering terminology requires review",
-    "reviewRequired": true
-  },
-  {
-    "id": "0b7090dff5dcef684e5cce96708994e69c76aab23dfd31e98b74535fd689a083",
-    "sourceHash": "8f3afc8d61e11c44c3a20ddb99fdb46dbac959f9dcc78e338cb21de3cda1eeeb",
-    "scope": "content",
-    "key": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
-    "source": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMikwFBVV95cUxQMFZtR205RU4xam5uTFJ6czkxSVVCZHdISFhVMkF2Vzl0emVENG1rY0hYSlZEbE1NOFFaal9yZGJWVHlHUEFhVHVEOE1WdEkwc2ttaHE1Zi1TcjFucV9EYVVzbnBGOERoZ2luRi1pSWhkWXplb2ktVnk3QmFNV1YwbFR3Z3d5TFk0aWtldGl3Ny1pQlU?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "3172905443cd80d307355ac703a958af7765ddd42c43159dc0da152eb3a101ef",
-    "sourceHash": "ca37cf74ed20cc8bec16260d013c51338fe66c53bd81aa5f2bf06c51bcb7e66e",
-    "scope": "content",
-    "key": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
-    "source": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "319a6d3f727ab8056a760a4544e870035d55d4fb3b5c9e91f538ace0bf8c14a6",
-    "sourceHash": "060be3d7f7ba3cc7216f20e21a4fe1a48722aa923ada522b56118405963ee9d6",
-    "scope": "content",
-    "key": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
-    "source": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "f5f6e11e2bf2b608a832e9fdc02225520000b5bb0417243e01d05ccceee9af9a",
-    "sourceHash": "663320686235a6af21e8cb16d4b58931ddb2ac6b09035ca9da9e4d66fbab1702",
-    "scope": "content",
-    "key": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-    "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
-    "refs": [
-      "efforts:doomsday.highlights.0"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "d4be826b458193a3e321a875279bb83d03322b052c915d8313613ded27ec1d17",
-    "sourceHash": "19b9d63a6a8aeccd3ae04b29a5b9679e245a0a8ca7adeaecd33d1f213308c0ae",
-    "scope": "content",
-    "key": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
-    "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "8a3f65ceee69cfa4e8e5f0a2b1999ffc94153bd355de1c722c5120ec0b8c6620",
-    "sourceHash": "d66e3bdffdd1885f0e996e58064dad0350a2c92d8151719cda06ebff475f918a",
-    "scope": "content",
-    "key": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
-    "source": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
-    "refs": [
-      "scout.lastSummary"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "0a6e324b687dff2aefc4e7ca254eb69019bd4360271766e5ca3f06af6c6aed3c",
-    "sourceHash": "b10aa6658b9e7fafab90f9ff32a79616744b9a5daf667c9e21a6c0b8c94d3925",
-    "scope": "content",
-    "key": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
-    "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
-    "refs": [
-      "efforts:doomsday.highlights.3"
-    ],
-    "attempts": 3,
-    "lastError": "Frame-rate terminology requires review",
-    "reviewRequired": true
-  },
-  {
-    "id": "4aaf3422921c06dbcf3a4b0ef9fcf4fd3545ce3ef7596fdbbea564d91e21925a",
-    "sourceHash": "8cc01960ca146b0287ffebee4e5e6e3dd5a869c816b170580228a992e0b9d485",
-    "scope": "content",
-    "key": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
-    "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "63f1d258fd002e4c7db6572f27ee6b19e31fab8808d8b6ce64365bb6941d79f6",
-    "sourceHash": "458e1c4a7779adc6be97f4161667ce7773431eb83de4dc5429d7c953e28fcef6",
-    "scope": "content",
-    "key": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
-    "source": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "58a4f52899bbee7f7fbcf14910920e5bdcec1343c0f6cd2aa2d4b7b4b2e6302a",
-    "sourceHash": "29ab03aefd5a119ae88a035d700fe05b611b8bf4dda941896c440c897a84ed9b",
-    "scope": "content",
-    "key": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
-    "source": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
-    "refs": [
-      "efforts:dexnom.highlights.4"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "efee0c378f08d24e91da924d66d8e4a93e3858ba2c67278b909fa93175849117",
-    "sourceHash": "58db7d5a4d59355eaf3e63f6984dd0bb4bfae1c409ac7662e73e29a84a1c3912",
-    "scope": "content",
-    "key": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
-    "source": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "4eec6ae0563b499e5cd877a24f6d59bdacf19599c666e69c88bbdd95551e0aeb",
-    "sourceHash": "dc028860c47c56c4c843b180a4a21c3310ce9604385a3369225ac0274d7ec1cc",
-    "scope": "content",
-    "key": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
-    "source": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": true
-  },
-  {
-    "id": "c7943dfe38fa01f89a793d613c1f5231df25e0bdc639432a9b1f2b6d41ea9c78",
-    "sourceHash": "8cc6a1a5d6c7355bf1ab1c86f73b5d2e6b17ca97be33381ff3c8bd727ff8d312",
-    "scope": "content",
-    "key": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
-    "source": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "f796c0bb0ff374f3fc048785438c1d8a4dcc986cb1805dd1f4420d3e99987fcd",
-    "sourceHash": "4402efbd4c1711f63ddcd4e2ff332a4390eff1fe35431bcf75806ae93e797361",
-    "scope": "content",
-    "key": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
-    "source": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
-    "refs": [
-      "candidates:fablinoo/kelvaroq.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "c7918699f69636fcf6205d2a46c4a79ed460a0c0fb5d999bd93161f02365f08e",
-    "sourceHash": "9013cc96b45a21f5f316068f235333de9429cf9542743d971c60cd8fb3cd64f7",
-    "scope": "content",
-    "key": "The in-game phone renders really well; the map menu runs at a higher frame rate",
-    "source": "The in-game phone renders really well; the map menu runs at a higher frame rate",
-    "refs": [
-      "efforts:doomsday.highlights.2"
-    ],
-    "attempts": 3,
-    "lastError": "Rendering terminology requires review",
-    "reviewRequired": true
-  },
-  {
-    "id": "2ae9910ff9e309cb55dec85da58321e2601245873f0d5c933a28d48e73816e4e",
-    "sourceHash": "e3ddd2af9618c47ff04de6667e5b6058a58ca0e39c65440de5192b9a4bc00061",
-    "scope": "content",
-    "key": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
-    "source": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "2d1f02ee06458b50984a1c23f67cb488e05c9a18a40dc8834f22fe7cfbd52247",
-    "sourceHash": "cd42f10b379e3dc92ce7939d0c7ddb5fa52f3524cd9d4b58b66e7a4166c81394",
-    "scope": "content",
-    "key": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
-    "source": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "7b19e73826a3c9d7893668c2d2a06ef6c19eff886f9845e783e0380a96f235da",
-    "sourceHash": "590bcdca774d771f7805d5abae8c7cb34443b6126ce12014edb9bc7650b511cf",
-    "scope": "content",
-    "key": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
-    "source": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFRlX2lWbnlGcDhqcGRnSTB4Zmd1US1WOWYtbTBpTERKWl83SHRPalQ0OWQtOURCb1gwZFNRWXZVSDNUclpRSGNfM3VQM3dGMW84SjM4VXZsdUZKYVFwbW9JR204WDI1d3JJSGJfWkM3Tm5vLU8zUWM2aUpWR1dtWlRlMW9LclpoVW5scmxjanp6OGhIQ09JN1pRUWtNNEoxZUl3OThBMXJvQkdmb0pDREVmbW1wNlhW?oc=5.title"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
     "reviewRequired": true
   }
 ]
