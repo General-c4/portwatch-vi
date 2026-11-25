@@ -14,9 +14,9 @@ try {
  await page.route('**/i18n/content/ar.json',r=>r.fulfill({json:{...dict,[data.efforts[0].summary]:malicious,[data.news[0].body[0]]:malicious,[url]:'javascript:window.translationExecuted=true',belobug:'wrong-id'}}));
  const base=process.env.PW_BASE_URL || 'http://127.0.0.1:8080/';
  await page.goto(base,{waitUntil:'domcontentloaded'});await page.waitForSelector('.effort');
- assert.equal(await page.locator('.e-summary').first().textContent(),malicious);
+ assert.equal(await page.locator(`#effort-${data.efforts[0].id} .e-summary`).textContent(),malicious);
  assert.equal(await page.locator('.e-summary img').count(),0);
- assert.equal(await page.locator('#effort-belobug h3 a').getAttribute('href'),url);
+ assert.equal(await page.locator(`#effort-${data.efforts[0].id} h3 a`).getAttribute('href'),url);
  await page.goto(new URL(`news/${data.news[0].id}.html`,base).href,{waitUntil:'domcontentloaded'});
  await page.waitForFunction(value=>document.querySelector('.article p')?.textContent===value,malicious);
  assert.equal(await page.locator('.article p img').count(),0);

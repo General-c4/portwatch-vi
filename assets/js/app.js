@@ -3,7 +3,7 @@ import { getLiveViewers, trackView } from './backend.js';
 import { coverHtml, articlePath } from './news-shared.js';
 import { fillPinned } from './pinned.js';
 import { initI18n, t, tr, locale } from './i18n.js';
-import { contentText } from './content-i18n.js';
+import { contentText, newsText } from './content-i18n.js';
 import {loadTracker,loadPinned,startLiveUpdates,restoreLiveView} from './live-data.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -660,8 +660,8 @@ function renderNews(news) {
       ${storyMedia(n)}
       <div class="story-body">
         <time>${esc(fmtDay(n.date))}</time>
-        <h3>${esc(contentText(n.title))}</h3>
-        <p>${esc(contentText(n.dek))}</p>
+        <h3>${esc(newsText(n.title,`article:${n.id}`,'title'))}</h3>
+        <p>${esc(newsText(n.dek,`article:${n.id}`,'summary'))}</p>
         ${!small && n.image?.credit ? `<span class="story-credit">${esc(t('news.image'))} ${esc(n.image.credit)}</span>` : ''}
       </div>
     </a>`;
@@ -671,7 +671,7 @@ function renderNews(news) {
     $('#news-list').insertAdjacentHTML('afterend', `
       <div class="headlines card">
         <h3 class="mini-title">${esc(t('news.headlines'))} <span class="w-muted">${esc(t('news.headlinesNote'))}</span></h3>
-        <ul>${heads.map((h) => `<li><a href="${esc(safeHttp(h.link))}" target="_blank" rel="noopener noreferrer">${esc(contentText(h.title))}</a><span>${esc(h.outlet)} · ${esc(ago(h.date))}</span></li>`).join('')}</ul>
+        <ul>${heads.map((h) => `<li><a href="${esc(safeHttp(h.link))}" target="_blank" rel="noopener noreferrer">${esc(newsText(h.title,`headline:${h.link}`,'title'))}</a><span>${esc(h.outlet)} · ${esc(ago(h.date))}</span></li>`).join('')}</ul>
       </div>`);
   }
 
@@ -688,9 +688,9 @@ function renderNews(news) {
       ${storyMedia(n)}
       <div class="reader-inner">
         <p class="meta">${esc(catLabel(n.category))} · ${esc(fmtDay(n.date))}</p>
-        <h2 id="reader-title">${esc(contentText(n.title))}</h2>
-        <p class="dek">${esc(contentText(n.dek))}</p>
-        <div class="article">${(n.body || []).map((p) => `<p>${esc(contentText(p))}</p>`).join('')}</div>
+        <h2 id="reader-title">${esc(newsText(n.title,`article:${n.id}`,'title'))}</h2>
+        <p class="dek">${esc(newsText(n.dek,`article:${n.id}`,'summary'))}</p>
+        <div class="article">${(n.body || []).map((p,i) => `<p>${esc(newsText(p,`article:${n.id}`,`body.${i}`))}</p>`).join('')}</div>
         <div class="sources">
           <h4>${esc(t('news.sources'))}</h4>
           <ul>${(n.sources || []).map((s) => `<li><a href="${esc(safeLink(s.url))}" ${s.url?.startsWith('#') ? '' : 'target="_blank" rel="noopener"'}>${esc(s.outlet)}: ${esc(contentText(s.title))}</a></li>`).join('')}</ul>

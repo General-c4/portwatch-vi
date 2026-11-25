@@ -2,6 +2,7 @@
 // Build news pages with scripts/preview-build.mjs, serve _site, and set PW_BASE_URL.
 import {chromium} from 'playwright';
 import assert from 'node:assert/strict';
+import {contentText,newsText,setContentTranslations,setNewsTranslations} from '../assets/js/content-i18n.js';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 const base=process.env.PW_BASE_URL || 'http://127.0.0.1:8080/';
 const baseline=process.env.PW_BASELINE_URL;
@@ -9,6 +10,8 @@ const out=process.env.PW_QA_DIR || '.local-qa';
 await mkdir(`${out}/screenshots`,{recursive:true});
 const data=JSON.parse(await readFile('data/tracker.json','utf8'));
 const catalog=JSON.parse(await readFile('assets/i18n/content/ar.json','utf8'));
+setContentTranslations({...JSON.parse(await readFile('assets/i18n/content/ar.auto.json','utf8')),...catalog},catalog);
+setNewsTranslations(JSON.parse(await readFile('assets/i18n/news/ar.json','utf8')));
 const ar=JSON.parse(await readFile('assets/i18n/ar.json','utf8'));
 const browser=await chromium.launch({channel:process.env.PW_BROWSER || 'msedge',headless:true});
 const results=[],errors=[],resourceFailures=[],consoleErrors=[];
@@ -44,14 +47,17 @@ try {
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${lang} ${width}: horizontal overflow`);
   const rankings=await page.locator('.effort').evaluateAll(els=>els.map(e=>[e.id,e.querySelector('.e-score b')?.textContent.trim()]));
   if(!english)english=rankings;else assert.deepEqual(rankings,english,`${lang}: scores/rankings`);
-  if(lang==='ar')assert.equal(await page.locator('.e-summary').first().textContent(),catalog[data.efforts[0].summary]);
+  if(lang==='ar'){
+   const firstId=(await page.locator('.effort').first().getAttribute('id')).replace(/^effort-/,'');
+   assert.equal(await page.locator('.e-summary').first().textContent(),contentText(data.efforts.find(e=>e.id===firstId).summary));
+  }
   await capture(page,`${out}/screenshots/after-${lang}-${width}.png`);
   const filters=[];
   for(const value of ['gta','generic','all']){await page.locator(`[data-filter="${value}"]`).click();filters.push([value,await page.locator('.effort').count()]);}
   for(const value of ['stars','active','score'])await page.selectOption('#sort',value);
   assert.deepEqual(await page.locator('.effort').evaluateAll(els=>els.map(e=>[e.id,e.querySelector('.e-score b')?.textContent.trim()])),english);
   await page.locator('[data-story]').first().click();await page.waitForSelector('#reader[open]');
-  if(lang==='ar')assert.equal(await page.locator('#reader-title').textContent(),catalog[data.news[0].title]);
+  if(lang==='ar')assert.equal(await page.locator('#reader-title').textContent(),newsText(data.news[0].title,`article:${data.news[0].id}`,'title'));
   await page.keyboard.press('Escape');assert.equal(await page.locator('#reader').getAttribute('open'),null);
   await page.locator('.lang-btn').click();await page.keyboard.press('ArrowDown');await page.keyboard.press('Escape');
   assert.equal(await page.locator('.lang-btn').evaluate(el=>el===document.activeElement),true);
@@ -72,8 +78,8 @@ try {
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,path);
    const article=data.news.find(n=>path.endsWith(`${n.id}.html`));
    if(article){
-    await page.waitForFunction(expected=>document.querySelector('h1')?.textContent===expected,catalog[article.title]);
-    assert.deepEqual(await page.locator('.article p').allTextContents(),article.body.map(p=>catalog[p]));
+    await page.waitForFunction(expected=>document.querySelector('h1')?.textContent===expected,newsText(article.title,`article:${article.id}`,'title'));
+    assert.deepEqual(await page.locator('.article p').allTextContents(),article.body.map((p,i)=>newsText(p,`article:${article.id}`,`body.${i}`)));
     assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),`https://portwatch-vi.xyz/news/${article.id}`);
    }
    results.push({page:path,lang:'ar',width,height,overflow:false});
@@ -89,7 +95,8 @@ try {
  }
  await context.route('**/i18n/content/ar.json',r=>r.fulfill({status:404,body:''}));
  await page.reload({waitUntil:'domcontentloaded'});await ready(page);
- assert.equal(await page.locator('.e-summary').first().textContent(),data.efforts[0].summary);
+ const firstId=(await page.locator('.effort').first().getAttribute('id')).replace(/^effort-/,'');
+ assert.equal(await page.locator('.e-summary').first().textContent(),data.efforts.find(e=>e.id===firstId).summary);
  assert.equal(await page.locator('html').getAttribute('dir'),'rtl');
  await context.unroute('**/i18n/content/ar.json');
  await context.route('**/i18n/ar.json',r=>r.fulfill({status:404,body:''}));await page.reload({waitUntil:'domcontentloaded'});await ready(page);

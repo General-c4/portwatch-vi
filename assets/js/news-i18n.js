@@ -1,6 +1,6 @@
 // Enhance generated English articles in place, retaining canonical paths, source links and no-JS content.
 import { initI18n, getLang, t, tr, locale } from './i18n.js';
-import { contentText } from './content-i18n.js';
+import { contentText, newsText } from './content-i18n.js';
 
 await initI18n();
 if (getLang() !== 'en') {
@@ -18,6 +18,8 @@ if (getLang() !== 'en') {
     'Does GTA VI run on PC yet? See the live tracker.':'news.tracker',
   };
   const translate = (text) => labels[text] ? t(labels[text]) : contentText(text);
+  const idFromPath=path=>decodeURIComponent(path.split('/').filter(Boolean).at(-1)||'').replace(/\.html$/,'');
+  const articleId=`article:${idFromPath(location.pathname)}`;
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   const nodes = [];
   while (walker.nextNode()) nodes.push(walker.currentNode);
@@ -25,6 +27,11 @@ if (getLang() !== 'en') {
     if (node.parentElement.closest('script,style,.lang-pick,.theme-pick')) continue;
     const source = node.textContent.trim();
     let value = translate(source);
+    const card=node.parentElement.closest('a.story');
+    if(card&&node.parentElement.closest('h3,.story-body>p'))value=newsText(source,`article:${idFromPath(new URL(card.href).pathname)}`,node.parentElement.closest('h3')?'title':'summary');
+    if(node.parentElement.closest('.reader-page h1'))value=newsText(source,articleId,'title');
+    if(node.parentElement.closest('.reader-page .dek'))value=newsText(source,articleId,'summary');
+    if(node.parentElement.closest('.reader-page .article>p'))value=newsText(source,articleId,`body.${[...document.querySelectorAll('.reader-page .article>p')].indexOf(node.parentElement.closest('p'))}`);
     const category = /^(Leak|Takedown|Legal|Security|Official|Port|Safety)\s*·$/.exec(source);
     if (category) value = `${tr(`cat.${category[1]}`, category[1])} ·`;
     if (source === 'Image:') value = t('news.image');
@@ -51,7 +58,9 @@ if (getLang() !== 'en') {
   for (const el of document.querySelectorAll('meta[name="description"],meta[property="og:title"],meta[property="og:description"]')) {
     const source = el.content;
     const suffix = ' · PortWatch VI';
-    el.content = source.endsWith(suffix) ? `${translate(source.slice(0,-suffix.length))}${suffix}` : translate(source);
+    const field=el.getAttribute('property')==='og:title'?'title':'summary';
+    const translateMeta=(text,key)=>{const value=newsText(text,articleId,key);return value===text?translate(text):value;};
+    el.content = source.endsWith(suffix) ? `${translateMeta(source.slice(0,-suffix.length),'title')}${suffix}` : translateMeta(source,field);
   }
   document.querySelector('.brand')?.setAttribute('aria-label',t('nav.home'));
   document.querySelector('.nav-links')?.setAttribute('aria-label',t('nav.sections'));

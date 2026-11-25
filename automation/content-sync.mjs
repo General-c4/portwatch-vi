@@ -7,8 +7,9 @@ import {translationInventory,queueTranslations,translatePending,protectedTerms,d
 import {validateTracker,validatePinned,newerSnapshot} from '../assets/js/tracker-source.js';
 import {apiAnythingRead} from './lib/api-anything.mjs';
 import {createProvider} from './lib/provider.mjs';
+import {syncNews} from './lib/news-sync.mjs';
 
-export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,providerFactory=createProvider,root='.',maxTranslations=40}={}){
+export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,providerFactory=createProvider,newsClientFactory,root='.',maxTranslations=40}={}){
  const started=performance.now(),now=new Date().toISOString();
  const file=path=>`${root}/${path}`;
  const before=await readJSON(file('data/tracker.json')),oldPinned=await readJSON(file('data/pinned.json'));
@@ -68,9 +69,13 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  }catch(error){errors.push({at:now,source:'translation provider',message:String(error.message).slice(0,200)});}
  finally{provider?.close();}
  const translationMs=Math.round(performance.now()-translationStart);
+ let news;
+ try{
+  news=await syncNews({before,data,human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+ }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}
  const coverage=queueTranslations(inventory,effectiveHuman,automatic,translated.remaining);
  const dataChanged=hash(before)!==hash(data)||hash(oldPinned)!==hash(pinned);
- const changed=dataChanged||hash(automatic)!==originalAuto||hash(previousQueue)!==hash(translated.remaining)||upstreamChanged;
+ const changed=dataChanged||hash(automatic)!==originalAuto||hash(previousQueue)!==hash(translated.remaining)||upstreamChanged||news?.stateChanged||news?.catalogChanged;
  const delta=recordDiff(before,data);
  const sourceState=await readJSON(file('automation/state/source.json'),{});
  const status={
@@ -79,6 +84,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   latestDeployedCommitSha:state.latestDeployedCommitSha||null,lastDeploymentStatus:state.lastDeploymentStatus||'unknown',
   lastSuccessfulSyncTime:now,lastUpstreamCheckTime:now,authoritativeSource:data===live?'official-live':'repository',upstreamUpdated:data.updated,
   records:delta,translation:{coverage:coverage.coverage,translated:coverage.translated,total:coverage.total,pending:translated.remaining.length,completed:translated.completed,provider:provider?.name||'unavailable'},
+  newsTranslation:news?.stats||{errors:['news_pipeline_unavailable'],requests:0},
   latency:{sourceCheckMs:Math.round(translationStart-started),dataSyncMs:null,translationMs,deploymentMs:null,totalMs:Math.round(performance.now()-started)},
   apiAnything:{ok:api.ok,skipped:api.skipped||false,reason:api.reason||null,changes:api.changes||null,ms:api.ms||null,repaired:api.repaired||false},
   recentErrors:[...(state.recentErrors||[]),...errors].slice(-20),retryAttempts:[...(state.retryAttempts||[]),...retryAttempts].slice(-20),
@@ -95,6 +101,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   const records=await readJSON(file('automation/state/translation-cache.json'),{});
   for(const record of translated.records)records[record.id]=record;
   await atomicJSON(file('automation/state/translation-cache.json'),records);
+  if(news){await atomicJSON(file('automation/state/news-translations.json'),news.state);await atomicJSON(file('assets/i18n/news/ar.json'),news.catalog);}
   status.latency.dataSyncMs=Math.round(performance.now()-persistenceStart);
   status.latency.totalMs=Math.round(performance.now()-started);
   await atomicJSON(file('automation/state/content.json'),{...status,upstreamSha:head.sha,head,sources:state.sources});
@@ -102,7 +109,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  if(!changed){status.latency.dataSyncMs=0;status.latency.totalMs=Math.round(performance.now()-started);}
  await atomicJSON(file('.sync/status.json'),status);
  log('content-sync',{changed,dataChanged,records:delta,translations:status.translation,ms:Math.round(performance.now()-started)});
- return{changed,dataChanged,upstreamChanged,publish:dataChanged||hash(automatic)!==originalAuto,status};
+ return{changed:Boolean(changed),dataChanged,upstreamChanged,publish:Boolean(dataChanged||hash(automatic)!==originalAuto||news?.catalogChanged),status};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  await withLock('.sync/content.lock',async()=>{

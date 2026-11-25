@@ -45,6 +45,11 @@ jobs:
           PW_TRANSLATION_PROVIDER: offline
           PW_TRANSLATION_LIMIT: '40'
           PW_MODEL_CACHE: /home/runner/.cache/portwatch-models
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.8-flash' }}
+          GEMINI_NEWS_MAX_REQUESTS: '3'
+          GEMINI_NEWS_DAILY_REQUESTS: '20'
+          GEMINI_NEWS_DAILY_TOKENS: '100000'
       - name: Regression tests
         run: node --test tests/*.test.mjs
       - name: Commit only changed content/state
@@ -52,7 +57,7 @@ jobs:
         run: |
           git config user.name 'portwatch-sync[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data assets/i18n/*auto*.json assets/i18n/content/*auto.json assets/i18n/dashboard/*auto.json automation/state
+          git add data assets/i18n/*auto*.json assets/i18n/content/*auto.json assets/i18n/dashboard/*auto.json assets/i18n/news/ar.json automation/state
           if ! git diff --cached --quiet; then
             git commit -m 'sync: official content and validated Arabic translations'
             git push origin HEAD:feat/arabic-rtl-localization
