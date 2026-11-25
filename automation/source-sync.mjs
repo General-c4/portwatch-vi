@@ -29,7 +29,7 @@ git(['worktree','add','-b',branch,work,'HEAD']);
 let conflicts=[];
 try{
  // Establish ancestry without overwriting current data, then apply only the upstream source patch.
- git(['merge','--no-commit','--no-ff','-s','ours',upstream],work);
+ git(['-c','user.name=portwatch-sync[bot]','-c','user.email=41898282+github-actions[bot]@users.noreply.github.com','merge','--no-commit','--no-ff','-s','ours',upstream],work);
  const patch=run('git',['diff','--binary',state.integratedUpstreamSha,upstream,'--','.',':(exclude)data/**']);
  const patchFile=resolve('.sync/upstream.patch');await writeFile(patchFile,patch+'\n');
  try{git(['apply','--3way','--index',patchFile],work);}catch{
