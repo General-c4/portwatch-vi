@@ -3,6 +3,9 @@ import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { buildSite } from './lib/site-build.mjs';
 const out = process.argv[2] || '_site';
+const reviewHtml = (html) => process.env.PW_PREVIEW === '1' ? html.replace('<head>', `<head>
+  <meta name="robots" content="noindex">
+  <script>try { if (!localStorage.getItem('pw-lang')) localStorage.setItem('pw-lang', 'ar'); } catch {}</script>`) : html;
 await mkdir(out, {recursive:true});
 for (const file of ['index.html','assets','data']) await cp(file,join(out,file),{recursive:true});
 let data = JSON.parse(await readFile('data/tracker.json','utf8'));
@@ -21,10 +24,11 @@ if (process.env.PW_PREVIEW === '1' && process.env.PW_REFRESH_UPSTREAM === '1') {
  await writeFile(join(out,'data/pinned.json'),JSON.stringify(pinned));
 }
 for (const [path,content] of Object.entries(buildSite(data).files)) {
- const target=join(out,path);await mkdir(dirname(target),{recursive:true});await writeFile(target,content);
+ const target=join(out,path);await mkdir(dirname(target),{recursive:true});await writeFile(target,path.endsWith('.html') ? reviewHtml(content) : content);
 }
 await writeFile(join(out,'.nojekyll'),'');
 if (process.env.PW_PREVIEW === '1') {
+ const index=join(out,'index.html');await writeFile(index,reviewHtml(await readFile(index,'utf8')));
  // The review copy must not count visits in the production database or be indexed.
  await writeFile(join(out,'robots.txt'),'User-agent: *\nDisallow: /\n');
  const config=join(out,'assets/js/config.js');
