@@ -1,4 +1,5 @@
 node_modules/
+.local-qa/
 _site/
 .claude/settings.local.json
 .env.local

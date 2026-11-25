@@ -263,5 +263,7 @@
   "board.error": "Something went wrong. Try again.",
   "board.pending": "Thanks. Your post contains a link, so it will appear once it has been reviewed.",
   "board.unreachable": "Couldn't reach the board right now.",
-  "board.soon": "The board is launching soon."
+  "board.soon": "The board is launching soon.",
+  "meta.description": "Live tracker of every community effort to recompile, emulate or port the leaked Xbox Series build of GTA VI to PC, scored from groundwork to a game you can play to the end.",
+  "meta.imageAlt": "Does GTA VI run on PC yet? PortWatch VI, a live tracker of every PC port effort"
 }

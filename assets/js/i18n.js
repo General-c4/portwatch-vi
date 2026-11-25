@@ -8,6 +8,7 @@ export const LANGS = [
   { code: 'en', name: 'English', short: 'EN' },
   { code: 'pt-BR', name: 'Português (Brasil)', short: 'PT' },
   { code: 'es', name: 'Español', short: 'ES' },
+  { code: 'ar', name: 'العربية', short: 'AR' },
 ];
 const KEY = 'pw-lang';
 const CODES = LANGS.map((l) => l.code);
@@ -30,6 +31,7 @@ export function pickLang() {
   if (saved) return saved;
   for (const l of navigator.languages?.length ? navigator.languages : [navigator.language || 'en']) {
     const low = String(l).toLowerCase();
+    if (low === 'ar' || low.startsWith('ar-')) return 'ar';
     if (low.startsWith('pt')) return 'pt-BR';
     if (low.startsWith('es')) return 'es';
     if (low.startsWith('en')) return 'en';
@@ -54,6 +56,7 @@ export async function initI18n() {
   if (lang !== 'en' && !own) lang = 'en';
   dict = lang === 'en' ? en : own;
   document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   if (lang !== 'en') applyStatic();
   if (typeof window.pwSetThemeLabels === 'function') {
     window.pwSetThemeLabels({ system: t('theme.system'), light: t('theme.light'), dark: t('theme.dark') }, t('theme.label'));
@@ -61,7 +64,8 @@ export async function initI18n() {
   mountPicker();
 }
 
-const fill = (s, vars) => (vars ? s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? String(vars[k]) : m)) : s);
+// Isolate substitutions from surrounding Arabic; values remain plain text and callers still escape HTML.
+const fill = (s, vars) => (vars ? s.replace(/\{(\w+)\}/g, (m, k) => (k in vars ? (lang === 'ar' ? `\u2068${vars[k]}\u2069` : String(vars[k])) : m)) : s);
 
 // Active language, then English, then the key itself.
 export function t(key, vars) {
@@ -75,7 +79,8 @@ export function tr(key, english, vars) {
 
 // Counted strings: key_one for exactly 1, key_other otherwise (right for en, pt-BR and es).
 export function tn(key, n, vars) {
-  return t(`${key}_${n === 1 ? 'one' : 'other'}`, { n, ...vars });
+  const form = lang === 'ar' ? new Intl.PluralRules('ar').select(n) : n === 1 ? 'one' : 'other';
+  return t(`${key}_${dict[`${key}_${form}`] ? form : n === 1 ? 'one' : 'other'}`, { n, ...vars });
 }
 
 // Static markup: data-i18n="key" sets the text; data-i18n-attr="title:key;aria-label:key2" sets attributes.
