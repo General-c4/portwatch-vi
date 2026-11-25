@@ -9,17 +9,20 @@ try{
  const client=await createGeminiNewsClient();if(!client)throw new Error('unconfigured');
  phase='model-metadata';modelInfo=await client.getModel();
  for(let attempt=0;attempt<2;attempt++){
-  const started=performance.now();let usage={};
+  const started=performance.now();let usage={},rejectedTitle;
   try{
    phase='generation';requests++;const response=await client.generate(request);usage=response.usage;
    const durationMs=Math.round(performance.now()-started);
-   phase='validation';const translated=validateNewsResponse(request,response.text);
+   phase='validation';
+   // Diagnostic for this synthetic, unpublished fixture only; never store a rejected production translation.
+   try{const title=JSON.parse(response.text).title;if(typeof title==='string')rejectedTitle=title.split(process.env.GEMINI_API_KEY).join('[redacted]').replace(/AIza[0-9A-Za-z_-]{35}/g,'[redacted]').slice(0,500);}catch{}
+   const translated=validateNewsResponse(request,response.text);
    attempts.push({status:'success',durationMs,usage});
    const result={status:'success',synthetic:true,published:false,model:client.model,modelInfo,requests,durationMs,usage,attempts,source,translated};
    await atomicJSON('.sync/gemini-news-smoke.json',result);
    console.log(JSON.stringify({status:result.status,model:result.model,requests,durationMs,usage}));break;
   }catch(error){
-   const code=newsErrorCode(error);attempts.push({status:'failed',code,phase,durationMs:Math.round(performance.now()-started),usage,...(phase==='validation'?{field:error.field,reason:error.reason,copiedSource:error.copiedSource,copiedProtectedSource:error.copiedProtectedSource}:{})});
+   const code=newsErrorCode(error);attempts.push({status:'failed',code,phase,durationMs:Math.round(performance.now()-started),usage,...(phase==='validation'?{field:error.field,reason:error.reason,copiedSource:error.copiedSource,copiedProtectedSource:error.copiedProtectedSource,rejectedSyntheticTitle:rejectedTitle}:{})});
    if(attempt===1||['authentication','unsupported_model','quota_or_rate_limit','invalid_request_or_model'].includes(code))throw error;
    await new Promise(r=>setTimeout(r,2000));
   }
