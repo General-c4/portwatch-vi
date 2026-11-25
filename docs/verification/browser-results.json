@@ -1,0 +1,1354 @@
+{
+  "results": [
+    {
+      "page": "home",
+      "lang": "en",
+      "width": 1920,
+      "height": 1080,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "en",
+      "width": 2560,
+      "height": 1440,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "en",
+      "width": 768,
+      "height": 1024,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "en",
+      "width": 360,
+      "height": 800,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "pt-BR",
+      "width": 1920,
+      "height": 1080,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "pt-BR",
+      "width": 2560,
+      "height": 1440,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "pt-BR",
+      "width": 768,
+      "height": 1024,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "pt-BR",
+      "width": 390,
+      "height": 844,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "pt-BR",
+      "width": 360,
+      "height": 800,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "es",
+      "width": 1920,
+      "height": 1080,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "es",
+      "width": 2560,
+      "height": 1440,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "es",
+      "width": 768,
+      "height": 1024,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "es",
+      "width": 390,
+      "height": 844,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "es",
+      "width": 360,
+      "height": 800,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "home",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "filters": [
+        [
+          "gta",
+          5
+        ],
+        [
+          "generic",
+          1
+        ],
+        [
+          "all",
+          6
+        ]
+      ],
+      "rankingsMatch": true,
+      "overflow": false,
+      "keyboard": true
+    },
+    {
+      "page": "news/",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-belobug-way-ahead.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-zettrox-no-crashes.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-prologue-gone-fishing.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-new-progress-scale.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-omonkey-shaders-prison.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-cgbj-in-game.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-xcl-30fps-in-game.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-nuked.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-discord-down.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-marvis-menus-stream.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-exe-runs.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-readme.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-released.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-xcl-takes-lead.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-exe-deadline-time.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-copies.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-21-exe-deadline.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-19-fake-downloads.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-18-take-two-dmca.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-16-kurtaj-plea.html",
+      "lang": "ar",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "news/",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-belobug-way-ahead.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-zettrox-no-crashes.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-prologue-gone-fishing.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-new-progress-scale.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-omonkey-shaders-prison.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-cgbj-in-game.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-xcl-30fps-in-game.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-nuked.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-discord-down.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-marvis-menus-stream.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-exe-runs.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-readme.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-released.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-xcl-takes-lead.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-exe-deadline-time.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-copies.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-21-exe-deadline.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-19-fake-downloads.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-18-take-two-dmca.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-16-kurtaj-plea.html",
+      "lang": "ar",
+      "width": 2560,
+      "height": 1440,
+      "overflow": false
+    },
+    {
+      "page": "news/",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-belobug-way-ahead.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-zettrox-no-crashes.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-prologue-gone-fishing.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-new-progress-scale.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-omonkey-shaders-prison.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-cgbj-in-game.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-xcl-30fps-in-game.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-nuked.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-discord-down.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-marvis-menus-stream.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-exe-runs.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-readme.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-released.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-xcl-takes-lead.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-exe-deadline-time.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-copies.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-21-exe-deadline.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-19-fake-downloads.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-18-take-two-dmca.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-16-kurtaj-plea.html",
+      "lang": "ar",
+      "width": 768,
+      "height": 1024,
+      "overflow": false
+    },
+    {
+      "page": "news/",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-belobug-way-ahead.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-zettrox-no-crashes.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-prologue-gone-fishing.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-new-progress-scale.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-omonkey-shaders-prison.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-cgbj-in-game.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-xcl-30fps-in-game.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-nuked.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-discord-down.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-marvis-menus-stream.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-exe-runs.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-readme.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-released.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-xcl-takes-lead.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-exe-deadline-time.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-copies.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-21-exe-deadline.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-19-fake-downloads.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-18-take-two-dmca.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-16-kurtaj-plea.html",
+      "lang": "ar",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "news/",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-belobug-way-ahead.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-zettrox-no-crashes.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-25-prologue-gone-fishing.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-new-progress-scale.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-omonkey-shaders-prison.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-cgbj-in-game.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-xcl-30fps-in-game.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-nuked.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-discord-down.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-marvis-menus-stream.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-leonida-exe-runs.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-readme.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-23-exe-released.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-xcl-takes-lead.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-exe-deadline-time.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-22-copies.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-21-exe-deadline.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-19-fake-downloads.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-18-take-two-dmca.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "news/2026-11-16-kurtaj-plea.html",
+      "lang": "ar",
+      "width": 360,
+      "height": 800,
+      "overflow": false
+    },
+    {
+      "page": "language switching / persistence / failed catalog fallback",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "resourceFailures": [
+    {
+      "url": "http://127.0.0.1:8080/assets/i18n/content/ar.json",
+      "status": 404
+    },
+    {
+      "url": "http://127.0.0.1:8080/assets/i18n/ar.json",
+      "status": 404
+    }
+  ],
+  "consoleErrors": [
+    {
+      "page": "http://127.0.0.1:8080/news/2026-11-23-leonida-exe-runs.html",
+      "text": "Failed to load resource: the server responded with a status of 429 ()",
+      "location": {
+        "url": "https://opengraph.githubassets.com/725a3bb54ed0edb934ec86c33f6d22b15cedc99ac084fa91a61a9887ab07ba4e/ItsNotRexed/Leonida/issues/7154",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "page": "http://127.0.0.1:8080/",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:8080/assets/i18n/content/ar.json",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "page": "http://127.0.0.1:8080/",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "location": {
+        "url": "http://127.0.0.1:8080/assets/i18n/ar.json",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ]
+}

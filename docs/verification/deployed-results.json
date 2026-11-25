@@ -1,0 +1,153 @@
+{
+  "base": "https://general-c4.github.io/portwatch-vi/",
+  "results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "defaultArabic": true,
+      "languageSwitching": true,
+      "newsDialog": true,
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "defaultArabic": true,
+      "languageSwitching": true,
+      "newsDialog": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "defaultArabic": true,
+      "languageSwitching": true,
+      "newsDialog": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "defaultArabic": true,
+      "languageSwitching": true,
+      "newsDialog": true,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "defaultArabic": true,
+      "languageSwitching": true,
+      "newsDialog": true,
+      "overflow": false
+    }
+  ],
+  "responses": [
+    {
+      "path": "news/",
+      "status": 200
+    },
+    {
+      "path": "assets/i18n/ar.json",
+      "status": 200
+    },
+    {
+      "path": "assets/i18n/content/ar.json",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-25-belobug-way-ahead.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-25-zettrox-no-crashes.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-25-prologue-gone-fishing.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-take-two-dmca-leonida-forks.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-new-progress-scale.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-omonkey-shaders-prison.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-cgbj-in-game.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-xcl-30fps-in-game.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-24-tuxbox-first-frame-victory-world.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-leonida-nuked.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-leonida-discord-down.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-marvis-menus-stream.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-leonida-exe-runs.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-exe-readme.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-23-exe-released.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-22-anyps5-developer-x-suspended.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-22-xcl-takes-lead.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-22-exe-deadline-time.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-22-copies.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-21-exe-deadline.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-19-fake-downloads.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-18-take-two-dmca.html",
+      "status": 200
+    },
+    {
+      "path": "news/2026-11-16-kurtaj-plea.html",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

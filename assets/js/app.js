@@ -395,7 +395,7 @@ function privateCard(e) {
     </div>
     <p class="e-summary">${esc(contentText(e.summary))}</p>
     <div class="pb-ladder">${ladderCells(e)}</div>
-    ${url ? `<a class="pb-more" href="${esc(url)}">${esc(t('private.article'))} →</a>` : ''}
+    ${url ? `<a class="pb-more" href="${esc(url)}">${esc(t('private.article'))} ${locale() === 'ar' ? '←' : '→'}</a>` : ''}
   </li>`;
 }
 
@@ -693,7 +693,7 @@ function renderMethod() {
     <li><span class="le-at">${i === 0 ? `0–${gwShare}` : m.at}</span><div><h4>${esc(msLabel(m.key))}</h4><p>${esc(msDesc(m))}</p></div></li>`).join('') +
     `<li class="le-tracks"><span class="le-at">${playAt}–100</span><div><h4>${esc(t('method.tracksTitle'))}</h4><p>${esc(t('method.tracksSub'))}</p>
       <ul>${TRACKS.map((tk) => `<li><b>${esc(trackLabel(tk))}<span>${esc(t('method.pts', { n: Math.round(tk.weight * span * 10) / 10 }))}</span></b>${esc(trackDesc(tk))}${
-        tk.steps ? `<small>${tk.steps.map((s) => esc(stepLabel(tk.key, s))).join(' → ')}</small>` : ''}</li>`).join('')}</ul></div></li>`;
+        tk.steps ? `<small>${tk.steps.map((s) => esc(stepLabel(tk.key, s))).join(locale() === 'ar' ? ' ← ' : ' → ')}</small>` : ''}</li>`).join('')}</ul></div></li>`;
   $('#gw-explain').innerHTML = GROUNDWORK.map((g) => `<li><b>${esc(gwLabel(g))}<span>${esc(t('method.pts', { n: Math.round(g.weight * gwShare * 10) / 10 }))}</span></b>${esc(gwDesc(g))}</li>`).join('');
 }
 

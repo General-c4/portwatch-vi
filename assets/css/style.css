@@ -920,6 +920,7 @@ a.story { text-decoration: none; }
 /* Arabic uses an installed Arabic-capable family; all other languages retain Inter.
    The measured progress scale, sparkline and illustrations keep their original orientation. */
 html[lang="ar"] { --body: "Segoe UI", Tahoma, Arial, sans-serif; --display: "Segoe UI", Tahoma, Arial, sans-serif; }
+html[lang="ar"] :is(.brand,.big-score,.e-score b,.cd-digits span,.e-rank,.num) { font-family: "Inter Tight", "Inter", var(--body); }
 html[lang="ar"] :is(h1,h2,h3,h4,.kicker,.eyebrow,.mini-title,.cd-label,.pin-label,.tag,.story-cat) { letter-spacing: normal; }
 html[lang="ar"] :is(h1,h2,h3,h4,.hero h1,.section-head h2,.reader h2,.reader-page h1) { line-height: 1.4; }
 :is(.brand,.e-by,.pin-name,.mk-name,.e-score b,.big-score,.num,.cd-digits,.w-bar b,.gh-link) { unicode-bidi: isolate; }
@@ -931,5 +932,7 @@ html[dir="rtl"] .sort select { background-position: left 12px center; padding-in
 html[dir="rtl"] .reader-close { float: left; margin: 12px 0 0 12px; }
 html[dir="rtl"] :is(.e-summary,.w-name p,.article p,.dek,.pin-text) { unicode-bidi: plaintext; }
 html[dir="rtl"] .p-no { float: left; }
+html[dir="rtl"] .more-link::after { content: "←"; }
+html[dir="rtl"] #ov-boot { direction: ltr; unicode-bidi: isolate; text-align: end; }
 html[dir="rtl"] .hero h1 { max-width: 14ch; }
 html[dir="rtl"] .hero :is(.lede,.hero-lede) { max-width: 62ch; }

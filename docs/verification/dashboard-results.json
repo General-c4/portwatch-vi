@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "backend": "mocked admin read responses; no writes"
+  },
+  {
+    "width": 2560,
+    "overflow": false,
+    "errors": [],
+    "backend": "mocked admin read responses; no writes"
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "backend": "mocked admin read responses; no writes"
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "errors": [],
+    "backend": "mocked admin read responses; no writes"
+  },
+  {
+    "width": 360,
+    "overflow": false,
+    "errors": [],
+    "backend": "mocked admin read responses; no writes"
+  }
+]
