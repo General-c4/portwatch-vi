@@ -46,7 +46,7 @@ jobs:
           PW_TRANSLATION_LIMIT: '40'
           PW_MODEL_CACHE: /home/runner/.cache/portwatch-models
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.8-flash' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
           GEMINI_NEWS_MAX_REQUESTS: '3'
           GEMINI_NEWS_DAILY_REQUESTS: '20'
           GEMINI_NEWS_DAILY_TOKENS: '100000'

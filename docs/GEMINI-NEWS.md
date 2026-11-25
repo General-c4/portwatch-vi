@@ -5,11 +5,11 @@ This is a targeted addition to the existing synchronizer. The design, RTL, langu
 ## Provider and credentials
 
 - Official JavaScript SDK: `@google/genai` **3.6.1**, pinned in the isolated `automation/package-lock.json` (Node 22).
-- Default model: **gemini-3.8-flash**, configurable with the `GEMINI_MODEL` environment variable/repository variable.
+- Default model: **gemini-3.6-flash**, configurable with the `GEMINI_MODEL` environment variable/repository variable.
 - The only credential input is `GEMINI_API_KEY`, supplied as a GitHub Actions Secret to the server-side content job and explicitly dispatched smoke check. Never add it to Pages, frontend configuration or repository files.
 - The owner confirmed a fresh unexposed key on a Free-tier project with billing disabled. No billing/account settings were changed. The reachable Git history was scanned for the Google API-key pattern; no matches were found. Pattern scanning cannot prove the absence of every possible credential format or exposure elsewhere.
 
-Google documents the selected stable Flash model, structured output support and free input/output allowance: [model](https://aistudio.google.com/docs/models/gemini-3.8-flash), [pricing](https://aistudio.google.com/docs/pricing#gemini-3.8-flash), [SDK](https://googleapis.github.io/js-genai/release_docs/), [structured output](https://aistudio.google.com/docs/structured-output). Free quotas and availability depend on the project and may change. This code never enables paid billing or falls back to a different paid model.
+Google documents the selected stable Flash model, structured output support and free input/output allowance: [model](https://aistudio.google.com/docs/models/gemini-3.6-flash), [pricing](https://aistudio.google.com/docs/pricing#gemini-3.6-flash), [SDK](https://googleapis.github.io/js-genai/release_docs/), [structured output](https://aistudio.google.com/docs/structured-output). Free quotas and availability depend on the project and may change. This code never enables paid billing or falls back to a different paid model.
 
 ## Exact scope
 
@@ -52,3 +52,5 @@ The manual `Gemini news API check` workflow sends one synthetic, unpublished new
 Normal operation uses the existing `content-sync.yml`: validated news results and durable state are committed, and catalog changes explicitly dispatch the existing Pages workflow. The preview includes an additional scoped-news browser gate and checks the deployed news catalog. No upstream PR is opened.
 
 Files added: `automation/lib/gemini-news.mjs`, `news-sync.mjs`, `gemini-news-smoke.mjs`, `gemini-news-browser.mjs`, `automation/state/news-translations.json`, `assets/i18n/news/ar.json`, `tests/gemini-news.test.mjs`, the manual smoke workflow and this report. Modified: content sync/preview workflows, isolated SDK lock/package files, content/news display helpers and news-only call sites, deployment asset verification and existing browser-test expectations.
+
+Selection evidence: Gemini 3.8 returned generation HTTP 503 during real checks; 3.5 Flash-Lite produced responses rejected by the facts/language guard. Gemini 3.6 Flash returned a validated synthetic translation in 2031 ms (978 input, 195 output tokens); inspection then identified a duplicated Arabic verb, so a fluency rejection rule and regression were added before final acceptance. No synthetic story was published.
