@@ -307,7 +307,7 @@
         "field": "blockers.0",
         "sourceHash": "0ac17eed324fa8f36abae11096dd6c7894bb64d7d26e76a989cf91093d1dfaa2",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:doomsday\",\"proof.label\"]": {
@@ -315,7 +315,7 @@
         "field": "proof.label",
         "sourceHash": "45bc0eb865842e0b5e3af8c86babc3616b752451319c9f32161eeb5f89c6f917",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:xbox-emulator\",\"provenOn\"]": {
@@ -323,7 +323,7 @@
         "field": "provenOn",
         "sourceHash": "ebf45d17f8f9fbb739d5c9093a8b7b433c571ccba997940b67479692339f7355",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:xcl\",\"provenOn\"]": {
@@ -331,7 +331,7 @@
         "field": "provenOn",
         "sourceHash": "b6b2ef672ce47e891d369ad9b2177012b7638cdbfa18f0bd2663aca5a4a08534",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:scarlettx\",\"provenOn\"]": {
@@ -339,7 +339,7 @@
         "field": "provenOn",
         "sourceHash": "f21f6a1531cf4571c62afa139d16b2503b6b5daca239531a8cbe285900134a9a",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:tuxbox\",\"provenOn\"]": {
@@ -347,7 +347,7 @@
         "field": "provenOn",
         "sourceHash": "d318beaa6b914b22a3020996af1bb9163069a8ef6d3e0b4df00a863b12813130",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:openscarlett\",\"provenOn\"]": {
@@ -355,7 +355,7 @@
         "field": "provenOn",
         "sourceHash": "f43194fd0a7dea8a10ec1d6aecd1aea1bb3ef1d94b934d9f400e4a6b75ee2c08",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:scarlett-layer\",\"provenOn\"]": {
@@ -363,7 +363,7 @@
         "field": "provenOn",
         "sourceHash": "b7bc7b62519dea309d71f48851916268b5be5509f974b347883d22c2c563f394",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:anyxboxx\",\"summary\"]": {
@@ -371,7 +371,7 @@
         "field": "summary",
         "sourceHash": "78d749c95896468e2b47ccfd39d37bf28f3a03a44fe47dd3b63da8959c210fea",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:anyxboxx\",\"provenOn\"]": {
@@ -379,7 +379,7 @@
         "field": "provenOn",
         "sourceHash": "fa6fd80bbff372e6170542beed7dcde549a218b3239a667c22107110535e6877",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:anyxboxx\",\"claims.0.text\"]": {
@@ -387,7 +387,7 @@
         "field": "claims.0.text",
         "sourceHash": "d521ff9d74005f96092c5daef6c542d90e7cb0a4677fea96ab6f33cdee98fdfc",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:xvalkyrie\",\"provenOn\"]": {
@@ -395,7 +395,7 @@
         "field": "provenOn",
         "sourceHash": "9213d1dc10dba548c005fa1ab0e5d5bf2226c3beff1e8564beebc9ad9a20b1f7",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:openscarlett-ce\",\"provenOn\"]": {
@@ -403,7 +403,7 @@
         "field": "provenOn",
         "sourceHash": "24e42c7dd837f7101a41eb51ab87b4009e9e562cb63835b8929bd13c51296d9c",
         "attempts": 0,
-        "lastError": "request_or_token_limit",
+        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.\",\"text\"]": {
@@ -465,7 +465,7 @@
     },
     "providerBlock": {
       "code": "quota_or_rate_limit",
-      "nextAttemptAt": "2026-11-25T20:02:08.701Z",
+      "nextAttemptAt": "2026-11-26T07:59:59.701Z",
       "quota": {
         "quotas": [
           {
@@ -475,7 +475,8 @@
           }
         ],
         "retryAfterMs": 46671000
-      }
+      },
+      "blockedAt": "2026-11-25T19:02:08.701Z"
     }
   }
 }

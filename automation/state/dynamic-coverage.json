@@ -2,17 +2,17 @@
   "before": {
     "pinned": {
       "total": 1,
-      "translated": 0,
+      "translated": 1,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 0
+      "missing": 0,
+      "coverage": 100
     },
     "headlines": {
       "total": 30,
-      "translated": 26,
+      "translated": 28,
       "exempt": 0,
-      "missing": 4,
-      "coverage": 86.67
+      "missing": 2,
+      "coverage": 93.33
     },
     "changes": {
       "total": 12,
@@ -30,24 +30,24 @@
     },
     "projectDetails": {
       "total": 84,
-      "translated": 71,
+      "translated": 72,
       "exempt": 1,
-      "missing": 12,
-      "coverage": 85.54
+      "missing": 11,
+      "coverage": 86.75
     },
     "highlights": {
       "total": 94,
-      "translated": 88,
+      "translated": 91,
       "exempt": 0,
-      "missing": 6,
-      "coverage": 93.62
+      "missing": 3,
+      "coverage": 96.81
     },
     "blockers": {
       "total": 91,
-      "translated": 88,
+      "translated": 90,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 96.7
+      "missing": 1,
+      "coverage": 98.9
     }
   },
   "after": {
@@ -102,24 +102,21 @@
     }
   },
   "audit": {
-    "legacyPending": 48,
-    "approvedEntries": 23,
+    "legacyPending": 39,
+    "approvedEntries": 14,
     "unrelatedEntries": 25
   },
   "stats": {
-    "requests": 2,
-    "translatedFields": 9,
-    "failedFields": 6,
+    "requests": 0,
+    "translatedFields": 0,
+    "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 2497,
-    "outputTokens": 1015,
-    "thinkingTokens": 3987,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "thinkingTokens": 0,
     "errors": [
-      "invalid_fluency",
-      "protected_facts_or_language_invalid",
       "quota_or_rate_limit"
     ],
-    "model": "gemini-3.6-flash",
     "quota": {
       "quotas": [
         {
@@ -130,8 +127,9 @@
       ],
       "retryAfterMs": 46671000
     },
+    "blockedUntil": "2026-11-26T07:59:59.701Z",
     "pending": 23,
-    "durationMs": 33222
+    "durationMs": 11
   },
   "missing": [
     {
@@ -198,79 +196,79 @@
       "id": "project:doomsday",
       "field": "blockers.0",
       "source": "Rendering slightly behind DexNom's",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:doomsday",
       "field": "proof.label",
       "source": "Doomsday on X",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:xbox-emulator",
       "field": "provenOn",
       "source": "Trackmania: races drive; Terraria: in-world; Fortnite: lobby (self-reported)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:xcl",
       "field": "provenOn",
       "source": "Minecraft Preview and Unicorn Overlord: playable",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:scarlettx",
       "field": "provenOn",
       "source": "Concept Destruction and Unicorn Overlord: playable",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:tuxbox",
       "field": "provenOn",
       "source": "The Matrix Awakens: menu + cinematic (Linux)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:openscarlett",
       "field": "provenOn",
       "source": "Six Scarlett GDK samples and a Freedoom homebrew port (not retail)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:scarlett-layer",
       "field": "provenOn",
       "source": "Terraria (GDK build): menus and audio (self-reported)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:anyxboxx",
       "field": "summary",
       "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:anyxboxx",
       "field": "provenOn",
       "source": "GDK sample games (not retail)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:anyxboxx",
       "field": "claims.0.text",
       "source": "- ✅ The Xbox Series 1.0.2.1 build of GTA VI launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:xvalkyrie",
       "field": "provenOn",
       "source": "GDK samples draw; it reports two retail Series titles playable",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:openscarlett-ce",
       "field": "provenOn",
       "source": "Minecraft Preview: playable; The Matrix Awakens: opening chase (self-reported)",
-      "reason": "request_or_token_limit"
+      "reason": "quota_or_rate_limit"
     }
   ]
 }

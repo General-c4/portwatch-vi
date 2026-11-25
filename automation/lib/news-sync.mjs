@@ -1,6 +1,6 @@
 import {hash} from './state.mjs';
 import {protectedTerms} from './translations.mjs';
-import {createGeminiNewsClient,prepareNewsRequest,validateNewsResponse,newsErrorCode,NEWS_SYSTEM_INSTRUCTION} from './gemini-news.mjs';
+import {createGeminiNewsClient,prepareNewsRequest,validateNewsResponse,newsErrorCode,NEWS_SYSTEM_INSTRUCTION,geminiRetryAt} from './gemini-news.mjs';
 
 export function newsRecords(data){
  const articles=(data.news||[]).map(n=>({id:`article:${n.id}`,date:n.date,fields:{title:n.title,summary:n.dek||n.summary||'',...Object.fromEntries((n.body||[]).map((text,i)=>[`body.${i}`,text]))},sourceUrls:(n.sources||[]).map(s=>s.url).filter(Boolean)}));
@@ -50,6 +50,8 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
   if(!Object.keys(selected).length){delete state.pending[record.id];continue;}
   state.pending[record.id]=pending;
   if(pending.nextAttemptAt&&Date.parse(pending.nextAttemptAt)>Date.parse(now))continue;
+  const blockedUntil=geminiRetryAt(state);
+  if(Date.parse(blockedUntil)>Date.parse(now)){pending.lastError='quota_or_rate_limit';pending.nextAttemptAt=blockedUntil;stats.errors.push('quota_or_rate_limit');continue;}
   const request=prepareNewsRequest(selected,record.sourceUrls,terms);
   const inputUpperBound=Buffer.byteLength(NEWS_SYSTEM_INSTRUCTION+request.prompt,'utf8')+1024;
   const reservation=inputUpperBound+limits.maxOutputTokens;

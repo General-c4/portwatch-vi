@@ -38,6 +38,14 @@ test('quota diagnostics retain safe limits and retry timing, never server messag
  const info=googleQuotaInfo({status:429,message:JSON.stringify({error:{message:'SECRET',details:[{violations:[{quotaId:'RequestsPerMinutePerProject',quotaMetric:'requests',quotaValue:'5',secret:'SECRET'}]},{'@type':'type.googleapis.com/google.rpc.RetryInfo',retryDelay:'32.5s'}]}})});
  assert.deepEqual(info,{quotas:[{period:'minute',unit:'requests',limit:5}],retryAfterMs:32500});assert(!JSON.stringify(info).includes('SECRET'));
 });
+test('daily Google retry deadline blocks requests until reset and resumes without resetting counters',async()=>{
+ const a=args();a.now='2026-11-25T10:00:00Z';
+ a.state.dynamic={version:1,pending:{},totals:{requests:0,translatedFields:0,failedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0},providerBlock:{code:'quota_or_rate_limit',nextAttemptAt:'2026-11-25T11:00:00Z',quota:{quotas:[{period:'day',unit:'requests',limit:20}],retryAfterMs:7200000}}};
+ const held=await syncDynamicEditorial({...a,clientFactory:async()=>{throw Error('Must not call provider during cooldown');}});
+ assert.equal(held.stats.requests,0);assert.equal(held.stats.blockedUntil,'2026-11-25T12:00:00.000Z');
+ const calls=[],resumed=await syncDynamicEditorial({...a,now:'2026-11-25T13:00:00Z',state:held.state,catalog:held.catalog,clientFactory:client(calls)});
+ assert.equal(resumed.coverage.missing.length,0);assert.equal(calls.length,2);assert.equal(resumed.state.daily.requests,2);assert.equal(resumed.state.dynamic.providerBlock,undefined);
+});
 test('backfill validates and batches current dynamic text, preserves numbers/URLs and reaches actual field coverage',async()=>{
  const a=args(),calls=[],original=JSON.stringify(a.data);const result=await syncDynamicEditorial({...a,clientFactory:client(calls)});
  assert.equal(result.coverage.missing.length,0);assert.equal(result.stats.translatedFields,7);assert.equal(calls.length,2);

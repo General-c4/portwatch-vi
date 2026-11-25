@@ -35,7 +35,11 @@ try{
   await page.locator('details.fold').evaluateAll(els=>els.forEach(e=>e.open=true));
   await page.locator('[data-toggle]').evaluateAll(els=>els.forEach(e=>{if(e.getAttribute('aria-expanded')==='false')e.click();}));
   const data=observedLive||deployedData,pin=observedPin||deployedPin,actualCoverage=editorialCoverage(data,catalogs,pin);
-  if(live)assert.equal(actualCoverage.missing.length,0,JSON.stringify(actualCoverage.missing.map(({id,field})=>({id,field})),null,2));
+  if(live){
+   const unexpected=actualCoverage.missing.filter(e=>!pending[JSON.stringify([e.id,e.field])]?.lastError);
+   assert.equal(unexpected.length,0,JSON.stringify(unexpected.map(({id,field})=>({id,field})),null,2));
+   if(process.env.PW_ALLOW_QUEUED_TRANSLATIONS!=='1')assert.equal(actualCoverage.missing.length,0,'Live dynamic content must be fully translated');
+  }
   if(pin?.show!==false&&pin?.text){
    const pinExpected=expected(pin.text,'pinned:current','text',lang),prefix=pinExpected.split(/https:\/\//)[0].trim();
    await page.waitForFunction(()=>!document.querySelector('#pinned').hidden);

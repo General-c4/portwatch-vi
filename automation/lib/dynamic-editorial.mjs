@@ -11,9 +11,14 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
  if(state.daily.day!==now.slice(0,10))state.daily={day:now.slice(0,10),requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0};
  state.dynamic??={version:1,pending:{},totals:{requests:0,translatedFields:0,failedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0}};
  const d=state.dynamic,stats={requests:0,translatedFields:0,failedFields:0,cachedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0,errors:[]};
+ // Upgrade the initial one-hour fallback to Google's actual daily-quota RetryInfo deadline.
+ if(d.providerBlock?.quota?.quotas.some(q=>q.period==='day')&&d.providerBlock.quota.retryAfterMs>3600000&&!d.providerBlock.blockedAt){
+  d.providerBlock.blockedAt=new Date(Date.parse(d.providerBlock.nextAttemptAt)-3600000).toISOString();
+  d.providerBlock.nextAttemptAt=new Date(Date.parse(d.providerBlock.blockedAt)+d.providerBlock.quota.retryAfterMs).toISOString();
+ }
  const before=editorialCoverage(data,{human,automatic,catalog},pinned);
  const records=dynamicEditorialRecords(data,pinned),tasks=[],active=new Set();
- const terms=[...protectedTerms(data),'Bungie','Marvis','Marvisak','Rock Paper Shotgun','Unreal Engine','GDK','DXVK','PSO','RAM','GPU','CPU','Arion Kurtaj','Minecraft Preview','Unicorn Overlord','Concept Destruction','The Matrix Awakens','Trackmania','Terraria','Fortnite','Freedoom','Wine','Scarlett','VIctory'];
+ const terms=[...protectedTerms(data),'Bungie','Marvis','Marvisak','Rock Paper Shotgun','Unreal Engine','GDK','DXVK','PSO','RAM','GPU','CPU','Arion Kurtaj','Minecraft Preview','Unicorn Overlord','Concept Destruction','The Matrix Awakens','Trackmania','Terraria','Fortnite','Freedoom','Unicorn','Wine','Scarlett','VIctory'];
  // Freeze full hardware identifiers rather than allowing a model to reorder their component words.
  for(const r of records)for(const s of Object.values(r.fields))for(const m of s.matchAll(/(?:Radeon )?RX \d{3,5}(?: XT[X]?)?|(?:GeForce )?RTX \d{3,5}(?: Ti)?|Ryzen \d \d{4,5}[A-Z0-9]*/g))terms.push(m[0]);
  for(const r of records)for(const s of Object.values(r.fields))for(const m of s.matchAll(/([A-Za-z0-9_.-]+)'s\s+([a-z][A-Za-z0-9_.-]*(?:-[A-Za-z0-9_.-]+)+)|\b[A-Z][A-Za-z0-9]*[a-z][A-Z][A-Za-z0-9]*\b/g))terms.push(...(m[1]?[m[1],m[2]]:[m[0]]));
@@ -41,7 +46,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   return request;
  };
  let client,stop=Date.parse(d.providerBlock?.nextAttemptAt||'')>Date.parse(now),lastRequestAt=0;
- if(stop)for(const t of tasks)t.pending.lastError=d.providerBlock.code;
+ if(stop){stats.errors.push(d.providerBlock.code);stats.quota=d.providerBlock.quota;stats.blockedUntil=d.providerBlock.nextAttemptAt;for(const t of tasks)t.pending.lastError=d.providerBlock.code;}
  while(tasks.length&&!stop&&stats.requests<limits.maxRequests){
   let batch=[];
   while(tasks.length&&batch.length<batchFields){const next=tasks[0],candidate=[...batch,next];const req=makeRequest(candidate);if(Buffer.byteLength(SYSTEM+req.prompt)+1024>limits.maxInputBytes){if(!batch.length){next.pending.lastError='input_limit';tasks.shift();continue;}break;}batch.push(tasks.shift());}
@@ -57,6 +62,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
    let output;
    try{
     const response=await client.generate(request),usage=response.usage||{};
+    delete d.providerBlock;
     for(const[key,field]of[['inputTokens','promptTokenCount'],['outputTokens','candidatesTokenCount'],['thinkingTokens','thoughtsTokenCount']])for(const target of[stats,d.totals,state.daily,state.totals])target[key]+=Number(usage[field])||0;
     if(Number.isFinite(usage.totalTokenCount))state.daily.accountedTokens+=Math.max(0,usage.totalTokenCount)-reservation;
     if(!response.text||response.finishReason&&response.finishReason!=='STOP')throw new Error('empty_response');
@@ -65,7 +71,8 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
     const code=newsErrorCode(error);stats.errors.push(code);for(const t of batch)t.pending.lastError=code;
     if(code==='quota_or_rate_limit'){
      const quota=googleQuotaInfo(error);stats.quota=quota;const daily=quota?.quotas.some(q=>q.period==='day');
-     d.providerBlock={code,nextAttemptAt:new Date(Date.parse(now)+Math.round(performance.now()-started)+(daily?3600000:Math.max(60000,quota?.retryAfterMs||60000))).toISOString(),quota};
+     const blockedAt=Date.parse(now)+Math.round(performance.now()-started),delay=Math.max(daily?3600000:60000,quota?.retryAfterMs||0);
+     d.providerBlock={code,blockedAt:new Date(blockedAt).toISOString(),nextAttemptAt:new Date(blockedAt+delay).toISOString(),quota};
     }
     if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model'].includes(code))stop=true;
    }
