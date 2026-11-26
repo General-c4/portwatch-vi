@@ -252,14 +252,14 @@
   "pending": {},
   "daily": {
     "day": "2026-11-26",
-    "requests": 0,
-    "accountedTokens": 0,
+    "requests": 3,
+    "accountedTokens": 52629,
     "inputTokens": 0,
     "outputTokens": 0,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 18,
+    "requests": 21,
     "successful": 0,
     "failed": 0,
     "cachedFields": 0,
@@ -270,21 +270,13 @@
   "dynamic": {
     "version": 1,
     "pending": {
-      "[\"headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
-        "field": "title",
-        "sourceHash": "8cc01960ca146b0287ffebee4e5e6e3dd5a869c816b170580228a992e0b9d485",
-        "attempts": 4,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": "2026-11-25T19:32:31.281Z"
-      },
       "[\"project:belobug\",\"summary\"]": {
         "id": "project:belobug",
         "field": "summary",
-        "sourceHash": "426c64d9880b46473960ab3d04cdab991c64492e84d14579c7d042d019c3ffb1",
-        "attempts": 3,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": "2026-11-25T19:52:31.281Z"
+        "sourceHash": "a2fe6d363caee98c2948022af94552962862d3862af4556c29b8c92a015b2cfe",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
       },
       "[\"project:dexnom\",\"summary\"]": {
         "id": "project:dexnom",
@@ -425,26 +417,26 @@
       "[\"project:doomsday\",\"summary\"]": {
         "id": "project:doomsday",
         "field": "summary",
-        "sourceHash": "5828f8f7ba21816f3d8c0184b16e382418f6f4b0bcced52bce89edf06af683e7",
-        "attempts": 2,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": "2026-11-25T20:02:08.701Z"
+        "sourceHash": "0025536e80239b221324c88fab139cebfda195c9896905e15aa49879499f6286",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
       },
       "[\"pinned:current\",\"text\"]": {
         "id": "pinned:current",
         "field": "text",
-        "sourceHash": "cdc6cdd9066ca5fc97499c09975249e093c10dac538a33b816ce28e720ea8d89",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
+        "sourceHash": "ff8671264c644b7b3f2c7eb8b20a6f9f56169ff051eb7c124b1a46351fd7764c",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-26T09:39:35.013Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMivwFBVV95cUxORTFnN0F2RXRmcU9QdkF6cEZFX1RZV1hiUzlVajhNTXFrcHYxV1c4YXNYUnFDeE9VMU9rYlNDNGI0S2pONUM4ZGRfQ2N4MUxfSmNaNTBXZlBVWGljLThZUVRuZDB1ZnVWUDdQcHFvX2p5R1l4bVdkWnJwRHB0WFJzdkthcE9nU0hRNWNsSXRDUjJRRGxvS3FrallncjdCdVFOZS1jVEhnVWNzN192bWhSaXZMem1SVnNxMHU5bmJQNA?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMivwFBVV95cUxORTFnN0F2RXRmcU9QdkF6cEZFX1RZV1hiUzlVajhNTXFrcHYxV1c4YXNYUnFDeE9VMU9rYlNDNGI0S2pONUM4ZGRfQ2N4MUxfSmNaNTBXZlBVWGljLThZUVRuZDB1ZnVWUDdQcHFvX2p5R1l4bVdkWnJwRHB0WFJzdkthcE9nU0hRNWNsSXRDUjJRRGxvS3FrallncjdCdVFOZS1jVEhnVWNzN192bWhSaXZMem1SVnNxMHU5bmJQNA?oc=5",
         "field": "title",
         "sourceHash": "64f5edc1f0886e5d452c1f414790ec10f649ff8a0a0b20721cd7790842175b3c",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxPSDJqZmZTaUZxcE1kRm0tRkN2OHZJZDBPYmhrREtGWFBZbHpuMWZrN2YyZ2RKbElsNEFtZGpNMGJMY2oyaVJDb0l1ZEkzNnF5bkNDTXI2VXVCYTRwX2phUHl0RFBULVF5NlpXa3N2TTR5Y2hyemlBOF9Sd3BJR2dxU0ptMU8xbEpjQ2UtWnZCcklDM1pD?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxPSDJqZmZTaUZxcE1kRm0tRkN2OHZJZDBPYmhrREtGWFBZbHpuMWZrN2YyZ2RKbElsNEFtZGpNMGJMY2oyaVJDb0l1ZEkzNnF5bkNDTXI2VXVCYTRwX2phUHl0RFBULVF5NlpXa3N2TTR5Y2hyemlBOF9Sd3BJR2dxU0ptMU8xbEpjQ2UtWnZCcklDM1pD?oc=5",
@@ -458,14 +450,6 @@
         "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmVpRkhVbDVaQ05HeFdnZ0s3YVBVbENtYnk2ZU5YMElOdDJKQVJrZE5HVDFWVk16RkN5endxN2pCd2JkbnBBdm5ZdUtNb1hmODFzdzhvbWpLTGJPR2NrUFZwZjVOZl9lSmpZb2lPTkxxU1NzZHVpbGNqMTZCXzRJcjFpVURoS3NoSzlEUmtZalJ0YzNOMmJFQXNlMVRybkFJSy1KODlwZnY?oc=5",
         "field": "title",
         "sourceHash": "e7471cda93add3de18588fc919df291f76fa9553f6939c8ed04c374794a396ec",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb1N4N0drN3ltdS1hZXE5SW1yZWc2Zm5TYmpDWlVGX05LZWctcUdzOWZYUmZQb0k5eHh4QXdRcVkwRnpoUVdhelZhWWtqMUlIa1QwNl9OVGZTTjVqU2F3eGlvQTZCeTJ4Vi1wVDE5cXJhNHNhV1dsQnJaM1pZTXhkMk1JUzY3MU1yenc5M2FEOVVWQjZBVEExTi1KX29SdzFaNlJha0xrbUhXOFVsQUNGMElWX1dHWVdYWGE1VmIyQWJOTzVnZHh3NlJ1S2FVRVdSUGFrbkY3YjdDYkVnbDRLcmtBOA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb1N4N0drN3ltdS1hZXE5SW1yZWc2Zm5TYmpDWlVGX05LZWctcUdzOWZYUmZQb0k5eHh4QXdRcVkwRnpoUVdhelZhWWtqMUlIa1QwNl9OVGZTTjVqU2F3eGlvQTZCeTJ4Vi1wVDE5cXJhNHNhV1dsQnJaM1pZTXhkMk1JUzY3MU1yenc5M2FEOVVWQjZBVEExTi1KX29SdzFaNlJha0xrbUhXOFVsQUNGMElWX1dHWVdYWGE1VmIyQWJOTzVnZHh3NlJ1S2FVRVdSUGFrbkY3YjdDYkVnbDRLcmtBOA?oc=5",
-        "field": "title",
-        "sourceHash": "604a4e291b78f379917d560c5594773454f249f526911d98cc0fe0b22f2ee5c8",
         "attempts": 0,
         "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
@@ -499,7 +483,7 @@
         "field": "title",
         "sourceHash": "2c7956f5517a0dc5e1ac54bf824526d6721d46b69a0713bb2979627e42204ed7",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"headline:https://news.google.com/rss/articles/CBMisAFBVV95cUxPWXBTUzdLNnY1OF9raDRhdEdRd3E1OS1QOG91YUFwSllabHBMTXZ0LWtmcXNIOGh0MjlCcUxRb1dvLVR1ZHl2WDBhQVMtc294M19HTjI3aVpOZlBsZ3FyZ2RiS28xUk1rRWRsXzUyYnY2STlNT3FmYUw0UGhYNWxwTmpTMERLYlRYZ1BlY0d6LXNJcjE5OHM5LXlLdXBCS0pRRE9FRlFZdGtrTmFESl91eg?oc=5\",\"title\"]": {
@@ -514,134 +498,6 @@
         "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDBQR29OOWR5c3N6dWZHWnpGYm82UnJhdG1ad0RDV0VOSVBEaUtVeTY4WWNEUnh2dE05clpOeUpNclR3cnBsc0JILVJnT21kc0tYM09MWXlmOGZjNGFoOUZBWHZROTRaTXJ0NzlXZ3JkR1JnalBSem1RbUk1UV9lOTBGOWhLYkhOMVZMd2FhUGR3b3EzSWJqR0VhTzRJRXNDbmIyRDd3?oc=5",
         "field": "title",
         "sourceHash": "6476273dd49764922a09cdc81fff1febaf42b5c1ade0146da2462752d2c30bc2",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JdUtEM2pQS1R0MC1va0NneWJDakxnOXBVY0FhemI4U0liUVowZmVYLVA4ak5OZkx6dEY0MlVDdnlUUGlnTlEtWmc1ME5tUzdaNWRpU1FKOGFtWktfazlR?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JdUtEM2pQS1R0MC1va0NneWJDakxnOXBVY0FhemI4U0liUVowZmVYLVA4ak5OZkx6dEY0MlVDdnlUUGlnTlEtWmc1ME5tUzdaNWRpU1FKOGFtWktfazlR?oc=5",
-        "field": "title",
-        "sourceHash": "a1f91947a0793321580fcdef789211ebaf91a0fe6783871f27bd94e8f8a652d8",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ3pCelBVb19ock04cnRTQWhrZ0VrUDFJeHJ2Mkh5VjgtZ0pONGlYNTd4a0FhbkpqcU9Za1FyRzJ3akxZdlRvU2ZyUXVEM0FwR1lYRE5KVEZ6Y0paTzBqYVZJckRlSjIyamFnMHJEN1d2bTdBTHpNWGNCdWRfUG4ybC0wcFpnZw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ3pCelBVb19ock04cnRTQWhrZ0VrUDFJeHJ2Mkh5VjgtZ0pONGlYNTd4a0FhbkpqcU9Za1FyRzJ3akxZdlRvU2ZyUXVEM0FwR1lYRE5KVEZ6Y0paTzBqYVZJckRlSjIyamFnMHJEN1d2bTdBTHpNWGNCdWRfUG4ybC0wcFpnZw?oc=5",
-        "field": "title",
-        "sourceHash": "5955f95b095f5b529989a2eba857e3a0d2f662c7578d663d51cfb4bb20b6af7a",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGNPNXVxNDNqc3NPa1VzbllVdG52aFFJNGtBVUJRU1BBa2dBZW01R1QzZVFJN1V5cTd4SlNpVHpRR0J4UGxqSV9OS3ZLTFJtY3UtUzBkejlyeUZpbGxldkltLVlZT190emxMNVJEUkZwb215R05va0wzSlVlajc2TWxva0JpTEU?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGNPNXVxNDNqc3NPa1VzbllVdG52aFFJNGtBVUJRU1BBa2dBZW01R1QzZVFJN1V5cTd4SlNpVHpRR0J4UGxqSV9OS3ZLTFJtY3UtUzBkejlyeUZpbGxldkltLVlZT190emxMNVJEUkZwb215R05va0wzSlVlajc2TWxva0JpTEU?oc=5",
-        "field": "title",
-        "sourceHash": "80decc0ff495f3842ca033358872569dbeaad4087643384b9297a3b2d3add0e1",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-in/news/other/exciting-gta-6-leak-offers-good-news-for-pc-gamers-but-there-s-a-twist/ar-AA2iecLg\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-in/news/other/exciting-gta-6-leak-offers-good-news-for-pc-gamers-but-there-s-a-twist/ar-AA2iecLg",
-        "field": "title",
-        "sourceHash": "dfe5bff55f40ede8b1d2729dd6212ed1c0f97961ecb825e39337169142f5f3df",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMidkFVX3lxTE96OXJjUjVjS1poQXlzV1paVWlBUWhueTNuX1EwT3hUSWt1R01qdFlnQnUyVlhWbk41LTFDZ2xBX0dtMVhIbjBpZF9zRkJIdG01anl2ai1ZNHRSeS1uclMzeE9yMkNBZ29rWnkzQVYtX0t6TnJadXc?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMidkFVX3lxTE96OXJjUjVjS1poQXlzV1paVWlBUWhueTNuX1EwT3hUSWt1R01qdFlnQnUyVlhWbk41LTFDZ2xBX0dtMVhIbjBpZF9zRkJIdG01anl2ai1ZNHRSeS1uclMzeE9yMkNBZ29rWnkzQVYtX0t6TnJadXc?oc=5",
-        "field": "title",
-        "sourceHash": "8eb1ccc2a83df12a59982a2db31febed05a8afbaf41ad543a81bfa4216a88475",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:NotNozy joins as a private build at 82.6%, just behind AvatarManz: his Rumble stream shows a build that looks about the same, on an AMD card.\",\"text\"]": {
-        "id": "change:2026-11-25:new:NotNozy joins as a private build at 82.6%, just behind AvatarManz: his Rumble stream shows a build that looks about the same, on an AMD card.",
-        "field": "text",
-        "sourceHash": "b6469eb42c5af97ebe3a96958b8a5f861850c7f97e1182c0106cf878aa83b910",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:AvatarManz's code is public: avatarmanz/VIctory-7900XTX, a GPL-3.0 fork of VIctory for the RX 7900 XTX, joins the race at #1 with 83.1%. Its README measures 13-22 fps indoors and a 41-minute session without a crash.\",\"text\"]": {
-        "id": "change:2026-11-25:new:AvatarManz's code is public: avatarmanz/VIctory-7900XTX, a GPL-3.0 fork of VIctory for the RX 7900 XTX, joins the race at #1 with 83.1%. Its README measures 13-22 fps indoors and a 41-minute session without a crash.",
-        "field": "text",
-        "sourceHash": "cc39953a7ef3f2ca2cb0810f6b14115ea29ae8a680519bde83ffc96bd77efdc4",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:AvatarManz joins as a private build at 83.1% and leads our overall number: it merges four VIctory forks and reportedly runs GTA VI at about 16 fps on average, with sound and no crashes so far, on a Radeon RX 7900 XTX.\",\"text\"]": {
-        "id": "change:2026-11-25:new:AvatarManz joins as a private build at 83.1% and leads our overall number: it merges four VIctory forks and reportedly runs GTA VI at about 16 fps on average, with sound and no crashes so far, on a Radeon RX 7900 XTX.",
-        "field": "text",
-        "sourceHash": "005b3aebbf5ed07981abbf41fa8bbd9d5400122501fc506b2712d6b8d7f4e0f2",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 37).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 37).",
-        "field": "text",
-        "sourceHash": "ba0b5d8fb14047d14a4bb6b77c12ec67b871f918220d2933ea3edc5d0d39f234",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted decantlabs/decant (possible effort, substance 92).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted decantlabs/decant (possible effort, substance 92).",
-        "field": "text",
-        "sourceHash": "33158920c9436dc0d7ef4ac498faab518e030e1691ae7f6f7d9c2cea142cd83e",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted Linox-IDK/LNX-victory (possible effort, substance 98).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted Linox-IDK/LNX-victory (possible effort, substance 98).",
-        "field": "text",
-        "sourceHash": "a85e93910db1fb12237d18415ad74c603d77934fe38ab24bf88c38d0e27e5cfb",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted baummarder/xHoly (possible effort, substance 92).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted baummarder/xHoly (possible effort, substance 92).",
-        "field": "text",
-        "sourceHash": "b608102ec464c09a5bc8fd57a6e01e2ab57b871346863b3aad00913747e7dd73",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted sefaalcn/half-step-game-project (possible effort, substance 71).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted sefaalcn/half-step-game-project (possible effort, substance 71).",
-        "field": "text",
-        "sourceHash": "891dc7c2b29439f07cef2cee548661825103a24920fca113abbb1e7d9267f99c",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted ihaterockstargames/sixth-star (possible effort, substance 77).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted ihaterockstargames/sixth-star (possible effort, substance 77).",
-        "field": "text",
-        "sourceHash": "fc13d182447e4a765f8d477f3c42cddf70b2eb028d061014badb2691e34fb63a",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).",
-        "field": "text",
-        "sourceHash": "f4a18564a9c79f89c50e39c5a6abe3f3eaa08ff395c91504d72b0d70087f3dc9",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-25:new:Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).\",\"text\"]": {
-        "id": "change:2026-11-25:new:Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).",
-        "field": "text",
-        "sourceHash": "c5c40770521ac65bf39fb893bb746ad5e17635000d6c35c9b4dca006e18608df",
         "attempts": 0,
         "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
@@ -721,9 +577,9 @@
       "[\"project:notnozy\",\"summary\"]": {
         "id": "project:notnozy",
         "field": "summary",
-        "sourceHash": "e6e5aaa7a25ea4732225b2d2eb2d7695229d8eb9b183f01d4e78ae15a821ccfe",
+        "sourceHash": "2b71f33f3000c5c5ab31f3578238ecfcfc68097e2f5850f9bb0a846cfbfb2e15",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:notnozy\",\"byline\"]": {
@@ -753,9 +609,9 @@
       "[\"project:notnozy\",\"highlights.1\"]": {
         "id": "project:notnozy",
         "field": "highlights.1",
-        "sourceHash": "b85a7ba8d98b4c6a83d705cb08a1ea7dd4213803355e148044e8889e741439ab",
+        "sourceHash": "df4ca19e8fde0f284847fbcb07384442b5f0e0b32a61918f718a4fbd8ce9cdfc",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:notnozy\",\"highlights.2\"]": {
@@ -785,9 +641,9 @@
       "[\"project:darkworldhm\",\"summary\"]": {
         "id": "project:darkworldhm",
         "field": "summary",
-        "sourceHash": "7345f98dc12fbbf5b0f4be52f58c3c20dba6f0629f765bbeea641b368c1578b3",
+        "sourceHash": "4a493146760ff0e6d950264b6172005922f4abac96e62078e09ebd67249ae724",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:darkworldhm\",\"byline\"]": {
@@ -817,9 +673,9 @@
       "[\"project:darkworldhm\",\"highlights.1\"]": {
         "id": "project:darkworldhm",
         "field": "highlights.1",
-        "sourceHash": "c6867714659363b7ee0befcc506553ec556ea3e79a673f966e841cf7248dbcb4",
+        "sourceHash": "101703e1772c474c927a1d583c5db9169874078ecfd971aab086822ade9386e4",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:darkworldhm\",\"highlights.2\"]": {
@@ -865,9 +721,9 @@
       "[\"project:marvis\",\"summary\"]": {
         "id": "project:marvis",
         "field": "summary",
-        "sourceHash": "77b58eb45e8f47197c63ecd0812fcc49319b8d0ce14b65437fbc53879d5ad6c0",
+        "sourceHash": "c7f4630f19eef3c28df1ae01778a541cb50e762ef0ea04e3ad58c214527a7168",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:marvis\",\"highlights.1\"]": {
@@ -881,9 +737,9 @@
       "[\"project:marvis\",\"highlights.2\"]": {
         "id": "project:marvis",
         "field": "highlights.2",
-        "sourceHash": "ca4fd0585178195c2633c232a90604abad646298ea753196af30342507460bd8",
+        "sourceHash": "b013e00578a6a64097c950c7bf481f7aecc02455adec226dd15f0c97cda7ce3e",
         "attempts": 0,
-        "lastError": "quota_or_rate_limit",
+        "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
       "[\"project:marvis\",\"blockers.0\"]": {
@@ -957,12 +813,444 @@
         "attempts": 0,
         "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxQTkVpWUhTV2VaOXJWMVFhVzlmZEhuYURCa1lyUllSbVdXZzktQmhSQl83MER2azI3STBtSTlvMEtjMHcwTmlHTUEzSUxtcEhEc1hseThDRTZVNVhnRE5HREJvOVVIcUFuRDBzQ0ZzTnV5Q1c5U0p3T2V1Vnp4dGRpNWJ3Zmk?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxQTkVpWUhTV2VaOXJWMVFhVzlmZEhuYURCa1lyUllSbVdXZzktQmhSQl83MER2azI3STBtSTlvMEtjMHcwTmlHTUEzSUxtcEhEc1hseThDRTZVNVhnRE5HREJvOVVIcUFuRDBzQ0ZzTnV5Q1c5U0p3T2V1Vnp4dGRpNWJ3Zmk?oc=5",
+        "field": "title",
+        "sourceHash": "834e668ac39cadc9a6319096574c7cb92e9c4db61be47e8943900cbcd2f072a0",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-26T09:39:35.013Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMieEFVX3lxTFBfZGJpR0Y3SjdEZmltbFg2V1FuYzVWTFJMREN0cVR6Q19ZeHBCdVdVU1l6bExPdVFjSl94ZkRsQ2FDNVVibnhWODlhSlA4WUp6bHBBeG4xeGl4blVBSXk1X0hQZlVyUnFwODZYTngzejEtQjBGWE5SVw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTFBfZGJpR0Y3SjdEZmltbFg2V1FuYzVWTFJMREN0cVR6Q19ZeHBCdVdVU1l6bExPdVFjSl94ZkRsQ2FDNVVibnhWODlhSlA4WUp6bHBBeG4xeGl4blVBSXk1X0hQZlVyUnFwODZYTngzejEtQjBGWE5SVw?oc=5",
+        "field": "title",
+        "sourceHash": "4cdaf725d6ac96bb38af3ae238f253bc935f08b13e5a624095f911747aed2a93",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-26T09:39:35.014Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMid0FVX3lxTE4ydmpITXZtb2hsYjMxZ3lha0s0WlJ3YUhkc1JmeG1wSC0ySzJLSmZnVTR0b2xvM3NOUmYxdFM1S3M1aVdyWVdBUmtKTnBIMS1OU3JRQlFBdEJyNkRRdllrWC0yaXpOWGFKVGtjc3I4dXhORjZOMDRN?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMid0FVX3lxTE4ydmpITXZtb2hsYjMxZ3lha0s0WlJ3YUhkc1JmeG1wSC0ySzJLSmZnVTR0b2xvM3NOUmYxdFM1S3M1aVdyWVdBUmtKTnBIMS1OU3JRQlFBdEJyNkRRdllrWC0yaXpOWGFKVGtjc3I4dXhORjZOMDRN?oc=5",
+        "field": "title",
+        "sourceHash": "1e7691661f53ca3d10f68b2f23f9851662254358bd79f7c87be225de660ba32c",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-26T09:39:35.014Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxNODVMa09Na1hpbkpMbkFzQlN4aC1fQkVwQW9WUG9YQzFIanZ0N0FMTWh6b3BlMHl1VmJqNXl4ZkotLTJoTmJ4VVUtcWtBYTV1eEhXR0dBRlBhal9OTUY2N1o4a19iU0NQdE9pNTRLdnRXc1JNMDJLamJDUGJ0T2xrRWxQM1FETnEzMWNCNTFoMHFrN0da?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxNODVMa09Na1hpbkpMbkFzQlN4aC1fQkVwQW9WUG9YQzFIanZ0N0FMTWh6b3BlMHl1VmJqNXl4ZkotLTJoTmJ4VVUtcWtBYTV1eEhXR0dBRlBhal9OTUY2N1o4a19iU0NQdE9pNTRLdnRXc1JNMDJLamJDUGJ0T2xrRWxQM1FETnEzMWNCNTFoMHFrN0da?oc=5",
+        "field": "title",
+        "sourceHash": "824f76a7fd0f14bacb677a15c73e10f8c95353a0326e811555e237795b0dd943",
+        "attempts": 2,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": "2026-11-26T09:39:35.014Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMikAFBVV95cUxNZWNUaFJFSFZlNG82VnM1cHpvM2hDSkVlRU5XaXRyM2tKWElCM3hzbjVod2RBSnNDdDJHNUI4TE1WTXN5N0lEakpQaG44LTlxaDViOEd0X2xjbXFLMlZjTFpHNlVxdFY1RHF0M1pTTWRzLUgzemJZYXVGZVpRYWFTcGl0S3dwa0VzdW4wazI5a2Y?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMikAFBVV95cUxNZWNUaFJFSFZlNG82VnM1cHpvM2hDSkVlRU5XaXRyM2tKWElCM3hzbjVod2RBSnNDdDJHNUI4TE1WTXN5N0lEakpQaG44LTlxaDViOEd0X2xjbXFLMlZjTFpHNlVxdFY1RHF0M1pTTWRzLUgzemJZYXVGZVpRYWFTcGl0S3dwa0VzdW4wazI5a2Y?oc=5",
+        "field": "title",
+        "sourceHash": "fe2e9e0a5cd9468579b85d8aa43f293d678bd4ee3e08c38a63bfa2b8b5479397",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTFA3TEl0X1BtYVNZdWdCcm1IbGdZVFFWNGlLSmhYU0VQc0Fib1BYU1BGT09WeGEzQmViMVhuMC1iM203cDlzS081Q1Bfa2NFMmJUbnVYbUM4UVlfREctSzRGUzVRUlBqb1d2RW9QMlZn?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTFA3TEl0X1BtYVNZdWdCcm1IbGdZVFFWNGlLSmhYU0VQc0Fib1BYU1BGT09WeGEzQmViMVhuMC1iM203cDlzS081Q1Bfa2NFMmJUbnVYbUM4UVlfREctSzRGUzVRUlBqb1d2RW9QMlZn?oc=5",
+        "field": "title",
+        "sourceHash": "c198c7ae2eaa2d183e65185d9adf06ffd85359f67d3959925666e38fd2e32ddc",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3U3RF9QdTVETlFRaG52dFlfTDBGUnFvTkcxYnh4Nk9SRHJFMWFZV1dYaFJ3R2FwZmwtOG5QN0hKVlNGUmRLaWdNYy1lNUV2MmJrNGYwT0FtYTZpR3lhal9sYURjazB0VFdYb1pyVVIwRU1teFJ5X21nVUtCcHh5NWh5bExEWEUybTBOQUk3UEdWcHJOVFpRX19MUlZtZnU4T3dlMjJDQQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxQY3U3RF9QdTVETlFRaG52dFlfTDBGUnFvTkcxYnh4Nk9SRHJFMWFZV1dYaFJ3R2FwZmwtOG5QN0hKVlNGUmRLaWdNYy1lNUV2MmJrNGYwT0FtYTZpR3lhal9sYURjazB0VFdYb1pyVVIwRU1teFJ5X21nVUtCcHh5NWh5bExEWEUybTBOQUk3UEdWcHJOVFpRX19MUlZtZnU4T3dlMjJDQQ?oc=5",
+        "field": "title",
+        "sourceHash": "29b39c185f303698bc435085028d6ea97ca2cfc62c348f26f6d4059eb0563a8c",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzFORjlUZm9tZFczYTA2WWdHUElsQ3M1d0RtWWpyMXJYNFZFdl9BRS1ZNC15RUhGWUxPV190dU1GYktMWm8yUkF1SWx0TUNubXVOMGdTZkp5bWhpUXNGV0tzZlRIQXpuTVA3X2dZQk5zSUM2cXJlTEN3eTdVc2FtY20zR0tvcDg2RjlIcFhsYktuZFV5cmE0dGtCTDBXYldqUzU1QUNCU3Y?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSzFORjlUZm9tZFczYTA2WWdHUElsQ3M1d0RtWWpyMXJYNFZFdl9BRS1ZNC15RUhGWUxPV190dU1GYktMWm8yUkF1SWx0TUNubXVOMGdTZkp5bWhpUXNGV0tzZlRIQXpuTVA3X2dZQk5zSUM2cXJlTEN3eTdVc2FtY20zR0tvcDg2RjlIcFhsYktuZFV5cmE0dGtCTDBXYldqUzU1QUNCU3Y?oc=5",
+        "field": "title",
+        "sourceHash": "518bbf548b23599427bef40c15e159c6a31d12857025921b727ecfaab143ce54",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
+      },
+      "[\"headline:https://www.msn.com/en-in/gaming/gaming-platforms/gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable/ar-AA2igcXS\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-in/gaming/gaming-platforms/gta-6-on-pc-unofficial-port-gets-better-fps-chapter-1-reportedly-playable/ar-AA2igcXS",
+        "field": "title",
+        "sourceHash": "579aaed7bbf19771691daf531725b529af977efb1b9eafc737f9423540843248",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-26T09:34:43.739Z"
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxQNzczcnhaUUdoNWs1dVNQenFfRTVGaDJSYjlFY2k5dDJodmxsZ1NyWTVkZTVBcm1TdkxBU1o4c3JKS1ZJckNPVHdod2R2Nkp4VzNod3dVSnRGWXNfYVR1T24yTERMdDR5RmFuUXotOHFDZnlJcGUtNjQ0V2NVdmpQUzNQWGJJaGM?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxQNzczcnhaUUdoNWs1dVNQenFfRTVGaDJSYjlFY2k5dDJodmxsZ1NyWTVkZTVBcm1TdkxBU1o4c3JKS1ZJckNPVHdod2R2Nkp4VzNod3dVSnRGWXNfYVR1T24yTERMdDR5RmFuUXotOHFDZnlJcGUtNjQ0V2NVdmpQUzNQWGJJaGM?oc=5",
+        "field": "title",
+        "sourceHash": "b0a7cdd22c35dd0e9a79763bfa5351140e12b5a98bd4139bd434f84b57d08a4f",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRjM0d2tSdXg5LUNsTlozRTJBZF9aLWQ1WnZTUmhROXF2NEZwWEVuaU1Gc0QwRVk3SEFKSE9POWpWaHUyb2dHUHBhZUxYS29HVWhKNlR0VmNsOW5OQ1ZCcnItWWpnemNLTGY3LUkzc19Za1FXU3NXV3VaTk9kWXIyMnRSMk9CQUJpV1NqVU16VVp6QWdDOS1HQWhyckZwNWREcUZKLXFHWC1XWnVEamFGN3pfRVdfSFdGMEE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRjM0d2tSdXg5LUNsTlozRTJBZF9aLWQ1WnZTUmhROXF2NEZwWEVuaU1Gc0QwRVk3SEFKSE9POWpWaHUyb2dHUHBhZUxYS29HVWhKNlR0VmNsOW5OQ1ZCcnItWWpnemNLTGY3LUkzc19Za1FXU3NXV3VaTk9kWXIyMnRSMk9CQUJpV1NqVU16VVp6QWdDOS1HQWhyckZwNWREcUZKLXFHWC1XWnVEamFGN3pfRVdfSFdGMEE?oc=5",
+        "field": "title",
+        "sourceHash": "189635e110b90aad70c9722dfabbe542ebafbac9fab325755c890f68e9172f2b",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb1N4N0drN3ltdS1hZXE5SW1yZWc2Zm5TYmpDWlVGX05LZWctcUdzOWZYUmZQb0k5eHh4QXdRcVkwRnpoUVdhelZhWWtqMUlIa1QwNl9OVGZTTjVqU2F3eGlvQTZCeTJ4Vi1wVDE5cXJhNHNhV1dsQnJaM1pZTXhkMk1JUzY3MU1yenc5M2FEOVVWQjZBVEExTi1KX29SdzFaNlJha0xrbUhXOFVsQUNGMElWX1dHWVdYWGE1VmIyQWJOTzVnZHh3NlJ1S2FVRVdSUGFrbkY3YjdDYkVnbDRLcmtBOA?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb1N4N0drN3ltdS1hZXE5SW1yZWc2Zm5TYmpDWlVGX05LZWctcUdzOWZYUmZQb0k5eHh4QXdRcVkwRnpoUVdhelZhWWtqMUlIa1QwNl9OVGZTTjVqU2F3eGlvQTZCeTJ4Vi1wVDE5cXJhNHNhV1dsQnJaM1pZTXhkMk1JUzY3MU1yenc5M2FEOVVWQjZBVEExTi1KX29SdzFaNlJha0xrbUhXOFVsQUNGMElWX1dHWVdYWGE1VmIyQWJOTzVnZHh3NlJ1S2FVRVdSUGFrbkY3YjdDYkVnbDRLcmtBOA?oc=5",
+        "field": "title",
+        "sourceHash": "604a4e291b78f379917d560c5594773454f249f526911d98cc0fe0b22f2ee5c8",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMia0FVX3lxTE94Y0JmQ3lKV0pJZVY5WHdZclRUMzZ2ZU8wNjkxUXFVaUwwUHppbzVSS3p1TkNLdTduaGwxQjBqSlU4aktWRmh4cjBjRFE4VUNneU9qY3FNenFMRDJLRDBfVklnYU03cWI1cGpV?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMia0FVX3lxTE94Y0JmQ3lKV0pJZVY5WHdZclRUMzZ2ZU8wNjkxUXFVaUwwUHppbzVSS3p1TkNLdTduaGwxQjBqSlU4aktWRmh4cjBjRFE4VUNneU9qY3FNenFMRDJLRDBfVklnYU03cWI1cGpV?oc=5",
+        "field": "title",
+        "sourceHash": "942f45e04146b1410976707fa11891300c35655ed54c2492db2bcb0594e123a5",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMia0FVX3lxTE55WjdIanJDb1M2c3VpVGNkeGU1c05zWEVJM3pCQmNhZGF2Zll2anNETVNRWFEzREVqVF9jT1NzLVVFZ0ZxZGM3RnY1U2trRVNmOUo3MFFHZnVCZllXV1Vxa0E5aUJjMW93QVk0?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMia0FVX3lxTE55WjdIanJDb1M2c3VpVGNkeGU1c05zWEVJM3pCQmNhZGF2Zll2anNETVNRWFEzREVqVF9jT1NzLVVFZ0ZxZGM3RnY1U2trRVNmOUo3MFFHZnVCZllXV1Vxa0E5aUJjMW93QVk0?oc=5",
+        "field": "title",
+        "sourceHash": "6ebfd46d612cb1c8ee5c488ad7b36bd088fbca955c4c7f62f1a5eabb94f47d4b",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNHBpV091cWJkaElwM1FvYlRvVWFNRjlKVDg4T0JUYVBnMlNtazI1RWIzRm5YQmRfMHA4VkRJNk53Z3BCUUk4QUJWSHNjaVJCYWdiX0lvbGdRcFhfTFZla2lrd1FybThqazNEOFNhM1FtRGhmcTZkOUJoMi1tcjl4ZDlsc0VKWW91Y1JwOWgyaUh3WU1GQVlKeWZSZHBlaXpKQVdGaTVWT1NDWE9TOFVoNm8yeEFTdGIzeFh3bktXTDRxSFZlcUgwSXQwRFRBeVRnSElNSW1RXzVDY3RDVDRWZlRWOUo?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNHBpV091cWJkaElwM1FvYlRvVWFNRjlKVDg4T0JUYVBnMlNtazI1RWIzRm5YQmRfMHA4VkRJNk53Z3BCUUk4QUJWSHNjaVJCYWdiX0lvbGdRcFhfTFZla2lrd1FybThqazNEOFNhM1FtRGhmcTZkOUJoMi1tcjl4ZDlsc0VKWW91Y1JwOWgyaUh3WU1GQVlKeWZSZHBlaXpKQVdGaTVWT1NDWE9TOFVoNm8yeEFTdGIzeFh3bktXTDRxSFZlcUgwSXQwRFRBeVRnSElNSW1RXzVDY3RDVDRWZlRWOUo?oc=5",
+        "field": "title",
+        "sourceHash": "14ae85fc05448a7cc7c622161cbf318fd9a44b2a11f260a494ee523e1987aaa2",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMimwFBVV95cUxOS3VNU2hhaUE4RG80QlN4S2loQ3JCVE01UGVTU2tOQ1J5OUFWRWxnWk5sSTFQdU5RRWwyRHV5U3pRR2NqMG5qbHRMak5iTnpkT044OVNCNEh1U3ZabXpwdFJZOWZ0aVBjZFpLdVBzR0oyaXhpTFdCM1F3TjhqaHpFRng2UnZ5cEpTRHhIZzdaQ0dONnU3Q2J6WmZ2OA?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMimwFBVV95cUxOS3VNU2hhaUE4RG80QlN4S2loQ3JCVE01UGVTU2tOQ1J5OUFWRWxnWk5sSTFQdU5RRWwyRHV5U3pRR2NqMG5qbHRMak5iTnpkT044OVNCNEh1U3ZabXpwdFJZOWZ0aVBjZFpLdVBzR0oyaXhpTFdCM1F3TjhqaHpFRng2UnZ5cEpTRHhIZzdaQ0dONnU3Q2J6WmZ2OA?oc=5",
+        "field": "title",
+        "sourceHash": "45d66ee519c95430016036947543af91d9fdf5e8ace47e5de615dde854dab65e",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted nowrokink/flamingo-port (possible effort, substance 63).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted nowrokink/flamingo-port (possible effort, substance 63).",
+        "field": "text",
+        "sourceHash": "c4a5fdc41c705082dacd54dd51098bc21f80bf9fe9862c234d190bde37398bcc",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted FQY55kai/ZJOU-JWXT-PC (possible effort, substance 77).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted FQY55kai/ZJOU-JWXT-PC (possible effort, substance 77).",
+        "field": "text",
+        "sourceHash": "09cba080927d0bd308ee611566edfc701ce00de9d0d9073e2834ed3b0f9beb3e",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted modpapi/scripthook-vi (possible effort, substance 58).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted modpapi/scripthook-vi (possible effort, substance 58).",
+        "field": "text",
+        "sourceHash": "2e1523b9ffd21ca861cce8ddc6ed4ed23de44cf8ce962724a8704fedd0586c12",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted LakshanSivakumar/Native-Victory-macOS (possible effort, substance 74).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted LakshanSivakumar/Native-Victory-macOS (possible effort, substance 74).",
+        "field": "text",
+        "sourceHash": "b0d20df6cde501dd40cf57388cdd75b2e0cab290264658bb8138bee1a554e941",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted Puneetkewlani/consoleX (possible effort, substance 54).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted Puneetkewlani/consoleX (possible effort, substance 54).",
+        "field": "text",
+        "sourceHash": "dab048d054764236c30f5b707568a00d630f7eeb2f81f7575ea91caf4f612aed",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted ExCorvus/whibwhi-own (possible effort, substance 71).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted ExCorvus/whibwhi-own (possible effort, substance 71).",
+        "field": "text",
+        "sourceHash": "fdfea3d901375dc79d9a97989fe7ea9ecd570e7c1e08128121fd6d3199b41ad0",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 62).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 62).",
+        "field": "text",
+        "sourceHash": "3aa68d0744ec46a7155b34a2fb85caae9e626a6beda8ce376ecc19cb3e67b293",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted lucas-TagDev/VKarameloVI (possible effort, substance 68).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted lucas-TagDev/VKarameloVI (possible effort, substance 68).",
+        "field": "text",
+        "sourceHash": "66563158c40f1764abec74fd3d3bc39e66ccf1ffa41313d6ac7606dfeb889a25",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted Dolberthi/neptune-dolberth-nvidia-8gb (possible effort, substance 68).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted Dolberthi/neptune-dolberth-nvidia-8gb (possible effort, substance 68).",
+        "field": "text",
+        "sourceHash": "fead06f98e6fcf43290fe15107faf3c3dfc644b34dc074d71ca670b946148b03",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted zsy-miao/rebox (possible effort, substance 83).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted zsy-miao/rebox (possible effort, substance 83).",
+        "field": "text",
+        "sourceHash": "4401dd15cae2504069aa19c6df5c02cab3a400e5a0577bcd13e3bf34cb9cd89e",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 69).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 69).",
+        "field": "text",
+        "sourceHash": "64766cb7ef200b9de6e80fb885a59af7480e241e7148690605be65db25846f24",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-26:new:Scout spotted viper-community/viper (possible effort, substance 69).\",\"text\"]": {
+        "id": "change:2026-11-26:new:Scout spotted viper-community/viper (possible effort, substance 69).",
+        "field": "text",
+        "sourceHash": "422f4bad1eaae87b487c9ab7c70586347f2dad7dbb7d2e1ce28f941cd3c090f0",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"summary\"]": {
+        "id": "project:kelvaroq",
+        "field": "summary",
+        "sourceHash": "5b5664645aadba047a2c1b01f4e34840e6e43c456a5c059ccad04fb26877712a",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"highlights.0\"]": {
+        "id": "project:kelvaroq",
+        "field": "highlights.0",
+        "sourceHash": "31c77e1e594f17ed72a16ba55af54d93053fd227290e4b2cecfffb56e44dbe1a",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"highlights.1\"]": {
+        "id": "project:kelvaroq",
+        "field": "highlights.1",
+        "sourceHash": "bd758e2b32b644285dc93b0c21ae158553591b1b5f3de688641298e695f9bc6a",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"highlights.2\"]": {
+        "id": "project:kelvaroq",
+        "field": "highlights.2",
+        "sourceHash": "d4fe043d8f5f8046113188c096b2ddc2109a365850648cbf409b84471e9f4e7f",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"blockers.0\"]": {
+        "id": "project:kelvaroq",
+        "field": "blockers.0",
+        "sourceHash": "5dc121dc86ead9d544bb36fccf4ce1fc1e143df5cb1fc42d307456a61cfe8e6e",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"blockers.1\"]": {
+        "id": "project:kelvaroq",
+        "field": "blockers.1",
+        "sourceHash": "43ff4baed4deae866052ae882da7f48eae8ae2f90263c0c1a4a20385ffc4aca0",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"blockers.2\"]": {
+        "id": "project:kelvaroq",
+        "field": "blockers.2",
+        "sourceHash": "fbf707e5424b761bc84c2b107f674c1d07f24dea9e4c8674783e7749a2146bf9",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:kelvaroq\",\"proof.label\"]": {
+        "id": "project:kelvaroq",
+        "field": "proof.label",
+        "sourceHash": "9284872ee669976d97172552f56cafd98bdbe65c708381d7de304e0f99577475",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.2\"]": {
+        "id": "project:belobug",
+        "field": "highlights.2",
+        "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.3\"]": {
+        "id": "project:belobug",
+        "field": "highlights.3",
+        "sourceHash": "1572bb7ccc56bfc0cf2c26084453e84ff1f6761a8d2e1a2a33ad27e5a8276e57",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"blockers.0\"]": {
+        "id": "project:belobug",
+        "field": "blockers.0",
+        "sourceHash": "e08a7a0ebe973908ad1755a13562120988c190c9fd425f68273cbff4941fe2cd",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"blockers.1\"]": {
+        "id": "project:belobug",
+        "field": "blockers.1",
+        "sourceHash": "d8a8b8f00b2a17bb90aa20f6bb1b066e16917e092ec9cb76a0fcdabfe4182827",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:doomsday\",\"highlights.1\"]": {
+        "id": "project:doomsday",
+        "field": "highlights.1",
+        "sourceHash": "dda0dfd346552ab0fe5e6dd2978ede9fdc710f7cb260bfe06986c5d6954f3960",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:suri\",\"summary\"]": {
+        "id": "project:suri",
+        "field": "summary",
+        "sourceHash": "1e29dc3632e20a536f609c686da5477efba05465ea7ef888a59ddb661fe3d2a8",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:suri\",\"highlights.2\"]": {
+        "id": "project:suri",
+        "field": "highlights.2",
+        "sourceHash": "101703e1772c474c927a1d583c5db9169874078ecfd971aab086822ade9386e4",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:suri\",\"blockers.1\"]": {
+        "id": "project:suri",
+        "field": "blockers.1",
+        "sourceHash": "4b7cdceef1444f3d2c7f8fcc7ef2c29fa01886fe1a6096ce8b0eda312863138c",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"summary\"]": {
+        "id": "project:cgbj",
+        "field": "summary",
+        "sourceHash": "055d0c9fbceeeadf51cb5b5bd74b13e12828f44c8faf99e20ac1f4512c244647",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"byline\"]": {
+        "id": "project:cgbj",
+        "field": "byline",
+        "sourceHash": "032fc48644bc0b31e543b245ee8d440779ed63ad4298ca9d0b2958ca46347206",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"highlights.0\"]": {
+        "id": "project:cgbj",
+        "field": "highlights.0",
+        "sourceHash": "00b44e99e076e873855ef214b3492106e3bcc464482415627dd23cb02c348a3b",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"highlights.1\"]": {
+        "id": "project:cgbj",
+        "field": "highlights.1",
+        "sourceHash": "9a047672c50eeddfe288fe9d4bbba4668772ca55a658611fae8794e4d0f8d887",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"highlights.2\"]": {
+        "id": "project:cgbj",
+        "field": "highlights.2",
+        "sourceHash": "d8eb29e4877a73b02bae1bb2449675bd69518687865c226720691dfdec9a7e15",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"blockers.0\"]": {
+        "id": "project:cgbj",
+        "field": "blockers.0",
+        "sourceHash": "4b87dedc6feda29d36b45621c5d3b3f543e4c0c1b50569adff7035dc2c6e5859",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"blockers.1\"]": {
+        "id": "project:cgbj",
+        "field": "blockers.1",
+        "sourceHash": "c891ec658b8fac3e1464aaac9dbe4aca234faaf41e5612781569c4f080d8d45d",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"blockers.2\"]": {
+        "id": "project:cgbj",
+        "field": "blockers.2",
+        "sourceHash": "f0716aaac7a6383010e8d1750181d3a30dcf720c1db6e189f024c1641d76f589",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:cgbj\",\"proof.label\"]": {
+        "id": "project:cgbj",
+        "field": "proof.label",
+        "sourceHash": "dbae3e9ba44b12b1864aa9ae084ac12e006f640e83484f4ad241c36d48e95c8d",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
+      },
+      "[\"project:marvis\",\"blockers.2\"]": {
+        "id": "project:marvis",
+        "field": "blockers.2",
+        "sourceHash": "37ca8f243c1f3bbb87691ca2b9d4b0beee68552b76b422de6090d672c7dfda89",
+        "attempts": 0,
+        "lastError": "service_unavailable",
+        "nextAttemptAt": null
       }
     },
     "totals": {
-      "requests": 18,
+      "requests": 21,
       "translatedFields": 47,
-      "failedFields": 45,
+      "failedFields": 63,
       "inputTokens": 28004,
       "outputTokens": 12271,
       "thinkingTokens": 14733

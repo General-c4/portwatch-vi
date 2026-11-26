@@ -33,14 +33,6 @@
         }
       }
     },
-    "project:belobug": {
-      "fields": {
-        "blockers.0": {
-          "source": "About 4 fps; its README reports 5-7 fps (less while driving) and calls that \"not playable yet\"",
-          "ar": "حول معدل إطارات 4 fps؛ يذكر ملف README الخاص بالمشروع تحقيق معدل 5-7 fps (ويقل عن ذلك أثناء القيادة) ويصف اللعبة بأنها \"غير قابلة للعب بعد\"."
-        }
-      }
-    },
     "project:dexnom": {
       "fields": {
         "highlights.0": {
@@ -206,10 +198,6 @@
         "highlights.0": {
           "source": "Ray-traced lighting at about 3-5 fps, verified by PortWatch",
           "ar": "إضاءة بتتبع الأشعة بمعدل 3-5 fps تقريبًا، مع التحقق منها بواسطة PortWatch"
-        },
-        "highlights.1": {
-          "source": "Almost never crashes, and gets as far into the story as the leading public builds",
-          "ar": "لا ينهار تقريبًا أبدًا، ويصل في القصة إلى المرحلة نفسها التي تصل إليها أبرز الإصدارات العامة"
         },
         "highlights.3": {
           "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",

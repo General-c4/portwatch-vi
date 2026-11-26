@@ -1,57 +1,57 @@
 {
   "version": 1,
-  "latestUpstreamCommitSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
-  "latestSynchronizedCommitSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+  "latestUpstreamCommitSha": "bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+  "latestSynchronizedCommitSha": "bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
   "latestDeployedCommitSha": "0bd2e3f66a506787087a967ad749f7371a329758",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-26T01:02:54.525Z",
-  "lastUpstreamCheckTime": "2026-11-26T01:02:54.525Z",
+  "lastSuccessfulSyncTime": "2026-11-26T09:28:35.634Z",
+  "lastUpstreamCheckTime": "2026-11-26T09:28:35.634Z",
   "authoritativeSource": "repository",
-  "upstreamUpdated": "2026-11-25T22:09:30.708Z",
+  "upstreamUpdated": "2026-11-26T09:13:40.493Z",
   "records": {
-    "new": 53,
-    "updated": 48,
-    "deleted": 52,
+    "new": 56,
+    "updated": 43,
+    "deleted": 32,
     "sections": {
       "efforts": {
-        "new": 4,
-        "updated": 24,
+        "new": 1,
+        "updated": 29,
         "deleted": 0
       },
       "news": {
         "new": 0,
-        "updated": 0,
+        "updated": 1,
         "deleted": 0
       },
       "tools": {
         "new": 0,
-        "updated": 20,
+        "updated": 11,
         "deleted": 0
       },
       "candidates": {
-        "new": 8,
-        "updated": 1,
-        "deleted": 13
+        "new": 19,
+        "updated": 0,
+        "deleted": 0
       },
       "headlines": {
         "new": 15,
-        "updated": 3,
-        "deleted": 15
+        "updated": 2,
+        "deleted": 18
       },
       "changes": {
-        "new": 26,
+        "new": 21,
         "updated": 0,
-        "deleted": 24
+        "deleted": 14
       }
     }
   },
   "translation": {
-    "coverage": 90.58,
-    "translated": 1019,
-    "total": 1125,
-    "pending": 104,
-    "completed": 19,
+    "coverage": 85.82,
+    "translated": 1047,
+    "total": 1220,
+    "pending": 169,
+    "completed": 27,
     "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "newsTranslation": {
@@ -63,33 +63,23 @@
     "failed": 0,
     "cachedFields": 0,
     "pending": 0,
-    "durationMs": 1,
+    "durationMs": 2,
     "errors": []
   },
   "dynamicTranslation": {
-    "requests": 0,
+    "requests": 3,
     "translatedFields": 0,
-    "failedFields": 0,
-    "cachedFields": 0,
+    "failedFields": 18,
+    "cachedFields": 1,
     "inputTokens": 0,
     "outputTokens": 0,
     "thinkingTokens": 0,
     "errors": [
-      "quota_or_rate_limit"
+      "service_unavailable"
     ],
-    "quota": {
-      "quotas": [
-        {
-          "period": "day",
-          "unit": "requests",
-          "limit": 20
-        }
-      ],
-      "retryAfterMs": 46671000
-    },
-    "blockedUntil": "2026-11-26T07:59:59.701Z",
-    "pending": 86,
-    "durationMs": 12,
+    "model": "gemini-3.6-flash",
+    "pending": 122,
+    "durationMs": 64521,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -100,54 +90,54 @@
       },
       "headlines": {
         "total": 30,
-        "translated": 14,
+        "translated": 2,
         "exempt": 0,
-        "missing": 16,
-        "coverage": 46.67
+        "missing": 28,
+        "coverage": 6.67
       },
       "changes": {
         "total": 12,
-        "translated": 1,
+        "translated": 0,
         "exempt": 0,
-        "missing": 11,
-        "coverage": 8.33
+        "missing": 12,
+        "coverage": 0
       },
       "projectDescriptions": {
-        "total": 39,
-        "translated": 30,
+        "total": 40,
+        "translated": 28,
         "exempt": 0,
-        "missing": 9,
-        "coverage": 76.92
+        "missing": 12,
+        "coverage": 70
       },
       "projectDetails": {
-        "total": 95,
-        "translated": 76,
+        "total": 99,
+        "translated": 77,
         "exempt": 1,
-        "missing": 18,
-        "coverage": 80.85
+        "missing": 21,
+        "coverage": 78.57
       },
       "highlights": {
-        "total": 107,
-        "translated": 89,
+        "total": 110,
+        "translated": 82,
         "exempt": 0,
-        "missing": 18,
-        "coverage": 83.18
+        "missing": 28,
+        "coverage": 74.55
       },
       "blockers": {
-        "total": 102,
-        "translated": 89,
+        "total": 105,
+        "translated": 82,
         "exempt": 0,
-        "missing": 13,
-        "coverage": 87.25
+        "missing": 23,
+        "coverage": 78.1
       }
     }
   },
   "latency": {
-    "sourceCheckMs": 881,
-    "dataSyncMs": 11,
-    "translationMs": 5304,
+    "sourceCheckMs": 715,
+    "dataSyncMs": 13,
+    "translationMs": 2864,
     "deploymentMs": null,
-    "totalMs": 6222
+    "totalMs": 68131
   },
   "apiAnything": {
     "ok": false,
@@ -170,27 +160,27 @@
     }
   ],
   "retryAttempts": [],
-  "upstreamSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+  "upstreamSha": "bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
   "head": {
-    "sha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
-    "node_id": "C_kwDOV3EveNoAKGNlYTQ1YjQ1MDg0NGQ2OGYxOGZhZDdlYzdjY2RlMWU5ZTA2ZTJmNjE",
+    "sha": "bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+    "node_id": "C_kwDOV3EveNoAKGJkY2YyZGJiZTRlZjNmY2Q1YWY5NmRlNTliZmNmNTQ2MmNjZDY0Zjk",
     "commit": {
       "author": {
         "name": "NanoTrasen-Inc",
         "email": "nano@nanotrasen.org",
-        "date": "2026-11-26T00:14:36Z"
+        "date": "2026-11-26T09:17:40Z"
       },
       "committer": {
         "name": "NanoTrasen-Inc",
         "email": "nano@nanotrasen.org",
-        "date": "2026-11-26T00:14:36Z"
+        "date": "2026-11-26T09:17:40Z"
       },
-      "message": "Revert \"Add egg 🥚\"\n\nThis reverts commit 612e82e44a77cad11c8d40d4f91c7cbb5fb7469e.",
+      "message": "Add Kelvaroq",
       "tree": {
-        "sha": "4018cf33862b5caafd26df69214d4c24681cd105",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/4018cf33862b5caafd26df69214d4c24681cd105"
+        "sha": "17a03fc31fab05d32d5fe30f6816c0b891c06e54",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/17a03fc31fab05d32d5fe30f6816c0b891c06e54"
       },
-      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -200,9 +190,9 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
-    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
-    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/comments",
+    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/comments",
     "author": {
       "login": "NanoTrasen-Inc",
       "id": 1747249,
@@ -247,43 +237,55 @@
     },
     "parents": [
       {
-        "sha": "612e82e44a77cad11c8d40d4f91c7cbb5fb7469e",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/612e82e44a77cad11c8d40d4f91c7cbb5fb7469e",
-        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/612e82e44a77cad11c8d40d4f91c7cbb5fb7469e"
+        "sha": "9a8fa4a0a3bc53b82714347ae7121f34e7021dff",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/9a8fa4a0a3bc53b82714347ae7121f34e7021dff",
+        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/9a8fa4a0a3bc53b82714347ae7121f34e7021dff"
       }
     ],
     "stats": {
-      "total": 2,
-      "additions": 1,
-      "deletions": 1
+      "total": 68,
+      "additions": 61,
+      "deletions": 7
     },
     "files": [
       {
-        "sha": "f83c4aefc69e18026863b9a1bde2075c2076f1d3",
-        "filename": "index.html",
+        "sha": "8a41d9069efcf080697ecf27fad605f1f71cfb24",
+        "filename": "EDITOR.md",
         "status": "modified",
         "additions": 1,
-        "deletions": 1,
-        "changes": 2,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/index.html",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/index.html",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/index.html?ref=cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
-        "patch": "@@ -315,7 +315,7 @@ <h3 data-i18n=\"method.gwTitle\">Groundwork, weighted</h3>\n     <div class=\"wrap footer-inner\">\n       <div>\n         <a class=\"brand brand-sm\" href=\"#top\"><span>PortWatch<b>VI</b></span></a>\n-        <p data-i18n=\"footer.disclaimer\">Fan-made tracker. Not affiliated with or endorsed by Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and related marks belong to their owners. No game files, keys or executables are hosted or linked here. 🥚</p>\n+        <p data-i18n=\"footer.disclaimer\">Fan-made tracker. Not affiliated with or endorsed by Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and related marks belong to their owners. No game files, keys or executables are hosted or linked here.</p>\n       </div>\n       <div class=\"footer-meta\">\n         <p><span data-i18n=\"footer.data\">Data:</span> <a href=\"data/tracker.json\">tracker.json</a><span data-i18n=\"footer.dataTail\">, refreshed every 3 hours by the scout.</span></p>"
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/EDITOR.md",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/EDITOR.md",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/EDITOR.md?ref=bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+        "patch": "@@ -88,6 +88,7 @@ These stand until the evidence named here changes. If it has, say what changed i\n - **suri (2026-11-24):** the owner added suri as a private build on hyphennn's victory-fork (`basedOn: [\"victory-gta6\"]`), working in private. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps, in the same scene as the other builds but with rendering ahead: almost like the retail game. So it has `world` and `playable` 1, `render: 0.8` (owner's value), `fps: 3`, `story: 0`: 61%, which leads the headline. `evidence` is \"Confirmed by PortWatch\". The avatar (`assets/img/efforts/suri.jpg`) is cropped from a profile picture the owner sent, without any app frame. Keep the values; don't lower them or remove the entry on your own. Report code going public, a measured frame rate or progress past the opening in the summary for the owner.\n - **ZETTROX (2026-11-25):** the owner added ZETTROX on hyphennn's victory-fork. PortWatch verified that it plays from Lucia's prologue into Jason's first mission, \"Gone Fishing\", where it showed the first kill with a gun in GTA VI on PC. Rendering is poor but it's playable. It went in as a private build the same night, then its code went public as `Zettrox/ztrx` (README credits VIctory and victory-fork; tested on an RTX 3050), so it's now a public entry in the race. Owner's values: `world` and `playable` 1, `story: 0.1` (Prologue cleared, the first build at that step), `render: 0.3`, `fps: 2`, `stability: 0.8` (raised from 0.5 the same night: the owner says it almost never crashes, and its README reports 1 h 30 min+ without a crash): 64.2%, #1 in the race. The avatar (`assets/img/efforts/zettrox.jpg`) is the profile picture the owner sent, cropped square. Keep the values; don't lower them or remove the entry on your own. Report a measured frame rate or progress past Gone Fishing, so the owner can decide on it.\n - **Uilian / VItoriaBr (2026-11-25):** `uiliannn/VItoriaBr` was in `ignored` as a credited VIctory fork. After issue 54 and Uilian's YouTube streams, the owner added it to the race. Owner's values from the stream: `world` and `playable` 1, `story: 0.1` (raised from 0.05 so the card reads \"Prologue cleared\"), `render: 0.2`, `fps: 4` (max seen), `stability: 0.4` (didn't crash much): 59.6%, just behind hyphennn. Checked on 2026-11-25: its code matched victory-fork at a803c87 except a renamed log line and the shader loop-limit override; its own earlier NVIDIA commits aren't in the current tree. That stays as a blocker. Keep the values; report its own code changes surviving on top of victory-fork, or progress past Gone Fishing.\n+- **Kelvaroq (2026-11-26):** reconsidered after issue 127 and promoted from `ignored` to a public tracked effort at `fablinoo/kelvaroq`. It is built on VIctory and victory-fork, but has its own inspectable patch series and documented A/B measurements. Set `world: 1`, `playable: 1`, `story: 0.25` (first mission), `render: 0.25` (the public evidence establishes rendered gameplay but does not establish the console-quality step), `fps: 10`, and `stability: 0.8` (about 36 minutes without a crash). Set `gpu: [\"NVIDIA\"]`, `basedOn: [\"marvis\", \"victory-gta6\"]`, and keep upstream reuse visible. Patches 0041-0042 and 0044-0048 improve submission and frame time, but do not qualify them for a higher rendering or story step without stronger evidence. Keep missing pipelines, dropped draws, VRAM pressure and remaining submission overhead in `blockers`.\n - **Belobug (2026-11-25):** the owner added `Belobug/VIctory-Belobug-AMD` (public, GPL-3.0, created 09:41 UTC) to the race at #1. It's a VIctory fork for AMD Radeon on upstream main `8e79c80` plus upstream PRs; its README says no victory-fork or myokex/victory-amd code is in it. Platform (README, keep it on the card): Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11; nothing run on NVIDIA or Intel. Owner's values: `world` and `playable` 1, `story: 0.5` (owner's \"gameplay 0.5\": playable through missions; the card reads \"First act\"; asked again, the owner confirmed 0.5 because it looks playable through and through), `render: 0.85` (open world looks like retail shaders), `fps: 3`, `stability: 0.7` (rarely crashes, a bit below ZETTROX): 77.4%. Its README still says \"not playable yet\" at 3-5 fps, with moving vehicles broken, no distant trees and a constant standing in for ray-traced light; that stays in `blockers`. Keep the values; don't lower them or remove the entry on your own. Report a measured frame rate, others reproducing it on AMD, or how far into the story it really gets. Later that day the owner set `fps` to 5, then corrected it to 4 (77.7%, just behind DexNom). Its README by then said 5-7 fps (5.4-6.7 standing still, less while driving); keep the owner's 4 and the README's range in the blocker. The owner also said PortWatch has verified it: `verification: \"portwatch\"` (a value added for this; the card shows \"Verified by PortWatch\"), and a `\"by\": \"report\"` article `2026-11-25-belobug-way-ahead` says the PortWatch team thinks it's way ahead. Don't set `\"portwatch\"` on any other entry unless the owner says PortWatch has seen that build running.\n - **DexNom (2026-11-25, owner's call):** `DexNom/VIctory` (GitHub fork of VIctory, GPL-3.0, created 12:14 UTC, found by the scout on 4chan /v/) joined the race at #2, `verification: \"portwatch\"`. It's an AMD Radeon build on ZSlayerHQ's victory-world-runtime, tested on an RX 7900 XTX (its BENCHMARK.md: 3.5-4 fps indoors in Chapter 1's city, wrong interior lighting, ray-traced lighting off by default). The owner says it's at the same point as Belobug with the same progress bars, about 0.5 behind: Belobug's values with `render: 0.81` instead of 0.85 (same \"Close to the console\" step), 76.9%. Later that day the owner raised `render` to 0.9 because PortWatch saw ray-traced lighting working, which puts DexNom #1 at 78%. The owner called it the first to achieve ray tracing, but hyphennn's card already says his streams showed ray-traced lighting, so the site says \"the first AMD build on our board to get it\". Its README still calls ray-traced lighting experimental; that stays in `blockers`. The owner reports DexNom runs at about 1 fps with ray tracing on (in its summary and blockers; `fps` stays 3).\n - **darkworldhm (2026-11-25, owner's call):** a private build from a Rumble stream, `rumble.com/v7iwggw-gta-6-mooding-pc.html` (\"gta 6 mooding pc\", channel darkworldhm, 17:03 UTC). The owner saw free roam at 5 to 18 fps (later up to 24, average unchanged), \"maybe around 12\", and first said 15. I added it at the 12 average; the owner then chose `fps: 15`. Also `render: 0.7` (some texture or ray-tracing issues, unsure if it has RT), `story: 0.5` and `stability: 0.7` (same as the leaders, no crash seen): 79.5%, the overall leader, ahead of Doomsday's 78.7%. The card says \"about 12-15 fps\". Reportedly an RTX 50-series card, so `gpu: [\"NVIDIA\"]`. Built on a VIctory fork, which one unknown (`basedOn: [\"marvis\"]`, owner's word), evidence \"Rumble stream\", the video as its `proof` link, no avatar. Keep the values; report a measured average or code going public."
+      },
+      {
+        "sha": "399973748379acc9155abc91a5b00d8de7f751ef",
+        "filename": "data/tracker.json",
+        "status": "modified",
+        "additions": 60,
+        "deletions": 7,
+        "changes": 67,
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/data%2Ftracker.json",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/data%2Ftracker.json",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Ftracker.json?ref=bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9",
+        "patch": "@@ -1,5 +1,5 @@\n {\n-  \"updated\": \"2026-11-26T07:37:39.644Z\",\n+  \"updated\": \"2026-11-26T09:13:40.493Z\",\n   \"site\": {\n     \"title\": \"PortWatch VI\",\n     \"heroImage\": \"assets/img/hero-miami.jpg\"\n@@ -757,6 +757,64 @@\n     }\n   ],\n   \"efforts\": [\n+    {\n+      \"id\": \"kelvaroq\",\n+      \"name\": \"Kelvaroq\",\n+      \"repo\": \"fablinoo/kelvaroq\",\n+      \"branch\": \"main\",\n+      \"proof\": {\n+        \"label\": \"36-minute external playtest\",\n+        \"url\": \"https://github.com/fablinoo/kelvaroq#external-playtest-one-36-minute-session\"\n+      },\n+      \"tier\": \"tracked\",\n+      \"gpu\": [\n+        \"NVIDIA\"\n+      ],\n+      \"approach\": \"Compatibility layer\",\n+      \"target\": \"GTA VI only\",\n+      \"summary\": \"Kelvaroq is a public Rust runtime built on VIctory and victory-fork. It adds rendering patches and measured submission improvements, and runs GTA VI through the prologue and first mission.\",\n+      \"highlights\": [\n+        \"Public source under GPL-3.0, with pinned upstream revisions and a documented patch series\",\n+        \"The prologue is playable at about 10 fps, with 7-8 fps in heavier views\",\n+        \"An external 36-minute RTX 4090 playtest reached the first mission without a crash\"\n+      ],\n+      \"blockers\": [\n+        \"CPU submission and synchronization remain the main bottleneck\",\n+        \"Missing shader pipelines, 7% dropped draws and VRAM pressure remain\",\n+        \"One-session stability evidence and two-platform performance measurements are limited\"\n+      ],\n+      \"provenOn\": null,\n+      \"gta\": {\n+        \"loads\": 1,\n+        \"boots\": 1,\n+        \"menu\": 1,\n+        \"world\": 1,\n+        \"playable\": 1,\n+        \"story\": 0.25,\n+        \"render\": 0.25,\n+        \"fps\": 10,\n+        \"stability\": 0.8\n+      },\n+      \"basedOn\": [\n+        \"marvis\",\n+        \"victory-gta6\"\n+      ],\n+      \"stats\": {\n+        \"stars\": 37,\n+        \"forks\": 4,\n+        \"openIssues\": 2,\n+        \"createdAt\": \"2026-11-24T22:58:04Z\",\n+        \"pushedAt\": \"2026-11-26T03:26:25Z\",\n+        \"archived\": false,\n+        \"missing\": false,\n+        \"commits7d\": 100\n+      },\n+      \"assessedAt\": \"2026-11-26\",\n+      \"assessedBy\": \"manual\",\n+      \"claims\": [],\n+      \"readmeSha\": \"439d455589a3e8b468fd0f7afdca56bfe9e5c639\",\n+      \"readmeChangedAt\": \"2026-11-26\"\n+    },\n     {\n       \"id\": \"belobug\",\n       \"name\": \"Belobug\",\n@@ -7450,11 +7508,6 @@\n       \"reason\": \"Personal branch of an open-source port; reaches first-run screens only\",\n       \"seenAt\": \"2026-11-25\"\n     },\n-    {\n-      \"repo\": \"fablinoo/kelvaroq\",\n-      \"reason\": \"Built on VIctory and victory-fork; its prologue results come from their code\",\n-      \"seenAt\": \"2026-11-25\"\n-    },\n     {\n       \"repo\": \"Melow-code/Vader\",\n       \"reason\": \"Merges ztrx (nuked) and victory-fork for NVIDIA cards; no results of its own\",\n@@ -8167,7 +8220,7 @@\n     \"lastRun\": \"2026-11-26T07:37:39.644Z\",\n     \"lastSummary\": \"32 refreshed, 5 READMEs changed, 5 new candidates, 0 flagged.\",\n     \"lastDmcaCheck\": \"2026-11-26T07:37:39.644Z\",\n-    \"lastEditorRun\": \"2026-11-25T19:48:37.000Z\"\n+    \"lastEditorRun\": \"2026-11-26T09:13:40.493Z\"\n   },\n   \"headlines\": [\n     {"
       }
     ]
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"e0e7eabb87d0a24430707ed3d7b9028ed4a476d6aa09bd6da353b77b5b03ac83\"",
-      "hash": "11cca8751efc06c02315478008ba57b6a9a3a049d90b683d48c4929d72ad2c6f"
+      "etag": "W/\"80dc41054dce38ade3fd5a85e779855c28e0f732cf4afd0dc2389447ed11b70a\"",
+      "hash": "c6b870a76eda392b8396ada4398860f6f1e2faab6f2b4d4f929ea63eab629d43"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
-      "etag": "W/\"5b8ee38c064ebe223801b028f2dd4797\"",
-      "hash": "e91417f7028b02d9da4bcefb01e7eead1c860a996a4379517aaf8a79254b109f"
+      "etag": "W/\"41a3f22284a6bff285584bf7c04563b3\"",
+      "hash": "8f950ca909a9d987592301cf8f0818a609b1373969ca5008033ba1842d314a18"
     },
     "https://portwatch-vi.xyz/data/tracker.json": {
-      "etag": "W/\"a0b9061e1dc663c60d56ee1e658a0942\"",
-      "hash": "f724c3a93ed8aeb7dba2c735db8bca1293117a0b7021b1fac454007ae526f30c"
+      "etag": "W/\"17687371b14eef6e3a5bf854f2fdc628\"",
+      "hash": "4540e3f8810243242b77f028a27e7b04771e35cf5e83afaef4f6cdff869666c2"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/a1397083b4d567d587c248aeb28eae76516ddb4f/data/pinned.json": {
       "etag": "W/\"f7e633f37a6fbe54cfc2b3b0953f893eff7d017026e24b44dd1cb257e2e0b257\"",
@@ -372,6 +374,18 @@
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/data/tracker.json": {
       "etag": "W/\"3b8f10cbc36c65839c194b1415f721db5eccb3dcb63f2f13a70fd22a7ce3dd77\"",
       "hash": "f724c3a93ed8aeb7dba2c735db8bca1293117a0b7021b1fac454007ae526f30c"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/data/tracker.json": {
+      "etag": "W/\"ad1caad2038199f5575ef80cbfe511d54f7d5a6e29a2f6ad15b4add5f8e1f7eb\"",
+      "hash": "4540e3f8810243242b77f028a27e7b04771e35cf5e83afaef4f6cdff869666c2"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/assets/i18n/en.json": {
+      "etag": "W/\"9367c5253b2ebec9987d6a1b4257485885c2ccea98913d1b260cdf59ba24c5bd\"",
+      "hash": "89fc307b4834a13949d7572ed4beb19f5467c6dd8b77cfd1983df56348bcefef"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/bdcf2dbbe4ef3fcd5af96de59bfcf5462ccd64f9/data/pinned.json": {
+      "etag": "W/\"b69e80c305baa8d8159695e7c7bd5b6723bd70af6984f3961248210df4371e28\"",
+      "hash": "8f950ca909a9d987592301cf8f0818a609b1373969ca5008033ba1842d314a18"
     }
   }
 }
