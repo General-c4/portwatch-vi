@@ -181,14 +181,6 @@
         }
       }
     },
-    "pinned:current": {
-      "fields": {
-        "text": {
-          "source": "Anyone saying they have gameplay over +10 FPS (in free roam) is probably lying, we haven't found any evidence that someone has reached that point.",
-          "ar": "أي شخص يدعي أن لديه أسلوب لعب يتجاوز +10 FPS (في التجوال الحر) فهو كاذب على الأرجح، إذ لم نجد أي دليل على أن شخصًا ما قد وصل إلى تلك المرحلة."
-        }
-      }
-    },
     "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5": {
       "fields": {
         "title": {

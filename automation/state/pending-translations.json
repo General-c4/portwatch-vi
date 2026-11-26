@@ -8,8 +8,141 @@
     "refs": [
       "interface.effort.macTitle"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "يركض على ماك"
+  },
+  {
+    "id": "5aeba11d97a9195d5b8d407aa97163800ad01ce48689511976996a9a2ba2b666",
+    "sourceHash": "f9b6563293fbb2538a2496e680ece21403cb3e07dc881da9aea3816643480a01",
+    "scope": "content",
+    "key": "an independent Xbox Series emulator",
+    "source": "an independent Xbox Series emulator",
+    "refs": [
+      "candidates:baummarder/xHoly.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "جهاز توجيه مستقل من طراز Xbox Series"
+  },
+  {
+    "id": "1464849e6f6ffa1d12bea05e13594def4f9fa16c19bdb7207c37e91204e3f2a6",
+    "sourceHash": "b85e33aa8abd798e73f45ca4150e336c0f8d5cab28cb75df1dc0b0788e5a77e8",
+    "scope": "content",
+    "key": "Run Xbox Series titles natively on PC",
+    "source": "Run Xbox Series titles natively on PC",
+    "refs": [
+      "candidates:decantlabs/decant.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "تشغيل Xbox Series اللقب الأصلي على PC"
+  },
+  {
+    "id": "ed5bc9c543f14f602673cc8b7c2c6a335a26484ce9aba995362db8aa113a8cb6",
+    "sourceHash": "1a6ae1d3977b1d86cce7601ad11c459fd9c9634acb5ff829360a84ff42842d8a",
+    "scope": "content",
+    "key": "ZETTROX is no longer reachable on GitHub (HTTP 404).",
+    "source": "ZETTROX is no longer reachable on GitHub (HTTP 404).",
+    "refs": [
+      "changes.54.text"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "2d74c09073957b8402d188aa4842ec473c82c8c67467f17c79d533b4a2cbfb23",
+    "sourceHash": "8b3de419a2b14b94e9bd8ec92666dbbbd76ea4f25e7c1bb05f50c125f75361e8",
+    "scope": "content",
+    "key": "XlaunchVI is no longer reachable on GitHub (HTTP 404).",
+    "source": "XlaunchVI is no longer reachable on GitHub (HTTP 404).",
+    "refs": [
+      "changes.70.text"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "34170d0835701a9ef255ee00a01ef1d1d89574a4096d42f464d4f15b68a76a90",
+    "sourceHash": "65571a0a1ebcdeeef1bab4012c1befcd37a869ac1cde75222e3b4dbcdeb52a6b",
+    "scope": "content",
+    "key": "30 refreshed, 9 READMEs changed, 9 new candidates, 6 flagged.",
+    "source": "30 refreshed, 9 READMEs changed, 9 new candidates, 6 flagged.",
+    "refs": [
+      "scout.lastSummary"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "6b2166492002a361e100628a08993882bb1f84c4eeb3d397aead4ba8c22c3e88",
+    "sourceHash": "4eeedde42a4effce3f6d5fda63292b0a3fc80ed891d01abc71d4642de4a2a073",
+    "scope": "content",
+    "key": "omonkey's private build, streamed on Rumble, has been taken down and leaves the board.",
+    "source": "omonkey's private build, streamed on Rumble, has been taken down and leaves the board.",
+    "refs": [
+      "changes.53.text"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "4509499d79ba7d83f4531c8b1f704860a06819b7c9729433ec07a68d7f8d66e1",
+    "sourceHash": "42f43d2eb434532966d0dba25e77782057443b6a0d5b18a8670ea46b67dc407f",
+    "scope": "content",
+    "key": "Half Step Game Project — Xbox Series title compatibility layer for Windows (based on VIctory)",
+    "source": "Half Step Game Project — Xbox Series title compatibility layer for Windows (based on VIctory)",
+    "refs": [
+      "candidates:sefaalcn/half-step-game-project.description"
+    ],
+    "attempts": 1,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "65b98c0adcfc22ddbc5813732ce54398ed80c12ae1a78adedd0ee14606be62eb",
+    "sourceHash": "33ddbe97c075d45b0882bf0111394b3f6a585be63589e73bb899e2c50b28cf01",
+    "scope": "content",
+    "key": "darkworldhm's build now peaks at 24 fps in free roam, up from 18; its average stays at about 12-15 fps.",
+    "source": "darkworldhm's build now peaks at 24 fps in free roam, up from 18; its average stays at about 12-15 fps.",
+    "refs": [
+      "changes.68.text"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
+    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+    "scope": "content",
+    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "refs": [
+      "changes.52.text"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
+    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+    "scope": "content",
+    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "refs": [
+      "changes.51.text"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -21,8 +154,86 @@
     "refs": [
       "efforts:omonkey.nuked.note"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "b205fc019dcaf76a4230f7a7afe0eea512e4227b03cbefa06102bfe32dbe9a88",
+    "sourceHash": "8b382f06320432bd5568c270fac50fc90b3c40e31441c07923b48d44c40e52a2",
+    "scope": "content",
+    "key": "A Windows compatibility layer for Xbox Series X|S (GDK) titles: native x86-64, translated shaders, D3D12.X and DXR. Bring your own dump; no game files.",
+    "source": "A Windows compatibility layer for Xbox Series X|S (GDK) titles: native x86-64, translated shaders, D3D12.X and DXR. Bring your own dump; no game files.",
+    "refs": [
+      "candidates:ihaterockstargames/sixth-star.description"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "fc3396523d4b3408073a38e191d359e2c33b0eef7b0ce9c7fb2dc3010ba7f120",
+    "sourceHash": "220e16900149c946bc7c7b5a51ff566bb11e87f7e35156af47a374c0a668ec44",
+    "scope": "content",
+    "key": "VIctory fork for 8 GB+ NVIDIA cards: 7-8 fps on an RTX 5060 Ti (Series S profile + FSR), lower VRAM use, shader fixes. Shader help wanted. No game files.",
+    "source": "VIctory fork for 8 GB+ NVIDIA cards: 7-8 fps on an RTX 5060 Ti (Series S profile + FSR), lower VRAM use, shader fixes. Shader help wanted. No game files.",
+    "refs": [
+      "candidates:Linox-IDK/LNX-victory.description"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "99f23f194284652c52e234a9894f23f8cc6c2e7af81517cee7af99fab9222a19",
+    "sourceHash": "c4016ce7b8723a5fb2b51f9e738f92494cbcc6f7e396c87b1c502acaf795d0a2",
+    "scope": "content",
+    "key": "An experimental open-source compatibility layer and clean-room DLL reimplementation project designed to run modern Xbox Series console executables on Linux via Wine and Proton.",
+    "source": "An experimental open-source compatibility layer and clean-room DLL reimplementation project designed to run modern Xbox Series console executables on Linux via Wine and Proton.",
+    "refs": [
+      "candidates:RandomSkelly/Series0nLinux.description"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "44c95fc225bfd382556c14ca10290dcaa11b5205c99b9a9e4071cd16e28759dd",
+    "sourceHash": "535f7dfc2d911f4ffa1928dce4e20ec4702a4a0768e6a2980efb216187904d80",
+    "scope": "content",
+    "key": "Fork of DexNom/VIctory: measured frame-time optimisations for running GTA VI's Xbox Series executable on Windows (D3D12 layer). Fetch off the critical path, per-stage split, NVIDIA numbers.",
+    "source": "Fork of DexNom/VIctory: measured frame-time optimisations for running GTA VI's Xbox Series executable on Windows (D3D12 layer). Fetch off the critical path, per-stage split, NVIDIA numbers.",
+    "refs": [
+      "candidates:Ryanabcraft/scarlett-victory-bench.description"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ6QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "1c0b048b5da99121665351a9585a46ffe447a60f2fbe8194b7019585644051c0",
+    "sourceHash": "650dff17a58dafb279e15d948026cece864d6cdc61ed9341f3dcadb566b5decf",
+    "scope": "content",
+    "key": "darkworldhm joins as a private build at 79.5% and leads our overall number: his Rumble stream shows GTA VI's free roam at about 12-15 fps and up to 18, the highest frame rate on our board, reportedly on an RTX 50-series card.",
+    "source": "darkworldhm joins as a private build at 79.5% and leads our overall number: his Rumble stream shows GTA VI's free roam at about 12-15 fps and up to 18, the highest frame rate on our board, reportedly on an RTX 50-series card.",
+    "refs": [
+      "changes.67.text"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "9f2ab6c144bda76c4878d74d4a84ec781ce1171c0f9e2ecb5727450cf072f490",
+    "sourceHash": "532eb0247254a9f44bdb4216aa7f20071a3b5f358df255fd7aaea61c3060408d",
+    "scope": "content",
+    "key": "Clean-room Xbox Series BCPack GPU decoder & 4K AAA benchmark (DX12 HLSL SM 6.6 + Vulkan 1.3 SPIR-V): 11.33 GB/s BC1, 6.02 GB/s BC7 rANS, Zero-Copy C-ABI, 1.25M Descriptor Paging, 12.41M Mesh Shaders + Hi-Z @ 150.6 FPS on RTX 5080 (19/19 PASS).",
+    "source": "Clean-room Xbox Series BCPack GPU decoder & 4K AAA benchmark (DX12 HLSL SM 6.6 + Vulkan 1.3 SPIR-V): 11.33 GB/s BC1, 6.02 GB/s BC7 rANS, Zero-Copy C-ABI, 1.25M Descriptor Paging, 12.41M Mesh Shaders + Hi-Z @ 150.6 FPS on RTX 5080 (19/19 PASS).",
+    "refs": [
+      "candidates:POMXARK/bcpack-gpu-hlsl.description"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -40,20 +251,6 @@
     "draft": "(غيثوب)"
   },
   {
-    "id": "574360da0b0a0dcc4fa82005437ebb0a6ce9f5c00ab33d73fa75c493fd4e1817",
-    "sourceHash": "a5e15f05c8be0095fa3dec93467b406f04d9b1c39d1560c018ffbbf54e8bbb0f",
-    "scope": "content",
-    "key": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
-    "source": "Runs an Xbox Series title natively on Windows: a compatibility layer. Fork of VIctory and victory-fork, developed and measured on an AMD Radeon RX 7800 XT.",
-    "refs": [
-      "candidates:ka1qux/BRVIctory-ka1qux.description"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "ويدير عنواناً من طراز Xbox Series محلياً في Windows: طبقة توافقية، وشكل VIctory و victory-fork، وطور وقاس على طراز AMD Radeon RX 7800 XT."
-  },
-  {
     "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
     "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
     "scope": "dashboard",
@@ -61,21 +258,6 @@
     "source": "VI",
     "refs": [
       "dashboard.dc7b94e12cff"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
-    "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
-    "scope": "content",
-    "key": "Python",
-    "source": "Python",
-    "refs": [
-      "candidates:grzegorz2047/TrinityXSX.signals.0",
-      "candidates:Wertrex/Americas.signals.0",
-      "candidates:fablinoo/kelvaroq.signals.0"
     ],
     "attempts": 3,
     "lastError": "Missing Arabic output",
@@ -134,58 +316,6 @@
     "reviewRequired": true
   },
   {
-    "id": "8a3f65ceee69cfa4e8e5f0a2b1999ffc94153bd355de1c722c5120ec0b8c6620",
-    "sourceHash": "d66e3bdffdd1885f0e996e58064dad0350a2c92d8151719cda06ebff475f918a",
-    "scope": "content",
-    "key": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
-    "source": "31 refreshed, 7 READMEs changed, 8 new candidates, 6 flagged.",
-    "refs": [
-      "scout.lastSummary"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "f796c0bb0ff374f3fc048785438c1d8a4dcc986cb1805dd1f4420d3e99987fcd",
-    "sourceHash": "4402efbd4c1711f63ddcd4e2ff332a4390eff1fe35431bcf75806ae93e797361",
-    "scope": "content",
-    "key": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
-    "source": "Experimental Xbox Series compatibility runtime for Windows x64, built in Rust.",
-    "refs": [
-      "candidates:fablinoo/kelvaroq.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "60cf4999b993e71f86883c1fb0d510c0968eb3e92ab315ae83eec5330b939d87",
-    "sourceHash": "3c614c7a1f82a557047a6702ca5fb55b269ea6abe8cd95e37dd97024bbbf70fd",
-    "scope": "content",
-    "key": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
-    "source": "Xbox Series X|S games running natively on Windows. GTA VI progress tracked in the README.",
-    "refs": [
-      "candidates:voidopcode/vilocity.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "13362a5e92e2009ac21f17151e82f6da1591cb0b4bf28d205099374f88af67f2",
-    "sourceHash": "f1675eea9cf96c9c4d49082b8f78184f03d18873c358dd6abea1174f9a5e192c",
-    "scope": "content",
-    "key": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
-    "source": "Xbox Series GTA VI on Windows, personal branch (GPLv3). Early, not playable. No game data.",
-    "refs": [
-      "candidates:Wertrex/Americas.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
     "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
     "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
     "scope": "content",
@@ -196,45 +326,6 @@
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "88df3008483894a02b10e6664db0098c5815fcf88eb0079047fb7df0183bb21e",
-    "sourceHash": "31d9f3390dd3208872f08a2f649543ee5843a8193e8dae9801258948f71ef83c",
-    "scope": "content",
-    "key": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
-    "source": "Documentation & architecture spec for static recompilation of the Xbox Series GTA VI executable (2-5 FPS Pre-Alpha).",
-    "refs": [
-      "candidates:kfedora/GTAVI-Xbox2PC.description"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "b57c68a0abf810ee5f08e5d7a589cda544bf835868ffe7571cdec7aebedfcf66",
-    "sourceHash": "4402438a488a4ec3f49b45487a70a4dab92867e1bd141679c6e782828bfcfb27",
-    "scope": "content",
-    "key": "Experimental standalone Xbox Series X|S (GDK) game library & compatibility runtime for jailbroken PS5 (XCL + vkd3d-proton + DXVK + PS5 Wine).",
-    "source": "Experimental standalone Xbox Series X|S (GDK) game library & compatibility runtime for jailbroken PS5 (XCL + vkd3d-proton + DXVK + PS5 Wine).",
-    "refs": [
-      "candidates:grzegorz2047/TrinityXSX.description"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "a2ab74b2747cfbffd389870644b384a78b68bc0dcb8ea07eda5fa9a1bf8813d0",
-    "sourceHash": "3810eb2d96df8b08c3c438f4a9412939cc5af6472e5d3a415507618aaf8ba5f5",
-    "scope": "content",
-    "key": "Unified GTA VI Xbox Series compatibility fork (fxceless/victory-fork + Belobug ambient/quads + DexNom shader/PSO fixes) tuned for NVIDIA RTX 3070 8 GB",
-    "source": "Unified GTA VI Xbox Series compatibility fork (fxceless/victory-fork + Belobug ambient/quads + DexNom shader/PSO fixes) tuned for NVIDIA RTX 3070 8 GB",
-    "refs": [
-      "candidates:Itsbatt/victory-unified.description"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ11QXZ",
     "reviewRequired": true
   },
   {
@@ -257,49 +348,10 @@
     "key": "DexNom takes #1 at 78%: PortWatch has seen its build running with ray-traced lighting, the first AMD build on our board to get it. Rendering goes from 0.81 to 0.9.",
     "source": "DexNom takes #1 at 78%: PortWatch has seen its build running with ray-traced lighting, the first AMD build on our board to get it. Rendering goes from 0.81 to 0.9.",
     "refs": [
-      "changes.69.text"
+      "changes.40.text"
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "20ca8dab3c0e19d327343052c58afdeba0be83794271703a509f53870d20b004",
-    "sourceHash": "9c20b68a9b89716f6bb1b63458aba86e6b0592f21a172012a5deac1493b89956",
-    "scope": "content",
-    "key": "Fork de VIctory en desarrollo, centrado en mejorar el renderizado de un título de Xbox Series en Windows. No incluye el juego, copias ni recursos. Requiere una copia propia.",
-    "source": "Fork de VIctory en desarrollo, centrado en mejorar el renderizado de un título de Xbox Series en Windows. No incluye el juego, copias ni recursos. Requiere una copia propia.",
-    "refs": [
-      "candidates:kellysix/kelly.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "53274f05967265b117aedc20575f8f1aebcf2cb3f65249c64dafdec80137e774",
-    "sourceHash": "aa8dd0267e58d580f0d4a4046310b2cf1aca8e7e192ef43d08d36b680608a690",
-    "scope": "content",
-    "key": "VIctory / victory-fork based compatibility layer that runs a freshly released Xbox Series title on Windows from your own copy, with an RDNA2 shader recompiler to D3D12. About 14 fps on an RTX 4070 (Series S profile). No game files included.",
-    "source": "VIctory / victory-fork based compatibility layer that runs a freshly released Xbox Series title on Windows from your own copy, with an RDNA2 shader recompiler to D3D12. About 14 fps on an RTX 4070 (Series S profile). No game files included.",
-    "refs": [
-      "candidates:realblastex/flamingo.description"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "09328b0522a87b8fcb457e6411a781914634c4e38bd6a884874056e9eff44445",
-    "sourceHash": "b621070b8ac4a56880affb578c801c6ab1a9386dc6332bc21aac44b98aa125b0",
-    "scope": "content",
-    "key": "Revenge is an experimental, performance-focused Xbox Series X|S compatibility layer for Windows, built in C++20 with native x64 execution, DirectX 12 translation, shader recompilation and NVIDIA, AMD and Intel GPU support as its development goals.",
-    "source": "Revenge is an experimental, performance-focused Xbox Series X|S compatibility layer for Windows, built in C++20 with native x64 execution, DirectX 12 translation, shader recompilation and NVIDIA, AMD and Intel GPU support as its development goals.",
-    "refs": [
-      "candidates:RickyDivjakovski/Revenge.description"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": true
   },
   {
@@ -309,7 +361,7 @@
     "key": "DexNom joins the race at #2 with 76.9% (“Playable”), verified by PortWatch: DexNom/VIctory, an AMD Radeon fork of VIctory tested on an RX 7900 XTX, is at the same point as Belobug's build, with a close-to-retail open world played through missions.",
     "source": "DexNom joins the race at #2 with 76.9% (“Playable”), verified by PortWatch: DexNom/VIctory, an AMD Radeon fork of VIctory tested on an RX 7900 XTX, is at the same point as Belobug's build, with a close-to-retail open world played through missions.",
     "refs": [
-      "changes.68.text"
+      "changes.39.text"
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
@@ -322,11 +374,559 @@
     "key": "Doomsday, a private group, joins at 78.7% and leads our overall number, verified by PortWatch: built on JoshuuDev's victory-amd, it runs ray-traced lighting at about 3-5 fps, almost never crashes and gets as far into the story as the leaders. Mostly AMD, also working on NVIDIA at lower fps. DexNom keeps #1 in the race, which ranks public code only.",
     "source": "Doomsday, a private group, joins at 78.7% and leads our overall number, verified by PortWatch: built on JoshuuDev's victory-amd, it runs ray-traced lighting at about 3-5 fps, almost never crashes and gets as far into the story as the leaders. Mostly AMD, also working on NVIDIA at lower fps. DexNom keeps #1 in the race, which ranks public code only.",
     "refs": [
-      "changes.70.text"
+      "changes.41.text"
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": true
+  },
+  {
+    "id": "c9c240756a4041a9b9724e950e66599726418aeabb1c79e935592832eb9f37ce",
+    "sourceHash": "6916cf11b27c90604f278f629f8d82338cd23dcf0d3068a1dfc9840137dcbfb3",
+    "scope": "content",
+    "key": "Rumble stream",
+    "source": "Rumble stream",
+    "refs": [
+      "efforts:notnozy.evidence",
+      "efforts:darkworldhm.evidence"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "7cf8fe78f9f0cb80b5c1ce86018f28098ec57051d2cccffc0adfe590a6e95a24",
+    "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
+    "scope": "content",
+    "key": "Video on Reddit",
+    "source": "Video on Reddit",
+    "refs": [
+      "efforts:avatarmanz.proof.label"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "5c28ee7aa7261cad1d9e946a5c75d8ee093ef756d74545563a85cd559939e9bf",
+    "sourceHash": "5de1eb01879df81349d4971b35bb5a5fb7731053371d9d7e0b7286c0ac0e9e71",
+    "scope": "content",
+    "key": "Watch on Rumble",
+    "source": "Watch on Rumble",
+    "refs": [
+      "efforts:notnozy.proof.label",
+      "efforts:darkworldhm.proof.label"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "def5830730ff15d164e35df927d0694db5435d05f95bdc877a71d806b9b976fd",
+    "sourceHash": "9312b607d0c30159d51b7a033c869178c9ee24743df5cf8210bce491fa9cb923",
+    "scope": "content",
+    "key": "Runs on an AMD card",
+    "source": "Runs on an AMD card",
+    "refs": [
+      "efforts:notnozy.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "204fc772c3f349c63d1bb55e0c53ee9735dc4fb88d6ee24d52a8bb78170b12fe",
+    "sourceHash": "cdc6cdd9066ca5fc97499c09975249e093c10dac538a33b816ce28e720ea8d89",
+    "scope": "content",
+    "key": "The hype is real...",
+    "source": "The hype is real...",
+    "refs": [
+      "pinned.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "d95ac0672bb371b3c78006a9a917ab1e40c8e8bd7aa016cccfe7cd6142848824",
+    "sourceHash": "9474c219d27426f8d3086c464c144ce6608f54da20ee9e98eec2c2bd004c6382",
+    "scope": "content",
+    "key": "No crashes seen so far",
+    "source": "No crashes seen so far",
+    "refs": [
+      "efforts:darkworldhm.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "766ed9977fbffdee2c44c92f6d030770398bb7c5998fed36b7019925699a3129",
+    "sourceHash": "a762fc1f9b5010e497cbee2e1004db51ecb1ce57d75f470f87e0f5724f87381e",
+    "scope": "content",
+    "key": "Streamed on Rumble · code not public",
+    "source": "Streamed on Rumble · code not public",
+    "refs": [
+      "efforts:notnozy.byline"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "d094f88bcadd0c97cdd082ea78324061d463d24a4f720040049a2d71c47a83c9",
+    "sourceHash": "0b1aea33067a80ffa54c199895cae71b47dc67c923662bb1f97129681a809d9d",
+    "scope": "content",
+    "key": "Some texture or ray-tracing glitches",
+    "source": "Some texture or ray-tracing glitches",
+    "refs": [
+      "efforts:darkworldhm.blockers.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "a81a7813a8e3b4884cbcee8e9d4ee49b650a094280d260ae8c775732e0581947",
+    "sourceHash": "c6867714659363b7ee0befcc506553ec556ea3e79a673f966e841cf7248dbcb4",
+    "scope": "content",
+    "key": "As far into the story as the leading builds",
+    "source": "As far into the story as the leading builds",
+    "refs": [
+      "efforts:darkworldhm.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "071c1dbc4b15c047740dd778f7bc976f4225d9c71603d1df71a6bff15dfa3d3f",
+    "sourceHash": "c3917bc9083a0b6405c5e850f14ef187af828c4743074315f2a13bcf64468c94",
+    "scope": "content",
+    "key": "Frame rate swings between about 5 and 24 fps",
+    "source": "Frame rate swings between about 5 and 24 fps",
+    "refs": [
+      "efforts:darkworldhm.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "dd1b76840b7e70764935cf920274c78437422cd27ad34117def01ff252c2f99c",
+    "sourceHash": "604a4e291b78f379917d560c5594773454f249f526911d98cc0fe0b22f2ee5c8",
+    "scope": "content",
+    "key": "GTA 6 PC Port Takedown Explained for UAE Fans",
+    "source": "GTA 6 PC Port Takedown Explained for UAE Fans",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb1N4N0drN3ltdS1hZXE5SW1yZWc2Zm5TYmpDWlVGX05LZWctcUdzOWZYUmZQb0k5eHh4QXdRcVkwRnpoUVdhelZhWWtqMUlIa1QwNl9OVGZTTjVqU2F3eGlvQTZCeTJ4Vi1wVDE5cXJhNHNhV1dsQnJaM1pZTXhkMk1JUzY3MU1yenc5M2FEOVVWQjZBVEExTi1KX29SdzFaNlJha0xrbUhXOFVsQUNGMElWX1dHWVdYWGE1VmIyQWJOTzVnZHh3NlJ1S2FVRVdSUGFrbkY3YjdDYkVnbDRLcmtBOA?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "aa2239cb3f9841a64fee2d29000aea5e77f65e8587b193ed114517c33d6d7f46",
+    "sourceHash": "9b114aa41bf5bc424d25dbe7ff6d6643fb376c88ba3829f321540eca9541d138",
+    "scope": "content",
+    "key": "Its own code throughout, not a VIctory or XCL fork",
+    "source": "Its own code throughout, not a VIctory or XCL fork",
+    "refs": [
+      "efforts:keylime.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8e59a519d2c5d43fe0cfbad95d510298513e00c28ded5cf386cd0d140dd373de",
+    "sourceHash": "2c7956f5517a0dc5e1ac54bf824526d6721d46b69a0713bb2979627e42204ed7",
+    "scope": "content",
+    "key": "GTA 6 Netflix Extended Look: 27 Minutes After Leaks",
+    "source": "GTA 6 Netflix Extended Look: 27 Minutes After Leaks",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiiwFBVV95cUxObzJFLXFMVmc3VjM2NmNEU0ZvWnM5U2MwTGFZMkFneGR6T0RqRVBZNmR3X2NVXzQwV3JzZGdianhfYlIxd2d6Y1d3aTc2dzZ5bjI1eDBFR09zOHFtcXBZeWhOcnN5QU1GWnN1YzJ2SEtaWHgxMUFIZzdLMGJjeGd3MjVwSjhPUzZuOEJR?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "e7590640853e254d4c24199c25e233174edde8e0a8c649293183f60e77a0dc13",
+    "sourceHash": "ca4fd0585178195c2633c232a90604abad646298ea753196af30342507460bd8",
+    "scope": "content",
+    "key": "Loads the world in about a minute and reaches the prologue",
+    "source": "Loads the world in about a minute and reaches the prologue",
+    "refs": [
+      "efforts:marvis.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "910d69d19e8855b1dd0117ba8f60a12b4e0159cd6135742edd8f3993005ff48c",
+    "sourceHash": "3e5bc12ded563f930fad379f2e38e4975356dbc0a797f79af8683a45806803c8",
+    "scope": "content",
+    "key": "The opening cutscene's picture doesn't draw yet; no gameplay",
+    "source": "The opening cutscene's picture doesn't draw yet; no gameplay",
+    "refs": [
+      "efforts:keylime.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "2aaac679f84c19a17259bbcfc6343336a7eab2e9af870f10762951fbaaeaef3b",
+    "sourceHash": "ee7f0951a0ebf3891c5df41ef669ec3a87d8609a7309959b6523e5c3d18a315f",
+    "scope": "content",
+    "key": "About 1 fps; ray-traced shadows and indirect light are missing",
+    "source": "About 1 fps; ray-traced shadows and indirect light are missing",
+    "refs": [
+      "efforts:marvis.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "3ff99798b87284a54daad1b2c4f4eba9a1223ffc26ba5d76e74f83f8a1691535",
+    "sourceHash": "b608102ec464c09a5bc8fd57a6e01e2ab57b871346863b3aad00913747e7dd73",
+    "scope": "content",
+    "key": "Scout spotted baummarder/xHoly (possible effort, substance 92).",
+    "source": "Scout spotted baummarder/xHoly (possible effort, substance 92).",
+    "refs": [
+      "changes.75.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "7ed649989a43b83d851239d7716eb33070fecdd35cb5f805f8386792d13093cd",
+    "sourceHash": "33158920c9436dc0d7ef4ac498faab518e030e1691ae7f6f7d9c2cea142cd83e",
+    "scope": "content",
+    "key": "Scout spotted decantlabs/decant (possible effort, substance 92).",
+    "source": "Scout spotted decantlabs/decant (possible effort, substance 92).",
+    "refs": [
+      "changes.77.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "6ff5a14601fe231a8dc4aa353ec0736ce7d73e57910f5c5d96e67310513be68e",
+    "sourceHash": "5a47f34e078f7aee3bb0ffc34ed66837cf47aa4f80bdfb374873ef409b5eb1c8",
+    "scope": "content",
+    "key": "New 'GTA 6' Leak Is Great News For PC Gamers, But There's A Catch",
+    "source": "New 'GTA 6' Leak Is Great News For PC Gamers, But There's A Catch",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMimgFBVV95cUxQNXhvNEhOamk4R0VLR0otallSaGkwQUpELUZBR1N4Um1fY3BhLWZkbktDTnM4UXlwUkk4NldyeWtXSFRBVDlwSGN0MHJxdHpOenk1WElYMzB5VHBPQUpQWU84eXdkLXZjM3BjZ3lkLUhyYTBSbkw3RDliYmlCX0NvaWw1YTFldVpVdC1xZmt2U3pOUE1XYlVQZWx3?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "762af478bcbb7b9403de3574c635f82712e0e75cfdd06adf2d86487573f602b1",
+    "sourceHash": "8eb1ccc2a83df12a59982a2db31febed05a8afbaf41ad543a81bfa4216a88475",
+    "scope": "content",
+    "key": "Take-Two Slams DMCA on GTA 6 PC Port, Wipes Out 3,007 GitHub Repos",
+    "source": "Take-Two Slams DMCA on GTA 6 PC Port, Wipes Out 3,007 GitHub Repos",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMidkFVX3lxTE96OXJjUjVjS1poQXlzV1paVWlBUWhueTNuX1EwT3hUSWt1R01qdFlnQnUyVlhWbk41LTFDZ2xBX0dtMVhIbjBpZF9zRkJIdG01anl2ai1ZNHRSeS1uclMzeE9yMkNBZ29rWnkzQVYtX0t6TnJadXc?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "eddeb575373176541f2bd18c2467fab18e5f78f02cc7c65830745a99aab836d3",
+    "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
+    "scope": "content",
+    "key": "41 minutes in one session without a crash (its README); sound works",
+    "source": "41 minutes in one session without a crash (its README); sound works",
+    "refs": [
+      "efforts:avatarmanz.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "b05db554efe3a7f36630f93fb4df34ca9a218d9521415b8f657453779af55772",
+    "sourceHash": "8ef8d07f623d8fb73d480a7259a8e0cd7439a50f2ee761da6ef30993e7ec277c",
+    "scope": "content",
+    "key": "Looks about the same as AvatarManz's build, the leader on our board",
+    "source": "Looks about the same as AvatarManz's build, the leader on our board",
+    "refs": [
+      "efforts:notnozy.highlights.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "75793af24aa136b4f74cf02840fe0995ef00dd55e4fb8e23bec3e1cc8b3d5e43",
+    "sourceHash": "b0eacbf2e454e1ca125dfa81fb6f016eaba813e78ee786c96f548679a2ceb1b1",
+    "scope": "content",
+    "key": "Streamed on Rumble · built on a VIctory fork (which one isn't known)",
+    "source": "Streamed on Rumble · built on a VIctory fork (which one isn't known)",
+    "refs": [
+      "efforts:darkworldhm.byline"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "80f919c7f47f5bf15c29e43b2abe7d8f14a442219b8f38babdca96645a6ec3d5",
+    "sourceHash": "f58fc4ee670b09b1da604e19e79a37b854de9f84dc52cf2d8dc80a53f9f5d806",
+    "scope": "content",
+    "key": "World loads after the menu into the opening cutscene, with its audio",
+    "source": "World loads after the menu into the opening cutscene, with its audio",
+    "refs": [
+      "efforts:keylime.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "c3ddcea5f613fe4d2c86d99a033e063e00c367522a35584eea318c0cd92103ab",
+    "sourceHash": "a85e93910db1fb12237d18415ad74c603d77934fe38ab24bf88c38d0e27e5cfb",
+    "scope": "content",
+    "key": "Scout spotted Linox-IDK/LNX-victory (possible effort, substance 98).",
+    "source": "Scout spotted Linox-IDK/LNX-victory (possible effort, substance 98).",
+    "refs": [
+      "changes.76.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "e972d008dde4443d8bbb5edac39895338781df61cab642b7b275f2c459e72a04",
+    "sourceHash": "a1f91947a0793321580fcdef789211ebaf91a0fe6783871f27bd94e8f8a652d8",
+    "scope": "content",
+    "key": "‘GTA VI’ Crashing on PS5 Means the PC Version Can’t Come Soon Enough",
+    "source": "‘GTA VI’ Crashing on PS5 Means the PC Version Can’t Come Soon Enough",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JdUtEM2pQS1R0MC1va0NneWJDakxnOXBVY0FhemI4U0liUVowZmVYLVA4ak5OZkx6dEY0MlVDdnlUUGlnTlEtWmc1ME5tUzdaNWRpU1FKOGFtWktfazlR?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "06269be6849c382cc0afbefae9e33afcb702b8db39cdd9f2768b770484204162",
+    "sourceHash": "c5c40770521ac65bf39fb893bb746ad5e17635000d6c35c9b4dca006e18608df",
+    "scope": "content",
+    "key": "Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).",
+    "source": "Scout spotted POMXARK/bcpack-gpu-hlsl (possible effort, substance 83).",
+    "refs": [
+      "changes.71.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "e1ac99184d05d47e9a1a21db6ca0ccf176d839748ff8fe98d6669f5a122e9f2f",
+    "sourceHash": "7d889aa68bae186eeda9f838524ae3fb025d683bf21f6f9eff7bf9815a913ee7",
+    "scope": "content",
+    "key": "Take-Two's DMCA notice takes down GTA VI PC port and 3,007 GitHub repos",
+    "source": "Take-Two's DMCA notice takes down GTA VI PC port and 3,007 GitHub repos",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMilAFBVV95cUxPSDJqZmZTaUZxcE1kRm0tRkN2OHZJZDBPYmhrREtGWFBZbHpuMWZrN2YyZ2RKbElsNEFtZGpNMGJMY2oyaVJDb0l1ZEkzNnF5bkNDTXI2VXVCYTRwX2phUHl0RFBULVF5NlpXa3N2TTR5Y2hyemlBOF9Sd3BJR2dxU0ptMU8xbEpjQ2UtWnZCcklDM1pD?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "4791fc0106a3bae5ab891d35ef564cb45d4c60bfbacbf97566ad895aac15ce70",
+    "sourceHash": "dfe5bff55f40ede8b1d2729dd6212ed1c0f97961ecb825e39337169142f5f3df",
+    "scope": "content",
+    "key": "Exciting GTA 6 leak offers good news for PC gamers, but there’s a twist",
+    "source": "Exciting GTA 6 leak offers good news for PC gamers, but there’s a twist",
+    "refs": [
+      "headlines:https://www.msn.com/en-in/news/other/exciting-gta-6-leak-offers-good-news-for-pc-gamers-but-there-s-a-twist/ar-AA2iecLg.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "359dfa64916540e1b5620e8b129a39b7c755763a381bd3dae62058cc81f068b6",
+    "sourceHash": "60bbda20c771cbbd24ae87f869fc0fa0ecc055ae4fd116630719c121494d42da",
+    "scope": "content",
+    "key": "Intro cutscene drawn textured and lit, with hair, sky and depth of field",
+    "source": "Intro cutscene drawn textured and lit, with hair, sky and depth of field",
+    "refs": [
+      "efforts:marvis.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "05a2aec9ed377a7ba2de35490f2eab9161bd093ab64e0f8420aa063b01b8689d",
+    "sourceHash": "5955f95b095f5b529989a2eba857e3a0d2f662c7578d663d51cfb4bb20b6af7a",
+    "scope": "content",
+    "key": "GTA 6 PC Recompile Market Hits 60% on Manifold as Take-Two Kills Leonida",
+    "source": "GTA 6 PC Recompile Market Hits 60% on Manifold as Take-Two Kills Leonida",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMihgFBVV95cUxNZ3pCelBVb19ock04cnRTQWhrZ0VrUDFJeHJ2Mkh5VjgtZ0pONGlYNTd4a0FhbkpqcU9Za1FyRzJ3akxZdlRvU2ZyUXVEM0FwR1lYRE5KVEZ6Y0paTzBqYVZJckRlSjIyamFnMHJEN1d2bTdBTHpNWGNCdWRfUG4ybC0wcFpnZw?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8c0b33ee7454b9f4f095b4263a64fb732820f9f38a09440bbee5aef681e2a94a",
+    "sourceHash": "ba0b5d8fb14047d14a4bb6b77c12ec67b871f918220d2933ea3edc5d0d39f234",
+    "scope": "content",
+    "key": "Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 37).",
+    "source": "Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 37).",
+    "refs": [
+      "changes.78.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "df28cce913f91a983d56a3abcc59dad48b2a0784f9200671e5f7ae2ab2bbd8b8",
+    "sourceHash": "d8bd853d8dd47f3be3fc59c117adbb35f2ca4289826fbe4f55c3be2782bb074e",
+    "scope": "content",
+    "key": "README: GTA VI boots natively, with intro and main menu at a locked 30 fps",
+    "source": "README: GTA VI boots natively, with intro and main menu at a locked 30 fps",
+    "refs": [
+      "efforts:keylime.highlights.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "0a51f585f7bc3f6f68535db9388c9bba30f85897241c1af843f3d3dc28263807",
+    "sourceHash": "f6b63158384ca8f54a0c327b4b25c8c35de9da07055f037fa63489891f25e801",
+    "scope": "content",
+    "key": "About 12-15 fps in free roam, up to 24: the highest frame rate on our board",
+    "source": "About 12-15 fps in free roam, up to 24: the highest frame rate on our board",
+    "refs": [
+      "efforts:darkworldhm.highlights.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "47bb36e6752e471ae8ec6e1952a7c08b0b3170be8f11c3a9b87fe3ba23c6e882",
+    "sourceHash": "fc13d182447e4a765f8d477f3c42cddf70b2eb028d061014badb2691e34fb63a",
+    "scope": "content",
+    "key": "Scout spotted ihaterockstargames/sixth-star (possible effort, substance 77).",
+    "source": "Scout spotted ihaterockstargames/sixth-star (possible effort, substance 77).",
+    "refs": [
+      "changes.73.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "7f25a5a9041230e57d3de748a01532730f8f2af3c74d4b2587408c0038964c2c",
+    "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
+    "scope": "content",
+    "key": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
+    "source": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
+    "refs": [
+      "efforts:avatarmanz.highlights.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "449efe84024f7ecc3b0c17265f9dc896908121f96c93f2a464a6bb5bb2bf74ff",
+    "sourceHash": "891dc7c2b29439f07cef2cee548661825103a24920fca113abbb1e7d9267f99c",
+    "scope": "content",
+    "key": "Scout spotted sefaalcn/half-step-game-project (possible effort, substance 71).",
+    "source": "Scout spotted sefaalcn/half-step-game-project (possible effort, substance 71).",
+    "refs": [
+      "changes.74.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "dd5c0f7f37be7190ac1365fb1a0518d54f29faca553170ed7d03cee56b7b2121",
+    "sourceHash": "64f5edc1f0886e5d452c1f414790ec10f649ff8a0a0b20721cd7790842175b3c",
+    "scope": "content",
+    "key": "GTA 6 game dump runs on PS5 console jailbreak, boosting piracy and PC emulator",
+    "source": "GTA 6 game dump runs on PS5 console jailbreak, boosting piracy and PC emulator",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMivwFBVV95cUxORTFnN0F2RXRmcU9QdkF6cEZFX1RZV1hiUzlVajhNTXFrcHYxV1c4YXNYUnFDeE9VMU9rYlNDNGI0S2pONUM4ZGRfQ2N4MUxfSmNaNTBXZlBVWGljLThZUVRuZDB1ZnVWUDdQcHFvX2p5R1l4bVdkWnJwRHB0WFJzdkthcE9nU0hRNWNsSXRDUjJRRGxvS3FrallncjdCdVFOZS1jVEhnVWNzN192bWhSaXZMem1SVnNxMHU5bmJQNA?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "0cb0c271b55d8e20488709eb9dd24c5a3fc354ac66a0cb539972c20f76bb85bd",
+    "sourceHash": "b85a7ba8d98b4c6a83d705cb08a1ea7dd4213803355e148044e8889e741439ab",
+    "scope": "content",
+    "key": "As far into the story as the leading builds, with a picture close to the console",
+    "source": "As far into the story as the leading builds, with a picture close to the console",
+    "refs": [
+      "efforts:notnozy.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "a9029298199638ee92c2c79fa8f749dd3565a1dc18146e3b77e7458dd1ad8abf",
+    "sourceHash": "f4a18564a9c79f89c50e39c5a6abe3f3eaa08ff395c91504d72b0d70087f3dc9",
+    "scope": "content",
+    "key": "Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).",
+    "source": "Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).",
+    "refs": [
+      "changes.72.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8b279940704296720db95f23bc484327910eb63cb5a5f51a3b24c16f7ff064dd",
+    "sourceHash": "e965d686c4dd832ad7e527e7090df0ef9c692eda631e7c9ed911b1650647d29a",
+    "scope": "content",
+    "key": "Take-Two's GTA 6 PC Port Crackdown Has Already Taken Down Over 3,000 Repositories",
+    "source": "Take-Two's GTA 6 PC Port Crackdown Has Already Taken Down Over 3,000 Repositories",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMisAFBVV95cUxPWXBTUzdLNnY1OF9raDRhdEdRd3E1OS1QOG91YUFwSllabHBMTXZ0LWtmcXNIOGh0MjlCcUxRb1dvLVR1ZHl2WDBhQVMtc294M19HTjI3aVpOZlBsZ3FyZ2RiS28xUk1rRWRsXzUyYnY2STlNT3FmYUw0UGhYNWxwTmpTMERLYlRYZ1BlY0d6LXNJcjE5OHM5LXlLdXBCS0pRRE9FRlFZdGtrTmFESl91eg?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "01585d0a3a185a3c9f0d055c94aa1cb5e18b7b4da6d2def8a4e1b9cee6e114ea",
+    "sourceHash": "6476273dd49764922a09cdc81fff1febaf42b5c1ade0146da2462752d2c30bc2",
+    "scope": "content",
+    "key": "GTA 6 is locked to 30fps on my PS5, but I found a way to play it at 60fps through my PC",
+    "source": "GTA 6 is locked to 30fps on my PS5, but I found a way to play it at 60fps through my PC",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMipgFBVV95cUxPSDBQR29OOWR5c3N6dWZHWnpGYm82UnJhdG1ad0RDV0VOSVBEaUtVeTY4WWNEUnh2dE05clpOeUpNclR3cnBsc0JILVJnT21kc0tYM09MWXlmOGZjNGFoOUZBWHZROTRaTXJ0NzlXZ3JkR1JnalBSem1RbUk1UV9lOTBGOWhLYkhOMVZMd2FhUGR3b3EzSWJqR0VhTzRJRXNDbmIyRDd3?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
   },
   {
     "id": "850cb188b35645cc96815b48400a78d74a84a801f4d9daa52bf80f740e31b6fd",
@@ -342,13 +942,130 @@
     "reviewRequired": false
   },
   {
-    "id": "28675666cb11c84acef3d5e7d987cba98d66c4005e7af9622c4e8da0ce04bc10",
-    "sourceHash": "faaebba40ea9bf6c102c2e9b2525e5ae79898f84b13e4fd02e60612839380bd9",
+    "id": "b1a528d2f000a700caae9a3cf581fbb1efebbb4123b1744aa8b6580c08f9b86d",
+    "sourceHash": "8b367abaac217dff3bbe164a8194385c49993b8cb44e021e72e89c778aaa4b3c",
     "scope": "content",
-    "key": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-    "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+    "key": "Some compute shaders write wrong data; the game's GPU watchdog is parked to keep it running",
+    "source": "Some compute shaders write wrong data; the game's GPU watchdog is parked to keep it running",
     "refs": [
-      "changes.81.text"
+      "efforts:keylime.blockers.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "6fa530b3f5387a1a3e5509a5a8f2714be5a829c0f8522cb71bb6913b947235e9",
+    "sourceHash": "77889b5158f392f0e3cc03c99e3fe1e561ca19d09df5393da54eddd14d50e752",
+    "scope": "content",
+    "key": "Its translator turns instructions it doesn't know into no-ops, so shader counts earn no credit",
+    "source": "Its translator turns instructions it doesn't know into no-ops, so shader counts earn no credit",
+    "refs": [
+      "efforts:keylime.blockers.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "9451c0a46d4305afc4fb129d067812339a51008fbd9b9a2aae54d46d01274154",
+    "sourceHash": "e7471cda93add3de18588fc919df291f76fa9553f6939c8ed04c374794a396ec",
+    "scope": "content",
+    "key": "GTA 6 isn’t on PC yet, but the open-source community could have it running before December ends",
+    "source": "GTA 6 isn’t on PC yet, but the open-source community could have it running before December ends",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmVpRkhVbDVaQ05HeFdnZ0s3YVBVbENtYnk2ZU5YMElOdDJKQVJrZE5HVDFWVk16RkN5endxN2pCd2JkbnBBdm5ZdUtNb1hmODFzdzhvbWpLTGJPR2NrUFZwZjVOZl9lSmpZb2lPTkxxU1NzZHVpbGNqMTZCXzRJcjFpVURoS3NoSzlEUmtZalJ0YzNOMmJFQXNlMVRybkFJSy1KODlwZnY?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "5cbef0556dc5efb71dcbfea5c6c7e425a8f9020f41efe572338db65406bb0388",
+    "sourceHash": "54fc97bf7465bc6647c41c7eda49e65a8862341c53f617365dae27173ed10322",
+    "scope": "content",
+    "key": "README: an unmerged NVIDIA branch reaches the world at about 5 fps, with parts of the picture missing",
+    "source": "README: an unmerged NVIDIA branch reaches the world at about 5 fps, with parts of the picture missing",
+    "refs": [
+      "efforts:xcl.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8b897edfadaf7b5dae5607f7e882b3c0a7c703c366a2f946bd67268ea342c13c",
+    "sourceHash": "e138177f52d9f16e77a91a4dd51e9c4cc53d58db0badfe4170fc87f9f0ab4c80",
+    "scope": "content",
+    "key": "It seems GTA 6 on PC is making steady progress, but Rockstar is not making it easy for emulation devs",
+    "source": "It seems GTA 6 on PC is making steady progress, but Rockstar is not making it easy for emulation devs",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMiY0FVX3lxTE16MDFuSTJDVUlIT0hhTGp5ZjNDbGtKZGpzVWxGMi12OEFhZkFyMkVTX21SQ01xbDgwa0tFTWNkZkxVNUphS1VnYWpSY2psOXFiZ1pnZ2Rmd1VRR0c4ZzlIQlR0SQ?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "6c75cd1b4999a38b20c2b60745aea14d3e904540b3faed3907c0928ee2de8030",
+    "sourceHash": "40062ad3c5d04c2769c05dd75d78e02eb7ae30ef5b4bb6efd48495040467cd6f",
+    "scope": "content",
+    "key": "Uses 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not yet reproduced by others",
+    "source": "Uses 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not yet reproduced by others",
+    "refs": [
+      "efforts:avatarmanz.blockers.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "fdde96e4e5a6492192f65338fefb63c26320c02381bcabded2d8364adeb8b151",
+    "sourceHash": "0ccd3dadad73a90fa5551073c9c17f4c98fef011f599f40edf31ed4b5aa0e3a9",
+    "scope": "content",
+    "key": "About 3 fps on the streams; its README now measures 8-10 fps in the first rooms, with optional switches",
+    "source": "About 3 fps on the streams; its README now measures 8-10 fps in the first rooms, with optional switches",
+    "refs": [
+      "efforts:victory-gta6.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "ae54911314878b6684c2cbf803c8fe453940fc3d75d491a7877eceaf71e1f8be",
+    "sourceHash": "7982da0af28e0160f6f6a3f34137880b8e223f3cdd749b09ed9049606045d32b",
+    "scope": "content",
+    "key": "There's a new frontrunner in the race to unofficially bring GTA 6 to PC, and it's already hitting 5-7fps",
+    "source": "There's a new frontrunner in the race to unofficially bring GTA 6 to PC, and it's already hitting 5-7fps",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMirAFBVV95cUxONm9vdElKSlprWjhBNVA5NXNrWVhHRzE1TkFFVHV3bTc4dGpqWnVIajNlLUV6NlhjbDh5TVJ2Q1E0TzVic0ZHV1hwTm0wc01BQlNZSk01dHRPb3V3dzdRRnNka2ZacDFrS0tYVTQ5YjBxQ0JtakxzQXV4dU1JLWlYcTF5QnRaLTRPYmJOUzFGeU5aS2NaYnZ3QTYycnlGcl9FTXBOTS1BMnRaX1VJ?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "b7c1d1a3d871c838e66a7e89a1454b044ad6a6db5e406fc24027141134a7a912",
+    "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
+    "scope": "content",
+    "key": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+    "source": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+    "refs": [
+      "efforts:avatarmanz.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "e2fda3cb6cf7b063d303a057369da45419994a9244f075be58cae906f8996e64",
+    "sourceHash": "6886c6b83cc2879175e4ac8beb5ef59ec06625de8cbbbb1dc91f10d2ac13dac3",
+    "scope": "content",
+    "key": "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
+    "source": "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
+    "refs": [
+      "efforts:notnozy.blockers.0"
     ],
     "attempts": 0,
     "lastError": null,
@@ -368,11 +1085,102 @@
     "reviewRequired": false
   },
   {
-    "id": "7ffab5b472654a226fe33356be1151153fd955f8d4073e072a47c6e06215f980",
-    "sourceHash": "87f0a5585a9c33c0aa5f4c14f981187d67832cc6b0c9ee76c7c166c07f59e40f",
+    "id": "5862cc3fde345299e14470c1f3ae0f8455ce5bff60ecbe49bec78422152cdb1c",
+    "sourceHash": "d95de63562897d3aa2365d34ca3832a8c8afc606dfac92428e1273f81bbc8850",
     "scope": "content",
-    "key": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-    "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+    "key": "Trees, plants and far buildings flicker outdoors in places, dim rooms are too dark without ray tracing, and new textures appear late",
+    "source": "Trees, plants and far buildings flicker outdoors in places, dim rooms are too dark without ray tracing, and new textures appear late",
+    "refs": [
+      "efforts:avatarmanz.blockers.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "41a863b38b803ac9ce87c96b0e73e024e889ca2f51e84d5f9267c153432a44b0",
+    "sourceHash": "80decc0ff495f3842ca033358872569dbeaad4087643384b9297a3b2d3add0e1",
+    "scope": "content",
+    "key": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC",
+    "source": "GTA 6 recompilers and vibe-coders implore AI chatbots to 'work faster' and 'make no mistakes' as they race to get the game running on PC",
+    "refs": [
+      "headlines:https://news.google.com/rss/articles/CBMihwFBVV95cUxQOGNPNXVxNDNqc3NPa1VzbllVdG52aFFJNGtBVUJRU1BBa2dBZW01R1QzZVFJN1V5cTd4SlNpVHpRR0J4UGxqSV9OS3ZLTFJtY3UtUzBkejlyeUZpbGxldkltLVlZT190emxMNVJEUkZwb215R05va0wzSlVlajc2TWxva0JpTEU?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "534930f4af58104d1974e3d642ec6feab5c07f12405f768a005f1daf2348a9b5",
+    "sourceHash": "b6469eb42c5af97ebe3a96958b8a5f861850c7f97e1182c0106cf878aa83b910",
+    "scope": "content",
+    "key": "NotNozy joins as a private build at 82.6%, just behind AvatarManz: his Rumble stream shows a build that looks about the same, on an AMD card.",
+    "source": "NotNozy joins as a private build at 82.6%, just behind AvatarManz: his Rumble stream shows a build that looks about the same, on an AMD card.",
+    "refs": [
+      "changes.82.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "f2b791cd2ee5ef18bb9ae94e12629aef71ec4e8e7039b7d24cb129ead691b7b3",
+    "sourceHash": "24389599d720ee66c17aeab958d42db748f70668acac59cb5292cc288a1a0409",
+    "scope": "content",
+    "key": "Brings victory-fork, DexNom and Belobug together on VIctory, history and credits kept; builds from source, no prebuilt downloads; GPL-3.0-or-later",
+    "source": "Brings victory-fork, DexNom and Belobug together on VIctory, history and credits kept; builds from source, no prebuilt downloads; GPL-3.0-or-later",
+    "refs": [
+      "efforts:avatarmanz.highlights.3"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "b041d46c2e2cdfbda523434b1396b092abacd3231f9d2e8eaa2ec76aab06abf7",
+    "sourceHash": "413275c319852c5e5c6b3c54ea8aa3f048e32a1d23da4837410018f6a7e16d5c",
+    "scope": "content",
+    "key": "About 16 fps on average in game, verified by PortWatch: the highest average on our board. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
+    "source": "About 16 fps on average in game, verified by PortWatch: the highest average on our board. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
+    "refs": [
+      "efforts:avatarmanz.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "ca23ae5a48bccc38c2a1a41a5759b5a08f75c823b90a90dd220a5ae042e6c504",
+    "sourceHash": "77b58eb45e8f47197c63ecd0812fcc49319b8d0ce14b65437fbc53879d5ad6c0",
+    "scope": "content",
+    "key": "Marvis's Rust layer runs GTA VI's own code natively. In the world the intro cutscene now draws textured and lit, and the prologue is reached, at about 1 fps; its README says it isn't playable yet. Self-reported.",
+    "source": "Marvis's Rust layer runs GTA VI's own code natively. In the world the intro cutscene now draws textured and lit, and the prologue is reached, at about 1 fps; its README says it isn't playable yet. Self-reported.",
+    "refs": [
+      "efforts:marvis.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "c01eb16074dd20d8cca7c0ffc4ca05a7cc7fd5597dabd1bcfd85f2465d504bd7",
+    "sourceHash": "cc39953a7ef3f2ca2cb0810f6b14115ea29ae8a680519bde83ffc96bd77efdc4",
+    "scope": "content",
+    "key": "AvatarManz's code is public: avatarmanz/VIctory-7900XTX, a GPL-3.0 fork of VIctory for the RX 7900 XTX, joins the race at #1 with 83.1%. Its README measures 13-22 fps indoors and a 41-minute session without a crash.",
+    "source": "AvatarManz's code is public: avatarmanz/VIctory-7900XTX, a GPL-3.0 fork of VIctory for the RX 7900 XTX, joins the race at #1 with 83.1%. Its README measures 13-22 fps indoors and a 41-minute session without a crash.",
+    "refs": [
+      "changes.81.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "bb8ff0261e742fa7bc676bd993655454b05d95280f3b4f461a2a71dff1ba1cf2",
+    "sourceHash": "005b3aebbf5ed07981abbf41fa8bbd9d5400122501fc506b2712d6b8d7f4e0f2",
+    "scope": "content",
+    "key": "AvatarManz joins as a private build at 83.1% and leads our overall number: it merges four VIctory forks and reportedly runs GTA VI at about 16 fps on average, with sound and no crashes so far, on a Radeon RX 7900 XTX.",
+    "source": "AvatarManz joins as a private build at 83.1% and leads our overall number: it merges four VIctory forks and reportedly runs GTA VI at about 16 fps on average, with sound and no crashes so far, on a Radeon RX 7900 XTX.",
     "refs": [
       "changes.80.text"
     ],
@@ -381,13 +1189,39 @@
     "reviewRequired": false
   },
   {
-    "id": "032553284c4d745bdf4d28dffbed36eb7eca41eb20bcd60188bd61f0a475f664",
-    "sourceHash": "8b876fad4ea7b4ab81920cf2b72da2e6459b7bdf16164d049df37ff18bfcf135",
+    "id": "2a7bc0f22d7b97e19d4bda3a1842981090b2bfe38d309321eaf8a2a1339afede",
+    "sourceHash": "8c8b20a9e4186be147fc03c5e61a5762fd8a68d1e86f41eba267ed31221084ed",
     "scope": "content",
-    "key": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
-    "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
+    "key": "A C++20 runtime written from scratch, with Vulkan graphics and its own RDNA2-to-SPIR-V translator. It reports GTA VI's intro and main menu at 30 fps and the world loading into the opening cutscene, which doesn't draw yet. Self-reported.",
+    "source": "A C++20 runtime written from scratch, with Vulkan graphics and its own RDNA2-to-SPIR-V translator. It reports GTA VI's intro and main menu at 30 fps and the world loading into the opening cutscene, which doesn't draw yet. Self-reported.",
     "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5.title"
+      "efforts:keylime.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "127f69e19f9d1437a794a59eda64b0b98ea4c63e3815d4b36b1d21277c1463b8",
+    "sourceHash": "e6e5aaa7a25ea4732225b2d2eb2d7695229d8eb9b183f01d4e78ae15a821ccfe",
+    "scope": "content",
+    "key": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build, the leader on our board: as far into the story as the leading builds, with a picture close to the console. It runs on an AMD card. Code not public, and what it builds on isn't known.",
+    "source": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build, the leader on our board: as far into the story as the leading builds, with a picture close to the console. It runs on an AMD card. Code not public, and what it builds on isn't known.",
+    "refs": [
+      "efforts:notnozy.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "375c6cda3b817e52e0f648224a1dbb74b7429923962455208dd2d4801b9d7e6b",
+    "sourceHash": "373bab1890a373932881cc0225e21bfe47c54415e9926c3c95e4fe68b223c9df",
+    "scope": "content",
+    "key": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from victory-fork's code, now copied into the repo, so they earn it no milestone.",
+    "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from victory-fork's code, now copied into the repo, so they earn it no milestone.",
+    "refs": [
+      "efforts:anyxboxx.summary"
     ],
     "attempts": 0,
     "lastError": null,
@@ -401,6 +1235,32 @@
     "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
     "refs": [
       "efforts:doomsday.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "68828d9257b10a84b22918989eb8e7f9b0673537cf2d92e6adc0c48ff8dc4801",
+    "sourceHash": "7345f98dc12fbbf5b0f4be52f58c3c20dba6f0629f765bbeea641b368c1578b3",
+    "scope": "content",
+    "key": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. It's as far into the story as the leading builds and hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
+    "source": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. It's as far into the story as the leading builds and hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
+    "refs": [
+      "efforts:darkworldhm.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "6d296bad0a665f66d9298d471e1a581aa238f0a4f85c6c3d1e59ba952a08fee0",
+    "sourceHash": "c4fdc6249bbb0a43033233367c78cf9fd7fc53f945fa661dfe7b60feea55e612",
+    "scope": "content",
+    "key": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, the highest average on our board, with sound, as far into the story as the leading builds and with a picture close to the console. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
+    "source": "AvatarManz's fork of VIctory, tuned for speed on an AMD Radeon RX 7900 XTX. It brings victory-fork's, DexNom's and Belobug's work together on VIctory and adds its own speed-ups: the game's draw calls translated on eight threads of its own, frames prepared on a separate thread, and textures uploaded on their own queue. PortWatch has verified it: GTA VI runs at about 16 fps on average in game, the highest average on our board, with sound, as far into the story as the leading builds and with a picture close to the console. Its README measures 13-22 fps indoors and on the first boat mission, and a 41-minute session without a crash.",
+    "refs": [
+      "efforts:avatarmanz.summary"
     ],
     "attempts": 0,
     "lastError": null,
@@ -469,19 +1329,6 @@
     ],
     "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "25ef32f5aa241e3e3fadecf7f3085f4adcfb6e0138d35bb653a990859e41d786",
-    "sourceHash": "78d749c95896468e2b47ccfd39d37bf28f3a03a44fe47dd3b63da8959c210fea",
-    "scope": "content",
-    "key": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
-    "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
-    "refs": [
-      "efforts:anyxboxx.summary"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
     "reviewRequired": true
   },
   {

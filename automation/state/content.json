@@ -1,22 +1,22 @@
 {
   "version": 1,
-  "latestUpstreamCommitSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
-  "latestSynchronizedCommitSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+  "latestUpstreamCommitSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+  "latestSynchronizedCommitSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "latestDeployedCommitSha": "f6f35b25fddf5b11ea58ea56142484ae8be1b40c",
+  "latestDeployedCommitSha": "0bd2e3f66a506787087a967ad749f7371a329758",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-25T19:01:34.555Z",
-  "lastUpstreamCheckTime": "2026-11-25T19:01:34.555Z",
+  "lastSuccessfulSyncTime": "2026-11-26T01:02:54.525Z",
+  "lastUpstreamCheckTime": "2026-11-26T01:02:54.525Z",
   "authoritativeSource": "repository",
-  "upstreamUpdated": "2026-11-25T16:22:16.626Z",
+  "upstreamUpdated": "2026-11-25T22:09:30.708Z",
   "records": {
-    "new": 0,
-    "updated": 0,
-    "deleted": 0,
+    "new": 53,
+    "updated": 48,
+    "deleted": 52,
     "sections": {
       "efforts": {
-        "new": 0,
-        "updated": 0,
+        "new": 4,
+        "updated": 24,
         "deleted": 0
       },
       "news": {
@@ -26,33 +26,33 @@
       },
       "tools": {
         "new": 0,
-        "updated": 0,
+        "updated": 20,
         "deleted": 0
       },
       "candidates": {
-        "new": 0,
-        "updated": 0,
-        "deleted": 0
+        "new": 8,
+        "updated": 1,
+        "deleted": 13
       },
       "headlines": {
-        "new": 0,
-        "updated": 0,
-        "deleted": 0
+        "new": 15,
+        "updated": 3,
+        "deleted": 15
       },
       "changes": {
-        "new": 0,
+        "new": 26,
         "updated": 0,
-        "deleted": 0
+        "deleted": 24
       }
     }
   },
   "translation": {
-    "coverage": 95.51,
-    "translated": 1063,
-    "total": 1113,
-    "pending": 48,
-    "completed": 0,
-    "provider": "none"
+    "coverage": 90.58,
+    "translated": 1019,
+    "total": 1125,
+    "pending": 104,
+    "completed": 19,
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "newsTranslation": {
     "requests": 0,
@@ -74,9 +74,22 @@
     "inputTokens": 0,
     "outputTokens": 0,
     "thinkingTokens": 0,
-    "errors": [],
-    "pending": 32,
-    "durationMs": 4,
+    "errors": [
+      "quota_or_rate_limit"
+    ],
+    "quota": {
+      "quotas": [
+        {
+          "period": "day",
+          "unit": "requests",
+          "limit": 20
+        }
+      ],
+      "retryAfterMs": 46671000
+    },
+    "blockedUntil": "2026-11-26T07:59:59.701Z",
+    "pending": 86,
+    "durationMs": 12,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -87,54 +100,54 @@
       },
       "headlines": {
         "total": 30,
-        "translated": 26,
+        "translated": 14,
         "exempt": 0,
-        "missing": 4,
-        "coverage": 86.67
+        "missing": 16,
+        "coverage": 46.67
       },
       "changes": {
         "total": 12,
-        "translated": 10,
+        "translated": 1,
         "exempt": 0,
-        "missing": 2,
-        "coverage": 83.33
+        "missing": 11,
+        "coverage": 8.33
       },
       "projectDescriptions": {
-        "total": 35,
-        "translated": 31,
+        "total": 39,
+        "translated": 30,
         "exempt": 0,
-        "missing": 4,
-        "coverage": 88.57
+        "missing": 9,
+        "coverage": 76.92
       },
       "projectDetails": {
-        "total": 84,
-        "translated": 71,
+        "total": 95,
+        "translated": 76,
         "exempt": 1,
-        "missing": 12,
-        "coverage": 85.54
+        "missing": 18,
+        "coverage": 80.85
       },
       "highlights": {
-        "total": 94,
-        "translated": 88,
+        "total": 107,
+        "translated": 89,
         "exempt": 0,
-        "missing": 6,
-        "coverage": 93.62
+        "missing": 18,
+        "coverage": 83.18
       },
       "blockers": {
-        "total": 91,
-        "translated": 88,
+        "total": 102,
+        "translated": 89,
         "exempt": 0,
-        "missing": 3,
-        "coverage": 96.7
+        "missing": 13,
+        "coverage": 87.25
       }
     }
   },
   "latency": {
-    "sourceCheckMs": 837,
-    "dataSyncMs": 6,
-    "translationMs": 0,
+    "sourceCheckMs": 881,
+    "dataSyncMs": 11,
+    "translationMs": 5304,
     "deploymentMs": null,
-    "totalMs": 859
+    "totalMs": 6222
   },
   "apiAnything": {
     "ok": false,
@@ -157,27 +170,27 @@
     }
   ],
   "retryAttempts": [],
-  "upstreamSha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+  "upstreamSha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
   "head": {
-    "sha": "b66cc6844317bb9cd6433c02e62ca007dd10cd38",
-    "node_id": "C_kwDOV3EveNoAKGI2NmNjNjg0NDMxN2JiOWNkNjQzM2MwMmU2MmNhMDA3ZGQxMGNkMzg",
+    "sha": "cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+    "node_id": "C_kwDOV3EveNoAKGNlYTQ1YjQ1MDg0NGQ2OGYxOGZhZDdlYzdjY2RlMWU5ZTA2ZTJmNjE",
     "commit": {
       "author": {
-        "name": "4lwayz",
-        "email": "alwayzbooster45@gmail.com",
-        "date": "2026-11-25T18:57:32Z"
+        "name": "NanoTrasen-Inc",
+        "email": "nano@nanotrasen.org",
+        "date": "2026-11-26T00:14:36Z"
       },
       "committer": {
-        "name": "4lwayz",
-        "email": "alwayzbooster45@gmail.com",
-        "date": "2026-11-25T18:57:32Z"
+        "name": "NanoTrasen-Inc",
+        "email": "nano@nanotrasen.org",
+        "date": "2026-11-26T00:14:36Z"
       },
-      "message": "Pinned message: \"Anyone saying they have gameplay over +10 FPS (in free ro...\"",
+      "message": "Revert \"Add egg 🥚\"\n\nThis reverts commit 612e82e44a77cad11c8d40d4f91c7cbb5fb7469e.",
       "tree": {
-        "sha": "8be559508ba26ffde5211d3c0bcb657d6aad5d87",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/8be559508ba26ffde5211d3c0bcb657d6aad5d87"
+        "sha": "4018cf33862b5caafd26df69214d4c24681cd105",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/4018cf33862b5caafd26df69214d4c24681cd105"
       },
-      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
+      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -187,90 +200,90 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
-    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/b66cc6844317bb9cd6433c02e62ca007dd10cd38",
-    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/b66cc6844317bb9cd6433c02e62ca007dd10cd38/comments",
+    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/comments",
     "author": {
-      "login": "4lwayz",
-      "id": 359682649,
-      "node_id": "U_kgDOFXBSWQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/359682649?v=4",
+      "login": "NanoTrasen-Inc",
+      "id": 1747249,
+      "node_id": "MDQ6VXNlcjE3NDcyNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1747249?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/4lwayz",
-      "html_url": "https://github.com/4lwayz",
-      "followers_url": "https://api.github.com/users/4lwayz/followers",
-      "following_url": "https://api.github.com/users/4lwayz/following{/other_user}",
-      "gists_url": "https://api.github.com/users/4lwayz/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/4lwayz/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/4lwayz/subscriptions",
-      "organizations_url": "https://api.github.com/users/4lwayz/orgs",
-      "repos_url": "https://api.github.com/users/4lwayz/repos",
-      "events_url": "https://api.github.com/users/4lwayz/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/4lwayz/received_events",
+      "url": "https://api.github.com/users/NanoTrasen-Inc",
+      "html_url": "https://github.com/NanoTrasen-Inc",
+      "followers_url": "https://api.github.com/users/NanoTrasen-Inc/followers",
+      "following_url": "https://api.github.com/users/NanoTrasen-Inc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NanoTrasen-Inc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NanoTrasen-Inc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NanoTrasen-Inc/subscriptions",
+      "organizations_url": "https://api.github.com/users/NanoTrasen-Inc/orgs",
+      "repos_url": "https://api.github.com/users/NanoTrasen-Inc/repos",
+      "events_url": "https://api.github.com/users/NanoTrasen-Inc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NanoTrasen-Inc/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false
     },
     "committer": {
-      "login": "4lwayz",
-      "id": 359682649,
-      "node_id": "U_kgDOFXBSWQ",
-      "avatar_url": "https://avatars.githubusercontent.com/u/359682649?v=4",
+      "login": "NanoTrasen-Inc",
+      "id": 1747249,
+      "node_id": "MDQ6VXNlcjE3NDcyNDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1747249?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/4lwayz",
-      "html_url": "https://github.com/4lwayz",
-      "followers_url": "https://api.github.com/users/4lwayz/followers",
-      "following_url": "https://api.github.com/users/4lwayz/following{/other_user}",
-      "gists_url": "https://api.github.com/users/4lwayz/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/4lwayz/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/4lwayz/subscriptions",
-      "organizations_url": "https://api.github.com/users/4lwayz/orgs",
-      "repos_url": "https://api.github.com/users/4lwayz/repos",
-      "events_url": "https://api.github.com/users/4lwayz/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/4lwayz/received_events",
+      "url": "https://api.github.com/users/NanoTrasen-Inc",
+      "html_url": "https://github.com/NanoTrasen-Inc",
+      "followers_url": "https://api.github.com/users/NanoTrasen-Inc/followers",
+      "following_url": "https://api.github.com/users/NanoTrasen-Inc/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NanoTrasen-Inc/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NanoTrasen-Inc/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NanoTrasen-Inc/subscriptions",
+      "organizations_url": "https://api.github.com/users/NanoTrasen-Inc/orgs",
+      "repos_url": "https://api.github.com/users/NanoTrasen-Inc/repos",
+      "events_url": "https://api.github.com/users/NanoTrasen-Inc/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NanoTrasen-Inc/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false
     },
     "parents": [
       {
-        "sha": "54496c436d8c337ff11e5af7ee1ac25cd6ed8178",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/54496c436d8c337ff11e5af7ee1ac25cd6ed8178",
-        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/54496c436d8c337ff11e5af7ee1ac25cd6ed8178"
+        "sha": "612e82e44a77cad11c8d40d4f91c7cbb5fb7469e",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/612e82e44a77cad11c8d40d4f91c7cbb5fb7469e",
+        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/612e82e44a77cad11c8d40d4f91c7cbb5fb7469e"
       }
     ],
     "stats": {
-      "total": 4,
-      "additions": 2,
-      "deletions": 2
+      "total": 2,
+      "additions": 1,
+      "deletions": 1
     },
     "files": [
       {
-        "sha": "4eba4b29d3b0fff2ae2e08d812363962b16ca53e",
-        "filename": "data/pinned.json",
+        "sha": "f83c4aefc69e18026863b9a1bde2075c2076f1d3",
+        "filename": "index.html",
         "status": "modified",
-        "additions": 2,
-        "deletions": 2,
-        "changes": 4,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data%2Fpinned.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/b66cc6844317bb9cd6433c02e62ca007dd10cd38/data%2Fpinned.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Fpinned.json?ref=b66cc6844317bb9cd6433c02e62ca007dd10cd38",
-        "patch": "@@ -2,7 +2,7 @@\n   \"show\": true,\n   \"name\": \"4lwayz\",\n   \"avatar\": \"assets/img/4lwayz-2.jpg\",\n-  \"text\": \"Anyone saying they have gameplay over +10 FPS is probably lying, we haven't found any evidence that someone has reached that point.\",\n+  \"text\": \"Anyone saying they have gameplay over +10 FPS (in free roam) is probably lying, we haven't found any evidence that someone has reached that point.\",\n   \"gif\": \"assets/img/pinned/whiplash.gif\",\n-  \"updated\": \"2026-11-25T18:49:02Z\"\n+  \"updated\": \"2026-11-25T18:57:31Z\"\n }"
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/index.html",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/index.html",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/index.html?ref=cea45b450844d68f18fad7ec7ccde1e9e06e2f61",
+        "patch": "@@ -315,7 +315,7 @@ <h3 data-i18n=\"method.gwTitle\">Groundwork, weighted</h3>\n     <div class=\"wrap footer-inner\">\n       <div>\n         <a class=\"brand brand-sm\" href=\"#top\"><span>PortWatch<b>VI</b></span></a>\n-        <p data-i18n=\"footer.disclaimer\">Fan-made tracker. Not affiliated with or endorsed by Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and related marks belong to their owners. No game files, keys or executables are hosted or linked here. 🥚</p>\n+        <p data-i18n=\"footer.disclaimer\">Fan-made tracker. Not affiliated with or endorsed by Rockstar Games, Take-Two or Microsoft. Grand Theft Auto and related marks belong to their owners. No game files, keys or executables are hosted or linked here.</p>\n       </div>\n       <div class=\"footer-meta\">\n         <p><span data-i18n=\"footer.data\">Data:</span> <a href=\"data/tracker.json\">tracker.json</a><span data-i18n=\"footer.dataTail\">, refreshed every 3 hours by the scout.</span></p>"
       }
     ]
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"64a52d57fafef7299cc0a5e19d9b7e6670f5f3561c69634258c3494e6a266f35\"",
-      "hash": "4bbb5a539d484b78d0f98282a23cd307f09fc5d2a984b9570a3aa5426372c6a1"
+      "etag": "W/\"e0e7eabb87d0a24430707ed3d7b9028ed4a476d6aa09bd6da353b77b5b03ac83\"",
+      "hash": "11cca8751efc06c02315478008ba57b6a9a3a049d90b683d48c4929d72ad2c6f"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
-      "etag": "W/\"9975cb573a5ecc81b70bb9719cb010db\"",
-      "hash": "84fa0e23e72104558a670880b29c1760026acd9cfa2f2de812813905449501ad"
+      "etag": "W/\"5b8ee38c064ebe223801b028f2dd4797\"",
+      "hash": "e91417f7028b02d9da4bcefb01e7eead1c860a996a4379517aaf8a79254b109f"
     },
     "https://portwatch-vi.xyz/data/tracker.json": {
-      "etag": "W/\"7186125879b4b557811ad69bcf45729c\"",
-      "hash": "1e344f5715b36827627e4445973f035754bdbd6b40317956ca987078bfa5f8d4"
+      "etag": "W/\"a0b9061e1dc663c60d56ee1e658a0942\"",
+      "hash": "f724c3a93ed8aeb7dba2c735db8bca1293117a0b7021b1fac454007ae526f30c"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/a1397083b4d567d587c248aeb28eae76516ddb4f/data/pinned.json": {
       "etag": "W/\"f7e633f37a6fbe54cfc2b3b0953f893eff7d017026e24b44dd1cb257e2e0b257\"",
@@ -285,8 +298,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b072f91-d5\"",
-      "hash": "8b16c6bd2a447d4a2295f2adc182525494d10a3d709dd106ce3d69d9dd1328cb"
+      "etag": "\"6b073365-d5\"",
+      "hash": "27149f227f50e921766f0b68f0be36d81307fdaae7fb68fc0378c133b2465bfa"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",
@@ -347,6 +360,18 @@
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/b66cc6844317bb9cd6433c02e62ca007dd10cd38/assets/i18n/en.json": {
       "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
       "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/data/pinned.json": {
+      "etag": "W/\"222c1c691bc89394cde0e2d3024e35c59321657ec5d2cbd2b338639eb5089ffd\"",
+      "hash": "e91417f7028b02d9da4bcefb01e7eead1c860a996a4379517aaf8a79254b109f"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/assets/i18n/en.json": {
+      "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
+      "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/cea45b450844d68f18fad7ec7ccde1e9e06e2f61/data/tracker.json": {
+      "etag": "W/\"3b8f10cbc36c65839c194b1415f721db5eccb3dcb63f2f13a70fd22a7ce3dd77\"",
+      "hash": "f724c3a93ed8aeb7dba2c735db8bca1293117a0b7021b1fac454007ae526f30c"
     }
   }
 }
