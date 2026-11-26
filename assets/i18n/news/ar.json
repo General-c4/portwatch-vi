@@ -39,10 +39,6 @@
           "source": "Platform: AMD Radeon RX 7900 XTX, Windows x64",
           "ar": "المنصة: AMD Radeon RX 7900 XTX، نظام Windows بمعمارية x64"
         },
-        "highlights.2": {
-          "source": "The open world looks close to the retail game and plays through missions",
-          "ar": "يبدو العالم المفتوح قريبًا من النسخة النهائية للمستهلك مع إمكانية لعب المهمات"
-        },
         "highlights.4": {
           "source": "Builds from source with its own Setup.cmd; no prebuilt downloads; GPL-3.0",
           "ar": "يُبنى من المصدر باستخدام ملف Setup.cmd الخاص به؛ لا توجد تنزيلات مسبقة البناء؛ ترخيص GPL-3.0"
