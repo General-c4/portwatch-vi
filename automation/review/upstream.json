@@ -1,10 +1,41 @@
 {
-  "upstream": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "base": "a1397083b4d567d587c248aeb28eae76516ddb4f",
+  "upstream": "f6c65f7c0afc24eb1fc1881a3ba0ac574219d96e",
+  "base": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
   "files": [
-    "EDITOR.md"
+    "EDITOR.md",
+    "assets/css/style.css",
+    "assets/i18n/en.json",
+    "assets/i18n/es.json",
+    "assets/i18n/pt-BR.json",
+    "assets/img/efforts/avatarmanz.jpg",
+    "assets/img/efforts/cgbj.png",
+    "assets/img/nanotrasen-logo.png",
+    "assets/img/pinned/2026-11-26-belo-overlay.png",
+    "assets/img/pinned/whiplash.gif",
+    "assets/js/app.js",
+    "assets/js/config.js",
+    "assets/js/news-shared.js",
+    "assets/js/pinned.js",
+    "dashboard/index.html",
+    "dashboard/pinned-editor.css",
+    "dashboard/pinned-editor.js",
+    "index.html",
+    "scripts/lib/news.mjs",
+    "scripts/lib/site-build.mjs",
+    "tools/chan-scan.ps1",
+    "tools/serve.ps1"
   ],
   "conflicts": [],
-  "reasons": [],
-  "reviewRequired": false
+  "reasons": [
+    "Sensitive or structural file: assets/js/config.js",
+    "Sensitive or structural file: dashboard/index.html",
+    "Sensitive or structural file: dashboard/pinned-editor.css",
+    "Sensitive or structural file: dashboard/pinned-editor.js",
+    "Sensitive or structural file: scripts/lib/news.mjs",
+    "Sensitive or structural file: scripts/lib/site-build.mjs",
+    "Sensitive or structural file: tools/chan-scan.ps1",
+    "Sensitive or structural file: tools/serve.ps1",
+    "Patch could not be applied cleanly"
+  ],
+  "reviewRequired": true
 }
