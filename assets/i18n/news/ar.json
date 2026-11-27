@@ -200,6 +200,46 @@
           "ar": "يعمل أساسًا على بطاقات AMD؛ ويعمل أيضًا على بطاقات NVIDIA بمعدل إطارات أقل"
         }
       }
+    },
+    "pinned:current": {
+      "fields": {
+        "text": {
+          "source": "**GTA 6 MULTIPLAYER ON PC IS REAL. PortWatch has confirmed it.** 🔥🔥🔥\n\nHoly shit. Players, cars and proximity voice chat, all at a stable 25-30 fps.\n\nWatch it here:\nhttps://x.com/4lwayz_/status/2126083366600724566",
+          "ar": "**GTA 6 MULTIPLAYER ON PC IS REAL. وقد أكد PortWatch ذلك.** 🔥🔥🔥\n\nشيء مذهل. لاعبون وسيارات ومحادثة صوتية حسب التقارب، كل ذلك بمعدل إطارات مستقر يبلغ 25-30 fps.\n\nشاهده هنا:\nhttps://x.com/4lwayz_/status/2126083366600724566"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQeEJzVy1lR29zMmNYb3pxT28xWHYzWG5LTm9ySHZuRGZfdXVPR0FrUmxFcVVoODZad2pSdGczc3lyOE55QjBfc3JLMW81Q0VlOEttOHMyT1ZJZHBUcTVmaFczc1FTWG5nQ05TeGRsSlhnVjZhN1dFbnZvclh1aXdmS3hpMFhIc2NIejRQVEE0MS12NmNfNFJKenV4Z0JpNUJPVFpj0gGoAUFVX3lxTFBDQVM2NkRFblJ1TGZqNkE5RTE1eHF3Z3J4cDJzYW51MnVJb0UzNUtsZXJQdTczTUJ5VjZ0WldaRFFaWExLRUgwYkZvUlJ6aUYzckR5ZGNZYWlPUF9ncl9jWkhOUGZseWxXVzRuVzE5aGxlNThWV3gtWjN5dVFueHhMVHFLU1FGb09BTE1PaHlMNXIxVW9tYkFiNlM2WlhqSkRIQTZJeWk5dQ?oc=5": {
+      "fields": {
+        "title": {
+          "source": "GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges",
+          "ar": "نسخ GTA 6 التي يطورها المعجبون تصل إلى 20 FPS على PC، لكنها ما تزال بحاجة إلى مزيد من التحسين"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxPNzFncERzMlFvZDlNd1ZyelBZeUNNNlh5d0xDTEZ2REFzLVlraDc2N0VlZzZWVEdJREhMSXg0TjlaUHljMlh5YUlJN204VVo0ZUQyQ1d5MmZYVHpFeWlHZDlLMWptMjV0OHdjc0RHakgyekVpWG02eE01alowU2VCaWoxZW5rU0xlVmFrR0tDT2dRTV9GYm1uZ1dha3h0bUZ4TWh5aWVlUGUyMklKV1RpLTZR?oc=5": {
+      "fields": {
+        "title": {
+          "source": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
+          "ar": "نسخ GTA 6 المخصصة لـ PC والمطورة بمساعدة الذكاء الاصطناعي تقوم الآن بتصير الرسوم من داخل اللعبة رغم حملة Take-Two الصارمة"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdTRLQ2Fka0NqbWFUTTVsOFdXUDYzaFJuZDBQWEZGQWgwWGdlYnc1UHNueFBGMnBnS21FSWZtLUJ1UTdYdGZ6Zm1nNEFZX24waGwwT1F2WjRvWFBJWEF0N0tFWFpta291cFhFSlg4NDRQRlgzWDZ2QXI1Y1MxV0VmeklTVG9HWUs2UEVteXRVTTgxQ191cU5na2dnX290MmxORWhhTGxGdU1tcDllTVVBVFN5M3BWbTlLUVA4ZkhOejBLQjA?oc=5": {
+      "fields": {
+        "title": {
+          "source": "After removing GTA 6 PC ports, GitHub celebrates app popular in PS5 piracy groups",
+          "ar": "بعد إزالة نسخ GTA 6 المخصصة لـ PC، منصة GitHub تشيد بتطبيق شائع في مجموعات قرصنة PS5"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MSENnem9iM3RCUE9hY2dXenBRMGhyeFFpNHR1T0FOcFVZd1JVOGttWURZNVZZczUwQUMwM1hOWUVTd2RDVlpHY2ZNdHpvMl85?oc=5": {
+      "fields": {
+        "title": {
+          "source": "GTA 6 runs on PC at up to 44 FPS",
+          "ar": "لعبة GTA 6 تعمل على PC بمعدل يصل إلى 44 FPS"
+        }
+      }
     }
   }
 }
