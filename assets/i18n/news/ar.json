@@ -240,6 +240,38 @@
           "ar": "لعبة GTA 6 تعمل على PC بمعدل يصل إلى 44 FPS"
         }
       }
+    },
+    "headline:https://news.google.com/rss/articles/CBMioAFBVV95cUxPR0tYaFdyX1JHQml4UmNVVG8yNmZiRDFmNGhnMEFIcy1zVmF0WERWUWxidHRzWlFGQmY0am9Ma1lpWjNLYjRIN2pEVDdaTEJmcFJTSTZzeEw1TC00TUJ6YWNuVzU0eEhGUThHMWVtMWl1aUZCR1J5QnF5RVU0eE95WGtVbnlidGhBNVQyZ0k1T1piZkt5MUVLaXVoQ0VNM2Zp?oc=5": {
+      "fields": {
+        "title": {
+          "source": "GTA 6 Graphics Settings Leak: 4 Consoles, 0 Confirmed",
+          "ar": "تسريب إعدادات رسوميات GTA 6: 4 منصات ألعاب، و0 مؤكد"
+        }
+      }
+    },
+    "headline:https://www.tweaktown.com/news/114929/gta-6-pc-port-now-has-multiplayer-running-at-30fps/index.html": {
+      "fields": {
+        "title": {
+          "source": "GTA 6 PC port now has multiplayer running at 30FPS",
+          "ar": "نسخة GTA 6 المخصصة لـ PC تشغّل الآن اللعب الجماعي بمعدل 30FPS"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjcjBadzNBeHJLZ2lLUHBqWnp2aHhPU2JORHpNdmxKeG5ZdTM3RU5zOU5KbmdaRzM1bXY2VVB6cFFKTTR6UGtYeFQxRkNfSldPYVJEdVU2Q0xQRENDSXc1d0lvQ0NtSnhJ?oc=5": {
+      "fields": {
+        "title": {
+          "source": "The unofficial GTA 6 PC port CGBJ posted a Windows launcher on 26 November and its GitHub repository now returns 404 for reasons unknown, with GitHub publishing no takedown notice naming it, while PortWatchVI relays a 25fps average in gameplay",
+          "ar": "نشر مشروع النسخة غير الرسمية CGBJ لـ GTA 6 على PC مشغل Windows في 26 نوفمبر، وأصبح مستودعه على GitHub يعيد الآن الخطأ 404 لأسباب غير معروفة، دون أن تنشر GitHub أي إشعار إزالة يذكره بالاسم، بينما ينقل PortWatchVI متوسط أداء يبلغ 25fps أثناء اللعب"
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMG1oaE9Mam5tU1JtRVZOZ3l6M3ptY2J4N3lxSU5sT29HY054ZzdqWFZXamVBWHEzd3BCX1d2R2ctNWg1ekhPZHI3X0xUSU8yQW5WQWo0TWVsS0pBdk1WT3MtWGJxU2RZZGtZeERQcVNCMGVheEQwTFlwWnZFOUlXMzVoYjdsS1A4a0JzWFJSQ2pTaGlVOHF0RUtab3lEZmR0WFNNRjBBc1g?oc=5": {
+      "fields": {
+        "title": {
+          "source": "GitHub Deletes Post Celebrating GTA 6-Fueled Surge in PS5 Emulator’s Popularity",
+          "ar": "GitHub تحذف منشوراً يحتفي بالارتفاع الكبير في شعبية محاكي PS5 المدفوع بـ GTA 6"
+        }
+      }
     }
   }
 }

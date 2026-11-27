@@ -276,32 +276,57 @@
       "source": "GTA 6 runs on PC at up to 44 FPS",
       "ar": "لعبة GTA 6 تعمل على PC بمعدل يصل إلى 44 FPS",
       "model": "gemini-3.6-flash"
+    },
+    "9b74861fb9f65cc4bc3148b0c0f216af5a9986c5a80e8598a9b79da5a3b4b93b": {
+      "source": "GTA 6 Graphics Leak: 4 Consoles, 0 Rockstar Confirmations",
+      "ar": "تسريب رسوميات GTA 6: 4 منصات ألعاب، و0 تأكيدات من Rockstar",
+      "model": "gemini-3.6-flash"
+    },
+    "3b0d8ef3dfdd716077a263ab239d1ef398e89bec7bc40642195e85172256d559": {
+      "source": "GTA 6 Graphics Settings Leak: 4 Consoles, 0 Confirmed",
+      "ar": "تسريب إعدادات رسوميات GTA 6: 4 منصات ألعاب، و0 مؤكد",
+      "model": "gemini-3.6-flash"
+    },
+    "8673f41a8f0edd58f23adb3223028c6d1da75b392db164388fbceeac675aabda": {
+      "source": "GTA 6 PC port now has multiplayer running at 30FPS",
+      "ar": "نسخة GTA 6 المخصصة لـ PC تشغّل الآن اللعب الجماعي بمعدل 30FPS",
+      "model": "gemini-3.6-flash"
+    },
+    "74c2e0db8c522ddaf85a9f8378bd5decdf46970773aabe47c0d6d82957d55c6b": {
+      "source": "The unofficial GTA 6 PC port CGBJ posted a Windows launcher on 26 November and its GitHub repository now returns 404 for reasons unknown, with GitHub publishing no takedown notice naming it, while PortWatchVI relays a 25fps average in gameplay",
+      "ar": "نشر مشروع النسخة غير الرسمية CGBJ لـ GTA 6 على PC مشغل Windows في 26 نوفمبر، وأصبح مستودعه على GitHub يعيد الآن الخطأ 404 لأسباب غير معروفة، دون أن تنشر GitHub أي إشعار إزالة يذكره بالاسم، بينما ينقل PortWatchVI متوسط أداء يبلغ 25fps أثناء اللعب",
+      "model": "gemini-3.6-flash"
+    },
+    "c3cc896568e36814caf7850657f6b09d2bf0c66640f785b83d028ff64b1ef70a": {
+      "source": "GitHub Deletes Post Celebrating GTA 6-Fueled Surge in PS5 Emulator’s Popularity",
+      "ar": "GitHub تحذف منشوراً يحتفي بالارتفاع الكبير في شعبية محاكي PS5 المدفوع بـ GTA 6",
+      "model": "gemini-3.6-flash"
     }
   },
   "pending": {
     "article:2026-11-26-multiplayer-running": {
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
-      "attempts": 2,
-      "nextAttemptAt": "2026-11-27T02:28:53.162Z",
+      "attempts": 4,
+      "nextAttemptAt": "2026-11-27T11:44:21.998Z",
       "lastError": "protected_facts_or_language_invalid"
     }
   },
   "daily": {
     "day": "2026-11-27",
-    "requests": 3,
-    "accountedTokens": 9561,
-    "inputTokens": 5065,
-    "outputTokens": 1733,
-    "thinkingTokens": 2763
+    "requests": 6,
+    "accountedTokens": 19676,
+    "inputTokens": 9981,
+    "outputTokens": 3291,
+    "thinkingTokens": 6404
   },
   "totals": {
-    "requests": 27,
+    "requests": 30,
     "successful": 0,
-    "failed": 2,
+    "failed": 4,
     "cachedFields": 0,
-    "inputTokens": 33069,
-    "outputTokens": 14004,
-    "thinkingTokens": 17496
+    "inputTokens": 37985,
+    "outputTokens": 15562,
+    "thinkingTokens": 21137
   },
   "dynamic": {
     "version": 1,
@@ -970,62 +995,6 @@
         "lastError": "service_unavailable",
         "nextAttemptAt": "2026-11-26T19:26:28.074Z"
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMidEFVX3lxTFBUTHdpZm5Da0ZhTnQ1SGhuZTVWM3JoU1k3NWp0T3hMX1Q0RS1pOVFSNVhnaHkzRFJCNWo1WkJOX0lpS2VKSnZXRUpyUTZWQkxUb2c5T1lFb3FSeXJ3NlA5ek9pMFdKSXhFUlN5Q2JJQ1ZkYlJV?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMidEFVX3lxTFBUTHdpZm5Da0ZhTnQ1SGhuZTVWM3JoU1k3NWp0T3hMX1Q0RS1pOVFSNVhnaHkzRFJCNWo1WkJOX0lpS2VKSnZXRUpyUTZWQkxUb2c5T1lFb3FSeXJ3NlA5ek9pMFdKSXhFUlN5Q2JJQ1ZkYlJV?oc=5",
-        "field": "title",
-        "sourceHash": "edd88de4bef7bb0d378047d6fc6e8856f6e48f35bae717f067ccc9eed3889efa",
-        "attempts": 2,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": "2026-11-26T19:26:28.074Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxPRVNxV3FTM0liOVQ5dzdkX09oZ2tlb3VMLTVXZTluU3R4N1EycllnS3pkWV9BNjFhODkxckFxUWpiVUNwSFJsQXNwWm43T1A1bkdpQkNPZzFfRGxlY0F5OXpmdVo3ZVM0TWRnbTBIeDJQMlpnZkphcno4NklMNFBpNFZiSW56SnpHbnBsZWQwRDM5Zw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxPRVNxV3FTM0liOVQ5dzdkX09oZ2tlb3VMLTVXZTluU3R4N1EycllnS3pkWV9BNjFhODkxckFxUWpiVUNwSFJsQXNwWm43T1A1bkdpQkNPZzFfRGxlY0F5OXpmdVo3ZVM0TWRnbTBIeDJQMlpnZkphcno4NklMNFBpNFZiSW56SnpHbnBsZWQwRDM5Zw?oc=5",
-        "field": "title",
-        "sourceHash": "630600b81f8828cf28ea3587dd5f9bcaebff4facf3a6c1371b410c49b541116d",
-        "attempts": 2,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": "2026-11-26T19:26:28.074Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPNnFfSkFEeW4yQ3VaY1ZkRUgwVURwUk8tQmRtS3I4UVF5WG53WGxJbGxIbGRiTEVYY0hlNG5nQnlYQ2FCNFpGemR2T20tRVRacVdTOWxJYXRQOEQ1TmMwWGg1SlQzeG82d0ZFWmlYS3JjVUZBNVY2X1Y1c3VBbERSd29kS1hpQTg?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPNnFfSkFEeW4yQ3VaY1ZkRUgwVURwUk8tQmRtS3I4UVF5WG53WGxJbGxIbGRiTEVYY0hlNG5nQnlYQ2FCNFpGemR2T20tRVRacVdTOWxJYXRQOEQ1TmMwWGg1SlQzeG82d0ZFWmlYS3JjVUZBNVY2X1Y1c3VBbERSd29kS1hpQTg?oc=5",
-        "field": "title",
-        "sourceHash": "dede2a88547cb691c86bad76bab9048b93d8856b11865bbd9a34575404dff151",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-26T19:21:38.921Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMib0FVX3lxTFBYYmxwd1IzYkZmUkNWNEN4ZE83MUtXRjQ5MVp6d0hVY2hIaklFZDlPbDU0LV9jRFVaaENzX3BpVUl5VDJGX0wyeEg0NVdYQU1YOG03d2lLb1loRFJOV0FJUGZxcldrWGdVTlJCdnVtOA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMib0FVX3lxTFBYYmxwd1IzYkZmUkNWNEN4ZE83MUtXRjQ5MVp6d0hVY2hIaklFZDlPbDU0LV9jRFVaaENzX3BpVUl5VDJGX0wyeEg0NVdYQU1YOG03d2lLb1loRFJOV0FJUGZxcldrWGdVTlJCdnVtOA?oc=5",
-        "field": "title",
-        "sourceHash": "da63a219764449a5c503660992ac343c94122051c1b214f27e1466b1c11ff27e",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-26T19:21:38.921Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkM4anJRWDZFMzVzN3ZWbFFTMDkxcFI5MExQTVA1b1RLemhuYzFsakEycF9aOXdlQ1lkbWNNb2VUX1hxQTItNmRXZVY5UkZkbS1YSG5JMVY1SnBsbXNlUEdtMjYtZU5TSVdPNEFQRHY0V0NKS1c3UmxSNVlLSVBLMkJVbjBiREdfN2JKZkV1VWtLUHc2WFdZQWdHSjFwYVl5VW5WX2hn?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxPSkM4anJRWDZFMzVzN3ZWbFFTMDkxcFI5MExQTVA1b1RLemhuYzFsakEycF9aOXdlQ1lkbWNNb2VUX1hxQTItNmRXZVY5UkZkbS1YSG5JMVY1SnBsbXNlUEdtMjYtZU5TSVdPNEFQRHY0V0NKS1c3UmxSNVlLSVBLMkJVbjBiREdfN2JKZkV1VWtLUHc2WFdZQWdHSjFwYVl5VW5WX2hn?oc=5",
-        "field": "title",
-        "sourceHash": "ab3f8efdf8b245c37ede737053a21af4ecdc1de24e9d73f4085ccc2cae288261",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-26T19:21:38.921Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRlI3ZUtZLWItUlNmTkhKOWk1QlhmLUM4c3VTd18wZXZOWTlrU3U3R3NkTm9lSDNVRzRTOUp6WkxXdUJ1WEh5eGMyZjZIdFJxc3Bsc3FPZUIxS0d2Njc4ZTBKV0tyZV8xSDNMcnV0bHh2dk1pUUg2Z3J3RGk1eDRZOU1nTFVwbE8x?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRlI3ZUtZLWItUlNmTkhKOWk1QlhmLUM4c3VTd18wZXZOWTlrU3U3R3NkTm9lSDNVRzRTOUp6WkxXdUJ1WEh5eGMyZjZIdFJxc3Bsc3FPZUIxS0d2Njc4ZTBKV0tyZV8xSDNMcnV0bHh2dk1pUUg2Z3J3RGk1eDRZOU1nTFVwbE8x?oc=5",
-        "field": "title",
-        "sourceHash": "e0ef9f1a7df73c9725d416ab530fa99d9cc557ca0a0366f81bd0e13b87e64236",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-26T19:21:38.921Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihwJBVV95cUxPcTdReHhwWDFTeGxpMUpBcmZ4MWw3RnFnNFlEdUR5X2pPVnVaTDkyS0s0SjVtRUlIWl9XTFdnNzR3UGllNlBEUmpEQ0NFNlJBRE05QmJ4aDAzWk00TU9MYmNrZjFDbXQ0c3BjckNCUGtTODk3cmVfbEFqckM3ZWladnVMLU9YREt5cnJjS1UzVlpkeVl1V1oxVXlJOWVubVZYczBpVDdMQm95QnhzSE9qUU92VGg1QXZpUGVOaFFLUUg3OFc0ajJMVUlrUlBlaVVpZHpCSWhpN1AzLTg4NGxXUElKZVl0RVZFNFhBV2ZnMkpUanJvVy02RXA5TFhEa1Z6UGsyX3RvUQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihwJBVV95cUxPcTdReHhwWDFTeGxpMUpBcmZ4MWw3RnFnNFlEdUR5X2pPVnVaTDkyS0s0SjVtRUlIWl9XTFdnNzR3UGllNlBEUmpEQ0NFNlJBRE05QmJ4aDAzWk00TU9MYmNrZjFDbXQ0c3BjckNCUGtTODk3cmVfbEFqckM3ZWladnVMLU9YREt5cnJjS1UzVlpkeVl1V1oxVXlJOWVubVZYczBpVDdMQm95QnhzSE9qUU92VGg1QXZpUGVOaFFLUUg3OFc0ajJMVUlrUlBlaVVpZHpCSWhpN1AzLTg4NGxXUElKZVl0RVZFNFhBV2ZnMkpUanJvVy02RXA5TFhEa1Z6UGsyX3RvUQ?oc=5",
-        "field": "title",
-        "sourceHash": "7272ffbf7e939c9397a16ce117b8b207c1d167f46dbac7ae9586838423006c60",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-26T19:21:38.921Z"
-      },
       "[\"project:belobug\",\"highlights.1\"]": {
         "id": "project:belobug",
         "field": "highlights.1",
@@ -1154,62 +1123,6 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMixwFBVV95cUxQNXpDRllVYWdWNlk0cmJVeU5CTENmaElyb19qSlEtd0c0OWR1UHM0WHRXVTF1YWZGaVExdkNHYldzYlc5Y1R6TFd4RXdBdWVLcVBBUjN4YUhEYmpVYXRnWDgxYmQ2bFVkOTRJRmFkdzhKekt4WDFpbVk2RUg2MXdTQTBNT2Jkal9SWHp0QTdqWWxQeGVlOHdUTXpPTENxWk4tMm9QT3JZTlZURDQyMWRFcnBySXlyb2x5X2xETTNOUnllSmNwZmIw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMixwFBVV95cUxQNXpDRllVYWdWNlk0cmJVeU5CTENmaElyb19qSlEtd0c0OWR1UHM0WHRXVTF1YWZGaVExdkNHYldzYlc5Y1R6TFd4RXdBdWVLcVBBUjN4YUhEYmpVYXRnWDgxYmQ2bFVkOTRJRmFkdzhKekt4WDFpbVk2RUg2MXdTQTBNT2Jkal9SWHp0QTdqWWxQeGVlOHdUTXpPTENxWk4tMm9QT3JZTlZURDQyMWRFcnBySXlyb2x5X2xETTNOUnllSmNwZmIw?oc=5",
-        "field": "title",
-        "sourceHash": "ee5f967f143871f0ba465692569254e917fa94cba7d7cf069a26c56b5a1b43b7",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd2QzSmNNcEx5T28ySzREQ3BqcGp4cmhyVkI1UllHV19EUkNnMExGMFFFem84eUYyMS1lM0VFUkxBakZVRVdmNDhVcHRoOTg2Wld2VEprODZCRGM5RG1lSnVUbDIzXzlabkoyQzNuQ3lKcEVfUjdhS214bFZJQzd3alJval8xZnY3VVVpdzViWFJRd3NidTN0Z21YXzY3c3pIQ2xYcGRfeW4?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd2QzSmNNcEx5T28ySzREQ3BqcGp4cmhyVkI1UllHV19EUkNnMExGMFFFem84eUYyMS1lM0VFUkxBakZVRVdmNDhVcHRoOTg2Wld2VEprODZCRGM5RG1lSnVUbDIzXzlabkoyQzNuQ3lKcEVfUjdhS214bFZJQzd3alJval8xZnY3VVVpdzViWFJRd3NidTN0Z21YXzY3c3pIQ2xYcGRfeW4?oc=5",
-        "field": "title",
-        "sourceHash": "559c8b93ed13f57d517ffb2e6427f0cba3424a63ade388c2e72906ef8d4db227",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMimgFBVV95cUxOcjdoX1o4ZzFKVUtUd2xDVXoxdlUtUjlBdlBCSnozbWY3SUw1TG5OVGdZQ3Z1UEtrNFQwVWV2Tzd4djBaSVVTMWJ1eU5TQlJMRFdsY1AtcS04TVBZWDhJQ19jVnhEMG4wRjZmU2lwV3dKZUQycFpaYmR4UmI1RTA4a1B5UWNwM2hVQ2huZng1UGstZWJqUHVtM3JB0gGfAUFVX3lxTFBEbE5xQjhrTTBvclcyMEV6QlhqaWRwMExJMVN0OTdjSFp2RWNpTUhyM0ZnbUxnYmdxY2h3TVpRVHgxWTd3X1B6M1NXM0ZHM0VLWkpIR1ZKSEczc2tJTmE5azlBMHVpUjlSWEh6bVp6aGh2ZWgxdE1rMXZqTW9STm9ZUjhDWW9tWkJDZVd4bWNjRTBUb0xINkJDanVXUWg1RQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMimgFBVV95cUxOcjdoX1o4ZzFKVUtUd2xDVXoxdlUtUjlBdlBCSnozbWY3SUw1TG5OVGdZQ3Z1UEtrNFQwVWV2Tzd4djBaSVVTMWJ1eU5TQlJMRFdsY1AtcS04TVBZWDhJQ19jVnhEMG4wRjZmU2lwV3dKZUQycFpaYmR4UmI1RTA4a1B5UWNwM2hVQ2huZng1UGstZWJqUHVtM3JB0gGfAUFVX3lxTFBEbE5xQjhrTTBvclcyMEV6QlhqaWRwMExJMVN0OTdjSFp2RWNpTUhyM0ZnbUxnYmdxY2h3TVpRVHgxWTd3X1B6M1NXM0ZHM0VLWkpIR1ZKSEczc2tJTmE5azlBMHVpUjlSWEh6bVp6aGh2ZWgxdE1rMXZqTW9STm9ZUjhDWW9tWkJDZVd4bWNjRTBUb0xINkJDanVXUWg1RQ?oc=5",
-        "field": "title",
-        "sourceHash": "088cfa47d1001a8e2ff24af489ccd2f2a9010de1905f5c9b321e40c8b1445f40",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiigJBVV95cUxOVmdQdmtBbHJ2NnB4UEtKb0hYSmo5Z3J3V2wtX0xVTlFNeFdBNW9HUkhkWkd2bTJfbXB5ZkZUSHl3RUQwNFdKSUZTV3VGWlBxQjBZazZJcXhLc05PUnZMX2dNNW1jamFPcnpKQjBGZV9fekt3NXZQdkFZZEpCUjRpZ3hrMFVxaHBqM2xlcnM2OWptYkZZTVh0Q21pUFFJb1ZiT0l2Y2lXM1VmdXhlYTJoWVFmM3NrWnBTYTB4bTFIeXUzckpXM0ZSdk9iZlBWYm5ZQlVrNEpfOWY0cVJLNTFIRjlWRGhLRmxQdkdSNER3TVBUY3lIY09vSDBQc1VudS1BLXZiWEFWQ0xwdw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiigJBVV95cUxOVmdQdmtBbHJ2NnB4UEtKb0hYSmo5Z3J3V2wtX0xVTlFNeFdBNW9HUkhkWkd2bTJfbXB5ZkZUSHl3RUQwNFdKSUZTV3VGWlBxQjBZazZJcXhLc05PUnZMX2dNNW1jamFPcnpKQjBGZV9fekt3NXZQdkFZZEpCUjRpZ3hrMFVxaHBqM2xlcnM2OWptYkZZTVh0Q21pUFFJb1ZiT0l2Y2lXM1VmdXhlYTJoWVFmM3NrWnBTYTB4bTFIeXUzckpXM0ZSdk9iZlBWYm5ZQlVrNEpfOWY0cVJLNTFIRjlWRGhLRmxQdkdSNER3TVBUY3lIY09vSDBQc1VudS1BLXZiWEFWQ0xwdw?oc=5",
-        "field": "title",
-        "sourceHash": "281bddf6fe9ec2d6d08940b2d69ede3178021fc79a74b118c4c5389e69d8c906",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMimwFBVV95cUxOTEo4UTVvaFJ3MmVlTDI1cndSaGJCVHBBSndCLUVlQktLVDI5OHFtbFhfenV1aXU3YXpNQ0ZVUm1mdHFpTzRFTmtHTWFjZ05KTmJIVEJhX1UwUnB1c0JEb21FQ3BVbjc1U0xxWGRwTl9laV8xSV91OVVfT3d4M1RuMzRBZXAtMmVMYno3eENnelZHbzhfdm56Q1piOA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMimwFBVV95cUxOTEo4UTVvaFJ3MmVlTDI1cndSaGJCVHBBSndCLUVlQktLVDI5OHFtbFhfenV1aXU3YXpNQ0ZVUm1mdHFpTzRFTmtHTWFjZ05KTmJIVEJhX1UwUnB1c0JEb21FQ3BVbjc1U0xxWGRwTl9laV8xSV91OVVfT3d4M1RuMzRBZXAtMmVMYno3eENnelZHbzhfdm56Q1piOA?oc=5",
-        "field": "title",
-        "sourceHash": "33228b766e60981158748ffe71472afb797761b59e775d6a827e53b296caa47b",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-us/entertainment/gaming/rockstar-boss-was-praying-that-gta-6s-big-chapter-1-twist-wouldnt-leak/ar-AA2ijrMm\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-us/entertainment/gaming/rockstar-boss-was-praying-that-gta-6s-big-chapter-1-twist-wouldnt-leak/ar-AA2ijrMm",
-        "field": "title",
-        "sourceHash": "457c5684233698bea2142df918d87d625abbc47051db3e52c9c01ff16ebd096d",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 55).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 55).",
-        "field": "text",
-        "sourceHash": "3b712b6c725a364f4d57b91773496663974d30638932ff97b80a0f60d5c6d70d",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
       "[\"change:2026-11-27:new:Scout spotted felixwaschosenn/littlethings-build (possible effort, substance 67).\",\"text\"]": {
         "id": "change:2026-11-27:new:Scout spotted felixwaschosenn/littlethings-build (possible effort, substance 67).",
         "field": "text",
@@ -1226,26 +1139,10 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-27:new:Scout spotted megaliv3/DISABLED-ACO-NO-PATCHING-GTA-6 (possible effort, substance 58).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted megaliv3/DISABLED-ACO-NO-PATCHING-GTA-6 (possible effort, substance 58).",
-        "field": "text",
-        "sourceHash": "e2585a8df23a79f925771588cf5603b4ac5ddcc5e4e883f97fa765d193ce7525",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
       "[\"change:2026-11-27:new:Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).\",\"text\"]": {
         "id": "change:2026-11-27:new:Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).",
         "field": "text",
         "sourceHash": "746ae51a2275464f2608a07ffc7a3e0b31c92e50397ed77dc307def58ebc935d",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 63).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 63).",
-        "field": "text",
-        "sourceHash": "8ed1dddb1a4ab85851d203eada50a83cfafd3826db226efd3dfa463b4121b3f7",
         "attempts": 0,
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
@@ -1266,22 +1163,6 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-27:new:Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 64).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 64).",
-        "field": "text",
-        "sourceHash": "439566728460009cde5396270a48e0739ca8c0939699daf63564d8429866cd74",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted Zarexdevs/GMAC (possible effort, substance 47).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted Zarexdevs/GMAC (possible effort, substance 47).",
-        "field": "text",
-        "sourceHash": "e3d9ccf6c52877a258f900e4f94e62a02957c91554ff5f04322c098edb9b921e",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
       "[\"project:tuxbox\",\"claims.0.text\"]": {
         "id": "project:tuxbox",
         "field": "claims.0.text",
@@ -1289,15 +1170,111 @@
         "attempts": 0,
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
+      },
+      "[\"headline:https://www.el-balad.com/17070362\",\"title\"]": {
+        "id": "headline:https://www.el-balad.com/17070362",
+        "field": "title",
+        "sourceHash": "5457f50da3905fe78bd63aae0cc1fe75572f222831735e574d1552daf22f7324",
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-27T11:09:47.070Z"
+      },
+      "[\"headline:https://beebom.com/can-you-play-gta-6-on-pc/\",\"title\"]": {
+        "id": "headline:https://beebom.com/can-you-play-gta-6-on-pc/",
+        "field": "title",
+        "sourceHash": "15df555acf53c0debc0f022ae98c82c01d60d3638996af12b9be316fe98c7339",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVDNIUm5peVdPekJBMjNiRHAycXI2Q1hOVTVWcVlvMFMzeVB2VHFaUzdkdk9temJIU2FyOURRVlFET2NLLVJTNjRrVGFVUjBoY0FsUDY1SllJT1l6dThWYUtfSVFqN1pwczBnWHgzX3E4SWpFcl96dDhsaGI?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVDNIUm5peVdPekJBMjNiRHAycXI2Q1hOVTVWcVlvMFMzeVB2VHFaUzdkdk9temJIU2FyOURRVlFET2NLLVJTNjRrVGFVUjBoY0FsUDY1SllJT1l6dThWYUtfSVFqN1pwczBnWHgzX3E4SWpFcl96dDhsaGI?oc=5",
+        "field": "title",
+        "sourceHash": "ceb490e020dc47a084adfcb2a0dd8d276327bf9c1c48005217c1657982d86388",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/news/other/playstation-lost-gta-6-got-leaked-again/vi-AA2ijZNy\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/news/other/playstation-lost-gta-6-got-leaked-again/vi-AA2ijZNy",
+        "field": "title",
+        "sourceHash": "bf22de81611ab8bfa5b6d97406cfa4f617d0eb6c875a4434adfb71531889f2a4",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZFFTOVdlM09paWJxQi16VncxcTJSS3lIOUlWN2h6MElkdWRmTE1vdmk4bkNqVHIwdDZwbjJpV08zU0l1dEhKVTdybDUxRTVTdFpfR2MyQ3lEUVYtNEsyd1ZqNVJPOWg5Q1N6OWNGcUR6Tlk3SV9QVHJWUkE5QzZJaHlZRFFlUXFPbHNla01ISjEyQlVBRW5PM2FkZTduWmlSbjdpTThwMDdrRHUwVEppMEpNa3hNZXpDcUZXamxXb3I?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZFFTOVdlM09paWJxQi16VncxcTJSS3lIOUlWN2h6MElkdWRmTE1vdmk4bkNqVHIwdDZwbjJpV08zU0l1dEhKVTdybDUxRTVTdFpfR2MyQ3lEUVYtNEsyd1ZqNVJPOWg5Q1N6OWNGcUR6Tlk3SV9QVHJWUkE5QzZJaHlZRFFlUXFPbHNla01ISjEyQlVBRW5PM2FkZTduWmlSbjdpTThwMDdrRHUwVEppMEpNa3hNZXpDcUZXamxXb3I?oc=5",
+        "field": "title",
+        "sourceHash": "97bd0560b3a6b520a3609c1aa82ef7aa5a18b643e8ffea339f0233feedc3a332",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVmg4X0NMQkQ0aWNDOERiQUNvLWRKcFZnWkxwbVlhS3dhS2JqOU1FeHk4VWYtVEw0b0tuYjFxamU3TDYtYkdRT2ZPZnhxQVEzYkRTcUlCN0ZkSFB2aERKa3JuN2poLTgwNkZCYnBmbWF3SHB4eUdYZnd2VVhHYklPVTVVV2Y?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVmg4X0NMQkQ0aWNDOERiQUNvLWRKcFZnWkxwbVlhS3dhS2JqOU1FeHk4VWYtVEw0b0tuYjFxamU3TDYtYkdRT2ZPZnhxQVEzYkRTcUlCN0ZkSFB2aERKa3JuN2poLTgwNkZCYnBmbWF3SHB4eUdYZnd2VVhHYklPVTVVV2Y?oc=5",
+        "field": "title",
+        "sourceHash": "7d26e5addc2e26d6d4682aad5dc574fca481e10f238a1e2d70f353a1c1d68715",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.xda-developers.com/microsoft-github-spotlighted-ps5-to-pc-translation-layer-gta-6-dmca-strikes-deleted-post/\",\"title\"]": {
+        "id": "headline:https://www.xda-developers.com/microsoft-github-spotlighted-ps5-to-pc-translation-layer-gta-6-dmca-strikes-deleted-post/",
+        "field": "title",
+        "sourceHash": "1f904e0283d81ff39851787e12ea2bb10aaf95f2114b4557389d4f692599f7f0",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMigwFBVV95cUxQZDFuX1Q3WXFEMXVtT2tFaEJPYzRoY2ZKS09uQWNCNFBRX3hNbzJITlZ6SmJNZE1oaEYwSUdGOGVYT3g3cWZ2dnppUl9zbDNoSzJWWG5pUVRUTFV2UVVtMlRNVk03WGlxRWpYZFhjSlhibWRPYUdSWGtNZ1I0YmZjMzE2NA?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMigwFBVV95cUxQZDFuX1Q3WXFEMXVtT2tFaEJPYzRoY2ZKS09uQWNCNFBRX3hNbzJITlZ6SmJNZE1oaEYwSUdGOGVYT3g3cWZ2dnppUl9zbDNoSzJWWG5pUVRUTFV2UVVtMlRNVk03WGlxRWpYZFhjSlhibWRPYUdSWGtNZ1I0YmZjMzE2NA?oc=5",
+        "field": "title",
+        "sourceHash": "ccc06e818d4dca3d94eb546cece24e238f9aeb1a497170555a13e5ec3f720e22",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted trustno1-coder/VIctory-NVIDIA (possible effort, substance 68).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted trustno1-coder/VIctory-NVIDIA (possible effort, substance 68).",
+        "field": "text",
+        "sourceHash": "911f29c6d60bb1505bebe5abe15fe27fe3ae8fdffb73d380c7c0279fe363db57",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 67).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 67).",
+        "field": "text",
+        "sourceHash": "f0779558ab30780bce527d7c9dcbce55bd4aca2ea0f16b886b6d8f776c213c53",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
+        "field": "text",
+        "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).",
+        "field": "text",
+        "sourceHash": "1515cd8cc224006e409d61624a7e6b3e10f1c80e93a41d7a5105886523c9efd3",
+        "attempts": 0,
+        "lastError": "protected_facts_or_language_invalid",
+        "nextAttemptAt": null
       }
     },
     "totals": {
-      "requests": 25,
-      "translatedFields": 52,
-      "failedFields": 82,
-      "inputTokens": 29963,
-      "outputTokens": 12800,
-      "thinkingTokens": 17496
+      "requests": 26,
+      "translatedFields": 57,
+      "failedFields": 83,
+      "inputTokens": 31773,
+      "outputTokens": 13157,
+      "thinkingTokens": 21137
     }
   }
 }

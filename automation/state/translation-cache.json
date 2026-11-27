@@ -1303,5 +1303,262 @@
     "key": "Scout spotted DesignWithTommy/i95-GTA6-PC-Launcher (possible effort, substance 70).",
     "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
     "at": "2026-11-27T02:18:53.159Z"
+  },
+  "138e65d576422f7ef264dae0aab00e5324c22bc0afe3f421d32670032ddfaf42": {
+    "id": "138e65d576422f7ef264dae0aab00e5324c22bc0afe3f421d32670032ddfaf42",
+    "sourceHash": "20abcca5d2b865ee26eec7c8d0cd9caf047fc789c1a7326131e716447c6041ec",
+    "scope": "content",
+    "key": "88 commits/7d",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.806Z"
+  },
+  "612f7418e21de19eac9a4f00fe95cde5e11e832f35502330ee7b20bcaa5614d4": {
+    "id": "612f7418e21de19eac9a4f00fe95cde5e11e832f35502330ee7b20bcaa5614d4",
+    "sourceHash": "43d5cf31cad9b1d0775539cb2d8fa305cd43fdff3914ba2fc5d3d37397e309a6",
+    "scope": "content",
+    "key": "46 commits/7d",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.806Z"
+  },
+  "8dc3dec77e052ff9b7918e76d7acc1ce23797f05619259f07fa175a86a11a381": {
+    "id": "8dc3dec77e052ff9b7918e76d7acc1ce23797f05619259f07fa175a86a11a381",
+    "sourceHash": "aeca8009d875e6e00b746d82b56f7af238681f67bc4060d86a80b41751bccd03",
+    "scope": "content",
+    "key": "66 commits/7d",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.806Z"
+  },
+  "2437d6277c209113ae43c90a0dd2d6b43974818eca6dce1ce9f00568ebd45a6f": {
+    "id": "2437d6277c209113ae43c90a0dd2d6b43974818eca6dce1ce9f00568ebd45a6f",
+    "sourceHash": "9addc664add577e14b84b0b0bee280b727b568e0e39ef3d83c1a92b012e8075e",
+    "scope": "content",
+    "key": "29 technical terms",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.806Z"
+  },
+  "864521113d2506f9bfe7cc8cbcee9844dcc293a07b7987776e2fa7ec99127bc9": {
+    "id": "864521113d2506f9bfe7cc8cbcee9844dcc293a07b7987776e2fa7ec99127bc9",
+    "sourceHash": "b87d1e7376813929b8bfd19dd1a1f89a64b24051f107403033fbbe619d6f1260",
+    "scope": "content",
+    "key": "15 technical terms",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.806Z"
+  },
+  "7da385c7224b380de7befea6ad545add4244f184cdc3fe2b677c862256cd5092": {
+    "id": "7da385c7224b380de7befea6ad545add4244f184cdc3fe2b677c862256cd5092",
+    "sourceHash": "660c08c5503df3218a7fc3fc99b370054f7a824601dec12c16e7aee349ce43e8",
+    "scope": "content",
+    "key": "Scout spotted 0v3rr/Tequesta (possible effort, substance 91).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "6dd0db5442981d3d70bce27cb1f0f4192b84acc8b8c22787b1a2556126594995": {
+    "id": "6dd0db5442981d3d70bce27cb1f0f4192b84acc8b8c22787b1a2556126594995",
+    "sourceHash": "e3d9ccf6c52877a258f900e4f94e62a02957c91554ff5f04322c098edb9b921e",
+    "scope": "content",
+    "key": "Scout spotted Zarexdevs/GMAC (possible effort, substance 47).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "38f4d977b6e0b900f52483a7e7dd929bd238969c33e475816a2cab5f13802a65": {
+    "id": "38f4d977b6e0b900f52483a7e7dd929bd238969c33e475816a2cab5f13802a65",
+    "sourceHash": "ef79d235163c6d72e210c478c501ae2eac6d680c62f90e69f73435150eafb35f",
+    "scope": "content",
+    "key": "Scout spotted TaynanGT/Vice-Tay (possible effort, substance 77).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "ccd4194cdc93ff11b9bb05564eb8ef93ccaaa300aa06dafd3c6f4afe86da3313": {
+    "id": "ccd4194cdc93ff11b9bb05564eb8ef93ccaaa300aa06dafd3c6f4afe86da3313",
+    "sourceHash": "46449e43e77a1d7a4a9d36706e7553563ec5191d532448427d90a3e4d77c0ec2",
+    "scope": "content",
+    "key": "Scout spotted lO029byte/bgtnati (possible effort, substance 73).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "adb65e4083b29e88a9826d3f61525f4f29ee771222a070758405d293b9c6fbfa": {
+    "id": "adb65e4083b29e88a9826d3f61525f4f29ee771222a070758405d293b9c6fbfa",
+    "sourceHash": "e6ab4d2da63459309612f9a0d83ac0894bbc50b895af5bcad71e6a52d3d10381",
+    "scope": "content",
+    "key": "Scout spotted itkomarov/dirtemu (possible effort, substance 79).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "0cf90b8c435a04a302063fc58985306477ec8c4e4673d109f6a1529b0682dfb8": {
+    "id": "0cf90b8c435a04a302063fc58985306477ec8c4e4673d109f6a1529b0682dfb8",
+    "sourceHash": "f2d50c2c385f46da4aa1b51300f331bae85ff23bc41aa15fa9cf7c48130ff403",
+    "scope": "content",
+    "key": "Scout spotted Dathinel/victory-4gb (possible effort, substance 65).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "2da07bacda54179586d87838cb9c283cb7b95be26313ae8ffdae254782cf1961": {
+    "id": "2da07bacda54179586d87838cb9c283cb7b95be26313ae8ffdae254782cf1961",
+    "sourceHash": "de51973d09dde8067876936f5f719a284a7e221fa297828639bfc426fec2002e",
+    "scope": "content",
+    "key": "Scout spotted PiloteCode/PiloteBox (possible effort, substance 91).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "32284997f2e5b9b2ecdbd53b5e891bd745e6d48135708d342ecd02e2e34fab9b": {
+    "id": "32284997f2e5b9b2ecdbd53b5e891bd745e6d48135708d342ecd02e2e34fab9b",
+    "sourceHash": "0de53ef67fe1dee5ca6b7750168cff942fcc4455cabecc601518bff75846fc5e",
+    "scope": "content",
+    "key": "Scout spotted rhythmhere/rhythm-VI (possible effort, substance 50).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "eff73dc90166900f7602b9b34c04ed906bec323255a02d0e4911eed7ca5a0362": {
+    "id": "eff73dc90166900f7602b9b34c04ed906bec323255a02d0e4911eed7ca5a0362",
+    "sourceHash": "0b9de0324d7631a78ffd2611f5099599b6f1c4e6febef1802d19706093e5b7c3",
+    "scope": "content",
+    "key": "Scout spotted mavis140/mavis-9070xt (possible effort, substance 71).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.807Z"
+  },
+  "f11e41af484faa983cb52660eb31742ff28bf0c77d24454e6d46ef845a12aab1": {
+    "id": "f11e41af484faa983cb52660eb31742ff28bf0c77d24454e6d46ef845a12aab1",
+    "sourceHash": "b5be940a7087b3f9512796fb699ffbc8b6889d61b38780b90c99fee2415c77c2",
+    "scope": "content",
+    "key": "Scout spotted Kaio-Comk/projeto-lucia (possible effort, substance 73).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.808Z"
+  },
+  "495a6504ededf17f9a16c7bd81084e81f91155915b984d42d7654d0c3a7ca4b1": {
+    "id": "495a6504ededf17f9a16c7bd81084e81f91155915b984d42d7654d0c3a7ca4b1",
+    "sourceHash": "35d4b1e45fc5b99600cd80519d4d7c5b4f6ddbb4dbfa02bdd948dc23fa8b5d76",
+    "scope": "content",
+    "key": "Scout spotted all3n1k/VIctory-RTX3090 (possible effort, substance 83).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.808Z"
+  },
+  "16bb6e31cc5eba76c76a4e5052a7028fd9bc7307ecd895031e93f8fcd226557c": {
+    "id": "16bb6e31cc5eba76c76a4e5052a7028fd9bc7307ecd895031e93f8fcd226557c",
+    "sourceHash": "e2f971c16b57d7ed4cd5fddb3008d9b94016df579174cc4f8abcd6a27ed7f06e",
+    "scope": "content",
+    "key": "Scout spotted Vaximous/Victory-Blueyes (possible effort, substance 68).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.808Z"
+  },
+  "e3663e6199b6db2170045c5f93de4410f070a9a3c085097068fa81caa4c12dc2": {
+    "id": "e3663e6199b6db2170045c5f93de4410f070a9a3c085097068fa81caa4c12dc2",
+    "sourceHash": "9ae505694085457e61e6d2c5c829228c785cc2137a80c48c890cd4aed463d762",
+    "scope": "content",
+    "key": "Scout spotted 2becomeone/ScarlettBridge (possible effort, substance 40).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.808Z"
+  },
+  "997578b954910944cf193202731eea4757c37851c476792914a55ae352bc6b5a": {
+    "id": "997578b954910944cf193202731eea4757c37851c476792914a55ae352bc6b5a",
+    "sourceHash": "7d7d4caeb8d273cc43ecd6e3e1ae4e75899f969da81d90f513eb102e6b77d6c7",
+    "scope": "content",
+    "key": "Scout spotted Tricky1008/13-years-later (possible effort, substance 82).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:18.808Z"
+  },
+  "600c13a43c5fc8929ad84967d74fb4576e070c5e926a2f4b148b19cf258f8ce8": {
+    "id": "600c13a43c5fc8929ad84967d74fb4576e070c5e926a2f4b148b19cf258f8ce8",
+    "sourceHash": "3b712b6c725a364f4d57b91773496663974d30638932ff97b80a0f60d5c6d70d",
+    "scope": "content",
+    "key": "Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 55).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "b7d6505466a5329a3ea22c85952bfd382ef69a1aca9255e5c0cf70a7b17558ce": {
+    "id": "b7d6505466a5329a3ea22c85952bfd382ef69a1aca9255e5c0cf70a7b17558ce",
+    "sourceHash": "91445ea34f1357531c808f92882030d3643ff2527e1d2ec8edf48e99d0546ef2",
+    "scope": "content",
+    "key": "Scout spotted F3mBoYF4h3dU/Femboy-Victory (possible effort, substance 46).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "504e9504d0f4e7e140e0aae8287ee0d2b0516052604d5397fb27d5807639080f": {
+    "id": "504e9504d0f4e7e140e0aae8287ee0d2b0516052604d5397fb27d5807639080f",
+    "sourceHash": "c64ccf9ce42c0924e40164716de0294776e3cad7ec143c1e9b181f1defe6f098",
+    "scope": "content",
+    "key": "Scout spotted Grimkaaah/Victory-Grimkaaah (possible effort, substance 52).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "f56bba5abad2e6331c8b979eb9261410a7f9438618828025d6ac78a8552fc406": {
+    "id": "f56bba5abad2e6331c8b979eb9261410a7f9438618828025d6ac78a8552fc406",
+    "sourceHash": "bbcef73b7fb8fa20c5f1f74efa105f8981f3967d5b24f3ccf7c7897e3ebbda2e",
+    "scope": "content",
+    "key": "Scout spotted HyperExtendedReality/strata (possible effort, substance 85).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "cc5d13dde1586d2fe2b5bc85d07c9db8ec0409e5e7cf83ac25ed2648ca5f774a": {
+    "id": "cc5d13dde1586d2fe2b5bc85d07c9db8ec0409e5e7cf83ac25ed2648ca5f774a",
+    "sourceHash": "aa259901b411cd2b60579da2a799c58045e225fe7b4050fece45e5f4278545fb",
+    "scope": "content",
+    "key": "Scout spotted Bebrik229/VIctory-NVIDIA-Hybrid (possible effort, substance 83).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "1839292743c071399d78278afc5a7d4fee6f3825b38b58952b84f5deeb937253": {
+    "id": "1839292743c071399d78278afc5a7d4fee6f3825b38b58952b84f5deeb937253",
+    "sourceHash": "dfb2d0d1651e599c47a00bca3c456fff5493e3312a384da3d6f44bc85e6f4623",
+    "scope": "content",
+    "key": "Scout spotted Miaumenu/BRS-Launcher-GTA6-Port (possible effort, substance 60).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "3d6c6e7437751603e9dd89e8977899296617e58692782abcaeba01d222218ca8": {
+    "id": "3d6c6e7437751603e9dd89e8977899296617e58692782abcaeba01d222218ca8",
+    "sourceHash": "439566728460009cde5396270a48e0739ca8c0939699daf63564d8429866cd74",
+    "scope": "content",
+    "key": "Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 64).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "eb8646ed1cac3ca5d4138f4c05f5ae7ba9df505ae56f853ac4ecac96fd114509": {
+    "id": "eb8646ed1cac3ca5d4138f4c05f5ae7ba9df505ae56f853ac4ecac96fd114509",
+    "sourceHash": "63bb6380b228da25eef9e4528577cd1738bfef6658026971d10128334ee9aa56",
+    "scope": "content",
+    "key": "Scout spotted randomkidmakesthis/foxvic-scarlett (possible effort, substance 71).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "36498485b00ba207e0210ff4fc4e946f1cb792917f494e1af1378f1da2f1287e": {
+    "id": "36498485b00ba207e0210ff4fc4e946f1cb792917f494e1af1378f1da2f1287e",
+    "sourceHash": "bd75df532286b69c82c87f310d047cd1e433077ebe2be83ac94bb63fcbe5715d",
+    "scope": "content",
+    "key": "Scout spotted LakshanSivakumar/Native-Victory-macOS (possible effort, substance 88).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.573Z"
+  },
+  "aed0cfd17b4eca091164d8afc5d9dbe4362d82ddb948cfc4120b6df561a557db": {
+    "id": "aed0cfd17b4eca091164d8afc5d9dbe4362d82ddb948cfc4120b6df561a557db",
+    "sourceHash": "e2585a8df23a79f925771588cf5603b4ac5ddcc5e4e883f97fa765d193ce7525",
+    "scope": "content",
+    "key": "Scout spotted megaliv3/DISABLED-ACO-NO-PATCHING-GTA-6 (possible effort, substance 58).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.693Z"
+  },
+  "784771c4a9aa3424dd651a1ef1388aaf55f1775ad57c84c2f6fb69e901f1e430": {
+    "id": "784771c4a9aa3424dd651a1ef1388aaf55f1775ad57c84c2f6fb69e901f1e430",
+    "sourceHash": "e6f7c511c920d66dd8f9a128ba847c0ea25744292f2f2c3e1caca51467efea19",
+    "scope": "content",
+    "key": "Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 62).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.693Z"
+  },
+  "473b43f0cb82b0690ee20d0ff152bcb98d9c425449813844e132067321957c0a": {
+    "id": "473b43f0cb82b0690ee20d0ff152bcb98d9c425449813844e132067321957c0a",
+    "sourceHash": "7e02a97d2c5c913ce2e6d048ef143827c15a9694f67a1cb9f4ae1f857bb9f48f",
+    "scope": "content",
+    "key": "Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 63).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T11:04:19.693Z"
+  },
+  "855301eaf3f7f69f9be653068c020e1499d8dc2c5bd1f1ac0f7afd4b2df650e2": {
+    "id": "855301eaf3f7f69f9be653068c020e1499d8dc2c5bd1f1ac0f7afd4b2df650e2",
+    "sourceHash": "f7bb3f474bfd8569e74184ce1386e69f7824db894526a104ebc09132f76125da",
+    "scope": "content",
+    "key": "Cool Fox, formerly Pelican. An experimental VIctory fork for running Xbox Series titles on Windows.",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-27T11:04:20.143Z"
   }
 }
