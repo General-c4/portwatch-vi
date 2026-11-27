@@ -59,6 +59,9 @@
   "eligible": {
     "article:2026-11-26-multiplayer-running": {
       "firstSeenAt": "2026-11-27T02:18:53.162Z"
+    },
+    "article:2026-11-27-belobug-dmca": {
+      "firstSeenAt": "2026-11-27T19:56:16.550Z"
     }
   },
   "cache": {
@@ -306,39 +309,37 @@
   "pending": {
     "article:2026-11-26-multiplayer-running": {
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
-      "attempts": 4,
-      "nextAttemptAt": "2026-11-27T11:44:21.998Z",
+      "attempts": 5,
+      "nextAttemptAt": "2026-11-27T21:16:16.550Z",
+      "lastError": "request_or_token_limit"
+    },
+    "article:2026-11-27-belobug-dmca": {
+      "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
+      "attempts": 2,
+      "nextAttemptAt": "2026-11-27T20:06:16.550Z",
       "lastError": "protected_facts_or_language_invalid"
     }
   },
   "daily": {
     "day": "2026-11-27",
-    "requests": 6,
-    "accountedTokens": 19676,
-    "inputTokens": 9981,
-    "outputTokens": 3291,
+    "requests": 9,
+    "accountedTokens": 26600,
+    "inputTokens": 14972,
+    "outputTokens": 5224,
     "thinkingTokens": 6404
   },
   "totals": {
-    "requests": 30,
+    "requests": 33,
     "successful": 0,
-    "failed": 4,
+    "failed": 7,
     "cachedFields": 0,
-    "inputTokens": 37985,
-    "outputTokens": 15562,
+    "inputTokens": 42976,
+    "outputTokens": 17495,
     "thinkingTokens": 21137
   },
   "dynamic": {
     "version": 1,
     "pending": {
-      "[\"project:belobug\",\"summary\"]": {
-        "id": "project:belobug",
-        "field": "summary",
-        "sourceHash": "2f5837920fd9ad1413405fd9ea919f6298fd08a51d0a10577cc4c389f29da095",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
       "[\"project:dexnom\",\"summary\"]": {
         "id": "project:dexnom",
         "field": "summary",
@@ -481,78 +482,6 @@
         "sourceHash": "0025536e80239b221324c88fab139cebfda195c9896905e15aa49879499f6286",
         "attempts": 0,
         "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"summary\"]": {
-        "id": "project:avatarmanz",
-        "field": "summary",
-        "sourceHash": "18b3ca119de9f920d6e1b1e94cf85d926dbd45e1405a16f65e8dce815cc425ba",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"highlights.0\"]": {
-        "id": "project:avatarmanz",
-        "field": "highlights.0",
-        "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"highlights.1\"]": {
-        "id": "project:avatarmanz",
-        "field": "highlights.1",
-        "sourceHash": "9ab6e235b723c23a8e3a29a218f0cc2eed310973bd432de1524194e91790ae52",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"highlights.2\"]": {
-        "id": "project:avatarmanz",
-        "field": "highlights.2",
-        "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"highlights.3\"]": {
-        "id": "project:avatarmanz",
-        "field": "highlights.3",
-        "sourceHash": "24389599d720ee66c17aeab958d42db748f70668acac59cb5292cc288a1a0409",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"blockers.0\"]": {
-        "id": "project:avatarmanz",
-        "field": "blockers.0",
-        "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"blockers.1\"]": {
-        "id": "project:avatarmanz",
-        "field": "blockers.1",
-        "sourceHash": "d95de63562897d3aa2365d34ca3832a8c8afc606dfac92428e1273f81bbc8850",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"blockers.2\"]": {
-        "id": "project:avatarmanz",
-        "field": "blockers.2",
-        "sourceHash": "40062ad3c5d04c2769c05dd75d78e02eb7ae30ef5b4bb6efd48495040467cd6f",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:avatarmanz\",\"proof.label\"]": {
-        "id": "project:avatarmanz",
-        "field": "proof.label",
-        "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
-        "attempts": 0,
-        "lastError": "quota_or_rate_limit",
         "nextAttemptAt": null
       },
       "[\"project:notnozy\",\"summary\"]": {
@@ -859,38 +788,6 @@
         "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
-      "[\"project:belobug\",\"highlights.2\"]": {
-        "id": "project:belobug",
-        "field": "highlights.2",
-        "sourceHash": "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.3\"]": {
-        "id": "project:belobug",
-        "field": "highlights.3",
-        "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.0\"]": {
-        "id": "project:belobug",
-        "field": "blockers.0",
-        "sourceHash": "58b501fc5361532947efa7fb34a6c7857b076babedbaa5c4a7fa7042d042eb34",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.1\"]": {
-        "id": "project:belobug",
-        "field": "blockers.1",
-        "sourceHash": "d8a8b8f00b2a17bb90aa20f6bb1b066e16917e092ec9cb76a0fcdabfe4182827",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
       "[\"project:doomsday\",\"highlights.1\"]": {
         "id": "project:doomsday",
         "field": "highlights.1",
@@ -971,70 +868,6 @@
         "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMimgFBVV95cUxNS1VOWkU3YUVoT1hDbWNmM3huNjA2dGNuS20zb3RGZnItOFNNN01RTXBJV0tSTEJiZWVVeENjd2ZxcUZ1NWlLMVplRV9iOGxSY2w3U2puWXcwakdacmZ4NDNDRW5KcnhJcS1Ka3RwNUNzLTBVekh4ZEhPWGM1X1lRQ3I0S09Zc1Z5RXJtRVd6NkdyV0FFeXllcHdn?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMimgFBVV95cUxNS1VOWkU3YUVoT1hDbWNmM3huNjA2dGNuS20zb3RGZnItOFNNN01RTXBJV0tSTEJiZWVVeENjd2ZxcUZ1NWlLMVplRV9iOGxSY2w3U2puWXcwakdacmZ4NDNDRW5KcnhJcS1Ka3RwNUNzLTBVekh4ZEhPWGM1X1lRQ3I0S09Zc1Z5RXJtRVd6NkdyV0FFeXllcHdn?oc=5",
-        "field": "title",
-        "sourceHash": "e84001b1d4521980c1ddda42fcc5885abca390cdab61ea05092559c00120d21a",
-        "attempts": 2,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": "2026-11-26T19:26:28.074Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMixgFBVV95cUxQTW5MOG1ZTVFmUGtWTlZYRDhZQTYtZHJmSlQ4Vm0yeWotMmZlc2E3OW42NWJJOGhFNFNIMkdmV29FRmVubXlpQ3FxdDhMVkhhSEJjMDE0bk9GWU9td3pwUlgwcmMtaTdDTTFJbEZxMnBLNWoyZWRFZUZuOFVFZHo0T2psMTkwLWdRZW8xcDhCR19hWVhwSlkyYzJBVERsaEdaU3dnM0wtaXJWZzNTT1ZlWVlfMWxOZklpVDU2ZW9Xem9IeUdvZ3c?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMixgFBVV95cUxQTW5MOG1ZTVFmUGtWTlZYRDhZQTYtZHJmSlQ4Vm0yeWotMmZlc2E3OW42NWJJOGhFNFNIMkdmV29FRmVubXlpQ3FxdDhMVkhhSEJjMDE0bk9GWU9td3pwUlgwcmMtaTdDTTFJbEZxMnBLNWoyZWRFZUZuOFVFZHo0T2psMTkwLWdRZW8xcDhCR19hWVhwSlkyYzJBVERsaEdaU3dnM0wtaXJWZzNTT1ZlWVlfMWxOZklpVDU2ZW9Xem9IeUdvZ3c?oc=5",
-        "field": "title",
-        "sourceHash": "cb323c22d5d0bbbb2f36507baa7aa9e4a453bcaa1e7f68303cea967d937d2313",
-        "attempts": 2,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": "2026-11-26T19:26:28.074Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxQNmVoWWtSSUJoZGpFaFdvWXJtNmdHcmliUmhsTXRud1hxcjVXMWlweWJkbFNwZHRxUVhzdUkyTUJvN1pETUtuQ3dXOUIxRGF6dXg2MXpEcWdGalJBZ2R4Qm1kWkNWcjZKUVJhd3dvVFNXcDJVa2l1TlltMEtzYjFRN3VCYnpPTmpPbUxOekUxcm9MbUpndEMxTi1VRDhwUE1HczQ0aTBHMDVEXzBsQmxV?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxQNmVoWWtSSUJoZGpFaFdvWXJtNmdHcmliUmhsTXRud1hxcjVXMWlweWJkbFNwZHRxUVhzdUkyTUJvN1pETUtuQ3dXOUIxRGF6dXg2MXpEcWdGalJBZ2R4Qm1kWkNWcjZKUVJhd3dvVFNXcDJVa2l1TlltMEtzYjFRN3VCYnpPTmpPbUxOekUxcm9MbUpndEMxTi1VRDhwUE1HczQ0aTBHMDVEXzBsQmxV?oc=5",
-        "field": "title",
-        "sourceHash": "61bc3035136632bf27099b9b807e8b5637bf9047d6e2c45befee4db7d1e44fc7",
-        "attempts": 2,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": "2026-11-26T19:26:28.074Z"
-      },
-      "[\"project:belobug\",\"highlights.1\"]": {
-        "id": "project:belobug",
-        "field": "highlights.1",
-        "sourceHash": "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.4\"]": {
-        "id": "project:belobug",
-        "field": "highlights.4",
-        "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.5\"]": {
-        "id": "project:belobug",
-        "field": "highlights.5",
-        "sourceHash": "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.2\"]": {
-        "id": "project:belobug",
-        "field": "blockers.2",
-        "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"proof.label\"]": {
-        "id": "project:belobug",
-        "field": "proof.label",
-        "sourceHash": "4cc97c61e0ee329e6217c49e4fc16583decab8c8699d335d36e5904ffbfa5b00",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
       "[\"project:dexnom\",\"highlights.2\"]": {
         "id": "project:dexnom",
         "field": "highlights.2",
@@ -1049,78 +882,6 @@
         "sourceHash": "101703e1772c474c927a1d583c5db9169874078ecfd971aab086822ade9386e4",
         "attempts": 0,
         "lastError": "service_unavailable",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi9wFBVV95cUxNeGszeFM0OEJpSUtXLUdack00bFR1UGdDVGZTQVZkcTFjclQxWG44cEhGT293bmlha211S2N0TV95WlJaaDJ1ei0zRFgxVGU4R1JxS2VRTm8zSm5BTWd4eHVXQm5zT3E1UXZOZE9EMVhrLU4yUVFnYjk1dzFnczhfdE1FWUdyamtyQnl1WWp2M1JWRDFsRjJCc2V2WlRpZTJEbGZZeFFaRXRpX2VjZG5nOTZBa05wc3JWT1ozQ1Fub21HY3dLQUx3S0hiR3A1UzgxRFJhQWtQbDJldDlWdG92dVRtaEVhMGZkWWxodXFhZ2xxS2t3Ykg4?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi9wFBVV95cUxNeGszeFM0OEJpSUtXLUdack00bFR1UGdDVGZTQVZkcTFjclQxWG44cEhGT293bmlha211S2N0TV95WlJaaDJ1ei0zRFgxVGU4R1JxS2VRTm8zSm5BTWd4eHVXQm5zT3E1UXZOZE9EMVhrLU4yUVFnYjk1dzFnczhfdE1FWUdyamtyQnl1WWp2M1JWRDFsRjJCc2V2WlRpZTJEbGZZeFFaRXRpX2VjZG5nOTZBa05wc3JWT1ozQ1Fub21HY3dLQUx3S0hiR3A1UzgxRFJhQWtQbDJldDlWdG92dVRtaEVhMGZkWWxodXFhZ2xxS2t3Ykg4?oc=5",
-        "field": "title",
-        "sourceHash": "14cf1598d582a38c40c48f258ad9328edde2630028d0e13e1ad64f8a21581cd4",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-27T02:24:17.070Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi6AFBVV95cUxQLS1ZdjVqR05aZ2JuQVIyaExIdFcyTUJWQjYwdEpFcEh6aVdPN2NhTElJVm1VSmY5T2czUWt5bi1fZVU1T3puVXMySnQ4MnNVdlF6XzVNYWdCMWJDYlpXallTNmtYSnNMRHpaak5BYmNveU93dTNIWjkyX2RaWE5ZVzZVUWxYeVEtTHpmLVF6RDR5QVlyR00yX05hODFoTXE1UUlKQnVPdzhVZUw0Tk16N3ZFUmM5aVl0ampwSGsxSnFDRTJ2ajRNZWd4eVR4WTFtX0NCOHl5ZG4zYXZzc3hDdkFEcWR6MDBa?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi6AFBVV95cUxQLS1ZdjVqR05aZ2JuQVIyaExIdFcyTUJWQjYwdEpFcEh6aVdPN2NhTElJVm1VSmY5T2czUWt5bi1fZVU1T3puVXMySnQ4MnNVdlF6XzVNYWdCMWJDYlpXallTNmtYSnNMRHpaak5BYmNveU93dTNIWjkyX2RaWE5ZVzZVUWxYeVEtTHpmLVF6RDR5QVlyR00yX05hODFoTXE1UUlKQnVPdzhVZUw0Tk16N3ZFUmM5aVl0ampwSGsxSnFDRTJ2ajRNZWd4eVR4WTFtX0NCOHl5ZG4zYXZzc3hDdkFEcWR6MDBa?oc=5",
-        "field": "title",
-        "sourceHash": "a723d4fb402e4cce5c4ceb78c6b2c9d825a9e41a02952a0b2f37bfcaacf2c07e",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLS14N1FnSFE5Sm1La1U0UGJNdzc4NHBLb2c2V09nZ2VTcTZkQ084enFLQXRWTFVZU3phcmVLSjYwOG5qdTk1b1E1UTJwRXFKN2k4OFR6NjFPZjFoZlpFLVJUWEVMS3R5Nm5OLTBfVnF0aTh5SWtWT1A1M1BHaWRraThnRVVVaS1GNHdoM1puTi12azZVWkdEeXVTSzN4Q1lVWGlEaXVYWjM?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxPLS14N1FnSFE5Sm1La1U0UGJNdzc4NHBLb2c2V09nZ2VTcTZkQ084enFLQXRWTFVZU3phcmVLSjYwOG5qdTk1b1E1UTJwRXFKN2k4OFR6NjFPZjFoZlpFLVJUWEVMS3R5Nm5OLTBfVnF0aTh5SWtWT1A1M1BHaWRraThnRVVVaS1GNHdoM1puTi12azZVWkdEeXVTSzN4Q1lVWGlEaXVYWjM?oc=5",
-        "field": "title",
-        "sourceHash": "805f3b27ae257ce81869382bda879967e46abefbc526161a1eb86887f8e94622",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTmY4VnFxREpvcXFXdmEzVnRFRE9tQ2xLNG53NFpHY3JkSU94QUJONnFHZVZmTmQtUjFTSnpmMmhnMi1TZHZOMGdreDBIS3QyTXU3T1MxUmstdmN0RjBNanpMc2FlcExJMlYzN2V3OUVVM0Y4SHItdmNteDlNUEtfSHlIdHZadDRkNElQemprWlQ1UkloZWxjMG1XN2RjMTJBckJQS3ZManNrdFJmQjdSdWVBd3dIVXhDbnNiR182aDRpOGwtSk1Hd2hRa0dLTzhab3FtWWxZYkM0OW1GcmpUb1JMSEFhb1ZlWG1zSA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxNTmY4VnFxREpvcXFXdmEzVnRFRE9tQ2xLNG53NFpHY3JkSU94QUJONnFHZVZmTmQtUjFTSnpmMmhnMi1TZHZOMGdreDBIS3QyTXU3T1MxUmstdmN0RjBNanpMc2FlcExJMlYzN2V3OUVVM0Y4SHItdmNteDlNUEtfSHlIdHZadDRkNElQemprWlQ1UkloZWxjMG1XN2RjMTJBckJQS3ZManNrdFJmQjdSdWVBd3dIVXhDbnNiR182aDRpOGwtSk1Hd2hRa0dLTzhab3FtWWxZYkM0OW1GcmpUb1JMSEFhb1ZlWG1zSA?oc=5",
-        "field": "title",
-        "sourceHash": "dfff7b143bd09e823cf1a6b9460ea0c1e981c504a75ab26688ae3eace303b0fc",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi-gFBVV95cUxQWENfNGkzZ0NMU2tBOXBHSk5NNEZJeUlCMWVvTFNSSzZ0dk0wTS1yYl9ka29DLWdudWdIN0tudEVXZVVLaExsTWJfcTNpdC0tQzhodmIwZmtfa2tKRUUyMU5MMkpycWU4eHVnYTVmcXo5S1dLbkNWb3J1TUVZbUM1QS1fSDVicW8tUFVPZGt2VHpxRGFUMC03SDl5WGJJbmlyT2VqUTJhZVpzOWpTc0h2TlctNVdFeEpnSzdOOWNpLThJdkZpdERiT0MzTzV4dnh2WEpmODcyNWVPZ25kUVo5UVFDWmM2NVdldTV0ZjFLOWhyanBjSzhnaGRR?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi-gFBVV95cUxQWENfNGkzZ0NMU2tBOXBHSk5NNEZJeUlCMWVvTFNSSzZ0dk0wTS1yYl9ka29DLWdudWdIN0tudEVXZVVLaExsTWJfcTNpdC0tQzhodmIwZmtfa2tKRUUyMU5MMkpycWU4eHVnYTVmcXo5S1dLbkNWb3J1TUVZbUM1QS1fSDVicW8tUFVPZGt2VHpxRGFUMC03SDl5WGJJbmlyT2VqUTJhZVpzOWpTc0h2TlctNVdFeEpnSzdOOWNpLThJdkZpdERiT0MzTzV4dnh2WEpmODcyNWVPZ25kUVo5UVFDWmM2NVdldTV0ZjFLOWhyanBjSzhnaGRR?oc=5",
-        "field": "title",
-        "sourceHash": "732ec355388e3ccd39e288f3b7fef68dc544bfd2c9f9a730c09a13de7d54c573",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxPY0k5VmlWd1JSUFVnUHZaUkxpSEx0ek9YLWZFVG1WZll2Zjl0akE2a25nVkV5WHIwZE5KZ0NmemttV1hIN0lmcmZtMjBuU25EU1dwNHZOMHZXNll4R2puUy16MmtnZFFxSExMLVk5Qm1jSWx2WkFWeXlsbWxBYzlZZDFMMUJsVlFOOS0xT0pxMF9VQQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxPY0k5VmlWd1JSUFVnUHZaUkxpSEx0ek9YLWZFVG1WZll2Zjl0akE2a25nVkV5WHIwZE5KZ0NmemttV1hIN0lmcmZtMjBuU25EU1dwNHZOMHZXNll4R2puUy16MmtnZFFxSExMLVk5Qm1jSWx2WkFWeXlsbWxBYzlZZDFMMUJsVlFOOS0xT0pxMF9VQQ?oc=5",
-        "field": "title",
-        "sourceHash": "a49a1705988f67a979c8949d25726841ee9218123c7ae1c9fa876224d5070f37",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQZEZFdWx4X0VKVVBIVFE3bFRLMGVtSGdGRjJuWl9JYTFBaG9qV183eVAtVTZRUXVvNHI5MHlqUGFIMDh3TXVKdVhUYV9IZXA3Wmp5ZE5qRGtZRVdkZ2R3M1R0cWgwbUdoaFhpSHhYbVd5OWpUME1TOXBPdjFQaUVHVENKV2h2WF9EcWJJdXdyNzY2Tlc4VkVtMTNaWWR6ZHNoNktN0gGwAUFVX3lxTFBBc1RWNDhGMEJhVG90MVIzY3E2N0pjTUtxd3FTTHRHTjNNV0lmV09MRkdWWkJ4LWJMWXRuNW12ZXJWcnhoUDRTZXZaaWZQejIwVVVJNzFXRUFFcm9tX2s2R29qR3piUEQ4WjctMkVhZHdnUG5oM1JfeDBsUG9MWVh2dkxOTUhiYU1VYjR1VTVXZzdUVmpwSnhhVFJvU3F1Z2dzdV9PaFNaVlJiX1h0TlZf?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQZEZFdWx4X0VKVVBIVFE3bFRLMGVtSGdGRjJuWl9JYTFBaG9qV183eVAtVTZRUXVvNHI5MHlqUGFIMDh3TXVKdVhUYV9IZXA3Wmp5ZE5qRGtZRVdkZ2R3M1R0cWgwbUdoaFhpSHhYbVd5OWpUME1TOXBPdjFQaUVHVENKV2h2WF9EcWJJdXdyNzY2Tlc4VkVtMTNaWWR6ZHNoNktN0gGwAUFVX3lxTFBBc1RWNDhGMEJhVG90MVIzY3E2N0pjTUtxd3FTTHRHTjNNV0lmV09MRkdWWkJ4LWJMWXRuNW12ZXJWcnhoUDRTZXZaaWZQejIwVVVJNzFXRUFFcm9tX2s2R29qR3piUEQ4WjctMkVhZHdnUG5oM1JfeDBsUG9MWVh2dkxOTUhiYU1VYjR1VTVXZzdUVmpwSnhhVFJvU3F1Z2dzdV9PaFNaVlJiX1h0TlZf?oc=5",
-        "field": "title",
-        "sourceHash": "1acec81afdb48c96416f3b3dbe06083750bc603dcdd3f617467262c90efe8821",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMitgFBVV95cUxOYlk4NDlOeHZtbjhkVHM5VFRSNWhBbEZXd0JoYTVhMjBaOU8welhKWE9kVnpUaDJRMEVJc0lLNmpRLUMydWY4eUJobVB3aGl4NWVuUGVPWTg4Qm5pczRQOXNmc0w2a1ZlcENQdExZbGxHR3ZlS2pFclpleWdxTThLc29EcFFzM1FCUHJETTJEX0JoT0ZlcVVjMlBtMy11YWNXSmI3ZENPSWd5ckN2VHdpN3E5ODZaZw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMitgFBVV95cUxOYlk4NDlOeHZtbjhkVHM5VFRSNWhBbEZXd0JoYTVhMjBaOU8welhKWE9kVnpUaDJRMEVJc0lLNmpRLUMydWY4eUJobVB3aGl4NWVuUGVPWTg4Qm5pczRQOXNmc0w2a1ZlcENQdExZbGxHR3ZlS2pFclpleWdxTThLc29EcFFzM1FCUHJETTJEX0JoT0ZlcVVjMlBtMy11YWNXSmI3ZENPSWd5ckN2VHdpN3E5ODZaZw?oc=5",
-        "field": "title",
-        "sourceHash": "48d3b1fdd4b019aeb4db1a9ef8afd34c81c5c20401d8d0055424a8a8318633c5",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxOZWZRcVVCbEFCSy1hd3pSS2ZzNUt6NHN5eFdRWWRoZDllNDVLVGNjeUtFYUE5NjR5S3AyRk45bnh5TXVGVksyTnZUbUJFei0wTmVPUFh0NElkR2VEU3N5OEh5RVJLV2FCcXhXTlMwSHNXT29MNDh5ejNSSEZRdVk3cE01NjNUUW9GcTdJd21wN0dMOVRyR3JhWVVQTGhDWkllWl9RcEVMLTk3S0U0YjlZVmlnMA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxOZWZRcVVCbEFCSy1hd3pSS2ZzNUt6NHN5eFdRWWRoZDllNDVLVGNjeUtFYUE5NjR5S3AyRk45bnh5TXVGVksyTnZUbUJFei0wTmVPUFh0NElkR2VEU3N5OEh5RVJLV2FCcXhXTlMwSHNXT29MNDh5ejNSSEZRdVk3cE01NjNUUW9GcTdJd21wN0dMOVRyR3JhWVVQTGhDWkllWl9RcEVMLTk3S0U0YjlZVmlnMA?oc=5",
-        "field": "title",
-        "sourceHash": "7871f5e0f5205f169946a7da9e47f40358654a6b89e3d675c0584f0f34b746f7",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
       "[\"change:2026-11-27:new:Scout spotted felixwaschosenn/littlethings-build (possible effort, substance 67).\",\"text\"]": {
@@ -1139,106 +900,10 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-27:new:Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).",
-        "field": "text",
-        "sourceHash": "746ae51a2275464f2608a07ffc7a3e0b31c92e50397ed77dc307def58ebc935d",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted lukinhasnojento/gta6-port-knowledge (possible effort, substance 55).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted lukinhasnojento/gta6-port-knowledge (possible effort, substance 55).",
-        "field": "text",
-        "sourceHash": "774c41b98420360f9943d371d42938f4a56eaf52b1ce75ff23dc5ca98d7d05e3",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted FijshH/Veyra-macOS (tool, substance 48).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted FijshH/Veyra-macOS (tool, substance 48).",
-        "field": "text",
-        "sourceHash": "60963c4902405e799a5ffca6a5ec1b60e7904dda595008ea0994a9be0284ed74",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
       "[\"project:tuxbox\",\"claims.0.text\"]": {
         "id": "project:tuxbox",
         "field": "claims.0.text",
         "sourceHash": "4fbb27320096878e85d43d5e526bbf60deda6b5cb26a15967551e8bd90724fcb",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.el-balad.com/17070362\",\"title\"]": {
-        "id": "headline:https://www.el-balad.com/17070362",
-        "field": "title",
-        "sourceHash": "5457f50da3905fe78bd63aae0cc1fe75572f222831735e574d1552daf22f7324",
-        "attempts": 1,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-27T11:09:47.070Z"
-      },
-      "[\"headline:https://beebom.com/can-you-play-gta-6-on-pc/\",\"title\"]": {
-        "id": "headline:https://beebom.com/can-you-play-gta-6-on-pc/",
-        "field": "title",
-        "sourceHash": "15df555acf53c0debc0f022ae98c82c01d60d3638996af12b9be316fe98c7339",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVDNIUm5peVdPekJBMjNiRHAycXI2Q1hOVTVWcVlvMFMzeVB2VHFaUzdkdk9temJIU2FyOURRVlFET2NLLVJTNjRrVGFVUjBoY0FsUDY1SllJT1l6dThWYUtfSVFqN1pwczBnWHgzX3E4SWpFcl96dDhsaGI?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTE9nVDNIUm5peVdPekJBMjNiRHAycXI2Q1hOVTVWcVlvMFMzeVB2VHFaUzdkdk9temJIU2FyOURRVlFET2NLLVJTNjRrVGFVUjBoY0FsUDY1SllJT1l6dThWYUtfSVFqN1pwczBnWHgzX3E4SWpFcl96dDhsaGI?oc=5",
-        "field": "title",
-        "sourceHash": "ceb490e020dc47a084adfcb2a0dd8d276327bf9c1c48005217c1657982d86388",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-us/news/other/playstation-lost-gta-6-got-leaked-again/vi-AA2ijZNy\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-us/news/other/playstation-lost-gta-6-got-leaked-again/vi-AA2ijZNy",
-        "field": "title",
-        "sourceHash": "bf22de81611ab8bfa5b6d97406cfa4f617d0eb6c875a4434adfb71531889f2a4",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZFFTOVdlM09paWJxQi16VncxcTJSS3lIOUlWN2h6MElkdWRmTE1vdmk4bkNqVHIwdDZwbjJpV08zU0l1dEhKVTdybDUxRTVTdFpfR2MyQ3lEUVYtNEsyd1ZqNVJPOWg5Q1N6OWNGcUR6Tlk3SV9QVHJWUkE5QzZJaHlZRFFlUXFPbHNla01ISjEyQlVBRW5PM2FkZTduWmlSbjdpTThwMDdrRHUwVEppMEpNa3hNZXpDcUZXamxXb3I?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZFFTOVdlM09paWJxQi16VncxcTJSS3lIOUlWN2h6MElkdWRmTE1vdmk4bkNqVHIwdDZwbjJpV08zU0l1dEhKVTdybDUxRTVTdFpfR2MyQ3lEUVYtNEsyd1ZqNVJPOWg5Q1N6OWNGcUR6Tlk3SV9QVHJWUkE5QzZJaHlZRFFlUXFPbHNla01ISjEyQlVBRW5PM2FkZTduWmlSbjdpTThwMDdrRHUwVEppMEpNa3hNZXpDcUZXamxXb3I?oc=5",
-        "field": "title",
-        "sourceHash": "97bd0560b3a6b520a3609c1aa82ef7aa5a18b643e8ffea339f0233feedc3a332",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVmg4X0NMQkQ0aWNDOERiQUNvLWRKcFZnWkxwbVlhS3dhS2JqOU1FeHk4VWYtVEw0b0tuYjFxamU3TDYtYkdRT2ZPZnhxQVEzYkRTcUlCN0ZkSFB2aERKa3JuN2poLTgwNkZCYnBmbWF3SHB4eUdYZnd2VVhHYklPVTVVV2Y?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPVmg4X0NMQkQ0aWNDOERiQUNvLWRKcFZnWkxwbVlhS3dhS2JqOU1FeHk4VWYtVEw0b0tuYjFxamU3TDYtYkdRT2ZPZnhxQVEzYkRTcUlCN0ZkSFB2aERKa3JuN2poLTgwNkZCYnBmbWF3SHB4eUdYZnd2VVhHYklPVTVVV2Y?oc=5",
-        "field": "title",
-        "sourceHash": "7d26e5addc2e26d6d4682aad5dc574fca481e10f238a1e2d70f353a1c1d68715",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.xda-developers.com/microsoft-github-spotlighted-ps5-to-pc-translation-layer-gta-6-dmca-strikes-deleted-post/\",\"title\"]": {
-        "id": "headline:https://www.xda-developers.com/microsoft-github-spotlighted-ps5-to-pc-translation-layer-gta-6-dmca-strikes-deleted-post/",
-        "field": "title",
-        "sourceHash": "1f904e0283d81ff39851787e12ea2bb10aaf95f2114b4557389d4f692599f7f0",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMigwFBVV95cUxQZDFuX1Q3WXFEMXVtT2tFaEJPYzRoY2ZKS09uQWNCNFBRX3hNbzJITlZ6SmJNZE1oaEYwSUdGOGVYT3g3cWZ2dnppUl9zbDNoSzJWWG5pUVRUTFV2UVVtMlRNVk03WGlxRWpYZFhjSlhibWRPYUdSWGtNZ1I0YmZjMzE2NA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMigwFBVV95cUxQZDFuX1Q3WXFEMXVtT2tFaEJPYzRoY2ZKS09uQWNCNFBRX3hNbzJITlZ6SmJNZE1oaEYwSUdGOGVYT3g3cWZ2dnppUl9zbDNoSzJWWG5pUVRUTFV2UVVtMlRNVk03WGlxRWpYZFhjSlhibWRPYUdSWGtNZ1I0YmZjMzE2NA?oc=5",
-        "field": "title",
-        "sourceHash": "ccc06e818d4dca3d94eb546cece24e238f9aeb1a497170555a13e5ec3f720e22",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted trustno1-coder/VIctory-NVIDIA (possible effort, substance 68).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted trustno1-coder/VIctory-NVIDIA (possible effort, substance 68).",
-        "field": "text",
-        "sourceHash": "911f29c6d60bb1505bebe5abe15fe27fe3ae8fdffb73d380c7c0279fe363db57",
         "attempts": 0,
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
@@ -1259,12 +924,316 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-27:new:Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).",
+      "[\"pinned:current\",\"text\"]": {
+        "id": "pinned:current",
         "field": "text",
-        "sourceHash": "1515cd8cc224006e409d61624a7e6b3e10f1c80e93a41d7a5105886523c9efd3",
+        "sourceHash": "5b1acf6e24bfdd902ca4dd091917c70281da4f5afaeeef6a67950f74a828d3aa",
         "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
+        "field": "title",
+        "sourceHash": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
+        "field": "title",
+        "sourceHash": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5",
+        "field": "title",
+        "sourceHash": "9f0ec8f57f0d972431a765d419c1f9c95280a3d7349b25483cad0eccf1d2b377",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEh3Q01fYUpqVFIzZHpaVC1SX2RLeC1nd3VCWlBPU2NtTWpuaUZUX09uXzM4QVVMT05hbGhkXzV1MnNVb05sbWl2eTFKSm5FeW8xem9LeXdFbGxuYld5TEhOWVFGQjR3SVlzUTJyLW4tSHV4X0xFVFc5ZWdPNWJLSHZaZk9BUVhGUmdwTDJyX3pFRUE5bXdpR2hLTGFGUU9tVXViVl84VQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEh3Q01fYUpqVFIzZHpaVC1SX2RLeC1nd3VCWlBPU2NtTWpuaUZUX09uXzM4QVVMT05hbGhkXzV1MnNVb05sbWl2eTFKSm5FeW8xem9LeXdFbGxuYld5TEhOWVFGQjR3SVlzUTJyLW4tSHV4X0xFVFc5ZWdPNWJLSHZaZk9BUVhGUmdwTDJyX3pFRUE5bXdpR2hLTGFGUU9tVXViVl84VQ?oc=5",
+        "field": "title",
+        "sourceHash": "3f997e60c90e50b63dd95930c1943f56fbfadc49cc1b216816f5dea0177bcfa1",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxNVjEyU1hNTXFuaVNLRDh3YVFaMTRNNngyOERwRk1ZM0JkOU11Q2dvVXE2dk5ldWxZN2pQZHRmMjdrakZnSlNzMnhvUGJhVlFDcTJWa21aT1NSVEdtQ3YwV2QyUmdpVG5oNU8xUVU3amNoYVNGN1Z5dHFGLWVXOElKLVZQdDZRMXNVUVY0bFNHQXdTZw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxNVjEyU1hNTXFuaVNLRDh3YVFaMTRNNngyOERwRk1ZM0JkOU11Q2dvVXE2dk5ldWxZN2pQZHRmMjdrakZnSlNzMnhvUGJhVlFDcTJWa21aT1NSVEdtQ3YwV2QyUmdpVG5oNU8xUVU3amNoYVNGN1Z5dHFGLWVXOElKLVZQdDZRMXNVUVY0bFNHQXdTZw?oc=5",
+        "field": "title",
+        "sourceHash": "a1046e53dd76cee3f83da2e816d2e7415e2344022f973c3a1ea1e968dce4ffb5",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiigFBVV95cUxNb1BRZTFLVjRYRDRjSnE5aTRPRkE1WUcyMHdIcGdHaHMxNHVvcnRhNWRqU3ZsWEZwdXJzTHdpUkIzQWRSQV9FSGUydXJzUzBOektfWkw4empRZHJ2SGNlZGxSejBILXN4S21XVV9oWHppOXA0TDR6eWlKZG9zMVIwakZ2U1RBRFJqUUE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiigFBVV95cUxNb1BRZTFLVjRYRDRjSnE5aTRPRkE1WUcyMHdIcGdHaHMxNHVvcnRhNWRqU3ZsWEZwdXJzTHdpUkIzQWRSQV9FSGUydXJzUzBOektfWkw4empRZHJ2SGNlZGxSejBILXN4S21XVV9oWHppOXA0TDR6eWlKZG9zMVIwakZ2U1RBRFJqUUE?oc=5",
+        "field": "title",
+        "sourceHash": "455ded67dc32cc2861a97396475acf8590c9122732585b31065e80101bf5b620",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiggFBVV95cUxOS3dyOGRmdXBvNlVyczlDeGFOUXZ6WlE2by1uTnBPaXlPVllsRDdyWnY5cEZTU20zVFZmbHM4SDk3T1RVcVhQVU9BY0Y3ZVFUS0hxaGs4OXU4c1lrYmhnYkdLY0xQNlpycENJUlBFdHUzWUNObThxcXRDaGRLLThGSWxR?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiggFBVV95cUxOS3dyOGRmdXBvNlVyczlDeGFOUXZ6WlE2by1uTnBPaXlPVllsRDdyWnY5cEZTU20zVFZmbHM4SDk3T1RVcVhQVU9BY0Y3ZVFUS0hxaGs4OXU4c1lrYmhnYkdLY0xQNlpycENJUlBFdHUzWUNObThxcXRDaGRLLThGSWxR?oc=5",
+        "field": "title",
+        "sourceHash": "77c868a5242ff35bf20a38e70ea3975c85a1cdb58c06b23365d77c33968c17b1",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXRQM1BFSFF6azhGazIzNlNDanRteTM0SnQ3dy11eG9GWExBSHlqOTFWcnZON1VrSjBua1VMdkoyelV1Zjc5eVNsREFSNUVPV1RxVzJfQXlXdXNNMW1yRVVBQlZxZw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXRQM1BFSFF6azhGazIzNlNDanRteTM0SnQ3dy11eG9GWExBSHlqOTFWcnZON1VrSjBua1VMdkoyelV1Zjc5eVNsREFSNUVPV1RxVzJfQXlXdXNNMW1yRVVBQlZxZw?oc=5",
+        "field": "title",
+        "sourceHash": "6672d3fddd26b0706266a0f898680ee4b8d92a923e830799e0c8d90e86959706",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmJhQUdUQ01sWWNCY3RUVmZsc1NlU1MxNHpQVDRBTDhHYWw1Y0NodVM5NjNOS2dPNF9kU2tyNVVVOWVBUW5SVjl0SXNaUVAyQ3RLWW1kclY2ZmREQ2FFd2gybDVYaHNJLVlDWFBMVWMyTDhqWjVLYWFVLS13RnhEOVFCTUo?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmJhQUdUQ01sWWNCY3RUVmZsc1NlU1MxNHpQVDRBTDhHYWw1Y0NodVM5NjNOS2dPNF9kU2tyNVVVOWVBUW5SVjl0SXNaUVAyQ3RLWW1kclY2ZmREQ2FFd2gybDVYaHNJLVlDWFBMVWMyTDhqWjVLYWFVLS13RnhEOVFCTUo?oc=5",
+        "field": "title",
+        "sourceHash": "51bb0432c1fa33cdb5d554fd285a03ff9d7057b54333d9d8b4326b8a8a99c32e",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FSzB2dVFlbjQzN0h1LVRPYVJlMGsyMVVuUDI4UV9lbTE0UVBhd0xIV1hLemp2SGVveC1KeEx1LUtCbWVhRWZtMUlPLV9NaFdDMC1jNVo4STRIVEl4eTc1Z3BydThRbFhk?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FSzB2dVFlbjQzN0h1LVRPYVJlMGsyMVVuUDI4UV9lbTE0UVBhd0xIV1hLemp2SGVveC1KeEx1LUtCbWVhRWZtMUlPLV9NaFdDMC1jNVo4STRIVEl4eTc1Z3BydThRbFhk?oc=5",
+        "field": "title",
+        "sourceHash": "7311c3061be2ce7e65d7e087a5b6183c0e690ab3ee963f9772a7fb9e045e1d95",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiR0FVX3lxTFB1SjhxbGdOM21FMzZBTWFpOUpUV3VGd2xaN2JFMUtsdE9vY0piU2JRSUR5dTM2RU1mOHJnSzFKMUFzTmwyTzdB?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiR0FVX3lxTFB1SjhxbGdOM21FMzZBTWFpOUpUV3VGd2xaN2JFMUtsdE9vY0piU2JRSUR5dTM2RU1mOHJnSzFKMUFzTmwyTzdB?oc=5",
+        "field": "title",
+        "sourceHash": "0cf4422706cffb699f3cecaf96b4eda1dc53c6b3d3ecc05b839d23f7a36cb2e9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEJIVTE3NGZtUVVGd2piZDJwaFZrdnltM0tPU2pMc1NpejNIRXJFS2h0eXlHSzMycy15dHNjNFV4N0JZanVMR3BnY2h2Q3B2QkZ2cW0zT2pydWs3TG1uQ1JtQ3hLTDVILVZkRG5wVm5keFA2UjR5aXZvVll4TlY4aTBCSzJiNzhuaG1rUm4xenhZR1ZtRzJCSVVpNWw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEJIVTE3NGZtUVVGd2piZDJwaFZrdnltM0tPU2pMc1NpejNIRXJFS2h0eXlHSzMycy15dHNjNFV4N0JZanVMR3BnY2h2Q3B2QkZ2cW0zT2pydWs3TG1uQ1JtQ3hLTDVILVZkRG5wVm5keFA2UjR5aXZvVll4TlY4aTBCSzJiNzhuaG1rUm4xenhZR1ZtRzJCSVVpNWw?oc=5",
+        "field": "title",
+        "sourceHash": "53e2b071c5142f5633931567ae94ce21fa090357b6d67712877a2fa10f236cd8",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRlQWx4cm1MMVNYeWxsMXV6QnJIdy1UR1ZlQ1c4ekpUVFQ1LTBOb05LR2tSUEp1ZktOS2xqdFFxaHVYU1lOcVVzMGxvZ0Zycll4cTNGT1Y3SjlFclUtSnNaZkRLQW5ZTkU0Z0l4bThlWEFKNTAxTTRZc2t6YnlsaE9FTjRMWENtZ0d4d21IOWYybFQ4WXpEd1lvWFYxckNCVUpMdHhtQlNnMjA4OTcwQlVIQ3Q5X0dETE9nQU90SElLNTZrN1ZST1Jn?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRlQWx4cm1MMVNYeWxsMXV6QnJIdy1UR1ZlQ1c4ekpUVFQ1LTBOb05LR2tSUEp1ZktOS2xqdFFxaHVYU1lOcVVzMGxvZ0Zycll4cTNGT1Y3SjlFclUtSnNaZkRLQW5ZTkU0Z0l4bThlWEFKNTAxTTRZc2t6YnlsaE9FTjRMWENtZ0d4d21IOWYybFQ4WXpEd1lvWFYxckNCVUpMdHhtQlNnMjA4OTcwQlVIQ3Q5X0dETE9nQU90SElLNTZrN1ZST1Jn?oc=5",
+        "field": "title",
+        "sourceHash": "892732b5d0f4384c99109b783ce83936519a07cf9e05f7c809e7c5beecb57d18",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5",
+        "field": "title",
+        "sourceHash": "bd434db3f4ad55e64df3e37cd1d5178f187b5a71b0b1d0f2eb9db1d55e8e7c52",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5",
+        "field": "title",
+        "sourceHash": "9f0ee88c45373c710ffac082f501b838f09a508c47cba361c54d9880810d3093",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5",
+        "field": "title",
+        "sourceHash": "99ed02b53f27f8aff8f8ed94f498b0ee354eaba77ceff77e48ad3bb3ee4f0ed1",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5",
+        "field": "title",
+        "sourceHash": "6999e5c5db6c21d7ad342fc8ac46538d64a3d64deeceebe886d3dbf52669099a",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5",
+        "field": "title",
+        "sourceHash": "dba691cf0b8aab49b983f6deee64a4cbd64b4ee95d36d62e51052303169cbd1b",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5",
+        "field": "title",
+        "sourceHash": "547a3b0f88808cb963ca5657bef0fe90e184538362d6a676693b24907ae60aaa",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.forbes.com/sites/paultassi/2026/11/27/gta-6-is-already-one-of-the-best-selling-games-ever-says-report/\",\"title\"]": {
+        "id": "headline:https://www.forbes.com/sites/paultassi/2026/11/27/gta-6-is-already-one-of-the-best-selling-games-ever-says-report/",
+        "field": "title",
+        "sourceHash": "46de2260a6fea1cf07b068e876664d9ea91c9f5f74acbf354fbcef0f97076291",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/gaming/rockstar-games/modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-up-to-2-players-to-explore-vice-city-together/ar-AA2inqRC\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-up-to-2-players-to-explore-vice-city-together/ar-AA2inqRC",
+        "field": "title",
+        "sourceHash": "34f2bfb5e77d75be5f8c30fe3212901d3e6aa5a22465e89bc5fd0dadaa51d433",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE5DdXJMMm5obDZka01JMGpIS2Q5NFJ3VVZtVVE2ZTRndDVCT2N1NVZTRTFvNVMtLTFlRnd0My1lYTNER2cwa3Z1MlIzbXo4TkFBaDFUSmhnR0JoS2Fkd2Rka0EwVk1yQXZSRGstdjh3?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE5DdXJMMm5obDZka01JMGpIS2Q5NFJ3VVZtVVE2ZTRndDVCT2N1NVZTRTFvNVMtLTFlRnd0My1lYTNER2cwa3Z1MlIzbXo4TkFBaDFUSmhnR0JoS2Fkd2Rka0EwVk1yQXZSRGstdjh3?oc=5",
+        "field": "title",
+        "sourceHash": "0841ed9691fba46942939b8eb831e973ad540f9c4ce04a201a5e6903445fb11b",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPUzI2YWtSamMycmVZN0wxS0ZOYmNtTkFTeUdZV2VCcDI4d1YwcHBtTG8zcDU5RUFkSTRvb2poTmRuYnIzcVU3THFCR1RIVGo4Q1d2Q0VNTEFtd1ctQklybTU0TFI4Q0FaeTVZa1haRTRxaHNFODBiR3gxVEpZUUt2eFd3V1BpcEE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPUzI2YWtSamMycmVZN0wxS0ZOYmNtTkFTeUdZV2VCcDI4d1YwcHBtTG8zcDU5RUFkSTRvb2poTmRuYnIzcVU3THFCR1RIVGo4Q1d2Q0VNTEFtd1ctQklybTU0TFI4Q0FaeTVZa1haRTRxaHNFODBiR3gxVEpZUUt2eFd3V1BpcEE?oc=5",
+        "field": "title",
+        "sourceHash": "3b02a0680cdff1708543b96f16cdab4e4d3bdeb641fce821ccdcb4e2941736e1",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.analyticsinsight.net/news/gta-6-pc-port-gets-a-major-multiplayer-upgrade-before-rockstars-official-pc-release\",\"title\"]": {
+        "id": "headline:https://www.analyticsinsight.net/news/gta-6-pc-port-gets-a-major-multiplayer-upgrade-before-rockstars-official-pc-release",
+        "field": "title",
+        "sourceHash": "68e530f26d3a8ce6149fed35a49b8a1be34dcc9584a2964912abd9c566c84d35",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.el-balad.com/17070426\",\"title\"]": {
+        "id": "headline:https://www.el-balad.com/17070426",
+        "field": "title",
+        "sourceHash": "6989215e29484e59a07972b26c62ddfa6593b384b97d3b4601a76ae9c0c14a32",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://tbreak.com/gta-6-pc-release-sooner-ai-ports/\",\"title\"]": {
+        "id": "headline:https://tbreak.com/gta-6-pc-release-sooner-ai-ports/",
+        "field": "title",
+        "sourceHash": "b2509f281cdef71d89d1775205b6a5d9a5a2b6e8425afb7ba693c93e49159eec",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/entertainment/gaming/gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion/ar-AA2imjYY\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/entertainment/gaming/gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion/ar-AA2imjYY",
+        "field": "title",
+        "sourceHash": "e8b4726447952aabb153ee0516a8b2c62f8f7d60054fde926e58084b134c0b0d",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
+        "field": "text",
+        "sourceHash": "32cd68c631c7d518991c4e27bcd0c1062e6024c0c7a6829aa89e7d15b0cda207",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
+        "field": "text",
+        "sourceHash": "489bc4653d3d9229e66242bc7cdb1a4cc58b3aec233e44a66d2128de8f338534",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).",
+        "field": "text",
+        "sourceHash": "770807b54969615cc71e890aeb1895a4176894d94ddb98a60acd26b4dbb6b3ce",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-27:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).\",\"text\"]": {
+        "id": "change:2026-11-27:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
+        "field": "text",
+        "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"summary\"]": {
+        "id": "project:victory-nvidia",
+        "field": "summary",
+        "sourceHash": "3dfc7cf0ca5769dba190562dc5b027df39bed3a218d176c8c29cf3567ddb2e16",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"highlights.0\"]": {
+        "id": "project:victory-nvidia",
+        "field": "highlights.0",
+        "sourceHash": "928db59afda781eae924418d717b5d59d75b2328ab884f049463ab1fe2e2dc79",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"highlights.1\"]": {
+        "id": "project:victory-nvidia",
+        "field": "highlights.1",
+        "sourceHash": "f389afb334278c46a3cebf80d6d308045ddc8ae092f1f4a34007899eab1f2ff3",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"highlights.2\"]": {
+        "id": "project:victory-nvidia",
+        "field": "highlights.2",
+        "sourceHash": "d323104b1d9ffdd09cb63f1dd4d74f11d6e9cfd464d11d19c7bb3eb673247718",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"blockers.0\"]": {
+        "id": "project:victory-nvidia",
+        "field": "blockers.0",
+        "sourceHash": "742ffa6b2bb60edb73ba7d3c18d6a754904cb065e045795b5082210f357e42c4",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"blockers.1\"]": {
+        "id": "project:victory-nvidia",
+        "field": "blockers.1",
+        "sourceHash": "b5fa36e93c0db2d93e438413342870828dcae04a5c887cd7b7bea29d847a9655",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:victory-nvidia\",\"blockers.2\"]": {
+        "id": "project:victory-nvidia",
+        "field": "blockers.2",
+        "sourceHash": "db9ba2fc9c320515cea8357c47bf281788a69134d4a1ff088358f1d8452de606",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       }
     },

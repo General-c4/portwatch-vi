@@ -1560,5 +1560,249 @@
     "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
     "status": "draft",
     "at": "2026-11-27T11:04:20.143Z"
+  },
+  "a9c05cb89c15b24541bb132164553b085bec08c2c123e4e9afac6077fb57ad77": {
+    "id": "a9c05cb89c15b24541bb132164553b085bec08c2c123e4e9afac6077fb57ad77",
+    "sourceHash": "de711f597cce08406ae7cce4629e75e93a4c922bdd37ef03315c0314ba314187",
+    "scope": "content",
+    "key": "17 commits/7d",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.453Z"
+  },
+  "7e89cf95bdc8a8d7de015cbfdf8b20fe473765757ed3a78e7ff36cb4975243a1": {
+    "id": "7e89cf95bdc8a8d7de015cbfdf8b20fe473765757ed3a78e7ff36cb4975243a1",
+    "sourceHash": "e7bae329279f018f38920571f32543fd21e94f14147aa2858c21f7e0a3749fa1",
+    "scope": "content",
+    "key": "34 commits/7d",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.453Z"
+  },
+  "64dc1ed37df6e5e302c1b73e5cb52ad049b8bdff1b64ce8ed11e37937bb7d9a5": {
+    "id": "64dc1ed37df6e5e302c1b73e5cb52ad049b8bdff1b64ce8ed11e37937bb7d9a5",
+    "sourceHash": "9a0d6ee6cfa0dff98faacf6abbce88eda5e6ef09f8512adfc0c18c031d61fb2e",
+    "scope": "content",
+    "key": "26 technical terms",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.474Z"
+  },
+  "9e9fe6e48634c87d59afe3980298747215a91a64997f76f27c40facf05d4f7fb": {
+    "id": "9e9fe6e48634c87d59afe3980298747215a91a64997f76f27c40facf05d4f7fb",
+    "sourceHash": "e0eed8b3bc9c5ae32d6d3d54c0630d5b6e3ea46d63ee77560fbd60eefc52d0eb",
+    "scope": "content",
+    "key": "GitHub Terms of Service",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-27T19:56:15.509Z"
+  },
+  "68930192020de2706293b8d2af1004c844beb9158f6aae6d6218b1fcc4b3cc21": {
+    "id": "68930192020de2706293b8d2af1004c844beb9158f6aae6d6218b1fcc4b3cc21",
+    "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
+    "scope": "content",
+    "key": "Removed by GitHub · was public, based on VIctory",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-27T19:56:15.596Z"
+  },
+  "2ba3e4518cd4904113505f8717a0a625a5dfc4a3ff3bac0bfe05b7635b1cd06b": {
+    "id": "2ba3e4518cd4904113505f8717a0a625a5dfc4a3ff3bac0bfe05b7635b1cd06b",
+    "sourceHash": "60963c4902405e799a5ffca6a5ec1b60e7904dda595008ea0994a9be0284ed74",
+    "scope": "content",
+    "key": "Scout spotted FijshH/Veyra-macOS (tool, substance 48).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.705Z"
+  },
+  "1e782ac473ecd691091562e8093e9865fa6849f657d7b284ce98e9565a3d6a3a": {
+    "id": "1e782ac473ecd691091562e8093e9865fa6849f657d7b284ce98e9565a3d6a3a",
+    "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
+    "scope": "content",
+    "key": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-27T19:56:15.822Z"
+  },
+  "cc69fdffc329b4a5eb47046fb607966ec47759db0db8965a3735704a2645a235": {
+    "id": "cc69fdffc329b4a5eb47046fb607966ec47759db0db8965a3735704a2645a235",
+    "sourceHash": "222d9fb3cb1a897b29a529c2cf8f176e1120af223434267c5cb7db06afbf3c5e",
+    "scope": "content",
+    "key": "Scout spotted martindevbr/VItoria-Spark (tool, substance 68).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.823Z"
+  },
+  "9a0da32f90482db794c072f1a591fc6a814f48f5aa2127c6e64b5301d3b47ed0": {
+    "id": "9a0da32f90482db794c072f1a591fc6a814f48f5aa2127c6e64b5301d3b47ed0",
+    "sourceHash": "0255faf901656aacc8d09e2cd3f082b4ac2d139e3fafd34cdc389d433e507222",
+    "scope": "content",
+    "key": "Scout spotted Dremaus/gta6-xcl (possible effort, substance 62).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.952Z"
+  },
+  "0a0978d427457966ad2670e06fecbe83a9a2fe299b64e2588cd8055ca64b0bf3": {
+    "id": "0a0978d427457966ad2670e06fecbe83a9a2fe299b64e2588cd8055ca64b0bf3",
+    "sourceHash": "e004948d44107bd76966d6f3e64cf5bcca9c1784f80e0372eb4ed250e3e63501",
+    "scope": "content",
+    "key": "Scout spotted Coolaid003/XSEmu (possible effort, substance 90).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.952Z"
+  },
+  "f3b83203b4a29f8a3c621d8bf3799ec07a1fe4a6e8adfae5812bae390836b68d": {
+    "id": "f3b83203b4a29f8a3c621d8bf3799ec07a1fe4a6e8adfae5812bae390836b68d",
+    "sourceHash": "fb9cbc35a3514f888aa6960a0736216fc129a38d3b9f485c3c339665369e9d2a",
+    "scope": "content",
+    "key": "Scout spotted kylepelham/El1xr (possible effort, substance 88).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.953Z"
+  },
+  "7769fd2c52e3d09ea8dd34cb0c74b46b90aae5dc73cee20ebc696a3c03072b1e": {
+    "id": "7769fd2c52e3d09ea8dd34cb0c74b46b90aae5dc73cee20ebc696a3c03072b1e",
+    "sourceHash": "07ba4eb88d2ebf3205d4f54da3075b7771c7bdb05f4a72b71f629e729d27d5fd",
+    "scope": "content",
+    "key": "Scout spotted ECHOZwei/TRIDENT (possible effort, substance 53).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.953Z"
+  },
+  "0c3149bd88cdb389c94aa63e300f0ff54c690decc26a9d02a219d452986fc319": {
+    "id": "0c3149bd88cdb389c94aa63e300f0ff54c690decc26a9d02a219d452986fc319",
+    "sourceHash": "271c290f160872ec6d39a2ed7739447ea133df6a08f649e3d4b9c95a70f09f0c",
+    "scope": "content",
+    "key": "Scout spotted Kalpajit0406/Pink (possible effort, substance 91).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.953Z"
+  },
+  "498fa9c3af9589314ead13ec5c7e821b5d68ca7281c69964caaa6a160bb4744f": {
+    "id": "498fa9c3af9589314ead13ec5c7e821b5d68ca7281c69964caaa6a160bb4744f",
+    "sourceHash": "e7ed997849a46f7118ba9f5974600850b88d09ffc9b4248e7996abfad60ddafd",
+    "scope": "content",
+    "key": "Scout spotted thaqifT/Frutiger2 (possible effort, substance 68).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:15.953Z"
+  },
+  "48769da2b9638ad012ada3b4a9eca09d801d730ac287177c2de2f2734ae33b07": {
+    "id": "48769da2b9638ad012ada3b4a9eca09d801d730ac287177c2de2f2734ae33b07",
+    "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
+    "scope": "content",
+    "key": "Plays through missions; story progress rated 80%, level with CGBJ",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "status": "draft",
+    "at": "2026-11-27T19:56:16.026Z"
+  },
+  "7d9e145f442f6e0ef782b210b5285efdb54b19a40eedb3b7268e300dedfc55a2": {
+    "id": "7d9e145f442f6e0ef782b210b5285efdb54b19a40eedb3b7268e300dedfc55a2",
+    "sourceHash": "ee99532bffcdce396f8049ac71533ea5fe737ccffc65975ba45ecae16aebbd71",
+    "scope": "content",
+    "key": "Scout spotted KyleS98/VIctory-Neo (possible effort, substance 65).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.026Z"
+  },
+  "e628fabe44a9098548d1e8a36aaa262c5d3a08ac23c5f3e85970beff87106009": {
+    "id": "e628fabe44a9098548d1e8a36aaa262c5d3a08ac23c5f3e85970beff87106009",
+    "sourceHash": "e68a22d675cb590323068b8be96d4de8be7c1768c5d4c3830a9fafb1edb7bd91",
+    "scope": "content",
+    "key": "Scout spotted ExCorvus/whibwhi-own (possible effort, substance 83).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "9fd0c828a340a06ce7dbafd98b620119b1d6055e5a090527129c339695c366b0": {
+    "id": "9fd0c828a340a06ce7dbafd98b620119b1d6055e5a090527129c339695c366b0",
+    "sourceHash": "cbc65bee681e8b3f1f83788e6827c15c3a6e8d013b7f818d6d68c7fc31c446a8",
+    "scope": "content",
+    "key": "Scout spotted modpapi/scripthook-vi (possible effort, substance 77).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "a9404c29294f7f0d95325854ce7ecca09527b16a04e93a50700b83e1de262bd0": {
+    "id": "a9404c29294f7f0d95325854ce7ecca09527b16a04e93a50700b83e1de262bd0",
+    "sourceHash": "2603cbc66704bea64946fd3f26b04dfb9747dac19391af491e885ff7648fcdc6",
+    "scope": "content",
+    "key": "Scout spotted fitgirlrecomp/FitGirl (possible effort, substance 61).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "cdb0b0c23b0eab512f8b360fba8acf3c118adb98f17be1cc7fd2990c1a5a2953": {
+    "id": "cdb0b0c23b0eab512f8b360fba8acf3c118adb98f17be1cc7fd2990c1a5a2953",
+    "sourceHash": "b2ba93c56caaf66aad5c4b3b82aee7c35c56f0a02b0aac8c79c4e5518840bf98",
+    "scope": "content",
+    "key": "Scout spotted ToLIManl/VIctory-Hydra (possible effort, substance 84).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "240425b703a21abc8553fe6336646f68f4f112e342fbb8c39a3f45a737d3b217": {
+    "id": "240425b703a21abc8553fe6336646f68f4f112e342fbb8c39a3f45a737d3b217",
+    "sourceHash": "99016fc2d7c6dd206c5d192cd2fc981308c3c582a5bf2f7b6c1871f7e93bfdbb",
+    "scope": "content",
+    "key": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 69).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "d97ef78f709380c40b78596d0d5e82edc3166d18668f7d94d7a8e4335b6b93a7": {
+    "id": "d97ef78f709380c40b78596d0d5e82edc3166d18668f7d94d7a8e4335b6b93a7",
+    "sourceHash": "359725dc14a05028eb8c122113c8b66ec754e210ff76ac001f2319ca829be381",
+    "scope": "content",
+    "key": "Scout spotted Xbygone/victory-bygone (possible effort, substance 63).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "327a204e782040688638c992063272771412652ead25712100def684d5c954bd": {
+    "id": "327a204e782040688638c992063272771412652ead25712100def684d5c954bd",
+    "sourceHash": "350862bfd74d7ce687936f076b3c659243efa8c5f9ae4784ea1d5c02b461b122",
+    "scope": "content",
+    "key": "Scout spotted SaymonMaster14/vivaldi (possible effort, substance 77).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "1df1c63bcd6f11f8c546297954ecd9329fede6b108b246ac55106716f09967e6": {
+    "id": "1df1c63bcd6f11f8c546297954ecd9329fede6b108b246ac55106716f09967e6",
+    "sourceHash": "58ae4941ae76d451537e595233521eda76d19173b82b888f21b9f3deab927927",
+    "scope": "content",
+    "key": "Scout spotted Leandroazc/Azc-Low-End (possible effort, substance 71).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "09479689f054c775b5a39166b5b35c49793d871cc8690cf641493e683f8e2dee": {
+    "id": "09479689f054c775b5a39166b5b35c49793d871cc8690cf641493e683f8e2dee",
+    "sourceHash": "1515cd8cc224006e409d61624a7e6b3e10f1c80e93a41d7a5105886523c9efd3",
+    "scope": "content",
+    "key": "Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "d245948a56f507a150d685250ab6e0d05116fa6508ecbcf9566aaafd235cec97": {
+    "id": "d245948a56f507a150d685250ab6e0d05116fa6508ecbcf9566aaafd235cec97",
+    "sourceHash": "a14d85cecde1a2959916b1832b5fbd3a4ec276ce39fa339341c2e3538ddc83d6",
+    "scope": "content",
+    "key": "Scout spotted isaac-btw/AmericasLauncher (possible effort, substance 70).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "9fac2c2b6a208dcd279dd680b6afdd4e3822b1f30041cc2183d1e3f25e014516": {
+    "id": "9fac2c2b6a208dcd279dd680b6afdd4e3822b1f30041cc2183d1e3f25e014516",
+    "sourceHash": "20269898a6a3d72c1e292ef98c291f3347d735f2f8ed81b47883c846b1f9f527",
+    "scope": "content",
+    "key": "Scout spotted elaboratecl/VIctory-AMD-4K (possible effort, substance 91).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "8af9c4d10211a131b4d8569501bb1edc61b850105aaa66dcdeeb7278fae99889": {
+    "id": "8af9c4d10211a131b4d8569501bb1edc61b850105aaa66dcdeeb7278fae99889",
+    "sourceHash": "1f698593760eed53df3c39cc55526052f9e0eb3a3e2d8c141bfc89bece4a7315",
+    "scope": "content",
+    "key": "Scout spotted naixue2233/Yuk1-nvdia-gta6 (possible effort, substance 58).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.094Z"
+  },
+  "4be7a49fca5dc02f7428de638ae561dad332869b5ac714003accaffcaa225804": {
+    "id": "4be7a49fca5dc02f7428de638ae561dad332869b5ac714003accaffcaa225804",
+    "sourceHash": "71d72b5ede0256b99c52eef84f97d5bdf381c5a60a09a6fb06fe036171e719fd",
+    "scope": "content",
+    "key": "Scout spotted halo-tom/gta6-layer-launcher (possible effort, substance 49).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.188Z"
+  },
+  "8815cbf21afc8a1f78e3c9329fae8753364c8047d386e9099d73cb0d711d1c8c": {
+    "id": "8815cbf21afc8a1f78e3c9329fae8753364c8047d386e9099d73cb0d711d1c8c",
+    "sourceHash": "33672b16aac8f4d0ce62003be43ac6a45757dad4c360f7d7d1d9465091a6f749",
+    "scope": "content",
+    "key": "Scout spotted GiovannaSGuerrera/Victory-RTX2080 (possible effort, substance 66).",
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0",
+    "at": "2026-11-27T19:56:16.547Z"
   }
 }

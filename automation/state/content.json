@@ -1,27 +1,27 @@
 {
   "version": 1,
-  "latestUpstreamCommitSha": "48a0e37d5fb4650f794788888c2ab15d931822dc",
-  "latestSynchronizedCommitSha": "48a0e37d5fb4650f794788888c2ab15d931822dc",
+  "latestUpstreamCommitSha": "8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+  "latestSynchronizedCommitSha": "8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
   "latestIntegratedSourceCommitSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
   "latestDeployedCommitSha": "0bd2e3f66a506787087a967ad749f7371a329758",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-27T11:04:17.826Z",
-  "lastUpstreamCheckTime": "2026-11-27T11:04:17.826Z",
+  "lastSuccessfulSyncTime": "2026-11-27T19:56:14.074Z",
+  "lastUpstreamCheckTime": "2026-11-27T19:56:14.074Z",
   "authoritativeSource": "repository",
-  "upstreamUpdated": "2026-11-27T10:19:47.191Z",
+  "upstreamUpdated": "2026-11-27T19:13:01.931Z",
   "records": {
-    "new": 49,
-    "updated": 35,
-    "deleted": 73,
+    "new": 71,
+    "updated": 33,
+    "deleted": 60,
     "sections": {
       "efforts": {
-        "new": 0,
-        "updated": 21,
+        "new": 1,
+        "updated": 20,
         "deleted": 0
       },
       "news": {
-        "new": 0,
-        "updated": 0,
+        "new": 1,
+        "updated": 1,
         "deleted": 0
       },
       "tools": {
@@ -31,116 +31,113 @@
       },
       "candidates": {
         "new": 9,
-        "updated": 4,
+        "updated": 2,
         "deleted": 9
       },
       "headlines": {
-        "new": 13,
-        "updated": 0,
-        "deleted": 14
-      },
-      "changes": {
         "new": 27,
         "updated": 0,
-        "deleted": 50
+        "deleted": 27
+      },
+      "changes": {
+        "new": 33,
+        "updated": 0,
+        "deleted": 24
       }
     }
   },
   "translation": {
-    "coverage": 86.21,
-    "translated": 1075,
-    "total": 1247,
-    "pending": 157,
-    "completed": 31,
+    "coverage": 84.3,
+    "translated": 1079,
+    "total": 1280,
+    "pending": 185,
+    "completed": 26,
     "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "newsTranslation": {
-    "requests": 2,
-    "inputTokens": 3106,
-    "outputTokens": 1201,
+    "requests": 3,
+    "inputTokens": 4991,
+    "outputTokens": 1933,
     "thinkingTokens": 0,
     "successful": 0,
-    "failed": 2,
+    "failed": 3,
     "cachedFields": 0,
-    "pending": 1,
-    "durationMs": 9754,
+    "pending": 2,
+    "durationMs": 48676,
     "errors": [
       "protected_facts_or_language_invalid"
     ],
     "model": "gemini-3.6-flash"
   },
   "dynamicTranslation": {
-    "requests": 1,
-    "translatedFields": 5,
-    "failedFields": 1,
-    "cachedFields": 0,
-    "inputTokens": 1810,
-    "outputTokens": 357,
-    "thinkingTokens": 3641,
-    "errors": [
-      "protected_facts_or_language_invalid"
-    ],
-    "model": "gemini-3.6-flash",
-    "pending": 117,
-    "durationMs": 15316,
+    "requests": 0,
+    "translatedFields": 0,
+    "failedFields": 0,
+    "cachedFields": 2,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "thinkingTokens": 0,
+    "errors": [],
+    "pending": 112,
+    "durationMs": 5,
     "coverage": {
       "pinned": {
         "total": 1,
-        "translated": 1,
+        "translated": 0,
         "exempt": 0,
-        "missing": 0,
-        "coverage": 100
+        "missing": 1,
+        "coverage": 0
       },
       "headlines": {
         "total": 30,
-        "translated": 9,
+        "translated": 2,
         "exempt": 0,
-        "missing": 21,
-        "coverage": 30
+        "missing": 28,
+        "coverage": 6.67
       },
       "changes": {
         "total": 12,
-        "translated": 3,
+        "translated": 4,
         "exempt": 0,
-        "missing": 9,
-        "coverage": 25
+        "missing": 8,
+        "coverage": 33.33
       },
       "projectDescriptions": {
-        "total": 40,
+        "total": 39,
         "translated": 28,
         "exempt": 0,
-        "missing": 12,
-        "coverage": 70
+        "missing": 11,
+        "coverage": 71.79
       },
       "projectDetails": {
-        "total": 100,
-        "translated": 77,
+        "total": 96,
+        "translated": 75,
         "exempt": 1,
-        "missing": 22,
-        "coverage": 77.78
+        "missing": 20,
+        "coverage": 78.95
       },
       "highlights": {
-        "total": 110,
-        "translated": 79,
+        "total": 103,
+        "translated": 78,
         "exempt": 0,
-        "missing": 31,
-        "coverage": 71.82
+        "missing": 25,
+        "coverage": 75.73
       },
       "blockers": {
-        "total": 105,
+        "total": 102,
         "translated": 82,
         "exempt": 0,
-        "missing": 23,
-        "coverage": 78.1
+        "missing": 20,
+        "coverage": 80.39
       }
     }
   },
   "latency": {
-    "sourceCheckMs": 979,
-    "dataSyncMs": 14,
-    "translationMs": 3189,
+    "sourceCheckMs": 952,
+    "dataSyncMs": 15,
+    "translationMs": 1521,
     "deploymentMs": null,
-    "totalMs": 29269
+    "totalMs": 51179
   },
   "apiAnything": {
     "ok": false,
@@ -163,27 +160,27 @@
     }
   ],
   "retryAttempts": [],
-  "upstreamSha": "48a0e37d5fb4650f794788888c2ab15d931822dc",
+  "upstreamSha": "8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
   "head": {
-    "sha": "48a0e37d5fb4650f794788888c2ab15d931822dc",
-    "node_id": "C_kwDOV3EveNoAKDQ4YTBlMzdkNWZiNDY1MGY3OTQ3ODg4ODhjMmFiMTVkOTMxODIyZGM",
+    "sha": "8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+    "node_id": "C_kwDOV3EveNoAKDhlMGE1ZmY5NTZlMjliMDhhNTA4NWJiNDViZTY1MjhlZDZjMGI0YjU",
     "commit": {
       "author": {
-        "name": "portwatch-scout[bot]",
-        "email": "41898282+github-actions[bot]@users.noreply.github.com",
-        "date": "2026-11-27T10:21:49Z"
+        "name": "4lwayz",
+        "email": "359682649+4lwayz@users.noreply.github.com",
+        "date": "2026-11-27T19:38:49Z"
       },
       "committer": {
-        "name": "portwatch-scout[bot]",
-        "email": "41898282+github-actions[bot]@users.noreply.github.com",
-        "date": "2026-11-27T10:21:49Z"
+        "name": "4lwayz",
+        "email": "359682649+4lwayz@users.noreply.github.com",
+        "date": "2026-11-27T19:38:49Z"
       },
-      "message": "scout: update 2026-11-27 10:21 UTC",
+      "message": "AvatarManz: removed by GitHub for a Terms of Service violation, like Belobug (owner's report)\n\nThe owner reports AvatarManz went the same way as Belobug: GitHub suspended\nthe repository and account for a Terms of Service violation. The card's nuke\nnote, byline, summary and blocker, the change log and EDITOR.md now say so\ninstead of \"cause unknown\". Card stays nuked with its progress kept (81.8%).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
       "tree": {
-        "sha": "c4a73f32b847703957f773cbcf295e49e77c24cf",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/c4a73f32b847703957f773cbcf295e49e77c24cf"
+        "sha": "c560bf2c56aa68ebeaf9809eb4f59370ab95784d",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/trees/c560bf2c56aa68ebeaf9809eb4f59370ab95784d"
       },
-      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/48a0e37d5fb4650f794788888c2ab15d931822dc",
+      "url": "https://api.github.com/repos/4lwayz/portwatch-vi/git/commits/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
       "comment_count": 0,
       "verification": {
         "verified": false,
@@ -193,90 +190,102 @@
         "verified_at": null
       }
     },
-    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/48a0e37d5fb4650f794788888c2ab15d931822dc",
-    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/48a0e37d5fb4650f794788888c2ab15d931822dc",
-    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/48a0e37d5fb4650f794788888c2ab15d931822dc/comments",
+    "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+    "html_url": "https://github.com/4lwayz/portwatch-vi/commit/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+    "comments_url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/comments",
     "author": {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "login": "4lwayz",
+      "id": 359682649,
+      "node_id": "U_kgDOFXBSWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/359682649?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-      "html_url": "https://github.com/apps/github-actions",
-      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-      "type": "Bot",
+      "url": "https://api.github.com/users/4lwayz",
+      "html_url": "https://github.com/4lwayz",
+      "followers_url": "https://api.github.com/users/4lwayz/followers",
+      "following_url": "https://api.github.com/users/4lwayz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/4lwayz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/4lwayz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/4lwayz/subscriptions",
+      "organizations_url": "https://api.github.com/users/4lwayz/orgs",
+      "repos_url": "https://api.github.com/users/4lwayz/repos",
+      "events_url": "https://api.github.com/users/4lwayz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/4lwayz/received_events",
+      "type": "User",
       "user_view_type": "public",
       "site_admin": false
     },
     "committer": {
-      "login": "github-actions[bot]",
-      "id": 41898282,
-      "node_id": "MDM6Qm90NDE4OTgyODI=",
-      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "login": "4lwayz",
+      "id": 359682649,
+      "node_id": "U_kgDOFXBSWQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/359682649?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
-      "html_url": "https://github.com/apps/github-actions",
-      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
-      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
-      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
-      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
-      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
-      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
-      "type": "Bot",
+      "url": "https://api.github.com/users/4lwayz",
+      "html_url": "https://github.com/4lwayz",
+      "followers_url": "https://api.github.com/users/4lwayz/followers",
+      "following_url": "https://api.github.com/users/4lwayz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/4lwayz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/4lwayz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/4lwayz/subscriptions",
+      "organizations_url": "https://api.github.com/users/4lwayz/orgs",
+      "repos_url": "https://api.github.com/users/4lwayz/repos",
+      "events_url": "https://api.github.com/users/4lwayz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/4lwayz/received_events",
+      "type": "User",
       "user_view_type": "public",
       "site_admin": false
     },
     "parents": [
       {
-        "sha": "54eb2fa8091ee27f47f584c066821825b45c9bb3",
-        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/54eb2fa8091ee27f47f584c066821825b45c9bb3",
-        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/54eb2fa8091ee27f47f584c066821825b45c9bb3"
+        "sha": "19b12aae5aa447c970d7df630d6c69dccf124fb6",
+        "url": "https://api.github.com/repos/4lwayz/portwatch-vi/commits/19b12aae5aa447c970d7df630d6c69dccf124fb6",
+        "html_url": "https://github.com/4lwayz/portwatch-vi/commit/19b12aae5aa447c970d7df630d6c69dccf124fb6"
       }
     ],
     "stats": {
-      "total": 512,
-      "additions": 274,
-      "deletions": 238
+      "total": 12,
+      "additions": 6,
+      "deletions": 6
     },
     "files": [
       {
-        "sha": "adb99b83138ea91b16efd732b122b43ea8d1910b",
+        "sha": "53e0d402977977078871bf66450e3d26a952d67c",
+        "filename": "EDITOR.md",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/EDITOR.md",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/EDITOR.md",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/EDITOR.md?ref=8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+        "patch": "@@ -97,7 +97,7 @@ These stand until the evidence named here changes. If it has, say what changed i\n   - **README figures** on the same PC at 1440p: menus 30 fps, prologue indoors 13-20, first boat mission 19-22, street chase 6-10, outdoors on foot 60-90 ms a frame, a 41-minute session without a crash, 40-46 GB of memory. Known issues: outdoor flicker, dark rooms without `-RayTracing`, late textures, first-run pipeline stutter. These are in `blockers`.\n   - **Proof link:** the owner's video on r/FitGirlRepack (`reddit.com/r/FitGirlRepack/comments/1y5k8xu/actually_playable/`), a piracy-repack subreddit, the same place as Belobug's proof. Nobody here could read the post (Reddit is blocked for our tools), and the owner chose to link it anyway. Remove the link if the post turns out to carry a download; never link a download from it.\n   - Keep the values; don't lower them or remove the entry on your own. Recheck `play.ps1` and look for releases or download links if they appear.\n-  - **Offline, nuked card (2026-11-27, owner's report):** at 18:39 UTC both `avatarmanz/VIctory-7900XTX` and the `avatarmanz` GitHub account answered 404, hours after Belobug's. The owner doesn't know whether it was a DMCA notice, a Terms of Service removal or the owner taking it private, so the site says only that it went offline and the cause isn't known. Same treatment as Belobug: `repo: null`, `nuked` with `show: true` and `keepScore: true` (greyed card at the bottom of the race, unranked, progress still in the headline), `basedOn` victory-fork, DexNom, VIctory and Belobug, `related` with the old repo name for the copy filter, `stats: {}`, ratings unchanged (81.8%). DexNom is #2 in the race. Report the cause if it becomes known, or the repo coming back.\n+  - **Offline, nuked card (2026-11-27, owner's report):** at 18:39 UTC both `avatarmanz/VIctory-7900XTX` and the `avatarmanz` GitHub account answered 404, hours after Belobug's. The owner first didn't know whether it was a DMCA notice, a Terms of Service removal or the owner taking it private, then reported that it was the same as Belobug: GitHub suspended it for a Terms of Service violation. The site says GitHub removed it for violating its Terms of Service, confirmed by PortWatch; don't call it a DMCA takedown. Same treatment as Belobug: `repo: null`, `nuked` with `show: true` and `keepScore: true` (greyed card at the bottom of the race, unranked, progress still in the headline), `basedOn` victory-fork, DexNom, VIctory and Belobug, `related` with the old repo name for the copy filter, `stats: {}`, ratings unchanged (81.8%). DexNom is #2 in the race. Report the cause if it becomes known, or the repo coming back.\n - **NotNozy (2026-11-25, owner's call):** a private build streamed on Rumble, `rumble.com/v7iv98i-gta6-modding-stream.html` (\"GTA6 Modding Stream\", channel NotNozy, page time 2026-11-24 21:30 UTC, shown live on the 25th, no links in its description). The owner says it looks about the same as AvatarManz's and wants it about 0.5 behind. Following DexNom's precedent, it has AvatarManz's values with `render: 0.76` instead of 0.8 (same \"Close to the console\" step): `story: 0.5`, `fps: 16`, `stability: 0.9`, 82.6%, second overall. Nobody measured its frame rate or crash record; the card's \"16 FPS\" and \"Stable\" follow AvatarManz, and a blocker says so. AMD card: the owner first said NVIDIA, then corrected it to AMD, so `gpu: [\"AMD\"]`. Base unknown (`basedOn: []`), evidence \"Rumble stream\", the stream as its `proof` link, no avatar, `verification: \"self-reported\"`. Keep the values; report a measured frame rate, the PC, or code going public.\n - **Doomsday (2026-11-25, owner's call):** a private group, verified by PortWatch, on `JoshuuDev/victory-amd` (a GitHub fork of `myokex/victory-amd`, not tracked, so `basedOn` is empty and the byline names it). The owner says it has ray-traced lighting at 3-5 fps, almost no crashes and the same story progress as Belobug and DexNom, with rendering a bit behind DexNom's; the phone renders well and the map menu runs faster. Mostly AMD, also works on NVIDIA at lower fps. Values: `story: 0.5`, `render: 0.85`, `fps: 4`, `stability: 0.8` (ZETTROX's value for \"almost never crashes\"): 78.7%. It leads the headline; DexNom stays #1 in the race. The card links the group's X, `x.com/Stu9ao`, as a `proof` link (private cards show `proof` since this change). The avatar `assets/img/efforts/doomsday.jpg` is the owner's picture, cropped. Keep the values; don't lower them or remove the entry on your own. Its Setup.cmd only builds from source with cargo and adds a Start-menu shortcut; Initialize-FormatTables.ps1 downloads one data file from Marvisak/VIctory at a pinned commit and checks its SHA-256 (read on 2026-11-25). Recheck both scripts if they change, and never link a prebuilt download from it. Keep the values; don't lower them or remove the entry on your own.\n - **A shorter board (2026-11-25, owner's call):** the race now holds only public builds scored at or above XCL (35% that day: Belobug, ZETTROX, hyphennn, Uilian, VIctory, XCL). Everything below XCL went to the watchlist: Xbox2Windows, TuxBox, xbox-emulator, ScarlettX, OpenScarlett (Community Edition), OpenScarlett, scarlett-layer, XValkyrie, AnyXboxX. Keep that rule: a project joins the race only when it passes XCL, and one that falls behind XCL moves to the watchlist. The watchlist and the toolkit start collapsed. The \"New candidates\" and \"Fake downloads\" sections are gone from the site; `candidates` and `flagged` stay in tracker.json for your review. Nuked entries (Leonida, americas-recomp) are no longer shown anywhere, but keep them in `efforts`: their repo names stop the scout listing their copies as candidates."
+      },
+      {
+        "sha": "65f153f8527ec3a6f4b5cbd880a3e1872e947dc6",
         "filename": "data/tracker.json",
         "status": "modified",
-        "additions": 274,
-        "deletions": 238,
-        "changes": 512,
-        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/48a0e37d5fb4650f794788888c2ab15d931822dc/data%2Ftracker.json",
-        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/48a0e37d5fb4650f794788888c2ab15d931822dc/data%2Ftracker.json",
-        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Ftracker.json?ref=48a0e37d5fb4650f794788888c2ab15d931822dc",
-        "patch": "@@ -1,5 +1,5 @@\n {\n-  \"updated\": \"2026-11-27T07:36:02.887Z\",\n+  \"updated\": \"2026-11-27T10:19:47.191Z\",\n   \"site\": {\n     \"title\": \"PortWatch VI\",\n     \"heroImage\": \"assets/img/hero-miami.jpg\"\n@@ -829,20 +829,21 @@\n         \"victory-gta6\"\n       ],\n       \"stats\": {\n-        \"stars\": 358,\n-        \"forks\": 109,\n-        \"openIssues\": 25,\n+        \"stars\": 391,\n+        \"forks\": 112,\n+        \"openIssues\": 27,\n         \"createdAt\": \"2026-11-24T22:58:04Z\",\n-        \"pushedAt\": \"2026-11-26T17:59:10Z\",\n+        \"pushedAt\": \"2026-11-27T09:40:56Z\",\n         \"archived\": false,\n         \"missing\": false,\n-        \"commits7d\": 52\n+        \"commits7d\": 54,\n+        \"mentions7d\": 1\n       },\n       \"assessedAt\": \"2026-11-26\",\n       \"assessedBy\": \"manual\",\n       \"claims\": [],\n-      \"readmeSha\": \"fd54828a7df37ea81d9cb932bdbce3b326d5874e2fa61a18725108bab88ff0e9\",\n-      \"readmeChangedAt\": \"2026-11-26\"\n+      \"readmeSha\": \"3acb987ff4b4a9f7bff88a163529d1debc4f383168fa865c91f6faa311d9f1e5\",\n+      \"readmeChangedAt\": \"2026-11-27\"\n     },\n     {\n       \"id\": \"belobug\",\n@@ -887,9 +888,9 @@\n       },\n       \"verification\": \"portwatch\",\n       \"stats\": {\n-        \"stars\": 3519,\n-        \"forks\": 1012,\n-        \"openIssues\": 389,\n+        \"stars\": 3725,\n+        \"forks\": 1086,\n+        \"openIssues\": 423,\n         \"createdAt\": \"2026-11-25T09:41:37Z\",\n         \"pushedAt\": \"2026-11-26T22:30:21Z\",\n         \"archived\": false,\n@@ -940,9 +941,9 @@\n       },\n       \"verification\": \"portwatch\",\n       \"stats\": {\n-        \"stars\": 1318,\n-        \"forks\": 170,\n-        \"openIssues\": 123,\n+        \"stars\": 1335,\n+        \"forks\": 171,\n+        \"openIssues\": 119,\n         \"createdAt\": \"2026-11-25T12:14:33Z\",\n         \"pushedAt\": \"2026-11-26T23:11:14Z\",\n         \"archived\": false,\n@@ -1052,7 +1053,7 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 232,\n+        \"stars\": 233,\n         \"forks\": 53,\n         \"openIssues\": 84,\n         \"createdAt\": \"2026-11-24T10:05:17Z\",\n@@ -1109,9 +1110,9 @@\n       },\n       \"verification\": \"portwatch\",\n       \"stats\": {\n-        \"stars\": 1880,\n-        \"forks\": 616,\n-        \"openIssues\": 350,\n+        \"stars\": 1893,\n+        \"forks\": 618,\n+        \"openIssues\": 360,\n         \"createdAt\": \"2026-11-25T22:18:14Z\",\n         \"pushedAt\": \"2026-11-27T01:11:22Z\",\n         \"archived\": false,\n@@ -1431,9 +1432,9 @@\n         \"fxceless/victory-gta6\"\n       ],\n       \"stats\": {\n-        \"stars\": 3300,\n-        \"forks\": 996,\n-        \"openIssues\": 1237,\n+        \"stars\": 3317,\n+        \"forks\": 999,\n+        \"openIssues\": 1251,\n         \"createdAt\": \"2026-11-24T18:02:37Z\",\n         \"pushedAt\": \"2026-11-27T05:28:09Z\",\n         \"archived\": false,\n@@ -1482,9 +1483,9 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 13517,\n-        \"forks\": 2283,\n-        \"openIssues\": 2171,\n+        \"stars\": 13568,\n+        \"forks\": 2299,\n+        \"openIssues\": 2185,\n         \"createdAt\": \"2026-11-23T21:47:25Z\",\n         \"pushedAt\": \"2026-11-25T23:27:48Z\",\n         \"commits7d\": 100,\n@@ -1598,11 +1599,11 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 8643,\n-        \"forks\": 1207,\n-        \"openIssues\": 1928,\n+        \"stars\": 8650,\n+        \"forks\": 1208,\n+        \"openIssues\": 1931,\n         \"createdAt\": \"2026-11-20T20:03:21Z\",\n-        \"pushedAt\": \"2026-11-27T07:10:06Z\",\n+        \"pushedAt\": \"2026-11-27T09:05:24Z\",\n         \"commits7d\": 100,\n         \"archived\": false,\n         \"missing\": false,\n@@ -1658,7 +1659,7 @@\n         \"openIssues\": 39,\n         \"createdAt\": \"2026-11-20T06:54:47Z\",\n         \"pushedAt\": \"2026-11-22T10:38:07Z\",\n-        \"commits7d\": 50,\n+        \"commits7d\": 48,\n         \"archived\": false,\n         \"missing\": false\n       },\n@@ -1710,11 +1711,11 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 393,\n+        \"stars\": 394,\n         \"forks\": 48,\n-        \"openIssues\": 21,\n+        \"openIssues\": 15,\n         \"createdAt\": \"2026-11-21T12:07:28Z\",\n-        \"pushedAt\": \"2026-11-27T02:54:57Z\",\n+        \"pushedAt\": \"2026-11-27T09:37:35Z\",\n         \"commits7d\": 100,\n         \"archived\": false,\n         \"missing\": false\n@@ -1844,7 +1845,7 @@\n         \"archived\": false,\n         \"missing\": true,\n         \"missingStatus\": 404,\n-        \"mentions7d\": 6,\n+        \"mentions7d\": 5,\n         \"dmca\": {\n           \"date\": \"2026-11-24\",\n           \"url\": \"https://github.com/github/dmca/blob/master/2026/11/2026-11-24-take-two.md\"\n@@ -2014,11 +2015,11 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 1974,\n-        \"forks\": 237,\n-        \"openIssues\": 235,\n+        \"stars\": 1997,\n+        \"forks\": 240,\n+        \"openIssues\": 227,\n         \"createdAt\": \"2026-11-20T17:43:52Z\",\n-        \"pushedAt\": \"2026-11-27T07:22:11Z\",\n+        \"pushedAt\": \"2026-11-27T10:17:16Z\",\n         \"commits7d\": 100,\n         \"archived\": false,\n         \"missing\": false\n@@ -2071,9 +2072,9 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 456,\n-        \"forks\": 83,\n-        \"openIssues\": 114,\n+        \"stars\": 469,\n+        \"forks\": 87,\n+        \"openIssues\": 120,\n         \"createdAt\": \"2026-11-21T00:18:13Z\",\n         \"pushedAt\": \"2026-11-27T02:51:06Z\",\n         \"commits7d\": 100,\n@@ -2185,7 +2186,7 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 235,\n+        \"stars\": 236,\n         \"forks\": 14,\n         \"openIssues\": 9,\n         \"createdAt\": \"2026-11-20T00:25:27Z\",\n@@ -2235,7 +2236,7 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 77,\n+        \"stars\": 78,\n         \"forks\": 13,\n         \"openIssues\": 20,\n         \"createdAt\": \"2026-11-19T20:32:01Z\",\n@@ -2946,7 +2947,7 @@\n       },\n       \"verification\": \"self-reported\",\n       \"stats\": {\n-        \"stars\": 13,\n+        \"stars\": 14,\n         \"forks\": 2,\n         \"openIssues\": 0,\n         \"createdAt\": \"2026-11-24T19:59:37Z\",\n@@ -3001,9 +3002,9 @@\n       \"stats\": {\n         \"stars\": 231,\n         \"forks\": 17,\n-        \"openIssues\": 15,\n+        \"openIssues\": 11,\n         \"createdAt\": \"2026-11-23T09:57:42Z\",\n-        \"pushedAt\": \"2026-11-27T07:09:34Z\",\n+        \"pushedAt\": \"2026-11-27T08:47:20Z\",\n         \"commits7d\": 100,\n         \"archived\": false,\n         \"missing\": false\n@@ -3168,7 +3169,7 @@\n         \"forks\": 4,\n         \"openIssues\": 1,\n         \"createdAt\": \"2026-11-24T22:05:23Z\",\n-        \"pushedAt\": \"2026-11-27T00:19:15Z\",\n+        \"pushedAt\": \"2026-11-27T10:11:18Z\",\n         \"commits7d\": 100,\n         \"archived\": false,\n         \"missing\": false,\n@@ -3208,7 +3209,7 @@\n       \"kind\": \"Asset extractor\",\n       \"desc\": \"CLI and desktop app: models to glTF, textures and map data from your own install.\",\n       \"stats\": {\n-        \"stars\": 119,\n+        \"stars\": 120,\n         \"pushedAt\": \"2026-11-27T07:03:16Z\"\n       }\n     },\n@@ -3279,7 +3280,7 @@\n       \"kind\": \"Curated list\",\n       \"desc\": \"Running list of open-source GTA VI reverse-engineering tools and layers.\",\n       \"stats\": {\n-        \"stars\": 805,\n+        \"stars\": 810,\n         \"pushedAt\": \"2026-11-26T22:26:05Z\"\n       }\n     },\n@@ -3309,7 +3310,7 @@\n       \"kind\": \"Data decoder\",\n       \"desc\": \"Decodes the script and animation archives (PSO data, animations) with glTF export.\",\n       \"stats\": {\n-        \"stars\": 7,\n+        \"stars\": 8,\n         \"pushedAt\": \"2026-11-24T03:07:23Z\"\n       }\n     },\n@@ -3400,7 +3401,7 @@\n       \"kind\": \"Archive explorer\",\n       \"desc\": \"OpenIV-style desktop explorer for the RPF9 archives of your own install; views models and catalogs data.\",\n       \"stats\": {\n-        \"stars\": 13,\n+        \"stars\": 14,\n         \"pushedAt\": \"2026-11-25T14:40:12Z\"\n       }\n     }\n@@ -3707,30 +3708,6 @@\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n-    {\n-      \"repo\": \"XinYulian/xin-leonida\",\n-      \"name\": \"xin-leonida\",\n-      \"description\": \"(Working ) GTA VI on PC — a clean-room static recompilation built from your own copy. Developed by XIN.\",\n-      \"language\": \"Python\",\n-      \"stars\": 3,\n-      \"createdAt\": \"2026-11-26T13:33:58Z\",\n-      \"pushedAt\": \"2026-11-26T21:26:35Z\",\n-      \"defaultBranch\": \"main\",\n-      \"sources\": [\n-        \"GitHub search\"\n-      ],\n-      \"links\": [],\n-      \"foundAt\": \"2026-11-26T22:07:44.715Z\",\n-      \"substance\": 91,\n-      \"signals\": [\n-        \"Python\",\n-        \"24 technical terms\",\n-        \"status table\",\n-        \"26 commits/7d\"\n-      ],\n-      \"kind\": \"effort\",\n-      \"status\": \"new\"\n-    },\n     {\n       \"repo\": \"Archivist-Atlas/gta-vi-astral\",\n       \"name\": \"gta-vi-astral\",\n@@ -3803,6 +3780,30 @@\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n+    {\n+      \"repo\": \"PiloteCode/PiloteBox\",\n+      \"name\": \"PiloteBox\",\n+      \"description\": \"Xbox Series (Scarlett) GDK compatibility layer for Windows, tuned for NVIDIA cards: the title's x64 code runs natively, d3d12_xs on Direct3D 12, an RDNA2 shader recompiler to DXIL for 32-lane GPUs. Not a CPU emulator. No game files.\",\n+      \"language\": \"Rust\",\n+      \"stars\": 1,\n+      \"createdAt\": \"2026-11-27T00:47:20Z\",\n+      \"pushedAt\": \"2026-11-27T08:44:11Z\",\n+      \"defaultBranch\": \"main\",\n+      \"sources\": [\n+        \"GitHub search\"\n+      ],\n+      \"links\": [],\n+      \"foundAt\": \"2026-11-27T10:19:47.191Z\",\n+      \"substance\": 91,\n+      \"signals\": [\n+        \"Rust\",\n+        \"14 technical terms\",\n+        \"status table\",\n+        \"46 commits/7d\"\n+      ],\n+      \"kind\": \"effort\",\n+      \"status\": \"new\"\n+    },\n     {\n       \"repo\": \"zortos293/XSEmu\",\n       \"name\": \"XSEmu\",\n@@ -3951,7 +3952,7 @@\n       \"name\": \"neptune-dolberth-nvidia-8gb\",\n       \"description\": \"Neptune HyperEngine by Dolberth (VIctory Fork) - Xbox Series PE loader & D3D12 compatibility layer tuned for NVIDIA 8GB GPUs, 16GB RAM, Ryzen CPUs & Windows 10/11 (no game files)\",\n       \"language\": \"Rust\",\n-      \"stars\": 11,\n+      \"stars\": 15,\n       \"createdAt\": \"2026-11-26T03:43:26Z\",\n       \"pushedAt\": \"2026-11-26T23:36:49Z\",\n       \"defaultBranch\": \"main\",\n@@ -3993,139 +3994,139 @@\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"TERT01/XSEmu_mybackup\",\n-      \"name\": \"XSEmu_mybackup\",\n-      \"description\": \"\",\n-      \"language\": null,\n+      \"repo\": \"all3n1k/VIctory-RTX3090\",\n+      \"name\": \"VIctory-RTX3090\",\n+      \"description\": \"VIctory compatibility layer tuned for an RTX 3090: runs the Xbox Series (GDK) build of GTA VI natively on Windows D3D12. No game files; you bring your own.\",\n+      \"language\": \"Rust\",\n       \"stars\": 0,\n-      \"createdAt\": \"2026-11-26T16:16:14Z\",\n-      \"pushedAt\": \"2026-11-26T16:15:24Z\",\n+      \"createdAt\": \"2026-11-26T16:44:48Z\",\n+      \"pushedAt\": \"2026-11-27T08:18:41Z\",\n       \"defaultBranch\": \"main\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-26T19:14:28.197Z\",\n-      \"substance\": 80,\n+      \"foundAt\": \"2026-11-27T10:19:47.191Z\",\n+      \"substance\": 83,\n       \"signals\": [\n-        \"24 technical terms\",\n-        \"tests\",\n-        \"27 commits/7d\"\n+        \"Rust\",\n+        \"10 technical terms\",\n+        \"100+ commits/7d\"\n       ],\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"lepotane/VIctory-leonida\",\n-      \"name\": \"VIctory-leonida\",\n-      \"description\": \"Open-source Xbox Series compatibility layer for Windows 11 x64 (Direct3D 12, 1080p RTX tuned)\",\n+      \"repo\": \"Bebrik229/VIctory-NVIDIA-Hybrid\",\n+      \"name\": \"VIctory-NVIDIA-Hybrid\",\n+      \"description\": \"NVIDIA RTX 12GB Hybrid fork of VIctory (Xbox Series D3D12 layer): 1M+ descriptor bypass, full working shaders & color fix, Native D3D12 Barriers, up to 16 fps 1080p / 8.5 fps 2K\",\n       \"language\": \"Rust\",\n-      \"stars\": 2,\n-      \"createdAt\": \"2026-11-26T15:20:15Z\",\n-      \"pushedAt\": \"2026-11-26T21:28:04Z\",\n+      \"stars\": 4,\n+      \"createdAt\": \"2026-11-26T22:44:28Z\",\n+      \"pushedAt\": \"2026-11-27T10:15:31Z\",\n       \"defaultBranch\": \"main\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-26T22:07:44.715Z\",\n-      \"substance\": 80,\n+      \"foundAt\": \"2026-11-27T10:19:47.191Z\",\n+      \"substance\": 83,\n       \"signals\": [\n         \"Rust\",\n-        \"12 technical terms\",\n-        \"12 commits/7d\"\n+        \"11 technical terms\",\n+        \"66 commits/7d\"\n       ],\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"ihaterockstargames/sixth-star\",\n-      \"name\": \"sixth-star\",\n-      \"description\": \"A Windows compatibility layer for Xbox Series X|S (GDK) titles: native x86-64, translated shaders, D3D12.X and DXR. Bring your own dump; no game files.\",\n+      \"repo\": \"Tricky1008/13-years-later\",\n+      \"name\": \"13-years-later\",\n+      \"description\": \"A compatibility layer for running a specific Xbox Series X|S title on Windows. Research/educational project studying console-to-PC translation techniques.\",\n       \"language\": \"Rust\",\n       \"stars\": 0,\n-      \"createdAt\": \"2026-11-25T19:53:31Z\",\n-      \"pushedAt\": \"2026-11-25T21:54:09Z\",\n-      \"defaultBranch\": \"main\",\n+      \"createdAt\": \"2026-11-26T20:36:20Z\",\n+      \"pushedAt\": \"2026-11-27T07:55:08Z\",\n+      \"defaultBranch\": \"master\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-25T22:09:30.708Z\",\n-      \"substance\": 77,\n+      \"foundAt\": \"2026-11-27T10:19:47.191Z\",\n+      \"substance\": 82,\n       \"signals\": [\n         \"Rust\",\n-        \"14 technical terms\",\n+        \"8 technical terms\",\n         \"status table\",\n-        \"7 commits/7d\"\n+        \"12 commits/7d\"\n       ],\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"zsy-miao/ScarlettVI\",\n-      \"name\": \"ScarlettVI\",\n-      \"description\": \"ScarlettVI: original C++20 Xbox Series X|S to Windows compatibility layer, VS2026\",\n-      \"language\": \"C++\",\n+      \"repo\": \"TERT01/XSEmu_mybackup\",\n+      \"name\": \"XSEmu_mybackup\",\n+      \"description\": \"\",\n+      \"language\": null,\n       \"stars\": 0,\n-      \"createdAt\": \"2026-11-25T04:24:46Z\",\n-      \"pushedAt\": \"2026-11-25T22:18:59Z\",\n+      \"createdAt\": \"2026-11-26T16:16:14Z\",\n+      \"pushedAt\": \"2026-11-26T16:15:24Z\",\n       \"defaultBranch\": \"main\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-26T01:31:36.865Z\",\n-      \"substance\": 77,\n+      \"foundAt\": \"2026-11-26T19:14:28.197Z\",\n+      \"substance\": 80,\n       \"signals\": [\n-        \"C++\",\n-        \"18 technical terms\",\n-        \"74 commits/7d\"\n+        \"24 technical terms\",\n+        \"tests\",\n+        \"27 commits/7d\"\n       ],\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"FQY55kai/ZJOU-JWXT-PC\",\n-      \"name\": \"ZJOU-JWXT-PC\",\n-      \"description\": \"ZJOU教务系统 PC 移植 — x86-64 主机的静态重编译路线\",\n-      \"language\": \"Python\",\n-      \"stars\": 0,\n-      \"createdAt\": \"2026-11-25T17:16:35Z\",\n-      \"pushedAt\": \"2026-11-26T05:58:35Z\",\n+      \"repo\": \"lepotane/VIctory-leonida\",\n+      \"name\": \"VIctory-leonida\",\n+      \"description\": \"Open-source Xbox Series compatibility layer for Windows 11 x64 (Direct3D 12, 1080p RTX tuned)\",\n+      \"language\": \"Rust\",\n+      \"stars\": 2,\n+      \"createdAt\": \"2026-11-26T15:20:15Z\",\n+      \"pushedAt\": \"2026-11-26T21:28:04Z\",\n       \"defaultBranch\": \"main\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-26T07:37:39.644Z\",\n-      \"substance\": 77,\n+      \"foundAt\": \"2026-11-26T22:07:44.715Z\",\n+      \"substance\": 80,\n       \"signals\": [\n-        \"Python\",\n-        \"11 technical terms\",\n-        \"22 commits/7d\"\n+        \"Rust\",\n+        \"12 technical terms\",\n+        \"12 commits/7d\"\n       ],\n       \"kind\": \"effort\",\n       \"status\": \"new\"\n     },\n     {\n-      \"repo\": \"BasGame1/gta2pc\",\n-      \"name\": \"gta2pc\",\n-      \"description\": \"GTA VI porting project for Windows/Linux written in python and C++\",\n-      \"language\": \"Python\",\n+      \"repo\": \"itkomarov/dirtemu\",\n+      \"name\": \"dirtemu\",\n+      \"description\": \"Experimental AMD RX 570 / Polaris compatibility fork of ztrx for GTA VI Xbox builds: SM 6.5 shader translation, compute-based mesh fallback, simplified BVH/RT profiles, BC3 texture fallback and Series-S memory limits. Work in progress — not a playable release yet\",\n+      \"language\": \"Rust\",\n       \"stars\": 0,\n-      \"createdAt\": \"2026-11-26T18:51:07Z\",\n-      \"pushedAt\": \"2026-11-26T19:57:37Z\",\n+      \"createdAt\": \"2026-11-25T14:25:01Z\",\n+      \"pushedAt\": \"2026-11-27T09:48:42Z\",\n       \"defaultBranch\": \"main\",\n       \"sources\": [\n         \"GitHub search\"\n       ],\n       \"links\": [],\n-      \"foundAt\": \"2026-11-26T19:14:28.197Z\",\n-      \"substance\": 77,\n+      \"foundAt\": \"2026-11-27T10:19:47.191Z\",\n+      \"substance\": 79,\n       \"signals\": [\n-        \"Python\",\n-        \"25 technical terms\",\n+        \"Rust\",\n+        \"6 technical terms\",\n         \"status table\",\n         \"100+ commits/7d\"\n       ],\n@@ -8128,57 +8129,57 @@\n       \"seenAt\": \"2026-11-27\",\n       \"pushedAt\": \"2026-11-27T05:49:21Z\"\n     },\n-    {\n-      \"repo\": \"DinosaurPlanetRecomp/dino-recomp\",\n-      \"reason\": \"off-topic (not about GTA VI or Xbox Series)\",\n-      \"auto\": true,\n-      \"seenAt\": \"2026-11-27\",\n-      \"pushedAt\": \"2026-11-25T08:54:44Z\"\n-    },\n     {\n       \"repo\": \"gitlab.com/ap3209/android_kernel_samsung_gta2slte\",\n       \"reason\": \"off-topic (not about GTA VI or Xbox Series)\",\n       \"auto\": true,\n       \"seenAt\": \"2026-11-27\",\n       \"pushedAt\": \"2026-11-27T05:01:40.227Z\"\n-    }\n-  ],\n-  \"changes\": [\n-    {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted martindevbr/VItoria-Spark (tool, substance 65).\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted Bebrik229/VIctory-NVIDIA-Hybrid (possible effort, substance 67).\"\n+      \"repo\": \"XinYulian/xin-leonida\",\n+      \"reason\": \"no real README\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-26T21:26:35Z\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted deepdev237/victory-mac (possible effort, substance 62).\"\n+      \"repo\": \"reversed-coffee/xcompat\",\n+      \"reason\": \"thin (substance 16)\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-27T09:41:19Z\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted Maykzera/victory-rtx3060 (possible effort, substance 51).\"\n+      \"repo\": \"rpfexplorer/rpfexplorer\",\n+      \"reason\": \"thin (substance 1)\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-27T10:07:33Z\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted kontaktjakubjagiello/orionpc (possible effort, substance 52).\"\n+      \"repo\": \"elder-plinius/CL4R1T4S\",\n+      \"reason\": \"off-topic (not about GTA VI or Xbox Series)\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-09T23:48:58Z\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 62).\"\n+      \"repo\": \"Ryftenius/RESX\",\n+      \"reason\": \"off-topic (not about GTA VI or Xbox Series)\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-17T10:46:26Z\"\n     },\n     {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted Zarexdevs/GMAC (possible effort, substance 47).\"\n-    },\n+      \"repo\": \"DinosaurPlanetRecomp/dino-recomp\",\n+      \"reason\": \"off-topic (not about GTA VI or Xbox Series)\",\n+      \"auto\": true,\n+      \"seenAt\": \"2026-11-27\",\n+      \"pushedAt\": \"2026-11-25T08:54:44Z\"\n+    }\n+  ],\n+  \"changes\": [\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n@@ -8192,17 +8193,17 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted FijshH/Veyra-macOS (tool, substance 48).\"\n+      \"text\": \"Scout spotted lukinhasnojento/gta6-port-knowledge (possible effort, substance 55).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted lukinhasnojento/gta6-port-knowledge (possible effort, substance 55).\"\n+      \"text\": \"Scout spotted FijshH/Veyra-macOS (tool, substance 48).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted progmatios23/scarlett-hle (possible effort, substance 63).\"\n+      \"text\": \"Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8217,12 +8218,12 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted nowrokink/flamingo-port (possible effort, substance 63).\"\n+      \"text\": \"Scout spotted viper-community/viper (possible effort, substance 69).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 75).\"\n+      \"text\": \"Scout spotted nowrokink/flamingo-port (possible effort, substance 63).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8237,43 +8238,38 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted DesignWithTommy/i95-GTA6-PC-Launcher (possible effort, substance 91).\"\n+      \"text\": \"Scout spotted randomkidmakesthis/foxvic-scarlett (possible effort, substance 71).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted randomkidmakesthis/foxvic-scarlett (possible effort, substance 57).\"\n+      \"text\": \"Scout spotted Dathinel/victory-4gb (possible effort, substance 65).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted bulkynomad/ScarlettEdge (possible effort, substance 98).\"\n+      \"text\": \"Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Dathinel/victory-4gb (possible effort, substance 65).\"\n+      \"text\": \"Scout spotted 0v3rr/Tequesta (possible effort, substance 91).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Ryanabcraft/scarlett-victory-bench (possible effort, substance 68).\"\n+      \"text\": \"Scout spotted Kaio-Comk/projeto-lucia (possible effort, substance 73).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted ExCorvus/whibwhi-own (possible effort, substance 83).\"\n+      \"text\": \"Scout spotted F3mBoYF4h3dU/Femboy-Victory (possible effort, substance 46).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n       \"text\": \"Scout spotted martindevbr/VItoria-Spark (tool, substance 65).\"\n     },\n-    {\n-      \"date\": \"2026-11-27\",\n-      \"kind\": \"new\",\n-      \"text\": \"Scout spotted lameloball2813-ui/cool-fox (possible effort, substance 95).\"\n-    },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n@@ -8287,12 +8283,12 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Stillrain001/Arctory-Xe (possible effort, substance 47).\"\n+      \"text\": \"Scout spotted Vaximous/Victory-Blueyes (possible effort, substance 68).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted isaac-btw/AmericasLauncher (possible effort, substance 62).\"\n+      \"text\": \"Scout spotted LakshanSivakumar/Native-Victory-macOS (possible effort, substance 88).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8352,7 +8348,12 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\"\n+      \"text\": \"Scout spotted isaac-btw/AmericasLauncher (possible effort, substance 62).\"\n+    },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted HyperExtendedReality/strata (possible effort, substance 85).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8374,6 +8375,16 @@\n       \"kind\": \"new\",\n       \"text\": \"Scout spotted nowrokink/flamingo-port (possible effort, substance 63).\"\n     },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 67).\"\n+    },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 75).\"\n+    },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n@@ -8382,7 +8393,17 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 55).\"\n+      \"text\": \"Scout spotted TaynanGT/Vice-Tay (possible effort, substance 77).\"\n+    },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted PiloteCode/PiloteBox (possible effort, substance 91).\"\n+    },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted 2becomeone/ScarlettBridge (possible effort, substance 40).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8402,47 +8423,47 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted 0v3rr/Tequesta (possible effort, substance 91).\"\n+      \"text\": \"Scout spotted rhythmhere/rhythm-VI (possible effort, substance 50).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Kaio-Comk/projeto-lucia (possible effort, substance 73).\"\n+      \"text\": \"Scout spotted lO029byte/bgtnati (possible effort, substance 73).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted F3mBoYF4h3dU/Femboy-Victory (possible effort, substance 46).\"\n+      \"text\": \"Scout spotted all3n1k/VIctory-RTX3090 (possible effort, substance 83).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted martindevbr/VItoria-Spark (tool, substance 65).\"\n+      \"text\": \"Scout spotted Tricky1008/13-years-later (possible effort, substance 82).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Grimkaaah/Victory-Grimkaaah (possible effort, substance 52).\"\n+      \"text\": \"Scout spotted Kaio-Comk/projeto-lucia (possible effort, substance 73).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Loydben/VIctory-RTX (possible effort, substance 62).\"\n+      \"text\": \"Scout spotted F3mBoYF4h3dU/Femboy-Victory (possible effort, substance 46).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Vaximous/Victory-Blueyes (possible effort, substance 68).\"\n+      \"text\": \"Scout spotted martindevbr/VItoria-Spark (tool, substance 65).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted LakshanSivakumar/Native-Victory-macOS (possible effort, substance 88).\"\n+      \"text\": \"Scout spotted Bebrik229/VIctory-NVIDIA-Hybrid (possible effort, substance 83).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Bebrik229/VIctory-NVIDIA-Hybrid (possible effort, substance 67).\"\n+      \"text\": \"Scout spotted Vaximous/Victory-Blueyes (possible effort, substance 68).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8454,6 +8475,16 @@\n       \"kind\": \"new\",\n       \"text\": \"Scout spotted deepdev237/victory-mac (possible effort, substance 62).\"\n     },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted itkomarov/dirtemu (possible effort, substance 79).\"\n+    },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 63).\"\n+    },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n@@ -8467,12 +8498,12 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 62).\"\n+      \"text\": \"Scout spotted Zarexdevs/GMAC (possible effort, substance 47).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted Zarexdevs/GMAC (possible effort, substance 47).\"\n+      \"text\": \"Scout spotted modpapi/scripthook-vi (possible effort, substance 75).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8484,6 +8515,11 @@\n       \"kind\": \"new\",\n       \"text\": \"Scout spotted halo-tom/gta6-xbox-on-pc (possible effort, substance 40).\"\n     },\n+    {\n+      \"date\": \"2026-11-27\",\n+      \"kind\": \"new\",\n+      \"text\": \"Scout spotted Miaumenu/BRS-Launcher-GTA6-Port (possible effort, substance 60).\"\n+    },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n@@ -8502,17 +8538,17 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted HyperExtendedReality/strata (possible effort, substance 85).\"\n+      \"text\": \"Scout spotted PlayGreg6Web/playGreg6web (possible effort, substance 77).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).\"\n+      \"text\": \"Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted megaliv3/DISABLED-ACO-NO-PATCHING-GTA-6 (possible effort, substance 58).\"\n+      \"text\": \"Scout spotted MSYEETT/win-gdk-hle (possible effort, substance 63).\"\n     },\n     {\n       \"date\": \"2026-11-27\",\n@@ -8542,7 +8578,7 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"new\",\n-      \"text\": \"Scout spotted TaynanGT/Vice-Tay (possible effort, substance 77).\"\n+      \"text\": \"Scout spotted trustno1-coder/VIctory-NVIDIA (possible effort, substance 68).\"\n     }\n   ],\n   \"history\": [\n@@ -8642,9 +8678,9 @@\n       \"xbox series emulator\"\n     ],\n     \"x\": \"(\\\"gta 6\\\" OR \\\"gta vi\\\" OR gta6) (recomp OR emulator OR \\\"pc port\\\" OR scarlett) github.com -is:retweet\",\n-    \"lastRun\": \"2026-11-27T07:36:02.887Z\",\n-    \"lastSummary\": \"32 refreshed, 2 READMEs changed, 32 new candidates, 0 flagged.\",\n-    \"lastDmcaCheck\": \"2026-11-27T07:36:02.887Z\",\n+    \"lastRun\": \"2026-11-27T10:19:47.191Z\",\n+    \"lastSummary\": \"32 refreshed, 1 READMEs changed, 37 new candidates, 0 flagged, 1 errors.\",\n+    \"lastDmcaCheck\": \"2026-11-27T10:19:47.191Z\",\n     \"lastEditorRun\": \"2026-11-26T09:13:40.493Z\"\n   },\n   \"headlines\": [\n@@ -8655,20 +8691,41 @@\n       \"date\": \"2026-11-27T06:34:36.000Z\",\n       \"via\": \"Google News\"\n     },\n+    {\n+      \"title\": \"GTA 6 Graphics Leak: 4 Consoles, 0 Rockstar Confirmations\",\n+      \"outlet\": \"shattered.io\",\n+      \"link\": \"https://news.google.com/rss/articles/CBMioAFBVV95cUxPR0tYaFdyX1JHQml4UmNVVG8yNmZiRDFmNGhnMEFIcy1zVmF0WERWUWxidHRzWlFGQmY0am9Ma1lpWjNLYjRIN2pEVDdaTEJmcFJTSTZzeEw1TC00TUJ6YWNuVzU0eEhGUThHMWVtMWl1aUZCR1J5QnF5RVU0eE95WGtVbnlidGhBNVQyZ0k1T1piZkt5MUVLaXVoQ0VNM2Zp?oc=5\",\n+      \"date\": \"2026-11-27T02:57:57.000Z\",\n+      \"via\": \"Google News\"\n+    },\n     {\n       \"title\": \"GTA 6 Graphics Settings Leak: 4 Consoles, 0 Confirmed\",\n       \"outlet\": \"shattered.io\",\n       \"link\": \"https://news.google.com/rss/articles/CBMioAFBVV95cUxPR0tYaFdyX1JHQml4UmNVVG8yNmZiRDFmNGhnMEFIcy1zVmF0WERWUWxidHRzWlFGQmY0am9Ma1lpWjNLYjRIN2pEVDdaTEJmcFJTSTZzeEw1TC00TUJ6YWNuVzU0eEhGUThHMWVtMWl1aUZCR1J5QnF5RVU0eE95WGtVbnlidGhBNVQyZ0k1T1piZkt5MUVLaXVoQ0VNM2Zp?oc=5\",\n       \"date\": \"2026-11-27T02:50:06.000Z\",\n       \"via\": \"Google News\"\n     },\n+    {\n+      \"title\": \"GTA 6 PC port now has multiplayer running at 30FPS\",\n+      \"outlet\": \"TweakTown\",\n+      \"link\": \"https://www.tweaktown.com/news/114929/gta-6-pc-port-now-has-multiplayer-running-at-30fps/index.html\",\n+      \"date\": \"2026-11-27T01:33:00.000Z\",\n+      \"via\": \"Bing News\"\n+    },\n     {\n       \"title\": \"The unofficial GTA 6 PC port CGBJ posted a Windows launcher on 26 November and its GitHub repository now returns 404 for reasons unknown, with GitHub publishing no takedown notice naming it, while PortWatchVI relays a 25fps average in gameplay\",\n       \"outlet\": \"Make Tech Easier\",\n       \"link\": \"https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjcjBadzNBeHJLZ2lLUHBqWnp2aHhPU2JORHpNdmxKeG5ZdTM3RU5zOU5KbmdaRzM1bXY2VVB6cFFKTTR6UGtYeFQxRkNfSldPYVJEdVU2Q0xQRENDSXc1d0lvQ0NtSnhJ?oc=5\",\n       \"date\": \"2026-11-27T01:05:26.000Z\",\n       \"via\": \"Google News\"\n     },\n+    {\n+      \"title\": \"Cyberleek Releases .exe in Gta 6 Pc Port Push\",\n+      \"outlet\": \"El-Balad\",\n+      \"link\": \"https://www.el-balad.com/17070362\",\n+      \"date\": \"2026-11-26T23:42:00.000Z\",\n+      \"via\": \"Bing News\"\n+    },\n     {\n       \"title\": \"GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges\",\n       \"outlet\": \"TechPowerUp\",\n@@ -8690,6 +8747,13 @@\n       \"date\": \"2026-11-26T22:29:06.000Z\",\n       \"via\": \"Google News\"\n     },\n+    {\n+      \"title\": \"Can You Play GTA 6 on PC Right Now? GTA 6 PC Port Rumors and Leaks Explained\",\n+      \"outlet\": \"Beebom\",\n+      \"link\": \"https://beebom.com/can-you-play-gta-6-on-pc/\",\n+      \"date\": \"2026-11-26T22:02:00.000Z\",\n+      \"via\": \"Bing News\"\n+    },\n     {\n       \"title\": \"Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown\",\n       \"outlet\": \"Decrypt\",\n@@ -8781,13 +8845,6 @@\n       \"date\": \"2026-11-26T16:02:38.000Z\",\n       \"via\": \"Google News\"\n     },\n-    {\n-      \"title\": \"Can You Play GTA 6 on PC Right Now? GTA 6 PC Port Rumors and Leaks Explained\",\n-      \"outlet\": \"Beebom\",\n-      \"link\": \"https://beebom.com/can-you-play-gta-6-on-pc/\",\n-      \"date\": \"2026-11-26T16:00:00.000Z\",\n-      \"via\": \"Bing News\"\n-    },\n     {\n       \"title\": \"Take-Two Cracks Down on Unofficial GTA 6 PC Ports | Outlook Respawn\",\n       \"outlet\": \"Outlook Respawn\",\n@@ -8836,27 +8893,6 @@\n       \"link\": \"https://news.google.com/rss/articles/CBMirwFBVV95cUxQNmVoWWtSSUJoZGpFaFdvWXJtNmdHcmliUmhsTXRud1hxcjVXMWlweWJkbFNwZHRxUVhzdUkyTUJvN1pETUtuQ3dXOUIxRGF6dXg2MXpEcWdGalJBZ2R4Qm1kWkNWcjZKUVJhd3dvVFNXcDJVa2l1TlltMEtzYjFRN3VCYnpPTmpPbUxOekUxcm9MbUpndEMxTi1VRDhwUE1HczQ0aTBHMDVEXzBsQmxV?oc=5\",\n       \"date\": \"2026-11-26T14:59:25.000Z\",\n       \"via\": \"Google News\"\n-    },\n-    {\n-      \"title\": \"GTA VI PC Port Progress: Unofficial Ports Render In-Game at 6 to 20fps Despite Take-Two Takedowns\",\n-      \"outlet\": \"stupidDOPE\",\n-      \"link\": \"https://news.google.com/rss/articles/CBMixwFBVV95cUxQNXpDRllVYWdWNlk0cmJVeU5CTENmaElyb19qSlEtd0c0OWR1UHM0WHRXVTF1YWZGaVExdkNHYldzYlc5Y1R6TFd4RXdBdWVLcVBBUjN4YUhEYmpVYXRnWDgxYmQ2bFVkOTRJRmFkdzhKekt4WDFpbVk2RUg2MXdTQTBNT2Jkal9SWHp0QTdqWWxQeGVlOHdUTXpPTENxWk4tMm9QT3JZTlZURDQyMWRFcnBySXlyb2x5X2xETTNOUnllSmNwZmIw?oc=5\",\n-      \"date\": \"2026-11-26T14:42:32.000Z\",\n-      \"via\": \"Google News\"\n-    },\n-    {\n-      \"title\": \"GTA VI PC Port: Unofficial Ports Hit 6 to 20fps In-Game, Nov 26 Update\",\n-      \"outlet\": \"stupidDOPE\",\n-      \"link\": \"https://news.google.com/rss/articles/CBMixwFBVV95cUxQNXpDRllVYWdWNlk0cmJVeU5CTENmaElyb19qSlEtd0c0OWR1UHM0WHRXVTF1YWZGaVExdkNHYldzYlc5Y1R6TFd4RXdBdWVLcVBBUjN4YUhEYmpVYXRnWDgxYmQ2bFVkOTRJRmFkdzhKekt4WDFpbVk2RUg2MXdTQTBNT2Jkal9SWHp0QTdqWWxQeGVlOHdUTXpPTENxWk4tMm9QT3JZTlZURDQyMWRFcnBySXlyb2x5X2xETTNOUnllSmNwZmIw?oc=5\",\n-      \"date\": \"2026-11-26T14:42:32.000Z\",\n-      \"via\": \"Google News\"\n-    },\n-    {\n-      \"title\": \"The unofficial GTA 6 PC port has surpassed 40 FPS thanks to FSR.\",\n-      \"outlet\": \"GameGPU\",\n-      \"link\": \"https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd2QzSmNNcEx5T28ySzREQ3BqcGp4cmhyVkI1UllHV19EUkNnMExGMFFFem84eUYyMS1lM0VFUkxBakZVRVdmNDhVcHRoOTg2Wld2VEprODZCRGM5RG1lSnVUbDIzXzlabkoyQzNuQ3lKcEVfUjdhS214bFZJQzd3alJval8xZnY3VVVpdzViWFJRd3NidTN0Z21YXzY3c3pIQ2xYcGRfeW4?oc=5\",\n-      \"date\": \"2026-11-26T14:38:19.000Z\",\n-      \"via\": \"Google News\"\n     }\n   ],\n   \"dmca\": ["
+        "additions": 5,
+        "deletions": 5,
+        "changes": 10,
+        "blob_url": "https://github.com/4lwayz/portwatch-vi/blob/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/data%2Ftracker.json",
+        "raw_url": "https://github.com/4lwayz/portwatch-vi/raw/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/data%2Ftracker.json",
+        "contents_url": "https://api.github.com/repos/4lwayz/portwatch-vi/contents/data%2Ftracker.json?ref=8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5",
+        "patch": "@@ -1164,7 +1164,7 @@\n       \"repo\": null,\n       \"nuked\": {\n         \"at\": \"2026-11-27\",\n-        \"note\": \"Repository and GitHub account went offline on Nov 27; it isn't known whether GitHub removed them or the owner took them down. Its progress still counts in our overall number.\",\n+        \"note\": \"Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.\",\n         \"show\": true,\n         \"keepScore\": true\n       },\n@@ -1178,7 +1178,7 @@\n       \"related\": [\n         \"avatarmanz/VIctory-7900XTX\"\n       ],\n-      \"byline\": \"Offline · was public, based on VIctory\",\n+      \"byline\": \"Removed by GitHub · was public, based on VIctory\",\n       \"proof\": {\n         \"label\": \"Video on Reddit\",\n         \"url\": \"https://www.reddit.com/r/FitGirlRepack/comments/1y5k8xu/actually_playable/\"\n@@ -1189,15 +1189,15 @@\n       ],\n       \"approach\": \"Compatibility layer\",\n       \"target\": \"GTA VI only\",\n-      \"summary\": \"AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account went offline on 27 Nov; it isn't known whether GitHub removed them or its owner did.\",\n+      \"summary\": \"AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.\",\n       \"highlights\": [\n         \"Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11\",\n         \"About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus\",\n         \"41 minutes in one session without a crash (its README); sound works\",\n         \"Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later\"\n       ],\n       \"blockers\": [\n-        \"Code and GitHub account offline since 27 Nov; unknown whether GitHub removed them or its owner did\",\n+        \"Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it\",\n         \"Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)\",\n         \"Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others\"\n       ],\n@@ -8543,7 +8543,7 @@\n     {\n       \"date\": \"2026-11-27\",\n       \"kind\": \"down\",\n-      \"text\": \"AvatarManz's repository and GitHub account have gone offline too; it isn't known whether GitHub removed them or its owner took them down. Its card is marked as nuked and no longer ranked, but its progress (81.8%) still counts. DexNom (77.4%) is now #2 in the race behind VIctory-NVIDIA.\"\n+      \"text\": \"GitHub has removed AvatarManz's repository and account too, for violating its Terms of Service, which PortWatch has confirmed. Its card is marked as nuked and no longer ranked, but its progress (81.8%) still counts. DexNom (77.4%) is now #2 in the race behind VIctory-NVIDIA.\"\n     },\n     {\n       \"date\": \"2026-11-27\","
       }
     ]
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"3939166edee402fd798bdd246e7fcde6b8c24f749844244610e3379376ad1e08\"",
-      "hash": "90a2407f02dcedbcbdf1b80c631e619abb593565ad762e6c6c2c8ffdb95ed847"
+      "etag": "W/\"a8d2dc9d91ddffd18a1e2a1b6d3ed636ffc8ae379cbd10ecd6814c54bde018a1\"",
+      "hash": "99601e5e2aa332189d9b0e793504eb9995b4fa70f58c5bcc7cf82dfdc69df60b"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
-      "etag": "W/\"9c81706f0546436df9162898c764f8d8\"",
-      "hash": "4d4e5c3e057e5690609978a10a4d571a508b6554fa268b314677655af582fa88"
+      "etag": "W/\"e8847a2db765b3a6daa3e5e3b8ba3820\"",
+      "hash": "cb1ece507612939ba6d4391bdfff6dcdb69b219c71d764d35f87bc70c1e1443c"
     },
     "https://portwatch-vi.xyz/data/tracker.json": {
-      "etag": "W/\"edaa25ef64186697e0d4d0d0b12222b4\"",
-      "hash": "ac8b149aed7796c751b629cfe6ac495398befe596f4407f40cc081bcf94fce35"
+      "etag": "W/\"0827d9bda6a9dd7cb90ef6d05cd2dbdb\"",
+      "hash": "759414dfd63f04cf2d8d846bc44a00f74aa3ff37bb0069ad1272291846bbb16d"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/a1397083b4d567d587c248aeb28eae76516ddb4f/data/pinned.json": {
       "etag": "W/\"f7e633f37a6fbe54cfc2b3b0953f893eff7d017026e24b44dd1cb257e2e0b257\"",
@@ -411,6 +420,18 @@
       "hash": "ac8b149aed7796c751b629cfe6ac495398befe596f4407f40cc081bcf94fce35"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/48a0e37d5fb4650f794788888c2ab15d931822dc/assets/i18n/en.json": {
+      "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
+      "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/data/pinned.json": {
+      "etag": "W/\"f9a72048d34f0dc50b774617d58e5c345e9f596c45a8e7e6ef89d703b4510245\"",
+      "hash": "cb1ece507612939ba6d4391bdfff6dcdb69b219c71d764d35f87bc70c1e1443c"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/data/tracker.json": {
+      "etag": "W/\"4b3a46ae0ac1eaf8750e4a5934fa95f5430be1734991ca65c4be80fe995e2bde\"",
+      "hash": "759414dfd63f04cf2d8d846bc44a00f74aa3ff37bb0069ad1272291846bbb16d"
+    },
+    "https://raw.githubusercontent.com/4lwayz/portwatch-vi/8e0a5ff956e29b08a5085bb45be6528ed6c0b4b5/assets/i18n/en.json": {
       "etag": "W/\"baf720141f3af19dfada4d1129aa1e1505efbc4ddd9c17a5f5490be05c3ef711\"",
       "hash": "d195d88fca316b4fa338eae63b9bfc05d66aa432c318971c682d29e217a10a7b"
     }
