@@ -3,6 +3,8 @@ const prose=new Set(['ray-traced','ray-tracing','in-game','in-world','close-to-r
 export const isProseCompound=s=>prose.has(s.toLowerCase())||/^\d+-(?:hour|year|day|month|week)(?:-old)?$/i.test(s);
 export function editorialQualityIssue(source,ar){
  const text=ar.normalize('NFKC').replace(/[\u064B-\u065F\u0670]/g,'');
+ if(/What's\s+(?:missing|new|next)/i.test(source)&&/\bWhat\b/.test(ar))return 'untranslated_prose';
+ if(/render at a low resolution/i.test(source)&&/صرف اللعبة|صرفها|صرف بدقة/.test(text))return 'render_terminology';
  if(/^Exclusive:/i.test(source)&&!/(?:حصري|خاص)/.test(text))return 'exclusive_label_omitted';
  if(/repository\s+and\s+[^.]{0,50}\baccount\b/i.test(source)&&!/(?:مستودع|المستودع)[\s\S]*و(?:ال)?حساب/.test(text))return 'repository_account_omitted';
  for(const word of source.match(/[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+/g)||[])if(isProseCompound(word)&&ar.toLowerCase().includes(word.toLowerCase()))return 'untranslated_prose';

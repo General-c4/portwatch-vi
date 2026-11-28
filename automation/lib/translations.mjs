@@ -37,7 +37,7 @@ export function protectedTerms(data){
 export function protectText(source,terms=[],options={}){
  const escaped=terms.map(v=>v.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
  const compound=options.nested?'(?!)':'\\b[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+\\b';
- const pattern=new RegExp(`<\\/?[A-Za-z][^>]*>|https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|@[A-Za-z0-9_.-]+|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b(?!(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Today|Yesterday|Tomorrow)\\b)[A-Z][A-Za-z0-9_.-]+(?=['’]s\\b)|\\b[A-Z][a-z]+[A-Z][A-Za-z0-9]*\\b|${compound}|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
+ const pattern=new RegExp(`<\\/?[A-Za-z][^>]*>|https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|@[A-Za-z0-9_.-]+|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b(?!(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Today|Yesterday|Tomorrow|What|It|That|This|Here|There|Who|Where|When|Why|How|Which|Let|He|She|Everyone|Everybody|Someone|Somebody|Anyone|Anybody|Nobody|Something|Nothing|Anything|Everything)\\b)[A-Z][A-Za-z0-9_.-]+(?=['’]s\\b)|\\b[A-Z][a-z]+[A-Z][A-Za-z0-9]*\\b|${compound}|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
  const tokens=[];const text=source.replace(pattern,original=>{
   if(!options.nested&&options.isProseCompound?.(original)){
    const nested=protectText(original,terms,{nested:true});

@@ -75,6 +75,7 @@ test('valid Arabic non-confirmation remains negative, and HTML markup is protect
  assert.equal(restoreTranslation('Belobug and Belobug/VIctory-Belobug-AMD',`${overlapping.tokens[0].token} ومستودع ${overlapping.tokens[1].token}`,overlapping.tokens),'Belobug ومستودع Belobug/VIctory-Belobug-AMD');
  const names=prepareNewsRequest({title:"Marvis's build and TeK (@TeKGameR950) on Friday"},[]);
  assert(names.protectedFields.title.tokens.some(t=>t.original==='Marvis'));assert(names.protectedFields.title.tokens.some(t=>t.original==='@TeKGameR950'));
+ assert.equal(prepareNewsRequest({title:"What's missing? It's rendering."},[]).protectedFields.title.tokens.some(t=>['What','It'].includes(t.original)),false);
  assert.equal(editorialQualityIssue('The repository and GitHub account are gone.','اختفى المستودع وحساب GitHub.'),null);
  assert.equal(editorialQualityIssue('The repository and GitHub account are gone.','اختفى المستودع الخاص بحساب GitHub.'),'repository_account_omitted');
 });
