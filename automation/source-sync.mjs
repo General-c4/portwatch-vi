@@ -24,7 +24,7 @@ if(!policy.source.length){await atomicJSON('.sync/source-status.json',{...state,
 const branch=`sync/upstream-${upstream.slice(0,12)}`,work=resolve(`.sync/integration-${upstream.slice(0,12)}`);
 await mkdir('.sync',{recursive:true});
 const existing=git(['ls-remote','--heads','origin',`refs/heads/${branch}`]);
-if(existing){await atomicJSON('.sync/source-status.json',{...state,checkedUpstreamSha:upstream,status:'review-required',branch,reason:'Existing integration requires conflict review'});log('source-review-already-staged',{branch,upstream});process.exit(0);}
+if(existing){await atomicJSON('.sync/source-status.json',{...state,checkedUpstreamSha:upstream,status:'review-required',branch,reason:'Existing integration requires conflict review'});if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'review_required=true\n');log('source-review-already-staged',{branch,upstream});process.exit(0);}
 git(['worktree','add','-b',branch,work,'HEAD']);
 let conflicts=[];
 try{
@@ -70,6 +70,7 @@ try{
   try{pr=run('gh',['pr','create','--repo',repo,'--base',target,'--head',branch,'--draft','--title',`sync: review upstream ${upstream.slice(0,12)}`,'--body-file',bodyFile]);}
   catch(error){prError=String(error.stderr||error.message).slice(0,500);}
   await atomicJSON('.sync/source-status.json',{checkedUpstreamSha:upstream,status:'review-required',branch,pr,prError,conflicts,reasons:policy.reasons});
+  if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'review_required=true\n');
   log('source-review-required',{branch,pr,prError});
  }
 }finally{git(['worktree','remove',work]);}

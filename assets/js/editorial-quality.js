@@ -1,5 +1,5 @@
 // Editorial prose is translatable; code/repository/hardware identifiers remain protected.
-const prose=new Set(['ray-traced','ray-tracing','in-game','in-world','close-to-retail','open-world','all-amd','first-run','self-reported','real-time','off-screen','shader-heavy','stand-in','one-to-one','ai-generated','fan-made','proof-of-concept','frame-rate','wine-style','french-language']);
+const prose=new Set(['ray-traced','ray-tracing','in-game','in-world','close-to-retail','open-world','all-amd','first-run','self-reported','real-time','off-screen','shader-heavy','stand-in','one-to-one','ai-generated','fan-made','proof-of-concept','frame-rate','wine-style','french-language','best-rated','top-rated','single-player']);
 export const isProseCompound=s=>prose.has(s.toLowerCase())||/^\d+-(?:hour|year|day|month|week)(?:-old)?$/i.test(s);
 export function editorialQualityIssue(source,ar){
  const text=ar.normalize('NFKC').replace(/[\u064B-\u065F\u0670]/g,'');

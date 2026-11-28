@@ -45,8 +45,10 @@ export function linkify(text) {
 // Fills the .pinned card inside `box` and shows it. Returns false (card stays hidden) when there's nothing to pin.
 // `base` prefixes local paths, for pages outside the site root (the dashboard passes '../').
 // `gifSrc` lets the dashboard preview a GIF that isn't on the site yet (a just-picked file).
-export function fillPinned(box, p, { ago = () => '', when = (iso) => new Date(iso).toLocaleString(), base = '', gifSrc = '' } = {}) {
-  const text = String(p?.text ?? '').trim().slice(0, PINNED_MAX);
+export function fillPinned(box, p, { ago = () => '', when = (iso) => new Date(iso).toLocaleString(), base = '', gifSrc = '', textLimit = PINNED_MAX } = {}) {
+  // Arabic can need more characters than the owner's original 500-character message.
+  // The editor retains its original limit; localized display remains escaped and bounded.
+  const text = String(p?.text ?? '').trim().slice(0, Math.max(PINNED_MAX,Math.min(2500,Number(textLimit)||PINNED_MAX)));
   const gif = pinnedGif(p?.gif);
   const cta = pinnedCta(p?.cta);
   if (!box || !p || p.show === false || (!text && !gif && !cta)) { if (box) box.hidden = true; return false; }

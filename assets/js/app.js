@@ -91,7 +91,7 @@ async function main() {
   renderMeta(data);
   renderHeroArt(data.site || {});
   startCountdown(data.exe || {});
-  pinned.then((p) => fillPinned($('#pinned'), p ? { ...p, text: editorialText(p.text,'pinned:current','text') } : p, { ago, when: (iso) => new Date(iso).toLocaleString(locale()) }));
+  pinned.then((p) => fillPinned($('#pinned'), p ? { ...p, text: editorialText(p.text,'pinned:current','text') } : p, { ago, when: (iso) => new Date(iso).toLocaleString(locale()), textLimit: document.documentElement.lang==='ar'?2500:500 }));
   renderOverall(data);
   renderChanges(data.changes || []);
   renderFilterChips();

@@ -39,6 +39,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           PW_SOURCE_BROWSER_CHECK: '1'
           PW_BROWSER: chromium
+      - name: Report unresolved source integration distinctly from successful deployment
+        if: steps.source.outputs.review_required == 'true'
+        run: node -e "throw Error('Upstream source requires review; see the fork integration PR and source-sync-status artifact')"
       - if: steps.source.outputs.integrated == 'true'
         run: gh workflow run arabic-preview.yml --ref feat/arabic-rtl-localization
         env:

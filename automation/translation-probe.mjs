@@ -2,8 +2,13 @@
 import {createTranslationRouter} from './lib/translation-router.mjs';
 import {prepareNewsRequest,validateNewsResponse,createGeminiNewsClient} from './lib/gemini-news.mjs';
 import {readJSON,atomicJSON} from './lib/state.mjs';
+import {protectedTerms} from './lib/translations.mjs';
 const configuration=await readJSON('automation/translation-providers.json'),results=[];
-const request=prepareNewsRequest({title:'GTA VI project reports 20 FPS on NVIDIA',summary:'The developer says the result may improve; independent testing has not verified it.'},[],['GTA VI','NVIDIA']);
+let request=prepareNewsRequest({title:'GTA VI project reports 20 FPS on NVIDIA',summary:'The developer says the result may improve; independent testing has not verified it.'},[],['GTA VI','NVIDIA']);
+if(process.env.PW_PROBE_MODE==='news'){
+ const data=await readJSON('data/tracker.json'),article=data.news[0];
+ request=prepareNewsRequest({title:article.title,summary:article.dek,...Object.fromEntries(article.body.map((text,i)=>[`body.${i}`,text]))},article.sources.map(s=>s.url),protectedTerms(data));
+}
 const selected=process.env.PW_PROBE_MODE==='fallback'?[]:process.env.PW_PROBE_PROVIDERS?.split(',')||['gemini','groq','cloudflare','zai'];
 for(const id of selected){
  if(!configuration.providers[id])throw new Error('Unknown configured provider');

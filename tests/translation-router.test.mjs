@@ -4,7 +4,8 @@ import {mkdtemp,readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {createTranslationRouter,freePolicy,retryDelay} from '../automation/lib/translation-router.mjs';
-import {prepareNewsRequest} from '../automation/lib/gemini-news.mjs';
+import {prepareNewsRequest,NEWS_RESPONSE_SCHEMA} from '../automation/lib/gemini-news.mjs';
+import {protectText,restoreTranslation} from '../automation/lib/translations.mjs';
 const request=()=>prepareNewsRequest({title:'New project update'},[]);
 const good=()=>({text:JSON.stringify({title:'تحديث جديد للمشروع',summary:'',body:[],sourceUrls:[]}),finishReason:'STOP',usage:{promptTokenCount:20,candidatesTokenCount:10,totalTokenCount:30}});
 const env={GEMINI_API_KEY:'test-secret-gemini',GROQ_API_KEY:'test-secret-groq',AXFORGE_API_KEY:'test-secret-axforge',TRANSLATION_FREE_PROVIDERS:'gemini,groq,axforge'};
@@ -22,7 +23,7 @@ for(const [label,error]of Object.entries({quota:Object.assign(new Error('quota')
  });
 }
 test('invalid JSON, incomplete fields, copied English and altered facts trigger a validated fallback',async()=>{
- for(const text of ['not json',JSON.stringify({title:'ترجمة'}),JSON.stringify({title:'New project update',summary:'',body:[],sourceUrls:[]})]){
+ for(const text of ['not json',JSON.stringify(NEWS_RESPONSE_SCHEMA),JSON.stringify({title:'ترجمة'}),JSON.stringify({title:'New project update',summary:'',body:[],sourceUrls:[]})]){
   const router=await setup({clientFactories:{gemini:async()=>({generate:async()=>({...good(),text})}),groq:async()=>({generate:async()=>good()})}});
   assert.equal((await(await router.clientFactory({maxOutputTokens:64})).generate(request())).provider,'groq');
  }
@@ -55,4 +56,16 @@ test('OpenAI-compatible adapter uses fixed HTTPS host, refuses redirects and acc
  const c=config();c.order=['groq'];const calls=[];
  const router=await setup({config:c,fetchImpl:async(url,options)=>{calls.push({url,options});return Response.json({choices:[{message:{content:good().text},finish_reason:'stop'}],usage:{prompt_tokens:20,completion_tokens:10,total_tokens:30}});}});
  const response=await(await router.clientFactory({maxOutputTokens:64})).generate(request());assert.equal(response.provider,'groq');assert.equal(calls.length,1);assert.equal(calls[0].url,'https://api.groq.com/openai/v1/chat/completions');assert.equal(calls[0].options.redirect,'error');assert.equal(router.state.providers.groq.daily.tokens,30);
+});
+test('zero-price preflight prevents OpenRouter inference when a selected model becomes paid',async()=>{
+ const c=config();c.order=['openrouter'];c.providers.openrouter={model:'google/gemma-4-26b-a4b-it:free'};let posts=0;
+ const router=await setup({config:c,env:{OPENROUTER_API_KEY:'test-secret',TRANSLATION_FREE_PROVIDERS:'openrouter'},fetchImpl:async(_url,options)=>{if(options.method==='POST')posts++;return Response.json({data:[{id:c.providers.openrouter.model,pricing:{prompt:'0.001',completion:'0'}}]});}});
+ await assert.rejects((await router.clientFactory({maxOutputTokens:64})).generate(request()));assert.equal(posts,0);assert.equal(router.state.providers.openrouter.code,'free_price_unverified');
+});
+test('valid Arabic non-confirmation remains negative, and HTML markup is protected verbatim',()=>{
+ assert.equal(restoreTranslation('Not verified','لم تؤكد الاختبارات المستقلة ذلك',[]),'لم تؤكد الاختبارات المستقلة ذلك');
+ assert.throws(()=>restoreTranslation('Not verified','أكدت الاختبارات المستقلة ذلك',[]));
+ const source='A <strong>new</strong> update',protectedValue=protectText(source);
+ assert.deepEqual(protectedValue.tokens.map(t=>t.original),['<strong>','</strong>']);
+ assert.equal(restoreTranslation(source,`تحديث ${protectedValue.tokens[0].token}جديد${protectedValue.tokens[1].token}`,protectedValue.tokens),'تحديث <strong>جديد</strong>');
 });

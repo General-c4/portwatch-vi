@@ -4,7 +4,7 @@ on:
     inputs:
       mode:
         type: choice
-        options: [benchmark, fallback]
+        options: [benchmark, fallback, news]
         default: benchmark
 permissions:
   contents: write

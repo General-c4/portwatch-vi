@@ -24,6 +24,11 @@ try{
   for(const button of await page.locator('.chip[data-filter]').all())await button.click();
   for(const sort of ['stars','active','score'])await page.selectOption('#sort',sort);
   await page.locator('[data-story]').first().click();await page.waitForSelector('#reader[open]');await page.keyboard.press('Escape');
+  if(lang==='ar'&&width===390){
+   const text='هذه ترجمة عربية كاملة للرسالة المثبتة دون اقتطاع المحتوى. '.repeat(16);
+   const displayed=await page.evaluate(async text=>{const {fillPinned}=await import('./assets/js/pinned.js');fillPinned(document.querySelector('#pinned'),{show:true,name:'Fixture',text},{textLimit:2500});return document.querySelector('#pinned .pin-text').textContent;},text);
+   assert.equal(displayed,text.trim());assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+  }
   assert.deepEqual(errors,[]);await context.close();
  }
  console.log('Passed staged-source Arabic/English browser gate at desktop, tablet and mobile sizes.');

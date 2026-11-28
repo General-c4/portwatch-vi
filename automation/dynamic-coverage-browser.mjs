@@ -44,7 +44,7 @@ try{
    if(process.env.PW_ALLOW_QUEUED_TRANSLATIONS!=='1')assert.equal(actualCoverage.missing.length,0,'Live dynamic content must be fully translated');
   }
   if(pin?.show!==false&&pin?.text){
-   const pinExpected=expected(pin.text,'pinned:current','text',lang).slice(0,500).replace(/\*\*(.+?)\*\*/g,'$1'),prefix=pinExpected.split(/https:\/\//)[0].trim();
+   const pinExpected=expected(pin.text,'pinned:current','text',lang).slice(0,lang==='ar'?2500:500).replace(/\*\*(.+?)\*\*/g,'$1'),prefix=pinExpected.split(/https:\/\//)[0].trim();
    await page.waitForFunction(()=>!document.querySelector('#pinned').hidden);
    assert(clean(await page.locator('#pinned .pin-text').textContent()).startsWith(prefix));
    assert.equal(await page.locator('#pinned .pin-name').textContent(),pin.name||'4lwayz');assert.equal(await page.locator('#pinned .pin-time').getAttribute('datetime'),pin.updated);

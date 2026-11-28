@@ -58,18 +58,21 @@ export async function createTranslationRouter({root='.',config,state,env=process
     if(p.monthly?.resetAt&&now>=p.monthly.resetAt)delete p.monthly;
     p.monthly??={resetAt:now+30*86400000,tokens:0};
     if(p.cooldownUntil>now){event('cooldown_skip',{provider:id,code:p.code,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
-    const outputLimit=id==='groq'?Math.min(2048,options.maxOutputTokens||8192):options.maxOutputTokens||8192;
-    const instructions=(options.systemInstruction||NEWS_SYSTEM_INSTRUCTION)+'\nReturn a JSON DATA INSTANCE conforming to the schema below. Do NOT return the schema definition itself. The result must contain title (string), summary (string), body (array of index/text objects), sourceUrls (array of strings), and no other properties. Translate nonempty input fields; unused title/summary must be empty strings. عند نسبة قول إلى المطور باستخدام says، استخدم يقول أو ذكر؛ لا تضف تأكيدًا أو تحققًا غير موجود في المصدر. Keep every ZXQ token verbatim, once per original occurrence. Schema: '+JSON.stringify(NEWS_RESPONSE_SCHEMA);
+    const outputLimit=id==='groq'?Math.min(4096,options.maxOutputTokens||8192):options.maxOutputTokens||8192;
+    const instructions=(options.systemInstruction||NEWS_SYSTEM_INSTRUCTION)+'\nReturn a JSON DATA INSTANCE conforming to the schema below. Do NOT return the schema definition itself. The result must contain title (string), summary (string), body (array of index/text objects), sourceUrls (array of strings), and no other properties. Translate nonempty input fields; unused title/summary must be empty strings. عند نسبة قول إلى المطور باستخدام says، استخدم يقول أو ذكر؛ لا تضف تأكيدًا أو تحققًا غير موجود في المصدر. Terms of Service: شروط الخدمة؛ single-player: اللعب الفردي؛ best-rated وtop-rated: الأعلى تقييمًا. Keep every ZXQ token verbatim, once per original occurrence. Schema: '+JSON.stringify(NEWS_RESPONSE_SCHEMA);
     const reserve=Buffer.byteLength(instructions+request.prompt)+1024+outputLimit;
+    // Approximate TPM admission; actual provider usage/reset headers remain authoritative.
+    // Byte upper bounds are retained for daily/monthly budgets but are too pessimistic for TPM.
+    const minuteReserve=Math.ceil(Buffer.byteLength(instructions+request.prompt)/3)+outputLimit;
     if(settings.dailyRequests&&p.daily.requests>=settings.dailyRequests||settings.dailyTokens&&p.daily.tokens+reserve>settings.dailyTokens){p.cooldownUntil=dailyReset(id,now);p.code='local_daily_limit';event('quota',{provider:id,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
     if(settings.monthlyTokens&&p.monthly.tokens+reserve>settings.monthlyTokens){p.cooldownUntil=p.monthly.resetAt;p.code='local_monthly_limit';continue;}
     if(attempts>=config.maxAttemptsPerRun)break;
     // TPM reservations protect short windows even when a response omits usage.
     if(!p.minute||now>=p.minute.resetAt)p.minute={resetAt:now+60000,tokens:0};
-    if(settings.tokensPerMinute&&reserve>settings.tokensPerMinute){event('input_too_large',{provider:id});continue;}
-    if(settings.tokensPerMinute&&p.minute.tokens+reserve>settings.tokensPerMinute){p.cooldownUntil=p.minute.resetAt;p.code='local_minute_limit';continue;}
+    if(settings.tokensPerMinute&&minuteReserve>settings.tokensPerMinute){event('input_too_large',{provider:id});continue;}
+    if(settings.tokensPerMinute&&p.minute.tokens+minuteReserve>settings.tokensPerMinute){p.cooldownUntil=p.minute.resetAt;p.code='local_minute_limit';continue;}
     await sleep(Math.max(0,(p.lastRequestAt||0)+(settings.intervalMs||0)-clock()));
-    attempts++;tried++;p.requests++;p.daily.requests++;p.daily.tokens+=reserve;p.monthly.tokens+=reserve;p.minute.tokens+=reserve;p.lastRequestAt=clock();
+    attempts++;tried++;p.requests++;p.daily.requests++;p.daily.tokens+=reserve;p.monthly.tokens+=reserve;p.minute.tokens+=minuteReserve;p.lastRequestAt=clock();
     // Persist the reservation before sending. A terminated workflow cannot spend the same budget twice.
     await save();const started=clock();
     try{
@@ -103,7 +106,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
      }
      const usage=response.usage||{},total=usage.totalTokenCount;
      onCandidate({provider:id,text:response.text,finishReason:response.finishReason});
-     if(Number.isFinite(total))for(const bucket of [p.daily,p.monthly,p.minute])bucket.tokens+=Math.max(0,total)-reserve;
+     if(Number.isFinite(total)){for(const bucket of [p.daily,p.monthly])bucket.tokens+=Math.max(0,total)-reserve;p.minute.tokens+=Math.max(0,total)-minuteReserve;}
      if(!response.text||response.finishReason&&response.finishReason!=='STOP')throw new Error('empty_response');
      const fields=validateNewsResponse(request,response.text);
      for(const[key,value]of Object.entries(fields))if(editorialQualityIssue(request.fields[key],value))throw new Error('protected_facts_or_language_invalid');
