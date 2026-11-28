@@ -494,6 +494,48 @@
           "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، وفعّل التصيير بدقة منخفضة ثم ارفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة الضبابية منخفضة الدقة تُفقد نقاط التصيير.\n\nما ينقصنا هو صورة تضاهي جودة نسخة جهاز الألعاب: إضاءة كاملة، تتبع أشعة، وخامات حادة. وكما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي."
         }
       }
+    },
+    "article:2026-11-25-belobug-way-ahead": {
+      "sourceHash": "836dcb42a3730f780f03bbd09963730d845760d65e6b70723902c50d2e8e032c",
+      "fields": {
+        "body.5": {
+          "source": "Update, 2026-11-27: GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card on our board is now marked as nuked.",
+          "ar": "تحديث، 2026-11-27: GitHub أزالت مستودع Belobug وحسابها بسبب انتهاك شروط الخدمة، وهو ما أكده PortWatch. تم الآن وضع علامة \"مُحذوف\" على بطاقتها في لوحة المتابعة لدينا."
+        }
+      }
+    },
+    "article:2026-11-24-cgbj-in-game": {
+      "sourceHash": "933f0de3ef7ffb0ee99ac68d7318fb2b7413ee63bee687c2c207668f21ec48d8",
+      "fields": {
+        "summary": {
+          "source": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its code was public briefly and is private again.",
+          "ar": "يسمح إصدار CGBJ القائم على VIctory وXCL لللاعب بالمشي حول المناطق والتحدث مع الشخصيات غير القابلة للتحكم. كان كوده متاحًا للجمهور لفترة وجيزة ثم أصبح خاصًا مرة أخرى."
+        },
+        "body.2": {
+          "source": "CGBJ's build is based on VIctory and also takes some of XCL's work. Its code is private; it was public briefly as codec-d/cool_fox on 2026-11-26.",
+          "ar": "يستند إصدار CGBJ إلى VIctory ويستفيد أيضًا من بعض أعمال XCL. كوده خاص؛ كان متاحًا للجمهور لفترة وجيزة باسم codec-d/cool_fox على 2026-11-26."
+        },
+        "body.3": {
+          "source": "We've added CGBJ to the tracker at 72%, at our In-game stage, which puts it first. That rests on our own check: the video doesn't name the project.",
+          "ar": "أضفنا CGBJ إلى المتتبع في 72%، في مرحلة داخل اللعبة، مما يجعله في الصدارة. يعتمد ذلك على فحصنا الخاص: الفيديو لا يذكر اسم المشروع."
+        },
+        "body.4": {
+          "source": "Update, 2026-11-26: CGBJ's repository is public and the entry now participates in the public race as codec-d/cool_fox.",
+          "ar": "تحديث، 2026-11-26: مستودع CGBJ أصبح عامًا، والمادة الآن تشارك في السباق العام باسم codec-d/cool_fox.."
+        },
+        "body.5": {
+          "source": "Update, later on 2026-11-26: the codec-d/cool_fox repository is offline, so CGBJ is listed as a private build again.",
+          "ar": "تحديث، لاحقًا في 2026-11-26: مستودع codec-d/cool_fox غير متصل، لذا يُدرج CGBJ كإصدار خاص مرة أخرى."
+        }
+      }
+    },
+    "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5": {
+      "fields": {
+        "title": {
+          "source": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
+          "ar": "المبرمجون يستخدمون AI لمحاولة GTA VI PC منفذ كأهداف Take-Two لمشاريع GitHub"
+        }
+      }
     }
   }
 }

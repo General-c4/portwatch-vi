@@ -148,7 +148,7 @@
     "refs": [
       "candidates:tiadiff/VIctory-NVIDIA-LowStutter.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
     "reviewRequired": false
   },
@@ -161,7 +161,7 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.0"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
@@ -174,7 +174,7 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.2"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
@@ -187,8 +187,8 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.1"
     ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -200,7 +200,7 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.0"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
@@ -213,7 +213,7 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.3"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
@@ -226,7 +226,7 @@
     "refs": [
       "candidates:DesignWithTommy/i95-GTA6-PC-Launcher.description"
     ],
-    "attempts": 1,
+    "attempts": 2,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
     "reviewRequired": false
   },
@@ -242,9 +242,9 @@
       "candidates:ProjectLeonida/mandy.signals.0",
       "candidates:afredas/Slys.signals.0"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
@@ -255,9 +255,9 @@
     "refs": [
       "dashboard.c2fd567e124a"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "381606057ecab4670d79912c69fbaf771193eb9bb5c39994cf7637b0ca171555",
@@ -268,9 +268,9 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "8c2c0766951853aa82abea499f81aa5307a7c3c61c1fe3a501fd3f54d6d38811",
@@ -281,9 +281,9 @@
     "refs": [
       "dashboard.28ce9a6478d7"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "decd9a9ab9e6816a7bf9c26e6a5768ba9b3b915371e9603c576ffd563aa152ce",
@@ -294,9 +294,9 @@
     "refs": [
       "scout.lastSummary"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7b99a0022c4a0299aac9b48bea504c9d0657da7c5dcd5b6a105487d80e6bae07",
@@ -307,9 +307,9 @@
     "refs": [
       "candidates:ProjectLeonida/mandy.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "e234faed16a6b8e5095ce0af249f458baa545a1d9ce69b03d58da040df9f9258",
@@ -320,9 +320,9 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4405b3070d6498f27b7e7a07b282887561afac5713fc5e38f0bd3f8bbe10c72b",
@@ -333,9 +333,9 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.sources.1.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "a62e6d9e540690d5c22020269039fe463cc1ee0e0e070b09a97c53c9e5b7f527",
@@ -346,9 +346,9 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.sources.0.title"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "cf0535b91f817e84af94a8dce71954849fcb2af0014db18685943eb0e7b11e1d",
@@ -359,9 +359,9 @@
     "refs": [
       "candidates:mrbabayeen-Linux/mandy6.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "363c3392e6cc506af9def321eeca75ad71543bf3ffb064fafe41e02f97552ed6",
@@ -372,9 +372,9 @@
     "refs": [
       "candidates:JozefDeTremmerie/CCS03.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "634e175af31fa40f62676915ed7c2ae2949a341d93a4b92013a4ce425f4a231d",
@@ -385,9 +385,9 @@
     "refs": [
       "candidates:bulkynomad/ScarlettEdge.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "2f5e9d2f3f236875fa422bb40e01a297c5e9c11483caba3acea97ede4da5820c",
@@ -398,9 +398,9 @@
     "refs": [
       "candidates:RipcuBAN/victory-fork.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "9eae94bf6e060c09b1ace9c0d60ad398cbbb07ff21a2d6a8d233467e017d479d",
@@ -411,9 +411,9 @@
     "refs": [
       "news:2026-11-24-cgbj-in-game.body.5"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "220a025954a6a5b52e626d5c34fb2391708e9c68277698ea2c091e720429ee60",
@@ -424,9 +424,9 @@
     "refs": [
       "news:2026-11-24-cgbj-in-game.body.4"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "c94eec66f146992f61f05f879946d686adfbf10538f5a5cc7457d473dd59b135",
@@ -437,9 +437,9 @@
     "refs": [
       "candidates:hello3928/Project-VI.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "6fb2f6f2be261f4bffbf91ab9413deef9935f715428ffbce7d8255a0eefda8a2",
@@ -450,9 +450,9 @@
     "refs": [
       "news:2026-11-24-cgbj-in-game.dek"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "448fbe161fd52ab54de1658e713fb62d0d95bc28c1a83aa2e3986aa022ae3cca",
@@ -463,9 +463,9 @@
     "refs": [
       "candidates:bolado-dev/mandy-port.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "82b633ad929941159716a561cb5cdfd3dd51df2bb46fab04f154e70a22a87b46",
@@ -476,9 +476,9 @@
     "refs": [
       "candidates:Androtim/MiniVI.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "624ea26a2cbf1ccd80607836bb65bfe0da2809d2c7e96002954b77bc1ef5649b",
@@ -489,9 +489,9 @@
     "refs": [
       "candidates:3cvil/M1LK.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "f4001e672114bce1990baa56cd262b8da33b2640fc57fc548a38250bbb22e5bf",
@@ -502,9 +502,9 @@
     "refs": [
       "candidates:GabrieelDuart/GabeGTA6.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "14b9cd29d3d93c7dd87375027b762c0f5ea09f0b0783e5e6f3fc2c530bd01081",
@@ -515,9 +515,9 @@
     "refs": [
       "news:2026-11-24-cgbj-in-game.body.2"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "e34f6e4ac4d2c8b7d45009ee68fa5fbfaa4bafafec3fe712adf4035b10df5c3c",
@@ -528,9 +528,9 @@
     "refs": [
       "efforts:omonkey.nuked.note"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "3828acde86885b68a175ea0df55ac227e4ac4f33aa9687927cf00cfb5db86810",
@@ -541,9 +541,9 @@
     "refs": [
       "news:2026-11-24-cgbj-in-game.body.3"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "b205fc019dcaf76a4230f7a7afe0eea512e4227b03cbefa06102bfe32dbe9a88",
@@ -554,9 +554,9 @@
     "refs": [
       "candidates:ihaterockstargames/sixth-star.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "fc3396523d4b3408073a38e191d359e2c33b0eef7b0ce9c7fb2dc3010ba7f120",
@@ -567,9 +567,9 @@
     "refs": [
       "candidates:Linox-IDK/LNX-victory.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "36430bd45729c22bd38c9213d764a0030b6a56e4e1ddf516e29b155cde226d4b",
@@ -580,9 +580,9 @@
     "refs": [
       "candidates:monte-alt/vesper.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4f170c2ec880cdbdd7113d85018a66421f258d22817b96e4c77ce3e5d81b285b",
@@ -593,9 +593,9 @@
     "refs": [
       "dashboard.0ec5d3548689"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "722c7b067c24c0118c864cf2a9189a2f626674b25bc05cb464d3557f7e133895",
@@ -606,9 +606,9 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.dek"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "0671f417ae3f077744a5afb34498462e238bffdb3df386131596c40455e7d19f",
@@ -619,9 +619,9 @@
     "refs": [
       "news:2026-11-25-belobug-way-ahead.body.5"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "7f879828eed36fcf637e5e3750c26bbaab7a008846029427b429a1ed81b22376",
@@ -632,9 +632,9 @@
     "refs": [
       "candidates:elaboratecl/VIctory-AMD-4K.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ1QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "4f8ac6a4a5de1ef515d90535a09583f8a7930a05218e7803d126bb84a60a56a3",
@@ -645,9 +645,9 @@
     "refs": [
       "candidates:Amdavea/belobug-repost.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "38b1b6e01fe52ef25e334ced9b46bfff26147a3dd3119953b715492a210abe5a",
@@ -658,9 +658,9 @@
     "refs": [
       "candidates:ToLIManl/VIctory-Hydra.description"
     ],
-    "attempts": 2,
+    "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
+    "reviewRequired": true
   },
   {
     "id": "5f7ac015894a1b41eb6b430eedaec255f350c6adde70e1d3a77dfb509bf3c319",
@@ -1393,19 +1393,6 @@
     "source": "GTA VI The prologue cutscene, currently fighting memory limitations Untested",
     "refs": [
       "efforts:tuxbox.claims.0.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "7b649bbaa32976ec8234c5110b408e9e61890ed7f375776a66d56b144e0a770f",
-    "sourceHash": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
-    "scope": "content",
-    "key": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
-    "source": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5.title"
     ],
     "attempts": 0,
     "lastError": null,

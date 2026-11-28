@@ -489,37 +489,59 @@
       "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
       "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، وفعّل التصيير بدقة منخفضة ثم ارفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة الضبابية منخفضة الدقة تُفقد نقاط التصيير.\n\nما ينقصنا هو صورة تضاهي جودة نسخة جهاز الألعاب: إضاءة كاملة، تتبع أشعة، وخامات حادة. وكما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي.",
       "model": "qwen/qwen3.8-27b"
-    }
-  },
-  "pending": {
-    "article:2026-11-25-belobug-way-ahead": {
-      "sourceHash": "836dcb42a3730f780f03bbd09963730d845760d65e6b70723902c50d2e8e032c",
-      "attempts": 1,
-      "nextAttemptAt": "2026-11-28T06:18:25.503Z",
-      "lastError": "request_or_token_limit"
     },
-    "article:2026-11-24-cgbj-in-game": {
-      "sourceHash": "933f0de3ef7ffb0ee99ac68d7318fb2b7413ee63bee687c2c207668f21ec48d8",
-      "attempts": 0,
-      "nextAttemptAt": null,
-      "lastError": "request_or_token_limit"
+    "a217b3795eaafd9dd1a4f4d1c13bea15f0b134bfb9f1134d5f17c9267e7d40d0": {
+      "source": "Update, 2026-11-27: GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card on our board is now marked as nuked.",
+      "ar": "تحديث، 2026-11-27: GitHub أزالت مستودع Belobug وحسابها بسبب انتهاك شروط الخدمة، وهو ما أكده PortWatch. تم الآن وضع علامة \"مُحذوف\" على بطاقتها في لوحة المتابعة لدينا.",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "84f9621d0c9258866dcb62c762fb20485161c6e169d67da3f16f67ba9e2d2a3d": {
+      "source": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its code was public briefly and is private again.",
+      "ar": "يسمح إصدار CGBJ القائم على VIctory وXCL لللاعب بالمشي حول المناطق والتحدث مع الشخصيات غير القابلة للتحكم. كان كوده متاحًا للجمهور لفترة وجيزة ثم أصبح خاصًا مرة أخرى.",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    },
+    "d282fa752704e2ec32f0a9973db3097cc52d53afbe307ea375710d654585756a": {
+      "source": "CGBJ's build is based on VIctory and also takes some of XCL's work. Its code is private; it was public briefly as codec-d/cool_fox on 2026-11-26.",
+      "ar": "يستند إصدار CGBJ إلى VIctory ويستفيد أيضًا من بعض أعمال XCL. كوده خاص؛ كان متاحًا للجمهور لفترة وجيزة باسم codec-d/cool_fox على 2026-11-26.",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    },
+    "0b4774738e313271055bb28e8f394da40185cb786df05e9ebc46b3e3568cc6d2": {
+      "source": "We've added CGBJ to the tracker at 72%, at our In-game stage, which puts it first. That rests on our own check: the video doesn't name the project.",
+      "ar": "أضفنا CGBJ إلى المتتبع في 72%، في مرحلة داخل اللعبة، مما يجعله في الصدارة. يعتمد ذلك على فحصنا الخاص: الفيديو لا يذكر اسم المشروع.",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    },
+    "d021f947bdcf9b0a645f5187d757a6006e482da3c250b7ad03c5f2eaf324e8d1": {
+      "source": "Update, 2026-11-26: CGBJ's repository is public and the entry now participates in the public race as codec-d/cool_fox.",
+      "ar": "تحديث، 2026-11-26: مستودع CGBJ أصبح عامًا، والمادة الآن تشارك في السباق العام باسم codec-d/cool_fox..",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    },
+    "2afac147ca32d71a4e633357b5b84fe025270a288301cfbff9c06a31d7423a8c": {
+      "source": "Update, later on 2026-11-26: the codec-d/cool_fox repository is offline, so CGBJ is listed as a private build again.",
+      "ar": "تحديث، لاحقًا في 2026-11-26: مستودع codec-d/cool_fox غير متصل، لذا يُدرج CGBJ كإصدار خاص مرة أخرى.",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+    },
+    "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9": {
+      "source": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
+      "ar": "المبرمجون يستخدمون AI لمحاولة GTA VI PC منفذ كأهداف Take-Two لمشاريع GitHub",
+      "model": "partial:cloudflare+zai"
     }
   },
+  "pending": {},
   "daily": {
     "day": "2026-11-28",
-    "requests": 22,
-    "accountedTokens": 253380,
-    "inputTokens": 18006,
-    "outputTokens": 5733,
+    "requests": 25,
+    "accountedTokens": 263856,
+    "inputTokens": 26878,
+    "outputTokens": 7337,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 55,
-    "successful": 2,
+    "requests": 58,
+    "successful": 4,
     "failed": 14,
     "cachedFields": 0,
-    "inputTokens": 60982,
-    "outputTokens": 23228,
+    "inputTokens": 69854,
+    "outputTokens": 24832,
     "thinkingTokens": 21137
   },
   "dynamic": {
@@ -1081,9 +1103,9 @@
         "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
         "field": "title",
         "sourceHash": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
+        "attempts": 3,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
@@ -1201,33 +1223,33 @@
         "id": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
         "field": "title",
         "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
+        "attempts": 3,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
         "field": "title",
         "sourceHash": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
+        "attempts": 3,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
         "field": "title",
         "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
+        "attempts": 3,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
         "field": "title",
         "sourceHash": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
+        "attempts": 3,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
       },
       "[\"headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T\",\"title\"]": {
         "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
@@ -1276,14 +1298,6 @@
         "attempts": 2,
         "lastError": "network_or_provider",
         "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
-        "field": "title",
-        "sourceHash": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI\",\"title\"]": {
         "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI",
@@ -1383,11 +1397,11 @@
       }
     },
     "totals": {
-      "requests": 39,
-      "translatedFields": 84,
-      "failedFields": 179,
-      "inputTokens": 41340,
-      "outputTokens": 15445,
+      "requests": 40,
+      "translatedFields": 85,
+      "failedFields": 184,
+      "inputTokens": 45955,
+      "outputTokens": 16239,
       "thinkingTokens": 21137
     }
   },
