@@ -109,7 +109,7 @@ export function geminiRetryAt(state){
 }
 export async function createGeminiNewsClient({apiKey=process.env.GEMINI_API_KEY,model=process.env.GEMINI_MODEL||DEFAULT_GEMINI_MODEL,maxOutputTokens=8192,timeoutMs=45000,thinkingLevel='LOW',systemInstruction=NEWS_SYSTEM_INSTRUCTION}={}){
  if(!apiKey)return null;
- if(!/^gemini-[\w.-]*flash[\w.-]*$/.test(model))throw new Error('invalid_request_or_model');
+ if(!['gemini-3.6-flash'].includes(model))throw new Error('invalid_request_or_model');
  const {GoogleGenAI}=await import('@google/genai');
  const client=new GoogleGenAI({apiKey,vertexai:false,apiVersion:'v1beta',httpOptions:{timeout:timeoutMs,retryOptions:{attempts:1}}});
  return {model,maxOutputTokens,getModel:async()=>{const info=await client.models.get({model});return{name:info.name,supportedActions:info.supportedActions};},generate:async request=>{

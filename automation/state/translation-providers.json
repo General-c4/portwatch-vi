@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "providers": {
+    "ovh": {
+      "requests": 2,
+      "successes": 0,
+      "failures": 2,
+      "daily": {
+        "day": "2026-11-28",
+        "requests": 2,
+        "tokens": 8553
+      },
+      "monthly": {
+        "resetAt": 1798435819387,
+        "tokens": 8553
+      },
+      "minute": {
+        "resetAt": 1795843972930,
+        "tokens": 6690
+      },
+      "lastRequestAt": 1795843912948,
+      "failureStreak": 2,
+      "code": "quota_or_rate_limit",
+      "cooldownUntil": 1798761597371
+    }
+  },
+  "events": [
+    {
+      "at": "2026-11-28T05:30:25.845Z",
+      "type": "fallback",
+      "provider": "ovh",
+      "model": "Qwen3.8-27B",
+      "code": "invalid_schema",
+      "latencyMs": 6443,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:30:55.845Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:30:53.989Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "invalid_schema",
+      "resetAt": "2026-11-28T05:30:55.845Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:31:53.371Z",
+      "type": "fallback",
+      "provider": "ovh",
+      "model": "Qwen3.8-27B",
+      "code": "quota_or_rate_limit",
+      "latencyMs": 418,
+      "quotaPeriod": "minute_or_unknown",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    }
+  ]
+}

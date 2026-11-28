@@ -26,7 +26,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   const entry=catalog.articles[record.id]||{fields:{}};entry.fields??={};
   for(const[field,source]of Object.entries(record.fields)){
    const key=JSON.stringify([record.id,field]);active.add(key);
-   if(isTechnicalLiteral(source)||Object.hasOwn(human,source)||Object.hasOwn(automatic,source)){delete d.pending[key];continue;}
+   if(isTechnicalLiteral(source)||Object.hasOwn(human,source)||Object.hasOwn(automatic,source)||scopedTranslation(source,record.id,field,{human,automatic,catalog}).method==='template'){delete d.pending[key];continue;}
    if(entry.fields[field]?.source===source&&typeof entry.fields[field].ar==='string'&&!editorialQualityIssue(source,entry.fields[field].ar)){delete d.pending[key];continue;}
    delete entry.fields[field];
    const cached=state.cache[hash(source)];

@@ -10,6 +10,7 @@ import {createProvider} from './lib/provider.mjs';
 import {syncNews,newsLimits} from './lib/news-sync.mjs';
 import {syncDynamicEditorial} from './lib/dynamic-editorial.mjs';
 import {dynamicEditorialRecords,resolvedLegacyReferences} from '../assets/js/editorial-scope.js';
+import {createTranslationRouter} from './lib/translation-router.mjs';
 
 export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,providerFactory=createProvider,newsClientFactory,root='.',maxTranslations=40}={}){
  const started=performance.now(),now=new Date().toISOString();
@@ -82,11 +83,16 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  finally{provider?.close();}
  const translationMs=Math.round(performance.now()-translationStart);
  let news,dynamic;
+ let router;
+ try{if(!newsClientFactory&&await readJSON(file('automation/translation-providers.json'),null))router=await createTranslationRouter({root});}
+ catch{errors.push({at:now,source:'translation routing',message:'Provider configuration unavailable; canonical synchronization continues'});}
+ const translationFactory=newsClientFactory||router?.clientFactory;
  try{
-  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
-  dynamic=await syncDynamicEditorial({data,pinned,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(newsClientFactory?{clientFactory:newsClientFactory}:{})});
+  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(translationFactory?{clientFactory:translationFactory}:{})});
+  dynamic=await syncDynamicEditorial({data,pinned,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(translationFactory?{clientFactory:translationFactory}:{})});
   news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged||=dynamic.stateChanged;news.catalogChanged||=dynamic.catalogChanged;
  }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}
+ if(router)await router.save();
  const resolved=resolvedLegacyReferences(data,{human:human.content,automatic:automatic.content,catalog:news?.catalog||{}},pinned);
  translated.remaining=translated.remaining.flatMap(entry=>{const refs=entry.refs.filter(ref=>!resolved.has(`${ref}\0${entry.source}`));return refs.length?[{...entry,refs}]:[];});
  const covered=inventory.filter(item=>typeof effectiveHuman[item.scope]?.[item.key]==='string'||typeof automatic[item.scope]?.[item.key]==='string'||resolved.has(`${item.ref}\0${item.source}`)).length;
@@ -104,6 +110,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   records:delta,translation:{coverage:coverage.coverage,translated:coverage.translated,total:coverage.total,pending:translated.remaining.length,completed:translated.completed,provider:provider?.name||'unavailable'},
   newsTranslation:news?.stats||{errors:['news_pipeline_unavailable'],requests:0},
   dynamicTranslation:dynamic?{...dynamic.stats,coverage:dynamic.coverage.sections}:null,
+  providers:router?.summary()||null,
   latency:{sourceCheckMs:Math.round(translationStart-started),dataSyncMs:null,translationMs,deploymentMs:null,totalMs:Math.round(performance.now()-started)},
   apiAnything:{ok:api.ok,skipped:api.skipped||false,reason:api.reason||null,changes:api.changes||null,ms:api.ms||null,repaired:api.repaired||false},
   recentErrors:[...(state.recentErrors||[]),...errors].slice(-20),retryAttempts:[...(state.retryAttempts||[]),...retryAttempts].slice(-20),

@@ -19,7 +19,7 @@ try{
  assert.equal(unreported.length,0,JSON.stringify(unreported.map(({id,field})=>({id,field})),null,2));
  if(process.env.PW_ALLOW_QUEUED_TRANSLATIONS!=='1')assert.equal(coverage.missing.length,0,'Current dynamic content must have complete translation coverage');
  const expected=(source,id,field,lang)=>clean(lang==='en'?source:scopedTranslation(source,id,field,catalogs).value);
- const results=[],errors=[],httpErrors=[],requestsFailed=[];
+ const results=[],errors=[],httpErrors=[],requestsFailed=[],consoleErrors=[],externalHttpErrors=[],externalRequestsFailed=[];
  browser=await chromium.launch({channel:process.env.PW_BROWSER||'msedge',headless:true});
  await mkdir(out,{recursive:true});
  for(const width of [1600,390])for(const lang of ['ar','en']){
@@ -28,6 +28,9 @@ try{
   if(!live)await page.route('**/assets/js/sync-config.js',r=>r.fulfill({contentType:'text/javascript',body:'export const LIVE_SYNC=false;export const SCORING_HASH="";export const POLL_MS=60000;'}));
   page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)httpErrors.push({url:r.url(),status:r.status()});});
   page.on('requestfailed',r=>{if(r.url().startsWith(base))requestsFailed.push({url:r.url(),error:r.failure()?.errorText});});
+  page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text().slice(0,300));});
+  page.on('response',r=>{if(!r.url().startsWith(base)&&r.status()>=400)externalHttpErrors.push({url:r.url(),status:r.status()});});
+  page.on('requestfailed',r=>{if(!r.url().startsWith(base))externalRequestsFailed.push({url:r.url(),error:r.failure()?.errorText});});
   let observedLive,observedPin;
   page.on('response',async r=>{if(r.url().startsWith('https://portwatch-vi.xyz/data/tracker.json'))try{observedLive=await r.json();}catch{}});
   page.on('response',async r=>{if(r.url().startsWith('https://portwatch-vi.xyz/data/pinned.json'))try{observedPin=await r.json();}catch{}});
@@ -54,7 +57,7 @@ try{
   const changes=[...data.changes].reverse().slice(0,12),changeNodes=page.locator('#changes-list li>span:last-child');assert.equal(await changeNodes.count(),changes.length);
   for(const[i,c]of changes.entries())assert.equal(clean(await changeNodes.nth(i).textContent()),expected(c.text,changeRecordId(c),'text',lang));
   let summaries=0,highlights=0,blockers=0;
-  for(const e of data.efforts.filter(e=>!e.nuked)){
+  for(const e of data.efforts.filter(e=>!e.nuked||e.nuked.show===true)){
    const card=page.locator(`[id="effort-${e.id}"]`);if(!await card.count())continue;
    const summary=card.locator('.e-summary,.w-name>p');if(await summary.count()){assert.equal(clean(await summary.first().textContent()),expected(e.summary,`project:${e.id}`,'summary',lang),e.id+' summary');summaries++;}
    for(const[field,selector]of[['highlights','.works li'],['blockers','.blocks li']]){
@@ -72,6 +75,6 @@ try{
   results.push({width,lang,headlines:await heads.count(),changes:changes.length,summaries,highlights,blockers,coverage:actualCoverage.sections});await page.close();
  }
  assert.deepEqual(errors,[]);assert.deepEqual(httpErrors,[]);assert.deepEqual(requestsFailed,[]);
- await writeFile(`${out}/report.json`,JSON.stringify({base,coverage:coverage.sections,missing:coverage.missing,results,errors,httpErrors,requestsFailed},null,2));
+ await writeFile(`${out}/report.json`,JSON.stringify({base,coverage:coverage.sections,missing:coverage.missing,results,errors,httpErrors,requestsFailed,consoleErrors,externalHttpErrors,externalRequestsFailed},null,2));
  console.log(JSON.stringify({passed:results.length,coverage:coverage.sections,temporaryFailures:coverage.missing.length}));
 }finally{await browser?.close();if(server)await new Promise(r=>server.close(r));}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "primary": "gemini",
+  "order": ["gemini", "groq", "cloudflare", "ovh", "zai", "axforge", "openrouter"],
+  "maxAttemptsPerRun": 12,
+  "providers": {
+    "gemini": {"model": "gemini-3.6-flash", "dailyRequests": 20},
+    "groq": {"model": "qwen/qwen3.8-27b", "dailyRequests": 1000, "dailyTokens": 200000, "tokensPerMinute": 8000, "intervalMs": 2200},
+    "cloudflare": {"model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast", "intervalMs": 2000},
+    "ovh": {"model": "Qwen3.8-27B", "intervalMs": 31000},
+    "zai": {"model": "glm-4.7-flash", "intervalMs": 3000},
+    "axforge": {"model": "qwen3.8-27b", "intervalMs": 1000, "monthlyTokens": 3000000},
+    "openrouter": {"model": "google/gemma-4-26b-a4b-it:free", "dailyRequests": 50, "intervalMs": 3100}
+  }
+}
