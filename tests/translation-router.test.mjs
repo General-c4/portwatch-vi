@@ -79,7 +79,7 @@ test('valid Arabic non-confirmation remains negative, and HTML markup is protect
 test('valid partial fields persist across restart and only rejected fields reach the next provider',async()=>{
  const root=await mkdtemp(join(tmpdir(),'pw-partial-')),input=prepareNewsRequest({title:'New project update',summary:'New project summary'},[]),c=config();c.order=['gemini'];
  const first=await setup({root,config:c,clientFactories:{gemini:async()=>({generate:async()=>({...good(),text:JSON.stringify({title:'تحديث جديد للمشروع',summary:'New project summary',body:[],sourceUrls:[]})})})}});
- await assert.rejects((await first.clientFactory({maxOutputTokens:64})).generate(input));assert.equal(Object.keys(first.state.pendingFields).length,1);
+ const partial=await(await first.clientFactory({maxOutputTokens:64})).generate(input);assert.equal(partial.partial,true);assert.equal(Object.keys(first.state.pendingFields).length,1);
  c.order=['groq'];let fields;
  const restarted=await setup({root,config:c,clientFactories:{groq:async()=>({generate:async req=>{fields=Object.keys(req.fields);return {...good(),text:JSON.stringify({title:'',summary:'ملخص جديد للمشروع',body:[],sourceUrls:[]})};}})}});
  const response=await(await restarted.clientFactory({maxOutputTokens:64})).generate(input);assert.deepEqual(fields,['summary']);assert.equal(JSON.parse(response.text).title,'تحديث جديد للمشروع');assert.equal(JSON.parse(response.text).summary,'ملخص جديد للمشروع');assert.equal(Object.keys(restarted.state.pendingFields).length,0);

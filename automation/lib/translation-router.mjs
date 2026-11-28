@@ -158,6 +158,14 @@ export async function createTranslationRouter({root='.',config,state,env=process
      p.cooldownUntil=clock()+delay;event('fallback',{provider:id,model,code,...(/^(?:title|summary|body\.\d+)$/.test(error.field||'')?{field:error.field}:{}),...(/^[a-z_]{1,40}$/.test(error.reason||'')?{reason:error.reason}:{}),latencyMs:clock()-started,quotaPeriod:monthly?'month':daily?'day':code==='quota_or_rate_limit'?'minute_or_unknown':null,resetAt:new Date(p.cooldownUntil).toISOString()});await save();
     }
    }
+   if(Object.keys(accepted).length){
+    const values={...accepted};for(const field of Object.keys(originalRequest.fields))if(!Object.hasOwn(values,field))values[field]=originalRequest.protectedFields[field].text;
+    lastModel=`partial:${usedProviders.join('+')}`;event('partial_queued',{acceptedFields:Object.keys(accepted).length,remainingFields:Object.keys(originalRequest.fields).length-Object.keys(accepted).length,providersUsed:usedProviders});await save();
+    // Untranslated placeholders deliberately fail the engine's per-field Arabic validator.
+    // Valid siblings can publish now, while rejected fields remain in the durable queue.
+    const usage={...mergedUsage};if(!usageKnown)delete usage.totalTokenCount;
+    return {text:JSON.stringify(outputFor(values,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider:'partial',model:lastModel,partial:true};
+   }
    await save();throw Object.assign(new Error('all_free_providers_unavailable'),{safeCode:'all_free_providers_unavailable'});
   }};
  };

@@ -1,6 +1,7 @@
 import {hash} from './state.mjs';
 import {protectedTerms} from './translations.mjs';
-import {createGeminiNewsClient,prepareNewsRequest,validateNewsResponse,newsErrorCode,NEWS_SYSTEM_INSTRUCTION,geminiRetryAt} from './gemini-news.mjs';
+import {createGeminiNewsClient,prepareNewsRequest,parseNewsResponse,validateNewsResponse,newsErrorCode,NEWS_SYSTEM_INSTRUCTION,geminiRetryAt} from './gemini-news.mjs';
+import {editorialQualityIssue} from '../../assets/js/editorial-quality.js';
 
 export function newsRecords(data){
  const articles=(data.news||[]).map(n=>({id:`article:${n.id}`,date:n.date,fields:{title:n.title,summary:n.dek||n.summary||'',...Object.fromEntries((n.body||[]).map((text,i)=>[`body.${i}`,text]))},sourceUrls:(n.sources||[]).map(s=>s.url).filter(Boolean)}));
@@ -49,9 +50,9 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
    if(excluded.has(record.id)&&!state.updatedFields[record.id].includes(key))continue;
    if(typeof source!=='string'||!source)continue;
    if(Object.hasOwn(human,source)&&typeof human[source]==='string')continue;
-   if(existing.fields[key]?.source===source){nextFields[key]=existing.fields[key];continue;}
+   if(existing.fields[key]?.source===source&&typeof existing.fields[key].ar==='string'&&!editorialQualityIssue(source,existing.fields[key].ar)){nextFields[key]=existing.fields[key];continue;}
    const cached=state.cache[hash(source)];
-   if(cached?.source===source&&typeof cached.ar==='string'){nextFields[key]={source,ar:cached.ar};stats.cachedFields++;continue;}
+   if(cached?.source===source&&typeof cached.ar==='string'&&!editorialQualityIssue(source,cached.ar)){nextFields[key]={source,ar:cached.ar};stats.cachedFields++;continue;}
    selected[key]=source;
   }
   // Exact source matching invalidates changed fields but retains unaffected Arabic on failure.
@@ -84,8 +85,17 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
     for(const target of [stats,state.daily,state.totals]){target.inputTokens+=input;target.outputTokens+=output;target.thinkingTokens+=thinking;}
     if(Number.isFinite(usage.totalTokenCount))state.daily.accountedTokens+=Math.max(0,usage.totalTokenCount)-reservation;
     if(!response.text||response.finishReason&&response.finishReason!=='STOP')throw new Error('empty_response');
-    const values=validateNewsResponse(request,response.text);
+    const parsed=parseNewsResponse(request,response.text),values={};let rejected;
+    for(const [key,source]of Object.entries(selected)){
+     const part={title:key==='title'?parsed.title:'',summary:key==='summary'?parsed.summary:'',body:key.startsWith('body.')?parsed.body.filter(p=>p.index===Number(key.slice(5))):[],sourceUrls:parsed.sourceUrls};
+     try{const ar=validateNewsResponse({...request,fields:{[key]:source}},part)[key];if(editorialQualityIssue(source,ar))throw new Error('protected_facts_or_language_invalid');values[key]=ar;}
+     catch(error){rejected??=error;}
+    }
     for(const [key,ar]of Object.entries(values)){nextFields[key]={source:selected[key],ar};state.cache[hash(selected[key])]={source:selected[key],ar,model:client.model};}
+    if(rejected){
+     if(Object.keys(nextFields).length)catalog.articles[record.id]={sourceHash,fields:nextFields};
+     pending.lastError=newsErrorCode(rejected);pending.nextAttemptAt=new Date(Date.parse(now)+60000).toISOString();stats.failed++;state.totals.failed++;stats.errors.push(pending.lastError);stats.partialFields=(stats.partialFields||0)+Object.keys(values).length;break;
+    }
     catalog.articles[record.id]={sourceHash,fields:nextFields};delete state.pending[record.id];stats.successful++;state.totals.successful++;
     break;
    }catch(error){

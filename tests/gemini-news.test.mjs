@@ -46,6 +46,13 @@ test('an explicit edit translates only changed historical fields, without an arc
  await syncNews({before:data,data,state:result.state,catalog:result.catalog,now,limits,clientFactory:goodClient(calls)});
  assert.equal(calls.length,1);
 });
+test('a rejected news paragraph does not discard validated siblings or resend them on recovery',async()=>{
+ const args=setup(),calls=[];let first=true;
+ const factory=async()=>({model:'fixture',generate:async request=>{calls.push(Object.keys(request.fields));const output=responseFor(request);if(first){first=false;output.body[0].text='Untranslated paragraph';}return{text:JSON.stringify(output),finishReason:'STOP',usage:{totalTokenCount:100}};}});factory.multiProvider=true;
+ const partial=await syncNews({...args,clientFactory:factory});
+ assert.equal(partial.catalog.articles['article:new-story'].fields.title.ar,translations[article().title]);assert.equal(partial.catalog.articles['article:new-story'].fields['body.0'],undefined);assert.equal(partial.stats.pending,1);
+ const complete=await syncNews({...args,state:partial.state,catalog:partial.catalog,clientFactory:factory});assert.deepEqual(calls[1],['body.0']);assert.equal(complete.stats.pending,0);
+});
 
 test('baseline, history, all non-news and existing reviewed text never reach Gemini',async()=>{
  const setupArgs=setup(),calls=[];setupArgs.data.news.push({...article('old-newly-discovered'),date:'2026-10-01'});
