@@ -416,6 +416,18 @@
           "ar": "تم الاختبار على جهاز AMD PC واحد فقط؛ لا يوجد شيء على NVIDIA أو Intel بعد"
         }
       }
+    },
+    "project:avatarmanz": {
+      "fields": {
+        "byline": {
+          "source": "Removed by GitHub · was public, based on VIctory",
+          "ar": "حُذفت بواسطة GitHub · كانت عامة، مبنية على VIctory"
+        },
+        "blockers.0": {
+          "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+          "ar": "حُذف الكود وحساب GitHub بواسطة GitHub في 27 نوفمبر بسبب انتهاك شروط الخدمة؛ لا يمكن لأحد من الخارج اختباره"
+        }
+      }
     }
   }
 }

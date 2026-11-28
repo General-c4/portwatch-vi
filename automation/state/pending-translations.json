@@ -1673,19 +1673,6 @@
     "reviewRequired": false
   },
   {
-    "id": "4b78417b2c1095326736243490883b9063cecfab6348c7036b513fe0b521ba16",
-    "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
-    "scope": "content",
-    "key": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
-    "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
-    "refs": [
-      "efforts:avatarmanz.blockers.0"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "b7c1d1a3d871c838e66a7e89a1454b044ad6a6db5e406fc24027141134a7a912",
     "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
     "scope": "content",
@@ -1996,20 +1983,6 @@
     "attempts": 1,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
-  },
-  {
-    "id": "68930192020de2706293b8d2af1004c844beb9158f6aae6d6218b1fcc4b3cc21",
-    "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
-    "scope": "content",
-    "key": "Removed by GitHub · was public, based on VIctory",
-    "source": "Removed by GitHub · was public, based on VIctory",
-    "refs": [
-      "efforts:avatarmanz.byline"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "أُلغيت من قِبَل GitHub ; علناً، استناداً إلى VIctory"
   },
   {
     "id": "eddeb575373176541f2bd18c2467fab18e5f78f02cc7c65830745a99aab836d3",
