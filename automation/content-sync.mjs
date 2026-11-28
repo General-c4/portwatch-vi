@@ -36,11 +36,18 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   attempt('live pinned',()=>get('https://portwatch-vi.xyz/data/pinned.json',oldPinned,validatePinned)),
   attempt('interface',()=>get(`${raw}assets/i18n/en.json`,undefined,v=>{if(!v||typeof v!=='object'||Object.keys(v).length<30||Object.values(v).some(s=>typeof s!=='string'))throw new Error('Invalid English catalog');return v;})),
  ]);
- const data=newerSnapshot(repository,live);
+ const data=live||repository;
  if(!data)throw new Error('No valid authoritative snapshot; preserving last-known-good files');
  const deployed=await attempt('deployment monitoring',()=>get('https://general-c4.github.io/portwatch-vi/deployment.json',undefined,v=>{if(!/^[a-f0-9]{40}$/.test(v?.commit||''))throw new Error('Invalid deployment descriptor');return v;}));
  if(deployed){state.latestDeployedCommitSha=deployed.commit;state.lastDeploymentStatus='verified-live';}
  const pinned=repoPin&&livePin?(Date.parse(livePin.updated)>Date.parse(repoPin.updated)?livePin:repoPin):repoPin||livePin||oldPinned;
+ const canonical={source:data===live?'https://portwatch-vi.xyz/data/tracker.json':`${raw}data/tracker.json`,commit:head.sha,updated:data.updated,hash:hash(data),fetchedAt:now};
+ // Publishable canonical files are independent of translation/network availability.
+ // The journal is written first; translations never write records back into this snapshot.
+ if(hash(before)!==hash(data)||hash(oldPinned)!==hash(pinned)){
+  await atomicJSON(file('.sync/last-known-good.json'),{data:before,pinned:oldPinned});
+  await atomicJSON(file('data/tracker.json'),data);await atomicJSON(file('data/pinned.json'),pinned);
+ }
  let api={ok:false,reason:'No content change; read skipped',skipped:true};
  const upstreamChanged=state.upstreamSha!==head.sha;
  if(upstreamChanged||hash(data)!==hash(before)||process.env.PW_API_CHECK==='1'){
@@ -93,7 +100,7 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   version:1,latestUpstreamCommitSha:head.sha,latestSynchronizedCommitSha:head.sha,
   latestIntegratedSourceCommitSha:sourceState.integratedUpstreamSha||null,
   latestDeployedCommitSha:state.latestDeployedCommitSha||null,lastDeploymentStatus:state.lastDeploymentStatus||'unknown',
-  lastSuccessfulSyncTime:now,lastUpstreamCheckTime:now,authoritativeSource:data===live?'official-live':'repository',upstreamUpdated:data.updated,
+  lastSuccessfulSyncTime:now,lastUpstreamCheckTime:now,authoritativeSource:data===live?'official-live':'repository',upstreamUpdated:data.updated,canonical,
   records:delta,translation:{coverage:coverage.coverage,translated:coverage.translated,total:coverage.total,pending:translated.remaining.length,completed:translated.completed,provider:provider?.name||'unavailable'},
   newsTranslation:news?.stats||{errors:['news_pipeline_unavailable'],requests:0},
   dynamicTranslation:dynamic?{...dynamic.stats,coverage:dynamic.coverage.sections}:null,
@@ -104,7 +111,6 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  // All inputs were validated before replacing canonical data. A journal keeps a recoverable release pair.
  const persistenceStart=performance.now();
  if(changed){
-  await atomicJSON(file('.sync/last-known-good.json'),{data:before,pinned:oldPinned});
   await atomicJSON(file('data/tracker.json'),data);await atomicJSON(file('data/pinned.json'),pinned);
   for(const [scope,path]of Object.entries(paths))await atomicJSON(file(path),automatic[scope]);
   for(const entry of inventory.filter(e=>e.scope==='interface'))if(Object.hasOwn(automatic.interface,entry.key))autoSources[entry.key]=entry.source;
@@ -120,8 +126,9 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  }
  if(!changed){status.latency.dataSyncMs=0;status.latency.totalMs=Math.round(performance.now()-started);}
  await atomicJSON(file('.sync/status.json'),status);
+ await atomicJSON(file('.sync/canonical-snapshot.json'),canonical);
  log('content-sync',{changed,dataChanged,records:delta,translations:status.translation,ms:Math.round(performance.now()-started)});
- return{changed:Boolean(changed),dataChanged,upstreamChanged,publish:Boolean(dataChanged||hash(automatic)!==originalAuto||news?.catalogChanged),status};
+ return{changed:Boolean(changed),dataChanged,upstreamChanged,publish:Boolean(dataChanged||hash(automatic)!==originalAuto||news?.catalogChanged||!deployed||deployed.dataHash!==hash(data)),status};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  await withLock('.sync/content.lock',async()=>{

@@ -21,7 +21,7 @@ try{
   const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
   if(overflow)console.log({lang,width,offenders:await page.evaluate(()=>[...document.querySelectorAll('body *')].filter(e=>!e.closest('svg')&&(e.getBoundingClientRect().left< -1||e.getBoundingClientRect().right>innerWidth+1)&&getComputedStyle(e).position!=='absolute').slice(-15).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent.slice(0,80),left:e.getBoundingClientRect().left,width:e.getBoundingClientRect().width})))});
   assert.equal(overflow,false,`${lang} ${width}`);
-  for(const filter of ['gta','generic','all'])await page.locator(`[data-filter=${filter}]`).click();
+  for(const button of await page.locator('.chip[data-filter]').all())await button.click();
   for(const sort of ['stars','active','score'])await page.selectOption('#sort',sort);
   await page.locator('[data-story]').first().click();await page.waitForSelector('#reader[open]');await page.keyboard.press('Escape');
   assert.deepEqual(errors,[]);await context.close();

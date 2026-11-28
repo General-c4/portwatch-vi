@@ -33,7 +33,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
    if(cached?.source===source&&typeof cached.ar==='string'&&!editorialQualityIssue(source,cached.ar)){entry.fields[field]={source,ar:cached.ar};delete d.pending[key];stats.cachedFields++;continue;}
    if(d.pending[key]?.sourceHash!==hash(source))d.pending[key]={id:record.id,field,sourceHash:hash(source),attempts:0,lastError:null,nextAttemptAt:null};
    const pending=d.pending[key];
-   if(!pending.nextAttemptAt||Date.parse(pending.nextAttemptAt)<=Date.parse(now))tasks.push({key,record,field,source,pending});
+   if(!pending.nextAttemptAt||Date.parse(pending.nextAttemptAt)<=Date.parse(now)||clientFactory.multiProvider&&pending.lastError==='quota_or_rate_limit')tasks.push({key,record,field,source,pending});
   }
   if(Object.keys(entry.fields).length)catalog.articles[record.id]=entry;else delete catalog.articles[record.id];
  }
@@ -45,7 +45,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   request.prompt+='\nEditorial field context (metadata only): '+JSON.stringify(items.map((t,i)=>({index:i,section:t.record.section,field:t.field,priorValidationError:t.pending.lastError})));
   return request;
  };
- let client,stop=Date.parse(d.providerBlock?.nextAttemptAt||'')>Date.parse(now),lastRequestAt=0;
+ let client,stop=!clientFactory.multiProvider&&Date.parse(d.providerBlock?.nextAttemptAt||'')>Date.parse(now),lastRequestAt=0;
  if(stop){stats.errors.push(d.providerBlock.code);stats.quota=d.providerBlock.quota;stats.blockedUntil=d.providerBlock.nextAttemptAt;for(const t of tasks)t.pending.lastError=d.providerBlock.code;}
  while(tasks.length&&!stop&&stats.requests<limits.maxRequests){
   let batch=[];

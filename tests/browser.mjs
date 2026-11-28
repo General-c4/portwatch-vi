@@ -55,7 +55,8 @@ try {
   }
   await capture(page,`${out}/screenshots/after-${lang}-${width}.png`);
   const filters=[];
-  for(const value of ['gta','generic','all']){await page.locator(`[data-filter="${value}"]`).click();filters.push([value,await page.locator('.effort').count()]);}
+  for(const value of await page.locator('.chip[data-filter]').evaluateAll(els=>els.map(e=>e.dataset.filter))){await page.locator(`[data-filter="${value}"]`).click();filters.push([value,await page.locator('.effort').count()]);}
+  await page.locator('[data-filter=all]').click();
   for(const value of ['stars','active','score'])await page.selectOption('#sort',value);
   assert.deepEqual(await page.locator('.effort').evaluateAll(els=>els.map(e=>[e.id,e.querySelector('.e-score b')?.textContent.trim()])),english);
   await page.locator('[data-story]').first().click();await page.waitForSelector('#reader[open]');

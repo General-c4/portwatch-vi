@@ -1,4 +1,7 @@
 {
-  "integratedUpstreamSha": "5d81790f4ca0e31117d2bb320b6fed7eef885071",
-  "integratedAt": "2026-11-25T17:58:29.198Z"
+  "integratedUpstreamSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
+  "integratedAt": "2026-11-28T05:20:47.400744+00:00",
+  "reviewedConflicts": [
+    "assets/js/app.js: GPU tags, news timestamps and Arabic text resolution"
+  ]
 }

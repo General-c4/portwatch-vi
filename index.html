@@ -132,8 +132,8 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <div class="hero-tags">
-            <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span><span data-i18n="hero.live">Live tracker</span></p>
-            <p class="watching" id="watching" title="Active in the last 5 minutes" data-i18n-attr="title:hero.watchingTitle" hidden></p>
+            <!-- <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span><span data-i18n="hero.live">Live tracker</span></p> -->
+            <!-- <p class="watching" id="watching" title="Active in the last 5 minutes" data-i18n-attr="title:hero.watchingTitle" hidden></p> -->
             <div class="hero-ctas">
               <!-- Linked by numeric account ID, so it survives a name or handle change. Don't swap in a handle. -->
               <a class="follow-x" href="https://x.com/intent/user?user_id=1132278337295069184" target="_blank" rel="noopener">
@@ -226,10 +226,8 @@
           <p class="sub" data-i18n="race.sub">The efforts with public code, ranked by how close each is to running the game. Scores come from each project's public README, commits and issues. Self-reported claims are labelled. Private builds are listed below the race, without a rank.</p>
         </div>
         <div class="controls">
-          <div class="chips" role="group" aria-label="Filter efforts" data-i18n-attr="aria-label:race.filterLabel">
+          <div class="chips" id="race-chips" role="group" aria-label="Filter efforts" data-i18n-attr="aria-label:race.filterLabel">
             <button class="chip is-on" data-filter="all" data-i18n="race.all">All</button>
-            <button class="chip" data-filter="gta" data-i18n="race.gta">GTA VI-specific</button>
-            <button class="chip" data-filter="generic" data-i18n="race.generic">Any-game layers</button>
           </div>
           <label class="sort"><span data-i18n="race.sort">Sort</span>
             <select id="sort">

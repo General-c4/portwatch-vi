@@ -6,13 +6,14 @@ export function projectTextFields(e){
  for(const key of ['summary','description','approach','target','byline','evidence','provenOn'])if(typeof e[key]==='string'&&e[key])fields[key]=e[key];
  for(const key of ['highlights','blockers'])for(const [i,text]of(e[key]||[]).entries())if(typeof text==='string'&&text)fields[`${key}.${i}`]=text;
  for(const [i,c]of(e.claims||[]).entries())if(typeof c.text==='string'&&c.text)fields[`claims.${i}.text`]=c.text;
+ if(typeof e.nuked?.note==='string')fields['nuked.note']=e.nuked.note;
  if(typeof e.proof?.label==='string'&&e.proof.label)fields['proof.label']=e.proof.label;
  return fields;
 }
 export function dynamicEditorialRecords(data,pinned){
  const headlines=(data.headlines||[]).filter(h=>typeof h.link==='string'&&/^https:\/\//.test(h.link)&&typeof h.title==='string').map(h=>({id:`headline:${h.link}`,section:'headlines',date:h.date,fields:{title:h.title,...(typeof(h.summary||h.dek)==='string'?{summary:h.summary||h.dek}:{})},sourceUrls:[h.link]}));
  const changes=[...(data.changes||[])].reverse().slice(0,12).filter(c=>typeof c.text==='string'&&c.text).map(c=>({id:changeRecordId(c),section:'changes',date:c.date,fields:{text:c.text},sourceUrls:[]}));
- const projects=(data.efforts||[]).filter(e=>e.id&&['tracked','watchlist'].includes(e.tier)&&!e.nuked).map(e=>({id:`project:${e.id}`,section:'projects',projectId:e.id,fields:projectTextFields(e),sourceUrls:[e.repo?`https://github.com/${e.repo}`:null,e.proof?.url].filter(Boolean)}));
+ const projects=(data.efforts||[]).filter(e=>e.id&&['tracked','watchlist'].includes(e.tier)&&(!e.nuked||e.nuked.show===true)).map(e=>({id:`project:${e.id}`,section:'projects',projectId:e.id,fields:projectTextFields(e),sourceUrls:[e.repo?`https://github.com/${e.repo}`:null,e.proof?.url].filter(Boolean)}));
  const pin=pinned?.show!==false&&typeof pinned?.text==='string'&&pinned.text.trim()?[{id:'pinned:current',section:'pinned',fields:{text:pinned.text},sourceUrls:[]}]:[];
  return [...pin,...headlines,...changes,...projects];
 }
@@ -31,6 +32,9 @@ export function scopedTranslation(source,id,field,{human={},automatic={},catalog
  const entry=record?.fields&&Object.hasOwn(record.fields,field)?record.fields[field]:null;
  if(entry?.source===source&&typeof entry.ar==='string'&&entry.ar.trim()&&!editorialQualityIssue(source,entry.ar))return{value:entry.ar,method:'gemini'};
  if(Object.hasOwn(automatic,source)&&typeof automatic[source]==='string')return{value:automatic[source],method:'automatic'};
+ // The existing renderer translates this fixed scout grammar without an API request.
+ const scout=/^Scout spotted ([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+) \((possible effort|tool), substance (\d+)\)\.$/.exec(source);
+ if(scout&&(Object.keys(human).length||Object.keys(automatic).length))return{value:`رصد الكاشف \u2068${scout[1]}\u2069 (${scout[2]==='tool'?'أداة':'مشروع محتمل'}، المحتوى التقني ${scout[3]}).`,method:'template'};
  return{value:source,method:'fallback'};
 }
 const technicalOnly=new Set(['GTA VI','GTA 6','Rust','C++','C#','Go','Python','Unicorn','Unreal Engine','Unity','Xbox Series X|S','Xbox Series','Windows','Linux','macOS','NVIDIA','AMD','Intel','Vulkan','DirectX 12']);

@@ -24,7 +24,7 @@ if(!policy.source.length){await atomicJSON('.sync/source-status.json',{...state,
 const branch=`sync/upstream-${upstream.slice(0,12)}`,work=resolve(`.sync/integration-${upstream.slice(0,12)}`);
 await mkdir('.sync',{recursive:true});
 const existing=git(['ls-remote','--heads','origin',`refs/heads/${branch}`]);
-if(existing){log('source-review-already-staged',{branch,upstream});process.exit(0);}
+if(existing){await atomicJSON('.sync/source-status.json',{...state,checkedUpstreamSha:upstream,status:'review-required',branch,reason:'Existing integration requires conflict review'});log('source-review-already-staged',{branch,upstream});process.exit(0);}
 git(['worktree','add','-b',branch,work,'HEAD']);
 let conflicts=[];
 try{
@@ -56,7 +56,7 @@ try{
  }
  if(passed){
   // Fast-forward only. A concurrent change causes failure instead of overwriting Arabic work.
-  git(['push','origin',`HEAD:refs/heads/${target}`],work);log('source-integrated',{upstream,branch});
+  git(['push','origin',`HEAD:refs/heads/${target}`],work);await atomicJSON('.sync/source-status.json',{integratedUpstreamSha:upstream,status:'integrated',integratedAt:new Date().toISOString()});log('source-integrated',{upstream,branch});
   if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'integrated=true\n');
  }else{
   await atomicJSON(`${work}/automation/review/upstream.json`,{upstream,base:state.integratedUpstreamSha,files:policy.source,conflicts,reasons:policy.reasons,reviewRequired:true});

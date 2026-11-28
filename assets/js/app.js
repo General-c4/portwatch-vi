@@ -1,6 +1,6 @@
-import { MILESTONES, GROUNDWORK, STABILITY, TRACKS, scoreEffort, overall, ladderValue, byStars, isPrivateBuild, trackStep, stabilityKey } from './scoring.js';
+import { MILESTONES, GROUNDWORK, STABILITY, TRACKS, scoreEffort, overall, countsInHeadline, ladderValue, byStars, isPrivateBuild, trackStep, stabilityKey } from './scoring.js';
 import { getLiveViewers, trackView } from './backend.js';
-import { coverHtml, articlePath } from './news-shared.js';
+import { coverHtml, articlePath, newsTime, byNewest } from './news-shared.js';
 import { fillPinned } from './pinned.js';
 import { initI18n, t, tr, locale } from './i18n.js';
 import { contentText, newsText, editorialText, setNewsReloadHandler } from './content-i18n.js';
@@ -94,6 +94,7 @@ async function main() {
   pinned.then((p) => fillPinned($('#pinned'), p ? { ...p, text: editorialText(p.text,'pinned:current','text') } : p, { ago, when: (iso) => new Date(iso).toLocaleString(locale()) }));
   renderOverall(data);
   renderChanges(data.changes || []);
+  renderFilterChips();
   renderRace();
   renderNews(data.news || []);
   renderWatchlist(data);
@@ -139,6 +140,7 @@ function renderHeroArt(site) {
 const LIVE_REFRESH_MS = 5 * 60_000;
 function watchViewers() {
   const pill = $('#watching');
+  if (!pill) return; // Upstream can hide the viewer pill while retaining the backend.
   let last = 0;
   const refresh = async () => {
     if (document.hidden) return;
@@ -204,7 +206,7 @@ function startCountdown(exe) {
 
 /* ---------- Overall ---------- */
 function renderOverall(data) {
-  const all = data.efforts.filter((e) => !e.nuked); // nuked efforts aren't shown anywhere
+  const all = data.efforts.filter(countsInHeadline); // nuked efforts are left out, unless their progress is kept
   const ov = overall(all);
   const leader = ov.leader?.effort;
   animateNumber($('#ov-score'), ov.score);
@@ -352,19 +354,33 @@ function renderChanges(changes) {
 /* ---------- Race ---------- */
 function isGtaSpecific(e) { return /gta/i.test(e.target || ''); }
 
-// Official upstream GPU tags, retaining Arabic plain-text translation and escaping.
-const GPU_CLASS = { AMD: 'tag-amd', NVIDIA: 'tag-nvidia' };
+// The graphics cards a build has been run on (`gpu`: ["AMD"], ["NVIDIA"] or both, main one first),
+// from its README's test machine or the owner's report. Left off when nobody has said.
+// "Mac" means it runs on a Mac (Apple's own graphics).
+const GPU_CLASS = { AMD: 'tag-amd', NVIDIA: 'tag-nvidia', Intel: 'tag-intel', Mac: 'tag-mac' };
+const gpuTitle = (v) => (v === 'Mac' ? t('effort.macTitle') : t('effort.gpuTitle', { v }));
 const gpuTags = (e) => (Array.isArray(e.gpu) ? e.gpu : []).filter((v) => GPU_CLASS[v])
-  .map((v) => `<span class="tag ${GPU_CLASS[v]}" title="${esc(t('effort.gpuTitle', { v }))}">${esc(v)}</span>`).join('');
+  .map((v) => `<span class="tag ${GPU_CLASS[v]}" title="${esc(gpuTitle(v))}">${esc(v)}</span>`).join('');
+
+// The race's filter chips: "All", then one per brand that at least one build in the race has run on,
+// so Intel or Mac chips only appear once such a build is in the race.
+function renderFilterChips() {
+  const inRace = state.data.efforts.filter((e) => e.tier === 'tracked' && !e.nuked && !isPrivateBuild(e));
+  const brands = Object.keys(GPU_CLASS).filter((v) => inRace.some((e) => Array.isArray(e.gpu) && e.gpu.includes(v)));
+  $('#race-chips').innerHTML = `<button class="chip is-on" data-filter="all">${esc(t('race.all'))}</button>` +
+    brands.map((v) => `<button class="chip" data-filter="${esc(v)}" title="${esc(gpuTitle(v))}">${esc(v)}</button>`).join('');
+}
 
 function renderRace() {
   const { data, filter, sort } = state;
   // Only public code is ranked; private builds get their own unranked list below the race.
   // Nuked efforts (taken offline) aren't shown (owner's call, 2026-11-25). They stay in tracker.json,
-  // where their repo names keep the scout from listing copies of them as new candidates.
-  let list = data.efforts.filter((e) => e.tier === 'tracked' && !e.nuked && !isPrivateBuild(e));
-  if (filter === 'gta') list = list.filter(isGtaSpecific);
-  if (filter === 'generic') list = list.filter((e) => !isGtaSpecific(e));
+  // where their repo names keep the scout from listing copies of them as new candidates. One with
+  // `nuked.show` (Belobug, 2026-11-27, owner's call) keeps its card: greyed, unranked, at the bottom.
+  const shownNuked = (e) => e.tier === 'tracked' && e.nuked?.show === true;
+  let list = data.efforts.filter((e) => (e.tier === 'tracked' && !e.nuked && !isPrivateBuild(e)) || shownNuked(e));
+  // The AMD / NVIDIA chips keep the builds that have run on that brand of card (`gpu`).
+  if (GPU_CLASS[filter]) list = list.filter((e) => Array.isArray(e.gpu) && e.gpu.includes(filter));
   const byScore = (a, b) => Number(!!a.nuked) - Number(!!b.nuked) || b._s.score - a._s.score || byStars(a, b);
   const sorters = {
     score: byScore,
@@ -646,6 +662,12 @@ function bindFolds() {
 /* ---------- News ---------- */
 const safeLink = (u) => (/^#[\w-]+$/.test(u || '') ? u : safeHttp(u));
 const fmtDay = (d) => new Date(`${d}T12:00:00Z`).toLocaleDateString(locale(), { day: 'numeric', month: 'short', year: 'numeric' });
+// A post's day and time in the reader's own time zone, or the day alone for older posts.
+const fmtWhen = (n) => {
+  const at = newsTime(n);
+  return at ? new Date(at).toLocaleString(locale(), { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : fmtDay(n.date);
+};
+const whenTag = (n) => `<time datetime="${esc(newsTime(n) || n.date)}">${esc(fmtWhen(n))}</time>`;
 
 function storyMedia(n) {
   const img = n.image && /^https:\/\//.test(n.image.url || '')
@@ -655,8 +677,8 @@ function storyMedia(n) {
 }
 
 function renderNews(news) {
-  // Newest day first; stories from the same day keep their order in the data (newest first).
-  const items = [...news].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  // Newest first, by publish time (or day, for older posts); ties keep their order in the data.
+  const items = [...news].sort(byNewest);
   if (!items.length) { $('#news').hidden = true; return; }
   // Real links to each article's own page (built at deploy) so search engines can follow them;
   // a plain click opens the article in the reader instead.
@@ -664,7 +686,7 @@ function renderNews(news) {
     <a class="story ${small ? 'is-small' : ''}" href="${esc(articlePath(n) || '#news')}" data-story="${esc(n.id)}">
       ${storyMedia(n)}
       <div class="story-body">
-        <time>${esc(fmtDay(n.date))}</time>
+        ${whenTag(n)}
         <h3>${esc(newsText(n.title,`article:${n.id}`,'title'))}</h3>
         <p>${esc(newsText(n.dek,`article:${n.id}`,'summary'))}</p>
         ${!small && n.image?.credit ? `<span class="story-credit">${esc(t('news.image'))} ${esc(n.image.credit)}</span>` : ''}
@@ -692,7 +714,7 @@ function renderNews(news) {
     $('#reader-body').innerHTML = `
       ${storyMedia(n)}
       <div class="reader-inner">
-        <p class="meta">${esc(catLabel(n.category))} · ${esc(fmtDay(n.date))}</p>
+        <p class="meta">${esc(catLabel(n.category))} · ${whenTag(n)}</p>
         <h2 id="reader-title">${esc(newsText(n.title,`article:${n.id}`,'title'))}</h2>
         <p class="dek">${esc(newsText(n.dek,`article:${n.id}`,'summary'))}</p>
         <div class="article">${(n.body || []).map((p,i) => `<p>${esc(newsText(p,`article:${n.id}`,`body.${i}`))}</p>`).join('')}</div>

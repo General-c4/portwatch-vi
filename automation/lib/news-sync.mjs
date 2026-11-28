@@ -49,9 +49,9 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
   else delete catalog.articles[record.id];
   if(!Object.keys(selected).length){delete state.pending[record.id];continue;}
   state.pending[record.id]=pending;
-  if(pending.nextAttemptAt&&Date.parse(pending.nextAttemptAt)>Date.parse(now))continue;
+  if(pending.nextAttemptAt&&Date.parse(pending.nextAttemptAt)>Date.parse(now)&&!(clientFactory.multiProvider&&pending.lastError==='quota_or_rate_limit'))continue;
   const blockedUntil=geminiRetryAt(state);
-  if(Date.parse(blockedUntil)>Date.parse(now)){pending.lastError='quota_or_rate_limit';pending.nextAttemptAt=blockedUntil;stats.errors.push('quota_or_rate_limit');continue;}
+  if(!clientFactory.multiProvider&&Date.parse(blockedUntil)>Date.parse(now)){pending.lastError='quota_or_rate_limit';pending.nextAttemptAt=blockedUntil;stats.errors.push('quota_or_rate_limit');continue;}
   const request=prepareNewsRequest(selected,record.sourceUrls,terms);
   const inputUpperBound=Buffer.byteLength(NEWS_SYSTEM_INSTRUCTION+request.prompt,'utf8')+1024;
   const reservation=inputUpperBound+limits.maxOutputTokens;

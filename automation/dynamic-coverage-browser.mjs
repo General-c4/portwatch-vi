@@ -18,7 +18,7 @@ try{
  const unreported=coverage.missing.filter(e=>!pending[JSON.stringify([e.id,e.field])]?.lastError);
  assert.equal(unreported.length,0,JSON.stringify(unreported.map(({id,field})=>({id,field})),null,2));
  if(process.env.PW_ALLOW_QUEUED_TRANSLATIONS!=='1')assert.equal(coverage.missing.length,0,'Current dynamic content must have complete translation coverage');
- const expected=(source,id,field,lang)=>lang==='en'?source:scopedTranslation(source,id,field,catalogs).value;
+ const expected=(source,id,field,lang)=>clean(lang==='en'?source:scopedTranslation(source,id,field,catalogs).value);
  const results=[],errors=[],httpErrors=[],requestsFailed=[];
  browser=await chromium.launch({channel:process.env.PW_BROWSER||'msedge',headless:true});
  await mkdir(out,{recursive:true});
@@ -41,7 +41,7 @@ try{
    if(process.env.PW_ALLOW_QUEUED_TRANSLATIONS!=='1')assert.equal(actualCoverage.missing.length,0,'Live dynamic content must be fully translated');
   }
   if(pin?.show!==false&&pin?.text){
-   const pinExpected=expected(pin.text,'pinned:current','text',lang),prefix=pinExpected.split(/https:\/\//)[0].trim();
+   const pinExpected=expected(pin.text,'pinned:current','text',lang).slice(0,500).replace(/\*\*(.+?)\*\*/g,'$1'),prefix=pinExpected.split(/https:\/\//)[0].trim();
    await page.waitForFunction(()=>!document.querySelector('#pinned').hidden);
    assert(clean(await page.locator('#pinned .pin-text').textContent()).startsWith(prefix));
    assert.equal(await page.locator('#pinned .pin-name').textContent(),pin.name||'4lwayz');assert.equal(await page.locator('#pinned .pin-time').getAttribute('datetime'),pin.updated);

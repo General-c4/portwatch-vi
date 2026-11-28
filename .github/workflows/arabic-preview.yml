@@ -18,16 +18,24 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url || steps.retry.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
-      - run: node --test tests/*.test.mjs
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
       - run: npm ci --prefix automation --ignore-scripts --no-audit --no-fund
       - run: npx --prefix automation playwright install --with-deps chromium
+      - name: Refresh complete canonical snapshot independently of translation quotas
+        run: node automation/content-sync.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PW_TRANSLATION_PROVIDER: none
+          PW_TRANSLATION_LIMIT: '0'
+          GEMINI_NEWS_MAX_REQUESTS: '0'
+          API_ANYTHING_LOCAL_ONLY: '1'
+      - run: node --test tests/*.test.mjs
       - name: Arabic and English desktop/tablet/mobile regression gate
         run: node automation/verify-source-browser.mjs .
         env:
@@ -74,8 +82,12 @@ jobs:
         with:
           artifact_name: github-pages-rollback
       - if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: deployment-verification
-          path: .sync/deployment-status.json
+          path: |
+            .sync/*status.json
+            .sync/canonical-snapshot.json
+            .sync/coverage-browser
+          include-hidden-files: true
           retention-days: 7

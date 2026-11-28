@@ -364,5 +364,6 @@
   "news.breadcrumb": "مسار التنقل",
   "news.archiveDescription": "كل تقارير PortWatch VI عن نسخة GTA VI المسرّبة ومشاريع نقلها إلى الحاسوب: الإزالات والأخبار القانونية والاحتيال ومراحل النقل الفعلية، مع روابط إلى التقارير الأصلية.",
   "effort.watch": "شاهد",
-  "effort.gpuTitle": "يعمل على بطاقات الرسوم {v}"
+  "effort.gpuTitle": "يعمل على بطاقات الرسوم {v}",
+  "effort.macTitle": "يعمل على جهاز Mac"
 }

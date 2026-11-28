@@ -1,118 +1,220 @@
 [
   {
-    "id": "7b99a0022c4a0299aac9b48bea504c9d0657da7c5dcd5b6a105487d80e6bae07",
-    "sourceHash": "3315b3e4dd0b385331a5edf11a3bf3666cca4dcedde89ccd7c590134c6f46168",
-    "scope": "content",
-    "key": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
-    "source": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+    "id": "19afc07f764cfc5c11438726b4dbcef2d9435b74370c4c99b6778737a6bead5f",
+    "sourceHash": "c3812fc4acb861d5182fc2b8155f327f736fbe5e5eb86a7bd7afcb6dc5497282",
+    "scope": "dashboard",
+    "key": "Remove",
+    "source": "Remove",
     "refs": [
-      "candidates:ProjectLeonida/mandy.description"
+      "dashboard.c3812fc4acb8"
     ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
+    "attempts": 0,
+    "lastError": null,
     "reviewRequired": false
   },
   {
-    "id": "070f1d2850d160a66ecc07421e488e2bdc1d0c157286183555c5ecee3e9e9ed3",
-    "sourceHash": "630d017740268cdcd5d33ff8f9b89e6fc8368c698e61890490f67254c82e220d",
+    "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
+    "sourceHash": "c2fd567e124a9151e6435d606cecf1cdefe12159236d130e7b688aa8411fe8d0",
+    "scope": "dashboard",
+    "key": "Upload GIF",
+    "source": "Upload GIF",
+    "refs": [
+      "dashboard.c2fd567e124a"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "8c2c0766951853aa82abea499f81aa5307a7c3c61c1fe3a501fd3f54d6d38811",
+    "sourceHash": "28ce9a6478d70be964ab5f2bd3308fb4eb4857949f93557790dcc585601bace5",
+    "scope": "dashboard",
+    "key": "GIF under the message: paste a Giphy, Tenor or Imgur link",
+    "source": "GIF under the message: paste a Giphy, Tenor or Imgur link",
+    "refs": [
+      "dashboard.28ce9a6478d7"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "4935fd53a7fc3b031318f4b4204972bc59e1490d60732526bd2e7ae6d26a4a0d",
+    "sourceHash": "ba4f7066db0e74ec854e5e76ddc1f50e9084683ba562ed7bb4ef89edc7302d3a",
     "scope": "content",
-    "key": "29 refreshed, 6 READMEs changed, 68 new candidates, 2 flagged, 1 errors.",
-    "source": "29 refreshed, 6 READMEs changed, 68 new candidates, 2 flagged, 1 errors.",
+    "key": "Scout spotted JuePort/JueVI (possible effort, substance 91).",
+    "source": "Scout spotted JuePort/JueVI (possible effort, substance 91).",
+    "refs": [
+      "changes.63.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "9f6312d41087f82261f8b6b689a609e5279aebe04761d8da8c93c66d7d712801",
+    "sourceHash": "adcb46a27a7716a21927155e12be8f947c4b8463314c3704915f14de2fb4455e",
+    "scope": "content",
+    "key": "Scout spotted Vladotas/vilux (possible effort, substance 56).",
+    "source": "Scout spotted Vladotas/vilux (possible effort, substance 56).",
+    "refs": [
+      "changes.42.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "77608e71508fe05a1e806eb006d6327dc8f25ab1c1008a7f86b1499b16b12411",
+    "sourceHash": "e2cd5ddfc5fc6c3b8505bfe1dd294be8000c486264de2ef77a414a31fcec5b33",
+    "scope": "content",
+    "key": "Scout spotted sm-gustavo/Vice (possible effort, substance 64).",
+    "source": "Scout spotted sm-gustavo/Vice (possible effort, substance 64).",
+    "refs": [
+      "changes.60.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "decd9a9ab9e6816a7bf9c26e6a5768ba9b3b915371e9603c576ffd563aa152ce",
+    "sourceHash": "477332be2dcfdd786b1d631e2e9c88cfd740d963c557b8c944b3594578e5419a",
+    "scope": "content",
+    "key": "29 refreshed, 3 READMEs changed, 70 new candidates, 2 flagged.",
+    "source": "29 refreshed, 3 READMEs changed, 70 new candidates, 2 flagged.",
     "refs": [
       "scout.lastSummary"
     ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
+    "attempts": 0,
+    "lastError": null,
     "reviewRequired": false
   },
   {
-    "id": "cf0535b91f817e84af94a8dce71954849fcb2af0014db18685943eb0e7b11e1d",
-    "sourceHash": "05e3d1d382f6cf4ec88fa90080106cec75996970b391403bb8fec829a402c8b0",
+    "id": "923c5ebc0c7c340b7d49e1d4979bf50ff809efa9337349e6f194e76b1ca91baa",
+    "sourceHash": "cb7956c4b510ea6fc0437bffacc97287a414246446d323a727147d649dc5b782",
     "scope": "content",
-    "key": "Bifurcación de pruebas (Leonida Continuation) — sin datos del juego; ver PRUEBAS-CASA.md",
-    "source": "Bifurcación de pruebas (Leonida Continuation) — sin datos del juego; ver PRUEBAS-CASA.md",
+    "key": "Scout spotted monte-alt/vesper (possible effort, substance 98).",
+    "source": "Scout spotted monte-alt/vesper (possible effort, substance 98).",
     "refs": [
-      "candidates:mrbabayeen-Linux/mandy6.description"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "98da91058e1f2ad7541054c8a3050cbf81a7280987c35a7f07f4bb1f5041bed5",
-    "sourceHash": "1d9bfcb61ded8e3921b7c554cfb9f33e5c99576be0fc74a25465688806f9039d",
-    "scope": "content",
-    "key": "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others",
-    "source": "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others",
-    "refs": [
-      "efforts:avatarmanz.blockers.2"
-    ],
-    "attempts": 1,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
-  },
-  {
-    "id": "9226ce9988df889457b71b43458cd156e8952f13d75355ccd7efe6e7381a69bb",
-    "sourceHash": "21c65f0a918e62c55fad9c7a3e9641b81800d758925cbf4f53aed70521faec22",
-    "scope": "content",
-    "key": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
-    "source": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
-    "refs": [
-      "candidates:jleybourne/triumph-rebuild.description"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "إعادة بناء ذاتي لطبقة التواؤم لـ Xbox Series، في طريقتي الخاصة، تركز على الأداء"
-  },
-  {
-    "id": "d9beabdb693b723e04d3778cce7437750d8e8591841e026b1a4f377d410b7bc0",
-    "sourceHash": "5b33d61c1677755c1d7f2196f3fcdaf3070f7dd56c14860a19614a68922acc4d",
-    "scope": "content",
-    "key": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
-    "source": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
-    "refs": [
-      "efforts:avatarmanz.highlights.3"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "4a8cdaa8b17537fbe56b9e10cfe3e1d1af1404f42208219ccd282f4bc89aa970",
-    "sourceHash": "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea",
-    "scope": "content",
-    "key": "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
-    "source": "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
-    "refs": [
-      "efforts:belobug.highlights.1"
+      "changes.20.text"
     ],
     "attempts": 0,
     "lastError": null,
     "reviewRequired": false
   },
   {
-    "id": "4b78417b2c1095326736243490883b9063cecfab6348c7036b513fe0b521ba16",
-    "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
+    "id": "67dd8f239efd6f6af47e4f1dfbb9cb4c64f632356c5858496e9f55b813ae7bb4",
+    "sourceHash": "a2117a0e665492639524fabed64c3091f8dbf4e4028ca2d103cff3e3f893f6ae",
     "scope": "content",
-    "key": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
-    "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+    "key": "Scout spotted gustavsi/X2Linux (possible effort, substance 75).",
+    "source": "Scout spotted gustavsi/X2Linux (possible effort, substance 75).",
     "refs": [
-      "efforts:belobug.blockers.0",
-      "efforts:avatarmanz.blockers.0"
+      "changes.58.text"
     ],
     "attempts": 0,
     "lastError": null,
     "reviewRequired": false
   },
   {
-    "id": "576a200261bf8889898675aa4b6ecc011cf64609de7980edc002772e6747ad00",
-    "sourceHash": "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7",
+    "id": "3ce46262b94882c110d1b7c48d68c777bda4adccd6895307cb06e42532482054",
+    "sourceHash": "acd99301a2e6778336c650b01e78f55aedffc57f00a933dd8e38f49ea2322b58",
     "scope": "content",
-    "key": "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
-    "source": "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
+    "key": "Scout spotted Lumice/victory-linux (possible effort, substance 74).",
+    "source": "Scout spotted Lumice/victory-linux (possible effort, substance 74).",
     "refs": [
-      "efforts:belobug.highlights.2"
+      "changes.41.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "2e3a464cd00bc282d76c328507f6e6750ccdebe06fdf95d8cf7b5c333d908a64",
+    "sourceHash": "e8e12fdb09064ed6b2575465b59f8d68d231927dc73480d6a39d9920fe8f0445",
+    "scope": "content",
+    "key": "Scout spotted n-romanovich/NVIctory (possible effort, substance 90).",
+    "source": "Scout spotted n-romanovich/NVIctory (possible effort, substance 90).",
+    "refs": [
+      "changes.25.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "e061beb8d790d8f622153052f4e131094a51534bf25e7f76e6a14cd08e549b2e",
+    "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
+    "scope": "content",
+    "key": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
+    "source": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
+    "refs": [
+      "changes.67.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "13f787bce760f398ed8a5cc5523ff46911ffe329e11dde3dc7cdead9f7c3ec43",
+    "sourceHash": "ed083ab08610f040ee15f228fc83b96c803119a5482fca9027437e99664166da",
+    "scope": "content",
+    "key": "Scout spotted kalinizer/victory-polaris (possible effort, substance 67).",
+    "source": "Scout spotted kalinizer/victory-polaris (possible effort, substance 67).",
+    "refs": [
+      "changes.40.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "59f727b9ac4104688069a740ef5a80c298ccbedb67895ee1d697ae663cf0a65b",
+    "sourceHash": "fc85beccbe563b028f1a4cd7cbbb6b555fe2b1e818868b0fc595cdee0136fdaf",
+    "scope": "content",
+    "key": "Scout spotted naixue2233/Yuk1-nvdia-gta6 (possible effort, substance 83).",
+    "source": "Scout spotted naixue2233/Yuk1-nvdia-gta6 (possible effort, substance 83).",
+    "refs": [
+      "changes.10.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "f05fedc346601c5b8fc79cd6203e4d5bd040df4cfe7d98c0aca28eba03691520",
+    "sourceHash": "17b81f6a836a95abdf85e37e15572013891b213d12d4158a08321697bd96a8ee",
+    "scope": "content",
+    "key": "Scout spotted HyperExtendedReality/strata (possible effort, substance 88).",
+    "source": "Scout spotted HyperExtendedReality/strata (possible effort, substance 88).",
+    "refs": [
+      "changes.59.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "6c5a27373afa7358be8c2087549a2901b2e0e07c0b6ad218a69ef3764d59fe17",
+    "sourceHash": "01b7c8b6d7866e46bae2ffd9093aec7da2a6bc726902583d1b9417e5e26b7dff",
+    "scope": "content",
+    "key": "Scout spotted kotone-catto/VIctory-Intel-Arc (possible effort, substance 68).",
+    "source": "Scout spotted kotone-catto/VIctory-Intel-Arc (possible effort, substance 68).",
+    "refs": [
+      "changes.65.text"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "4feeaff19f72365e32e7de8787cfee0b6cdea5bc855db766a335a937b83cfde6",
+    "sourceHash": "626654d8c4ff8af69bae1318ca6a4623f4df9bb81bf6ba3a57d3b10f21907577",
+    "scope": "content",
+    "key": "Scout spotted andresgonzalezvaldivia-ui/Hyper30X (possible effort, substance 74).",
+    "source": "Scout spotted andresgonzalezvaldivia-ui/Hyper30X (possible effort, substance 74).",
+    "refs": [
+      "changes.27.text"
     ],
     "attempts": 0,
     "lastError": null,
@@ -126,19 +228,6 @@
     "source": "GTA 6 Xbox Series win10-playable fork (100% VS/PS/CS Wave32 DXIL validation, null WASAPI fallback, RTX 3060 tuning)",
     "refs": [
       "candidates:RipcuBAN/victory-fork.description"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "b7c1d1a3d871c838e66a7e89a1454b044ad6a6db5e406fc24027141134a7a912",
-    "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
-    "scope": "content",
-    "key": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
-    "source": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
-    "refs": [
-      "efforts:avatarmanz.blockers.1"
     ],
     "attempts": 0,
     "lastError": null,
@@ -171,19 +260,6 @@
     "reviewRequired": false
   },
   {
-    "id": "d92e2be49fc1d8d49f5a238d2fd87ab90056171c497a727cfbc447e584d23e30",
-    "sourceHash": "9ab6e235b723c23a8e3a29a218f0cc2eed310973bd432de1524194e91790ae52",
-    "scope": "content",
-    "key": "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
-    "source": "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
-    "refs": [
-      "efforts:avatarmanz.highlights.1"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "b205fc019dcaf76a4230f7a7afe0eea512e4227b03cbefa06102bfe32dbe9a88",
     "sourceHash": "8b382f06320432bd5568c270fac50fc90b3c40e31441c07923b48d44c40e52a2",
     "scope": "content",
@@ -197,13 +273,26 @@
     "reviewRequired": false
   },
   {
-    "id": "65307e0c756fc467f3688f70a5713490d7e172f50927f68bb34ca171fc816bba",
-    "sourceHash": "19d780b24ea9c8103ba21520cc4f177c1938b8a63c9320807194e452019cb055",
+    "id": "36430bd45729c22bd38c9213d764a0030b6a56e4e1ddf516e29b155cde226d4b",
+    "sourceHash": "5a6659c698eb40b4ee6ccc1f60a53b586aa0841080c988251766f8bb183c0e73",
     "scope": "content",
-    "key": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
-    "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
+    "key": "High-performance Windows x64 DirectX 12 compatibility and renderer-porting runtime for Xbox Series executables, written in Rust and tuned for modern PCs.",
+    "source": "High-performance Windows x64 DirectX 12 compatibility and renderer-porting runtime for Xbox Series executables, written in Rust and tuned for modern PCs.",
     "refs": [
-      "efforts:belobug.nuked.note"
+      "candidates:monte-alt/vesper.description"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "4f170c2ec880cdbdd7113d85018a66421f258d22817b96e4c77ce3e5d81b285b",
+    "sourceHash": "0ec5d35486898c996684f725bb85041aab10ce0c21116dfb4023309c84d068ac",
+    "scope": "dashboard",
+    "key": "Giphy: paste the page link. Tenor or Imgur: right-click the GIF and copy the image address. Or upload a file from this PC (up to 8 MB); it's stored on the site.",
+    "source": "Giphy: paste the page link. Tenor or Imgur: right-click the GIF and copy the image address. Or upload a file from this PC (up to 8 MB); it's stored on the site.",
+    "refs": [
+      "dashboard.0ec5d3548689"
     ],
     "attempts": 0,
     "lastError": null,
@@ -256,19 +345,6 @@
     "source": "Update, 2026-11-27: GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card on our board is now marked as nuked.",
     "refs": [
       "news:2026-11-25-belobug-way-ahead.body.5"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "497870b5321f46907403b237eef1569b1265a401267d694e7553912f19da4fea",
-    "sourceHash": "5ae99c9a7d8199dd2ecb18bc5c0c9bfef0969067797d5eec0500feab0b94a503",
-    "scope": "content",
-    "key": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.",
-    "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.",
-    "refs": [
-      "efforts:avatarmanz.nuked.note"
     ],
     "attempts": 0,
     "lastError": null,
@@ -405,32 +481,6 @@
     "reviewRequired": false
   },
   {
-    "id": "6c49503ea435333d616a57971bb4109459edf479a913475314d72f2f18d3d048",
-    "sourceHash": "f5a7319d6ffc0f78a117b2fcc632672fafd8b7e0500631118a1a8fcc0790f75e",
-    "scope": "content",
-    "key": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
-    "source": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
-    "refs": [
-      "efforts:belobug.summary"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "61ebbb2f276755b191edfdf4e6f1f364feccd2ceb459e01728fd78806d9b98ef",
-    "sourceHash": "b1879145ad6a87c7a5b3c381b754d85fdad6ddb75dbdf3e720d2af8d480f65c5",
-    "scope": "content",
-    "key": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.",
-    "source": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.",
-    "refs": [
-      "efforts:avatarmanz.summary"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "a323e03804563b63b438dc4a8762e0d93ec0395667f216ea74440811c482d77f",
     "sourceHash": "c6daf53b9b123d2a57e9b2c3fdb3f95d0e03a13e881bc17408b8d3608f92a5c0",
     "scope": "content",
@@ -526,19 +576,6 @@
     "draft": "(غيثوب)"
   },
   {
-    "id": "5a9e6146aed6886d3444b9e1a462e9e85208dd8570b1f774207be67aba310c7e",
-    "sourceHash": "4cc97c61e0ee329e6217c49e4fc16583decab8c8699d335d36e5904ffbfa5b00",
-    "scope": "content",
-    "key": "Belo Top Dawg",
-    "source": "Belo Top Dawg",
-    "refs": [
-      "efforts:belobug.proof.label"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
     "id": "f09eb03ae83a11a5db186d478c4b67a8250d8e9dfba57c5b6cdabe5bfd1e028d",
     "sourceHash": "4afb494416dd71138f2aec52cd7c34848ebce09f3c5e9428a6b86f0fdd8d235b",
     "scope": "content",
@@ -551,33 +588,6 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "ألعاب الموانئ"
-  },
-  {
-    "id": "ba92a1e420785c95787e9efc923d82061336a6200b2a213551116053e29efdf2",
-    "sourceHash": "c55b524cbc910b39035ab021e253abcc224a7015fbd9b33f2d0ffd11b01d24af",
-    "scope": "interface",
-    "key": "effort.macTitle",
-    "source": "Runs on a Mac",
-    "refs": [
-      "interface.effort.macTitle"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "يركض على ماك"
-  },
-  {
-    "id": "7cf8fe78f9f0cb80b5c1ce86018f28098ec57051d2cccffc0adfe590a6e95a24",
-    "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
-    "scope": "content",
-    "key": "Video on Reddit",
-    "source": "Video on Reddit",
-    "refs": [
-      "efforts:avatarmanz.proof.label"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
   },
   {
     "id": "9e9fe6e48634c87d59afe3980298747215a91a64997f76f27c40facf05d4f7fb",
@@ -635,82 +645,13 @@
     "reviewRequired": false
   },
   {
-    "id": "68930192020de2706293b8d2af1004c844beb9158f6aae6d6218b1fcc4b3cc21",
-    "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
+    "id": "7b99a0022c4a0299aac9b48bea504c9d0657da7c5dcd5b6a105487d80e6bae07",
+    "sourceHash": "3315b3e4dd0b385331a5edf11a3bf3666cca4dcedde89ccd7c590134c6f46168",
     "scope": "content",
-    "key": "Removed by GitHub · was public, based on VIctory",
-    "source": "Removed by GitHub · was public, based on VIctory",
+    "key": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
+    "source": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
     "refs": [
-      "efforts:belobug.byline",
-      "efforts:avatarmanz.byline"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "أُلغيت من قِبَل GitHub ; علناً، استناداً إلى VIctory"
-  },
-  {
-    "id": "29a954598d98e7b9951d926a6797d6b30ede9203703037c1e204e8c3e652418c",
-    "sourceHash": "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d",
-    "scope": "content",
-    "key": "Built on VIctory's main and upstream pull requests",
-    "source": "Built on VIctory's main and upstream pull requests",
-    "refs": [
-      "efforts:belobug.highlights.5"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "466c963acf60f42fdd38e7c49402964f3b61a5782e017b793693b05744a98a75",
-    "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
-    "scope": "content",
-    "key": "Owner reports ray-traced lighting now working on AMD",
-    "source": "Owner reports ray-traced lighting now working on AMD",
-    "refs": [
-      "efforts:belobug.highlights.3"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "1e782ac473ecd691091562e8093e9865fa6849f657d7b284ce98e9565a3d6a3a",
-    "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
-    "scope": "content",
-    "key": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
-    "source": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
-    "refs": [
-      "efforts:belobug.blockers.2"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "تم اختبارها على طائرة واحدة من طراز AMD PC فقط؛ لا شيء على NVIDIA أو Intel حتى الآن"
-  },
-  {
-    "id": "48769da2b9638ad012ada3b4a9eca09d801d730ac287177c2de2f2734ae33b07",
-    "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
-    "scope": "content",
-    "key": "Plays through missions; story progress rated 80%, level with CGBJ",
-    "source": "Plays through missions; story progress rated 80%, level with CGBJ",
-    "refs": [
-      "efforts:belobug.highlights.4"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "اللعب عن طريق البعثات؛ تقييم التقدم المحرز في القصص 80%، المستوى مع CGBJ"
-  },
-  {
-    "id": "eddeb575373176541f2bd18c2467fab18e5f78f02cc7c65830745a99aab836d3",
-    "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
-    "scope": "content",
-    "key": "41 minutes in one session without a crash (its README); sound works",
-    "source": "41 minutes in one session without a crash (its README); sound works",
-    "refs": [
-      "efforts:avatarmanz.highlights.2"
+      "candidates:ProjectLeonida/mandy.description"
     ],
     "attempts": 1,
     "lastError": "Missing Arabic output",
@@ -743,32 +684,6 @@
     "reviewRequired": false
   },
   {
-    "id": "7f25a5a9041230e57d3de748a01532730f8f2af3c74d4b2587408c0038964c2c",
-    "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
-    "scope": "content",
-    "key": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
-    "source": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
-    "refs": [
-      "efforts:avatarmanz.highlights.0"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ7QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "3c3d0218f25a6fa623450257afbc6877b772e22c2ef4a393429d59fc71a225e6",
-    "sourceHash": "c13186352bf409c1a639f8a5107112ada1eaec9e755e08d4621cc8c64f6e3b2a",
-    "scope": "content",
-    "key": "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
-    "source": "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
-    "refs": [
-      "efforts:belobug.blockers.1"
-    ],
-    "attempts": 1,
-    "lastError": "Untranslated prose requires review",
-    "reviewRequired": false
-  },
-  {
     "id": "a62e6d9e540690d5c22020269039fe463cc1ee0e0e070b09a97c53c9e5b7f527",
     "sourceHash": "90c812e27e53dbafbc3fbe3af05531edf61d16af71e69500e300311ba6a4f5a3",
     "scope": "content",
@@ -779,6 +694,19 @@
     ],
     "attempts": 1,
     "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "cf0535b91f817e84af94a8dce71954849fcb2af0014db18685943eb0e7b11e1d",
+    "sourceHash": "05e3d1d382f6cf4ec88fa90080106cec75996970b391403bb8fec829a402c8b0",
+    "scope": "content",
+    "key": "Bifurcación de pruebas (Leonida Continuation) — sin datos del juego; ver PRUEBAS-CASA.md",
+    "source": "Bifurcación de pruebas (Leonida Continuation) — sin datos del juego; ver PRUEBAS-CASA.md",
+    "refs": [
+      "candidates:mrbabayeen-Linux/mandy6.description"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -806,6 +734,20 @@
     "attempts": 1,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
+  },
+  {
+    "id": "9226ce9988df889457b71b43458cd156e8952f13d75355ccd7efe6e7381a69bb",
+    "sourceHash": "21c65f0a918e62c55fad9c7a3e9641b81800d758925cbf4f53aed70521faec22",
+    "scope": "content",
+    "key": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
+    "source": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
+    "refs": [
+      "candidates:jleybourne/triumph-rebuild.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "إعادة بناء ذاتي لطبقة التواؤم لـ Xbox Series، في طريقتي الخاصة، تركز على الأداء"
   },
   {
     "id": "855301eaf3f7f69f9be653068c020e1499d8dc2c5bd1f1ac0f7afd4b2df650e2",
@@ -871,19 +813,6 @@
     ],
     "attempts": 1,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "9c4c77e9a2959baab3ba8837822d80b3d3a2ab93f0e1ae83fa2c36c57a57f630",
-    "sourceHash": "2b0baffa113309240ff939a8872934b0c249e096462e8c602f45d07948782537",
-    "scope": "content",
-    "key": "Experimental Xbox Series X|S (GDK) title runner for Windows, built on the XCL translation layer: D3D12.X to D3D12, RDNA2 shaders to DXIL.",
-    "source": "Experimental Xbox Series X|S (GDK) title runner for Windows, built on the XCL translation layer: D3D12.X to D3D12, RDNA2 shaders to DXIL.",
-    "refs": [
-      "candidates:zortos293/XSEmu.description"
-    ],
-    "attempts": 1,
-    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -1456,7 +1385,7 @@
     "key": "Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
     "source": "Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
     "refs": [
-      "changes.7.text",
+      "changes.5.text",
       "changes.75.text"
     ],
     "attempts": 0,
@@ -1548,21 +1477,8 @@
     "key": "Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
     "source": "Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
     "refs": [
-      "changes.11.text",
+      "changes.9.text",
       "changes.79.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "a753b397fe64e511e504afa157013a8f7b2f15194616d889ddb4304409c9ebf4",
-    "sourceHash": "46de2260a6fea1cf07b068e876664d9ea91c9f5f74acbf354fbcef0f97076291",
-    "scope": "content",
-    "key": "‘GTA 6’ Is Already One Of The Best-Selling Games Ever, Says Report",
-    "source": "‘GTA 6’ Is Already One Of The Best-Selling Games Ever, Says Report",
-    "refs": [
-      "headlines:https://www.forbes.com/sites/paultassi/2026/11/27/gta-6-is-already-one-of-the-best-selling-games-ever-says-report/.title"
     ],
     "attempts": 0,
     "lastError": null,
@@ -1595,27 +1511,13 @@
     "reviewRequired": false
   },
   {
-    "id": "712875cc9b76eeeca08e65bbfe38ee8661c3d68bfe8085b26a3e08c0b96c5ebc",
-    "sourceHash": "770807b54969615cc71e890aeb1895a4176894d94ddb98a60acd26b4dbb6b3ce",
-    "scope": "content",
-    "key": "Scout spotted igvcc/lucias-project (possible effort, substance 49).",
-    "source": "Scout spotted igvcc/lucias-project (possible effort, substance 49).",
-    "refs": [
-      "changes.3.text",
-      "changes.71.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "114605435488980c3ae241417533dffee7bfb75190350a22f59033b0e4c488a2",
     "sourceHash": "f63a6bf957cdcc33ff96f01f8d4964a80cec2f8827e937552a47b407a78d1a49",
     "scope": "content",
     "key": "Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
     "source": "Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
     "refs": [
-      "changes.10.text",
+      "changes.8.text",
       "changes.78.text"
     ],
     "attempts": 0,
@@ -1649,27 +1551,13 @@
     "reviewRequired": false
   },
   {
-    "id": "310c75a482b2c837fe846715adc59d207ad09439b3296a96d09c53f38be2540a",
-    "sourceHash": "32cd68c631c7d518991c4e27bcd0c1062e6024c0c7a6829aa89e7d15b0cda207",
+    "id": "641bebe504c0338172d311e2a597fa07cd2f334d7745e6f8e43d5b8bc86e7774",
+    "sourceHash": "aef766bfe7b093f2f134e4224ff61bf05777d411d39be5a36acdb25fa24d7931",
     "scope": "content",
-    "key": "Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
-    "source": "Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
+    "key": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
+    "source": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
     "refs": [
-      "changes.6.text",
-      "changes.74.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "e061beb8d790d8f622153052f4e131094a51534bf25e7f76e6a14cd08e549b2e",
-    "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
-    "scope": "content",
-    "key": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-    "source": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-    "refs": [
-      "changes.68.text"
+      "headlines:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI.title"
     ],
     "attempts": 0,
     "lastError": null,
@@ -1682,7 +1570,7 @@
     "key": "Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
     "source": "Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
     "refs": [
-      "changes.8.text",
+      "changes.6.text",
       "changes.76.text"
     ],
     "attempts": 0,
@@ -1729,20 +1617,6 @@
     "reviewRequired": false
   },
   {
-    "id": "eb6427ef536fbb8b539e94028533758c65bfc9736f087d8b6130ba728b94467f",
-    "sourceHash": "489bc4653d3d9229e66242bc7cdb1a4cc58b3aec233e44a66d2128de8f338534",
-    "scope": "content",
-    "key": "Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
-    "source": "Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
-    "refs": [
-      "changes.5.text",
-      "changes.73.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "359dfa64916540e1b5620e8b129a39b7c755763a381bd3dae62058cc81f068b6",
     "sourceHash": "60bbda20c771cbbd24ae87f869fc0fa0ecc055ae4fd116630719c121494d42da",
     "scope": "content",
@@ -1750,20 +1624,6 @@
     "source": "Intro cutscene drawn textured and lit, with hair, sky and depth of field",
     "refs": [
       "efforts:marvis.highlights.1"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "12da14a88ed50b4eaadf7207a024b35e72610f1d209f77d4a02e346c104eb95d",
-    "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
-    "scope": "content",
-    "key": "Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-    "source": "Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-    "refs": [
-      "changes.1.text",
-      "changes.70.text"
     ],
     "attempts": 0,
     "lastError": null,
@@ -1835,13 +1695,13 @@
     "reviewRequired": false
   },
   {
-    "id": "7453ef220a96dc0cbaae79589b0aeb930c008c25f589a93d9231737e8158bea4",
-    "sourceHash": "547a3b0f88808cb963ca5657bef0fe90e184538362d6a676693b24907ae60aaa",
+    "id": "7b649bbaa32976ec8234c5110b408e9e61890ed7f375776a66d56b144e0a770f",
+    "sourceHash": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
     "scope": "content",
-    "key": "GTA 6: Thousands of recomp repositories taken down – but what did it achieve?",
-    "source": "GTA 6: Thousands of recomp repositories taken down – but what did it achieve?",
+    "key": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
+    "source": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
     "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5.title"
+      "headlines:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5.title"
     ],
     "attempts": 0,
     "lastError": null,
@@ -1984,7 +1844,7 @@
     "key": "Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
     "source": "Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
     "refs": [
-      "changes.9.text",
+      "changes.7.text",
       "changes.77.text"
     ],
     "attempts": 0,
@@ -2135,6 +1995,19 @@
     "reviewRequired": false
   },
   {
+    "id": "4a8cdaa8b17537fbe56b9e10cfe3e1d1af1404f42208219ccd282f4bc89aa970",
+    "sourceHash": "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea",
+    "scope": "content",
+    "key": "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
+    "source": "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
+    "refs": [
+      "efforts:belobug.highlights.1"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
     "id": "146e9aa0cf5d1147f851d346a4f3afb2e30c7807a2d46f0cb0b7a57df4228901",
     "sourceHash": "dba691cf0b8aab49b983f6deee64a4cbd64b4ee95d36d62e51052303169cbd1b",
     "scope": "content",
@@ -2148,6 +2021,20 @@
     "reviewRequired": false
   },
   {
+    "id": "4b78417b2c1095326736243490883b9063cecfab6348c7036b513fe0b521ba16",
+    "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
+    "scope": "content",
+    "key": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+    "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+    "refs": [
+      "efforts:belobug.blockers.0",
+      "efforts:avatarmanz.blockers.0"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
     "id": "c31d53d36863f8fb4450caf6eeda6fd7cbd867ee5d9c968d8ba7ddd6e9a2e3a7",
     "sourceHash": "db9ba2fc9c320515cea8357c47bf281788a69134d4a1ff088358f1d8452de606",
     "scope": "content",
@@ -2155,6 +2042,32 @@
     "source": "Mostly foxhound's code; its release exe is unsigned and can't be checked against the source, so build it yourself",
     "refs": [
       "efforts:victory-nvidia.blockers.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "576a200261bf8889898675aa4b6ecc011cf64609de7980edc002772e6747ad00",
+    "sourceHash": "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7",
+    "scope": "content",
+    "key": "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
+    "source": "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
+    "refs": [
+      "efforts:belobug.highlights.2"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "b7c1d1a3d871c838e66a7e89a1454b044ad6a6db5e406fc24027141134a7a912",
+    "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
+    "scope": "content",
+    "key": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+    "source": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+    "refs": [
+      "efforts:avatarmanz.blockers.1"
     ],
     "attempts": 0,
     "lastError": null,
@@ -2187,13 +2100,13 @@
     "reviewRequired": false
   },
   {
-    "id": "feceeba3803d65c05a75c0117aad433f633a4c63c6b287aa5e01bb0af3b99656",
-    "sourceHash": "34f2bfb5e77d75be5f8c30fe3212901d3e6aa5a22465e89bc5fd0dadaa51d433",
+    "id": "d92e2be49fc1d8d49f5a238d2fd87ab90056171c497a727cfbc447e584d23e30",
+    "sourceHash": "9ab6e235b723c23a8e3a29a218f0cc2eed310973bd432de1524194e91790ae52",
     "scope": "content",
-    "key": "Modders create multiplayer mode for Grand Theft Auto 6 in an unofficial PC port, allowing up to 2 players to explore Vice City together",
-    "source": "Modders create multiplayer mode for Grand Theft Auto 6 in an unofficial PC port, allowing up to 2 players to explore Vice City together",
+    "key": "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
+    "source": "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
     "refs": [
-      "headlines:https://www.msn.com/en-us/gaming/rockstar-games/modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-up-to-2-players-to-explore-vice-city-together/ar-AA2inqRC.title"
+      "efforts:avatarmanz.highlights.1"
     ],
     "attempts": 0,
     "lastError": null,
@@ -2226,6 +2139,19 @@
     "reviewRequired": false
   },
   {
+    "id": "65307e0c756fc467f3688f70a5713490d7e172f50927f68bb34ca171fc816bba",
+    "sourceHash": "19d780b24ea9c8103ba21520cc4f177c1938b8a63c9320807194e452019cb055",
+    "scope": "content",
+    "key": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
+    "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
+    "refs": [
+      "efforts:belobug.nuked.note"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
     "id": "25038fb00ec904ecdcc8ba15a6b3a2c721a441759af45eeca1cf386b9929c3c3",
     "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
     "scope": "content",
@@ -2233,6 +2159,19 @@
     "source": "\"GTA 6 is finally here\": Microsoft's GitHub hyped a tool that turns PS5 games into Windows 11 apps, days after wiping 3,007 GTA 6 PC port repos, then quietly deleted the post",
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5.title"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "497870b5321f46907403b237eef1569b1265a401267d694e7553912f19da4fea",
+    "sourceHash": "5ae99c9a7d8199dd2ecb18bc5c0c9bfef0969067797d5eec0500feab0b94a503",
+    "scope": "content",
+    "key": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.",
+    "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.",
+    "refs": [
+      "efforts:avatarmanz.nuked.note"
     ],
     "attempts": 0,
     "lastError": null,
@@ -2330,6 +2269,32 @@
     "reviewRequired": false
   },
   {
+    "id": "6c49503ea435333d616a57971bb4109459edf479a913475314d72f2f18d3d048",
+    "sourceHash": "f5a7319d6ffc0f78a117b2fcc632672fafd8b7e0500631118a1a8fcc0790f75e",
+    "scope": "content",
+    "key": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
+    "source": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
+    "refs": [
+      "efforts:belobug.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "61ebbb2f276755b191edfdf4e6f1f364feccd2ceb459e01728fd78806d9b98ef",
+    "sourceHash": "b1879145ad6a87c7a5b3c381b754d85fdad6ddb75dbdf3e720d2af8d480f65c5",
+    "scope": "content",
+    "key": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.",
+    "source": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.",
+    "refs": [
+      "efforts:avatarmanz.summary"
+    ],
+    "attempts": 0,
+    "lastError": null,
+    "reviewRequired": false
+  },
+  {
     "id": "375c6cda3b817e52e0f648224a1dbb74b7429923962455208dd2d4801b9d7e6b",
     "sourceHash": "373bab1890a373932881cc0225e21bfe47c54415e9926c3c95e4fe68b223c9df",
     "scope": "content",
@@ -2392,6 +2357,166 @@
     ],
     "attempts": 0,
     "lastError": null,
+    "reviewRequired": false
+  },
+  {
+    "id": "5a9e6146aed6886d3444b9e1a462e9e85208dd8570b1f774207be67aba310c7e",
+    "sourceHash": "4cc97c61e0ee329e6217c49e4fc16583decab8c8699d335d36e5904ffbfa5b00",
+    "scope": "content",
+    "key": "Belo Top Dawg",
+    "source": "Belo Top Dawg",
+    "refs": [
+      "efforts:belobug.proof.label"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "7cf8fe78f9f0cb80b5c1ce86018f28098ec57051d2cccffc0adfe590a6e95a24",
+    "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
+    "scope": "content",
+    "key": "Video on Reddit",
+    "source": "Video on Reddit",
+    "refs": [
+      "efforts:avatarmanz.proof.label"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "68930192020de2706293b8d2af1004c844beb9158f6aae6d6218b1fcc4b3cc21",
+    "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
+    "scope": "content",
+    "key": "Removed by GitHub · was public, based on VIctory",
+    "source": "Removed by GitHub · was public, based on VIctory",
+    "refs": [
+      "efforts:belobug.byline",
+      "efforts:avatarmanz.byline"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "أُلغيت من قِبَل GitHub ; علناً، استناداً إلى VIctory"
+  },
+  {
+    "id": "29a954598d98e7b9951d926a6797d6b30ede9203703037c1e204e8c3e652418c",
+    "sourceHash": "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d",
+    "scope": "content",
+    "key": "Built on VIctory's main and upstream pull requests",
+    "source": "Built on VIctory's main and upstream pull requests",
+    "refs": [
+      "efforts:belobug.highlights.5"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "466c963acf60f42fdd38e7c49402964f3b61a5782e017b793693b05744a98a75",
+    "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
+    "scope": "content",
+    "key": "Owner reports ray-traced lighting now working on AMD",
+    "source": "Owner reports ray-traced lighting now working on AMD",
+    "refs": [
+      "efforts:belobug.highlights.3"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "1e782ac473ecd691091562e8093e9865fa6849f657d7b284ce98e9565a3d6a3a",
+    "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
+    "scope": "content",
+    "key": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
+    "source": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
+    "refs": [
+      "efforts:belobug.blockers.2"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "تم اختبارها على طائرة واحدة من طراز AMD PC فقط؛ لا شيء على NVIDIA أو Intel حتى الآن"
+  },
+  {
+    "id": "48769da2b9638ad012ada3b4a9eca09d801d730ac287177c2de2f2734ae33b07",
+    "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
+    "scope": "content",
+    "key": "Plays through missions; story progress rated 80%, level with CGBJ",
+    "source": "Plays through missions; story progress rated 80%, level with CGBJ",
+    "refs": [
+      "efforts:belobug.highlights.4"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "اللعب عن طريق البعثات؛ تقييم التقدم المحرز في القصص 80%، المستوى مع CGBJ"
+  },
+  {
+    "id": "eddeb575373176541f2bd18c2467fab18e5f78f02cc7c65830745a99aab836d3",
+    "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
+    "scope": "content",
+    "key": "41 minutes in one session without a crash (its README); sound works",
+    "source": "41 minutes in one session without a crash (its README); sound works",
+    "refs": [
+      "efforts:avatarmanz.highlights.2"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "7f25a5a9041230e57d3de748a01532730f8f2af3c74d4b2587408c0038964c2c",
+    "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
+    "scope": "content",
+    "key": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
+    "source": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
+    "refs": [
+      "efforts:avatarmanz.highlights.0"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ7QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "3c3d0218f25a6fa623450257afbc6877b772e22c2ef4a393429d59fc71a225e6",
+    "sourceHash": "c13186352bf409c1a639f8a5107112ada1eaec9e755e08d4621cc8c64f6e3b2a",
+    "scope": "content",
+    "key": "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
+    "source": "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
+    "refs": [
+      "efforts:belobug.blockers.1"
+    ],
+    "attempts": 1,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "98da91058e1f2ad7541054c8a3050cbf81a7280987c35a7f07f4bb1f5041bed5",
+    "sourceHash": "1d9bfcb61ded8e3921b7c554cfb9f33e5c99576be0fc74a25465688806f9039d",
+    "scope": "content",
+    "key": "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others",
+    "source": "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others",
+    "refs": [
+      "efforts:avatarmanz.blockers.2"
+    ],
+    "attempts": 1,
+    "lastError": "Untranslated prose requires review",
+    "reviewRequired": false
+  },
+  {
+    "id": "d9beabdb693b723e04d3778cce7437750d8e8591841e026b1a4f377d410b7bc0",
+    "sourceHash": "5b33d61c1677755c1d7f2196f3fcdaf3070f7dd56c14860a19614a68922acc4d",
+    "scope": "content",
+    "key": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
+    "source": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
+    "refs": [
+      "efforts:avatarmanz.highlights.3"
+    ],
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {

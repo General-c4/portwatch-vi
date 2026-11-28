@@ -311,13 +311,13 @@
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
       "attempts": 6,
       "nextAttemptAt": "2026-11-28T05:16:16.387Z",
-      "lastError": "request_or_token_limit"
+      "lastError": "provider_unconfigured"
     },
     "article:2026-11-27-belobug-dmca": {
       "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
       "attempts": 4,
       "nextAttemptAt": "2026-11-28T03:16:16.387Z",
-      "lastError": "protected_facts_or_language_invalid"
+      "lastError": "provider_unconfigured"
     }
   },
   "daily": {
@@ -1044,30 +1044,6 @@
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiugFBVV95cUxNRm9mODRHdEhtcVNxQlVfcFpiUFVCTTE1RUpVQkY3RlIxSHR6aDZ5bFBLSWE2aHJrUmV6OERlNWRFMDdONWU4eDBYaTc5b0h6cDNMdVM0eFpyZGVYNENHalVIUEw2UzVaYVlMLUlZODFqVHpsQlpJeF9WRW1uX0NHV21GOEctS3ZlWnFZUkYwY09PMWNHZkNOZjFRZGQyREN5dnZ0ZkgtVS1uNC1Yd2JScXZzc3ZmWGltZ3c?oc=5",
-        "field": "title",
-        "sourceHash": "547a3b0f88808cb963ca5657bef0fe90e184538362d6a676693b24907ae60aaa",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.forbes.com/sites/paultassi/2026/11/27/gta-6-is-already-one-of-the-best-selling-games-ever-says-report/\",\"title\"]": {
-        "id": "headline:https://www.forbes.com/sites/paultassi/2026/11/27/gta-6-is-already-one-of-the-best-selling-games-ever-says-report/",
-        "field": "title",
-        "sourceHash": "46de2260a6fea1cf07b068e876664d9ea91c9f5f74acbf354fbcef0f97076291",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-us/gaming/rockstar-games/modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-up-to-2-players-to-explore-vice-city-together/ar-AA2inqRC\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/modders-create-multiplayer-mode-for-grand-theft-auto-6-in-an-unofficial-pc-port-allowing-up-to-2-players-to-explore-vice-city-together/ar-AA2inqRC",
-        "field": "title",
-        "sourceHash": "34f2bfb5e77d75be5f8c30fe3212901d3e6aa5a22465e89bc5fd0dadaa51d433",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"project:victory-nvidia\",\"summary\"]": {
         "id": "project:victory-nvidia",
         "field": "summary",
@@ -1268,10 +1244,202 @@
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-28:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).\",\"text\"]": {
-        "id": "change:2026-11-28:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-        "field": "text",
-        "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
+      "[\"headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
+        "field": "title",
+        "sourceHash": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI",
+        "field": "title",
+        "sourceHash": "aef766bfe7b093f2f134e4224ff61bf05777d411d39be5a36acdb25fa24d7931",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"summary\"]": {
+        "id": "project:belobug",
+        "field": "summary",
+        "sourceHash": "f5a7319d6ffc0f78a117b2fcc632672fafd8b7e0500631118a1a8fcc0790f75e",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"byline\"]": {
+        "id": "project:belobug",
+        "field": "byline",
+        "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.1\"]": {
+        "id": "project:belobug",
+        "field": "highlights.1",
+        "sourceHash": "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.2\"]": {
+        "id": "project:belobug",
+        "field": "highlights.2",
+        "sourceHash": "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.3\"]": {
+        "id": "project:belobug",
+        "field": "highlights.3",
+        "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.4\"]": {
+        "id": "project:belobug",
+        "field": "highlights.4",
+        "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"highlights.5\"]": {
+        "id": "project:belobug",
+        "field": "highlights.5",
+        "sourceHash": "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"blockers.0\"]": {
+        "id": "project:belobug",
+        "field": "blockers.0",
+        "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"blockers.1\"]": {
+        "id": "project:belobug",
+        "field": "blockers.1",
+        "sourceHash": "c13186352bf409c1a639f8a5107112ada1eaec9e755e08d4621cc8c64f6e3b2a",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"blockers.2\"]": {
+        "id": "project:belobug",
+        "field": "blockers.2",
+        "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"nuked.note\"]": {
+        "id": "project:belobug",
+        "field": "nuked.note",
+        "sourceHash": "19d780b24ea9c8103ba21520cc4f177c1938b8a63c9320807194e452019cb055",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:belobug\",\"proof.label\"]": {
+        "id": "project:belobug",
+        "field": "proof.label",
+        "sourceHash": "4cc97c61e0ee329e6217c49e4fc16583decab8c8699d335d36e5904ffbfa5b00",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"summary\"]": {
+        "id": "project:avatarmanz",
+        "field": "summary",
+        "sourceHash": "b1879145ad6a87c7a5b3c381b754d85fdad6ddb75dbdf3e720d2af8d480f65c5",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"byline\"]": {
+        "id": "project:avatarmanz",
+        "field": "byline",
+        "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"highlights.0\"]": {
+        "id": "project:avatarmanz",
+        "field": "highlights.0",
+        "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"highlights.1\"]": {
+        "id": "project:avatarmanz",
+        "field": "highlights.1",
+        "sourceHash": "9ab6e235b723c23a8e3a29a218f0cc2eed310973bd432de1524194e91790ae52",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"highlights.2\"]": {
+        "id": "project:avatarmanz",
+        "field": "highlights.2",
+        "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"highlights.3\"]": {
+        "id": "project:avatarmanz",
+        "field": "highlights.3",
+        "sourceHash": "5b33d61c1677755c1d7f2196f3fcdaf3070f7dd56c14860a19614a68922acc4d",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"blockers.0\"]": {
+        "id": "project:avatarmanz",
+        "field": "blockers.0",
+        "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"blockers.1\"]": {
+        "id": "project:avatarmanz",
+        "field": "blockers.1",
+        "sourceHash": "bdf146dd0c3ae958c03b9b91f412b72aa3f60b07b5cdb2753986d877d0935497",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"blockers.2\"]": {
+        "id": "project:avatarmanz",
+        "field": "blockers.2",
+        "sourceHash": "1d9bfcb61ded8e3921b7c554cfb9f33e5c99576be0fc74a25465688806f9039d",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"nuked.note\"]": {
+        "id": "project:avatarmanz",
+        "field": "nuked.note",
+        "sourceHash": "5ae99c9a7d8199dd2ecb18bc5c0c9bfef0969067797d5eec0500feab0b94a503",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"project:avatarmanz\",\"proof.label\"]": {
+        "id": "project:avatarmanz",
+        "field": "proof.label",
+        "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
         "attempts": 0,
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
