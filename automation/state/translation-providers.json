@@ -24,93 +24,93 @@
       "cooldownUntil": 1798761597371
     },
     "gemini": {
-      "requests": 1,
-      "successes": 1,
+      "requests": 2,
+      "successes": 2,
       "failures": 0,
       "daily": {
         "day": "2026-11-27",
-        "requests": 1,
-        "tokens": 985
+        "requests": 2,
+        "tokens": 1968
       },
       "monthly": {
         "resetAt": 1798436203868,
-        "tokens": 985
+        "tokens": 1968
       },
       "minute": {
-        "resetAt": 1795844263868,
-        "tokens": 985
+        "resetAt": 1795844390974,
+        "tokens": 983
       },
-      "lastRequestAt": 1795844204157,
+      "lastRequestAt": 1795844331000,
       "failureStreak": 0,
       "cooldownUntil": 0,
       "code": null,
-      "latencyMs": 19414
+      "latencyMs": 11930
     },
     "groq": {
-      "requests": 1,
+      "requests": 2,
       "successes": 0,
-      "failures": 1,
+      "failures": 2,
       "daily": {
         "day": "2026-11-28",
-        "requests": 1,
-        "tokens": 1017
+        "requests": 2,
+        "tokens": 2034
       },
       "monthly": {
         "resetAt": 1798436223576,
-        "tokens": 1017
+        "tokens": 2034
       },
       "minute": {
-        "resetAt": 1795844283576,
+        "resetAt": 1795844402933,
         "tokens": 1017
       },
-      "lastRequestAt": 1795844223578,
-      "failureStreak": 1,
+      "lastRequestAt": 1795844342934,
+      "failureStreak": 2,
       "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795844253988
+      "cooldownUntil": 1795844403349
     },
     "cloudflare": {
-      "requests": 1,
+      "requests": 2,
       "successes": 0,
-      "failures": 1,
+      "failures": 2,
       "daily": {
         "day": "2026-11-28",
-        "requests": 1,
-        "tokens": 1186
+        "requests": 2,
+        "tokens": 2372
       },
       "monthly": {
         "resetAt": 1798436223992,
-        "tokens": 1186
+        "tokens": 2372
       },
       "minute": {
-        "resetAt": 1795844283992,
+        "resetAt": 1795844403383,
         "tokens": 1186
       },
-      "lastRequestAt": 1795844223993,
-      "failureStreak": 1,
+      "lastRequestAt": 1795844343384,
+      "failureStreak": 2,
       "code": "invalid_schema",
-      "cooldownUntil": 1795844260443
+      "cooldownUntil": 1795844407597
     },
     "zai": {
-      "requests": 1,
+      "requests": 2,
       "successes": 0,
-      "failures": 1,
+      "failures": 2,
       "daily": {
         "day": "2026-11-28",
-        "requests": 1,
-        "tokens": 2095
+        "requests": 2,
+        "tokens": 4288
       },
       "monthly": {
         "resetAt": 1798436230446,
-        "tokens": 2095
+        "tokens": 4288
       },
       "minute": {
-        "resetAt": 1795844290446,
-        "tokens": 2095
+        "resetAt": 1795844407600,
+        "tokens": 2193
       },
-      "lastRequestAt": 1795844230447,
-      "failureStreak": 1,
-      "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795844275293
+      "lastRequestAt": 1795844347601,
+      "failureStreak": 2,
+      "code": "empty_response",
+      "cooldownUntil": 1795844460690
     }
   },
   "events": [
@@ -189,6 +189,55 @@
       "latencyMs": 14846,
       "quotaPeriod": null,
       "resetAt": "2026-11-28T05:37:55.293Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:39:02.930Z",
+      "type": "success",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "latencyMs": 11930,
+      "usage": {
+        "promptTokenCount": 900,
+        "candidatesTokenCount": 83,
+        "totalTokenCount": 983
+      },
+      "fallback": false,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:39:03.349Z",
+      "type": "fallback",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "code": "protected_facts_or_language_invalid",
+      "field": "summary",
+      "reason": "evidence_qualifier",
+      "latencyMs": 414,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:40:03.349Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:39:07.597Z",
+      "type": "fallback",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "code": "invalid_schema",
+      "latencyMs": 4185,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:40:07.597Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:40:00.690Z",
+      "type": "fallback",
+      "provider": "zai",
+      "model": "glm-4.7-flash",
+      "code": "empty_response",
+      "latencyMs": 53089,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:41:00.690Z",
       "costUSD": 0
     }
   ]
