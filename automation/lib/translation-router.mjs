@@ -14,7 +14,7 @@ const POLICY={
 export const FREE_PROVIDER_IDS=Object.keys(POLICY);
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const outputFor=(fields,sourceUrls)=>({title:fields.title||'',summary:fields.summary||'',body:Object.entries(fields).filter(([key])=>key.startsWith('body.')).map(([key,text])=>({index:Number(key.slice(5)),text})),sourceUrls});
-const fieldCacheKey=(source,urls)=>hash({source,urls});
+const fieldCacheKey=source=>hash(source);
 const zeroPrice=value=>typeof value==='number'?value===0:typeof value==='string'&&/^0+(?:\.0+)?$/.test(value);
 export function retryDelay(value,now=Date.now()){
  if(!value)return 0;
@@ -40,6 +40,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
  config??=await readJSON(`${root}/automation/translation-providers.json`);
  state??=await readJSON(`${root}/automation/state/translation-providers.json`,{version:1,providers:{},events:[]});
  state.providers??={};state.events??=[];let attempts=0;
+ const run={actualRequests:0,inputTokens:0,outputTokens:0,thinkingTokens:0,unknownUsageRequests:0,providerUsage:{},estimatedCostUSD:0};
  const legacy=await readJSON(`${root}/automation/state/news-translations.json`,{}),legacyRetry=Date.parse(geminiRetryAt(legacy));
  if(legacyRetry>clock())state.providers.gemini={...(state.providers.gemini||{}),cooldownUntil:Math.max(state.providers.gemini?.cooldownUntil||0,legacyRetry),code:'quota_or_rate_limit'};
  const event=(type,fields)=>{const entry={at:new Date(clock()).toISOString(),type,...fields,costUSD:0};state.events.push(entry);state.events=state.events.slice(-100);return entry;};
@@ -51,20 +52,20 @@ export async function createTranslationRouter({root='.',config,state,env=process
  const clientFactory=async(options={})=>{
   let lastModel='unavailable';
   return {get model(){return lastModel;},generate:async request=>{
-   const originalRequest=request,accepted={},usedProviders=[];let mergedUsage={},usageKnown=true;
+   const originalRequest=request,accepted={},provenance={},usedProviders=[];let mergedUsage={},usageKnown=true;
    state.pendingFields??={};
    for(const [field,source]of Object.entries(request.fields)){
-    const key=fieldCacheKey(source,request.sourceUrls),cached=state.pendingFields[key];
+    const key=fieldCacheKey(source),cached=state.pendingFields[key]||state.pendingFields[hash({source,urls:request.sourceUrls})];
     if(cached?.source!==source)continue;
-    try{const single={...request,fields:{[field]:source}};accepted[field]=validateNewsResponse(single,outputFor({[field]:cached.ar},request.sourceUrls))[field];if(editorialQualityIssue(source,accepted[field])){delete accepted[field];delete state.pendingFields[key];}else if(!usedProviders.includes(`cache:${cached.model}`))usedProviders.push(`cache:${cached.model}`);}
+    try{const single={...request,fields:{[field]:source}};accepted[field]=validateNewsResponse(single,outputFor({[field]:cached.ar},request.sourceUrls))[field];if(editorialQualityIssue(source,accepted[field])){delete accepted[field];delete state.pendingFields[key];}else{provenance[field]={provider:cached.provider||'legacy-unknown',model:cached.model,translatedAt:cached.translatedAt||null};if(!usedProviders.includes(`cache:${cached.model}`))usedProviders.push(`cache:${cached.model}`);}}
     catch{delete state.pendingFields[key];}
    }
    const complete=()=>Object.keys(originalRequest.fields).every(field=>Object.hasOwn(accepted,field));
    const merged=async(provider,model)=>{
-    for(const source of Object.values(originalRequest.fields))delete state.pendingFields[fieldCacheKey(source,originalRequest.sourceUrls)];
+    for(const source of Object.values(originalRequest.fields)){delete state.pendingFields[fieldCacheKey(source)];delete state.pendingFields[hash({source,urls:originalRequest.sourceUrls})];}
     await save();lastModel=model;
     const usage={...mergedUsage};if(!usageKnown)delete usage.totalTokenCount;
-    return {text:JSON.stringify(outputFor(accepted,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider,model,providersUsed:usedProviders};
+    return {text:JSON.stringify(outputFor(accepted,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider,model,providersUsed:usedProviders,fieldProvenance:provenance};
    };
    if(complete())return merged('cache','validated-partial-cache');
    const eligible=ordered();let tried=0;
@@ -93,6 +94,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
     if(settings.tokensPerMinute&&p.minute.tokens+minuteReserve>settings.tokensPerMinute){p.cooldownUntil=p.minute.resetAt;p.code='local_minute_limit';continue;}
     await sleep(Math.max(0,(p.lastRequestAt||0)+(settings.intervalMs||0)-clock()));
     attempts++;tried++;p.requests++;p.daily.requests++;p.daily.tokens+=reserve;p.monthly.tokens+=reserve;p.minute.tokens+=minuteReserve;p.lastRequestAt=clock();
+    run.actualRequests++;run.unknownUsageRequests++;const measured=run.providerUsage[id]??={requests:0,inputTokens:0,outputTokens:0,thinkingTokens:0,unknownUsageRequests:0};measured.requests++;measured.unknownUsageRequests++;
     // Persist the reservation before sending. A terminated workflow cannot spend the same budget twice.
     await save();const started=clock();let receivedUsage=false;
     try{
@@ -126,6 +128,8 @@ export async function createTranslationRouter({root='.',config,state,env=process
      }
      const usage=response.usage||{},total=usage.totalTokenCount;
      receivedUsage=Number.isFinite(total);
+     if(receivedUsage){run.unknownUsageRequests--;measured.unknownUsageRequests--;}
+     for(const[key,field]of[['inputTokens','promptTokenCount'],['outputTokens','candidatesTokenCount'],['thinkingTokens','thoughtsTokenCount']])if(Number.isFinite(usage[field])){run[key]+=usage[field];measured[key]+=usage[field];}
      onCandidate({provider:id,text:response.text,finishReason:response.finishReason});
      if(!Number.isFinite(total))usageKnown=false;
      for(const key of ['promptTokenCount','candidatesTokenCount','thoughtsTokenCount','totalTokenCount'])if(Number.isFinite(usage[key]))mergedUsage[key]=(mergedUsage[key]||0)+usage[key];
@@ -137,12 +141,12 @@ export async function createTranslationRouter({root='.',config,state,env=process
       try{
        const value=validateNewsResponse({...request,fields:{[field]:source}},outputFor({[field]:rawFields[field]},request.sourceUrls))[field];
        if(editorialQualityIssue(source,value))throw new Error('protected_facts_or_language_invalid');
-       accepted[field]=value;valid.push(field);
+       accepted[field]=value;provenance[field]={provider:id,model,translatedAt:new Date(clock()).toISOString()};valid.push(field);
       }catch(error){validationError??=error;}
      }
      usedProviders.push(id);
      if(validationError){
-      for(const field of valid)state.pendingFields[fieldCacheKey(request.fields[field],request.sourceUrls)]={source:request.fields[field],ar:accepted[field],model};
+      for(const field of valid)state.pendingFields[fieldCacheKey(request.fields[field])]={source:request.fields[field],ar:accepted[field],...provenance[field]};
       const keys=Object.keys(state.pendingFields);for(const key of keys.slice(0,Math.max(0,keys.length-2000)))delete state.pendingFields[key];
       event('validated_partial',{provider:id,model,acceptedFields:valid.length,remainingFields:Object.keys(originalRequest.fields).length-Object.keys(accepted).length});
       throw validationError;
@@ -165,11 +169,11 @@ export async function createTranslationRouter({root='.',config,state,env=process
     // Untranslated placeholders deliberately fail the engine's per-field Arabic validator.
     // Valid siblings can publish now, while rejected fields remain in the durable queue.
     const usage={...mergedUsage};if(!usageKnown)delete usage.totalTokenCount;
-    return {text:JSON.stringify(outputFor(values,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider:'partial',model:lastModel,partial:true};
+    return {text:JSON.stringify(outputFor(values,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider:'partial',model:lastModel,partial:true,fieldProvenance:provenance};
    }
    await save();throw Object.assign(new Error('all_free_providers_unavailable'),{safeCode:'all_free_providers_unavailable'});
   }};
  };
  clientFactory.multiProvider=true;
- return {clientFactory,state,save,summary:()=>({attempts,estimatedCostUSD:0,providers:Object.fromEntries(Object.entries(state.providers).map(([id,p])=>[id,{...p,available:!p.cooldownUntil||p.cooldownUntil<=clock()}])),events:state.events.slice(-20)})};
+ return {clientFactory,state,save,summary:()=>({attempts,run:structuredClone(run),estimatedCostUSD:0,providers:Object.fromEntries(Object.entries(state.providers).map(([id,p])=>[id,{...p,available:!p.cooldownUntil||p.cooldownUntil<=clock()}])),events:state.events.slice(-20)})};
 }

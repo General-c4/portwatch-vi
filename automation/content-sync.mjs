@@ -89,10 +89,11 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  const translationFactory=newsClientFactory||router?.clientFactory;
  try{
   const newsState=await readJSON(file('automation/state/news-translations.json'),null);
+  const originalNewsStateHash=hash(newsState),newsCatalog=await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),originalNewsCatalogHash=hash(newsCatalog);
   if(newsState&&!newsState.baselineHashes)newsState.baselineHashes=(await readJSON(file('automation/state/news-baseline.json'),{})).hashes||{};
-  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:newsState,catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(translationFactory?{clientFactory:translationFactory}:{})});
-  dynamic=await syncDynamicEditorial({data,pinned,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(translationFactory?{clientFactory:translationFactory}:{})});
-  news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged||=dynamic.stateChanged;news.catalogChanged||=dynamic.catalogChanged;
+  news=await syncNews({before:{...before,headlines:[]},data:{...data,headlines:[]},confirmDeletions:Boolean(live),human:human.content,state:newsState,catalog:newsCatalog,...(translationFactory?{clientFactory:translationFactory}:{})});
+  dynamic=await syncDynamicEditorial({data,pinned,confirmDeletions:Boolean(live),state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(translationFactory?{clientFactory:translationFactory}:{})});
+  news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged=originalNewsStateHash!==hash(news.state);news.catalogChanged=originalNewsCatalogHash!==hash(news.catalog);
  }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}
  if(router)await router.save();
  const resolved=resolvedLegacyReferences(data,{human:human.content,automatic:automatic.content,catalog:news?.catalog||{}},pinned);
@@ -113,10 +114,17 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
   newsTranslation:news?.stats||{errors:['news_pipeline_unavailable'],requests:0},
   dynamicTranslation:dynamic?{...dynamic.stats,coverage:dynamic.coverage.sections}:null,
   providers:router?.summary()||null,
+  translationCache:{totalNews:news?.stats.totalItems||0,newNews:news?.stats.newItems||0,modifiedNews:news?.stats.modifiedItems||0,unchangedNews:news?.stats.unchangedItems||0,
+   ...Object.fromEntries(['newlyTranslatedFields','reusedTranslations','cacheHits','cacheMisses','deduplicatedFields','avoidedFieldRequests','expiredEntries'].map(key=>[key,(news?.stats[key]||0)+(dynamic?.stats[key]||0)])),
+   logicalBatches:(news?.stats.requests||0)+(dynamic?.stats.requests||0),actualAPI:router?.summary().run||{actualRequests:(news?.stats.requests||0)+(dynamic?.stats.requests||0),estimatedCostUSD:0},
+   pendingNews:news?.stats.pending||0,pendingDynamic:dynamic?.stats.pending||0,estimatedCostUSD:0},
   latency:{sourceCheckMs:Math.round(translationStart-started),dataSyncMs:null,translationMs,deploymentMs:null,totalMs:Math.round(performance.now()-started)},
   apiAnything:{ok:api.ok,skipped:api.skipped||false,reason:api.reason||null,changes:api.changes||null,ms:api.ms||null,repaired:api.repaired||false},
   recentErrors:[...(state.recentErrors||[]),...errors].slice(-20),retryAttempts:[...(state.retryAttempts||[]),...retryAttempts].slice(-20),
  };
+ const cacheTotal=status.translationCache.cacheHits+status.translationCache.cacheMisses;
+ status.translationCache.cacheHitPercentage=cacheTotal?Math.round(status.translationCache.cacheHits/cacheTotal*10000)/100:100;
+ status.translationCache.avoidedAPIRequestsEstimate={requests:status.translationCache.avoidedFieldRequests,baseline:'one unbatched request per field; actual savings depend on batching'};
  // All inputs were validated before replacing canonical data. A journal keeps a recoverable release pair.
  const persistenceStart=performance.now();
  if(changed){

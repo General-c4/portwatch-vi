@@ -36,6 +36,9 @@ Official sources:
 
 ## Secrets and state
 
+See [persistent caching and quota optimization](TRANSLATION-CACHE.md) for content
+hashes, field deduplication, batch ownership, deletion retention and cache metrics.
+
 All credentials are GitHub Actions Secrets, never frontend configuration:
 
 `GEMINI_API_KEY`, `GROQ_API_KEY`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `ZAI_API_KEY`, `AXFORGE_API_KEY`, `OPENROUTER_API_KEY`.

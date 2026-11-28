@@ -4,13 +4,14 @@ import {protectedTerms} from './translations.mjs';
 import {prepareNewsRequest,parseNewsResponse,validateNewsResponse,createGeminiNewsClient,newsErrorCode,googleQuotaInfo,NEWS_SYSTEM_INSTRUCTION} from './gemini-news.mjs';
 import {newsLimits} from './news-sync.mjs';
 import {editorialQualityIssue} from '../../assets/js/editorial-quality.js';
+import {rememberTranslation,reuseTranslation,reconcileCache,cacheStatistics,retentionDays,hydrateCache} from './translation-cache.mjs';
 const SYSTEM=NEWS_SYSTEM_INSTRUCTION+`\nيشمل العمل عناوين الأخبار وتحديثات المشاريع ووصف أدائها واختباراتها، لا المقالات فقط. راجع الترجمة جملة بجملة، دون حذف أو اختصار أو إضافة ادعاءات. برامج shaders هي برامج التظليل وليست مضللات. Vertex shaders: برامج تظليل الرؤوس. Texture streaming: بث الخامات. Compatibility layer: طبقة توافق. Ray-traced lighting: الإضاءة بتتبع الأشعة. Retail game: النسخة التجارية من اللعبة. DMCA: قانون حقوق المؤلف وإشعارات الإزالة؛ ليس إلقاء الضوء. Vibecoders: المبرمجون بمساعدة الذكاء الاصطناعي. النسب المئوية في تحديثات ترتيب المشاريع درجات تقدّم وليست معدلات إطارات. احتفظ بالتعليقات والقيود والسخرية إن وردت في العنوان. حافظ على نسبة الادعاءات إلى تقرير المشروع ولا تعرضها كتأكيد مستقل. اسم الحساب ليس منصة جديدة: حساب Zettrox يخص GitHub ولا تنسبه إلى منصة اسمها Zettrox. sourceUrls هنا معرّفات مراجع محمية وليست روابط قابلة لإعادة الكتابة؛ أعدها حرفيًا. راجع سلامة الأرقام والمصطلحات والنحو قبل الإخراج.`;
 
-export async function syncDynamicEditorial({data,pinned,state,catalog,human={},automatic={},clientFactory=createGeminiNewsClient,limits=newsLimits(),now=new Date().toISOString(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),onProgress=()=>{},batchFields=Math.max(1,Math.min(20,Number(process.env.GEMINI_EDITORIAL_BATCH_FIELDS)||6)),requestIntervalMs=13000}){
+export async function syncDynamicEditorial({data,pinned,state,catalog,human={},automatic={},clientFactory=createGeminiNewsClient,limits=newsLimits(),now=new Date().toISOString(),sleep=ms=>new Promise(r=>setTimeout(r,ms)),onProgress=()=>{},batchFields=Math.max(1,Math.min(20,Number(process.env.GEMINI_EDITORIAL_BATCH_FIELDS)||6)),requestIntervalMs=13000,confirmDeletions=true,cacheRetentionDays=retentionDays()}){
  const stateBefore=hash(state),catalogBefore=hash(catalog),started=performance.now();state=structuredClone(state);catalog=structuredClone(catalog);
  if(state.daily.day!==now.slice(0,10))state.daily={day:now.slice(0,10),requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0};
  state.dynamic??={version:1,pending:{},totals:{requests:0,translatedFields:0,failedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0}};
- const d=state.dynamic,stats={requests:0,translatedFields:0,failedFields:0,cachedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0,errors:[]};
+ const d=state.dynamic,stats={requests:0,translatedFields:0,failedFields:0,cachedFields:0,cacheHits:0,cacheMisses:0,reusedTranslations:0,newlyTranslatedFields:0,deduplicatedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0,errors:[]};
  // Upgrade the initial one-hour fallback to Google's actual daily-quota RetryInfo deadline.
  if(d.providerBlock?.quota?.quotas.some(q=>q.period==='day')&&d.providerBlock.quota.retryAfterMs>3600000&&!d.providerBlock.blockedAt){
   d.providerBlock.blockedAt=new Date(Date.parse(d.providerBlock.nextAttemptAt)-3600000).toISOString();
@@ -18,6 +19,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
  }
  const before=editorialCoverage(data,{human,automatic,catalog},pinned);
  const records=dynamicEditorialRecords(data,pinned),tasks=[],active=new Set();
+ hydrateCache(state,catalog,records,{now,scope:'dynamic',days:cacheRetentionDays});
  const terms=[...protectedTerms(data),'Bungie','Marvis','Marvisak','Rock Paper Shotgun','Unreal Engine','GDK','DXVK','PSO','RAM','GPU','CPU','Arion Kurtaj','Minecraft Preview','Unicorn Overlord','Concept Destruction','The Matrix Awakens','Trackmania','Terraria','Fortnite','Freedoom','Unicorn','Wine','Scarlett','VIctory'];
  // Freeze full hardware identifiers rather than allowing a model to reorder their component words.
  for(const r of records)for(const s of Object.values(r.fields))for(const m of s.matchAll(/(?:Radeon )?RX \d{3,5}(?: XT[X]?)?|(?:GeForce )?RTX \d{3,5}(?: Ti)?|Ryzen \d \d{4,5}[A-Z0-9]*/g))terms.push(m[0]);
@@ -26,11 +28,12 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   const entry=catalog.articles[record.id]||{fields:{}};entry.fields??={};
   for(const[field,source]of Object.entries(record.fields)){
    const key=JSON.stringify([record.id,field]);active.add(key);
-   if(isTechnicalLiteral(source)||Object.hasOwn(human,source)||Object.hasOwn(automatic,source)||scopedTranslation(source,record.id,field,{human,automatic,catalog}).method==='template'){delete d.pending[key];continue;}
-   if(entry.fields[field]?.source===source&&typeof entry.fields[field].ar==='string'&&!editorialQualityIssue(source,entry.fields[field].ar)){delete d.pending[key];continue;}
+   if(isTechnicalLiteral(source)||Object.hasOwn(human,source)||Object.hasOwn(automatic,source)||scopedTranslation(source,record.id,field,{human,automatic,catalog}).method==='template'){delete d.pending[key];stats.cacheHits++;stats.reusedTranslations++;continue;}
+   if(entry.fields[field]?.source===source&&typeof entry.fields[field].ar==='string'&&!editorialQualityIssue(source,entry.fields[field].ar)){rememberTranslation(state,record,field,entry.fields[field].ar,{now,scope:'dynamic'});delete d.pending[key];stats.cacheHits++;stats.reusedTranslations++;continue;}
    delete entry.fields[field];
-   const cached=state.cache[hash(source)];
-   if(cached?.source===source&&typeof cached.ar==='string'&&!editorialQualityIssue(source,cached.ar)){entry.fields[field]={source,ar:cached.ar};delete d.pending[key];stats.cachedFields++;continue;}
+   const cached=reuseTranslation(state,record,field,{now,scope:'dynamic',days:cacheRetentionDays});
+   if(cached){entry.fields[field]=cached;delete d.pending[key];stats.cachedFields++;stats.cacheHits++;stats.reusedTranslations++;continue;}
+   stats.cacheMisses++;
    if(d.pending[key]?.sourceHash!==hash(source))d.pending[key]={id:record.id,field,sourceHash:hash(source),attempts:0,lastError:null,nextAttemptAt:null};
    const pending=d.pending[key];
    if(clientFactory.multiProvider||!pending.nextAttemptAt||Date.parse(pending.nextAttemptAt)<=Date.parse(now))tasks.push({key,record,field,source,pending});
@@ -38,6 +41,9 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   if(Object.keys(entry.fields).length)catalog.articles[record.id]=entry;else delete catalog.articles[record.id];
  }
  for(const key of Object.keys(d.pending))if(!active.has(key))delete d.pending[key];
+ const unique=new Map();
+ for(const t of tasks){const key=hash(t.source);if(unique.has(key)){unique.get(key).aliases.push(t);stats.deduplicatedFields++;}else{t.aliases=[t];unique.set(key,t);}}
+ tasks.splice(0,tasks.length,...unique.values());
  const makeRequest=items=>{
   // Keep original URLs in canonical data. Echo short opaque reference IDs instead of huge RSS URLs.
   const refs=[...new Set(items.flatMap(t=>t.record.sourceUrls))].map((_,i)=>`PW_SOURCE_${i}`);
@@ -59,10 +65,12 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
    await sleep(Math.max(0,requestIntervalMs-(Date.now()-lastRequestAt)));lastRequestAt=Date.now();
    stats.requests++;d.totals.requests++;state.totals.requests++;state.daily.requests++;state.daily.accountedTokens+=reservation;
    for(const t of batch)t.pending.attempts++;
-   let output;
+   let output,acceptedProvider,acceptedModel,provenance;
    try{
     const response=await client.generate(request),usage=response.usage||{};
     stats.model=response.model||client.model;stats.provider=response.provider||'gemini';
+    acceptedProvider=response.provider||'gemini';acceptedModel=response.model||client.model;
+    provenance=response.fieldProvenance||{};
     delete d.providerBlock;
     for(const[key,field]of[['inputTokens','promptTokenCount'],['outputTokens','candidatesTokenCount'],['thinkingTokens','thoughtsTokenCount']])for(const target of[stats,d.totals,state.daily,state.totals])target[key]+=Number(usage[field])||0;
     if(Number.isFinite(usage.totalTokenCount))state.daily.accountedTokens+=Math.max(0,usage.totalTokenCount)-reservation;
@@ -84,8 +92,8 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
      const field=`body.${tIndex}`,single={...request,fields:{[field]:t.source}},part={title:'',summary:'',body:output.body.filter(p=>p.index===tIndex),sourceUrls:output.sourceUrls};
      const ar=validateNewsResponse(single,part)[field];
      const issue=editorialQualityIssue(t.source,ar);if(issue)throw Object.assign(new Error('editorial_quality'),{safeCode:issue});
-     catalog.articles[t.record.id]??={fields:{}};catalog.articles[t.record.id].fields[t.field]={source:t.source,ar};
-     state.cache[hash(t.source)]={source:t.source,ar,model:client.model};delete d.pending[t.key];stats.translatedFields++;d.totals.translatedFields++;
+     for(const alias of t.aliases){catalog.articles[alias.record.id]??={fields:{}};catalog.articles[alias.record.id].fields[alias.field]={source:alias.source,ar};
+      rememberTranslation(state,alias.record,alias.field,ar,{now:provenance[field]?.translatedAt||now,scope:'dynamic',translated:true,provider:provenance[field]?.provider||acceptedProvider,model:provenance[field]?.model||acceptedModel});delete d.pending[alias.key];stats.translatedFields++;stats.newlyTranslatedFields++;d.totals.translatedFields++;}
     }catch(error){
      const code=error.safeCode||newsErrorCode(error);t.pending.lastError=code;stats.failedFields++;d.totals.failedFields++;stats.errors.push(code);
      const eventTime=Date.parse(now)+Math.round(performance.now()-started);
@@ -97,7 +105,10 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   }
  }
  for(const t of tasks)t.pending.lastError??=stop?(stats.errors.at(-1)||'request_or_token_limit'):stats.requests>=limits.maxRequests?'request_or_token_limit':'not_attempted';
+ for(const t of unique.values())for(const alias of t.aliases)if(alias!==t&&d.pending[alias.key])Object.assign(alias.pending,{attempts:t.pending.attempts,lastError:t.pending.lastError,nextAttemptAt:t.pending.nextAttemptAt});
+ const lifecycle=reconcileCache(state,catalog,records,{scope:'dynamic',now,confirmDeletions,days:cacheRetentionDays});
+ stats.expiredEntries=lifecycle.expiredEntries;
  stats.errors=[...new Set(stats.errors)];stats.pending=Object.keys(d.pending).length;stats.durationMs=Math.round(performance.now()-started);
  const coverage=editorialCoverage(data,{human,automatic,catalog},pinned);
- return{state,catalog,stats,before,coverage,stateChanged:stateBefore!==hash(state),catalogChanged:catalogBefore!==hash(catalog)};
+ return{state,catalog,stats:cacheStatistics(stats),before,coverage,stateChanged:stateBefore!==hash(state),catalogChanged:catalogBefore!==hash(catalog)};
 }
