@@ -24,118 +24,99 @@
       "cooldownUntil": 1798761597371
     },
     "gemini": {
-      "requests": 7,
+      "requests": 8,
       "successes": 4,
-      "failures": 3,
+      "failures": 4,
       "daily": {
         "day": "2026-11-27",
-        "requests": 7,
-        "tokens": 11190
+        "requests": 8,
+        "tokens": 16729
       },
       "monthly": {
         "resetAt": 1798436203868,
-        "tokens": 11190
+        "tokens": 16729
       },
       "minute": {
-        "resetAt": 1795845256162,
-        "tokens": 2421
+        "resetAt": 1795845398812,
+        "tokens": 5539
       },
-      "lastRequestAt": 1795845196178,
-      "failureStreak": 3,
-      "cooldownUntil": 1795845337484,
+      "lastRequestAt": 1795845338814,
+      "failureStreak": 4,
+      "cooldownUntil": 1795845616417,
       "code": "protected_facts_or_language_invalid",
       "latencyMs": 8120
     },
     "groq": {
-      "requests": 5,
-      "successes": 2,
-      "failures": 3,
+      "requests": 8,
+      "successes": 4,
+      "failures": 4,
       "daily": {
         "day": "2026-11-28",
-        "requests": 5,
-        "tokens": 6788
+        "requests": 8,
+        "tokens": 16664
       },
       "monthly": {
         "resetAt": 1798436223576,
-        "tokens": 6788
+        "tokens": 16664
       },
       "minute": {
-        "resetAt": 1795845277488,
-        "tokens": 2532
+        "resetAt": 1795845610563,
+        "tokens": 3418
       },
-      "lastRequestAt": 1795845217490,
-      "failureStreak": 1,
-      "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795845249222,
-      "latencyMs": 461
+      "lastRequestAt": 1795845550564,
+      "failureStreak": 0,
+      "code": null,
+      "cooldownUntil": 0,
+      "latencyMs": 1992
     },
     "cloudflare": {
+      "requests": 7,
+      "successes": 1,
+      "failures": 6,
+      "daily": {
+        "day": "2026-11-28",
+        "requests": 7,
+        "tokens": 14520
+      },
+      "monthly": {
+        "resetAt": 1798436223992,
+        "tokens": 14520
+      },
+      "minute": {
+        "resetAt": 1795845438497,
+        "tokens": 3186
+      },
+      "lastRequestAt": 1795845378498,
+      "failureStreak": 4,
+      "code": "protected_facts_or_language_invalid",
+      "cooldownUntil": 1795845634008,
+      "latencyMs": 2725
+    },
+    "zai": {
       "requests": 6,
       "successes": 1,
       "failures": 5,
       "daily": {
         "day": "2026-11-28",
         "requests": 6,
-        "tokens": 11334
-      },
-      "monthly": {
-        "resetAt": 1798436223992,
-        "tokens": 11334
-      },
-      "minute": {
-        "resetAt": 1795845279225,
-        "tokens": 2662
-      },
-      "lastRequestAt": 1795845219227,
-      "failureStreak": 3,
-      "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795845356794,
-      "latencyMs": 2725
-    },
-    "zai": {
-      "requests": 5,
-      "successes": 1,
-      "failures": 4,
-      "daily": {
-        "day": "2026-11-28",
-        "requests": 5,
-        "tokens": 32358
+        "tokens": 51963
       },
       "monthly": {
         "resetAt": 1798436230446,
-        "tokens": 32358
+        "tokens": 51963
       },
       "minute": {
-        "resetAt": 1795845296797,
-        "tokens": 3608
+        "resetAt": 1795845454009,
+        "tokens": 11655
       },
-      "lastRequestAt": 1795845236798,
-      "failureStreak": 2,
+      "lastRequestAt": 1795845394010,
+      "failureStreak": 3,
       "code": "timeout",
-      "cooldownUntil": 1795845356801,
+      "cooldownUntil": 1795845604012,
       "latencyMs": 2187
     }
   },
   "events": [
-    {
-      "at": "2026-11-28T05:30:25.845Z",
-      "type": "fallback",
-      "provider": "ovh",
-      "model": "Qwen3.8-27B",
-      "code": "invalid_schema",
-      "latencyMs": 6443,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T05:30:55.845Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:30:53.989Z",
-      "type": "cooldown_skip",
-      "provider": "ovh",
-      "code": "invalid_schema",
-      "resetAt": "2026-11-28T05:30:55.845Z",
-      "costUSD": 0
-    },
     {
       "at": "2026-11-28T05:31:53.371Z",
       "type": "fallback",
@@ -566,6 +547,486 @@
       "latencyMs": 60002,
       "quotaPeriod": null,
       "resetAt": "2026-11-28T05:55:56.801Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.809Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T05:55:37.484Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.809Z",
+      "type": "input_too_large",
+      "provider": "groq",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.809Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T05:55:56.794Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.809Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.809Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T05:55:56.801Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.810Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:12.810Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.799Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T05:55:37.484Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "input_too_large",
+      "provider": "groq",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T05:55:56.794Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T05:55:56.801Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:55:25.800Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:56:16.418Z",
+      "type": "fallback",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.2",
+      "reason": "untranslated_prose",
+      "latencyMs": 37603,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:56:18.495Z",
+      "type": "fallback",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.10",
+      "reason": "protected_token",
+      "latencyMs": 2074,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:57:18.495Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:56:34.008Z",
+      "type": "fallback",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.0",
+      "reason": "protected_token",
+      "latencyMs": 15510,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:56:34.009Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:04.012Z",
+      "type": "fallback",
+      "provider": "zai",
+      "model": "glm-4.7-flash",
+      "code": "timeout",
+      "latencyMs": 90002,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:04.014Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:04.014Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:05.521Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:07.314Z",
+      "type": "success",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "latencyMs": 1791,
+      "usage": {
+        "promptTokenCount": 2451,
+        "candidatesTokenCount": 775,
+        "totalTokenCount": 3226
+      },
+      "fallback": false,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:18.528Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "cooldown_skip",
+      "provider": "groq",
+      "code": "local_minute_limit",
+      "resetAt": "2026-11-28T05:59:05.521Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:31.539Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "cooldown_skip",
+      "provider": "groq",
+      "code": "local_minute_limit",
+      "resetAt": "2026-11-28T05:59:05.521Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:44.542Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "cooldown_skip",
+      "provider": "groq",
+      "code": "local_minute_limit",
+      "resetAt": "2026-11-28T05:59:05.521Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:58:57.549Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:10.563Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:12.558Z",
+      "type": "success",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "latencyMs": 1992,
+      "usage": {
+        "promptTokenCount": 2582,
+        "candidatesTokenCount": 836,
+        "totalTokenCount": 3418
+      },
+      "fallback": false,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:16.417Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "input_too_large",
+      "provider": "groq",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T06:00:34.008Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "timeout",
+      "resetAt": "2026-11-28T06:00:04.012Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:59:23.569Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
       "costUSD": 0
     }
   ]

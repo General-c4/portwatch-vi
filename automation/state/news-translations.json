@@ -304,6 +304,126 @@
       "source": "GitHub Deletes Post Celebrating GTA 6-Fueled Surge in PS5 Emulator’s Popularity",
       "ar": "GitHub تحذف منشوراً يحتفي بالارتفاع الكبير في شعبية محاكي PS5 المدفوع بـ GTA 6",
       "model": "gemini-3.6-flash"
+    },
+    "455ded67dc32cc2861a97396475acf8590c9122732585b31065e80101bf5b620": {
+      "source": "GTA 6's pirate PC ports: new tools, old problem | Opinion",
+      "ar": "نسخ GTA 6 المقرصنة لـ PC: أدوات جديدة، مشكلة قديمة | رأي",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "f07ea439938b95070c0eabebda39d9f4946aa5c6b230e70baac3afa144261577": {
+      "source": "GTA 6: Is the game planned for PC?",
+      "ar": "GTA 6: هل من المخطط إصدار اللعبة على PC؟",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "77c868a5242ff35bf20a38e70ea3975c85a1cdb58c06b23365d77c33968c17b1": {
+      "source": "GitHub Deletes \"Happy GTA VImas\" Post Celebrating the AnyPS5 PS5 Emulator",
+      "ar": "GitHub يحذف منشور \"عيد GTA VI سعيد\" الذي احتفل بمحاكي AnyPS5 PS5",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "6672d3fddd26b0706266a0f898680ee4b8d92a923e830799e0c8d90e86959706": {
+      "source": "GitHub Promotes AnyPS5 After Removing GTA 6 PC Projects",
+      "ar": "GitHub يروّج لـ AnyPS5 بعد إزالة مشاريع GTA 6 PC",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "c11d4606ce38844d7c162acf5529f6a93b7ac5f43e87c0abbc60becd89908700": {
+      "source": "Fake GTA 6 on PC - Watch out for this deadly command",
+      "ar": "GTA 6 مزيف على PC - احذر من هذا الأمر القاتل",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "51bb0432c1fa33cdb5d554fd285a03ff9d7057b54333d9d8b4326b8a8a99c32e": {
+      "source": "Teen Behind Project Leonida Says GTA 6 PC Effort Is Not Dead",
+      "ar": "المراهق وراء مشروع Leonida يقول إن جهد GTA 6 PC لم يمت",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "7311c3061be2ce7e65d7e087a5b6183c0e690ab3ee963f9772a7fb9e045e1d95": {
+      "source": "GitHub Deletes GTA 6 Post Celebrating PS5 Emulator Growth",
+      "ar": "GitHub يحذف منشور GTA 6 الذي احتفل بنمو محاكي PS5",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "0cf4422706cffb699f3cecaf96b4eda1dc53c6b3d3ecc05b839d23f7a36cb2e9": {
+      "source": "GitHub cheers a GTA 6-linked PS5 emulator, then hits delete, Kotaku reports",
+      "ar": "GitHub يهنئ بمحاكي PS5 مرتبط بـ GTA 6، ثم يحذفه، وفق تقرير كوتاكو",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "53e2b071c5142f5633931567ae94ce21fa090357b6d67712877a2fa10f236cd8": {
+      "source": "GTA 6 PC Modders Test Multiplayer with Vehicle Syncing, Proximity Chat",
+      "ar": "معدّلو GTA 6 PC يختبرون اللعب الجماعي مع مزامنة المركبات والدردشة القريبة",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "892732b5d0f4384c99109b783ce83936519a07cf9e05f7c809e7c5beecb57d18": {
+      "source": "Despite Take-Two Takedown, Vibecoding Teen Behind Nuked GTA 6 PC Port Project 'Leonida' Vows to Continue",
+      "ar": "رغم إزالة Take-Two، المراهق الذي يستخدم البرمجة بمساعدة الذكاء الاصطناعي وراء مشروع GTA 6 PC المحذوف 'Leonida' يعاهد على الاستمرار",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf": {
+      "source": "GitHub’s Deleted GTA 6 Post Raises Questions About Its Stance on Game Emulation",
+      "ar": "منشور GitHub المحذوف عن GTA 6 يثير تساؤلات حول موقفه من محاكاة الألعاب",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c": {
+      "source": "Hosts debate GTA 6 rumors, leaks, and its new direction",
+      "ar": "المضيفون يناقشون شائعات GTA 6 وتسريباته واتجاهه الجديد",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "b5fa36e93c0db2d93e438413342870828dcae04a5c887cd7b7bea29d847a9655": {
+      "source": "Stutters, worst on a first run while shaders compile; frame generation needs an RTX 40 or later",
+      "ar": "تظهر حالات تلعثم، وتكون في أسوأ حالاتها أثناء التشغيل الأولي أثناء تجميع برامج التظليل؛ ويتطلب توليد الإطارات بطاقة RTX 40 أو أحدث",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "db9ba2fc9c320515cea8357c47bf281788a69134d4a1ff088358f1d8452de606": {
+      "source": "Mostly foxhound's code; its release exe is unsigned and can't be checked against the source, so build it yourself",
+      "ar": "يعتمد بشكل أساسي على كود foxhound؛ ملف التنفيذ الخاص بإصداره غير موقّع ولا يمكن التحقق منه مقابل الكود المصدري، لذا يجب بناءه بنفسك",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "f5a7319d6ffc0f78a117b2fcc632672fafd8b7e0500631118a1a8fcc0790f75e": {
+      "source": "Belobug's VIctory fork for AMD Radeon is very playable: about 22 fps on average with no crashes, and story progress rated 80%. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, which PortWatch has confirmed.",
+      "ar": "نسخة Belobug المتفرعة من VIctory مخصصة لـ AMD Radeon قابلة للعب بشكل كبير: حوالي 22 fps في المتوسط دون انهيارات، وتقدّم القصة مقيّم بـ 80%. تم حذف كودها وحساب GitHub الخاص بها بواسطة GitHub في 27 نوفمبر بسبب انتهاك شروط الخدمة، وهو ما أكده PortWatch.",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9": {
+      "source": "Removed by GitHub · was public, based on VIctory",
+      "ar": "حُذفت بواسطة GitHub · كانت عامة، مبنية على VIctory",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea": {
+      "source": "Very playable: about 22 fps on average and no crashes, using about 30 GB of RAM and 12 GB of video memory",
+      "ar": "قابلة للعب بشكل كبير: حوالي 22 fps في المتوسط ودون انهيارات، باستخدام حوالي 30 GB من RAM و12 GB من ذاكرة الفيديو",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7": {
+      "source": "Lit open world with textures, people, vehicles, vegetation, water and sky; its picture is rated just below DexNom's",
+      "ar": "عالم مفتوح مضاء بالخامات، والأشخاص، والمركبات، والنباتات، والماء، والسماء؛ تقييم صورتها يقع مباشرة تحت تقييم DexNom",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4": {
+      "source": "Owner reports ray-traced lighting now working on AMD",
+      "ar": "يذكر المالك أن الإضاءة بتتبع الأشعة تعمل الآن على AMD",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761": {
+      "source": "Plays through missions; story progress rated 80%, level with CGBJ",
+      "ar": "تُكمل المهام؛ تقدّم القصة مقيّم بـ 80%، بمستوى CGBJ",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d": {
+      "source": "Built on VIctory's main and upstream pull requests",
+      "ar": "مبني على الفرع الرئيسي لـ VIctory وطلبات الدمج الصاعدة",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631": {
+      "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+      "ar": "حُذف الكود وحساب GitHub بواسطة GitHub في 27 نوفمبر بسبب انتهاك شروط الخدمة؛ لا يمكن لأحد من الخارج اختباره",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "c13186352bf409c1a639f8a5107112ada1eaec9e755e08d4621cc8c64f6e3b2a": {
+      "source": "Its last public README reported 5-7 fps and called the build \"not playable yet\"",
+      "ar": "أفاد آخر README عام لها بـ 5-7 fps ووصف الإصدار بأنه \"غير قابل للعب بعد\"",
+      "model": "groq/qwen/qwen3.8-27b"
+    },
+    "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867": {
+      "source": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
+      "ar": "تم الاختبار على جهاز AMD PC واحد فقط؛ لا يوجد شيء على NVIDIA أو Intel بعد",
+      "model": "groq/qwen/qwen3.8-27b"
     }
   },
   "pending": {
@@ -322,19 +442,19 @@
   },
   "daily": {
     "day": "2026-11-28",
-    "requests": 6,
-    "accountedTokens": 54383,
-    "inputTokens": 4991,
-    "outputTokens": 2100,
+    "requests": 16,
+    "accountedTokens": 216698,
+    "inputTokens": 10024,
+    "outputTokens": 3711,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 39,
+    "requests": 49,
     "successful": 0,
     "failed": 13,
     "cachedFields": 0,
-    "inputTokens": 47967,
-    "outputTokens": 19595,
+    "inputTokens": 53000,
+    "outputTokens": 21206,
     "thinkingTokens": 21137
   },
   "dynamic": {
@@ -344,9 +464,9 @@
         "id": "project:dexnom",
         "field": "summary",
         "sourceHash": "cdf95a012f0c3d923a6dd2b43ff62539fd51e0dc8923efb398f64d946abdf977",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:doomsday\",\"highlights.2\"]": {
         "id": "project:doomsday",
@@ -464,17 +584,17 @@
         "id": "project:dexnom",
         "field": "highlights.1",
         "sourceHash": "ef915b7033c3abbc200d2ac89f36006708339e18ed71bb06935ea69d232d5f9a",
-        "attempts": 1,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": "2026-11-25T19:52:31.281Z"
+        "attempts": 2,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:09:23.569Z"
       },
       "[\"project:dexnom\",\"highlights.3\"]": {
         "id": "project:dexnom",
         "field": "highlights.3",
         "sourceHash": "3cce31c15b3474a8dd7999a7c9524230226101999877c37dbc2aea6b7cc3f04f",
-        "attempts": 1,
-        "lastError": "quota_or_rate_limit",
-        "nextAttemptAt": "2026-11-25T19:52:31.281Z"
+        "attempts": 2,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:09:23.569Z"
       },
       "[\"project:doomsday\",\"summary\"]": {
         "id": "project:doomsday",
@@ -728,65 +848,65 @@
         "id": "project:kelvaroq",
         "field": "summary",
         "sourceHash": "5b5664645aadba047a2c1b01f4e34840e6e43c456a5c059ccad04fb26877712a",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"project:kelvaroq\",\"highlights.0\"]": {
         "id": "project:kelvaroq",
         "field": "highlights.0",
         "sourceHash": "31c77e1e594f17ed72a16ba55af54d93053fd227290e4b2cecfffb56e44dbe1a",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"highlights.1\"]": {
         "id": "project:kelvaroq",
         "field": "highlights.1",
         "sourceHash": "bd758e2b32b644285dc93b0c21ae158553591b1b5f3de688641298e695f9bc6a",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"highlights.2\"]": {
         "id": "project:kelvaroq",
         "field": "highlights.2",
         "sourceHash": "d4fe043d8f5f8046113188c096b2ddc2109a365850648cbf409b84471e9f4e7f",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"blockers.0\"]": {
         "id": "project:kelvaroq",
         "field": "blockers.0",
         "sourceHash": "5dc121dc86ead9d544bb36fccf4ce1fc1e143df5cb1fc42d307456a61cfe8e6e",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"blockers.1\"]": {
         "id": "project:kelvaroq",
         "field": "blockers.1",
         "sourceHash": "43ff4baed4deae866052ae882da7f48eae8ae2f90263c0c1a4a20385ffc4aca0",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"blockers.2\"]": {
         "id": "project:kelvaroq",
         "field": "blockers.2",
         "sourceHash": "fbf707e5424b761bc84c2b107f674c1d07f24dea9e4c8674783e7749a2146bf9",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.548Z"
       },
       "[\"project:kelvaroq\",\"proof.label\"]": {
         "id": "project:kelvaroq",
         "field": "proof.label",
         "sourceHash": "9284872ee669976d97172552f56cafd98bdbe65c708381d7de304e0f99577475",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"project:doomsday\",\"highlights.1\"]": {
         "id": "project:doomsday",
@@ -872,9 +992,9 @@
         "id": "project:dexnom",
         "field": "highlights.2",
         "sourceHash": "0b99ffff8183783f98549d367b9a177399a8337f3faf12f37060697f6fba3bee",
-        "attempts": 0,
-        "lastError": "service_unavailable",
-        "nextAttemptAt": null
+        "attempts": 1,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:suri\",\"highlights.1\"]": {
         "id": "project:suri",
@@ -896,481 +1016,289 @@
         "id": "pinned:current",
         "field": "text",
         "sourceHash": "5b1acf6e24bfdd902ca4dd091917c70281da4f5afaeeef6a67950f74a828d3aa",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
         "field": "title",
         "sourceHash": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
         "field": "title",
         "sourceHash": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5",
         "field": "title",
         "sourceHash": "9f0ec8f57f0d972431a765d419c1f9c95280a3d7349b25483cad0eccf1d2b377",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEh3Q01fYUpqVFIzZHpaVC1SX2RLeC1nd3VCWlBPU2NtTWpuaUZUX09uXzM4QVVMT05hbGhkXzV1MnNVb05sbWl2eTFKSm5FeW8xem9LeXdFbGxuYld5TEhOWVFGQjR3SVlzUTJyLW4tSHV4X0xFVFc5ZWdPNWJLSHZaZk9BUVhGUmdwTDJyX3pFRUE5bXdpR2hLTGFGUU9tVXViVl84VQ?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEh3Q01fYUpqVFIzZHpaVC1SX2RLeC1nd3VCWlBPU2NtTWpuaUZUX09uXzM4QVVMT05hbGhkXzV1MnNVb05sbWl2eTFKSm5FeW8xem9LeXdFbGxuYld5TEhOWVFGQjR3SVlzUTJyLW4tSHV4X0xFVFc5ZWdPNWJLSHZaZk9BUVhGUmdwTDJyX3pFRUE5bXdpR2hLTGFGUU9tVXViVl84VQ?oc=5",
         "field": "title",
         "sourceHash": "3f997e60c90e50b63dd95930c1943f56fbfadc49cc1b216816f5dea0177bcfa1",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxNVjEyU1hNTXFuaVNLRDh3YVFaMTRNNngyOERwRk1ZM0JkOU11Q2dvVXE2dk5ldWxZN2pQZHRmMjdrakZnSlNzMnhvUGJhVlFDcTJWa21aT1NSVEdtQ3YwV2QyUmdpVG5oNU8xUVU3amNoYVNGN1Z5dHFGLWVXOElKLVZQdDZRMXNVUVY0bFNHQXdTZw?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxNVjEyU1hNTXFuaVNLRDh3YVFaMTRNNngyOERwRk1ZM0JkOU11Q2dvVXE2dk5ldWxZN2pQZHRmMjdrakZnSlNzMnhvUGJhVlFDcTJWa21aT1NSVEdtQ3YwV2QyUmdpVG5oNU8xUVU3amNoYVNGN1Z5dHFGLWVXOElKLVZQdDZRMXNVUVY0bFNHQXdTZw?oc=5",
         "field": "title",
         "sourceHash": "a1046e53dd76cee3f83da2e816d2e7415e2344022f973c3a1ea1e968dce4ffb5",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiigFBVV95cUxNb1BRZTFLVjRYRDRjSnE5aTRPRkE1WUcyMHdIcGdHaHMxNHVvcnRhNWRqU3ZsWEZwdXJzTHdpUkIzQWRSQV9FSGUydXJzUzBOektfWkw4empRZHJ2SGNlZGxSejBILXN4S21XVV9oWHppOXA0TDR6eWlKZG9zMVIwakZ2U1RBRFJqUUE?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiigFBVV95cUxNb1BRZTFLVjRYRDRjSnE5aTRPRkE1WUcyMHdIcGdHaHMxNHVvcnRhNWRqU3ZsWEZwdXJzTHdpUkIzQWRSQV9FSGUydXJzUzBOektfWkw4empRZHJ2SGNlZGxSejBILXN4S21XVV9oWHppOXA0TDR6eWlKZG9zMVIwakZ2U1RBRFJqUUE?oc=5",
-        "field": "title",
-        "sourceHash": "455ded67dc32cc2861a97396475acf8590c9122732585b31065e80101bf5b620",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiggFBVV95cUxOS3dyOGRmdXBvNlVyczlDeGFOUXZ6WlE2by1uTnBPaXlPVllsRDdyWnY5cEZTU20zVFZmbHM4SDk3T1RVcVhQVU9BY0Y3ZVFUS0hxaGs4OXU4c1lrYmhnYkdLY0xQNlpycENJUlBFdHUzWUNObThxcXRDaGRLLThGSWxR?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiggFBVV95cUxOS3dyOGRmdXBvNlVyczlDeGFOUXZ6WlE2by1uTnBPaXlPVllsRDdyWnY5cEZTU20zVFZmbHM4SDk3T1RVcVhQVU9BY0Y3ZVFUS0hxaGs4OXU4c1lrYmhnYkdLY0xQNlpycENJUlBFdHUzWUNObThxcXRDaGRLLThGSWxR?oc=5",
-        "field": "title",
-        "sourceHash": "77c868a5242ff35bf20a38e70ea3975c85a1cdb58c06b23365d77c33968c17b1",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXRQM1BFSFF6azhGazIzNlNDanRteTM0SnQ3dy11eG9GWExBSHlqOTFWcnZON1VrSjBua1VMdkoyelV1Zjc5eVNsREFSNUVPV1RxVzJfQXlXdXNNMW1yRVVBQlZxZw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiZkFVX3lxTE1pWXRQM1BFSFF6azhGazIzNlNDanRteTM0SnQ3dy11eG9GWExBSHlqOTFWcnZON1VrSjBua1VMdkoyelV1Zjc5eVNsREFSNUVPV1RxVzJfQXlXdXNNMW1yRVVBQlZxZw?oc=5",
-        "field": "title",
-        "sourceHash": "6672d3fddd26b0706266a0f898680ee4b8d92a923e830799e0c8d90e86959706",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmJhQUdUQ01sWWNCY3RUVmZsc1NlU1MxNHpQVDRBTDhHYWw1Y0NodVM5NjNOS2dPNF9kU2tyNVVVOWVBUW5SVjl0SXNaUVAyQ3RLWW1kclY2ZmREQ2FFd2gybDVYaHNJLVlDWFBMVWMyTDhqWjVLYWFVLS13RnhEOVFCTUo?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmJhQUdUQ01sWWNCY3RUVmZsc1NlU1MxNHpQVDRBTDhHYWw1Y0NodVM5NjNOS2dPNF9kU2tyNVVVOWVBUW5SVjl0SXNaUVAyQ3RLWW1kclY2ZmREQ2FFd2gybDVYaHNJLVlDWFBMVWMyTDhqWjVLYWFVLS13RnhEOVFCTUo?oc=5",
-        "field": "title",
-        "sourceHash": "51bb0432c1fa33cdb5d554fd285a03ff9d7057b54333d9d8b4326b8a8a99c32e",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FSzB2dVFlbjQzN0h1LVRPYVJlMGsyMVVuUDI4UV9lbTE0UVBhd0xIV1hLemp2SGVveC1KeEx1LUtCbWVhRWZtMUlPLV9NaFdDMC1jNVo4STRIVEl4eTc1Z3BydThRbFhk?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FSzB2dVFlbjQzN0h1LVRPYVJlMGsyMVVuUDI4UV9lbTE0UVBhd0xIV1hLemp2SGVveC1KeEx1LUtCbWVhRWZtMUlPLV9NaFdDMC1jNVo4STRIVEl4eTc1Z3BydThRbFhk?oc=5",
-        "field": "title",
-        "sourceHash": "7311c3061be2ce7e65d7e087a5b6183c0e690ab3ee963f9772a7fb9e045e1d95",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiR0FVX3lxTFB1SjhxbGdOM21FMzZBTWFpOUpUV3VGd2xaN2JFMUtsdE9vY0piU2JRSUR5dTM2RU1mOHJnSzFKMUFzTmwyTzdB?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiR0FVX3lxTFB1SjhxbGdOM21FMzZBTWFpOUpUV3VGd2xaN2JFMUtsdE9vY0piU2JRSUR5dTM2RU1mOHJnSzFKMUFzTmwyTzdB?oc=5",
-        "field": "title",
-        "sourceHash": "0cf4422706cffb699f3cecaf96b4eda1dc53c6b3d3ecc05b839d23f7a36cb2e9",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEJIVTE3NGZtUVVGd2piZDJwaFZrdnltM0tPU2pMc1NpejNIRXJFS2h0eXlHSzMycy15dHNjNFV4N0JZanVMR3BnY2h2Q3B2QkZ2cW0zT2pydWs3TG1uQ1JtQ3hLTDVILVZkRG5wVm5keFA2UjR5aXZvVll4TlY4aTBCSzJiNzhuaG1rUm4xenhZR1ZtRzJCSVVpNWw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEJIVTE3NGZtUVVGd2piZDJwaFZrdnltM0tPU2pMc1NpejNIRXJFS2h0eXlHSzMycy15dHNjNFV4N0JZanVMR3BnY2h2Q3B2QkZ2cW0zT2pydWs3TG1uQ1JtQ3hLTDVILVZkRG5wVm5keFA2UjR5aXZvVll4TlY4aTBCSzJiNzhuaG1rUm4xenhZR1ZtRzJCSVVpNWw?oc=5",
-        "field": "title",
-        "sourceHash": "53e2b071c5142f5633931567ae94ce21fa090357b6d67712877a2fa10f236cd8",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRlQWx4cm1MMVNYeWxsMXV6QnJIdy1UR1ZlQ1c4ekpUVFQ1LTBOb05LR2tSUEp1ZktOS2xqdFFxaHVYU1lOcVVzMGxvZ0Zycll4cTNGT1Y3SjlFclUtSnNaZkRLQW5ZTkU0Z0l4bThlWEFKNTAxTTRZc2t6YnlsaE9FTjRMWENtZ0d4d21IOWYybFQ4WXpEd1lvWFYxckNCVUpMdHhtQlNnMjA4OTcwQlVIQ3Q5X0dETE9nQU90SElLNTZrN1ZST1Jn?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVRlQWx4cm1MMVNYeWxsMXV6QnJIdy1UR1ZlQ1c4ekpUVFQ1LTBOb05LR2tSUEp1ZktOS2xqdFFxaHVYU1lOcVVzMGxvZ0Zycll4cTNGT1Y3SjlFclUtSnNaZkRLQW5ZTkU0Z0l4bThlWEFKNTAxTTRZc2t6YnlsaE9FTjRMWENtZ0d4d21IOWYybFQ4WXpEd1lvWFYxckNCVUpMdHhtQlNnMjA4OTcwQlVIQ3Q5X0dETE9nQU90SElLNTZrN1ZST1Jn?oc=5",
-        "field": "title",
-        "sourceHash": "892732b5d0f4384c99109b783ce83936519a07cf9e05f7c809e7c5beecb57d18",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5",
         "field": "title",
         "sourceHash": "bd434db3f4ad55e64df3e37cd1d5178f187b5a71b0b1d0f2eb9db1d55e8e7c52",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5",
         "field": "title",
         "sourceHash": "9f0ee88c45373c710ffac082f501b838f09a508c47cba361c54d9880810d3093",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5",
         "field": "title",
         "sourceHash": "99ed02b53f27f8aff8f8ed94f498b0ee354eaba77ceff77e48ad3bb3ee4f0ed1",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5",
         "field": "title",
         "sourceHash": "6999e5c5db6c21d7ad342fc8ac46538d64a3d64deeceebe886d3dbf52669099a",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5",
         "field": "title",
         "sourceHash": "dba691cf0b8aab49b983f6deee64a4cbd64b4ee95d36d62e51052303169cbd1b",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"project:victory-nvidia\",\"summary\"]": {
         "id": "project:victory-nvidia",
         "field": "summary",
         "sourceHash": "3dfc7cf0ca5769dba190562dc5b027df39bed3a218d176c8c29cf3567ddb2e16",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"project:victory-nvidia\",\"highlights.0\"]": {
         "id": "project:victory-nvidia",
         "field": "highlights.0",
         "sourceHash": "928db59afda781eae924418d717b5d59d75b2328ab884f049463ab1fe2e2dc79",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"project:victory-nvidia\",\"highlights.1\"]": {
         "id": "project:victory-nvidia",
         "field": "highlights.1",
         "sourceHash": "f389afb334278c46a3cebf80d6d308045ddc8ae092f1f4a34007899eab1f2ff3",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"project:victory-nvidia\",\"highlights.2\"]": {
         "id": "project:victory-nvidia",
         "field": "highlights.2",
         "sourceHash": "d323104b1d9ffdd09cb63f1dd4d74f11d6e9cfd464d11d19c7bb3eb673247718",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"project:victory-nvidia\",\"blockers.0\"]": {
         "id": "project:victory-nvidia",
         "field": "blockers.0",
         "sourceHash": "742ffa6b2bb60edb73ba7d3c18d6a754904cb065e045795b5082210f357e42c4",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:victory-nvidia\",\"blockers.1\"]": {
-        "id": "project:victory-nvidia",
-        "field": "blockers.1",
-        "sourceHash": "b5fa36e93c0db2d93e438413342870828dcae04a5c887cd7b7bea29d847a9655",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:victory-nvidia\",\"blockers.2\"]": {
-        "id": "project:victory-nvidia",
-        "field": "blockers.2",
-        "sourceHash": "db9ba2fc9c320515cea8357c47bf281788a69134d4a1ff088358f1d8452de606",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
         "field": "title",
         "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
         "field": "title",
         "sourceHash": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
         "field": "title",
         "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
         "field": "title",
         "sourceHash": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnhqS0E0RGtBR0JmaU5zUEpvZFEtLVQ2NWhPQ0U0cVVBbVpMT3pfank3SlFHM0tKWDR4VzdfNGxDZ0tveFloUlJvUVNRTWxDZy1RN25EVDlxTVlHSWJrN0dDWC1MSkZ2R2pSdVNmWjdwWnd6R2dub0tDSkNCNU1YNDBNY2tKdzBfVEZGTVJ4bU5ET00xN3lJWi1YTDg?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnhqS0E0RGtBR0JmaU5zUEpvZFEtLVQ2NWhPQ0U0cVVBbVpMT3pfank3SlFHM0tKWDR4VzdfNGxDZ0tveFloUlJvUVNRTWxDZy1RN25EVDlxTVlHSWJrN0dDWC1MSkZ2R2pSdVNmWjdwWnd6R2dub0tDSkNCNU1YNDBNY2tKdzBfVEZGTVJ4bU5ET00xN3lJWi1YTDg?oc=5",
-        "field": "title",
-        "sourceHash": "f07ea439938b95070c0eabebda39d9f4946aa5c6b230e70baac3afa144261577",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nS0psZUZwa3hZUThEbWRUZTJSbnJIWTV0LU81cGJHNDhpbmY4UWlRanFXS0VIb3lIVEdwY29yUDJXblNsb18xaG5MaGl3OW1wNzZBUHc4OGVuUXlLUXRyVmFsdmNzWFE?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nS0psZUZwa3hZUThEbWRUZTJSbnJIWTV0LU81cGJHNDhpbmY4UWlRanFXS0VIb3lIVEdwY29yUDJXblNsb18xaG5MaGl3OW1wNzZBUHc4OGVuUXlLUXRyVmFsdmNzWFE?oc=5",
-        "field": "title",
-        "sourceHash": "c11d4606ce38844d7c162acf5529f6a93b7ac5f43e87c0abbc60becd89908700",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5",
-        "field": "title",
-        "sourceHash": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH",
-        "field": "title",
-        "sourceHash": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T\",\"title\"]": {
         "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
         "field": "title",
         "sourceHash": "4e6286cdb655ec87a7b213d036dcd5ad7a531abe1a368d2742792762a2e04717",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
         "field": "text",
         "sourceHash": "2eb83c2e980ea8915da1afb184ce3b7da8b01103a1b3732d41e7680c771753a6",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
         "field": "text",
         "sourceHash": "f63a6bf957cdcc33ff96f01f8d4964a80cec2f8827e937552a47b407a78d1a49",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
         "field": "text",
         "sourceHash": "9647a0426573540e873825e01a34799933dcd9091979751298e8a190ed342617",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
         "field": "text",
         "sourceHash": "264ed3a95055687552bd578fae6950c95e6a1082f06f7b00510b6f0d4a120263",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
         "field": "text",
         "sourceHash": "ab743314b375099a5e6238ce0b2d2753c3ec6afb67db6eed84d6f924395ddedc",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
         "field": "title",
         "sourceHash": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI\",\"title\"]": {
         "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI",
         "field": "title",
         "sourceHash": "aef766bfe7b093f2f134e4224ff61bf05777d411d39be5a36acdb25fa24d7931",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"summary\"]": {
-        "id": "project:belobug",
-        "field": "summary",
-        "sourceHash": "f5a7319d6ffc0f78a117b2fcc632672fafd8b7e0500631118a1a8fcc0790f75e",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"byline\"]": {
-        "id": "project:belobug",
-        "field": "byline",
-        "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.1\"]": {
-        "id": "project:belobug",
-        "field": "highlights.1",
-        "sourceHash": "cd3c07324e197aa793a16e7aee6cbb6aa32f3767b679d22ecf2e724c33312bea",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.2\"]": {
-        "id": "project:belobug",
-        "field": "highlights.2",
-        "sourceHash": "91734b984e3c1435d4a30964c612228cbaf730edace9d262cf6a5fd057f54aa7",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.3\"]": {
-        "id": "project:belobug",
-        "field": "highlights.3",
-        "sourceHash": "7d44061082f0fec7f587efa7fa51ab77f182f634f3924a8668befe380b13c9b4",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.4\"]": {
-        "id": "project:belobug",
-        "field": "highlights.4",
-        "sourceHash": "63be27f9c34efdd0e74964f1a1c4fc095c1795efa447db8f9453594e939ab761",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"highlights.5\"]": {
-        "id": "project:belobug",
-        "field": "highlights.5",
-        "sourceHash": "f3a9a04aa66456a546ee0791fcae7958975babba886d7547d06766765380a89d",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.0\"]": {
-        "id": "project:belobug",
-        "field": "blockers.0",
-        "sourceHash": "cbc750e072bc6b598590e8409d1c783af58f94c6ce638823d78ca712f067f631",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.1\"]": {
-        "id": "project:belobug",
-        "field": "blockers.1",
-        "sourceHash": "c13186352bf409c1a639f8a5107112ada1eaec9e755e08d4621cc8c64f6e3b2a",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"project:belobug\",\"blockers.2\"]": {
-        "id": "project:belobug",
-        "field": "blockers.2",
-        "sourceHash": "cab40cd758f1c99f3b5232051d005c9a22dc8d0f968c6d2ab530a387364c0867",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "network_or_provider",
+        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
       "[\"project:belobug\",\"nuked.note\"]": {
         "id": "project:belobug",
         "field": "nuked.note",
         "sourceHash": "19d780b24ea9c8103ba21520cc4f177c1938b8a63c9320807194e452019cb055",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:belobug\",\"proof.label\"]": {
         "id": "project:belobug",
         "field": "proof.label",
         "sourceHash": "4cc97c61e0ee329e6217c49e4fc16583decab8c8699d335d36e5904ffbfa5b00",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"summary\"]": {
         "id": "project:avatarmanz",
         "field": "summary",
         "sourceHash": "b1879145ad6a87c7a5b3c381b754d85fdad6ddb75dbdf3e720d2af8d480f65c5",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"byline\"]": {
         "id": "project:avatarmanz",
         "field": "byline",
         "sourceHash": "8441ba1b52877f40c12ef7c497fb143b351327d3e340a625a3b760f44a776da9",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"highlights.0\"]": {
         "id": "project:avatarmanz",
         "field": "highlights.0",
         "sourceHash": "b85ee7851f69b3df26e2c714e7a2753abd4e138997536663611dc641aae4f60f",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"highlights.1\"]": {
         "id": "project:avatarmanz",
         "field": "highlights.1",
         "sourceHash": "9ab6e235b723c23a8e3a29a218f0cc2eed310973bd432de1524194e91790ae52",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"highlights.2\"]": {
         "id": "project:avatarmanz",
         "field": "highlights.2",
         "sourceHash": "078265d12e7df3048f7272a2ce923fbf83d720ff8d62c7fe3f2904e003dce089",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"highlights.3\"]": {
         "id": "project:avatarmanz",
         "field": "highlights.3",
         "sourceHash": "5b33d61c1677755c1d7f2196f3fcdaf3070f7dd56c14860a19614a68922acc4d",
-        "attempts": 0,
+        "attempts": 1,
         "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "nextAttemptAt": "2026-11-28T06:04:23.569Z"
       },
       "[\"project:avatarmanz\",\"blockers.0\"]": {
         "id": "project:avatarmanz",
@@ -1414,11 +1342,11 @@
       }
     },
     "totals": {
-      "requests": 26,
-      "translatedFields": 57,
-      "failedFields": 83,
-      "inputTokens": 31773,
-      "outputTokens": 13157,
+      "requests": 36,
+      "translatedFields": 81,
+      "failedFields": 179,
+      "inputTokens": 36806,
+      "outputTokens": 14768,
       "thinkingTokens": 21137
     }
   },

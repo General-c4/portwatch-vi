@@ -2,189 +2,503 @@
   "before": {
     "pinned": {
       "total": 1,
-      "translated": 1,
+      "translated": 0,
       "exempt": 0,
-      "missing": 0,
-      "coverage": 100
+      "missing": 1,
+      "coverage": 0
     },
     "headlines": {
       "total": 30,
-      "translated": 28,
+      "translated": 1,
       "exempt": 0,
-      "missing": 2,
-      "coverage": 93.33
+      "missing": 29,
+      "coverage": 3.33
     },
     "changes": {
       "total": 12,
-      "translated": 10,
+      "translated": 7,
       "exempt": 0,
-      "missing": 2,
-      "coverage": 83.33
+      "missing": 5,
+      "coverage": 58.33
     },
     "projectDescriptions": {
-      "total": 35,
-      "translated": 31,
+      "total": 41,
+      "translated": 28,
       "exempt": 0,
-      "missing": 4,
-      "coverage": 88.57
+      "missing": 13,
+      "coverage": 68.29
     },
     "projectDetails": {
-      "total": 84,
-      "translated": 72,
+      "total": 108,
+      "translated": 81,
       "exempt": 1,
-      "missing": 11,
-      "coverage": 86.75
+      "missing": 26,
+      "coverage": 75.7
     },
     "highlights": {
-      "total": 94,
-      "translated": 91,
+      "total": 113,
+      "translated": 79,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 96.81
+      "missing": 34,
+      "coverage": 69.91
     },
     "blockers": {
-      "total": 91,
-      "translated": 90,
+      "total": 108,
+      "translated": 82,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 98.9
+      "missing": 26,
+      "coverage": 75.93
     }
   },
   "after": {
     "pinned": {
       "total": 1,
-      "translated": 1,
+      "translated": 0,
       "exempt": 0,
-      "missing": 0,
-      "coverage": 100
+      "missing": 1,
+      "coverage": 0
     },
     "headlines": {
       "total": 30,
-      "translated": 28,
+      "translated": 13,
       "exempt": 0,
-      "missing": 2,
-      "coverage": 93.33
+      "missing": 17,
+      "coverage": 43.33
     },
     "changes": {
       "total": 12,
-      "translated": 10,
+      "translated": 7,
       "exempt": 0,
-      "missing": 2,
-      "coverage": 83.33
+      "missing": 5,
+      "coverage": 58.33
     },
     "projectDescriptions": {
-      "total": 35,
-      "translated": 31,
+      "total": 41,
+      "translated": 29,
       "exempt": 0,
-      "missing": 4,
-      "coverage": 88.57
+      "missing": 12,
+      "coverage": 70.73
     },
     "projectDetails": {
-      "total": 84,
-      "translated": 72,
+      "total": 108,
+      "translated": 82,
       "exempt": 1,
-      "missing": 11,
-      "coverage": 86.75
+      "missing": 25,
+      "coverage": 76.64
     },
     "highlights": {
-      "total": 94,
-      "translated": 91,
+      "total": 113,
+      "translated": 84,
       "exempt": 0,
-      "missing": 3,
-      "coverage": 96.81
+      "missing": 29,
+      "coverage": 74.34
     },
     "blockers": {
-      "total": 91,
-      "translated": 90,
+      "total": 108,
+      "translated": 87,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 98.9
+      "missing": 21,
+      "coverage": 80.56
     }
   },
   "audit": {
-    "legacyPending": 39,
-    "approvedEntries": 14,
-    "unrelatedEntries": 25
+    "legacyPending": 181,
+    "approvedEntries": 119,
+    "unrelatedEntries": 62
   },
   "stats": {
-    "requests": 0,
-    "translatedFields": 0,
-    "failedFields": 0,
+    "requests": 10,
+    "translatedFields": 24,
+    "failedFields": 96,
     "cachedFields": 0,
-    "inputTokens": 0,
-    "outputTokens": 0,
+    "inputTokens": 5033,
+    "outputTokens": 1611,
     "thinkingTokens": 0,
     "errors": [
-      "quota_or_rate_limit"
+      "network_or_provider"
     ],
-    "quota": {
-      "quotas": [
-        {
-          "period": "day",
-          "unit": "requests",
-          "limit": 20
-        }
-      ],
-      "retryAfterMs": 46671000
-    },
-    "blockedUntil": "2026-11-26T07:59:59.701Z",
-    "pending": 23,
-    "durationMs": 11
+    "model": "groq/qwen/qwen3.8-27b",
+    "pending": 110,
+    "durationMs": 250810
   },
   "missing": [
     {
-      "id": "headline:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZl9SaGVTZlcxYy1ETDJmWjlBQnhUR3hTUjhFQmQ1NnlyVGtSOHFfU0hMOXc4S21nYlV4Ri1PU1FHS3RpckRuMnlWOHB4Z2tabzFfeVNXbXUtczZNbUpTVF9LWk1YaWRnM3ZJVmctM2JkVlJRbDVYX0ZabTNTdmg4UTZHbEV5cjhNMWxVNXpVbkpxcUV1d19v?oc=5",
-      "field": "title",
-      "source": "Take-Two Interactive Shuts Down Unauthorized GTA 6 PC Port Project",
-      "reason": "protected_facts_or_language_invalid"
-    },
-    {
-      "id": "headline:https://news.google.com/rss/articles/CBMi-wFBVV95cUxQa190THh3dkdCUFZpTDhvQWpJTkhUWjQya2lRLWFvTGItZTVUbzlIRFI5cnM4WGxsc29TX0MwVFU5U0VJTVZEQmdvTnprWHh4N2trNXdvRV95OGhfemhmS2RxQ1NBMWpFcVA1MVJ3V0NqeW9MU0M3ZFZxY2FheXg5bXh6WW5sYmYzaGg3R2lLLU1NMF9pZUhsNWVZYmo5MkY5eGpadDZ2dld6MW1zTE5rQV83ZHB6NGR3N2M1bTRiS3FsQmlqOWxBc1c4LTltTzg0RXhuQWVWSW5DY3pOT1RXejFnTklOOTQ0SzdZeC16cXFCb25YQjhlNjJMVQ?oc=5",
-      "field": "title",
-      "source": "AI-generated GTA 6 PC ports get nuked in alleged Rockstar takedown spree, as former Bungie dev hails \"most ridiculous dumpster fire ever\"",
-      "reason": "quota_or_rate_limit"
-    },
-    {
-      "id": "change:2026-11-25:up:Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
+      "id": "pinned:current",
       "field": "text",
-      "source": "Belobug's build speeds up from about 3 to 4 fps (its README reports 5-7), rising to 77.7%, just behind DexNom.",
-      "reason": "quota_or_rate_limit"
+      "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
+      "reason": "network_or_provider"
     },
     {
-      "id": "change:2026-11-25:flag:ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
+      "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
+      "field": "title",
+      "source": "Coders use AI to attempt GTA VI PC ports as Take-Two targets GitHub projects",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
+      "field": "title",
+      "source": "\"GTA 6 is finally here\": Microsoft's GitHub hyped a tool that turns PS5 games into Windows 11 apps, days after wiping 3,007 GTA 6 PC port repos, then quietly deleted the post",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
+      "field": "title",
+      "source": "GTA 6 Port Takedown: 3,007 GitHub Repositories",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
+      "field": "title",
+      "source": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
+      "field": "title",
+      "source": "GitHub deletes post promoting PS5-to-PC project AnyPS5 days after axing 3,000 GTA 6 PC port repos",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
+      "field": "title",
+      "source": "209GB GTA 6 'PC version' appears on Russian torrent site",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
+      "field": "title",
+      "source": "GTA 6 PC Port Takes a Massive Leap Forward in Just Days",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://www.msn.com/en-us/gaming/rockstar-games/how-gamers-are-using-ai-and-leaked-files-to-clone-grand-theft-auto-6/ar-AA2io7RI",
+      "field": "title",
+      "source": "How gamers are using AI and leaked files to clone Grand Theft Auto 6",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5",
+      "field": "title",
+      "source": "CGBJ GTA 6 PC Project Goes Public, Then Disappears Minutes Later",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMipwFBVV95cUxPNEh3Q01fYUpqVFIzZHpaVC1SX2RLeC1nd3VCWlBPU2NtTWpuaUZUX09uXzM4QVVMT05hbGhkXzV1MnNVb05sbWl2eTFKSm5FeW8xem9LeXdFbGxuYld5TEhOWVFGQjR3SVlzUTJyLW4tSHV4X0xFVFc5ZWdPNWJLSHZaZk9BUVhGUmdwTDJyX3pFRUE5bXdpR2hLTGFGUU9tVXViVl84VQ?oc=5",
+      "field": "title",
+      "source": "AI-Powered GTA 6 PC Ports Now Have Multiplayer as Modders Unlock 30 and 60 FPS",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMikgFBVV95cUxNVjEyU1hNTXFuaVNLRDh3YVFaMTRNNngyOERwRk1ZM0JkOU11Q2dvVXE2dk5ldWxZN2pQZHRmMjdrakZnSlNzMnhvUGJhVlFDcTJWa21aT1NSVEdtQ3YwV2QyUmdpVG5oNU8xUVU3amNoYVNGN1Z5dHFGLWVXOElKLVZQdDZRMXNVUVY0bFNHQXdTZw?oc=5",
+      "field": "title",
+      "source": "Leaked GTA 6 Xbox Build Boots on Windows at About 1 FPS",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
+      "field": "title",
+      "source": "GTA 6 PC port makes significant progress in just days",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5",
+      "field": "title",
+      "source": "\"Does changing where games run cross a legal line?\" Microsoft-owned Github ask in now-deleted post celebrating GTA 6's effect on PC port-focused PS5 emulator",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5",
+      "field": "title",
+      "source": "GitHub Deletes Post Celebrating GTA 6 PS5 Emulator",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5",
+      "field": "title",
+      "source": "GTA 6 PC: AI Ports, Takedowns and Take-Two Stock",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5",
+      "field": "title",
+      "source": "Unofficial GTA 6 PC port shows multiplayer and proximity voice chat at 25–30 FPS",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5",
+      "field": "title",
+      "source": "GTA Black Friday Deals 2026: Best GTA 6, GTA 5 and GTA Trilogy Discounts on PS5, Xbox, PC and Nintendo Switch",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
       "field": "text",
-      "source": "ZETTROX is nuked: its GitHub repo, Zettrox/ztrx, and the Zettrox account are gone. It leaves the race; no DMCA notice is published yet.",
-      "reason": "quota_or_rate_limit"
+      "source": "Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
+      "field": "text",
+      "source": "Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
+      "field": "text",
+      "source": "Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
+      "field": "text",
+      "source": "Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
+      "field": "text",
+      "source": "Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "summary",
+      "source": "Kelvaroq is a public Rust runtime built on VIctory and victory-fork. It adds rendering patches and measured submission improvements, and runs GTA VI through the prologue and first mission.",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "highlights.0",
+      "source": "Public source under GPL-3.0, with pinned upstream revisions and a documented patch series",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "highlights.1",
+      "source": "The prologue is playable at about 10 fps, with 7-8 fps in heavier views",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "highlights.2",
+      "source": "An external 36-minute RTX 4090 playtest reached the first mission without a crash",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "blockers.0",
+      "source": "CPU submission and synchronization remain the main bottleneck",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "blockers.1",
+      "source": "Missing shader pipelines, 7% dropped draws and VRAM pressure remain",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "blockers.2",
+      "source": "One-session stability evidence and two-platform performance measurements are limited",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:kelvaroq",
+      "field": "proof.label",
+      "source": "36-minute external playtest",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:victory-nvidia",
+      "field": "summary",
+      "source": "An NVIDIA fork of VIctory on readmet3xt-lab's foxhound, with DLSS, frame generation and an in-game settings menu. PortWatch has verified it: about as playable as the leaders, at 20 fps without frame generation and without crashes.",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:victory-nvidia",
+      "field": "highlights.0",
+      "source": "Platform in its README: GeForce RTX 5070 12 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:victory-nvidia",
+      "field": "highlights.1",
+      "source": "20 fps without frame generation, no crashes, verified by PortWatch. README: 26-30 fps in the opening",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:victory-nvidia",
+      "field": "highlights.2",
+      "source": "DLSS upscaling and frame generation, 2x to 6x on RTX 50 cards, switched from an in-game F1 menu",
+      "reason": "network_or_provider"
+    },
+    {
+      "id": "project:victory-nvidia",
+      "field": "blockers.0",
+      "source": "No ray tracing by default; switching it on gives about 3 fps and a broken picture",
+      "reason": "network_or_provider"
     },
     {
       "id": "project:belobug",
-      "field": "summary",
-      "source": "Belobug's fork of VIctory for AMD Radeon, run on an all-AMD PC: Radeon RX 9070 XT 16 GB, Ryzen 7 9800X3D, 64 GB RAM, Windows 11. PortWatch has seen it running: GTA VI's open world renders lit, with textures, people, vehicles, vegetation, water and sky, and looks close to the retail game. It plays through missions at about 4 fps and rarely crashes.",
-      "reason": "quota_or_rate_limit"
+      "field": "nuked.note",
+      "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, confirmed by PortWatch. Its progress still counts in our overall number.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:belobug",
+      "field": "proof.label",
+      "source": "Belo Top Dawg",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "project:dexnom",
       "field": "summary",
-      "source": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it: the open world looks close to the retail game, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
-      "reason": "quota_or_rate_limit"
+      "source": "DexNom Runtime, a fork of VIctory for AMD Radeon, tested on a Radeon RX 7900 XTX. It builds on ZSlayerHQ's victory-world-runtime with its own fixes for shaders, texture streaming and GPU memory. PortWatch has seen it running with ray-traced lighting working, the first AMD build on our board to get it. Its picture is the best-rated on our board, though lighting and materials still have problems, and it plays through missions at about 3-4 fps (about 1 fps with ray tracing on), rarely crashing.",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "project:dexnom",
       "field": "highlights.1",
       "source": "Ray-traced lighting working, seen by PortWatch: the first AMD build on our board to get it",
-      "reason": "quota_or_rate_limit"
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:dexnom",
+      "field": "highlights.2",
+      "source": "Best-rated picture on our board; plays through missions",
+      "reason": "request_or_token_limit"
     },
     {
       "id": "project:dexnom",
       "field": "highlights.3",
       "source": "Translates 25,742 of the 25,758 shaders in its test archive; all 2,191 vertex shaders pass Microsoft's DXIL validator (its report)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "summary",
+      "source": "AvatarManz's VIctory fork for the AMD Radeon RX 7900 XTX, verified by PortWatch at about 16 fps on average, with sound. Its code and GitHub account were removed by GitHub on 27 Nov for a Terms of Service violation, as Belobug's were, which PortWatch has confirmed.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "byline",
+      "source": "Removed by GitHub · was public, based on VIctory",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "highlights.0",
+      "source": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "highlights.1",
+      "source": "About 16 fps on average in game, verified by PortWatch. Its README: 13-20 fps indoors in the prologue, 19-22 on the first boat mission, 30 in menus",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "highlights.2",
+      "source": "41 minutes in one session without a crash (its README); sound works",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "highlights.3",
+      "source": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "blockers.0",
+      "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "blockers.1",
+      "source": "Busy street chases drop to 6-10 fps, with single frames far longer; outdoors on foot runs at about 11-17 fps (its README)",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "blockers.2",
+      "source": "Used 40-46 GB of memory (64 GB of RAM recommended); tested on one PC only, not reproduced by others",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "nuked.note",
+      "source": "Repository and GitHub account removed by GitHub on Nov 27 for a Terms of Service violation, as with Belobug, confirmed by PortWatch. Its progress still counts in our overall number.",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:avatarmanz",
+      "field": "proof.label",
+      "source": "Video on Reddit",
+      "reason": "request_or_token_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "summary",
+      "source": "A private build shown on NotNozy's \"GTA6 Modding Stream\" on Rumble. It looks about the same as AvatarManz's build; the owner rates its story progress at 80%. It runs on an AMD card. Code not public, and what it builds on isn't known.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "byline",
+      "source": "Streamed on Rumble · code not public",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "evidence",
+      "source": "Rumble stream",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "highlights.0",
+      "source": "Looks about the same as AvatarManz's build, the leader on our board",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "highlights.1",
+      "source": "Owner rates story progress at 80%",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "highlights.2",
+      "source": "Runs on an AMD card",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "blockers.0",
+      "source": "No measured frame rate, crash record or test PC given: the values follow AvatarManz's build, which it looks about the same as",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:notnozy",
+      "field": "proof.label",
+      "source": "Watch on Rumble",
       "reason": "quota_or_rate_limit"
     },
     {
       "id": "project:doomsday",
       "field": "summary",
-      "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and gets as far into the story as the leading public builds. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
-      "reason": "quota_or_rate_limit"
+      "source": "A private group's build on JoshuuDev's victory-amd fork of VIctory, verified by PortWatch. It runs GTA VI with ray-traced lighting at about 3-5 fps, almost never crashes, and the owner rates its story progress at 80%. The in-game phone renders really well, and the map menu runs at a higher frame rate. It's built mostly for AMD and also works on NVIDIA, at a lower frame rate. Code not public.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:doomsday",
+      "field": "highlights.1",
+      "source": "Almost never crashes; owner rates story progress at 80%",
+      "reason": "service_unavailable"
     },
     {
       "id": "project:doomsday",
@@ -195,14 +509,158 @@
     {
       "id": "project:doomsday",
       "field": "blockers.0",
-      "source": "Rendering slightly behind DexNom's",
-      "reason": "quota_or_rate_limit"
+      "source": "Ray-traced lighting works, but textures look worse than DexNom's",
+      "reason": "service_unavailable"
     },
     {
       "id": "project:doomsday",
       "field": "proof.label",
       "source": "Doomsday on X",
       "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "summary",
+      "source": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. The owner rates its story progress at 80%, and it hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "byline",
+      "source": "Streamed on Rumble · built on a VIctory fork (which one isn't known)",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "evidence",
+      "source": "Rumble stream",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "highlights.0",
+      "source": "About 12-15 fps in free roam, up to 24: the highest frame rate on our board",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "highlights.1",
+      "source": "Owner rates story progress at 80%",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "highlights.2",
+      "source": "No crashes seen so far",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "blockers.0",
+      "source": "Frame rate swings between about 5 and 24 fps",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "blockers.1",
+      "source": "Some texture or ray-tracing glitches",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:darkworldhm",
+      "field": "proof.label",
+      "source": "Watch on Rumble",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:suri",
+      "field": "summary",
+      "source": "A private build on hyphennn's victory-fork of VIctory. PortWatch confirmed a player moving around Lucia's prologue at about 3 fps; the owner now rates its story progress at 80%. Code is not public.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:suri",
+      "field": "highlights.1",
+      "source": "Owner rates story progress at 80%",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:suri",
+      "field": "blockers.1",
+      "source": "PortWatch only confirmed the prologue; 80% story progress is the owner's rating",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "summary",
+      "source": "Private VIctory/XCL build, PortWatch-verified. Owner rates story progress at 80%, rendering 0.7 and stability 0.85. It averages 25 fps with 8 GB system RAM and 16 GB VRAM. Its code was public briefly and is offline now.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "highlights.0",
+      "source": "Owner ratings: 80% story, rendering 0.7, stability 0.85",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "highlights.1",
+      "source": "25 fps gameplay average",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "blockers.0",
+      "source": "Minor visual glitches remain",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "blockers.1",
+      "source": "Gameplay does not sustain 30 fps; 25 fps is the reported average",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:cgbj",
+      "field": "proof.label",
+      "source": "Watch video",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:victory-gta6",
+      "field": "blockers.0",
+      "source": "About 3 fps on the streams; its README now measures 8-10 fps in the first rooms, with optional switches",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:marvis",
+      "field": "summary",
+      "source": "Marvis's Rust layer runs GTA VI natively. The owner reports controlled gameplay is now reachable, though the build remains unstable; the README still says it is not playable and reports about 1 fps in the world.",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:marvis",
+      "field": "highlights.1",
+      "source": "Intro cutscene drawn textured and lit, with hair, sky and depth of field",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:marvis",
+      "field": "highlights.2",
+      "source": "Owner reports player-controlled gameplay is now reachable, but remains unstable",
+      "reason": "service_unavailable"
+    },
+    {
+      "id": "project:marvis",
+      "field": "blockers.0",
+      "source": "About 1 fps; ray-traced shadows and indirect light are missing",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:marvis",
+      "field": "blockers.2",
+      "source": "README still says not playable; the new gameplay report has not yet been reproduced",
+      "reason": "service_unavailable"
     },
     {
       "id": "project:xbox-emulator",
@@ -217,6 +675,12 @@
       "reason": "quota_or_rate_limit"
     },
     {
+      "id": "project:xcl",
+      "field": "blockers.0",
+      "source": "README: an unmerged NVIDIA branch reaches the world at about 5 fps, with parts of the picture missing",
+      "reason": "quota_or_rate_limit"
+    },
+    {
       "id": "project:scarlettx",
       "field": "provenOn",
       "source": "Concept Destruction and Unicorn Overlord: playable",
@@ -227,6 +691,12 @@
       "field": "provenOn",
       "source": "The Matrix Awakens: menu + cinematic (Linux)",
       "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:tuxbox",
+      "field": "claims.0.text",
+      "source": "GTA VI The prologue cutscene, currently fighting memory limitations Untested",
+      "reason": "protected_facts_or_language_invalid"
     },
     {
       "id": "project:openscarlett",
@@ -243,7 +713,7 @@
     {
       "id": "project:anyxboxx",
       "field": "summary",
-      "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from a pinned victory-fork build, so they earn it no milestone.",
+      "source": "French-language prototype: GDK runtime emulation on Unicorn, plus a Wine-style native mode that runs small GDK test games. Its GTA VI results (world at about 5 fps, cutscenes, a contributor's report of the first two missions) come from victory-fork's code, now copied into the repo, so they earn it no milestone.",
       "reason": "quota_or_rate_limit"
     },
     {
@@ -255,7 +725,49 @@
     {
       "id": "project:anyxboxx",
       "field": "claims.0.text",
-      "source": "- ✅ The Xbox Series 1.0.2.1 build of GTA VI launches on PC: boot, profile screen, first-run settings, legal screens, loading, pause menu. Menus run at 30 fps.",
+      "source": "- ✅ The game runs. GTA VI 1.0.2.1 (Xbox Series build) starts, plays its cutscenes and reaches the open world through VIctory, the copy in third party/victory .",
+      "reason": "protected_facts_or_language_invalid"
+    },
+    {
+      "id": "project:keylime",
+      "field": "summary",
+      "source": "A C++20 runtime written from scratch, with Vulkan graphics and its own RDNA2-to-SPIR-V translator. It reports GTA VI's intro and main menu at 30 fps and the world loading into the opening cutscene, which doesn't draw yet. Self-reported.",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "highlights.0",
+      "source": "README: GTA VI boots natively, with intro and main menu at a locked 30 fps",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "highlights.1",
+      "source": "World loads after the menu into the opening cutscene, with its audio",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "highlights.2",
+      "source": "Its own code throughout, not a VIctory or XCL fork",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "blockers.0",
+      "source": "The opening cutscene's picture doesn't draw yet; no gameplay",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "blockers.1",
+      "source": "Its translator turns instructions it doesn't know into no-ops, so shader counts earn no credit",
+      "reason": "quota_or_rate_limit"
+    },
+    {
+      "id": "project:keylime",
+      "field": "blockers.2",
+      "source": "Some compute shaders write wrong data; the game's GPU watchdog is parked to keep it running",
       "reason": "quota_or_rate_limit"
     },
     {
