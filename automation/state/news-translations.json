@@ -309,29 +309,29 @@
   "pending": {
     "article:2026-11-26-multiplayer-running": {
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
-      "attempts": 6,
-      "nextAttemptAt": "2026-11-28T05:16:16.387Z",
+      "attempts": 7,
+      "nextAttemptAt": "2026-11-28T11:06:17.444Z",
       "lastError": "request_or_token_limit"
     },
     "article:2026-11-27-belobug-dmca": {
       "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
-      "attempts": 4,
-      "nextAttemptAt": "2026-11-28T03:16:16.387Z",
-      "lastError": "request_or_token_limit"
+      "attempts": 6,
+      "nextAttemptAt": "2026-11-28T08:26:17.444Z",
+      "lastError": "network_or_provider"
     }
   },
   "daily": {
     "day": "2026-11-28",
-    "requests": 3,
-    "accountedTokens": 7091,
+    "requests": 6,
+    "accountedTokens": 54383,
     "inputTokens": 4991,
     "outputTokens": 2100,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 36,
+    "requests": 39,
     "successful": 0,
-    "failed": 10,
+    "failed": 13,
     "cachedFields": 0,
     "inputTokens": 47967,
     "outputTokens": 19595,

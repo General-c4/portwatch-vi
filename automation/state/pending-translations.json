@@ -8,9 +8,10 @@
     "refs": [
       "dashboard.c3812fc4acb8"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "إزالة الألغام"
   },
   {
     "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
@@ -21,8 +22,8 @@
     "refs": [
       "dashboard.c2fd567e124a"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -34,47 +35,8 @@
     "refs": [
       "dashboard.28ce9a6478d7"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "4935fd53a7fc3b031318f4b4204972bc59e1490d60732526bd2e7ae6d26a4a0d",
-    "sourceHash": "ba4f7066db0e74ec854e5e76ddc1f50e9084683ba562ed7bb4ef89edc7302d3a",
-    "scope": "content",
-    "key": "Scout spotted JuePort/JueVI (possible effort, substance 91).",
-    "source": "Scout spotted JuePort/JueVI (possible effort, substance 91).",
-    "refs": [
-      "changes.63.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "9f6312d41087f82261f8b6b689a609e5279aebe04761d8da8c93c66d7d712801",
-    "sourceHash": "adcb46a27a7716a21927155e12be8f947c4b8463314c3704915f14de2fb4455e",
-    "scope": "content",
-    "key": "Scout spotted Vladotas/vilux (possible effort, substance 56).",
-    "source": "Scout spotted Vladotas/vilux (possible effort, substance 56).",
-    "refs": [
-      "changes.42.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "77608e71508fe05a1e806eb006d6327dc8f25ab1c1008a7f86b1499b16b12411",
-    "sourceHash": "e2cd5ddfc5fc6c3b8505bfe1dd294be8000c486264de2ef77a414a31fcec5b33",
-    "scope": "content",
-    "key": "Scout spotted sm-gustavo/Vice (possible effort, substance 64).",
-    "source": "Scout spotted sm-gustavo/Vice (possible effort, substance 64).",
-    "refs": [
-      "changes.60.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -86,138 +48,8 @@
     "refs": [
       "scout.lastSummary"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "923c5ebc0c7c340b7d49e1d4979bf50ff809efa9337349e6f194e76b1ca91baa",
-    "sourceHash": "cb7956c4b510ea6fc0437bffacc97287a414246446d323a727147d649dc5b782",
-    "scope": "content",
-    "key": "Scout spotted monte-alt/vesper (possible effort, substance 98).",
-    "source": "Scout spotted monte-alt/vesper (possible effort, substance 98).",
-    "refs": [
-      "changes.20.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "67dd8f239efd6f6af47e4f1dfbb9cb4c64f632356c5858496e9f55b813ae7bb4",
-    "sourceHash": "a2117a0e665492639524fabed64c3091f8dbf4e4028ca2d103cff3e3f893f6ae",
-    "scope": "content",
-    "key": "Scout spotted gustavsi/X2Linux (possible effort, substance 75).",
-    "source": "Scout spotted gustavsi/X2Linux (possible effort, substance 75).",
-    "refs": [
-      "changes.58.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "3ce46262b94882c110d1b7c48d68c777bda4adccd6895307cb06e42532482054",
-    "sourceHash": "acd99301a2e6778336c650b01e78f55aedffc57f00a933dd8e38f49ea2322b58",
-    "scope": "content",
-    "key": "Scout spotted Lumice/victory-linux (possible effort, substance 74).",
-    "source": "Scout spotted Lumice/victory-linux (possible effort, substance 74).",
-    "refs": [
-      "changes.41.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "2e3a464cd00bc282d76c328507f6e6750ccdebe06fdf95d8cf7b5c333d908a64",
-    "sourceHash": "e8e12fdb09064ed6b2575465b59f8d68d231927dc73480d6a39d9920fe8f0445",
-    "scope": "content",
-    "key": "Scout spotted n-romanovich/NVIctory (possible effort, substance 90).",
-    "source": "Scout spotted n-romanovich/NVIctory (possible effort, substance 90).",
-    "refs": [
-      "changes.25.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "e061beb8d790d8f622153052f4e131094a51534bf25e7f76e6a14cd08e549b2e",
-    "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
-    "scope": "content",
-    "key": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-    "source": "Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-    "refs": [
-      "changes.67.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "13f787bce760f398ed8a5cc5523ff46911ffe329e11dde3dc7cdead9f7c3ec43",
-    "sourceHash": "ed083ab08610f040ee15f228fc83b96c803119a5482fca9027437e99664166da",
-    "scope": "content",
-    "key": "Scout spotted kalinizer/victory-polaris (possible effort, substance 67).",
-    "source": "Scout spotted kalinizer/victory-polaris (possible effort, substance 67).",
-    "refs": [
-      "changes.40.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "59f727b9ac4104688069a740ef5a80c298ccbedb67895ee1d697ae663cf0a65b",
-    "sourceHash": "fc85beccbe563b028f1a4cd7cbbb6b555fe2b1e818868b0fc595cdee0136fdaf",
-    "scope": "content",
-    "key": "Scout spotted naixue2233/Yuk1-nvdia-gta6 (possible effort, substance 83).",
-    "source": "Scout spotted naixue2233/Yuk1-nvdia-gta6 (possible effort, substance 83).",
-    "refs": [
-      "changes.10.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "f05fedc346601c5b8fc79cd6203e4d5bd040df4cfe7d98c0aca28eba03691520",
-    "sourceHash": "17b81f6a836a95abdf85e37e15572013891b213d12d4158a08321697bd96a8ee",
-    "scope": "content",
-    "key": "Scout spotted HyperExtendedReality/strata (possible effort, substance 88).",
-    "source": "Scout spotted HyperExtendedReality/strata (possible effort, substance 88).",
-    "refs": [
-      "changes.59.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "6c5a27373afa7358be8c2087549a2901b2e0e07c0b6ad218a69ef3764d59fe17",
-    "sourceHash": "01b7c8b6d7866e46bae2ffd9093aec7da2a6bc726902583d1b9417e5e26b7dff",
-    "scope": "content",
-    "key": "Scout spotted kotone-catto/VIctory-Intel-Arc (possible effort, substance 68).",
-    "source": "Scout spotted kotone-catto/VIctory-Intel-Arc (possible effort, substance 68).",
-    "refs": [
-      "changes.65.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "4feeaff19f72365e32e7de8787cfee0b6cdea5bc855db766a335a937b83cfde6",
-    "sourceHash": "626654d8c4ff8af69bae1318ca6a4623f4df9bb81bf6ba3a57d3b10f21907577",
-    "scope": "content",
-    "key": "Scout spotted andresgonzalezvaldivia-ui/Hyper30X (possible effort, substance 74).",
-    "source": "Scout spotted andresgonzalezvaldivia-ui/Hyper30X (possible effort, substance 74).",
-    "refs": [
-      "changes.27.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -229,8 +61,8 @@
     "refs": [
       "candidates:RipcuBAN/victory-fork.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -242,8 +74,8 @@
     "refs": [
       "candidates:hello3928/Project-VI.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -255,8 +87,8 @@
     "refs": [
       "candidates:Androtim/MiniVI.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ1QXZ",
     "reviewRequired": false
   },
   {
@@ -268,8 +100,8 @@
     "refs": [
       "candidates:ihaterockstargames/sixth-star.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -281,8 +113,8 @@
     "refs": [
       "candidates:monte-alt/vesper.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -294,8 +126,8 @@
     "refs": [
       "dashboard.0ec5d3548689"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -307,8 +139,8 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.dek"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -320,9 +152,10 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.dek"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "لقد اختفت المستودعات وحساب GitHub خلف مبنى best-rated على مجلسنا، وقد أكدت شركة PortWatch أن GitHub أزالتهما لانتهاكهما شروط خدمتها."
   },
   {
     "id": "a4fd4bbcceec09b9adb5febe70cdc38dd19d96f788430078db2522982b82b200",
@@ -333,9 +166,10 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.3"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "الشفرة خاصة، حتى لا يستطيع أحد خارج المجموعة أن يجربها حتى الآن، إنها ليست على متننا أيضاً:"
   },
   {
     "id": "0671f417ae3f077744a5afb34498462e238bffdb3df386131596c40455e7d19f",
@@ -346,8 +180,8 @@
     "refs": [
       "news:2026-11-25-belobug-way-ahead.body.5"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -359,8 +193,8 @@
     "refs": [
       "candidates:elaboratecl/VIctory-AMD-4K.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ1QXZ",
     "reviewRequired": false
   },
   {
@@ -372,8 +206,8 @@
     "refs": [
       "candidates:Amdavea/belobug-repost.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -385,8 +219,8 @@
     "refs": [
       "candidates:ToLIManl/VIctory-Hydra.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
     "reviewRequired": false
   },
   {
@@ -398,8 +232,8 @@
     "refs": [
       "candidates:Peppacodes/playablegames-peppa.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -411,8 +245,8 @@
     "refs": [
       "candidates:0v3rr/Tequesta.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ4QXZ",
     "reviewRequired": false
   },
   {
@@ -424,8 +258,8 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.1"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": false
   },
   {
@@ -437,8 +271,8 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.2"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -450,8 +284,8 @@
     "refs": [
       "candidates:MacosPorters/betterxen.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -463,8 +297,8 @@
     "refs": [
       "candidates:tiadiff/VIctory-NVIDIA-LowStutter.description"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ5QXZ",
     "reviewRequired": false
   },
   {
@@ -476,8 +310,8 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.0"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -489,8 +323,8 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.2"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -502,8 +336,8 @@
     "refs": [
       "news:2026-11-27-belobug-dmca.body.1"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
     "reviewRequired": false
   },
   {
@@ -515,8 +349,8 @@
     "refs": [
       "news:2026-11-26-multiplayer-running.body.0"
     ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
