@@ -5,8 +5,8 @@
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestDeployedCommitSha": "205a390c3fa1a54929e73777826c4bff34262c18",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T07:23:34.606Z",
-  "lastUpstreamCheckTime": "2026-11-28T07:23:34.606Z",
+  "lastSuccessfulSyncTime": "2026-11-28T07:23:45.023Z",
+  "lastUpstreamCheckTime": "2026-11-28T07:23:45.023Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,7 +14,7 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T07:23:34.606Z"
+    "fetchedAt": "2026-11-28T07:23:45.023Z"
   },
   "records": {
     "new": 0,
@@ -74,12 +74,12 @@
     }
   },
   "translation": {
-    "coverage": 87.04,
-    "translated": 1122,
+    "coverage": 87.43,
+    "translated": 1127,
     "total": 1289,
-    "pending": 155,
+    "pending": 150,
     "completed": 0,
-    "provider": "none"
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "newsTranslation": {
     "requests": 0,
@@ -90,7 +90,7 @@
     "failed": 0,
     "cachedFields": 0,
     "pending": 0,
-    "durationMs": 8,
+    "durationMs": 9,
     "errors": [],
     "cacheHits": 18,
     "cacheMisses": 0,
@@ -112,22 +112,27 @@
     "estimatedCostUSD": 0
   },
   "dynamicTranslation": {
-    "requests": 0,
-    "translatedFields": 0,
-    "failedFields": 0,
+    "requests": 2,
+    "translatedFields": 5,
+    "failedFields": 2,
     "cachedFields": 0,
     "cacheHits": 307,
     "cacheMisses": 106,
     "reusedTranslations": 307,
-    "newlyTranslatedFields": 0,
+    "newlyTranslatedFields": 5,
     "deduplicatedFields": 4,
-    "inputTokens": 0,
-    "outputTokens": 0,
+    "inputTokens": 6064,
+    "outputTokens": 1015,
     "thinkingTokens": 0,
-    "errors": [],
+    "errors": [
+      "protected_facts_or_language_invalid",
+      "all_free_providers_unavailable"
+    ],
+    "model": "partial:groq+cloudflare+zai",
+    "provider": "partial",
     "expiredEntries": 0,
-    "pending": 106,
-    "durationMs": 12,
+    "pending": 101,
+    "durationMs": 17896,
     "cacheHitPercentage": 74.33,
     "avoidedFieldRequests": 311,
     "avoidedAPIRequestsEstimate": {
@@ -145,10 +150,10 @@
       },
       "headlines": {
         "total": 30,
-        "translated": 14,
+        "translated": 19,
         "exempt": 0,
-        "missing": 16,
-        "coverage": 46.67
+        "missing": 11,
+        "coverage": 63.33
       },
       "changes": {
         "total": 12,
@@ -188,14 +193,36 @@
     }
   },
   "providers": {
-    "attempts": 0,
+    "attempts": 3,
     "run": {
-      "actualRequests": 0,
-      "inputTokens": 0,
-      "outputTokens": 0,
+      "actualRequests": 3,
+      "inputTokens": 6064,
+      "outputTokens": 1015,
       "thinkingTokens": 0,
       "unknownUsageRequests": 0,
-      "providerUsage": {},
+      "providerUsage": {
+        "groq": {
+          "requests": 1,
+          "inputTokens": 2034,
+          "outputTokens": 447,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        },
+        "cloudflare": {
+          "requests": 1,
+          "inputTokens": 2228,
+          "outputTokens": 408,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        },
+        "zai": {
+          "requests": 1,
+          "inputTokens": 1802,
+          "outputTokens": 160,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        }
+      },
       "estimatedCostUSD": 0
     },
     "estimatedCostUSD": 0,
@@ -250,270 +277,85 @@
         "available": false
       },
       "groq": {
-        "requests": 15,
+        "requests": 16,
         "successes": 10,
-        "failures": 5,
+        "failures": 6,
         "daily": {
           "day": "2026-11-28",
-          "requests": 15,
-          "tokens": 30197,
+          "requests": 16,
+          "tokens": 32678,
           "reservedUnknownRequests": 3,
           "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436223576,
-          "tokens": 30197
+          "tokens": 32678
         },
         "minute": {
-          "resetAt": 1795847894389,
-          "tokens": 3396
+          "resetAt": 1795850688260,
+          "tokens": 2481
         },
-        "lastRequestAt": 1795847836592,
-        "failureStreak": 1,
+        "lastRequestAt": 1795850628261,
+        "failureStreak": 2,
         "code": "protected_facts_or_language_invalid",
-        "cooldownUntil": 1795847867672,
+        "cooldownUntil": 1795850689848,
         "latencyMs": 989,
-        "available": true
+        "available": false
       },
       "cloudflare": {
-        "requests": 10,
+        "requests": 11,
         "successes": 2,
-        "failures": 8,
+        "failures": 9,
         "daily": {
           "day": "2026-11-28",
-          "requests": 10,
-          "tokens": 21569,
+          "requests": 11,
+          "tokens": 24205,
           "reservedUnknownRequests": 3,
           "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436223992,
-          "tokens": 21569
+          "tokens": 24205
         },
         "minute": {
-          "resetAt": 1795847897673,
-          "tokens": 4375
+          "resetAt": 1795850689850,
+          "tokens": 2636
         },
-        "lastRequestAt": 1795847843857,
-        "failureStreak": 1,
+        "lastRequestAt": 1795850629851,
+        "failureStreak": 2,
         "code": "protected_facts_or_language_invalid",
-        "cooldownUntil": 1795847892281,
+        "cooldownUntil": 1795850701732,
         "latencyMs": 6157,
-        "available": true
+        "available": false
       },
       "zai": {
-        "requests": 8,
+        "requests": 9,
         "successes": 1,
-        "failures": 7,
+        "failures": 8,
         "daily": {
           "day": "2026-11-28",
-          "requests": 8,
-          "tokens": 64507,
+          "requests": 9,
+          "tokens": 66469,
           "reservedUnknownRequests": 3,
           "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436230446,
-          "tokens": 64507
+          "tokens": 66469
         },
         "minute": {
-          "resetAt": 1795847922284,
-          "tokens": 2705
+          "resetAt": 1795850701735,
+          "tokens": 1962
         },
-        "lastRequestAt": 1795847862286,
-        "failureStreak": 5,
+        "lastRequestAt": 1795850641736,
+        "failureStreak": 6,
         "code": "protected_facts_or_language_invalid",
-        "cooldownUntil": 1795848347020,
+        "cooldownUntil": 1795851544617,
         "latencyMs": 2187,
-        "available": true
+        "available": false
       }
     },
     "events": [
-      {
-        "at": "2026-11-28T06:31:33.082Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-11-28T08:00:29.070Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:31:34.444Z",
-        "type": "success",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "latencyMs": 1360,
-        "usage": {
-          "promptTokenCount": 1511,
-          "candidatesTokenCount": 222,
-          "totalTokenCount": 1733
-        },
-        "fallback": false,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:34:41.466Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-11-28T08:00:29.070Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:34:43.028Z",
-        "type": "success",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "latencyMs": 1560,
-        "usage": {
-          "promptTokenCount": 1528,
-          "candidatesTokenCount": 225,
-          "totalTokenCount": 1753
-        },
-        "fallback": false,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:14.389Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-11-28T08:00:29.070Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:15.381Z",
-        "type": "success",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "latencyMs": 989,
-        "usage": {
-          "promptTokenCount": 1187,
-          "candidatesTokenCount": 161,
-          "totalTokenCount": 1348
-        },
-        "fallback": false,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:15.386Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-11-28T08:00:29.070Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:17.671Z",
-        "type": "validated_partial",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "acceptedFields": 3,
-        "remainingFields": 2,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:17.672Z",
-        "type": "fallback",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "code": "protected_facts_or_language_invalid",
-        "field": "summary",
-        "reason": "untranslated_prose",
-        "latencyMs": 1079,
-        "quotaPeriod": null,
-        "resetAt": "2026-11-28T06:37:47.672Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:23.832Z",
-        "type": "success",
-        "provider": "cloudflare",
-        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-        "latencyMs": 6157,
-        "usage": {
-          "promptTokenCount": 1455,
-          "candidatesTokenCount": 216,
-          "totalTokenCount": 1671
-        },
-        "fallback": true,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:23.854Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-11-28T08:00:29.070Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:23.855Z",
-        "type": "cooldown_skip",
-        "provider": "groq",
-        "code": "protected_facts_or_language_invalid",
-        "resetAt": "2026-11-28T06:37:47.672Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:42.281Z",
-        "type": "validated_partial",
-        "provider": "cloudflare",
-        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-        "acceptedFields": 1,
-        "remainingFields": 5,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:42.281Z",
-        "type": "fallback",
-        "provider": "cloudflare",
-        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-        "code": "protected_facts_or_language_invalid",
-        "field": "body.1",
-        "reason": "language",
-        "latencyMs": 18423,
-        "quotaPeriod": null,
-        "resetAt": "2026-11-28T06:38:12.281Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:42.283Z",
-        "type": "cooldown_skip",
-        "provider": "ovh",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-12-31T23:59:57.371Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:47.020Z",
-        "type": "validated_partial",
-        "provider": "zai",
-        "model": "glm-4.7-flash",
-        "acceptedFields": 0,
-        "remainingFields": 5,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:47.020Z",
-        "type": "fallback",
-        "provider": "zai",
-        "model": "glm-4.7-flash",
-        "code": "protected_facts_or_language_invalid",
-        "field": "body.1",
-        "reason": "language",
-        "latencyMs": 4734,
-        "quotaPeriod": null,
-        "resetAt": "2026-11-28T06:45:47.020Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T06:37:47.023Z",
-        "type": "disabled",
-        "provider": "axforge",
-        "reason": "missing_credentials_or_free_account_assurance",
-        "costUSD": 0
-      },
       {
         "at": "2026-11-28T06:37:47.024Z",
         "type": "disabled",
@@ -531,6 +373,168 @@
           "zai"
         ],
         "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:23:48.259Z",
+        "type": "cooldown_skip",
+        "provider": "gemini",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-11-28T08:00:29.070Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:23:49.848Z",
+        "type": "validated_partial",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "acceptedFields": 0,
+        "remainingFields": 6,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:23:49.848Z",
+        "type": "fallback",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "code": "protected_facts_or_language_invalid",
+        "field": "body.0",
+        "reason": "language",
+        "latencyMs": 1586,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T07:24:49.848Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:01.732Z",
+        "type": "validated_partial",
+        "provider": "cloudflare",
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "acceptedFields": 5,
+        "remainingFields": 1,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:01.732Z",
+        "type": "fallback",
+        "provider": "cloudflare",
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "code": "protected_facts_or_language_invalid",
+        "field": "body.2",
+        "reason": "protected_token",
+        "latencyMs": 11881,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T07:25:01.732Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:01.735Z",
+        "type": "cooldown_skip",
+        "provider": "ovh",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-12-31T23:59:57.371Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:04.617Z",
+        "type": "validated_partial",
+        "provider": "zai",
+        "model": "glm-4.7-flash",
+        "acceptedFields": 0,
+        "remainingFields": 1,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:04.617Z",
+        "type": "fallback",
+        "provider": "zai",
+        "model": "glm-4.7-flash",
+        "code": "protected_facts_or_language_invalid",
+        "field": "body.2",
+        "reason": "protected_token",
+        "latencyMs": 2880,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T07:39:04.617Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:04.618Z",
+        "type": "disabled",
+        "provider": "axforge",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:04.618Z",
+        "type": "disabled",
+        "provider": "openrouter",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:04.618Z",
+        "type": "partial_queued",
+        "acceptedFields": 5,
+        "remainingFields": 1,
+        "providersUsed": [
+          "groq",
+          "cloudflare",
+          "zai"
+        ],
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.122Z",
+        "type": "cooldown_skip",
+        "provider": "gemini",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-11-28T08:00:29.070Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.122Z",
+        "type": "cooldown_skip",
+        "provider": "groq",
+        "code": "protected_facts_or_language_invalid",
+        "resetAt": "2026-11-28T07:24:49.848Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.123Z",
+        "type": "cooldown_skip",
+        "provider": "cloudflare",
+        "code": "protected_facts_or_language_invalid",
+        "resetAt": "2026-11-28T07:25:01.732Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.123Z",
+        "type": "cooldown_skip",
+        "provider": "ovh",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-12-31T23:59:57.371Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.123Z",
+        "type": "cooldown_skip",
+        "provider": "zai",
+        "code": "protected_facts_or_language_invalid",
+        "resetAt": "2026-11-28T07:39:04.617Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.123Z",
+        "type": "disabled",
+        "provider": "axforge",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T07:24:06.123Z",
+        "type": "disabled",
+        "provider": "openrouter",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
       }
     ]
   },
@@ -539,25 +543,47 @@
     "newNews": 0,
     "modifiedNews": 0,
     "unchangedNews": 25,
-    "newlyTranslatedFields": 0,
+    "newlyTranslatedFields": 5,
     "reusedTranslations": 325,
     "cacheHits": 325,
     "cacheMisses": 106,
     "deduplicatedFields": 4,
     "avoidedFieldRequests": 329,
     "expiredEntries": 0,
-    "logicalBatches": 0,
+    "logicalBatches": 2,
     "actualAPI": {
-      "actualRequests": 0,
-      "inputTokens": 0,
-      "outputTokens": 0,
+      "actualRequests": 3,
+      "inputTokens": 6064,
+      "outputTokens": 1015,
       "thinkingTokens": 0,
       "unknownUsageRequests": 0,
-      "providerUsage": {},
+      "providerUsage": {
+        "groq": {
+          "requests": 1,
+          "inputTokens": 2034,
+          "outputTokens": 447,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        },
+        "cloudflare": {
+          "requests": 1,
+          "inputTokens": 2228,
+          "outputTokens": 408,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        },
+        "zai": {
+          "requests": 1,
+          "inputTokens": 1802,
+          "outputTokens": 160,
+          "thinkingTokens": 0,
+          "unknownUsageRequests": 0
+        }
+      },
       "estimatedCostUSD": 0
     },
     "pendingNews": 0,
-    "pendingDynamic": 106,
+    "pendingDynamic": 101,
     "estimatedCostUSD": 0,
     "cacheHitPercentage": 75.41,
     "avoidedAPIRequestsEstimate": {
@@ -566,11 +592,11 @@
     }
   },
   "latency": {
-    "sourceCheckMs": 511,
+    "sourceCheckMs": 371,
     "dataSyncMs": 8,
-    "translationMs": 0,
+    "translationMs": 2817,
     "deploymentMs": null,
-    "totalMs": 559
+    "totalMs": 21123
   },
   "apiAnything": {
     "ok": false,

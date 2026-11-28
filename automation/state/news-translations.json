@@ -3022,24 +3022,164 @@
         "source": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9",
         "title": "6da00946fc6d3359888b7d2dd5b0c8a8fd65224f1643b9a1529f14214cdbd9e9"
       }
+    },
+    "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e": {
+      "source": "\"GTA 6 is finally here\": Microsoft's GitHub hyped a tool that turns PS5 games into Windows 11 apps, days after wiping 3,007 GTA 6 PC port repos, then quietly deleted the post",
+      "ar": "\"GTA 6 أخيرًا هنا\": Microsoft's GitHub أثار حماسًا لأداة تتحول PS5 ألعاب إلى Windows 11 تطبيقات، بعد أيام من حذف 3,007 GTA 6 PC منافذ المستودع، ثم حذف المنشور بهدوء",
+      "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T07:24:01.731Z",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "references": {
+        "7c863f891dc899ebfe4ae6e3d28a285c8a312224e55c1320034cae0a648e842a": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
+          "field": "title",
+          "sourceContentHash": "22a52aeb3501d1e565b92406389262450cfd8e204d1c62c486954c4168cf8247",
+          "fieldHashes": {
+            "title": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
+      "sourceContentHash": "22a52aeb3501d1e565b92406389262450cfd8e204d1c62c486954c4168cf8247",
+      "fieldHashes": {
+        "title": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e"
+      }
+    },
+    "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85": {
+      "source": "GTA 6 Port Takedown: 3,007 GitHub Repositories",
+      "ar": "إسقاط منفذ GTA 6: 3,007 GitHub مستودعات",
+      "sourceHash": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T07:24:01.732Z",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "references": {
+        "97044717e1382fe60bd70844b66019f5632a7044d4c6ec0ad7beb7b21487029d": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
+          "field": "title",
+          "sourceContentHash": "c938a60bf86cfbe23695defe6a10ca8187e0cdc8dcf9ee155b0e4f9065f23b01",
+          "fieldHashes": {
+            "title": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
+      "sourceContentHash": "c938a60bf86cfbe23695defe6a10ca8187e0cdc8dcf9ee155b0e4f9065f23b01",
+      "fieldHashes": {
+        "title": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85"
+      }
+    },
+    "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5": {
+      "source": "GitHub deletes post promoting PS5-to-PC project AnyPS5 days after axing 3,000 GTA 6 PC port repos",
+      "ar": "حذف GitHub للمنشور الذي يروج لمشروع PS5-to-PC AnyPS5 بعد أيام من قطع 3,000 GTA 6 PC منافذ المستودع",
+      "sourceHash": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T07:24:01.732Z",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "references": {
+        "3f7a97c385e8c7dfb22f6d6ce37b8b73739575909a3a9eb617541dcd6473114e": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
+          "field": "title",
+          "sourceContentHash": "a6cb54c5b3ce6bd07f48f5cf8c277696fbc4d5c469cb4ecf44228a7f5d12b7c2",
+          "fieldHashes": {
+            "title": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
+      "sourceContentHash": "a6cb54c5b3ce6bd07f48f5cf8c277696fbc4d5c469cb4ecf44228a7f5d12b7c2",
+      "fieldHashes": {
+        "title": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5"
+      }
+    },
+    "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee": {
+      "source": "209GB GTA 6 'PC version' appears on Russian torrent site",
+      "ar": "ظهور \"إصدار PC\" من 209GB GTA 6 على موقع ال토렌트 الروسي",
+      "sourceHash": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T07:24:01.732Z",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "references": {
+        "ebe4d296e18e1934d7fcaf4061a969e4d2fb10597e38a45a6d85131f74f5e9b9": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
+          "field": "title",
+          "sourceContentHash": "1d06234d1584274cacd4023666078c4d990458db3338e78955739abae95c5b35",
+          "fieldHashes": {
+            "title": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
+      "sourceContentHash": "1d06234d1584274cacd4023666078c4d990458db3338e78955739abae95c5b35",
+      "fieldHashes": {
+        "title": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee"
+      }
+    },
+    "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956": {
+      "source": "GTA 6 PC Port Takes a Massive Leap Forward in Just Days",
+      "ar": "تقدم منفذ GTA 6 PC خطوة هائلة في أيام فقط",
+      "sourceHash": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T07:24:01.732Z",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "references": {
+        "45166ab09d7655f9b34acb608cf212c9e743324cde02325c0fcac25028d0982d": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
+          "field": "title",
+          "sourceContentHash": "8d256dfcffc989a6e7ac24c37f8e0393d15feba98641c44a335897198ca802bf",
+          "fieldHashes": {
+            "title": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
+      "sourceContentHash": "8d256dfcffc989a6e7ac24c37f8e0393d15feba98641c44a335897198ca802bf",
+      "fieldHashes": {
+        "title": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956"
+      }
     }
   },
   "pending": {},
   "daily": {
     "day": "2026-11-28",
-    "requests": 25,
-    "accountedTokens": 263856,
-    "inputTokens": 26878,
-    "outputTokens": 7337,
+    "requests": 27,
+    "accountedTokens": 286148,
+    "inputTokens": 32942,
+    "outputTokens": 8352,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 58,
+    "requests": 60,
     "successful": 4,
     "failed": 14,
     "cachedFields": 0,
-    "inputTokens": 69854,
-    "outputTokens": 24832,
+    "inputTokens": 75918,
+    "outputTokens": 25847,
     "thinkingTokens": 21137
   },
   "dynamic": {
@@ -3597,22 +3737,6 @@
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMipgFBVV95cUxOX29ia0x0UTdoNXBoLXdwckxwWmpEb1AzdTRPcFdzNUxMUE16ZnhPZl91bVUzcEdaVE5nNnFGam5YTDVodnhseElCWFptcUhPNjJVdjlQN0Uxd3NibmRpamdIb291VF8tTExidmx3SlUxb0tvM2p6aldzS1VUZ2xvZTJvU3R3Qmw0R1hpWGRIaTZLVUo2UlNjWjlDZ2p6VlVZTWlibi13?oc=5",
-        "field": "title",
-        "sourceHash": "3138a489a87bec84281d10e7aa1642566b693590cbdf78713c845bf7e8bd8dee",
-        "attempts": 3,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxOTlFpaUdVb3FONVRhb3RPUVpxZU5wWXd0ZXYzbUF2Z0NDcjg1U1UzYmJ2LUd4LXBwVVplaEVUWER6ajZ2ek55WEZpbVkzRGxlOEZ3Z2stZG9ZS01DX2p2VmlHdGlfXzhtTjBmM2I4VjdoWkFxNHdWSi11cWNkeEhPTGpKbTBOMDA?oc=5",
-        "field": "title",
-        "sourceHash": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:05:25.799Z"
-      },
       "[\"headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5",
         "field": "title",
@@ -3717,37 +3841,13 @@
         "lastError": "network_or_provider",
         "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
-        "field": "title",
-        "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
-        "attempts": 3,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
-        "field": "title",
-        "sourceHash": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85",
-        "attempts": 3,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
-      },
       "[\"headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
         "field": "title",
         "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
-        "attempts": 3,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
-        "field": "title",
-        "sourceHash": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5",
-        "attempts": 3,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": "2026-11-28T06:57:47.025Z"
+        "attempts": 5,
+        "lastError": "all_free_providers_unavailable",
+        "nextAttemptAt": "2026-11-28T08:44:06.124Z"
       },
       "[\"headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T\",\"title\"]": {
         "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
@@ -3895,11 +3995,11 @@
       }
     },
     "totals": {
-      "requests": 40,
-      "translatedFields": 85,
-      "failedFields": 184,
-      "inputTokens": 45955,
-      "outputTokens": 16239,
+      "requests": 42,
+      "translatedFields": 90,
+      "failedFields": 186,
+      "inputTokens": 52019,
+      "outputTokens": 17254,
       "thinkingTokens": 21137
     }
   },
