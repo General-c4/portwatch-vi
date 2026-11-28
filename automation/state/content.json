@@ -5,8 +5,8 @@
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestDeployedCommitSha": "91da89e38e1c9b3274b272cbf5f49f6f19722b7c",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T06:13:00.647Z",
-  "lastUpstreamCheckTime": "2026-11-28T06:13:00.647Z",
+  "lastSuccessfulSyncTime": "2026-11-28T06:13:12.320Z",
+  "lastUpstreamCheckTime": "2026-11-28T06:13:12.320Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,7 +14,7 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T06:13:00.647Z"
+    "fetchedAt": "2026-11-28T06:13:12.320Z"
   },
   "records": {
     "new": 0,
@@ -79,26 +79,29 @@
     "total": 1289,
     "pending": 157,
     "completed": 0,
-    "provider": "none"
+    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
   },
   "newsTranslation": {
-    "requests": 0,
-    "inputTokens": 0,
-    "outputTokens": 0,
+    "requests": 3,
+    "inputTokens": 3448,
+    "outputTokens": 1345,
     "thinkingTokens": 0,
-    "successful": 0,
-    "failed": 0,
+    "successful": 2,
+    "failed": 1,
     "cachedFields": 0,
-    "pending": 4,
-    "durationMs": 8,
-    "errors": [],
-    "model": "unavailable"
+    "pending": 2,
+    "durationMs": 5100,
+    "errors": [
+      "all_free_providers_unavailable"
+    ],
+    "model": "qwen/qwen3.8-27b",
+    "provider": "groq"
   },
   "dynamicTranslation": {
     "requests": 0,
     "translatedFields": 0,
     "failedFields": 0,
-    "cachedFields": 2,
+    "cachedFields": 0,
     "inputTokens": 0,
     "outputTokens": 0,
     "thinkingTokens": 0,
@@ -158,7 +161,7 @@
     }
   },
   "providers": {
-    "attempts": 0,
+    "attempts": 3,
     "estimatedCostUSD": 0,
     "providers": {
       "ovh": {
@@ -185,52 +188,52 @@
         "available": false
       },
       "gemini": {
-        "requests": 9,
-        "successes": 5,
-        "failures": 4,
+        "requests": 11,
+        "successes": 6,
+        "failures": 5,
         "daily": {
           "day": "2026-11-27",
-          "requests": 9,
-          "tokens": 19146
+          "requests": 11,
+          "tokens": 38168
         },
         "monthly": {
           "resetAt": 1798436203868,
-          "tokens": 19146
+          "tokens": 38168
         },
         "minute": {
-          "resetAt": 1795846162754,
-          "tokens": 2417
+          "resetAt": 1795846465513,
+          "tokens": 13082
         },
-        "lastRequestAt": 1795846103432,
-        "failureStreak": 0,
-        "cooldownUntil": 0,
-        "code": null,
-        "latencyMs": 4135,
-        "available": true
+        "lastRequestAt": 1795846408979,
+        "failureStreak": 1,
+        "cooldownUntil": 1795852829070,
+        "code": "quota_or_rate_limit",
+        "latencyMs": 3444,
+        "available": false
       },
       "groq": {
-        "requests": 9,
-        "successes": 5,
+        "requests": 10,
+        "successes": 6,
         "failures": 4,
         "daily": {
           "day": "2026-11-28",
-          "requests": 9,
-          "tokens": 19228
+          "requests": 10,
+          "tokens": 21590
         },
         "monthly": {
           "resetAt": 1798436223576,
-          "tokens": 19228
+          "tokens": 21590
         },
         "minute": {
-          "resetAt": 1795846167574,
-          "tokens": 2564
+          "resetAt": 1795846469079,
+          "tokens": 2362
         },
-        "lastRequestAt": 1795846107575,
+        "lastRequestAt": 1795846409080,
         "failureStreak": 0,
-        "code": null,
-        "cooldownUntil": 0,
-        "latencyMs": 2934,
-        "available": true
+        "code": "local_minute_limit",
+        "cooldownUntil": 1795846469079,
+        "latencyMs": 1517,
+        "available": false
       },
       "cloudflare": {
         "requests": 8,
@@ -282,82 +285,6 @@
       }
     },
     "events": [
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "cooldown_skip",
-        "provider": "groq",
-        "code": "local_minute_limit",
-        "resetAt": "2026-11-28T05:59:05.521Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "cooldown_skip",
-        "provider": "cloudflare",
-        "code": "protected_facts_or_language_invalid",
-        "resetAt": "2026-11-28T06:00:34.008Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "cooldown_skip",
-        "provider": "ovh",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-12-31T23:59:57.371Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "cooldown_skip",
-        "provider": "zai",
-        "code": "timeout",
-        "resetAt": "2026-11-28T06:00:04.012Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "disabled",
-        "provider": "axforge",
-        "reason": "missing_credentials_or_free_account_assurance",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:58:57.549Z",
-        "type": "disabled",
-        "provider": "openrouter",
-        "reason": "missing_credentials_or_free_account_assurance",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:59:10.563Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "protected_facts_or_language_invalid",
-        "resetAt": "2026-11-28T06:00:16.417Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:59:12.558Z",
-        "type": "success",
-        "provider": "groq",
-        "model": "qwen/qwen3.8-27b",
-        "latencyMs": 1992,
-        "usage": {
-          "promptTokenCount": 2582,
-          "candidatesTokenCount": 836,
-          "totalTokenCount": 3418
-        },
-        "fallback": false,
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:59:23.569Z",
-        "type": "cooldown_skip",
-        "provider": "gemini",
-        "code": "protected_facts_or_language_invalid",
-        "resetAt": "2026-11-28T06:00:16.417Z",
-        "costUSD": 0
-      },
       {
         "at": "2026-11-28T05:59:23.569Z",
         "type": "input_too_large",
@@ -462,15 +389,100 @@
         "quotaPeriod": null,
         "resetAt": "2026-11-28T06:13:58.146Z",
         "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:28.973Z",
+        "type": "success",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "latencyMs": 3444,
+        "usage": {
+          "promptTokenCount": 1703,
+          "candidatesTokenCount": 728,
+          "totalTokenCount": 2431
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:29.077Z",
+        "type": "fallback",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "code": "quota_or_rate_limit",
+        "latencyMs": 90,
+        "quotaPeriod": "day",
+        "resetAt": "2026-11-28T08:00:29.070Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.598Z",
+        "type": "success",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "latencyMs": 1517,
+        "usage": {
+          "promptTokenCount": 1745,
+          "candidatesTokenCount": 617,
+          "totalTokenCount": 2362
+        },
+        "fallback": true,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.600Z",
+        "type": "cooldown_skip",
+        "provider": "gemini",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-11-28T08:00:29.070Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.600Z",
+        "type": "cooldown_skip",
+        "provider": "cloudflare",
+        "code": "protected_facts_or_language_invalid",
+        "resetAt": "2026-11-28T06:16:58.137Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.600Z",
+        "type": "cooldown_skip",
+        "provider": "ovh",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-12-31T23:59:57.371Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.600Z",
+        "type": "cooldown_skip",
+        "provider": "zai",
+        "code": "timeout",
+        "resetAt": "2026-11-28T06:13:58.146Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.601Z",
+        "type": "disabled",
+        "provider": "axforge",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:13:30.601Z",
+        "type": "disabled",
+        "provider": "openrouter",
+        "reason": "missing_credentials_or_free_account_assurance",
+        "costUSD": 0
       }
     ]
   },
   "latency": {
-    "sourceCheckMs": 464,
-    "dataSyncMs": 15,
-    "translationMs": 1,
+    "sourceCheckMs": 342,
+    "dataSyncMs": 11,
+    "translationMs": 12835,
     "deploymentMs": null,
-    "totalMs": 518
+    "totalMs": 18323
   },
   "apiAnything": {
     "ok": false,

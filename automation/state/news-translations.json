@@ -424,26 +424,74 @@
       "source": "Tested on one AMD PC only; nothing on NVIDIA or Intel yet",
       "ar": "تم الاختبار على جهاز AMD PC واحد فقط؛ لا يوجد شيء على NVIDIA أو Intel بعد",
       "model": "groq/qwen/qwen3.8-27b"
+    },
+    "d2da90b4a0e441f36adab996a046abca81bbe35148dbae83e98485c96a988840": {
+      "source": "Exclusive: GitHub removes Belobug's GTA VI build over its Terms of Service",
+      "ar": "حصرًا: منصة GitHub تزيل إصدار لعبة GTA VI الخاص بـ Belobug بسبب انتهاك شروط الخدمة",
+      "model": "gemini-3.6-flash"
+    },
+    "9d3386a9999a40af24e37bcf57a7c4e42f51d2164e3205902633fb33297438ae": {
+      "source": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+      "ar": "حُذف المستودع وحساب GitHub المسؤولان عن الإصدار الأعلى تقييمًا على لوحتنا. وأكد فريق PortWatch أن منصة GitHub أزالتهما لانتهاك شروط الخدمة الخاصة بها.",
+      "model": "gemini-3.6-flash"
+    },
+    "53e20e708fd19474c941f3ac202c8376e37186104087ca1dc80bf25846ad04ab": {
+      "source": "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+      "ar": "سُحب إصدار GTA VI للعبة Belobug من منصة GitHub. إذ توقف تحميل كل من مستودع Belobug/VIctory-Belobug-AMD وحساب Belobug يوم الجمعة، وأكد فريق PortWatch أن منصة GitHub أزالتهما بسبب انتهاك شروط الخدمة الخاصة بها.",
+      "model": "gemini-3.6-flash"
+    },
+    "9377b81ed1ab8540369a59d90ec894034f21abbc3a5beac0d75f11fc2adbed85": {
+      "source": "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
+      "ar": "لقد كان الإصدار الأفضل والأقوى: وهو نسخة متفرعة من مشروع VIctory المطور بواسطة Marvis والمخصص لبطاقات Radeon من شركة AMD، وكان قابلاً للعب بشكل ممتاز بمعدل إطارات يبلغ متوسطه نحو 22 fps دون أي انهيار للبرنامج، وكان من بين أكثر الإصدارات تقدمًا في القصة على لوحة التتبع لدينا. وحصد أكثر من 4,000 نجمة و1,200 نسخة متفرعة، وكان الإصدار الأعلى تقييمًا بين ما نتتبعه بنسبة 91.3%.",
+      "model": "gemini-3.6-flash"
+    },
+    "436d44409f90083790d0589f2967360418db0aecdd36aea4b127e7a3a8c81c2e": {
+      "source": "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
+      "ar": "لم توضح منصة GitHub علنًا أيًا من قواعدها قد انتهكها هذا الإصدار. وعلى عكس إخطارات DMCA التي تنشرها في سجل علني، لا تُنشر عمليات الإزالة المتخذة بموجب شروط الخدمة. وسنحدث هذا المقال إذا علمنا بالمزيد من التفاصيل.",
+      "model": "gemini-3.6-flash"
+    },
+    "812d71deb736cb671b27add81e28ee605c33052c9fec3aaf88f6fdf10ea9732f": {
+      "source": "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware.",
+      "ar": "أصبحت بطاقة Belobug على لوحة التتبع لدينا مصنفة كإصدار محذوف ولم تعد ضمن الترتيب، لتتولى نسخة VIctory-NVIDIA الصدارة بنسبة تقدم بلغت 90%. غير أن التقدم الذي حققه الإصدار المحذوف لا يزال محسوبًا؛ إذ يظل رقمنا الإجمالي ثابتًا عند 91.3%. ونحذر من البحث عن نسخ من كود Belobug: فالنسخ المتفرعة من المستودعات المزالة قد تُحذف هي الأخرى، كما أن التنزيلات غير الرسمية غالبًا ما تحتوي على برمجيات خبيثة.",
+      "model": "gemini-3.6-flash"
+    },
+    "183c0ddd6d4f63ac6767bf6c1ff69f615f467da407f85a356ce453f5beb3ac63": {
+      "source": "Exclusive: GTA VI multiplayer is running on PC",
+      "ar": "حصري: GTA VI يعمل بنظام اللعب الجماعي على PC",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "7c95f51ff618df91f9b56105bdcd96a2ae90968c0b1205bfd34f32bc14cbe4ae": {
+      "source": "TeK's group has players, cars and proximity voice chat working at a stable 25 to 30 fps, on a private fork of CGBJ's build. PortWatch has verified the video is real.",
+      "ar": "يضم فريق TeK لاعبين وسيارات ومحادثة صوتية قريبة تعمل بمعدل إطارات مستقر يتراوح بين 25 و30 fps، وذلك على نسخة متفرعة خاصة من إصدار CGBJ. وقد أكد PortWatch أن الفيديو حقيقي.",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "2d9a16e75f2287e3c11813634fec965a5c8575d9b45457ca9a4a3ef9da72e3e0": {
+      "source": "GTA VI multiplayer is running on PC. On Thursday evening TeK (@TeKGameR950) posted a video on X of what the group calls working multiplayer: player characters and vehicles together in the world, with proximity voice chat, so you hear the players near you. PortWatch has verified that the video is real.",
+      "ar": "يعمل نظام اللعب الجماعي في GTA VI على PC. في مساء يوم الخميس، نشر TeK (@TeKGameR950) مقطع فيديو على منصة X يوضح ما يسميه الفريق باللعب الجماعي الوظيفي: شخصيات اللاعبين والمركبات معًا في العالم، مع ميزة المحادثة الصوتية القريبة التي تتيح سماع اللاعبين القريبين منك. وقد أكد PortWatch أن الفيديو حقيقي.",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "e020cb0dd330c920d654ea66868e588befb8fa56fda1f8e9434810c35cd6b370": {
+      "source": "It runs at a stable 25 to 30 frames per second. The build is a private fork of CGBJ's, the VIctory and XCL build that averages 25 fps in single-player, and the group has only just started on multiplayer.",
+      "ar": "يعمل الإصدار بمعدل إطارات مستقر يتراوح بين 25 و30 إطارًا في الثانية. الإصدار البرمجي هو نسخة متفرعة خاصة من إصدار CGBJ، وهو إصدار VIctory وXCL الذي يحقق متوسط 25 fps في وضع اللعب الفردي، وقد بدأ الفريق للتو العمل على نظام اللعب الجماعي.",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "c6daf53b9b123d2a57e9b2c3fdb3f95d0e03a13e881bc17408b8d3608f92a5c0": {
+      "source": "Until now, every build we track has been single-player: getting GTA VI's story to run on PC at all has taken everyone's effort. Multiplayer means separate copies of the game agreeing on where every player and car is, and no build on our board had shown that before.",
+      "ar": "حتى الآن، كان كل إصدار نتتبعه مخصصًا للعب الفردي: فقد تطلّب تشغيل قصة GTA VI على PC بذل جهود الجميع. اللعب الجماعي يعني أن النسخ المستقلة من اللعبة تتفق على موقع كل لاعب وسيارة، ولم يُظهر أي إصدار على لوحة المتابعة لدينا ذلك من قبل.",
+      "model": "qwen/qwen3.8-27b"
+    },
+    "53a5f3db29d0c05cd65551b5b07aacb3fbe9d18f35545075aa57251206757520": {
+      "source": "The code is private, so nobody outside the group can try it yet. It isn't on our board either: we rate each build on its own, and this one doesn't have ratings of its own yet.",
+      "ar": "الكود برمجي خاص، لذا لا يمكن لأي شخص خارج الفريق تجربته بعد. كما أنه غير مدرج على لوحة المتابعة لدينا: فنحن نقيّم كل إصدار على حدة، وهذا الإصدار لا يملك تقييمات خاصة به بعد.",
+      "model": "qwen/qwen3.8-27b"
     }
   },
   "pending": {
-    "article:2026-11-26-multiplayer-running": {
-      "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
-      "attempts": 7,
-      "nextAttemptAt": "2026-11-28T11:06:17.444Z",
-      "lastError": "request_or_token_limit"
-    },
-    "article:2026-11-27-belobug-dmca": {
-      "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
-      "attempts": 6,
-      "nextAttemptAt": "2026-11-28T08:26:17.444Z",
-      "lastError": "request_or_token_limit"
-    },
     "article:2026-11-25-belobug-way-ahead": {
       "sourceHash": "836dcb42a3730f780f03bbd09963730d845760d65e6b70723902c50d2e8e032c",
-      "attempts": 0,
-      "nextAttemptAt": null,
-      "lastError": "request_or_token_limit"
+      "attempts": 1,
+      "nextAttemptAt": "2026-11-28T06:18:25.503Z",
+      "lastError": "all_free_providers_unavailable"
     },
     "article:2026-11-24-cgbj-in-game": {
       "sourceHash": "933f0de3ef7ffb0ee99ac68d7318fb2b7413ee63bee687c2c207668f21ec48d8",
@@ -454,19 +502,19 @@
   },
   "daily": {
     "day": "2026-11-28",
-    "requests": 16,
-    "accountedTokens": 216698,
-    "inputTokens": 10024,
-    "outputTokens": 3711,
+    "requests": 19,
+    "accountedTokens": 248169,
+    "inputTokens": 13472,
+    "outputTokens": 5056,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 49,
-    "successful": 0,
-    "failed": 13,
+    "requests": 52,
+    "successful": 2,
+    "failed": 14,
     "cachedFields": 0,
-    "inputTokens": 53000,
-    "outputTokens": 21206,
+    "inputTokens": 56448,
+    "outputTokens": 22551,
     "thinkingTokens": 21137
   },
   "dynamic": {
