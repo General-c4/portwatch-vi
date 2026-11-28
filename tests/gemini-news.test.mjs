@@ -28,6 +28,16 @@ const goodClient=calls=>async()=>({model:'gemini-3.8-flash',generate:async reque
 const limits={...newsLimits(),maxInputBytes:60000};
 function setup(){const before=baseline(),data={...before,news:[article(),...before.news]};return{before,data,state:initializeNewsState(before,now),now,limits,sleep:async()=>{}};}
 
+test('an explicit edit translates only changed historical fields, without an archive backfill or duplicate request',async()=>{
+ const before=baseline(),data=structuredClone(before),calls=[];
+ data.news[0].title='GTA VI remains a work in progress.';
+ const result=await syncNews({before,data,state:initializeNewsState(before,now),now,limits,sleep:async()=>{},clientFactory:goodClient(calls)});
+ assert.equal(calls.length,1);assert.deepEqual(Object.keys(calls[0].fields),['title']);
+ assert.deepEqual(Object.keys(result.catalog.articles['article:historical'].fields),['title']);
+ await syncNews({before:data,data,state:result.state,catalog:result.catalog,now,limits,clientFactory:goodClient(calls)});
+ assert.equal(calls.length,1);
+});
+
 test('baseline, history, all non-news and existing reviewed text never reach Gemini',async()=>{
  const setupArgs=setup(),calls=[];setupArgs.data.news.push({...article('old-newly-discovered'),date:'2026-10-01'});
  setupArgs.data.headlines=[{title:'Historical feed item',date:'2026-11-25T17:00:00Z',link:'https://example.com/old'}];

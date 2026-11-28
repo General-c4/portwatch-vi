@@ -8,11 +8,16 @@ const selected=process.env.PW_PROBE_PROVIDERS?.split(',')||['gemini','groq','clo
 for(const id of selected){
  if(!configuration.providers[id])throw new Error('Unknown configured provider');
  const config=structuredClone(configuration);config.order=[id];config.maxAttemptsPerRun=1;
- const router=await createTranslationRouter({config}),started=Date.now();
+ let candidate;
+ const router=await createTranslationRouter({config,onCandidate:value=>{
+  let text=String(value.text||'').slice(0,6000);
+  for(const name of ['GEMINI_API_KEY','GROQ_API_KEY','CLOUDFLARE_API_TOKEN','ZAI_API_KEY'])if(process.env[name])text=text.replaceAll(process.env[name],'[REDACTED]');
+  candidate={text,finishReason:value.finishReason};
+ }}),started=Date.now();
  try{
   const response=await(await router.clientFactory({maxOutputTokens:1024,timeoutMs:60000})).generate(request);
   results.push({provider:id,model:response.model,passed:true,latencyMs:Date.now()-started,translations:validateNewsResponse(request,response.text),usage:response.usage,costUSD:0});
- }catch{results.push({provider:id,passed:false,latencyMs:Date.now()-started,state:router.summary()});}
+ }catch{results.push({provider:id,passed:false,latencyMs:Date.now()-started,candidate,state:router.summary()});}
  await router.save();
 }
 await atomicJSON('.sync/provider-probe.json',{at:new Date().toISOString(),sample:request.fields,results});

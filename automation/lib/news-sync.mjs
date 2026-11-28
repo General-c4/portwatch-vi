@@ -24,9 +24,17 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
  if(state.daily.day!==today)state.daily={day:today,requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0};
  let client,clientLoaded=false;
  const terms=protectedTerms(data),records=newsRecords(data);
+ const previousRecords=new Map(newsRecords(before).map(record=>[record.id,record]));
+ state.updatedFields??={};
  for(const record of records){
-  if(excluded.has(record.id))continue;
-  if(!state.eligible[record.id]){
+  if(excluded.has(record.id)){
+   const old=previousRecords.get(record.id);
+   const changed=old?Object.keys(record.fields).filter(field=>record.fields[field]!==old.fields[field]):[];
+   const approved=[...new Set([...(state.updatedFields[record.id]||[]),...changed])];
+   if(!approved.length)continue;
+   state.updatedFields[record.id]=approved;
+  }
+  if(!state.eligible[record.id]&&!excluded.has(record.id)){
    // A newly discovered historical story is still history, not real-time news.
    if(!/^\d{4}-\d{2}-\d{2}/.test(record.date||'')||record.date.slice(0,10)<state.activatedAt.slice(0,10)||(record.date.length>10&&Date.parse(record.date)<Date.parse(state.activatedAt))||Date.parse(record.date)>Date.parse(now)+86400000){state.excludedIds.push(record.id);excluded.add(record.id);continue;}
    state.eligible[record.id]={firstSeenAt:now};
@@ -37,6 +45,7 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
   const existing=catalog.articles[record.id]||{fields:{}};
   const selected={},nextFields={};
   for(const [key,source]of Object.entries(record.fields)){
+   if(excluded.has(record.id)&&!state.updatedFields[record.id].includes(key))continue;
    if(typeof source!=='string'||!source)continue;
    if(Object.hasOwn(human,source)&&typeof human[source]==='string')continue;
    if(existing.fields[key]?.source===source){nextFields[key]=existing.fields[key];continue;}

@@ -33,7 +33,7 @@ function dailyReset(id,time){
  // Handles Pacific daylight-saving changes without assuming a fixed UTC offset.
  while(dayKey(id,next)===key)next+=60000;return next;
 }
-export async function createTranslationRouter({root='.',config,state,env=process.env,fetchImpl=fetch,clock=Date.now,sleep=wait,clientFactories={}}={}){
+export async function createTranslationRouter({root='.',config,state,env=process.env,fetchImpl=fetch,clock=Date.now,sleep=wait,clientFactories={},onCandidate=()=>{}}={}){
  config??=await readJSON(`${root}/automation/translation-providers.json`);
  state??=await readJSON(`${root}/automation/state/translation-providers.json`,{version:1,providers:{},events:[]});
  state.providers??={};state.events??=[];let attempts=0;
@@ -52,7 +52,8 @@ export async function createTranslationRouter({root='.',config,state,env=process
    for(const id of eligible){
     const policy=POLICY[id],settings=config.providers[id],model=settings.model;
     if(!freePolicy(id,model,env)){event('disabled',{provider:id,reason:'missing_credentials_or_free_account_assurance'});continue;}
-    const now=clock(),p=state.providers[id]??={requests:0,successes:0,failures:0};
+    const now=clock(),p=state.providers[id]??={};
+    for(const key of ['requests','successes','failures'])if(!Number.isFinite(p[key]))p[key]=0;
     const day=dayKey(id,now);if(p.daily?.day!==day)p.daily={day,requests:0,tokens:0};
     if(p.monthly?.resetAt&&now>=p.monthly.resetAt)delete p.monthly;
     p.monthly??={resetAt:now+30*86400000,tokens:0};
@@ -91,14 +92,15 @@ export async function createTranslationRouter({root='.',config,state,env=process
        error.retryMs=retryDelay(result.headers.get('retry-after'),clock());error.dailyResetMs=retryDelay(result.headers.get('x-ratelimit-reset-requests'),clock());error.minuteResetMs=retryDelay(result.headers.get('x-ratelimit-reset-tokens'),clock());
        // Inspect privately for quota classification; never persist or log the response body.
        const detail=JSON.stringify(await result.json().catch(()=>null));
-       if(result.headers.get('x-ratelimit-remaining-requests')==='0'||/daily|per.?day|neurons/i.test(detail)&&id==='cloudflare')error.quotaPeriod='day';
-       if(/monthly|per.?month/i.test(detail))error.quotaPeriod='month';
+       if(result.status===429&&(result.headers.get('x-ratelimit-remaining-requests')==='0'||/daily|per.?day|neurons/i.test(detail)&&id==='cloudflare'))error.quotaPeriod='day';
+       if(result.status===429&&/monthly|per.?month/i.test(detail))error.quotaPeriod='month';
        throw error;
       }
       const json=await result.json(),choice=json.choices?.[0],usage=json.usage||{};
       response={text:choice?.message?.content,finishReason:choice?.finish_reason==='stop'?'STOP':choice?.finish_reason,usage:{...(Number.isFinite(usage.prompt_tokens)?{promptTokenCount:usage.prompt_tokens}:{}),...(Number.isFinite(usage.completion_tokens)?{candidatesTokenCount:usage.completion_tokens}:{}),...(Number.isFinite(usage.total_tokens)?{totalTokenCount:usage.total_tokens}:{})}};
      }
      const usage=response.usage||{},total=usage.totalTokenCount;
+     onCandidate({provider:id,text:response.text,finishReason:response.finishReason});
      if(Number.isFinite(total))for(const bucket of [p.daily,p.monthly,p.minute])bucket.tokens+=Math.max(0,total)-reserve;
      if(!response.text||response.finishReason&&response.finishReason!=='STOP')throw new Error('empty_response');
      const fields=validateNewsResponse(request,response.text);
@@ -110,8 +112,8 @@ export async function createTranslationRouter({root='.',config,state,env=process
      const code=error.message==='free_price_unverified'?'free_price_unverified':newsErrorCode(error),quota=id==='gemini'?googleQuotaInfo(error):null;
      p.failures++;p.failureStreak=(p.failureStreak||0)+1;p.code=code;
      const daily=quota?.quotas.some(q=>q.period==='day')||error.quotaPeriod==='day',monthly=error.quotaPeriod==='month';
-     const delay=Math.max(error.retryMs||0,quota?.retryAfterMs||0,monthly?p.monthly.resetAt-clock():daily?(error.dailyResetMs||dailyReset(id,clock())-clock()):code==='authentication'?3600000:code==='quota_or_rate_limit'?(error.minuteResetMs||60000):Math.min(900000,30000*2**Math.min(p.failureStreak-1,5)));
-     p.cooldownUntil=clock()+delay;event('fallback',{provider:id,model,code,latencyMs:clock()-started,quotaPeriod:monthly?'month':daily?'day':code==='quota_or_rate_limit'?'minute_or_unknown':null,resetAt:new Date(p.cooldownUntil).toISOString()});await save();
+     const delay=Math.max(error.retryMs||0,quota?.retryAfterMs||0,monthly?(error.retryMs||p.monthly.resetAt-clock()):daily?(error.dailyResetMs||dailyReset(id,clock())-clock()):code==='authentication'?3600000:code==='quota_or_rate_limit'?(error.minuteResetMs||60000):Math.min(900000,30000*2**Math.min(p.failureStreak-1,5)));
+     p.cooldownUntil=clock()+delay;event('fallback',{provider:id,model,code,...(/^(?:title|summary|body\.\d+)$/.test(error.field||'')?{field:error.field}:{}),...(/^[a-z_]{1,40}$/.test(error.reason||'')?{reason:error.reason}:{}),latencyMs:clock()-started,quotaPeriod:monthly?'month':daily?'day':code==='quota_or_rate_limit'?'minute_or_unknown':null,resetAt:new Date(p.cooldownUntil).toISOString()});await save();
     }
    }
    await save();throw Object.assign(new Error('all_free_providers_unavailable'),{safeCode:'all_free_providers_unavailable'});
