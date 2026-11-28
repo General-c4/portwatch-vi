@@ -3,10 +3,10 @@
   "latestUpstreamCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestSynchronizedCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
-  "latestDeployedCommitSha": "0bd2e3f66a506787087a967ad749f7371a329758",
+  "latestDeployedCommitSha": "647a6b832176b7be54a6a2222d7a964d8a4470af",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T05:22:20.830Z",
-  "lastUpstreamCheckTime": "2026-11-28T05:22:20.830Z",
+  "lastSuccessfulSyncTime": "2026-11-28T05:45:53.926Z",
+  "lastUpstreamCheckTime": "2026-11-28T05:45:53.926Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,12 +14,12 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T05:22:20.830Z"
+    "fetchedAt": "2026-11-28T05:45:53.926Z"
   },
   "records": {
-    "new": 20,
-    "updated": 24,
-    "deleted": 29,
+    "new": 0,
+    "updated": 0,
+    "deleted": 0,
     "sections": {
       "news": {
         "new": 0,
@@ -28,33 +28,33 @@
       },
       "efforts": {
         "new": 0,
-        "updated": 17,
+        "updated": 0,
         "deleted": 0
       },
       "tools": {
         "new": 0,
-        "updated": 6,
+        "updated": 0,
         "deleted": 0
       },
       "candidates": {
-        "new": 1,
+        "new": 0,
         "updated": 0,
-        "deleted": 1
+        "deleted": 0
       },
       "flagged": {
         "new": 0,
-        "updated": 1,
+        "updated": 0,
         "deleted": 0
       },
       "ignored": {
-        "new": 1,
+        "new": 0,
         "updated": 0,
         "deleted": 0
       },
       "changes": {
-        "new": 15,
+        "new": 0,
         "updated": 0,
-        "deleted": 25
+        "deleted": 0
       },
       "history": {
         "new": 0,
@@ -62,9 +62,9 @@
         "deleted": 0
       },
       "headlines": {
-        "new": 3,
+        "new": 0,
         "updated": 0,
-        "deleted": 3
+        "deleted": 0
       },
       "dmca": {
         "new": 0,
@@ -90,8 +90,9 @@
     "failed": 0,
     "cachedFields": 0,
     "pending": 2,
-    "durationMs": 26,
-    "errors": []
+    "durationMs": 6,
+    "errors": [],
+    "model": "unavailable"
   },
   "dynamicTranslation": {
     "requests": 0,
@@ -102,8 +103,8 @@
     "outputTokens": 0,
     "thinkingTokens": 0,
     "errors": [],
-    "pending": 138,
-    "durationMs": 16,
+    "pending": 134,
+    "durationMs": 8,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -156,17 +157,366 @@
       }
     }
   },
+  "providers": {
+    "attempts": 0,
+    "estimatedCostUSD": 0,
+    "providers": {
+      "ovh": {
+        "requests": 2,
+        "successes": 0,
+        "failures": 2,
+        "daily": {
+          "day": "2026-11-28",
+          "requests": 2,
+          "tokens": 8553
+        },
+        "monthly": {
+          "resetAt": 1798435819387,
+          "tokens": 8553
+        },
+        "minute": {
+          "resetAt": 1795843972930,
+          "tokens": 6690
+        },
+        "lastRequestAt": 1795843912948,
+        "failureStreak": 2,
+        "code": "quota_or_rate_limit",
+        "cooldownUntil": 1798761597371,
+        "available": false
+      },
+      "gemini": {
+        "requests": 4,
+        "successes": 4,
+        "failures": 0,
+        "daily": {
+          "day": "2026-11-27",
+          "requests": 4,
+          "tokens": 3939
+        },
+        "monthly": {
+          "resetAt": 1798436203868,
+          "tokens": 3939
+        },
+        "minute": {
+          "resetAt": 1795844788957,
+          "tokens": 983
+        },
+        "lastRequestAt": 1795844728958,
+        "failureStreak": 0,
+        "cooldownUntil": 0,
+        "code": null,
+        "latencyMs": 8120,
+        "available": true
+      },
+      "groq": {
+        "requests": 4,
+        "successes": 2,
+        "failures": 2,
+        "daily": {
+          "day": "2026-11-28",
+          "requests": 4,
+          "tokens": 4256
+        },
+        "monthly": {
+          "resetAt": 1798436223576,
+          "tokens": 4256
+        },
+        "minute": {
+          "resetAt": 1795844758917,
+          "tokens": 1112
+        },
+        "lastRequestAt": 1795844698918,
+        "failureStreak": 0,
+        "code": null,
+        "cooldownUntil": 0,
+        "latencyMs": 461,
+        "available": true
+      },
+      "cloudflare": {
+        "requests": 3,
+        "successes": 1,
+        "failures": 2,
+        "daily": {
+          "day": "2026-11-28",
+          "requests": 3,
+          "tokens": 3613
+        },
+        "monthly": {
+          "resetAt": 1798436223992,
+          "tokens": 3613
+        },
+        "minute": {
+          "resetAt": 1795844598063,
+          "tokens": 1241
+        },
+        "lastRequestAt": 1795844538064,
+        "failureStreak": 0,
+        "code": null,
+        "cooldownUntil": 0,
+        "latencyMs": 2725,
+        "available": true
+      },
+      "zai": {
+        "requests": 3,
+        "successes": 1,
+        "failures": 2,
+        "daily": {
+          "day": "2026-11-28",
+          "requests": 3,
+          "tokens": 5648
+        },
+        "monthly": {
+          "resetAt": 1798436230446,
+          "tokens": 5648
+        },
+        "minute": {
+          "resetAt": 1795844600793,
+          "tokens": 1360
+        },
+        "lastRequestAt": 1795844540794,
+        "failureStreak": 0,
+        "code": null,
+        "cooldownUntil": 0,
+        "latencyMs": 2187,
+        "available": true
+      }
+    },
+    "events": [
+      {
+        "at": "2026-11-28T05:30:25.845Z",
+        "type": "fallback",
+        "provider": "ovh",
+        "model": "Qwen3.8-27B",
+        "code": "invalid_schema",
+        "latencyMs": 6443,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:30:55.845Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:30:53.989Z",
+        "type": "cooldown_skip",
+        "provider": "ovh",
+        "code": "invalid_schema",
+        "resetAt": "2026-11-28T05:30:55.845Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:31:53.371Z",
+        "type": "fallback",
+        "provider": "ovh",
+        "model": "Qwen3.8-27B",
+        "code": "quota_or_rate_limit",
+        "latencyMs": 418,
+        "quotaPeriod": "minute_or_unknown",
+        "resetAt": "2026-12-31T23:59:57.371Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:37:03.572Z",
+        "type": "success",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "latencyMs": 19414,
+        "usage": {
+          "promptTokenCount": 900,
+          "candidatesTokenCount": 85,
+          "totalTokenCount": 985
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:37:03.988Z",
+        "type": "fallback",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "code": "protected_facts_or_language_invalid",
+        "latencyMs": 410,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:37:33.988Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:37:10.443Z",
+        "type": "fallback",
+        "provider": "cloudflare",
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "code": "invalid_schema",
+        "latencyMs": 6450,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:37:40.443Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:37:25.293Z",
+        "type": "fallback",
+        "provider": "zai",
+        "model": "glm-4.7-flash",
+        "code": "protected_facts_or_language_invalid",
+        "latencyMs": 14846,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:37:55.293Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:39:02.930Z",
+        "type": "success",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "latencyMs": 11930,
+        "usage": {
+          "promptTokenCount": 900,
+          "candidatesTokenCount": 83,
+          "totalTokenCount": 983
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:39:03.349Z",
+        "type": "fallback",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "code": "protected_facts_or_language_invalid",
+        "field": "summary",
+        "reason": "evidence_qualifier",
+        "latencyMs": 414,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:40:03.349Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:39:07.597Z",
+        "type": "fallback",
+        "provider": "cloudflare",
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "code": "invalid_schema",
+        "latencyMs": 4185,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:40:07.597Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:40:00.690Z",
+        "type": "fallback",
+        "provider": "zai",
+        "model": "glm-4.7-flash",
+        "code": "empty_response",
+        "latencyMs": 53089,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:41:00.690Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:42:17.692Z",
+        "type": "success",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "latencyMs": 13498,
+        "usage": {
+          "promptTokenCount": 900,
+          "candidatesTokenCount": 88,
+          "totalTokenCount": 988
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:42:18.061Z",
+        "type": "success",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "latencyMs": 364,
+        "usage": {
+          "promptTokenCount": 1032,
+          "candidatesTokenCount": 78,
+          "totalTokenCount": 1110
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:42:20.790Z",
+        "type": "success",
+        "provider": "cloudflare",
+        "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+        "latencyMs": 2725,
+        "usage": {
+          "promptTokenCount": 1162,
+          "candidatesTokenCount": 79,
+          "totalTokenCount": 1241
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:42:22.982Z",
+        "type": "success",
+        "provider": "zai",
+        "model": "glm-4.7-flash",
+        "latencyMs": 2187,
+        "usage": {
+          "promptTokenCount": 1276,
+          "candidatesTokenCount": 84,
+          "totalTokenCount": 1360
+        },
+        "fallback": false,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:44:58.917Z",
+        "type": "fallback",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "code": "service_unavailable",
+        "latencyMs": 1,
+        "quotaPeriod": null,
+        "resetAt": "2026-11-28T05:45:28.917Z",
+        "costUSD": 0,
+        "faultInjected": true
+      },
+      {
+        "at": "2026-11-28T05:44:59.380Z",
+        "type": "success",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "latencyMs": 461,
+        "usage": {
+          "promptTokenCount": 1032,
+          "candidatesTokenCount": 80,
+          "totalTokenCount": 1112
+        },
+        "fallback": true,
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T05:45:37.080Z",
+        "type": "success",
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "latencyMs": 8120,
+        "usage": {
+          "promptTokenCount": 900,
+          "candidatesTokenCount": 83,
+          "totalTokenCount": 983
+        },
+        "fallback": false,
+        "costUSD": 0
+      }
+    ]
+  },
   "latency": {
-    "sourceCheckMs": 5002,
-    "dataSyncMs": 48,
+    "sourceCheckMs": 655,
+    "dataSyncMs": 9,
     "translationMs": 1,
     "deploymentMs": null,
-    "totalMs": 5233
+    "totalMs": 698
   },
   "apiAnything": {
     "ok": false,
-    "skipped": false,
-    "reason": "Read failed",
+    "skipped": true,
+    "reason": "No content change; read skipped",
     "changes": null,
     "ms": null,
     "repaired": false
@@ -293,7 +643,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"b480a544c8f7052423697a58a0c77ee5b0b0a0c0468146b4ad3cabe638645e9f\"",
+      "etag": "W/\"17d46cba46bab13b75398eae2620b91ab6a19b5800b1f9c3b4d31d421d3e95f9\"",
       "hash": "c0196914ba2c344c1a697983e4387e5b514d427423ead323dcd2cc740f0e603c"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -317,8 +667,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b073365-d5\"",
-      "hash": "27149f227f50e921766f0b68f0be36d81307fdaae7fb68fc0378c133b2465bfa"
+      "etag": "\"6b0a6a82-d5\"",
+      "hash": "73df5067f59364890d8e30871d1c03bbe59952044b51dd79b571b7a562f4bf80"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",

@@ -311,13 +311,13 @@
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
       "attempts": 6,
       "nextAttemptAt": "2026-11-28T05:16:16.387Z",
-      "lastError": "provider_unconfigured"
+      "lastError": "request_or_token_limit"
     },
     "article:2026-11-27-belobug-dmca": {
       "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
       "attempts": 4,
       "nextAttemptAt": "2026-11-28T03:16:16.387Z",
-      "lastError": "provider_unconfigured"
+      "lastError": "request_or_token_limit"
     }
   },
   "daily": {
@@ -1212,38 +1212,6 @@
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-28:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).\",\"text\"]": {
-        "id": "change:2026-11-28:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
-        "field": "text",
-        "sourceHash": "32cd68c631c7d518991c4e27bcd0c1062e6024c0c7a6829aa89e7d15b0cda207",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-28:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).\",\"text\"]": {
-        "id": "change:2026-11-28:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
-        "field": "text",
-        "sourceHash": "489bc4653d3d9229e66242bc7cdb1a4cc58b3aec233e44a66d2128de8f338534",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-28:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).\",\"text\"]": {
-        "id": "change:2026-11-28:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).",
-        "field": "text",
-        "sourceHash": "770807b54969615cc71e890aeb1895a4176894d94ddb98a60acd26b4dbb6b3ce",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-28:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\",\"text\"]": {
-        "id": "change:2026-11-28:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-        "field": "text",
-        "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
         "field": "title",
@@ -1453,5 +1421,6 @@
       "outputTokens": 13157,
       "thinkingTokens": 21137
     }
-  }
+  },
+  "updatedFields": {}
 }
