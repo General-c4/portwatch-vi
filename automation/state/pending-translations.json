@@ -8,190 +8,8 @@
     "refs": [
       "scout.lastSummary"
     ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "66d6cdcbdccdcbeb332b442522092e10be19da8271dc73596e761b725dee1c0c",
-    "sourceHash": "77f24bb0e32cd6e71765d4fa77ec496f6af9e17ed4fdf9ada48f519090a4a1dc",
-    "scope": "content",
-    "key": "Scout spotted gustavsi/X2Linux (possible effort, substance 76).",
-    "source": "Scout spotted gustavsi/X2Linux (possible effort, substance 76).",
-    "refs": [
-      "changes.58.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "ccccc267f59dd7665dc90e872caef634eeaf4ab30e8b873d4787c7df36a3eabf",
-    "sourceHash": "75dd7a9d1743e54d45e149e6b6fbb4d2ffda5bf084b3352ff3f048290fdf285b",
-    "scope": "content",
-    "key": "Scout spotted TaynanGT/Vice-Tay (possible effort, substance 83).",
-    "source": "Scout spotted TaynanGT/Vice-Tay (possible effort, substance 83).",
-    "refs": [
-      "changes.4.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "e9ae2bc7840c2352b946d2b60178c6f2d609c9cd3841cc3eb9addebf5b874c0e",
-    "sourceHash": "1483a75e4c12198209903f47cb37fb2ea7838a8585562c163ede07aeecc572c6",
-    "scope": "content",
-    "key": "Scout spotted thaqifT/Frutiger2 (possible effort, substance 73).",
-    "source": "Scout spotted thaqifT/Frutiger2 (possible effort, substance 73).",
-    "refs": [
-      "changes.30.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "6e97982c7cbc18a257a0cece513c868931e512d6e926a30c76eb2da27bf38ded",
-    "sourceHash": "dd9bd914c98c5ec4f1e38ba3c866b3d5e8e9fac82f262aca639e972c8ad4a0ee",
-    "scope": "content",
-    "key": "Scout spotted perseval-BLR/VIceport (possible effort, substance 64).",
-    "source": "Scout spotted perseval-BLR/VIceport (possible effort, substance 64).",
-    "refs": [
-      "changes.27.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "7c6e12d367149a92b0a61aa82e30899f9b5943e2b4754c69e5cbfa280e785661",
-    "sourceHash": "79be15995edf006647e051cf72d369051556da8264901c36a1024c25aab0ae6d",
-    "scope": "content",
-    "key": "Scout spotted ReZOnGithub/VIctory-lap (possible effort, substance 91).",
-    "source": "Scout spotted ReZOnGithub/VIctory-lap (possible effort, substance 91).",
-    "refs": [
-      "changes.22.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "80a53282d414efe3967026c892a92f512aaca3a6c85194e19737f6913f7c1ff0",
-    "sourceHash": "dd044085043ff2ea86868ccb8bb1f95b81c36207d1c140877892bdd4470c2572",
-    "scope": "content",
-    "key": "Scout spotted ajcorrea/Victory-NVIDIA (possible effort, substance 73).",
-    "source": "Scout spotted ajcorrea/Victory-NVIDIA (possible effort, substance 73).",
-    "refs": [
-      "changes.63.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "12da14a88ed50b4eaadf7207a024b35e72610f1d209f77d4a02e346c104eb95d",
-    "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
-    "scope": "content",
-    "key": "Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-    "source": "Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-    "refs": [
-      "changes.0.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "fb4102f3d77881c31e878bc6c4f6fbf9e0e34ee514a84cf13ad7f62bd76d3f39",
-    "sourceHash": "239d42e3b207ba38b7efb9108ce960b4729ac4ee84e40122f8e0024922ae77b4",
-    "scope": "content",
-    "key": "Scout spotted didgori-1121/VIctory-Lite (possible effort, substance 62).",
-    "source": "Scout spotted didgori-1121/VIctory-Lite (possible effort, substance 62).",
-    "refs": [
-      "changes.26.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "095bcc665ee30498083bb3c544b1d7ddd1290d602d336decd4d2954a246ccf2f",
-    "sourceHash": "e1fce7668b05c5eb33b08e729de02be439f96fface955c12df8eb368c9d5938f",
-    "scope": "content",
-    "key": "Scout spotted kalinizer/victory-polaris (possible effort, substance 70).",
-    "source": "Scout spotted kalinizer/victory-polaris (possible effort, substance 70).",
-    "refs": [
-      "changes.43.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "29ee81f98f3795b7b5327855b072f77ec8c90fdb271f192ded47cc9dcc6e4579",
-    "sourceHash": "480892a16de0e4a1ddda868a18e79701dfabb079b1d9344786c3fe318d8c829d",
-    "scope": "content",
-    "key": "Scout spotted GreyNadeOfficial/TitanLeo (possible effort, substance 91).",
-    "source": "Scout spotted GreyNadeOfficial/TitanLeo (possible effort, substance 91).",
-    "refs": [
-      "changes.45.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "daa67ca0d7c4ac550be381f05df33d350762c984262980bfb9cf61aab45af383",
-    "sourceHash": "a5059dbb1a57ec5505752e418c7a48e6c9a31b3e6af5305b95b4bb863996ce7c",
-    "scope": "content",
-    "key": "Scout spotted HyperExtendedReality/strata (possible effort, substance 90).",
-    "source": "Scout spotted HyperExtendedReality/strata (possible effort, substance 90).",
-    "refs": [
-      "changes.59.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "8ecb51fd3a91d877e371c1838afed32bb8c360c52699c0c13748abcf77292a15",
-    "sourceHash": "ffb03abf8b4784cb4c5de7c10a3aa680f42a0d7602b5c7c8ea82e52eadc7c8fb",
-    "scope": "content",
-    "key": "Scout spotted HXCK3D-off/xbox-gdk-android (possible effort, substance 88).",
-    "source": "Scout spotted HXCK3D-off/xbox-gdk-android (possible effort, substance 88).",
-    "refs": [
-      "changes.60.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "91f3f860c466dc30f200476798cf278d39d07aab7245031953a8334f81baae6a",
-    "sourceHash": "27818dcc463856ed7a81b41cbffcad7217a8c11c50dd6cffa9c6904724babde7",
-    "scope": "content",
-    "key": "Scout spotted Pumo-Ayla/series-relay-launcher (possible effort, substance 58).",
-    "source": "Scout spotted Pumo-Ayla/series-relay-launcher (possible effort, substance 58).",
-    "refs": [
-      "changes.29.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "23f82b59fee445240ce4fa0a8a4ac6049e55a776e38b45b8ea94e5d92be534b9",
-    "sourceHash": "0efe484e6e2803e9989ec69feb8b9ce600c230e953278bf63699b58f546a1a9a",
-    "scope": "content",
-    "key": "Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 67).",
-    "source": "Scout spotted aashiqkhan9568-ctrl/project-leonida-gta-vi-port (possible effort, substance 67).",
-    "refs": [
-      "changes.42.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
+    "attempts": 1,
+    "lastError": "Missing Arabic output",
     "reviewRequired": false
   },
   {
@@ -1239,19 +1057,6 @@
     "reviewRequired": false
   },
   {
-    "id": "b0e88d0da849cd40a801cf57869c76c2ae61f710878cb5a47086792c4b39f890",
-    "sourceHash": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed",
-    "scope": "content",
-    "key": "GitHub deletes X post linking GTA 6 to AnyPS5 emulator push",
-    "source": "GitHub deletes X post linking GTA 6 to AnyPS5 emulator push",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5.title"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
     "id": "910d69d19e8855b1dd0117ba8f60a12b4e0159cd6135742edd8f3993005ff48c",
     "sourceHash": "3e5bc12ded563f930fad379f2e38e4975356dbc0a797f79af8683a45806803c8",
     "scope": "content",
@@ -1351,19 +1156,6 @@
     "source": "CGBJ GTA 6 PC Project Goes Public, Then Disappears Minutes Later",
     "refs": [
       "headlines:https://news.google.com/rss/articles/CBMingFBVV95cUxQdlI5bkdzYXMxamRmeUxkSThzRkVUek1KX2RDUGpKdzhYY25KTDZKVUg4bVNmeE1kd2VocElCZDItV1AzQk9EdUMxMGV1aXd2UUREM2xyekhwNThHY1ktQXE5VnltQlgyX284QzZSOEJkQVZoOHIxUVFhN1BmaENpYnlvN2U0eGdDTjNfVkF1T2FhNnFlelB0UjFLNktWdw?oc=5.title"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "599937c2fef0dd3967a0f59d47b036c163461e30acd48acf7b88771eb20c8fec",
-    "sourceHash": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9",
-    "scope": "content",
-    "key": "GTA 6: The AI race to clone the world's biggest video game for PC",
-    "source": "GTA 6: The AI race to clone the world's biggest video game for PC",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5.title"
     ],
     "attempts": 0,
     "lastError": null,
@@ -1471,32 +1263,6 @@
     "refs": [
       "changes.7.text",
       "changes.76.text"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "4c6a3753c889baee0d4391e7594080de242712bf1c937429a0ea81118cec79a6",
-    "sourceHash": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa",
-    "scope": "content",
-    "key": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
-    "source": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5.title"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "2c45a129fe695037ecb4bab51f99c6cbb15acdb11d16aa6e14d9e9c1a06c444e",
-    "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
-    "scope": "content",
-    "key": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
-    "source": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
-    "refs": [
-      "headlines:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5.title"
     ],
     "attempts": 0,
     "lastError": null,

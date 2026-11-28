@@ -3164,25 +3164,137 @@
       "fieldHashes": {
         "title": "6cab23cd8d119169041b824f30661b90f696216749e961ea0dfc9200e8526956"
       }
+    },
+    "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa": {
+      "source": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
+      "ar": "إجراء إزالة من Rockstar يمحو 3,007 مستودعًا على GitHub لنسخة غير رسمية مخصصة للحاسب الشخصي PC من GTA 6",
+      "sourceHash": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T10:54:29.706Z",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "references": {
+        "bb0d39043404f8e6da949ee76534d2fce1feffd56d2c83bb60d987d4960018b6": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5",
+          "field": "title",
+          "sourceContentHash": "65149cf7b90fd4ed83f2db665b3dddab89f8c1d40f436078e069e7b7d393c4b1",
+          "fieldHashes": {
+            "title": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5",
+      "sourceContentHash": "65149cf7b90fd4ed83f2db665b3dddab89f8c1d40f436078e069e7b7d393c4b1",
+      "fieldHashes": {
+        "title": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa"
+      }
+    },
+    "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed": {
+      "source": "GitHub deletes X post linking GTA 6 to AnyPS5 emulator push",
+      "ar": "GitHub تحذف منشورًا على منصة X يربط GTA 6 بجهود تطوير محاكي AnyPS5",
+      "sourceHash": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T10:54:29.707Z",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "references": {
+        "761489b07e9c6d88f7edd1b51375845b90812644c442950171a699d53ec4dac0": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5",
+          "field": "title",
+          "sourceContentHash": "cfeac84b9b6bc92bd6009f33228eb5dd97a484ecb6c1f1e3dc3761c1d5031c06",
+          "fieldHashes": {
+            "title": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5",
+      "sourceContentHash": "cfeac84b9b6bc92bd6009f33228eb5dd97a484ecb6c1f1e3dc3761c1d5031c06",
+      "fieldHashes": {
+        "title": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed"
+      }
+    },
+    "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9": {
+      "source": "GTA 6: The AI race to clone the world's biggest video game for PC",
+      "ar": "GTA 6: سباق AI لاستنساخ أضخم لعبة فيديو في العالم للحاسب الشخصي PC",
+      "sourceHash": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T10:54:29.707Z",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "references": {
+        "d684cef2529f79b3488bd4608e260e9869309b41da52580ca52c764911dbebbc": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5",
+          "field": "title",
+          "sourceContentHash": "93cf467e92a2257cb4c3fb6e30329bdc78f98dbf0546f19b999bc3b23fb4b179",
+          "fieldHashes": {
+            "title": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5",
+      "sourceContentHash": "93cf467e92a2257cb4c3fb6e30329bdc78f98dbf0546f19b999bc3b23fb4b179",
+      "fieldHashes": {
+        "title": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9"
+      }
+    },
+    "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f": {
+      "source": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
+      "ar": "نسخة مخصصة للحاسب الشخصي PC من GTA 6 مطورة بمساعدة AI-Assisted بواسطة فتى بعمر 15 عامًا تنجو من طلب إزالة قدمته Take-Two",
+      "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
+      "originalLanguage": "en",
+      "targetLanguage": "ar",
+      "status": "validated",
+      "translatedAt": "2026-11-28T10:54:29.708Z",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "references": {
+        "174f22f001c75e0840ac409aee445d3c5865da18e7c8587cdac0344d549adcf4": {
+          "scope": "dynamic",
+          "originalContentId": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
+          "field": "title",
+          "sourceContentHash": "d3da524d9ec5f5f9466110797d61e7829fadd49a403639ef70f18e9f53666e80",
+          "fieldHashes": {
+            "title": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f"
+          },
+          "orphanedAt": null
+        }
+      },
+      "originalContentId": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
+      "sourceContentHash": "d3da524d9ec5f5f9466110797d61e7829fadd49a403639ef70f18e9f53666e80",
+      "fieldHashes": {
+        "title": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f"
+      }
     }
   },
   "pending": {},
   "daily": {
     "day": "2026-11-28",
-    "requests": 27,
-    "accountedTokens": 286148,
-    "inputTokens": 32942,
-    "outputTokens": 8352,
-    "thinkingTokens": 0
+    "requests": 29,
+    "accountedTokens": 311384,
+    "inputTokens": 39642,
+    "outputTokens": 9400,
+    "thinkingTokens": 1975
   },
   "totals": {
-    "requests": 60,
+    "requests": 62,
     "successful": 4,
     "failed": 14,
     "cachedFields": 0,
-    "inputTokens": 75918,
-    "outputTokens": 25847,
-    "thinkingTokens": 21137
+    "inputTokens": 82618,
+    "outputTokens": 26895,
+    "thinkingTokens": 23112
   },
   "dynamic": {
     "version": 1,
@@ -3803,14 +3915,6 @@
         "lastError": "network_or_provider",
         "nextAttemptAt": "2026-11-28T06:08:57.549Z"
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
-        "field": "title",
-        "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
-        "attempts": 5,
-        "lastError": "all_free_providers_unavailable",
-        "nextAttemptAt": "2026-11-28T08:44:06.124Z"
-      },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
         "field": "text",
@@ -3947,45 +4051,21 @@
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5",
-        "field": "title",
-        "sourceHash": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXZjaUhwRG1WMmE1ell5dHpXU3Vyb0JVMk5wbUVMNHR5MTB6aExJYW85S1Q4UE1YRXB4MXN3NFp2cWhiajhGR01FQkNZVnhrQnhVZWZMWTVSdGU2TzU2N0lLOFVyUXhZZnpLMkM1S0ZUX0psNExISTM0eUlodFYyTVJYckF6RTFKNXFNMA?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXZjaUhwRG1WMmE1ell5dHpXU3Vyb0JVMk5wbUVMNHR5MTB6aExJYW85S1Q4UE1YRXB4MXN3NFp2cWhiajhGR01FQkNZVnhrQnhVZWZMWTVSdGU2TzU2N0lLOFVyUXhZZnpLMkM1S0ZUX0psNExISTM0eUlodFYyTVJYckF6RTFKNXFNMA?oc=5",
         "field": "title",
         "sourceHash": "d34572132cdb519579f22b6575a655ab8db3c3c6cd265c8abb1c3bd97dbc0a42",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5",
-        "field": "title",
-        "sourceHash": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "all_free_providers_unavailable",
+        "nextAttemptAt": "2026-11-28T11:04:41.323Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1B4dzM2c0FNSWpFSjlPWTA4TW9Kek1sbW9RV1JETDg0aFd3QUdtR0NZdC1Mc25ZWXVnY3dkTlFINUwxQVJWNURfeHRmZ3JRVnVvMTlNelVVOVdCcU5EQ2taM0RhVVFoZ0J2VURRQmpmMzA0NW8xbld2T1pZdjRoZXM1VUFkSnN4MnpNUURDdjdLNTRTQ3lpZHYtYmo2WklSX1FlQ21wY2Flc0dIamZ4b0NqRTNDbTB6aGQxTzRxLTk?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1B4dzM2c0FNSWpFSjlPWTA4TW9Kek1sbW9RV1JETDg0aFd3QUdtR0NZdC1Mc25ZWXVnY3dkTlFINUwxQVJWNURfeHRmZ3JRVnVvMTlNelVVOVdCcU5EQ2taM0RhVVFoZ0J2VURRQmpmMzA0NW8xbld2T1pZdjRoZXM1VUFkSnN4MnpNUURDdjdLNTRTQ3lpZHYtYmo2WklSX1FlQ21wY2Flc0dIamZ4b0NqRTNDbTB6aGQxTzRxLTk?oc=5",
         "field": "title",
         "sourceHash": "6c7782e81c6407414a388e256afe52ae619c611a168c5e082655b196888267fe",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5",
-        "field": "title",
-        "sourceHash": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
+        "attempts": 2,
+        "lastError": "all_free_providers_unavailable",
+        "nextAttemptAt": "2026-11-28T11:04:41.323Z"
       },
       "[\"headline:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzY3elB3UGgweUR3c2NYbU1RbXl3WF92LXNFM044ZXR0N1NIUV81eGYzelkxM296WFBSNDZ2QlBJTmhUYzl4TkptSGxDTHFkSXB0cHhseXY3djJpSTRtLW9IQXN1WGo4M2lNekhnZGhqc1lINE1xcUpTSEwxdUx2elZQZEQ2eVhjUjFQcV9RWjB5MjZNMVE?oc=5\",\"title\"]": {
         "id": "headline:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzY3elB3UGgweUR3c2NYbU1RbXl3WF92LXNFM044ZXR0N1NIUV81eGYzelkxM296WFBSNDZ2QlBJTmhUYzl4TkptSGxDTHFkSXB0cHhseXY3djJpSTRtLW9IQXN1WGo4M2lNekhnZGhqc1lINE1xcUpTSEwxdUx2elZQZEQ2eVhjUjFQcV9RWjB5MjZNMVE?oc=5",
@@ -4013,12 +4093,12 @@
       }
     },
     "totals": {
-      "requests": 42,
-      "translatedFields": 90,
-      "failedFields": 186,
-      "inputTokens": 52019,
-      "outputTokens": 17254,
-      "thinkingTokens": 21137
+      "requests": 44,
+      "translatedFields": 94,
+      "failedFields": 190,
+      "inputTokens": 58719,
+      "outputTokens": 18302,
+      "thinkingTokens": 23112
     }
   },
   "updatedFields": {

@@ -24,278 +24,105 @@
       "cooldownUntil": 1798761597371
     },
     "gemini": {
-      "requests": 11,
+      "requests": 12,
       "successes": 6,
-      "failures": 5,
-      "daily": {
-        "day": "2026-11-27",
-        "requests": 11,
-        "tokens": 38168,
-        "reservedUnknownRequests": 3,
-        "reservedUnknownTokens": 7502
-      },
-      "monthly": {
-        "resetAt": 1798436203868,
-        "tokens": 38168
-      },
-      "minute": {
-        "resetAt": 1795846465513,
-        "tokens": 13082
-      },
-      "lastRequestAt": 1795846408979,
-      "failureStreak": 1,
-      "cooldownUntil": 1795852829070,
-      "code": "quota_or_rate_limit",
-      "latencyMs": 3444
-    },
-    "groq": {
-      "requests": 16,
-      "successes": 10,
       "failures": 6,
       "daily": {
         "day": "2026-11-28",
-        "requests": 16,
-        "tokens": 32678,
+        "requests": 1,
+        "tokens": 4143
+      },
+      "monthly": {
+        "resetAt": 1798436203868,
+        "tokens": 42311
+      },
+      "minute": {
+        "resetAt": 1795863318671,
+        "tokens": 4143
+      },
+      "lastRequestAt": 1795863258680,
+      "failureStreak": 2,
+      "cooldownUntil": 1795863329708,
+      "code": "protected_facts_or_language_invalid",
+      "latencyMs": 3444
+    },
+    "groq": {
+      "requests": 17,
+      "successes": 10,
+      "failures": 7,
+      "daily": {
+        "day": "2026-11-28",
+        "requests": 17,
+        "tokens": 34358,
         "reservedUnknownRequests": 3,
         "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436223576,
-        "tokens": 32678
+        "tokens": 34358
       },
       "minute": {
-        "resetAt": 1795850688260,
-        "tokens": 2481
+        "resetAt": 1795863329709,
+        "tokens": 1680
       },
-      "lastRequestAt": 1795850628261,
-      "failureStreak": 2,
+      "lastRequestAt": 1795863269711,
+      "failureStreak": 3,
       "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795850689848,
+      "cooldownUntil": 1795863390649,
       "latencyMs": 989
     },
     "cloudflare": {
-      "requests": 11,
+      "requests": 12,
       "successes": 2,
-      "failures": 9,
+      "failures": 10,
       "daily": {
         "day": "2026-11-28",
-        "requests": 11,
-        "tokens": 24205,
+        "requests": 12,
+        "tokens": 26039,
         "reservedUnknownRequests": 3,
         "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436223992,
-        "tokens": 24205
+        "tokens": 26039
       },
       "minute": {
-        "resetAt": 1795850689850,
-        "tokens": 2636
+        "resetAt": 1795863330650,
+        "tokens": 1834
       },
-      "lastRequestAt": 1795850629851,
-      "failureStreak": 2,
+      "lastRequestAt": 1795863270651,
+      "failureStreak": 3,
       "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795850701732,
+      "cooldownUntil": 1795863395571,
       "latencyMs": 6157
     },
     "zai": {
-      "requests": 9,
+      "requests": 10,
       "successes": 1,
-      "failures": 8,
+      "failures": 9,
       "daily": {
         "day": "2026-11-28",
-        "requests": 9,
-        "tokens": 66469,
+        "requests": 10,
+        "tokens": 68535,
         "reservedUnknownRequests": 3,
         "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436230446,
-        "tokens": 66469
+        "tokens": 68535
       },
       "minute": {
-        "resetAt": 1795850701735,
-        "tokens": 1962
+        "resetAt": 1795863335572,
+        "tokens": 2066
       },
-      "lastRequestAt": 1795850641736,
-      "failureStreak": 6,
+      "lastRequestAt": 1795863275573,
+      "failureStreak": 7,
       "code": "protected_facts_or_language_invalid",
-      "cooldownUntil": 1795851544617,
+      "cooldownUntil": 1795864179815,
       "latencyMs": 2187
     }
   },
   "events": [
-    {
-      "at": "2026-11-28T05:55:25.800Z",
-      "type": "disabled",
-      "provider": "openrouter",
-      "reason": "missing_credentials_or_free_account_assurance",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:56:16.418Z",
-      "type": "fallback",
-      "provider": "gemini",
-      "model": "gemini-3.6-flash",
-      "code": "protected_facts_or_language_invalid",
-      "field": "body.2",
-      "reason": "untranslated_prose",
-      "latencyMs": 37603,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T06:00:16.417Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:56:18.495Z",
-      "type": "fallback",
-      "provider": "groq",
-      "model": "qwen/qwen3.8-27b",
-      "code": "protected_facts_or_language_invalid",
-      "field": "body.10",
-      "reason": "protected_token",
-      "latencyMs": 2074,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T05:57:18.495Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:56:34.008Z",
-      "type": "fallback",
-      "provider": "cloudflare",
-      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-      "code": "protected_facts_or_language_invalid",
-      "field": "body.0",
-      "reason": "protected_token",
-      "latencyMs": 15510,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T06:00:34.008Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:56:34.009Z",
-      "type": "cooldown_skip",
-      "provider": "ovh",
-      "code": "quota_or_rate_limit",
-      "resetAt": "2026-12-31T23:59:57.371Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:04.012Z",
-      "type": "fallback",
-      "provider": "zai",
-      "model": "glm-4.7-flash",
-      "code": "timeout",
-      "latencyMs": 90002,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T06:00:04.012Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:04.014Z",
-      "type": "disabled",
-      "provider": "axforge",
-      "reason": "missing_credentials_or_free_account_assurance",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:04.014Z",
-      "type": "disabled",
-      "provider": "openrouter",
-      "reason": "missing_credentials_or_free_account_assurance",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:05.521Z",
-      "type": "cooldown_skip",
-      "provider": "gemini",
-      "code": "protected_facts_or_language_invalid",
-      "resetAt": "2026-11-28T06:00:16.417Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:07.314Z",
-      "type": "success",
-      "provider": "groq",
-      "model": "qwen/qwen3.8-27b",
-      "latencyMs": 1791,
-      "usage": {
-        "promptTokenCount": 2451,
-        "candidatesTokenCount": 775,
-        "totalTokenCount": 3226
-      },
-      "fallback": false,
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "cooldown_skip",
-      "provider": "gemini",
-      "code": "protected_facts_or_language_invalid",
-      "resetAt": "2026-11-28T06:00:16.417Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "cooldown_skip",
-      "provider": "cloudflare",
-      "code": "protected_facts_or_language_invalid",
-      "resetAt": "2026-11-28T06:00:34.008Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "cooldown_skip",
-      "provider": "ovh",
-      "code": "quota_or_rate_limit",
-      "resetAt": "2026-12-31T23:59:57.371Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "cooldown_skip",
-      "provider": "zai",
-      "code": "timeout",
-      "resetAt": "2026-11-28T06:00:04.012Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "disabled",
-      "provider": "axforge",
-      "reason": "missing_credentials_or_free_account_assurance",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:18.528Z",
-      "type": "disabled",
-      "provider": "openrouter",
-      "reason": "missing_credentials_or_free_account_assurance",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:31.539Z",
-      "type": "cooldown_skip",
-      "provider": "gemini",
-      "code": "protected_facts_or_language_invalid",
-      "resetAt": "2026-11-28T06:00:16.417Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:31.539Z",
-      "type": "cooldown_skip",
-      "provider": "groq",
-      "code": "local_minute_limit",
-      "resetAt": "2026-11-28T05:59:05.521Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:58:31.539Z",
-      "type": "cooldown_skip",
-      "provider": "cloudflare",
-      "code": "protected_facts_or_language_invalid",
-      "resetAt": "2026-11-28T06:00:34.008Z",
-      "costUSD": 0
-    },
     {
       "at": "2026-11-28T05:58:31.539Z",
       "type": "cooldown_skip",
@@ -1040,6 +867,183 @@
       "provider": "openrouter",
       "reason": "missing_credentials_or_free_account_assurance",
       "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:29.708Z",
+      "type": "validated_partial",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "acceptedFields": 4,
+      "remainingFields": 2,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:29.708Z",
+      "type": "fallback",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.1",
+      "reason": "untranslated_prose",
+      "latencyMs": 11026,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T10:55:29.708Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:30.649Z",
+      "type": "validated_partial",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "acceptedFields": 0,
+      "remainingFields": 2,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:30.649Z",
+      "type": "fallback",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.1",
+      "reason": "untranslated_prose",
+      "latencyMs": 938,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T10:56:30.649Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:35.571Z",
+      "type": "validated_partial",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "acceptedFields": 0,
+      "remainingFields": 2,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:35.571Z",
+      "type": "fallback",
+      "provider": "cloudflare",
+      "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.1",
+      "reason": "protected_token",
+      "latencyMs": 4919,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T10:56:35.571Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:35.572Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:39.815Z",
+      "type": "validated_partial",
+      "provider": "zai",
+      "model": "glm-4.7-flash",
+      "acceptedFields": 0,
+      "remainingFields": 2,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:39.815Z",
+      "type": "fallback",
+      "provider": "zai",
+      "model": "glm-4.7-flash",
+      "code": "protected_facts_or_language_invalid",
+      "field": "body.1",
+      "reason": "untranslated_prose",
+      "latencyMs": 4241,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T11:09:39.815Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:39.816Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:39.816Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:39.816Z",
+      "type": "partial_queued",
+      "acceptedFields": 4,
+      "remainingFields": 2,
+      "providersUsed": [
+        "gemini",
+        "groq",
+        "cloudflare",
+        "zai"
+      ],
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.321Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T10:55:29.708Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.321Z",
+      "type": "cooldown_skip",
+      "provider": "groq",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T10:56:30.649Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.322Z",
+      "type": "cooldown_skip",
+      "provider": "cloudflare",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T10:56:35.571Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.322Z",
+      "type": "cooldown_skip",
+      "provider": "ovh",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-12-31T23:59:57.371Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.322Z",
+      "type": "cooldown_skip",
+      "provider": "zai",
+      "code": "protected_facts_or_language_invalid",
+      "resetAt": "2026-11-28T11:09:39.815Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.322Z",
+      "type": "disabled",
+      "provider": "axforge",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T10:54:41.322Z",
+      "type": "disabled",
+      "provider": "openrouter",
+      "reason": "missing_credentials_or_free_account_assurance",
+      "costUSD": 0
     }
   ],
   "pendingFields": {
@@ -1082,6 +1086,34 @@
       "provider": "cloudflare",
       "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
       "translatedAt": "2026-11-28T07:24:01.732Z"
+    },
+    "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa": {
+      "source": "Rockstar Takedown Wipes 3,007 GitHub Repos of Unofficial GTA 6 PC Port",
+      "ar": "إجراء إزالة من Rockstar يمحو 3,007 مستودعًا على GitHub لنسخة غير رسمية مخصصة للحاسب الشخصي PC من GTA 6",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "translatedAt": "2026-11-28T10:54:29.706Z"
+    },
+    "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed": {
+      "source": "GitHub deletes X post linking GTA 6 to AnyPS5 emulator push",
+      "ar": "GitHub تحذف منشورًا على منصة X يربط GTA 6 بجهود تطوير محاكي AnyPS5",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "translatedAt": "2026-11-28T10:54:29.707Z"
+    },
+    "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9": {
+      "source": "GTA 6: The AI race to clone the world's biggest video game for PC",
+      "ar": "GTA 6: سباق AI لاستنساخ أضخم لعبة فيديو في العالم للحاسب الشخصي PC",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "translatedAt": "2026-11-28T10:54:29.707Z"
+    },
+    "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f": {
+      "source": "A 15-Year-Old’s AI-Assisted GTA 6 PC Port Survived a Take-Two Takedown",
+      "ar": "نسخة مخصصة للحاسب الشخصي PC من GTA 6 مطورة بمساعدة AI-Assisted بواسطة فتى بعمر 15 عامًا تنجو من طلب إزالة قدمته Take-Two",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "translatedAt": "2026-11-28T10:54:29.708Z"
     }
   },
   "recoveredReports": [
