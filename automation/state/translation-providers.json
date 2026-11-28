@@ -49,29 +49,29 @@
       "latencyMs": 3444
     },
     "groq": {
-      "requests": 11,
-      "successes": 7,
+      "requests": 12,
+      "successes": 8,
       "failures": 4,
       "daily": {
         "day": "2026-11-28",
-        "requests": 11,
-        "tokens": 23315,
+        "requests": 12,
+        "tokens": 25048,
         "reservedUnknownRequests": 3,
         "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436223576,
-        "tokens": 23315
+        "tokens": 25048
       },
       "minute": {
-        "resetAt": 1795847313722,
-        "tokens": 1725
+        "resetAt": 1795847553083,
+        "tokens": 1733
       },
-      "lastRequestAt": 1795847253723,
+      "lastRequestAt": 1795847493083,
       "failureStreak": 0,
       "code": null,
       "cooldownUntil": 0,
-      "latencyMs": 953
+      "latencyMs": 1360
     },
     "cloudflare": {
       "requests": 8,
@@ -125,25 +125,6 @@
     }
   },
   "events": [
-    {
-      "at": "2026-11-28T05:46:41.277Z",
-      "type": "fallback",
-      "provider": "gemini",
-      "model": "gemini-3.6-flash",
-      "code": "protected_facts_or_language_invalid",
-      "field": "body.0",
-      "reason": "untranslated_prose",
-      "latencyMs": 23812,
-      "quotaPeriod": null,
-      "resetAt": "2026-11-28T05:47:11.277Z",
-      "costUSD": 0
-    },
-    {
-      "at": "2026-11-28T05:46:41.278Z",
-      "type": "input_too_large",
-      "provider": "groq",
-      "costUSD": 0
-    },
     {
       "at": "2026-11-28T05:47:01.858Z",
       "type": "fallback",
@@ -998,6 +979,28 @@
         "promptTokenCount": 1495,
         "candidatesTokenCount": 230,
         "totalTokenCount": 1725
+      },
+      "fallback": false,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T06:31:33.082Z",
+      "type": "cooldown_skip",
+      "provider": "gemini",
+      "code": "quota_or_rate_limit",
+      "resetAt": "2026-11-28T08:00:29.070Z",
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T06:31:34.444Z",
+      "type": "success",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "latencyMs": 1360,
+      "usage": {
+        "promptTokenCount": 1511,
+        "candidatesTokenCount": 222,
+        "totalTokenCount": 1733
       },
       "fallback": false,
       "costUSD": 0

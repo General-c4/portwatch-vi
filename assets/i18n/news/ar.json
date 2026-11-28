@@ -491,7 +491,7 @@
       "fields": {
         "text": {
           "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
-          "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، وصرّف اللعبة بدقة منخفضة ثم قم برفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة منخفضة الدقة غير الواضحة تُفقد نقاط التصيير.\n\nما ينقص What هو صورة تبدو كجودة وحدة التحكم: إضاءة كاملة، تتبع أشعة، وخامات حادة. وكما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي."
+          "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، قم بتصيير اللعبة بدقة منخفضة ثم ارفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة الضبابية منخفضة الدقة تُفقد نقاط التصيير.\n\nما ينقصنا هو صورة تبدو كجهاز الألعاب: إضاءة كاملة، تتبع للأشعة، وخامات حادة. كما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي."
         }
       }
     }
