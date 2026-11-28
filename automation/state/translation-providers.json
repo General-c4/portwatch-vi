@@ -24,50 +24,50 @@
       "cooldownUntil": 1798761597371
     },
     "gemini": {
-      "requests": 3,
-      "successes": 3,
+      "requests": 4,
+      "successes": 4,
       "failures": 0,
       "daily": {
         "day": "2026-11-27",
-        "requests": 3,
-        "tokens": 2956
+        "requests": 4,
+        "tokens": 3939
       },
       "monthly": {
         "resetAt": 1798436203868,
-        "tokens": 2956
+        "tokens": 3939
       },
       "minute": {
-        "resetAt": 1795844584009,
-        "tokens": 988
+        "resetAt": 1795844788957,
+        "tokens": 983
       },
-      "lastRequestAt": 1795844524192,
+      "lastRequestAt": 1795844728958,
       "failureStreak": 0,
       "cooldownUntil": 0,
       "code": null,
-      "latencyMs": 13498
+      "latencyMs": 8120
     },
     "groq": {
-      "requests": 3,
-      "successes": 1,
+      "requests": 4,
+      "successes": 2,
       "failures": 2,
       "daily": {
         "day": "2026-11-28",
-        "requests": 3,
-        "tokens": 3144
+        "requests": 4,
+        "tokens": 4256
       },
       "monthly": {
         "resetAt": 1798436223576,
-        "tokens": 3144
+        "tokens": 4256
       },
       "minute": {
-        "resetAt": 1795844597694,
-        "tokens": 1110
+        "resetAt": 1795844758917,
+        "tokens": 1112
       },
-      "lastRequestAt": 1795844537696,
+      "lastRequestAt": 1795844698918,
       "failureStreak": 0,
       "code": null,
       "cooldownUntil": 0,
-      "latencyMs": 364
+      "latencyMs": 461
     },
     "cloudflare": {
       "requests": 3,
@@ -295,6 +295,46 @@
         "promptTokenCount": 1276,
         "candidatesTokenCount": 84,
         "totalTokenCount": 1360
+      },
+      "fallback": false,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:44:58.917Z",
+      "type": "fallback",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "code": "service_unavailable",
+      "latencyMs": 1,
+      "quotaPeriod": null,
+      "resetAt": "2026-11-28T05:45:28.917Z",
+      "costUSD": 0,
+      "faultInjected": true
+    },
+    {
+      "at": "2026-11-28T05:44:59.380Z",
+      "type": "success",
+      "provider": "groq",
+      "model": "qwen/qwen3.8-27b",
+      "latencyMs": 461,
+      "usage": {
+        "promptTokenCount": 1032,
+        "candidatesTokenCount": 80,
+        "totalTokenCount": 1112
+      },
+      "fallback": true,
+      "costUSD": 0
+    },
+    {
+      "at": "2026-11-28T05:45:37.080Z",
+      "type": "success",
+      "provider": "gemini",
+      "model": "gemini-3.6-flash",
+      "latencyMs": 8120,
+      "usage": {
+        "promptTokenCount": 900,
+        "candidatesTokenCount": 83,
+        "totalTokenCount": 983
       },
       "fallback": false,
       "costUSD": 0
