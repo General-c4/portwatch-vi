@@ -33,7 +33,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
    if(cached?.source===source&&typeof cached.ar==='string'&&!editorialQualityIssue(source,cached.ar)){entry.fields[field]={source,ar:cached.ar};delete d.pending[key];stats.cachedFields++;continue;}
    if(d.pending[key]?.sourceHash!==hash(source))d.pending[key]={id:record.id,field,sourceHash:hash(source),attempts:0,lastError:null,nextAttemptAt:null};
    const pending=d.pending[key];
-   if(!pending.nextAttemptAt||Date.parse(pending.nextAttemptAt)<=Date.parse(now)||clientFactory.multiProvider&&pending.lastError==='quota_or_rate_limit')tasks.push({key,record,field,source,pending});
+   if(clientFactory.multiProvider||!pending.nextAttemptAt||Date.parse(pending.nextAttemptAt)<=Date.parse(now))tasks.push({key,record,field,source,pending});
   }
   if(Object.keys(entry.fields).length)catalog.articles[record.id]=entry;else delete catalog.articles[record.id];
  }
@@ -55,13 +55,14 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
   stats.model=client.model;
   for(let attempt=0;attempt<2&&batch.length;attempt++){
    const request=makeRequest(batch),reservation=Buffer.byteLength(SYSTEM+request.prompt)+1024+limits.maxOutputTokens;
-   if(stats.requests>=limits.maxRequests||state.daily.requests>=limits.dailyRequests||state.daily.accountedTokens+reservation>limits.dailyTokens){for(const t of batch)t.pending.lastError='request_or_token_limit';stop=true;break;}
+   if(stats.requests>=limits.maxRequests||!clientFactory.multiProvider&&(state.daily.requests>=limits.dailyRequests||state.daily.accountedTokens+reservation>limits.dailyTokens)){for(const t of batch)t.pending.lastError='request_or_token_limit';stop=true;break;}
    await sleep(Math.max(0,requestIntervalMs-(Date.now()-lastRequestAt)));lastRequestAt=Date.now();
    stats.requests++;d.totals.requests++;state.totals.requests++;state.daily.requests++;state.daily.accountedTokens+=reservation;
    for(const t of batch)t.pending.attempts++;
    let output;
    try{
     const response=await client.generate(request),usage=response.usage||{};
+    stats.model=response.model||client.model;stats.provider=response.provider||'gemini';
     delete d.providerBlock;
     for(const[key,field]of[['inputTokens','promptTokenCount'],['outputTokens','candidatesTokenCount'],['thinkingTokens','thoughtsTokenCount']])for(const target of[stats,d.totals,state.daily,state.totals])target[key]+=Number(usage[field])||0;
     if(Number.isFinite(usage.totalTokenCount))state.daily.accountedTokens+=Math.max(0,usage.totalTokenCount)-reservation;
@@ -74,7 +75,7 @@ export async function syncDynamicEditorial({data,pinned,state,catalog,human={},a
      const blockedAt=Date.parse(now)+Math.round(performance.now()-started),delay=Math.max(daily?3600000:60000,quota?.retryAfterMs||0);
      d.providerBlock={code,blockedAt:new Date(blockedAt).toISOString(),nextAttemptAt:new Date(blockedAt+delay).toISOString(),quota};
     }
-    if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model'].includes(code))stop=true;
+    if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model','all_free_providers_unavailable'].includes(code))stop=true;
    }
    const failed=[];
    for(const[tIndex,t]of batch.entries()){

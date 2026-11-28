@@ -8,7 +8,7 @@ export function newsRecords(data){
  return [...articles,...headlines];
 }
 export function initializeNewsState(data,now=new Date().toISOString()){
- return {version:1,activatedAt:now,excludedIds:newsRecords(data).map(n=>n.id),eligible:{},cache:{},pending:{},daily:{day:now.slice(0,10),requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0},totals:{requests:0,successful:0,failed:0,cachedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0}};
+ return {version:1,activatedAt:now,excludedIds:newsRecords(data).map(n=>n.id),baselineHashes:Object.fromEntries(newsRecords(data).map(r=>[r.id,Object.fromEntries(Object.entries(r.fields).map(([k,v])=>[k,hash(v)]))])),eligible:{},cache:{},pending:{},daily:{day:now.slice(0,10),requests:0,accountedTokens:0,inputTokens:0,outputTokens:0,thinkingTokens:0},totals:{requests:0,successful:0,failed:0,cachedFields:0,inputTokens:0,outputTokens:0,thinkingTokens:0}};
 }
 const bounded=(value,fallback,min,max)=>{const n=Number(value);return Number.isFinite(n)?Math.max(min,Math.min(max,Math.trunc(n))):fallback;};
 export function newsLimits(env=process.env){
@@ -29,7 +29,8 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
  for(const record of records){
   if(excluded.has(record.id)){
    const old=previousRecords.get(record.id);
-   const changed=old?Object.keys(record.fields).filter(field=>record.fields[field]!==old.fields[field]):[];
+   const baseline=state.baselineHashes?.[record.id];
+   const changed=Object.keys(record.fields).filter(field=>baseline?baseline[field]!==hash(record.fields[field]):old&&record.fields[field]!==old.fields[field]);
    const approved=[...new Set([...(state.updatedFields[record.id]||[]),...changed])];
    if(!approved.length)continue;
    state.updatedFields[record.id]=approved;
@@ -58,7 +59,7 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
   else delete catalog.articles[record.id];
   if(!Object.keys(selected).length){delete state.pending[record.id];continue;}
   state.pending[record.id]=pending;
-  if(pending.nextAttemptAt&&Date.parse(pending.nextAttemptAt)>Date.parse(now)&&!(clientFactory.multiProvider&&pending.lastError==='quota_or_rate_limit'))continue;
+  if(!clientFactory.multiProvider&&pending.nextAttemptAt&&Date.parse(pending.nextAttemptAt)>Date.parse(now))continue;
   const blockedUntil=geminiRetryAt(state);
   if(!clientFactory.multiProvider&&Date.parse(blockedUntil)>Date.parse(now)){pending.lastError='quota_or_rate_limit';pending.nextAttemptAt=blockedUntil;stats.errors.push('quota_or_rate_limit');continue;}
   const request=prepareNewsRequest(selected,record.sourceUrls,terms);
@@ -72,11 +73,12 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
   if(!client){pending.lastError='provider_unconfigured';continue;}
   stats.model=client.model;
   for(let attempt=0;attempt<limits.maxAttempts;attempt++){
-   if(stats.requests>=limits.maxRequests||state.daily.requests>=limits.dailyRequests||state.daily.accountedTokens+reservation>limits.dailyTokens){pending.lastError='request_or_token_limit';break;}
+   if(stats.requests>=limits.maxRequests||!clientFactory.multiProvider&&(state.daily.requests>=limits.dailyRequests||state.daily.accountedTokens+reservation>limits.dailyTokens)){pending.lastError='request_or_token_limit';break;}
    stats.requests++;state.daily.requests++;state.totals.requests++;state.daily.accountedTokens+=reservation;pending.attempts++;
    let usage;
    try{
     const response=await client.generate(request);
+    stats.model=response.model||client.model;stats.provider=response.provider||'gemini';
     usage=response.usage||{};
     const input=Number(usage.promptTokenCount)||0,output=Number(usage.candidatesTokenCount)||0,thinking=Number(usage.thoughtsTokenCount)||0;
     for(const target of [stats,state.daily,state.totals]){target.inputTokens+=input;target.outputTokens+=output;target.thinkingTokens+=thinking;}
@@ -91,7 +93,7 @@ export async function syncNews({before,data,state,catalog={version:1,articles:{}
     const delay=Math.min(86400000,300000*2**Math.min(pending.attempts-1,8));
     pending.nextAttemptAt=new Date(Date.parse(now)+(code==='quota_or_rate_limit'?Math.max(3600000,delay):['authentication','unsupported_model','invalid_request_or_model'].includes(code)?86400000:delay)).toISOString();
     // Quota/auth/model failures wait persistently; do not hammer them in the same run.
-    if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model'].includes(code))break;
+    if(['quota_or_rate_limit','authentication','unsupported_model','invalid_request_or_model','all_free_providers_unavailable'].includes(code))break;
     if(attempt+1<limits.maxAttempts&&stats.requests<limits.maxRequests)await sleep(1000*2**attempt);
    }
   }

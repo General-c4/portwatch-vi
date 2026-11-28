@@ -37,7 +37,7 @@ export function protectedTerms(data){
 export function protectText(source,terms=[],options={}){
  const escaped=terms.map(v=>v.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
  const compound=options.nested?'(?!)':'\\b[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+\\b';
- const pattern=new RegExp(`<\\/?[A-Za-z][^>]*>|https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|@[A-Za-z0-9_.-]+|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b[A-Z][a-z]+[A-Z][A-Za-z0-9]*\\b|${compound}|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
+ const pattern=new RegExp(`<\\/?[A-Za-z][^>]*>|https?:\\/\\/[^\\s<>]+|\\{[A-Za-z_][\\w]*\\}|\\x60[^\\x60]+\\x60|@[A-Za-z0-9_.-]+|[A-Za-z0-9_.-]+\\/[A-Za-z0-9_.-]+|${escaped.join('|')||'(?!)'}|\\b(?!(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Today|Yesterday|Tomorrow)\\b)[A-Z][A-Za-z0-9_.-]+(?=['’]s\\b)|\\b[A-Z][a-z]+[A-Z][A-Za-z0-9]*\\b|${compound}|\\b[A-Z][A-Z0-9_.+-]{1,}\\b|\\b\\d+(?:[.,:/–-]\\d+)*(?:%|[A-Za-z]+)?`,'g');
  const tokens=[];const text=source.replace(pattern,original=>{
   if(!options.nested&&options.isProseCompound?.(original)){
    const nested=protectText(original,terms,{nested:true});
@@ -58,7 +58,9 @@ export function restoreTranslation(source,translated,tokens){
   value=value.replace(token,original);
  }
  if(/ZXQ\d+QXZ/.test(value)||!/[\u0600-\u06ff]/.test(value))throw new Error('Missing Arabic output');
- let residue=value;for(const{original}of tokens)residue=residue.split(original).join('');
+ // Remove longest identifiers first: removing a developer name inside owner/repository
+ // first would leave a false English residue and reject a correctly preserved repository.
+ let residue=value;for(const original of [...new Set(tokens.map(t=>t.original))].sort((a,b)=>b.length-a.length))residue=residue.split(original).join('');
  if(tokens.length&&/[A-Za-z]{2,}/.test(residue))throw new Error('Untranslated prose requires review');
  const numbers=s=>[...s.matchAll(/\d+(?:[.,]\d+)*/g)].map(m=>m[0]).sort();
  if(JSON.stringify(numbers(source))!==JSON.stringify(numbers(value)))throw new Error('Numeric facts changed');

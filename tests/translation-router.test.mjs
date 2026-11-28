@@ -6,6 +6,7 @@ import {join} from 'node:path';
 import {createTranslationRouter,freePolicy,retryDelay} from '../automation/lib/translation-router.mjs';
 import {prepareNewsRequest,NEWS_RESPONSE_SCHEMA} from '../automation/lib/gemini-news.mjs';
 import {protectText,restoreTranslation} from '../automation/lib/translations.mjs';
+import {editorialQualityIssue} from '../assets/js/editorial-quality.js';
 const request=()=>prepareNewsRequest({title:'New project update'},[]);
 const good=()=>({text:JSON.stringify({title:'تحديث جديد للمشروع',summary:'',body:[],sourceUrls:[]}),finishReason:'STOP',usage:{promptTokenCount:20,candidatesTokenCount:10,totalTokenCount:30}});
 const env={GEMINI_API_KEY:'test-secret-gemini',GROQ_API_KEY:'test-secret-groq',AXFORGE_API_KEY:'test-secret-axforge',TRANSLATION_FREE_PROVIDERS:'gemini,groq,axforge'};
@@ -68,4 +69,18 @@ test('valid Arabic non-confirmation remains negative, and HTML markup is protect
  const source='A <strong>new</strong> update',protectedValue=protectText(source);
  assert.deepEqual(protectedValue.tokens.map(t=>t.original),['<strong>','</strong>']);
  assert.equal(restoreTranslation(source,`تحديث ${protectedValue.tokens[0].token}جديد${protectedValue.tokens[1].token}`,protectedValue.tokens),'تحديث <strong>جديد</strong>');
+ const overlapping=protectText('Belobug and Belobug/VIctory-Belobug-AMD',['Belobug']);
+ assert.equal(restoreTranslation('Belobug and Belobug/VIctory-Belobug-AMD',`${overlapping.tokens[0].token} ومستودع ${overlapping.tokens[1].token}`,overlapping.tokens),'Belobug ومستودع Belobug/VIctory-Belobug-AMD');
+ const names=prepareNewsRequest({title:"Marvis's build and TeK (@TeKGameR950) on Friday"},[]);
+ assert(names.protectedFields.title.tokens.some(t=>t.original==='Marvis'));assert(names.protectedFields.title.tokens.some(t=>t.original==='@TeKGameR950'));
+ assert.equal(editorialQualityIssue('The repository and GitHub account are gone.','اختفى المستودع وحساب GitHub.'),null);
+ assert.equal(editorialQualityIssue('The repository and GitHub account are gone.','اختفى المستودع الخاص بحساب GitHub.'),'repository_account_omitted');
+});
+test('valid partial fields persist across restart and only rejected fields reach the next provider',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'pw-partial-')),input=prepareNewsRequest({title:'New project update',summary:'New project summary'},[]),c=config();c.order=['gemini'];
+ const first=await setup({root,config:c,clientFactories:{gemini:async()=>({generate:async()=>({...good(),text:JSON.stringify({title:'تحديث جديد للمشروع',summary:'New project summary',body:[],sourceUrls:[]})})})}});
+ await assert.rejects((await first.clientFactory({maxOutputTokens:64})).generate(input));assert.equal(Object.keys(first.state.pendingFields).length,1);
+ c.order=['groq'];let fields;
+ const restarted=await setup({root,config:c,clientFactories:{groq:async()=>({generate:async req=>{fields=Object.keys(req.fields);return {...good(),text:JSON.stringify({title:'',summary:'ملخص جديد للمشروع',body:[],sourceUrls:[]})};}})}});
+ const response=await(await restarted.clientFactory({maxOutputTokens:64})).generate(input);assert.deepEqual(fields,['summary']);assert.equal(JSON.parse(response.text).title,'تحديث جديد للمشروع');assert.equal(JSON.parse(response.text).summary,'ملخص جديد للمشروع');assert.equal(Object.keys(restarted.state.pendingFields).length,0);
 });

@@ -1,10 +1,9 @@
 // Browser fixtures only: no upstream changes, API calls or published fictional stories.
 import {chromium} from 'playwright';
-import {spawn} from 'node:child_process';
-import {readFile} from 'node:fs/promises';
+import {readFile,stat} from 'node:fs/promises';
 import http from 'node:http';
 import assert from 'node:assert/strict';
-import {resolve} from 'node:path';
+import {resolve,extname,sep} from 'node:path';
 import {buildSite} from '../scripts/lib/site-build.mjs';
 const root=resolve(process.argv[2]||'_site'),data=JSON.parse(await readFile('data/tracker.json','utf8'));
 const story={id:'gemini-news-fixture',date:new Date().toISOString().slice(0,10),category:'Port',title:'Gemini fixture news at 12.5 fps',dek:'A synthetic unverified report.',body:['This test report is unverified and not confirmed.'],sources:[{outlet:'Fixture',url:'https://example.com/news-test',title:'Fixture source'}]};
@@ -14,7 +13,11 @@ const headline={title:story.title,date:new Date().toISOString(),link:'https://ex
 const fields={title:story.title,summary:story.dek,'body.0':story.body[0]};
 const catalog={version:1,articles:{[`article:${story.id}`]:{fields:Object.fromEntries(Object.entries(fields).map(([key,source])=>[key,{source,ar:ar[key]}]))},[`headline:${headline.link}`]:{fields:{title:{source:headline.title,ar:'عنوان إخباري تجريبي'}}}}};
 const files=buildSite(data).files;
-const server=spawn(process.env.PW_PYTHON||'python',['-m','http.server','8098','--bind','127.0.0.1','--directory',root],{stdio:'ignore',windowsHide:true});
+const server=http.createServer(async(req,res)=>{try{
+ let file=resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(file!==root&&!file.startsWith(root+sep))throw Error();if((await stat(file)).isDirectory())file=resolve(file,'index.html');
+ const body=await readFile(file);res.writeHead(200,{'Content-Type':({'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg'})[extname(file)]||'application/octet-stream'});res.end(body);
+}catch{res.writeHead(404);res.end();}});
+await new Promise(r=>server.listen({port:8098,host:'127.0.0.1',backlog:512},r));
 let browser;
 try{
  const ready=()=>new Promise(resolve=>{const req=http.get('http://127.0.0.1:8098/',r=>{r.resume();r.on('end',()=>resolve(r.statusCode===200));});req.on('error',()=>resolve(false));});
@@ -53,4 +56,4 @@ try{
   assert.deepEqual(errors,[]);await context.close();
  }
  console.log('Passed scoped news card, feed, modal, article, archive, source links, project isolation and English fallback at desktop/mobile widths.');
-}finally{await browser?.close();server.kill();}
+}finally{await browser?.close();await new Promise(r=>server.close(r));}

@@ -1,0 +1,194 @@
+{
+  "commit": "44fb31266d74bb65d52fb6420e6db20c4ed1ed0a",
+  "hashes": {
+    "article:2026-11-25-belobug-way-ahead": {
+      "title": "f5c6d90a824032689e820b6c5a23c8a20d1e070bc11fc669e1a1491ebdd1184c",
+      "summary": "bc4a59e2e0e64e749cd6c2dfa647ffb66cd5cf23c2ae5b29e19086db302f54af",
+      "body.0": "38d1826c49d5b8a7fe1259d0ae949d6c8b884d17e24e8bfd3aa852f19b3a17eb",
+      "body.1": "d40fc52f6f50d8463078b56521a053a11332e4fbff566ac8d132c0495b352266",
+      "body.2": "764c083bc0e9f375241b84dd146aac3658ebe6f96bf5fe2c00ab26cc5f1970ab",
+      "body.3": "5d573c1435d4ce659cd5b75ec852f83602c8f9eafea13ac7e34852e965adc31c",
+      "body.4": "ecc9fc8d747948d5ca2d97d7be2ad5e9b47b63786307b1fd6102284aa1852835"
+    },
+    "article:2026-11-25-zettrox-no-crashes": {
+      "title": "10449dac584c235da49466ceb206cbf3cc1b247916c2d45e2e2f1e37b93f9da2",
+      "summary": "ee8f63378f24c3712ebce28f1469a521e76e50310a520801a7f8d179c7501c6d",
+      "body.0": "68e179f67894608c26ce03f5a093f0fe28ff3048af211ec49c35fd6c73288ee9",
+      "body.1": "be73b912a16e6bf830d289f184291232a7d9d5937dfe00c2a489c9c986efc2a4",
+      "body.2": "02e2b68346a8431184332ec170edf7189a56db73f593d779f8bb5129daf5c67b",
+      "body.3": "e760c028841178dfe1c587a63c5a4cc55db7b21a7d02c88e06d13a787e6f6d26"
+    },
+    "article:2026-11-25-prologue-gone-fishing": {
+      "title": "99724249aedcec49956e209fb6ecea0d3632e9b0ebca57d83bec1ad5dd8e5c8e",
+      "summary": "6ccfdef0791e0f8fdce7e672f1958cb42e3236cec6c7d8abdf380f109a799827",
+      "body.0": "9f66ee27199ed4710f36afda1681f7130e62dabaebbb3063b3a3a9e4d9da74f5",
+      "body.1": "0783cc00e6c62940e518b3f1ab63731ffc280307973347240a1890004bff0273",
+      "body.2": "4693876e0dbc9ef0d5df5622e4d056e0e7421a1a3de6b9167b85d86a3a6f40cf",
+      "body.3": "e6caf606d3bcf93c214ca8aae15d6275c44df0fa59fea61f7a2b4fc90cd8ee36"
+    },
+    "article:2026-11-24-take-two-dmca-leonida-forks": {
+      "title": "c5d7d52d843bc3243a0d963e23895e66f6893c5b0e42a19a5d98ec2725eefc25",
+      "summary": "a714727ebdf81c11eaa133df89eeaf1a3dbe8f068c8343fada1e450272667f9e",
+      "body.0": "5e96bef8ab510d12099dd35621da047d59ec418c444d677405945726ab33dcee",
+      "body.1": "a55b6fb274b4a217c05ec655c14e36a4c90ac70bb7ed281b0d0c037d71e62344",
+      "body.2": "03c5eb7cc3d9a23da815a178e41c2dbb42c06d365ae751346437f78896fe414c",
+      "body.3": "c874be32acf592479d6504ee9a4785d9801d03c2f076c1dbee9b456a28efcd45"
+    },
+    "article:2026-11-24-new-progress-scale": {
+      "title": "6e9737297686120d01d6d9e8f2222465457fe96b3d3d95498388e81c87eb1b7a",
+      "summary": "2393c807a45a78a82eccac47c3b7504dddca8179e53f58a53146005334c05123",
+      "body.0": "0e81a953e6d4ece4ec2284fae734d0ed16e2e2f01404293f97097560119f053e",
+      "body.1": "6d716f1f2f391065cebe4aef485069d92393696625d4c2d895f26a9af475568d",
+      "body.2": "1b6d22644be674d9ed80a3833bb3723f3dc2e08d3b9105ff2a4b01887ba00f63",
+      "body.3": "f7f105b412e42adc84e3ff091608c9a7c2e9789314fa095fbd01d18aadfa8f8a",
+      "body.4": "19e1da9b6d9ecc4fc5ca40fa52c9de292f87ff552d6d4f577d34050034245251"
+    },
+    "article:2026-11-24-omonkey-shaders-prison": {
+      "title": "898fffd62597b7f6006fd2965dfd750fb8a199421a060b6061cda10b68de9241",
+      "summary": "cdb5f02ab58fe76835227f69faad445b0ae0a77e0cde198310739810c4bb7777",
+      "body.0": "b6be0cde051cc71ccb14adef36c5004cfe015c297febfb32013b50ae14586058",
+      "body.1": "543059a6291ea16de1815fbd059174fcb8dafad834c35a4768a8efefcbd5179b",
+      "body.2": "5ccbd41fece1f908c4a82339bfc3cc763835a4b34793b185b16f9d107ceccc27",
+      "body.3": "a72d7e9210363d7d2203ab0c47720fdc4edf38f47b2a533aaac710a52eda1696",
+      "body.4": "c98e0a36e89605f73e2389fd54f03820780ae5ade2672a75f3ab7d5601718acb"
+    },
+    "article:2026-11-24-cgbj-in-game": {
+      "title": "3ff6d5e87d0076bd99c4e5b25d93820d69e78ca06306dff7dc7fbc6335cc3e88",
+      "summary": "c7e786e2c51ffb32939eb1bb4398ac21b71d161ebb51b2cd437c448c068eff02",
+      "body.0": "4e2bdf3d2a6c28b9d4e992b1b9bb21a06750437bc4131cef3faed16ec9e52b3d",
+      "body.1": "5879c90d26d07234708e29d12f58f95215187a2d13ad9b9a0dd03fdaf6daf5a1",
+      "body.2": "9201e5b3f3f0082544bff18d89e4ca7a6fa459958aa2837efc8a83752a96f678",
+      "body.3": "aa9da3cfbd1a1153c72b33e4cc9f803041c8b8360201703737c6fa08ec372a21",
+      "body.4": "0cf6aa2184156242f36b63e75375151bb42746a5f9f65c07313e772716946e52"
+    },
+    "article:2026-11-24-xcl-30fps-in-game": {
+      "title": "4cef0282ee7f2bf3a045095a0559aa6c9c5c3efc7f497f6b71098402fed88fa3",
+      "summary": "e358a06a2ffaa6938eefa1c08e7ff692c709284756b9cf7f1d91152567d06edc",
+      "body.0": "38318c641397a773b5f4546d38c66fc3a1c0f31426f59c54a12ae099b078758a",
+      "body.1": "4c9f3993d00ebac8a80290b7f036f208f5dcfec9e6975067447306b2accf91d0",
+      "body.2": "d9206f329017d8e5f4c75af56366f0cb5a53c4bb6f926c23d527f117eecf94c0",
+      "body.3": "114e8e5bc4cae536953832871bcf640b79d2da378016ba8f659a9b96a922ea47"
+    },
+    "article:2026-11-24-tuxbox-first-frame-victory-world": {
+      "title": "f7be068578b99a8eb872f78598c6ac6474220f6e4b1d7914a416212d600e0c4f",
+      "summary": "b304a284f6be062daf4f42f592edb108f1ef1cde489e319842d85d23b98264e3",
+      "body.0": "06c0240a07153fc3c4e41e2a61369775ad25b9d87f094f03a33632fac615c9a9",
+      "body.1": "4c4a12ce5c8c4f1956abaaeecbde38a2c2ddfafd9ca7f3d00436329c675eb70a",
+      "body.2": "eb3fe386c5199f5c365671e31ad829a02483d0c626b05da1c776c2e1186b57c0"
+    },
+    "article:2026-11-23-leonida-nuked": {
+      "title": "79c9a5920dfa4b26554b8ea0aa9f9080ebe825b890005235fa9c21afb3707d4e",
+      "summary": "739922df87770557440f3f67ba68124d5e40e1ecf7d309a959c292e3f3aeb1cc",
+      "body.0": "59c5bf3ea4172b7bc20537ed7eec4c7f1d8ae7a609c617b9af09ee86e822f289",
+      "body.1": "c10ff1bd41a1aea978c3047d1c95fd0e9aff41edcf9554271cdae006e6f214ad",
+      "body.2": "0d1cc0482345ece31968fdbd8e3af898347e6781f2c203d1d54968b54caf95af",
+      "body.3": "c6c19c217b8a65c03dc05d2d5dacc2f04c0a753fcfba49d773372e7261b81c2f",
+      "body.4": "0340eff090897901893adc20275a18c157f9b734e12ba836fa15e7acccc295e6"
+    },
+    "article:2026-11-23-leonida-discord-down": {
+      "title": "23236f877d8af600218a4459c0b6d7f189efc6e7248d438eb9ee8251a8d00a12",
+      "summary": "fcd32b29b9a577f1480acf3b8136589974d83869327db30cd901f334b34b4414",
+      "body.0": "f2fe8b137d37cdecb1bfe13813d94cc98e535728d067a5110444aa05f7903adf",
+      "body.1": "10551f2938d5f447d1896c58ea46759cd9a6993d0c4b03ba32a95fe3bfedde9c",
+      "body.2": "f2d4cda92dddcea8c2597f495d4bbb3afc932dcd4eacc55559f2ccbec29bf411",
+      "body.3": "25b04922c0b449816fccaeed400e07aebd1978568fcfa96ba4b9deabba39a9a1"
+    },
+    "article:2026-11-23-marvis-menus-stream": {
+      "title": "ede14c191c957560ab44ee172d4d01e22556d46ae02bb31622e822956b8d3b4a",
+      "summary": "94ce1fe1ff9b64e50c3d61b472c244a7e98ba210190984b958a48d7749e516dc",
+      "body.0": "c1dc6a40fc5e544ccc4ace24ca775fde47adc1c92a99ca7f8fe3bb4c417339ff",
+      "body.1": "153e5d71e1833c942bb9f2d6d044e8f7e4e21aacf3d0795ddad151d9ad5929e2",
+      "body.2": "55952520d054368fb600df8467594586dae95d184f2c760f33f769c0b1abc6d5",
+      "body.3": "e4a20fce65396e8f434b70ccd0a95602ca06663377ce6356195b8e1c6bdd5cd3"
+    },
+    "article:2026-11-23-leonida-exe-runs": {
+      "title": "8fb22e11d9c46e4ffd0a4e152e75c402b8e4e33eabc1235f2197f549897416b7",
+      "summary": "c53354805f449b65028bf4da59e99e24d330d7129b692dad3d4a98fe677ef797",
+      "body.0": "6069b4df3921fdc7190fb2a8a2fb2ba8212297aed971b1b97f4be8f8b3fa36db",
+      "body.1": "949b5a098105e4a3e39378389a24e0693d7618244c7bff80c151390ca51d7c42",
+      "body.2": "fa09f6e573574abe0365f49feecf5fdccf46d22d7e665774e596c62595c364b7",
+      "body.3": "8e6b708a4c0d201e09afdfcb93b73a5a515fd202b7c19e0aebb8da72f46172f0"
+    },
+    "article:2026-11-23-exe-readme": {
+      "title": "853c9827b4a1bf46afb477104da70cd02526cc2673c97f2b9223f1adfdac998f",
+      "summary": "652573c86499788e415c8dd2819787697c7763ef7bbb0ed949dcc78d3239151b",
+      "body.0": "d91881fcfee9a7f63f00fb2e08084752a2dfdd067cb4c2e77fabef642d43fc57",
+      "body.1": "06ec6df6a832752a261ac3d2b8e5b5564dbac8805dcd6eab5325f7ea6f03f640",
+      "body.2": "4c9f3e28b44e2565943a93b4fa40c375d165ac7c7fe6e7451a10426146dec4d3",
+      "body.3": "b243d81bfd2d6453292c4483162c273d64cb7bf192a4a2dc4487962934077024",
+      "body.4": "4e614b883f75f1f1fc28aaf693b68c6faa0f98c2f59e5ce0086e70a4775b2cf4",
+      "body.5": "eac17908041c2d9aec2df4662f5661a5f89132bc1b4696fc0fee134e885f6d39"
+    },
+    "article:2026-11-23-exe-released": {
+      "title": "92d6bc3f601bcf99bf5f135b67b721696f0456575923abc0e493f0a275ff20a4",
+      "summary": "96f79f4d5435406e8ca949776f574d8de0181900caadb3a29fc98717cf559844",
+      "body.0": "2419ab4486d9a6e8ab6b8ae67ce4e8136452dc3a21cfc9ba3eef053d137e8ad3",
+      "body.1": "9fabe579ae3bde00c71570a3dbdd0ad86fdba276e51fd57be29631ab1b0e288d",
+      "body.2": "94b68f649dabd2e8fc19a833a9bc63005b0e604c01a266d369f444b042836c35",
+      "body.3": "ab4818b6e60025ff7c76002f9e58e535e062c0f478fc5717e6c7f01ad9abb6d0"
+    },
+    "article:2026-11-22-anyps5-developer-x-suspended": {
+      "title": "126a4d3e30c60f4086d847aed85cd11037441c8c4a156a45d8d9a2fd4390d2ba",
+      "summary": "5a080b85c060ebec7e6e66e889b6878b6ab6ed87e039312ee6a3cc63226ead23",
+      "body.0": "bba0a221cec43b1da23efb6616b77f5b9b3c940322a74c140b241da2230fe64f",
+      "body.1": "120b33031e37aa21979d3751b6b05619e61a89dddf7e41b3d250a0b11bf480ab",
+      "body.2": "f8ad9406bf68b2f7b2df6dc1f345bece288473ae595b330a32b6c251fc3f2674",
+      "body.3": "9b54dff984d46b26752f127e4995a30bc552c2f9262d139ad2cabc0d51fcac04"
+    },
+    "article:2026-11-22-xcl-takes-lead": {
+      "title": "3ac2d138ca28ebd82a2f711d52e5656a8485fd8b3a57d244116b8c13beed95db",
+      "summary": "9e4af17e8e85da2144b1c7d82c7692cea0d8e017a15785c8c623be1961adabb1",
+      "body.0": "f336f8eef9bdab3b030b64830be65929b69892a1748cef535196bd8ff1c258b0",
+      "body.1": "bfc652a7400cdd2915f7a5ebb424bf99e991abee182d146ebd59747ea9e68032",
+      "body.2": "e7d749760b4e0ea79a07e8097ce9fba3154ace4823218430ee89847ae7a8a88a",
+      "body.3": "d6c40629897346a41a68aab123649bfd2b7b08bddf56c3f39bbe9d47d47c6c2d"
+    },
+    "article:2026-11-22-exe-deadline-time": {
+      "title": "8ccc9eacb276b24507a9bd832f3208505ea20bbeeabad1ee04adabfc58622f4a",
+      "summary": "192b7355aca060d1b4b1885f89efd374429a777d9ee630afb7bd686c344040c2",
+      "body.0": "2881a409302cf325ed73c157de07cd93e55599398ce7630992c8a9a1924bf6a0",
+      "body.1": "927e0bed02a2b0039e1f3114644c14a53cf44f97f4cf94603b847199eb515d68",
+      "body.2": "6852cbd1ad2582f907e6ec89fa12127cb6d798089c7874e21c5dfa603ac78137",
+      "body.3": "63b3e5e4d8cdfa4e77f71d50f13d3b61f9bcc6f1e9ecd7663e7f8cb5af6a3285"
+    },
+    "article:2026-11-22-copies": {
+      "title": "337f18902be0bad8acc8ba345243f52b5ab061dbaa437249114ee98183d59f52",
+      "summary": "45ee66afece15d4e0094d4810db99a38050fecefde7f6876cb7a3b1bb774294a",
+      "body.0": "1b9061f59da7e3f7199e4e1ccdb9b19c02a2c1ff685059498e7bae4d71ae60ba",
+      "body.1": "a3c16fd5cec9d11c226d8d58472c4c4263ca12214ebb812f17d72c2d8efbf028",
+      "body.2": "802288df11513a45e96704dc3de8198d03a880b4043ab960ed1759cc6921c4c2",
+      "body.3": "6535909df2b5e7f615832662321aaebbe6e2ae43bccd39f661f609a5ecaa9332"
+    },
+    "article:2026-11-21-exe-deadline": {
+      "title": "42d5efd0827ede861ed90a0baf1f611506e7b27990f94769a5a159f4d8ab1114",
+      "summary": "7e447e8610d22f9f5b69b45c0bc10c92a75aee1ee6d3626ff44da98ad1bd7df6",
+      "body.0": "175f3d7682a4fa3107b5f6ebd094e6276b77f3fda2ed61a0fbc66582ddd132a9",
+      "body.1": "ed676a41cac51a6ba0c366d48f2ee7c42fba17b3605cae116ada51eada2d6159",
+      "body.2": "962baaa4b160079ea438a8b480c6966a0592d10313b7fa7cea62dd8939e02e8d",
+      "body.3": "004429ea0eaeb3a206765d51dfccfb5c92f7b4927594b0e9c4dbd8816a0d0cce"
+    },
+    "article:2026-11-19-fake-downloads": {
+      "title": "f4e514ef0a53de92170c07edb53446c4f4a672095459743577fd079f98ccf4c1",
+      "summary": "2f5da79faa6df9aeaf4baafcb87e9dc2d0c73a9fe1f0432809b442367f44d84b",
+      "body.0": "c19fcffb509c037f055c31a0b95e15809a18443ef8524a4eb8cf8d477f19439f",
+      "body.1": "3aea5663962b822d5cd9b4616087bced3f8c8a17f4cc3570c8a9185e2ceebf9e",
+      "body.2": "e5d69b89bbdb68e77b39c69d749f4e57555ee899eb82c7d0de48cbec6fb66bad",
+      "body.3": "46e4c87ff59635d18f4dd873f72c7605edc792eb4d888f3f63e07296a0f038c8"
+    },
+    "article:2026-11-18-take-two-dmca": {
+      "title": "91935706e4d6b81d926577c0ef4ca7f6c1c5efba9d9344d2fd56425c3c57c09f",
+      "summary": "dfabc44059af79efa5a4706fac248c89fab7e532a447765e7e0c84dbb52df7ba",
+      "body.0": "00eaeba5382bfa9c8f98ed28a55cde70bcfb897e1ad110472719126dd561f4c9",
+      "body.1": "d7bdcf5910e2f22c0aff5288879ce30ce28f6dfa521bffb2a2aef1d51b20683b",
+      "body.2": "dc0497c44f6d40ee646815bfd516477a8c37628bcfba8b8194ce7e28c0d26739",
+      "body.3": "11e8b09f57b46a9f5706cf0ae501135df3d4c22d942dcb3e2902c44e86f37f54"
+    },
+    "article:2026-11-16-kurtaj-plea": {
+      "title": "6d6f1cfe81b8ddfc42840f410835f07e1b6711948bb6a3da23ee1804505c650f",
+      "summary": "30eadea035651ae1d644521a4f48048f3f6c485b8782cfb634755cd46ed1a209",
+      "body.0": "6be5a9bf3c4790fc6a1c2e358d8fa43746e02ae7830f02f78793893914e1b97e",
+      "body.1": "ef1b9a5f13561f2397616b405fdecb06817363e858fbab0864d6991fd54e6419",
+      "body.2": "ea11c6557a10b6bdb96b1a2e9e9e6ddf59855770704be8333a19444841b9def4"
+    }
+  }
+}

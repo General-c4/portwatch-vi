@@ -82,6 +82,9 @@ jobs:
         with:
           artifact_name: github-pages-rollback
       - if: always()
+        name: Record a release blocked before deployment verification
+        run: node -e "const fs=require('fs');fs.mkdirSync('.sync',{recursive:true});const p='.sync/deployment-status.json';if(!fs.existsSync(p))fs.writeFileSync(p,JSON.stringify({status:'not-deployed',commit:process.env.GITHUB_SHA,run:process.env.GITHUB_RUN_ID}));"
+      - if: always()
         uses: actions/upload-artifact@v7
         with:
           name: deployment-verification

@@ -28,10 +28,19 @@ const goodClient=calls=>async()=>({model:'gemini-3.8-flash',generate:async reque
 const limits={...newsLimits(),maxInputBytes:60000};
 function setup(){const before=baseline(),data={...before,news:[article(),...before.news]};return{before,data,state:initializeNewsState(before,now),now,limits,sleep:async()=>{}};}
 
+test('legacy per-field cooldowns and Gemini-only daily caps cannot freeze a recovered multi-provider router',async()=>{
+ const args=setup(),calls=[];
+ const blocked=await syncNews({...args,clientFactory:async()=>({model:'test',generate:async()=>{throw Object.assign(new Error('quota'),{status:429});}})});
+ blocked.state.pending['article:new-story'].lastError='authentication';blocked.state.daily.requests=999;blocked.state.daily.accountedTokens=999999;
+ const factory=goodClient(calls);factory.multiProvider=true;
+ const recovered=await syncNews({...args,state:blocked.state,catalog:blocked.catalog,clientFactory:factory});
+ assert.equal(recovered.stats.successful,1);assert.equal(calls.length,1);assert.equal(recovered.stats.model,'gemini-3.8-flash');
+});
+
 test('an explicit edit translates only changed historical fields, without an archive backfill or duplicate request',async()=>{
  const before=baseline(),data=structuredClone(before),calls=[];
  data.news[0].title='GTA VI remains a work in progress.';
- const result=await syncNews({before,data,state:initializeNewsState(before,now),now,limits,sleep:async()=>{},clientFactory:goodClient(calls)});
+ const result=await syncNews({before:data,data,state:initializeNewsState(before,now),now,limits,sleep:async()=>{},clientFactory:goodClient(calls)});
  assert.equal(calls.length,1);assert.deepEqual(Object.keys(calls[0].fields),['title']);
  assert.deepEqual(Object.keys(result.catalog.articles['article:historical'].fields),['title']);
  await syncNews({before:data,data,state:result.state,catalog:result.catalog,now,limits,clientFactory:goodClient(calls)});

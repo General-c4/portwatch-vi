@@ -88,7 +88,9 @@ export async function syncContent({fetchImpl=fetch,apiRead=apiAnythingRead,provi
  catch{errors.push({at:now,source:'translation routing',message:'Provider configuration unavailable; canonical synchronization continues'});}
  const translationFactory=newsClientFactory||router?.clientFactory;
  try{
-  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:await readJSON(file('automation/state/news-translations.json'),null),catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(translationFactory?{clientFactory:translationFactory}:{})});
+  const newsState=await readJSON(file('automation/state/news-translations.json'),null);
+  if(newsState&&!newsState.baselineHashes)newsState.baselineHashes=(await readJSON(file('automation/state/news-baseline.json'),{})).hashes||{};
+  news=await syncNews({before,data:{...data,headlines:[]},human:human.content,state:newsState,catalog:await readJSON(file('assets/i18n/news/ar.json'),{version:1,articles:{}}),...(translationFactory?{clientFactory:translationFactory}:{})});
   dynamic=await syncDynamicEditorial({data,pinned,state:news.state,catalog:news.catalog,human:human.content,automatic:automatic.content,limits:{...newsLimits(),maxRequests:Math.max(0,newsLimits().maxRequests-news.stats.requests)},...(translationFactory?{clientFactory:translationFactory}:{})});
   news.state=dynamic.state;news.catalog=dynamic.catalog;news.stateChanged||=dynamic.stateChanged;news.catalogChanged||=dynamic.catalogChanged;
  }catch{/* Gemini failures cannot stop canonical synchronization or leak provider error bodies. */}

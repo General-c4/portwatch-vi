@@ -1,5 +1,5 @@
-import {readJSON,atomicJSON} from './state.mjs';
-import {createGeminiNewsClient,NEWS_SYSTEM_INSTRUCTION,NEWS_RESPONSE_SCHEMA,validateNewsResponse,newsErrorCode,googleQuotaInfo,geminiRetryAt} from './gemini-news.mjs';
+import {readJSON,atomicJSON,hash} from './state.mjs';
+import {createGeminiNewsClient,NEWS_SYSTEM_INSTRUCTION,NEWS_RESPONSE_SCHEMA,prepareNewsRequest,parseNewsResponse,validateNewsResponse,newsErrorCode,googleQuotaInfo,geminiRetryAt} from './gemini-news.mjs';
 import {editorialQualityIssue} from '../../assets/js/editorial-quality.js';
 
 const POLICY={
@@ -13,6 +13,8 @@ const POLICY={
 };
 export const FREE_PROVIDER_IDS=Object.keys(POLICY);
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const outputFor=(fields,sourceUrls)=>({title:fields.title||'',summary:fields.summary||'',body:Object.entries(fields).filter(([key])=>key.startsWith('body.')).map(([key,text])=>({index:Number(key.slice(5)),text})),sourceUrls});
+const fieldCacheKey=(source,urls)=>hash({source,urls});
 export function retryDelay(value,now=Date.now()){
  if(!value)return 0;
  if(/^\d+(\.\d+)?$/.test(value)){const n=Number(value);return n>1e12?Math.max(0,n-now):n>1e9?Math.max(0,n*1000-now):n*1000;}
@@ -48,8 +50,25 @@ export async function createTranslationRouter({root='.',config,state,env=process
  const clientFactory=async(options={})=>{
   let lastModel='unavailable';
   return {get model(){return lastModel;},generate:async request=>{
+   const originalRequest=request,accepted={},usedProviders=[];let mergedUsage={},usageKnown=true;
+   state.pendingFields??={};
+   for(const [field,source]of Object.entries(request.fields)){
+    const key=fieldCacheKey(source,request.sourceUrls),cached=state.pendingFields[key];
+    if(cached?.source!==source)continue;
+    try{const single={...request,fields:{[field]:source}};accepted[field]=validateNewsResponse(single,outputFor({[field]:cached.ar},request.sourceUrls))[field];if(editorialQualityIssue(source,accepted[field])){delete accepted[field];delete state.pendingFields[key];}else if(!usedProviders.includes(`cache:${cached.model}`))usedProviders.push(`cache:${cached.model}`);}
+    catch{delete state.pendingFields[key];}
+   }
+   const complete=()=>Object.keys(originalRequest.fields).every(field=>Object.hasOwn(accepted,field));
+   const merged=async(provider,model)=>{
+    for(const source of Object.values(originalRequest.fields))delete state.pendingFields[fieldCacheKey(source,originalRequest.sourceUrls)];
+    await save();lastModel=model;
+    const usage={...mergedUsage};if(!usageKnown)delete usage.totalTokenCount;
+    return {text:JSON.stringify(outputFor(accepted,originalRequest.sourceUrls)),finishReason:'STOP',usage,provider,model,providersUsed:usedProviders};
+   };
+   if(complete())return merged('cache','validated-partial-cache');
    const eligible=ordered();let tried=0;
    for(const id of eligible){
+    request=prepareNewsRequest(Object.fromEntries(Object.entries(originalRequest.fields).filter(([field])=>!Object.hasOwn(accepted,field))),originalRequest.sourceUrls,originalRequest.terms||[]);
     const policy=POLICY[id],settings=config.providers[id],model=settings.model;
     if(!freePolicy(id,model,env)){event('disabled',{provider:id,reason:'missing_credentials_or_free_account_assurance'});continue;}
     const now=clock(),p=state.providers[id]??={};
@@ -74,7 +93,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
     await sleep(Math.max(0,(p.lastRequestAt||0)+(settings.intervalMs||0)-clock()));
     attempts++;tried++;p.requests++;p.daily.requests++;p.daily.tokens+=reserve;p.monthly.tokens+=reserve;p.minute.tokens+=minuteReserve;p.lastRequestAt=clock();
     // Persist the reservation before sending. A terminated workflow cannot spend the same budget twice.
-    await save();const started=clock();
+    await save();const started=clock();let receivedUsage=false;
     try{
      let response;
      if(clientFactories[id])response=await(await clientFactories[id]({...options,model})).generate(request);
@@ -105,15 +124,33 @@ export async function createTranslationRouter({root='.',config,state,env=process
       response={text:choice?.message?.content,finishReason:choice?.finish_reason==='stop'?'STOP':choice?.finish_reason,usage:{...(Number.isFinite(usage.prompt_tokens)?{promptTokenCount:usage.prompt_tokens}:{}),...(Number.isFinite(usage.completion_tokens)?{candidatesTokenCount:usage.completion_tokens}:{}),...(Number.isFinite(usage.total_tokens)?{totalTokenCount:usage.total_tokens}:{})}};
      }
      const usage=response.usage||{},total=usage.totalTokenCount;
+     receivedUsage=Number.isFinite(total);
      onCandidate({provider:id,text:response.text,finishReason:response.finishReason});
+     if(!Number.isFinite(total))usageKnown=false;
+     for(const key of ['promptTokenCount','candidatesTokenCount','thoughtsTokenCount','totalTokenCount'])if(Number.isFinite(usage[key]))mergedUsage[key]=(mergedUsage[key]||0)+usage[key];
      if(Number.isFinite(total)){for(const bucket of [p.daily,p.monthly])bucket.tokens+=Math.max(0,total)-reserve;p.minute.tokens+=Math.max(0,total)-minuteReserve;}
      if(!response.text||response.finishReason&&response.finishReason!=='STOP')throw new Error('empty_response');
-     const fields=validateNewsResponse(request,response.text);
-     for(const[key,value]of Object.entries(fields))if(editorialQualityIssue(request.fields[key],value))throw new Error('protected_facts_or_language_invalid');
+     const output=parseNewsResponse(request,response.text),rawFields={title:output.title,summary:output.summary,...Object.fromEntries(output.body.map(p=>[`body.${p.index}`,p.text]))};
+     let validationError;const valid=[];
+     for(const [field,source]of Object.entries(request.fields)){
+      try{
+       const value=validateNewsResponse({...request,fields:{[field]:source}},outputFor({[field]:rawFields[field]},request.sourceUrls))[field];
+       if(editorialQualityIssue(source,value))throw new Error('protected_facts_or_language_invalid');
+       accepted[field]=value;valid.push(field);
+      }catch(error){validationError??=error;}
+     }
+     usedProviders.push(id);
+     if(validationError){
+      for(const field of valid)state.pendingFields[fieldCacheKey(request.fields[field],request.sourceUrls)]={source:request.fields[field],ar:accepted[field],model};
+      const keys=Object.keys(state.pendingFields);for(const key of keys.slice(0,Math.max(0,keys.length-2000)))delete state.pendingFields[key];
+      event('validated_partial',{provider:id,model,acceptedFields:valid.length,remainingFields:Object.keys(originalRequest.fields).length-Object.keys(accepted).length});
+      throw validationError;
+     }
      p.successes++;p.failureStreak=0;p.cooldownUntil=0;p.code=null;p.latencyMs=clock()-started;lastModel=`${id}/${model}`;
      const safeUsage=Object.fromEntries(Object.entries(usage).filter(([key,value])=>['promptTokenCount','candidatesTokenCount','thoughtsTokenCount','totalTokenCount'].includes(key)&&Number.isFinite(value)));
-     event('success',{provider:id,model,latencyMs:p.latencyMs,usage:Object.keys(safeUsage).length?safeUsage:null,fallback:tried>1});await save();return {...response,usage:safeUsage,provider:id,model};
+     event('success',{provider:id,model,latencyMs:p.latencyMs,usage:Object.keys(safeUsage).length?safeUsage:null,fallback:tried>1});return merged(id,model);
     }catch(error){
+     if(!receivedUsage)usageKnown=false;
      const code=error.message==='free_price_unverified'?'free_price_unverified':newsErrorCode(error),quota=id==='gemini'?googleQuotaInfo(error):null;
      p.failures++;p.failureStreak=(p.failureStreak||0)+1;p.code=code;
      const daily=quota?.quotas.some(q=>q.period==='day')||error.quotaPeriod==='day',monthly=error.quotaPeriod==='month';

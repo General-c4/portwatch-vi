@@ -48,6 +48,20 @@ Optional accounts without credentials or free-account assurance are skipped. `au
 
 The shared schema, protected-term prompt, source hashes and Arabic semantic checks are retained. The router validates before accepting a response; invalid Arabic tries another provider. The existing engine owns persistent queues/cache and field deduplication. No provider performs a full archive backfill. Automated checks reduce factual errors but do not replace a professional human review of every output.
 
+Validation is per field after the complete response schema passes. Good fields from an otherwise rejected batch are checkpointed in `pendingFields`; only missing/rejected fields go to the next provider. Partial checkpoints survive normal failed runs and are committed with provider state. Completing a request transfers ownership to the existing translation cache. A hard runner termination before its Git commit can lose uncommitted results; exactly-once execution across a remote API and Git is not promised. Provider-enforced free plans remain the cost boundary.
+
+The old Gemini-only field retry timestamps and daily cap do not block a healthy alternative: router-managed provider quotas/cooldowns replace those global gates. Groq minute admission uses an explicitly approximate token estimate, with actual response token counts and rate-limit headers authoritative; daily/monthly reservations remain conservative. Unknown usage is not presented as a measured total.
+
+`news-baseline.json` records field hashes from the pre-activation snapshot. Historical stories remain excluded unless a specific field changed; only those edits are eligible. This also recovers edits that canonical synchronization had already downloaded before the router upgrade, without retranslating the archive.
+
+## Verified account activation and live checks
+
+The owner confirmed Gemini, Groq, Cloudflare Workers AI and Z.AI credentials were added as Secrets and those accounts have no automatic billing. `TRANSLATION_FREE_PROVIDERS=gemini,groq,cloudflare,zai` enables only those authenticated accounts. AxForge/OpenRouter remain disabled without credentials and an equivalent confirmation.
+
+A small public two-field benchmark passed all four adapters on 2026-11-28: Gemini 13.685 s, Groq 0.367 s, Cloudflare 2.727 s, Z.AI 2.190 s. Those are single-sample observations, not latency guarantees or a statistical Arabic-quality benchmark. Gemini/Groq/Cloudflare produced understandable Arabic; the Z.AI sample had weaker grammar, so it remains later in priority. Model choices are not automatically upgraded. A controlled injected Gemini 503 caused a real successful Groq request, followed by automatic recovery and a real successful Gemini request after cooldown. [Benchmark](https://github.com/General-c4/portwatch-vi/actions/runs/46113268084), [controlled fallback/recovery](https://github.com/General-c4/portwatch-vi/actions/runs/46113479375).
+
+The OVH anonymous probe failed schema validation, then returned HTTP 429 with a long retry deadline. That deadline is persisted through 2026-12-31 23:59:57 UTC; no workaround or authenticated paid request is attempted. It is not counted as an available backup. Whole-news testing identified and fixed overlapping-name residue validation and ordinary hyphenated prose protection; failed samples were not published.
+
 Structured events record the selected provider/model, success/fallback/skip, sanitized category, latency, actual token counts when reported and $0 eligible-request cost. Missing token counts are unknown; conservative reservations remain. If every free provider is unavailable, content stays queued. Scheduled GitHub Actions can be delayed and do not guarantee uninterrupted translation or real-time synchronization.
 
 ## Other providers reviewed

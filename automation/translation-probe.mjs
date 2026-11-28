@@ -19,11 +19,12 @@ for(const id of selected){
   for(const name of ['GEMINI_API_KEY','GROQ_API_KEY','CLOUDFLARE_API_TOKEN','ZAI_API_KEY'])if(process.env[name])text=text.replaceAll(process.env[name],'[REDACTED]');
   candidate={text,finishReason:value.finishReason};
  }}),started=Date.now();
+ const savedPending=structuredClone(router.state.pendingFields||{});router.state.pendingFields={};
  try{
   const response=await(await router.clientFactory({maxOutputTokens:1024,timeoutMs:60000})).generate(request);
-  results.push({provider:id,model:response.model,passed:true,latencyMs:Date.now()-started,translations:validateNewsResponse(request,response.text),usage:response.usage,costUSD:0});
+  results.push({provider:id,model:response.model,providersUsed:response.providersUsed,passed:true,latencyMs:Date.now()-started,translations:validateNewsResponse(request,response.text),usage:response.usage,costUSD:0});
  }catch{results.push({provider:id,passed:false,latencyMs:Date.now()-started,candidate,state:router.summary()});}
- await router.save();
+ router.state.pendingFields=savedPending;await router.save();
 }
 if(process.env.PW_PROBE_MODE==='fallback'){
  const config=structuredClone(configuration);config.order=['gemini','groq','cloudflare','zai'];config.maxAttemptsPerRun=5;
