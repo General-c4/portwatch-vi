@@ -1,47 +1,5 @@
 [
   {
-    "id": "66ba57a3a893bcc7b7fa90753f3e83da188920ec232abcedd0570157b8423b0a",
-    "sourceHash": "812d71deb736cb671b27add81e28ee605c33052c9fec3aaf88f6fdf10ea9732f",
-    "scope": "content",
-    "key": "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware.",
-    "source": "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware.",
-    "refs": [
-      "news:2026-11-27-belobug-dmca.body.3"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "e027e1dd9f826d743dbfac1b3ef976ffdb9d8b644d86a29ac38859efc5890fef",
-    "sourceHash": "807050c650592826474900e567ddbf2a4e70e17598a54dd14a8464037c9a43ff",
-    "scope": "content",
-    "key": "i95: open-source GTA VI (GTA 6) PC launcher for every Xbox Series runtime on the GTA VI PC race: Vice-Tay, victory-fork, AnyXboxX, KLBF Lab, VIctory-Belobug-AMD, VItoriaBr, ScarlettPort and 30 more. Builds each runtime from source on your PC, no prebuilt exes; runtimes update hourly without a new release. No game files. Not confirmed playable yet.",
-    "source": "i95: open-source GTA VI (GTA 6) PC launcher for every Xbox Series runtime on the GTA VI PC race: Vice-Tay, victory-fork, AnyXboxX, KLBF Lab, VIctory-Belobug-AMD, VItoriaBr, ScarlettPort and 30 more. Builds each runtime from source on your PC, no prebuilt exes; runtimes update hourly without a new release. No game files. Not confirmed playable yet.",
-    "refs": [
-      "candidates:DesignWithTommy/i95-GTA6-PC-Launcher.description"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
-    "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
-    "scope": "content",
-    "key": "Python",
-    "source": "Python",
-    "refs": [
-      "candidates:mrbabayeen-Linux/mandy6.signals.0",
-      "candidates:Kalpajit0406/Pink.signals.0",
-      "candidates:ProjectLeonida/mandy.signals.0",
-      "candidates:afredas/Slys.signals.0"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
     "id": "19afc07f764cfc5c11438726b4dbcef2d9435b74370c4c99b6778737a6bead5f",
     "sourceHash": "c3812fc4acb861d5182fc2b8155f327f736fbe5e5eb86a7bd7afcb6dc5497282",
     "scope": "dashboard",
@@ -54,19 +12,6 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "إزالة الألغام"
-  },
-  {
-    "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
-    "sourceHash": "c2fd567e124a9151e6435d606cecf1cdefe12159236d130e7b688aa8411fe8d0",
-    "scope": "dashboard",
-    "key": "Upload GIF",
-    "source": "Upload GIF",
-    "refs": [
-      "dashboard.c2fd567e124a"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
   },
   {
     "id": "8770dd31532ebf7a82a1d1c73f8081d6650b13d8b8248c64ee51f7f2e7c953d4",
@@ -137,6 +82,182 @@
     "lastError": "Offline machine draft requires linguistic review",
     "reviewRequired": true,
     "draft": "تشغيل Xbox Series اللقب الأصلي على PC"
+  },
+  {
+    "id": "9226ce9988df889457b71b43458cd156e8952f13d75355ccd7efe6e7381a69bb",
+    "sourceHash": "21c65f0a918e62c55fad9c7a3e9641b81800d758925cbf4f53aed70521faec22",
+    "scope": "content",
+    "key": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
+    "source": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
+    "refs": [
+      "candidates:jleybourne/triumph-rebuild.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "إعادة بناء ذاتي لطبقة التواؤم لـ Xbox Series، في طريقتي الخاصة، تركز على الأداء"
+  },
+  {
+    "id": "855301eaf3f7f69f9be653068c020e1499d8dc2c5bd1f1ac0f7afd4b2df650e2",
+    "sourceHash": "f7bb3f474bfd8569e74184ce1386e69f7824db894526a104ebc09132f76125da",
+    "scope": "content",
+    "key": "Cool Fox, formerly Pelican. An experimental VIctory fork for running Xbox Series titles on Windows.",
+    "source": "Cool Fox, formerly Pelican. An experimental VIctory fork for running Xbox Series titles on Windows.",
+    "refs": [
+      "candidates:lameloball2813-ui/cool-fox.description"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "(فوكس) رائع، سابقاً (بيلكان) شوكة تجريبية من طراز VIctory من أجل تشغيل ألقاب من طراز Xbox Series على Windows."
+  },
+  {
+    "id": "cff8a088ac7fa94682aaea90500772a70d4395fe96448763869d5fe1885801ed",
+    "sourceHash": "9d3386a9999a40af24e37bcf57a7c4e42f51d2164e3205902633fb33297438ae",
+    "scope": "content",
+    "key": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+    "source": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+    "refs": [
+      "news:2026-11-27-belobug-dmca.dek"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "لقد اختفت المستودعات وحساب GitHub خلف مبنى best-rated على مجلسنا، وقد أكدت شركة PortWatch أن GitHub أزالتهما لانتهاكهما شروط خدمتها."
+  },
+  {
+    "id": "a4fd4bbcceec09b9adb5febe70cdc38dd19d96f788430078db2522982b82b200",
+    "sourceHash": "53a5f3db29d0c05cd65551b5b07aacb3fbe9d18f35545075aa57251206757520",
+    "scope": "content",
+    "key": "The code is private, so nobody outside the group can try it yet. It isn't on our board either: we rate each build on its own, and this one doesn't have ratings of its own yet.",
+    "source": "The code is private, so nobody outside the group can try it yet. It isn't on our board either: we rate each build on its own, and this one doesn't have ratings of its own yet.",
+    "refs": [
+      "news:2026-11-26-multiplayer-running.body.3"
+    ],
+    "attempts": 1,
+    "lastError": "Offline machine draft requires linguistic review",
+    "reviewRequired": true,
+    "draft": "الشفرة خاصة، حتى لا يستطيع أحد خارج المجموعة أن يجربها حتى الآن، إنها ليست على متننا أيضاً:"
+  },
+  {
+    "id": "4fa8939543e07a148ca721f28da631ac414c10196dd50119feb77252a4c17741",
+    "sourceHash": "21f1d3a325ade46a22497f7de14ae35cf13160f3ad1dd8befb9567c02b617e7f",
+    "scope": "content",
+    "key": "Low-stutter, FPS-focused VIctory-NVIDIA fork (Xbox Series / Scarlett D3D12 layer) for NVIDIA RTX 20/30/40/50: u64 descriptor bitset, dense HeapRanges, single-wait PSO budget, Wave32 waterfalls, DLSS/FSR3 FG, 6-mode launcher. No game files.",
+    "source": "Low-stutter, FPS-focused VIctory-NVIDIA fork (Xbox Series / Scarlett D3D12 layer) for NVIDIA RTX 20/30/40/50: u64 descriptor bitset, dense HeapRanges, single-wait PSO budget, Wave32 waterfalls, DLSS/FSR3 FG, 6-mode launcher. No game files.",
+    "refs": [
+      "candidates:tiadiff/VIctory-NVIDIA-LowStutter.description"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ5QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "cc0f170c1b4652e59cd8da658d980a5755ca138842245267256b14fa2f90b941",
+    "sourceHash": "53e20e708fd19474c941f3ac202c8376e37186104087ca1dc80bf25846ad04ab",
+    "scope": "content",
+    "key": "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+    "source": "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
+    "refs": [
+      "news:2026-11-27-belobug-dmca.body.0"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "a323e03804563b63b438dc4a8762e0d93ec0395667f216ea74440811c482d77f",
+    "sourceHash": "c6daf53b9b123d2a57e9b2c3fdb3f95d0e03a13e881bc17408b8d3608f92a5c0",
+    "scope": "content",
+    "key": "Until now, every build we track has been single-player: getting GTA VI's story to run on PC at all has taken everyone's effort. Multiplayer means separate copies of the game agreeing on where every player and car is, and no build on our board had shown that before.",
+    "source": "Until now, every build we track has been single-player: getting GTA VI's story to run on PC at all has taken everyone's effort. Multiplayer means separate copies of the game agreeing on where every player and car is, and no build on our board had shown that before.",
+    "refs": [
+      "news:2026-11-26-multiplayer-running.body.2"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "dc6dca8e0b7477ee716aa05fa9afc0fb24086388b0eca06d950add798e566590",
+    "sourceHash": "9377b81ed1ab8540369a59d90ec894034f21abbc3a5beac0d75f11fc2adbed85",
+    "scope": "content",
+    "key": "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
+    "source": "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
+    "refs": [
+      "news:2026-11-27-belobug-dmca.body.1"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ2QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "add56ba6d8f0a5eea99472ab9693c4aa99565b67c1fb0eb0e53ca46eab99505c",
+    "sourceHash": "2d9a16e75f2287e3c11813634fec965a5c8575d9b45457ca9a4a3ef9da72e3e0",
+    "scope": "content",
+    "key": "GTA VI multiplayer is running on PC. On Thursday evening TeK (@TeKGameR950) posted a video on X of what the group calls working multiplayer: player characters and vehicles together in the world, with proximity voice chat, so you hear the players near you. PortWatch has verified that the video is real.",
+    "source": "GTA VI multiplayer is running on PC. On Thursday evening TeK (@TeKGameR950) posted a video on X of what the group calls working multiplayer: player characters and vehicles together in the world, with proximity voice chat, so you hear the players near you. PortWatch has verified that the video is real.",
+    "refs": [
+      "news:2026-11-26-multiplayer-running.body.0"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "66ba57a3a893bcc7b7fa90753f3e83da188920ec232abcedd0570157b8423b0a",
+    "sourceHash": "812d71deb736cb671b27add81e28ee605c33052c9fec3aaf88f6fdf10ea9732f",
+    "scope": "content",
+    "key": "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware.",
+    "source": "Belobug's card on our board is now marked as nuked and no longer ranked, so VIctory-NVIDIA, at 90%, leads the race. The progress it made still counts: our overall number stays at 91.3%. Don't go looking for copies of Belobug's code: forks of a removed repository can go too, and unofficial downloads often carry malware.",
+    "refs": [
+      "news:2026-11-27-belobug-dmca.body.3"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "e027e1dd9f826d743dbfac1b3ef976ffdb9d8b644d86a29ac38859efc5890fef",
+    "sourceHash": "807050c650592826474900e567ddbf2a4e70e17598a54dd14a8464037c9a43ff",
+    "scope": "content",
+    "key": "i95: open-source GTA VI (GTA 6) PC launcher for every Xbox Series runtime on the GTA VI PC race: Vice-Tay, victory-fork, AnyXboxX, KLBF Lab, VIctory-Belobug-AMD, VItoriaBr, ScarlettPort and 30 more. Builds each runtime from source on your PC, no prebuilt exes; runtimes update hourly without a new release. No game files. Not confirmed playable yet.",
+    "source": "i95: open-source GTA VI (GTA 6) PC launcher for every Xbox Series runtime on the GTA VI PC race: Vice-Tay, victory-fork, AnyXboxX, KLBF Lab, VIctory-Belobug-AMD, VItoriaBr, ScarlettPort and 30 more. Builds each runtime from source on your PC, no prebuilt exes; runtimes update hourly without a new release. No game files. Not confirmed playable yet.",
+    "refs": [
+      "candidates:DesignWithTommy/i95-GTA6-PC-Launcher.description"
+    ],
+    "attempts": 1,
+    "lastError": "Protected token not preserved: ZXQ5QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
+    "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
+    "scope": "content",
+    "key": "Python",
+    "source": "Python",
+    "refs": [
+      "candidates:mrbabayeen-Linux/mandy6.signals.0",
+      "candidates:Kalpajit0406/Pink.signals.0",
+      "candidates:ProjectLeonida/mandy.signals.0",
+      "candidates:afredas/Slys.signals.0"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
+    "sourceHash": "c2fd567e124a9151e6435d606cecf1cdefe12159236d130e7b688aa8411fe8d0",
+    "scope": "dashboard",
+    "key": "Upload GIF",
+    "source": "Upload GIF",
+    "refs": [
+      "dashboard.c2fd567e124a"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
   },
   {
     "id": "381606057ecab4670d79912c69fbaf771193eb9bb5c39994cf7637b0ca171555",
@@ -267,34 +388,6 @@
     "attempts": 2,
     "lastError": "Missing Arabic output",
     "reviewRequired": false
-  },
-  {
-    "id": "9226ce9988df889457b71b43458cd156e8952f13d75355ccd7efe6e7381a69bb",
-    "sourceHash": "21c65f0a918e62c55fad9c7a3e9641b81800d758925cbf4f53aed70521faec22",
-    "scope": "content",
-    "key": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
-    "source": "A self rebuild of the compatibility layer for Xbox Series, in my own method, focused on performance",
-    "refs": [
-      "candidates:jleybourne/triumph-rebuild.description"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "إعادة بناء ذاتي لطبقة التواؤم لـ Xbox Series، في طريقتي الخاصة، تركز على الأداء"
-  },
-  {
-    "id": "855301eaf3f7f69f9be653068c020e1499d8dc2c5bd1f1ac0f7afd4b2df650e2",
-    "sourceHash": "f7bb3f474bfd8569e74184ce1386e69f7824db894526a104ebc09132f76125da",
-    "scope": "content",
-    "key": "Cool Fox, formerly Pelican. An experimental VIctory fork for running Xbox Series titles on Windows.",
-    "source": "Cool Fox, formerly Pelican. An experimental VIctory fork for running Xbox Series titles on Windows.",
-    "refs": [
-      "candidates:lameloball2813-ui/cool-fox.description"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "(فوكس) رائع، سابقاً (بيلكان) شوكة تجريبية من طراز VIctory من أجل تشغيل ألقاب من طراز Xbox Series على Windows."
   },
   {
     "id": "2f5e9d2f3f236875fa422bb40e01a297c5e9c11483caba3acea97ede4da5820c",
@@ -518,34 +611,6 @@
     "reviewRequired": false
   },
   {
-    "id": "cff8a088ac7fa94682aaea90500772a70d4395fe96448763869d5fe1885801ed",
-    "sourceHash": "9d3386a9999a40af24e37bcf57a7c4e42f51d2164e3205902633fb33297438ae",
-    "scope": "content",
-    "key": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
-    "source": "The repository and GitHub account behind the best-rated build on our board are gone. PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
-    "refs": [
-      "news:2026-11-27-belobug-dmca.dek"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "لقد اختفت المستودعات وحساب GitHub خلف مبنى best-rated على مجلسنا، وقد أكدت شركة PortWatch أن GitHub أزالتهما لانتهاكهما شروط خدمتها."
-  },
-  {
-    "id": "a4fd4bbcceec09b9adb5febe70cdc38dd19d96f788430078db2522982b82b200",
-    "sourceHash": "53a5f3db29d0c05cd65551b5b07aacb3fbe9d18f35545075aa57251206757520",
-    "scope": "content",
-    "key": "The code is private, so nobody outside the group can try it yet. It isn't on our board either: we rate each build on its own, and this one doesn't have ratings of its own yet.",
-    "source": "The code is private, so nobody outside the group can try it yet. It isn't on our board either: we rate each build on its own, and this one doesn't have ratings of its own yet.",
-    "refs": [
-      "news:2026-11-26-multiplayer-running.body.3"
-    ],
-    "attempts": 1,
-    "lastError": "Offline machine draft requires linguistic review",
-    "reviewRequired": true,
-    "draft": "الشفرة خاصة، حتى لا يستطيع أحد خارج المجموعة أن يجربها حتى الآن، إنها ليست على متننا أيضاً:"
-  },
-  {
     "id": "0671f417ae3f077744a5afb34498462e238bffdb3df386131596c40455e7d19f",
     "sourceHash": "a217b3795eaafd9dd1a4f4d1c13bea15f0b134bfb9f1134d5f17c9267e7d40d0",
     "scope": "content",
@@ -660,71 +725,6 @@
     ],
     "attempts": 2,
     "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "4fa8939543e07a148ca721f28da631ac414c10196dd50119feb77252a4c17741",
-    "sourceHash": "21f1d3a325ade46a22497f7de14ae35cf13160f3ad1dd8befb9567c02b617e7f",
-    "scope": "content",
-    "key": "Low-stutter, FPS-focused VIctory-NVIDIA fork (Xbox Series / Scarlett D3D12 layer) for NVIDIA RTX 20/30/40/50: u64 descriptor bitset, dense HeapRanges, single-wait PSO budget, Wave32 waterfalls, DLSS/FSR3 FG, 6-mode launcher. No game files.",
-    "source": "Low-stutter, FPS-focused VIctory-NVIDIA fork (Xbox Series / Scarlett D3D12 layer) for NVIDIA RTX 20/30/40/50: u64 descriptor bitset, dense HeapRanges, single-wait PSO budget, Wave32 waterfalls, DLSS/FSR3 FG, 6-mode launcher. No game files.",
-    "refs": [
-      "candidates:tiadiff/VIctory-NVIDIA-LowStutter.description"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ5QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "cc0f170c1b4652e59cd8da658d980a5755ca138842245267256b14fa2f90b941",
-    "sourceHash": "53e20e708fd19474c941f3ac202c8376e37186104087ca1dc80bf25846ad04ab",
-    "scope": "content",
-    "key": "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
-    "source": "Belobug's GTA VI build has been taken off GitHub. The Belobug/VIctory-Belobug-AMD repository and the Belobug account behind it both stopped loading on Friday, and PortWatch has confirmed that GitHub removed them for violating its Terms of Service.",
-    "refs": [
-      "news:2026-11-27-belobug-dmca.body.0"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "a323e03804563b63b438dc4a8762e0d93ec0395667f216ea74440811c482d77f",
-    "sourceHash": "c6daf53b9b123d2a57e9b2c3fdb3f95d0e03a13e881bc17408b8d3608f92a5c0",
-    "scope": "content",
-    "key": "Until now, every build we track has been single-player: getting GTA VI's story to run on PC at all has taken everyone's effort. Multiplayer means separate copies of the game agreeing on where every player and car is, and no build on our board had shown that before.",
-    "source": "Until now, every build we track has been single-player: getting GTA VI's story to run on PC at all has taken everyone's effort. Multiplayer means separate copies of the game agreeing on where every player and car is, and no build on our board had shown that before.",
-    "refs": [
-      "news:2026-11-26-multiplayer-running.body.2"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "dc6dca8e0b7477ee716aa05fa9afc0fb24086388b0eca06d950add798e566590",
-    "sourceHash": "9377b81ed1ab8540369a59d90ec894034f21abbc3a5beac0d75f11fc2adbed85",
-    "scope": "content",
-    "key": "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
-    "source": "It was the build to beat: a fork of Marvis's VIctory for AMD Radeon cards, very playable at about 22 fps on average with no crashes, and among the furthest into the story on our board. It had over 4,000 stars and 1,200 forks, and at 91.3% it was the top-rated build we track.",
-    "refs": [
-      "news:2026-11-27-belobug-dmca.body.1"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "add56ba6d8f0a5eea99472ab9693c4aa99565b67c1fb0eb0e53ca46eab99505c",
-    "sourceHash": "2d9a16e75f2287e3c11813634fec965a5c8575d9b45457ca9a4a3ef9da72e3e0",
-    "scope": "content",
-    "key": "GTA VI multiplayer is running on PC. On Thursday evening TeK (@TeKGameR950) posted a video on X of what the group calls working multiplayer: player characters and vehicles together in the world, with proximity voice chat, so you hear the players near you. PortWatch has verified that the video is real.",
-    "source": "GTA VI multiplayer is running on PC. On Thursday evening TeK (@TeKGameR950) posted a video on X of what the group calls working multiplayer: player characters and vehicles together in the world, with proximity voice chat, so you hear the players near you. PortWatch has verified that the video is real.",
-    "refs": [
-      "news:2026-11-26-multiplayer-running.body.0"
-    ],
-    "attempts": 1,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
     "reviewRequired": false
   },
   {
@@ -1927,19 +1927,6 @@
     "source": "A build shown on darkworldhm's Rumble stream on 25 Nov, running GTA VI's free roam at about 12-15 fps, swinging between 5 and 24: the highest frame rate on our board. The owner rates its story progress at 80%, and it hasn't crashed so far. The picture looks alright, with some texture or ray-tracing glitches. Reportedly on an NVIDIA RTX 50-series card. It's built on VIctory, but which fork isn't known. Code not public.",
     "refs": [
       "efforts:darkworldhm.summary"
-    ],
-    "attempts": 0,
-    "lastError": null,
-    "reviewRequired": false
-  },
-  {
-    "id": "752e01cdde001c586125c73e2ebbe166aa654ecf4d5ba64e777f7e9fe7a98bad",
-    "sourceHash": "5b1acf6e24bfdd902ca4dd091917c70281da4f5afaeeef6a67950f74a828d3aa",
-    "scope": "content",
-    "key": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
-    "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
-    "refs": [
-      "pinned.text"
     ],
     "attempts": 0,
     "lastError": null,

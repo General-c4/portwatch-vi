@@ -9,10 +9,10 @@
     },
     "headlines": {
       "total": 30,
-      "translated": 1,
+      "translated": 13,
       "exempt": 0,
-      "missing": 29,
-      "coverage": 3.33
+      "missing": 17,
+      "coverage": 43.33
     },
     "changes": {
       "total": 12,
@@ -23,40 +23,40 @@
     },
     "projectDescriptions": {
       "total": 41,
-      "translated": 28,
+      "translated": 29,
       "exempt": 0,
-      "missing": 13,
-      "coverage": 68.29
+      "missing": 12,
+      "coverage": 70.73
     },
     "projectDetails": {
       "total": 108,
-      "translated": 81,
+      "translated": 83,
       "exempt": 1,
-      "missing": 26,
-      "coverage": 75.7
+      "missing": 24,
+      "coverage": 77.57
     },
     "highlights": {
       "total": 113,
-      "translated": 79,
+      "translated": 84,
       "exempt": 0,
-      "missing": 34,
-      "coverage": 69.91
+      "missing": 29,
+      "coverage": 74.34
     },
     "blockers": {
       "total": 108,
-      "translated": 82,
+      "translated": 88,
       "exempt": 0,
-      "missing": 26,
-      "coverage": 75.93
+      "missing": 20,
+      "coverage": 81.48
     }
   },
   "after": {
     "pinned": {
       "total": 1,
-      "translated": 0,
+      "translated": 1,
       "exempt": 0,
-      "missing": 1,
-      "coverage": 0
+      "missing": 0,
+      "coverage": 100
     },
     "headlines": {
       "total": 30,
@@ -81,10 +81,10 @@
     },
     "projectDetails": {
       "total": 108,
-      "translated": 82,
+      "translated": 83,
       "exempt": 1,
-      "missing": 25,
-      "coverage": 76.64
+      "missing": 24,
+      "coverage": 77.57
     },
     "highlights": {
       "total": 113,
@@ -95,39 +95,32 @@
     },
     "blockers": {
       "total": 108,
-      "translated": 87,
+      "translated": 88,
       "exempt": 0,
-      "missing": 21,
-      "coverage": 80.56
+      "missing": 20,
+      "coverage": 81.48
     }
   },
   "audit": {
-    "legacyPending": 181,
-    "approvedEntries": 119,
+    "legacyPending": 157,
+    "approvedEntries": 95,
     "unrelatedEntries": 62
   },
   "stats": {
-    "requests": 10,
-    "translatedFields": 24,
-    "failedFields": 96,
+    "requests": 1,
+    "translatedFields": 1,
+    "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 5033,
-    "outputTokens": 1611,
+    "inputTokens": 1495,
+    "outputTokens": 230,
     "thinkingTokens": 0,
-    "errors": [
-      "network_or_provider"
-    ],
-    "model": "groq/qwen/qwen3.8-27b",
-    "pending": 110,
-    "durationMs": 250810
+    "errors": [],
+    "model": "qwen/qwen3.8-27b",
+    "provider": "groq",
+    "pending": 107,
+    "durationMs": 991
   },
   "missing": [
-    {
-      "id": "pinned:current",
-      "field": "text",
-      "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
-      "reason": "network_or_provider"
-    },
     {
       "id": "headline:https://news.google.com/rss/articles/CBMirwFBVV95cUxPM2dvYk9YQXp5REt0cUZTZDZRLUVwVkNOdzRyQkY5RDBrX29qd1BjNTNDTHh3WGNfOFVfYlR4YVNwV1hlTW16SlplTUFVMmxWdkVsRWVMTGh1MGJZakhheVJWcnd1d2NmcExoTUNxM05WTWppYXB2X19CLUo0TFBjYnhBQm51NFlLUTc5MFBDMDhYZGdGbUh0eXd2aWFMTUR5bXU0ZEpRYXlPZ0ozTW8w?oc=5",
       "field": "title",
@@ -382,12 +375,6 @@
     },
     {
       "id": "project:avatarmanz",
-      "field": "byline",
-      "source": "Removed by GitHub · was public, based on VIctory",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:avatarmanz",
       "field": "highlights.0",
       "source": "Platform: AMD Radeon RX 7900 XTX, Intel Core i9-12900K, 64 GB RAM, Windows 11",
       "reason": "request_or_token_limit"
@@ -408,12 +395,6 @@
       "id": "project:avatarmanz",
       "field": "highlights.3",
       "source": "Brought victory-fork, DexNom and Belobug together on VIctory, history and credits kept; GPL-3.0-or-later",
-      "reason": "request_or_token_limit"
-    },
-    {
-      "id": "project:avatarmanz",
-      "field": "blockers.0",
-      "source": "Code and GitHub account removed by GitHub on 27 Nov for a Terms of Service violation; nobody outside can test it",
       "reason": "request_or_token_limit"
     },
     {

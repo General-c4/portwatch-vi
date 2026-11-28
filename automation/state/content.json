@@ -3,10 +3,10 @@
   "latestUpstreamCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestSynchronizedCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
-  "latestDeployedCommitSha": "91da89e38e1c9b3274b272cbf5f49f6f19722b7c",
+  "latestDeployedCommitSha": "7fbeaee340cadb779e5d0d3e2e9ace93b8957950",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T06:13:12.320Z",
-  "lastUpstreamCheckTime": "2026-11-28T06:13:12.320Z",
+  "lastSuccessfulSyncTime": "2026-11-28T06:27:32.961Z",
+  "lastUpstreamCheckTime": "2026-11-28T06:27:32.961Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,7 +14,7 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T06:13:12.320Z"
+    "fetchedAt": "2026-11-28T06:27:32.961Z"
   },
   "records": {
     "new": 0,
@@ -79,23 +79,20 @@
     "total": 1289,
     "pending": 157,
     "completed": 0,
-    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
+    "provider": "none"
   },
   "newsTranslation": {
-    "requests": 3,
-    "inputTokens": 3448,
-    "outputTokens": 1345,
+    "requests": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
     "thinkingTokens": 0,
-    "successful": 2,
-    "failed": 1,
+    "successful": 0,
+    "failed": 0,
     "cachedFields": 0,
     "pending": 2,
-    "durationMs": 5100,
-    "errors": [
-      "all_free_providers_unavailable"
-    ],
-    "model": "qwen/qwen3.8-27b",
-    "provider": "groq"
+    "durationMs": 5,
+    "errors": [],
+    "model": "unavailable"
   },
   "dynamicTranslation": {
     "requests": 0,
@@ -107,7 +104,7 @@
     "thinkingTokens": 0,
     "errors": [],
     "pending": 108,
-    "durationMs": 8,
+    "durationMs": 6,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -161,7 +158,7 @@
     }
   },
   "providers": {
-    "attempts": 3,
+    "attempts": 0,
     "estimatedCostUSD": 0,
     "providers": {
       "ovh": {
@@ -194,7 +191,9 @@
         "daily": {
           "day": "2026-11-27",
           "requests": 11,
-          "tokens": 38168
+          "tokens": 38168,
+          "reservedUnknownRequests": 3,
+          "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436203868,
@@ -218,7 +217,9 @@
         "daily": {
           "day": "2026-11-28",
           "requests": 10,
-          "tokens": 21590
+          "tokens": 21590,
+          "reservedUnknownRequests": 3,
+          "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436223576,
@@ -233,7 +234,7 @@
         "code": "local_minute_limit",
         "cooldownUntil": 1795846469079,
         "latencyMs": 1517,
-        "available": false
+        "available": true
       },
       "cloudflare": {
         "requests": 8,
@@ -242,7 +243,9 @@
         "daily": {
           "day": "2026-11-28",
           "requests": 8,
-          "tokens": 17194
+          "tokens": 17194,
+          "reservedUnknownRequests": 3,
+          "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436223992,
@@ -257,7 +260,7 @@
         "code": "protected_facts_or_language_invalid",
         "cooldownUntil": 1795846618137,
         "latencyMs": 2725,
-        "available": false
+        "available": true
       },
       "zai": {
         "requests": 7,
@@ -266,7 +269,9 @@
         "daily": {
           "day": "2026-11-28",
           "requests": 7,
-          "tokens": 61802
+          "tokens": 61802,
+          "reservedUnknownRequests": 3,
+          "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436230446,
@@ -281,7 +286,7 @@
         "code": "timeout",
         "cooldownUntil": 1795846438146,
         "latencyMs": 2187,
-        "available": false
+        "available": true
       }
     },
     "events": [
@@ -478,11 +483,11 @@
     ]
   },
   "latency": {
-    "sourceCheckMs": 342,
+    "sourceCheckMs": 627,
     "dataSyncMs": 11,
-    "translationMs": 12835,
+    "translationMs": 0,
     "deploymentMs": null,
-    "totalMs": 18323
+    "totalMs": 664
   },
   "apiAnything": {
     "ok": false,
@@ -614,7 +619,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"58fd6164eca93e61c359ed92f828a6dc1fc5b343a4c97e529b46d6fe3be090fa\"",
+      "etag": "W/\"e50fb66b9dcf58a158e86956e96253ef4cc61021d73f91606e323b09ac825a92\"",
       "hash": "c0196914ba2c344c1a697983e4387e5b514d427423ead323dcd2cc740f0e603c"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -638,8 +643,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b0a6ffe-d5\"",
-      "hash": "5e90b7a1d25a7eaf6b5b3858252797e418574e6e2b7a3ad25fccbe2f812a7814"
+      "etag": "\"6b0a727e-d5\"",
+      "hash": "990f44666fe941edfcd3f94f481bbaee40513c56b313192acdcb4e986d4ba89d"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",
