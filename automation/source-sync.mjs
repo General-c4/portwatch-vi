@@ -2,6 +2,7 @@ import {execFileSync} from 'node:child_process';
 import {mkdir,writeFile,appendFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {atomicJSON,readJSON,log} from './lib/state.mjs';
+import {publishCommit} from './lib/git-publish.mjs';
 import {classifySourceChanges} from './lib/source-policy.mjs';
 const run=(cmd,args,cwd=process.cwd())=>execFileSync(cmd,args,{cwd,encoding:'utf8',stdio:['ignore','pipe','pipe'],windowsHide:true,maxBuffer:10_000_000}).trim();
 const git=(args,cwd)=>run('git',args,cwd);
@@ -55,8 +56,8 @@ try{
   }catch(error){policy.reasons.push(`Regression gate failed: ${String(error.message).slice(0,180)}`);}
  }
  if(passed){
-  // Fast-forward only. A concurrent change causes failure instead of overwriting Arabic work.
-  git(['push','origin',`HEAD:refs/heads/${target}`],work);await atomicJSON('.sync/source-status.json',{integratedUpstreamSha:upstream,status:'integrated',integratedAt:new Date().toISOString()});log('source-integrated',{upstream,branch});
+  // Rebase an unpublished integration onto safe concurrent updates, verify, then fast-forward only.
+  publishCommit({cwd:work,branch:target});await atomicJSON('.sync/source-status.json',{integratedUpstreamSha:upstream,status:'integrated',integratedAt:new Date().toISOString()});log('source-integrated',{upstream,branch});
   if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'integrated=true\n');
  }else{
   await atomicJSON(`${work}/automation/review/upstream.json`,{upstream,base:state.integratedUpstreamSha,files:policy.source,conflicts,reasons:policy.reasons,reviewRequired:true});

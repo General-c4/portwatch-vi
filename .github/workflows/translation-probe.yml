@@ -41,12 +41,14 @@ jobs:
           git add automation/state/translation-providers.json
           if ! git diff --cached --quiet; then
             git commit -m 'test: record free provider probe usage and cooldowns'
-            git push origin HEAD:feat/arabic-rtl-localization
+            node automation/lib/git-publish.mjs
           fi
       - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: provider-probe
-          path: .sync/provider-probe.json
+          path: |
+            .sync/provider-probe.json
+            automation/state/translation-providers.json
           include-hidden-files: true
           retention-days: 7

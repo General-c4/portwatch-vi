@@ -44,7 +44,7 @@ jobs:
           git add data assets/i18n/*auto*.json assets/i18n/content/*auto.json assets/i18n/news/ar.json automation/state
           if ! git diff --cached --quiet; then
             git commit -m 'sync: complete official snapshot and pending translation queue'
-            git push origin HEAD:feat/arabic-rtl-localization
+            node automation/lib/git-publish.mjs
           fi
       - name: Publish canonical changes immediately, even when translation later fails
         if: steps.canonical.outputs.publish == 'true'
@@ -93,7 +93,7 @@ jobs:
           git add data assets/i18n/*auto*.json assets/i18n/content/*auto.json assets/i18n/dashboard/*auto.json assets/i18n/news/ar.json automation/state
           if ! git diff --cached --quiet; then
             git commit -m 'sync: official content and validated Arabic translations'
-            git push origin HEAD:feat/arabic-rtl-localization
+            node automation/lib/git-publish.mjs
           fi
       - name: Dispatch validated deployment after sync commit
         if: steps.sync.outputs.publish == 'true'
@@ -110,6 +110,11 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: content-sync-status
-          path: .sync/*.json
+          path: |
+            .sync/*.json
+            automation/state
+            assets/i18n/news/ar.json
+            data/tracker.json
+            data/pinned.json
           include-hidden-files: true
           retention-days: 7

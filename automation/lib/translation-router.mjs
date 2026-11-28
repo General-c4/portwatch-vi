@@ -84,7 +84,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
     // Approximate TPM admission; actual provider usage/reset headers remain authoritative.
     // Byte upper bounds are retained for daily/monthly budgets but are too pessimistic for TPM.
     const minuteReserve=Math.ceil(Buffer.byteLength(instructions+request.prompt)/3)+outputLimit;
-    if(settings.dailyRequests&&p.daily.requests>=settings.dailyRequests||settings.dailyTokens&&p.daily.tokens+reserve>settings.dailyTokens){p.cooldownUntil=dailyReset(id,now);p.code='local_daily_limit';event('quota',{provider:id,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
+    if(settings.dailyRequests&&p.daily.requests+(p.daily.reservedUnknownRequests||0)>=settings.dailyRequests||settings.dailyTokens&&p.daily.tokens+(p.daily.reservedUnknownTokens||0)+reserve>settings.dailyTokens){p.cooldownUntil=dailyReset(id,now);p.code='local_daily_limit';event('quota',{provider:id,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
     if(settings.monthlyTokens&&p.monthly.tokens+reserve>settings.monthlyTokens){p.cooldownUntil=p.monthly.resetAt;p.code='local_monthly_limit';continue;}
     if(attempts>=config.maxAttemptsPerRun)break;
     // TPM reservations protect short windows even when a response omits usage.

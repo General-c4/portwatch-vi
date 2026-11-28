@@ -1,6 +1,13 @@
 name: Backfill approved dynamic Arabic content
 on:
   workflow_dispatch:
+    inputs:
+      max_requests:
+        description: Maximum logical translation batches
+        default: '10'
+      batch_fields:
+        description: Maximum fields per batch
+        default: '6'
 permissions:
   contents: write
   actions: write
@@ -37,11 +44,11 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           TRANSLATION_FREE_PROVIDERS: ${{ vars.TRANSLATION_FREE_PROVIDERS || 'gemini' }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
-          GEMINI_NEWS_MAX_REQUESTS: '10'
+          GEMINI_NEWS_MAX_REQUESTS: ${{ inputs.max_requests || '10' }}
           GEMINI_NEWS_DAILY_REQUESTS: '100'
           GEMINI_NEWS_DAILY_TOKENS: '500000'
           GEMINI_NEWS_MAX_INPUT_BYTES: '30000'
-          GEMINI_EDITORIAL_BATCH_FIELDS: '12'
+          GEMINI_EDITORIAL_BATCH_FIELDS: ${{ inputs.batch_fields || '6' }}
       - run: node --test tests/*.test.mjs
       - name: Commit validated catalog and durable state
         run: |
@@ -50,7 +57,7 @@ jobs:
           git add data assets/i18n/news/ar.json automation/state
           if ! git diff --cached --quiet; then
             git commit -m 'i18n: backfill approved dynamic editorial content'
-            git push origin HEAD:feat/arabic-rtl-localization
+            node automation/lib/git-publish.mjs
           fi
       - if: steps.translate.outputs.publish == 'true'
         run: gh workflow run arabic-preview.yml --repo General-c4/portwatch-vi --ref feat/arabic-rtl-localization
@@ -62,6 +69,11 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: dynamic-translation-coverage
-          path: .sync/dynamic-coverage.json
+          path: |
+            .sync/dynamic-coverage.json
+            automation/state
+            assets/i18n/news/ar.json
+            data/tracker.json
+            data/pinned.json
           include-hidden-files: true
           retention-days: 7

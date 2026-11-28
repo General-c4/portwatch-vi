@@ -30,7 +30,9 @@
       "daily": {
         "day": "2026-11-27",
         "requests": 11,
-        "tokens": 38168
+        "tokens": 38168,
+        "reservedUnknownRequests": 3,
+        "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436203868,
@@ -53,7 +55,9 @@
       "daily": {
         "day": "2026-11-28",
         "requests": 10,
-        "tokens": 21590
+        "tokens": 21590,
+        "reservedUnknownRequests": 3,
+        "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436223576,
@@ -76,7 +80,9 @@
       "daily": {
         "day": "2026-11-28",
         "requests": 8,
-        "tokens": 17194
+        "tokens": 17194,
+        "reservedUnknownRequests": 3,
+        "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436223992,
@@ -99,7 +105,9 @@
       "daily": {
         "day": "2026-11-28",
         "requests": 7,
-        "tokens": 61802
+        "tokens": 61802,
+        "reservedUnknownRequests": 3,
+        "reservedUnknownTokens": 7502
       },
       "monthly": {
         "resetAt": 1798436230446,
@@ -1001,5 +1009,16 @@
       "costUSD": 0
     }
   ],
-  "pendingFields": {}
+  "pendingFields": {},
+  "recoveredReports": [
+    {
+      "runId": 46115872127,
+      "reason": "publication_race_no_full_checkpoint",
+      "observedUnattributedInputTokens": 5998,
+      "observedUnattributedOutputTokens": 1504,
+      "validatedFieldsNotPublished": 10,
+      "providerRequestUpperBound": 3,
+      "estimatedCostUSD": 0
+    }
+  ]
 }
