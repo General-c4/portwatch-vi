@@ -25,6 +25,32 @@ jobs:
           cache: npm
           cache-dependency-path: automation/package-lock.json
       - run: npm ci --prefix automation --ignore-scripts --no-audit --no-fund
+      - name: Synchronize and queue complete canonical data before translation
+        id: canonical
+        run: node automation/content-sync.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PW_TRANSLATION_PROVIDER: none
+          PW_TRANSLATION_LIMIT: '0'
+          GEMINI_NEWS_MAX_REQUESTS: '0'
+          API_ANYTHING_LOCAL_ONLY: '1'
+      - name: Validate the canonical release
+        run: node --test tests/*.test.mjs
+      - name: Persist canonical data before contacting translation providers
+        if: steps.canonical.outputs.changed == 'true'
+        run: |
+          git config user.name 'portwatch-sync[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data assets/i18n/*auto*.json assets/i18n/content/*auto.json assets/i18n/news/ar.json automation/state
+          if ! git diff --cached --quiet; then
+            git commit -m 'sync: complete official snapshot and pending translation queue'
+            git push origin HEAD:feat/arabic-rtl-localization
+          fi
+      - name: Publish canonical changes immediately, even when translation later fails
+        if: steps.canonical.outputs.publish == 'true'
+        run: gh workflow run arabic-preview.yml --ref feat/arabic-rtl-localization
+        env:
+          GH_TOKEN: ${{ github.token }}
       - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
@@ -75,7 +101,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
       - name: Notify the independent source-integration pipeline when upstream advances
-        if: steps.sync.outputs.upstream_changed == 'true'
+        if: steps.canonical.outputs.upstream_changed == 'true' || steps.sync.outputs.upstream_changed == 'true'
         run: gh workflow run source-sync.yml --ref feat/arabic-rtl-localization
         env:
           GH_TOKEN: ${{ github.token }}
