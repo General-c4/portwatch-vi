@@ -1742,7 +1742,7 @@
           "fieldHashes": {
             "title": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf"
           },
-          "orphanedAt": null
+          "orphanedAt": "2026-11-28T10:54:01.925Z"
         }
       },
       "originalContentId": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5",
@@ -1750,7 +1750,8 @@
       "fieldHashes": {
         "source": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf",
         "title": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf"
-      }
+      },
+      "orphanedAt": "2026-11-28T10:54:01.925Z"
     },
     "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c": {
       "source": "Hosts debate GTA 6 rumors, leaks, and its new direction",
@@ -1771,7 +1772,7 @@
           "fieldHashes": {
             "title": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c"
           },
-          "orphanedAt": null
+          "orphanedAt": "2026-11-28T10:54:01.925Z"
         }
       },
       "originalContentId": "headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH",
@@ -1779,7 +1780,8 @@
       "fieldHashes": {
         "source": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c",
         "title": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c"
-      }
+      },
+      "orphanedAt": "2026-11-28T10:54:01.925Z"
     },
     "b5fa36e93c0db2d93e438413342870828dcae04a5c887cd7b7bea29d847a9655": {
       "source": "Stutters, worst on a first run while shaders compile; frame generation needs an RTX 40 or later",
@@ -3761,46 +3763,6 @@
         "lastError": "network_or_provider",
         "nextAttemptAt": "2026-11-28T06:05:25.799Z"
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5",
-        "field": "title",
-        "sourceHash": "bd434db3f4ad55e64df3e37cd1d5178f187b5a71b0b1d0f2eb9db1d55e8e7c52",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5",
-        "field": "title",
-        "sourceHash": "9f0ee88c45373c710ffac082f501b838f09a508c47cba361c54d9880810d3093",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5",
-        "field": "title",
-        "sourceHash": "99ed02b53f27f8aff8f8ed94f498b0ee354eaba77ceff77e48ad3bb3ee4f0ed1",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5",
-        "field": "title",
-        "sourceHash": "6999e5c5db6c21d7ad342fc8ac46538d64a3d64deeceebe886d3dbf52669099a",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5",
-        "field": "title",
-        "sourceHash": "dba691cf0b8aab49b983f6deee64a4cbd64b4ee95d36d62e51052303169cbd1b",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
-      },
       "[\"project:victory-nvidia\",\"summary\"]": {
         "id": "project:victory-nvidia",
         "field": "summary",
@@ -3848,14 +3810,6 @@
         "attempts": 5,
         "lastError": "all_free_providers_unavailable",
         "nextAttemptAt": "2026-11-28T08:44:06.124Z"
-      },
-      "[\"headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
-        "field": "title",
-        "sourceHash": "4e6286cdb655ec87a7b213d036dcd5ad7a531abe1a368d2742792762a2e04717",
-        "attempts": 2,
-        "lastError": "network_or_provider",
-        "nextAttemptAt": "2026-11-28T06:08:31.538Z"
       },
       "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).\",\"text\"]": {
         "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
@@ -3989,6 +3943,70 @@
         "id": "project:avatarmanz",
         "field": "proof.label",
         "sourceHash": "80678ff4923ad00cd6b8ed00a7ec544b10be1ecd7c00aa6d070ae9d1c8d94a87",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5",
+        "field": "title",
+        "sourceHash": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXZjaUhwRG1WMmE1ell5dHpXU3Vyb0JVMk5wbUVMNHR5MTB6aExJYW85S1Q4UE1YRXB4MXN3NFp2cWhiajhGR01FQkNZVnhrQnhVZWZMWTVSdGU2TzU2N0lLOFVyUXhZZnpLMkM1S0ZUX0psNExISTM0eUlodFYyTVJYckF6RTFKNXFNMA?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXZjaUhwRG1WMmE1ell5dHpXU3Vyb0JVMk5wbUVMNHR5MTB6aExJYW85S1Q4UE1YRXB4MXN3NFp2cWhiajhGR01FQkNZVnhrQnhVZWZMWTVSdGU2TzU2N0lLOFVyUXhZZnpLMkM1S0ZUX0psNExISTM0eUlodFYyTVJYckF6RTFKNXFNMA?oc=5",
+        "field": "title",
+        "sourceHash": "d34572132cdb519579f22b6575a655ab8db3c3c6cd265c8abb1c3bd97dbc0a42",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5",
+        "field": "title",
+        "sourceHash": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1B4dzM2c0FNSWpFSjlPWTA4TW9Kek1sbW9RV1JETDg0aFd3QUdtR0NZdC1Mc25ZWXVnY3dkTlFINUwxQVJWNURfeHRmZ3JRVnVvMTlNelVVOVdCcU5EQ2taM0RhVVFoZ0J2VURRQmpmMzA0NW8xbld2T1pZdjRoZXM1VUFkSnN4MnpNUURDdjdLNTRTQ3lpZHYtYmo2WklSX1FlQ21wY2Flc0dIamZ4b0NqRTNDbTB6aGQxTzRxLTk?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1B4dzM2c0FNSWpFSjlPWTA4TW9Kek1sbW9RV1JETDg0aFd3QUdtR0NZdC1Mc25ZWXVnY3dkTlFINUwxQVJWNURfeHRmZ3JRVnVvMTlNelVVOVdCcU5EQ2taM0RhVVFoZ0J2VURRQmpmMzA0NW8xbld2T1pZdjRoZXM1VUFkSnN4MnpNUURDdjdLNTRTQ3lpZHYtYmo2WklSX1FlQ21wY2Flc0dIamZ4b0NqRTNDbTB6aGQxTzRxLTk?oc=5",
+        "field": "title",
+        "sourceHash": "6c7782e81c6407414a388e256afe52ae619c611a168c5e082655b196888267fe",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5",
+        "field": "title",
+        "sourceHash": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzY3elB3UGgweUR3c2NYbU1RbXl3WF92LXNFM044ZXR0N1NIUV81eGYzelkxM296WFBSNDZ2QlBJTmhUYzl4TkptSGxDTHFkSXB0cHhseXY3djJpSTRtLW9IQXN1WGo4M2lNekhnZGhqc1lINE1xcUpTSEwxdUx2elZQZEQ2eVhjUjFQcV9RWjB5MjZNMVE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzY3elB3UGgweUR3c2NYbU1RbXl3WF92LXNFM044ZXR0N1NIUV81eGYzelkxM296WFBSNDZ2QlBJTmhUYzl4TkptSGxDTHFkSXB0cHhseXY3djJpSTRtLW9IQXN1WGo4M2lNekhnZGhqc1lINE1xcUpTSEwxdUx2elZQZEQ2eVhjUjFQcV9RWjB5MjZNMVE?oc=5",
+        "field": "title",
+        "sourceHash": "1a5caa651c7fe350d70b923b85117541de5a2dd731e94fcdadab9af1671edc45",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.cryptopolitan.com/gta-6-multiplayer-pc-before-rockstar/\",\"title\"]": {
+        "id": "headline:https://www.cryptopolitan.com/gta-6-multiplayer-pc-before-rockstar/",
+        "field": "title",
+        "sourceHash": "50488ce3bb9a9c35e9435ad315787c5154b7aace0621d3593b8e6b936c3e3529",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGZuQkJnUE9vbVRwd0pIdzdWb0Y5T3JUZnJIX2x1dGJ1UkpBSXZmVHEyejZxVEZuWFc4RV9yWnJ2RUZ6Tlhza1ItcmJyd0NHVzBwMndvNUlOVUlfQWxqcUJtcTZHbVk5RmZEQlBUb2RSN3g5TmFwXy1WNmdWZUNvcDh0LS0zdy1VelJzMmhSVmREV3A0Y1h0eF84Qnk3VjNQeEFPbWJZaHUtaHNqRmVXSzln?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGZuQkJnUE9vbVRwd0pIdzdWb0Y5T3JUZnJIX2x1dGJ1UkpBSXZmVHEyejZxVEZuWFc4RV9yWnJ2RUZ6Tlhza1ItcmJyd0NHVzBwMndvNUlOVUlfQWxqcUJtcTZHbVk5RmZEQlBUb2RSN3g5TmFwXy1WNmdWZUNvcDh0LS0zdy1VelJzMmhSVmREV3A0Y1h0eF84Qnk3VjNQeEFPbWJZaHUtaHNqRmVXSzln?oc=5",
+        "field": "title",
+        "sourceHash": "e61cfd5ae1f452b589f8f9248eb9419ac7146307873b64167ec22061241ddd82",
         "attempts": 0,
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
@@ -4684,56 +4702,56 @@
         "fieldHashes": {
           "title": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH": {
         "sourceHash": "af6078fd0bb6089e26956cb7715350ed416ac12d055409dd4c6d167d1aba4091",
         "fieldHashes": {
           "title": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T": {
         "sourceHash": "b3ae91e072e7252749792271fb6355ce341705d6a2f2266be7e6b3988d26fa40",
         "fieldHashes": {
           "title": "4e6286cdb655ec87a7b213d036dcd5ad7a531abe1a368d2742792762a2e04717"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://news.google.com/rss/articles/CBMilAJBVV95cUxNSGhCbHFXZW5zOFpZM0l4bEQxMkNVMng5NzVJVVNNWF9ySC1OZ1RuUHVqSUlzTl81cHlscGk3aDROaTFtV3RtMGt6X2lhREUzenhlSnNVdzVpR0ZLNTI1V1gyNFFvOFYzdWk3NU5IZGlwaEdzQjFZS0MxQlRuX3lKNDhFNjJQTDAtam1GRWFyekxRTnF6N3FGdHpJeUE5d29EY2pMS2Z4S2liSXBGd0cyWUhsME5hb1JjSk9xTERZUUtlNEdza2pZOERCLW5NdERpcDFPUERMcHh4ZE5vYnVSMGE3dzFWaS1FUHczVTY3SnhKdmFiczJRQmJ1UzdDVjNMaHhlRl96Qnc3MmJ4dk9zeEtMY08?oc=5": {
         "sourceHash": "3e5e6ed95ceac4f52dffa0d842c665440f5be6c7d47b4648474ff9fcafdfe970",
         "fieldHashes": {
           "title": "bd434db3f4ad55e64df3e37cd1d5178f187b5a71b0b1d0f2eb9db1d55e8e7c52"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE9xaDRzRTFYRTFkeGNEZm43MHpXanJVNjRkSWoyU2lOdHhLX2xzOVRwazRHOTc0UnFRUVBDZWJranE5c2NvNWpoalNYTjVoQkhjSE1Fa29PeU9XRmNtUXFnWDJFN2FlMlR6elZIODR3?oc=5": {
         "sourceHash": "56962237943b75ea3f6e7d85afb4f860a47038b701128e1b30e92ab0bed6fb60",
         "fieldHashes": {
           "title": "9f0ee88c45373c710ffac082f501b838f09a508c47cba361c54d9880810d3093"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdWtaZXREdXF2elhsWngtQ1BiSTVkbm54LVpOdEd5RmtjaXMxUFJCMXd1SFlHdDRVLWRPTENwMTBFd3pCRFY3MDhWV25sS2RMb2Y3WnNrOTJILVp0N0lUNTdHMlREQXNlSEZhTXdfMTJaOHQxUGZzS3FLMGV1bWY3QmtaeEdqWjJr?oc=5": {
         "sourceHash": "ab6fb10c3915fe02a42e8066ecd1d284413481e456f153c8260f93013f992f3f",
         "fieldHashes": {
           "title": "99ed02b53f27f8aff8f8ed94f498b0ee354eaba77ceff77e48ad3bb3ee4f0ed1"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFhYMS1MQXdpU09RT25vMnk0Z084NWRxdm1fdDExNWhlUVFmZjBzbzVUWlg1b2k0dFItNzEwZm5fV0Z2aVpLNFB0ZHJaWnFzYmJ3bjA0a2VCWUU3ODRnRjdwMFhfLTBNc0puSHdBaTZsT19PVFBVeWs1cXdlYVBZUDIxNWxsc1J6VlBjSkQzR0dzNzBwai1ueUYzQm8zb2pTR0F2WDlXVkRVcDlBcDh3Y2hSZWVzWTVXLWd3TTVDZXM5dk0?oc=5": {
         "sourceHash": "d745f40a073ff440a7a7e8fc84651cc5ac6fd1e84f3cdabd06a86ffcf523a2b6",
         "fieldHashes": {
           "title": "6999e5c5db6c21d7ad342fc8ac46538d64a3d64deeceebe886d3dbf52669099a"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "headline:https://news.google.com/rss/articles/CBMi9gFBVV95cUxPdzhYcWpLeTJpZHo0b3pwN2Y5NGZRU0x5RjZUeGRncWFVb3ZmVm9kNmpiZ2I3LWpUNEduLVF1YndCU1F5MkxvaXNkYk1SQWNRUlJxQnp5ZEtQdjZLSDlCRUtOWGhtc3hQTEVqeWg2YXlwMFZkX0Y0N3dHWGUxVUxHd1Z3anZMX2pWazd1TE84eHowV1A5ZHI0bWhYMG5BckNNMGxUbkcwOGpaY2FESWdneDlyM09hTVJxeDBwaFBTblFiMmYxMnZ1TXBjcmZScmI5azZCRWtRcVhGR1FUa0VCcWVLbEpNWENQTXFrbUtONnRub0YzU3c?oc=5": {
         "sourceHash": "48e4e9f5a89231b74fd7c3376d93ac2c3198aff6dc7cf22f695666fcfcc3eca7",
         "fieldHashes": {
           "title": "dba691cf0b8aab49b983f6deee64a4cbd64b4ee95d36d62e51052303169cbd1b"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).": {
         "sourceHash": "f859311376651039ecd4b5d32d882c6c4dfaebe2d771aefd619cfd5afa2ef766",
@@ -4803,7 +4821,7 @@
         "fieldHashes": {
           "text": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2"
         },
-        "orphanedAt": null
+        "orphanedAt": "2026-11-28T10:54:01.925Z"
       },
       "change:2026-11-28:new:Scout spotted fitgirlrecomp/FitGirl (possible effort, substance 61).": {
         "sourceHash": "18d949ecd245563bdb3f7eedb882414044415b25e90acf2e6105bc7908c43655",
@@ -5432,6 +5450,69 @@
           "blockers.0": "c802ffc7c843adf5020165c98df91e765bf8116625314c9b4fa45838b18b1bce",
           "blockers.1": "03fdae5324287b22be4dd0c249b14139c54de67a2e6b99199861730082c8d32a",
           "blockers.2": "c5db215402b594f250678f8bfa396c112148dd00e528ebce793b283f6d65c1b4"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcmNkMVFtN05jZnJwMDVBV1l2YlZNUklpcEtucUtESEVLYWhjdzRMeUJwaF9HZFZsQjFxVnVGdEJtd0o3V2dOTFNnVkRyRTBLT2s2ZGkyWGNvR01taEtkUFBmdDFJXzZCUXpoMGhURUNheE52M2dxZzU0YmhLZjIxY05SRWJBZDQxRkIyVlJRN2pRa3gzU202cC1FdGIxZGlxTGxBSDRUeTQ?oc=5": {
+        "sourceHash": "65149cf7b90fd4ed83f2db665b3dddab89f8c1d40f436078e069e7b7d393c4b1",
+        "fieldHashes": {
+          "title": "9bbed38deadf07649077cb02c14a8040f462c3d7a2b698c0bbd956b0957c56fa"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOLXZjaUhwRG1WMmE1ell5dHpXU3Vyb0JVMk5wbUVMNHR5MTB6aExJYW85S1Q4UE1YRXB4MXN3NFp2cWhiajhGR01FQkNZVnhrQnhVZWZMWTVSdGU2TzU2N0lLOFVyUXhZZnpLMkM1S0ZUX0psNExISTM0eUlodFYyTVJYckF6RTFKNXFNMA?oc=5": {
+        "sourceHash": "630e6138606878877ead478f173f542e5915f7bbae3fab2855e7f41071607a87",
+        "fieldHashes": {
+          "title": "d34572132cdb519579f22b6575a655ab8db3c3c6cd265c8abb1c3bd97dbc0a42"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxNTjZna1FLa2thMVFpTjRLR1o1RHBwVjZqVjk3eWhYU0RoWVZ6T0liQzFPbkVNVEE0elM2Z1g4YWtjZkpaQUFKdWpfX1cyMU4zX2t5aGh0a2hldWE2eGtIdTFzVnNEZkV4VW5NdnQ3SDcxZjZ0dUw3bXlpS3BlN1hhc3dDX2xBV2NRVFF0Uw?oc=5": {
+        "sourceHash": "cfeac84b9b6bc92bd6009f33228eb5dd97a484ecb6c1f1e3dc3761c1d5031c06",
+        "fieldHashes": {
+          "title": "03e3f38ae43dbd8d2350b6264fb731332ae6b3a30b67108ac575dd8b0d1649ed"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1B4dzM2c0FNSWpFSjlPWTA4TW9Kek1sbW9RV1JETDg0aFd3QUdtR0NZdC1Mc25ZWXVnY3dkTlFINUwxQVJWNURfeHRmZ3JRVnVvMTlNelVVOVdCcU5EQ2taM0RhVVFoZ0J2VURRQmpmMzA0NW8xbld2T1pZdjRoZXM1VUFkSnN4MnpNUURDdjdLNTRTQ3lpZHYtYmo2WklSX1FlQ21wY2Flc0dIamZ4b0NqRTNDbTB6aGQxTzRxLTk?oc=5": {
+        "sourceHash": "697483e342dac36c71780aff4cc8e319e78771c6f0cfda565c47f2704e99cb85",
+        "fieldHashes": {
+          "title": "6c7782e81c6407414a388e256afe52ae619c611a168c5e082655b196888267fe"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ZU0VqOUpNRHBadUdlNjF5TXhPSDhqcm1VOG80NTF4TFJHNFd0dGlveEFxb0kyaHJoOXR0RUpwaGFqNmo1M2hScUJSTDRRbC1QaEJBeWp0dnhEOENzd3c?oc=5": {
+        "sourceHash": "93cf467e92a2257cb4c3fb6e30329bdc78f98dbf0546f19b999bc3b23fb4b179",
+        "fieldHashes": {
+          "title": "a59c82c9137fd920564a7a31765c46c31bfd5c2b9a158d0c5a611fc9669049e9"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzY3elB3UGgweUR3c2NYbU1RbXl3WF92LXNFM044ZXR0N1NIUV81eGYzelkxM296WFBSNDZ2QlBJTmhUYzl4TkptSGxDTHFkSXB0cHhseXY3djJpSTRtLW9IQXN1WGo4M2lNekhnZGhqc1lINE1xcUpTSEwxdUx2elZQZEQ2eVhjUjFQcV9RWjB5MjZNMVE?oc=5": {
+        "sourceHash": "b15fac84e22e7cfd0a68911fb2cfce9ab11a7611556457537d0adf16eb9435dd",
+        "fieldHashes": {
+          "title": "1a5caa651c7fe350d70b923b85117541de5a2dd731e94fcdadab9af1671edc45"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://www.cryptopolitan.com/gta-6-multiplayer-pc-before-rockstar/": {
+        "sourceHash": "96dc49392b2a7e851f7849b75a8149ed18524bbce5ad19b1428e945259f848c7",
+        "fieldHashes": {
+          "title": "50488ce3bb9a9c35e9435ad315787c5154b7aace0621d3593b8e6b936c3e3529"
+        },
+        "orphanedAt": null
+      },
+      "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxQWGZuQkJnUE9vbVRwd0pIdzdWb0Y5T3JUZnJIX2x1dGJ1UkpBSXZmVHEyejZxVEZuWFc4RV9yWnJ2RUZ6Tlhza1ItcmJyd0NHVzBwMndvNUlOVUlfQWxqcUJtcTZHbVk5RmZEQlBUb2RSN3g5TmFwXy1WNmdWZUNvcDh0LS0zdy1VelJzMmhSVmREV3A0Y1h0eF84Qnk3VjNQeEFPbWJZaHUtaHNqRmVXSzln?oc=5": {
+        "sourceHash": "98840a6eb803c6aa50b60b4fa983ff6570060e4aeae26a82b401812439f5274b",
+        "fieldHashes": {
+          "title": "e61cfd5ae1f452b589f8f9248eb9419ac7146307873b64167ec22061241ddd82"
+        },
+        "orphanedAt": null
+      },
+      "change:2026-11-28:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).": {
+        "sourceHash": "818c66a4594b12c06476f2ca50ab478b562763272c921f30ac7892d17d59a3a5",
+        "fieldHashes": {
+          "text": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33"
         },
         "orphanedAt": null
       }

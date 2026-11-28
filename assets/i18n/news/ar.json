@@ -121,22 +121,6 @@
         }
       }
     },
-    "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GitHub’s Deleted GTA 6 Post Raises Questions About Its Stance on Game Emulation",
-          "ar": "منشور GitHub المحذوف عن GTA 6 يثير تساؤلات حول موقفه من محاكاة الألعاب"
-        }
-      }
-    },
-    "headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH": {
-      "fields": {
-        "title": {
-          "source": "Hosts debate GTA 6 rumors, leaks, and its new direction",
-          "ar": "المضيفون يناقشون شائعات GTA 6 وتسريباته واتجاهه الجديد"
-        }
-      }
-    },
     "project:victory-nvidia": {
       "fields": {
         "blockers.1": {
