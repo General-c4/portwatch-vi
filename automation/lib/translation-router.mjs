@@ -59,7 +59,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
     p.monthly??={resetAt:now+30*86400000,tokens:0};
     if(p.cooldownUntil>now){event('cooldown_skip',{provider:id,code:p.code,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
     const outputLimit=id==='groq'?Math.min(2048,options.maxOutputTokens||8192):options.maxOutputTokens||8192;
-    const instructions=(options.systemInstruction||NEWS_SYSTEM_INSTRUCTION)+'\nReturn exactly this JSON schema, with every required property and no other properties: '+JSON.stringify(NEWS_RESPONSE_SCHEMA);
+    const instructions=(options.systemInstruction||NEWS_SYSTEM_INSTRUCTION)+'\nReturn a JSON DATA INSTANCE conforming to the schema below. Do NOT return the schema definition itself. The result must contain title (string), summary (string), body (array of index/text objects), sourceUrls (array of strings), and no other properties. Translate nonempty input fields; unused title/summary must be empty strings. عند نسبة قول إلى المطور باستخدام says، استخدم يقول أو ذكر؛ لا تضف تأكيدًا أو تحققًا غير موجود في المصدر. Keep every ZXQ token verbatim, once per original occurrence. Schema: '+JSON.stringify(NEWS_RESPONSE_SCHEMA);
     const reserve=Buffer.byteLength(instructions+request.prompt)+1024+outputLimit;
     if(settings.dailyRequests&&p.daily.requests>=settings.dailyRequests||settings.dailyTokens&&p.daily.tokens+reserve>settings.dailyTokens){p.cooldownUntil=dailyReset(id,now);p.code='local_daily_limit';event('quota',{provider:id,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
     if(settings.monthlyTokens&&p.monthly.tokens+reserve>settings.monthlyTokens){p.cooldownUntil=p.monthly.resetAt;p.code='local_monthly_limit';continue;}
@@ -85,6 +85,8 @@ export async function createTranslationRouter({root='.',config,state,env=process
       const url=id==='cloudflare'?`https://api.cloudflare.com/client/v4/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`:policy.url;
       const max=outputLimit;
       const body={model,messages:[{role:'system',content:instructions},{role:'user',content:request.prompt}],max_tokens:max,temperature:0.1,response_format:{type:'json_object'}};
+      if(id==='cloudflare')body.response_format={type:'json_schema',json_schema:NEWS_RESPONSE_SCHEMA};
+      if(id==='zai')body.thinking={type:'disabled'};
       if(id==='openrouter')body.provider={max_price:{prompt:0,completion:0},allow_fallbacks:false};
       const result=await fetchImpl(url,{method:'POST',redirect:'error',headers:{...(!policy.anonymous?{Authorization:`Bearer ${env[policy.key]}`}:{ }),'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(options.timeoutMs||45000)});
       if(!result.ok){

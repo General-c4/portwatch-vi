@@ -72,7 +72,7 @@ export function restoreTranslation(source,translated,tokens){
  if(/\brender(?:ing|s)?\b/i.test(source)&&!/رسوم|رسم|عرض|تصيير|إظهار/.test(plain))throw new Error('Rendering terminology requires review');
  if(/\bframe rate\b/i.test(source)&&!/إطار|إطارات|FPS|fps/.test(plain))throw new Error('Frame-rate terminology requires review');
  if(/ray.trac/i.test(source)&&!/تتبع الأشعة/.test(plain))throw new Error('Ray tracing terminology requires review');
- const qualifiers=[[/\b(?:unverified|not verified)\b/i,/غير مؤكد|غير متحقق|لم.*تحقق|دون.*تحقق|غير موثق/],[/\bself-reported\b/i,/ذات|صاحب|أصحاب|المشروع|إبلاغ|إفادة|مطور|بحسب.*تقرير/],[/\b(?:claims?|allegedly)\b/i,/يدعي|تدعي|يزعم|تزعم|ادعاء|زعم|بحسب/]];
+ const qualifiers=[[/\b(?:unverified|not verified)\b/i,/غير مؤكد|غير متحقق|لم.*(?:تحقق|تؤكد|يؤكد)|دون.*تحقق|غير موثق/],[/\bself-reported\b/i,/ذات|صاحب|أصحاب|المشروع|إبلاغ|إفادة|مطور|بحسب.*تقرير/],[/\b(?:claims?|allegedly)\b/i,/يدعي|تدعي|يزعم|تزعم|ادعاء|زعم|بحسب/]];
  for(const [english,arabic]of qualifiers)if(english.test(source)&&!arabic.test(plain))throw new Error('Evidence qualifier requires review');
  return value.trim();
 }
