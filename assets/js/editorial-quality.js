@@ -5,6 +5,7 @@ export function editorialQualityIssue(source,ar){
  const text=ar.normalize('NFKC').replace(/[\u064B-\u065F\u0670]/g,'');
  if(/What's\s+(?:missing|new|next)/i.test(source)&&/\bWhat\b/.test(ar))return 'untranslated_prose';
  if(/render at a low resolution/i.test(source)&&/صرف اللعبة|صرفها|صرف بدقة/.test(text))return 'render_terminology';
+ if(/picture that looks like the console/i.test(source)&&/صورة تبدو كجهاز الألعاب/.test(text))return 'console_image_quality';
  if(/^Exclusive:/i.test(source)&&!/(?:حصري|خاص)/.test(text))return 'exclusive_label_omitted';
  if(/repository\s+and\s+[^.]{0,50}\baccount\b/i.test(source)&&!/(?:مستودع|المستودع)[\s\S]*و(?:ال)?حساب/.test(text))return 'repository_account_omitted';
  for(const word of source.match(/[A-Za-z0-9]+(?:[-_.][A-Za-z0-9]+)+/g)||[])if(isProseCompound(word)&&ar.toLowerCase().includes(word.toLowerCase()))return 'untranslated_prose';
