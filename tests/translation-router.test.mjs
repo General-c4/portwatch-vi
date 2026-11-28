@@ -59,9 +59,11 @@ test('OpenAI-compatible adapter uses fixed HTTPS host, refuses redirects and acc
  const response=await(await router.clientFactory({maxOutputTokens:64})).generate(request());assert.equal(response.provider,'groq');assert.equal(calls.length,1);assert.equal(calls[0].url,'https://api.groq.com/openai/v1/chat/completions');assert.equal(calls[0].options.redirect,'error');assert.equal(router.state.providers.groq.daily.tokens,30);
 });
 test('zero-price preflight prevents OpenRouter inference when a selected model becomes paid',async()=>{
+ for(const price of ['0.001',null,'']){
  const c=config();c.order=['openrouter'];c.providers.openrouter={model:'google/gemma-4-26b-a4b-it:free'};let posts=0;
- const router=await setup({config:c,env:{OPENROUTER_API_KEY:'test-secret',TRANSLATION_FREE_PROVIDERS:'openrouter'},fetchImpl:async(_url,options)=>{if(options.method==='POST')posts++;return Response.json({data:[{id:c.providers.openrouter.model,pricing:{prompt:'0.001',completion:'0'}}]});}});
+ const router=await setup({config:c,env:{OPENROUTER_API_KEY:'test-secret',TRANSLATION_FREE_PROVIDERS:'openrouter'},fetchImpl:async(_url,options)=>{if(options.method==='POST')posts++;return Response.json({data:[{id:c.providers.openrouter.model,pricing:{prompt:price,completion:'0'}}]});}});
  await assert.rejects((await router.clientFactory({maxOutputTokens:64})).generate(request()));assert.equal(posts,0);assert.equal(router.state.providers.openrouter.code,'free_price_unverified');
+ }
 });
 test('valid Arabic non-confirmation remains negative, and HTML markup is protected verbatim',()=>{
  assert.equal(restoreTranslation('Not verified','لم تؤكد الاختبارات المستقلة ذلك',[]),'لم تؤكد الاختبارات المستقلة ذلك');

@@ -15,6 +15,7 @@ export const FREE_PROVIDER_IDS=Object.keys(POLICY);
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const outputFor=(fields,sourceUrls)=>({title:fields.title||'',summary:fields.summary||'',body:Object.entries(fields).filter(([key])=>key.startsWith('body.')).map(([key,text])=>({index:Number(key.slice(5)),text})),sourceUrls});
 const fieldCacheKey=(source,urls)=>hash({source,urls});
+const zeroPrice=value=>typeof value==='number'?value===0:typeof value==='string'&&/^0+(?:\.0+)?$/.test(value);
 export function retryDelay(value,now=Date.now()){
  if(!value)return 0;
  if(/^\d+(\.\d+)?$/.test(value)){const n=Number(value);return n>1e12?Math.max(0,n-now):n>1e9?Math.max(0,n*1000-now):n*1000;}
@@ -77,7 +78,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
     if(p.monthly?.resetAt&&now>=p.monthly.resetAt)delete p.monthly;
     p.monthly??={resetAt:now+30*86400000,tokens:0};
     if(p.cooldownUntil>now){event('cooldown_skip',{provider:id,code:p.code,resetAt:new Date(p.cooldownUntil).toISOString()});continue;}
-    const outputLimit=id==='groq'?Math.min(4096,options.maxOutputTokens||8192):options.maxOutputTokens||8192;
+    const outputLimit=id==='groq'?Math.min(4096,options.maxOutputTokens||8192,Math.max(512,Object.values(request.fields).reduce((n,source)=>n+source.length,0)*2+256)):options.maxOutputTokens||8192;
     const instructions=(options.systemInstruction||NEWS_SYSTEM_INSTRUCTION)+'\nReturn a JSON DATA INSTANCE conforming to the schema below. Do NOT return the schema definition itself. The result must contain title (string), summary (string), body (array of index/text objects), sourceUrls (array of strings), and no other properties. Translate nonempty input fields; unused title/summary must be empty strings. عند نسبة قول إلى المطور باستخدام says، استخدم يقول أو ذكر؛ لا تضف تأكيدًا أو تحققًا غير موجود في المصدر. Terms of Service: شروط الخدمة؛ single-player: اللعب الفردي؛ best-rated وtop-rated: الأعلى تقييمًا. Keep every ZXQ token verbatim, once per original occurrence. Schema: '+JSON.stringify(NEWS_RESPONSE_SCHEMA);
     const reserve=Buffer.byteLength(instructions+request.prompt)+1024+outputLimit;
     // Approximate TPM admission; actual provider usage/reset headers remain authoritative.
@@ -102,7 +103,7 @@ export async function createTranslationRouter({root='.',config,state,env=process
       if(id==='openrouter'){
        const catalog=await fetchImpl('https://openrouter.ai/api/v1/models',{signal:AbortSignal.timeout(10000)});if(!catalog.ok)throw new Error('free_price_unverified');
        const info=(await catalog.json()).data?.find(m=>m.id===model);
-       if(!info||Number(info.pricing?.prompt)!==0||Number(info.pricing?.completion)!==0||!model.endsWith(':free'))throw new Error('free_price_unverified');
+       if(!info||!zeroPrice(info.pricing?.prompt)||!zeroPrice(info.pricing?.completion)||!model.endsWith(':free'))throw new Error('free_price_unverified');
       }
       const url=id==='cloudflare'?`https://api.cloudflare.com/client/v4/accounts/${env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`:policy.url;
       const max=outputLimit;
