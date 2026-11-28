@@ -3,10 +3,10 @@
   "latestUpstreamCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestSynchronizedCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
-  "latestDeployedCommitSha": "0679c47c0bf21aafe23d147ec0544cf8376a3944",
+  "latestDeployedCommitSha": "205a390c3fa1a54929e73777826c4bff34262c18",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T06:37:01.628Z",
-  "lastUpstreamCheckTime": "2026-11-28T06:37:01.628Z",
+  "lastSuccessfulSyncTime": "2026-11-28T07:23:34.606Z",
+  "lastUpstreamCheckTime": "2026-11-28T07:23:34.606Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,7 +14,7 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T06:37:01.628Z"
+    "fetchedAt": "2026-11-28T07:23:34.606Z"
   },
   "records": {
     "new": 0,
@@ -79,37 +79,62 @@
     "total": 1289,
     "pending": 155,
     "completed": 0,
-    "provider": "offline-argos-en_ar-1.0-ct2-4.6.0"
+    "provider": "none"
   },
   "newsTranslation": {
-    "requests": 2,
-    "inputTokens": 4257,
-    "outputTokens": 810,
+    "requests": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
     "thinkingTokens": 0,
-    "successful": 2,
+    "successful": 0,
     "failed": 0,
     "cachedFields": 0,
     "pending": 0,
-    "durationMs": 9466,
+    "durationMs": 8,
     "errors": [],
-    "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-    "provider": "cloudflare"
+    "cacheHits": 18,
+    "cacheMisses": 0,
+    "reusedTranslations": 18,
+    "newlyTranslatedFields": 0,
+    "deduplicatedFields": 0,
+    "totalItems": 25,
+    "newItems": 0,
+    "modifiedItems": 0,
+    "unchangedItems": 25,
+    "deletedItems": 0,
+    "expiredEntries": 0,
+    "cacheHitPercentage": 100,
+    "avoidedFieldRequests": 18,
+    "avoidedAPIRequestsEstimate": {
+      "requests": 18,
+      "baseline": "one unbatched API request per field; not measured provider requests"
+    },
+    "estimatedCostUSD": 0
   },
   "dynamicTranslation": {
-    "requests": 1,
-    "translatedFields": 1,
-    "failedFields": 5,
+    "requests": 0,
+    "translatedFields": 0,
+    "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 4615,
-    "outputTokens": 794,
+    "cacheHits": 307,
+    "cacheMisses": 106,
+    "reusedTranslations": 307,
+    "newlyTranslatedFields": 0,
+    "deduplicatedFields": 4,
+    "inputTokens": 0,
+    "outputTokens": 0,
     "thinkingTokens": 0,
-    "errors": [
-      "protected_facts_or_language_invalid"
-    ],
-    "model": "partial:cloudflare+zai",
-    "provider": "partial",
+    "errors": [],
+    "expiredEntries": 0,
     "pending": 106,
-    "durationMs": 23190,
+    "durationMs": 12,
+    "cacheHitPercentage": 74.33,
+    "avoidedFieldRequests": 311,
+    "avoidedAPIRequestsEstimate": {
+      "requests": 311,
+      "baseline": "one unbatched API request per field; not measured provider requests"
+    },
+    "estimatedCostUSD": 0,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -163,7 +188,16 @@
     }
   },
   "providers": {
-    "attempts": 5,
+    "attempts": 0,
+    "run": {
+      "actualRequests": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "thinkingTokens": 0,
+      "unknownUsageRequests": 0,
+      "providerUsage": {},
+      "estimatedCostUSD": 0
+    },
     "estimatedCostUSD": 0,
     "providers": {
       "ovh": {
@@ -239,7 +273,7 @@
         "code": "protected_facts_or_language_invalid",
         "cooldownUntil": 1795847867672,
         "latencyMs": 989,
-        "available": false
+        "available": true
       },
       "cloudflare": {
         "requests": 10,
@@ -265,7 +299,7 @@
         "code": "protected_facts_or_language_invalid",
         "cooldownUntil": 1795847892281,
         "latencyMs": 6157,
-        "available": false
+        "available": true
       },
       "zai": {
         "requests": 8,
@@ -291,7 +325,7 @@
         "code": "protected_facts_or_language_invalid",
         "cooldownUntil": 1795848347020,
         "latencyMs": 2187,
-        "available": false
+        "available": true
       }
     },
     "events": [
@@ -500,12 +534,43 @@
       }
     ]
   },
+  "translationCache": {
+    "totalNews": 25,
+    "newNews": 0,
+    "modifiedNews": 0,
+    "unchangedNews": 25,
+    "newlyTranslatedFields": 0,
+    "reusedTranslations": 325,
+    "cacheHits": 325,
+    "cacheMisses": 106,
+    "deduplicatedFields": 4,
+    "avoidedFieldRequests": 329,
+    "expiredEntries": 0,
+    "logicalBatches": 0,
+    "actualAPI": {
+      "actualRequests": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "thinkingTokens": 0,
+      "unknownUsageRequests": 0,
+      "providerUsage": {},
+      "estimatedCostUSD": 0
+    },
+    "pendingNews": 0,
+    "pendingDynamic": 106,
+    "estimatedCostUSD": 0,
+    "cacheHitPercentage": 75.41,
+    "avoidedAPIRequestsEstimate": {
+      "requests": 329,
+      "baseline": "one unbatched request per field; actual savings depend on batching"
+    }
+  },
   "latency": {
-    "sourceCheckMs": 515,
-    "dataSyncMs": 14,
-    "translationMs": 12221,
+    "sourceCheckMs": 511,
+    "dataSyncMs": 8,
+    "translationMs": 0,
     "deploymentMs": null,
-    "totalMs": 45430
+    "totalMs": 559
   },
   "apiAnything": {
     "ok": false,
@@ -637,7 +702,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"bb55bb3434bdd66d4784c9e0110103622da0cb015b2b4d41401b04d97bbd3bb8\"",
+      "etag": "W/\"5fd57b2dc1bb797e82c45ca7466f3bc27240c2fbbf5039d84e655ad170fe1d9c\"",
       "hash": "c0196914ba2c344c1a697983e4387e5b514d427423ead323dcd2cc740f0e603c"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -661,8 +726,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b0a7679-d5\"",
-      "hash": "e1a4361bb5c57865d4fdc0de609f0e736a5b63e4bb4eacd67faed99f860d4104"
+      "etag": "\"6b0a78de-d5\"",
+      "hash": "f89b5856ed21d8d7d76659e0ca0f0e130e73b326c96db4013cf86f4eca944be2"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",

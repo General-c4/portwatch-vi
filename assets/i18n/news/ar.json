@@ -1,38 +1,6 @@
 {
   "version": 1,
   "articles": {
-    "headline:https://news.google.com/rss/articles/CBMikwFBVV95cUxQMFZtR205RU4xam5uTFJ6czkxSVVCZHdISFhVMkF2Vzl0emVENG1rY0hYSlZEbE1NOFFaal9yZGJWVHlHUEFhVHVEOE1WdEkwc2ttaHE1Zi1TcjFucV9EYVVzbnBGOERoZ2luRi1pSWhkWXplb2ktVnk3QmFNV1YwbFR3Z3d5TFk0aWtldGl3Ny1pQlU?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 PC in March 2027? 1 Leak, 0 Rockstar Confirmations",
-          "ar": "هل تتوفر لعبة GTA 6 على الحاسب الشخصي PC في مارس 2027؟ تسريبات 1 وتأكيدات 0 من Rockstar."
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbFRlX2lWbnlGcDhqcGRnSTB4Zmd1US1WOWYtbTBpTERKWl83SHRPalQ0OWQtOURCb1gwZFNRWXZVSDNUclpRSGNfM3VQM3dGMW84SjM4VXZsdUZKYVFwbW9JR204WDI1d3JJSGJfWkM3Tm5vLU8zUWM2aUpWR1dtWlRlMW9LclpoVW5scmxjanp6OGhIQ09JN1pRUWtNNEoxZUl3OThBMXJvQkdmb0pDREVmbW1wNlhW?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Unofficial GTA 6 PC port and over 3,000 repositories taken down as Take-Two takes action",
-          "ar": "إزالة مشاريع نقل GTA 6 غير الرسمية إلى PC وأكثر من 3,000 مستودع برمجي بعد اتخاذ شركة Take-Two إجراءات قانونية."
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVXBSdGh4bFZTS0ptMG5kd0Y4UVdrb1luR3RuWnhVU0xFZXFYSmNTd3VlNlNKYnZad3h2cG5nVm94VldTQ0dYRjhqT01wSFpxOEltUG5KQzR2QUlwaTRRcUVMOExjY0FGS2x0bmk1ekdrbERLUHdoWTExQ0I5cWZGTUE5ZWtrY3JxanlDVWk0RFM2SDVCeVJuYnBCbTRySUh0RDVmYXE4Ukxua2lUakRMcjBpZ25lTXNkaHhnZXJNQzNvTjhValFvQUk0ZzRQcjVrTF9fZjhWQmg4bHFzZGZyVzVyYTk?oc=5": {
-      "fields": {
-        "title": {
-          "source": "The unofficial GTA VI PC ports are still in development despite Take-Two's efforts to shut them down",
-          "ar": "تطوير نسخ GTA VI غير الرسمية المخصصة لـ PC ما يزال مستمرًا رغم محاولات شركة Take-Two لإغلاقها."
-        }
-      }
-    },
-    "change:2026-11-25:flag:omonkey's private build, streamed on Rumble, has been taken down and leaves the board.": {
-      "fields": {
-        "text": {
-          "source": "omonkey's private build, streamed on Rumble, has been taken down and leaves the board.",
-          "ar": "إغلاق إصدار البناء الخاص بالمطور omonkey الذي تم بثه على منصة Rumble، وخروجه من قائمة التنافس."
-        }
-      }
-    },
     "project:dexnom": {
       "fields": {
         "highlights.0": {
@@ -57,134 +25,6 @@
         }
       }
     },
-    "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE12VTc3ZHQtR2xucW9IU0RZNmRsYVVMWUViamJ5Xzh4R3FJc1ZHc1V1STRLeDk1aEJfQ25TbTk1bTk5OVRpU21xSF9hNjNjQTdJNEd5d1pYXy1NU2s5TlhWLTEyOENSa0hPRHBMcVpZOWViY3dRejhjSQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
-          "ar": "إغلاق النسخة غير المصرح بها للحاسب الشخصي PC من لعبة 'GTA 6' بواسطة الشركة الأم لشركة Rockstar Games"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSWFxQTBjcHRON2JyeHdHZTUwOHJrOVJweFBVS3VabW10V2gzYW1XZEEtUEx3Tm5sVk1DazktMTNGbWlES3VXRXZuQWlsZUQ0ZThxNDJEX0JCRkFXOHFTc2wwc0lZNzBHWEJhbzRIaEhOT0ZncHlubjJEdnZkWU9fdjFBLWpCSDhwT1g2RVhFUFY2NUhRY0R3Y0I3Qy1DNHEzajAxTkxoTTktVm0zN0VISXBkV3hYb2tiQS1Lb1hIU0xBU0g2QVhEcTVuZUFPc2tYMlU4OVlJRHJaNHFudDBRaGtDeVBmZ2tiamhZMG5R0gHzAUFVX3lxTE1iTW5acFJhYi1lM0lPMnRwb0Jwb1JGOWNyWk04T2t1S2dOcUZKOGc1N1o5bDhqMUtyTU1rc1BPQ2V2UzA2a1dMNkpQenI3QmpFbjBaUEEya3JiOEphd1FYdTRidkQ4cWhmYUtHbU5ockJ5Z2NQZUtBTWR3T1FVUktUY05NNldLTENSTzYwdFhtZmRBWDA4VDJrV2gyb0YwNEtfRFFWQmRnaU1qcW96YktnUGFZdXdfSnNBN3kxTmpaRHBuUnc3bTlSZ0NPYVZsZlI3akNlZFdNM05JejJ1YWVlV25ESVVwcEpmRGxmSWZDZWl3RQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Take-Two Shuts Down Biggest Unofficial GTA 6 PC Port Over Leaked XBOX Files",
-          "ar": "شركة Take-Two تغلق أكبر نسخة غير رسمية مخصصة للحاسب الشخصي PC من لعبة GTA 6 بسبب تسريب ملفات XBOX"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM0JIZjZ1Yk4tazRtZThXRUNjSDBoUFBIdGViOHM0eGRTZEhyZ1JCWEs2YWhfc2NqY2o2eE83RVFTb2haUFRNMTVhQ2R5Snk0enZLRDdvTFdxRTBRNXZiSlRPOFpxSDVQWWJWX0kzRHZTMV84dGFnelRVdDRteGNLd2FfRnkzZDlhZEVUNEpKdEVwbDZSVFpKZnZCUUp0X1ZXUWs2QXMtTmlGRExKNHRqWHE2R0dVRG1PeWtyRjJRaTRqSXdnMkVhM1ZCN3d1NE4zeWc?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 hacker sentenced to seven years, walks free the same day after Rockstar Games leak",
-          "ar": "الحكم على مخترق لعبة GTA 6 بالسجن لمدة سبع سنوات ويخرج حراً في اليوم نفسه بعد تسريب بيانات Rockstar Games"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMitAFBVV95cUxNUkdKYmkyYllTaE5FcFhSSGpPMGlZS0VjLTdBUGxQcjg1TVh6N00xQWU1ZFhzbFNHZTNqeXhjOTg0VWtEVG5BemthM3owcW1EWFVKLWRzN2JOdnZMR3djUkR1UjVjbHkyc0ItNjRhVExLWDdDcFBTTmZkbC1HSXZZdGJEcVFmOUdaU3FNenFjLWVqWmZ3MjV5RnRzaDhrcXJzZkNpdUpNZEZ5eDd1dUNzS3R0YkQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA VI PC Port Leonida Shut Down: Take-Two DMCA Takes Down 3,007 GitHub Repositories",
-          "ar": "إغلاق مشروع النسخة المخصصة للحاسب الشخصي PC من لعبة GTA VI المسماة Leonida: إغلاق 3,007 مستودعاً على GitHub بموجب إشعارات الإزالة DMCA من Take-Two"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiqwFBVV95cUxPenQ0YXY0ZWRQSExZWnNjVDhXNGpkcnhlYUNRbGpKWm8xb3h0QVBHb1RTUkY1WUxYQVBSYWhqNEtMOXprZ3FHM0s0T2g2RHRJVXRUSmE2TS1USFNpSVlwenQ2QnZBd3hDS241cEhDYkNkS21FNHZ5bW9Fcm1tbHZ3aGZRQ1Zwd0dzNDJTZEVCRnBIV2xNRUE0SXpvaFhrTkhLekpzcll3RVRPQk0?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Report: GTA 6 Graphical Settings for Consoles Leak Out, Revealing Platform Differences",
-          "ar": "تقرير: تسريب الإعدادات الرسومية للأجهزة المنزلية للعبة GTA 6 يكشف الفروق بين المنصات"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaWFfSlRBTWJNOXNITXFfYUs4aE5mSGNEM1lvSkZROVVuQzktZkNsNHN4dFA1MWhmZnQ2Z09ZUkhWcTBGQTFMQmhXbXhpd1R3Q2F1VGVobktMZXhTXzBwaENDU3o4MEE5YWRGTm1ULVg5LVBZeUVqZlZMT0wxWV9GQXhjMjJrTXVTM1BuenhUbmlnUWk1WHcxaVUzTzJGa29DeDVDTkRuYnFMTW51SE81TG5OcWRTeUxsRXpKXzdFUWlTN3ZQM3NlZDVicC1IV3NfVDhjQ1VsaXlZMkdaSHRlaHdfRS1id0ZKNXMtWkVYQTJ2Zw?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Take-Two Appears to Be Trying to Scrub GTA 6 PC Ports From the Internet, as Vibecoders Race Toward Controversial World First",
-          "ar": "يبدو أن شركة Take-Two تحاول مسح النسخ المخصصة للحاسب الشخصي PC من لعبة GTA 6 من الإنترنت، في حين يتسابق المبرمجون بمساعدة الذكاء الاصطناعي نحو تحقيق أسبقية عالمية مثيرة للجدل"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMijAFBVV95cUxOMjJFLUVQTl8wSjA5ajFkM2t6ZnpyalFJVFBYd2tWOFFjeTFtb1Z1TjVnWkZsTkdkd2xaRU9ZRzZoUXQ3bjR4RXRzMkR1QjhGS180OXFEN1RIcS1qbUZmXzZ2YVRjMF9oRUFRT1Joa0d0Si0wMDgyVjFTZ2htSHN2b2JyRWhFNG45dk8xRg?oc=5": {
-      "fields": {
-        "title": {
-          "source": "The 24-Hour GTA 6 PC Port Is a Warning Shot, Not a Product",
-          "ar": "إن نسخة الحاسب الشخصي PC من لعبة GTA 6 المطورة خلال 24 ساعة هي طلقة تحذيرية وليست منتجًا"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxOWHNNSU9kcGRYZlhaVDVQVHpmRzQtc0xkNnZLMVRwLXUyMzdaaTc1YjZ5NFJmR1V4N05MY1Z2cXc2SWhQZXhoM0ctY0JxTGIxLWhUMXViN2FvaGo5RERaeFUzLUFhd2tjYnhPdWxVcjAwUk5IeE5MTkxucTdMUWNIaW9ZSHJtN2ZrMjhDd1ptR1dfZ0xTWGIxdkE3X3hNUzJXTDAwa2tubjBILTFHbU5OMkNR?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA VI publisher has launched a DMCA campaign against videos of the PC version of the game.",
-          "ar": "ناشر لعبة GTA VI يطلق حملة بموجب قانون حقوق المؤلف DMCA ضد مقاطع الفيديو لنسخة الحاسب الشخصي PC من اللعبة."
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMifEFVX3lxTFBDQThaNm1FMmh6NGNIc3haWWgwNmVfVTZ5Ylk0VGRQVVRPOEh5NjYzYktYNTlQTm1BRjhKQmJRZzRFNkY4U3AxZm1kN20zMEdrMHE4T1pLZXlsTmo0LVgwMDRYNFRWa1hERDl6RUdDZ3YxT3l3UWg5WnJvc3U?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Rockstar Takes Legal Action Against Popular GTA 6 PC Port",
-          "ar": "شركة Rockstar تتخذ إجراءات قانونية ضد مشروع نسخة الحاسب الشخصي PC الشهير من لعبة GTA 6"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMihAFBVV95cUxPemNyM2pCTE1rUTB1cmZCYUFpRkY4US1qWV9ac3Zob2RWcllmMmw1cDFQZ2p1a2xNVllqanJfaWUybTNnekd2RVJvb2lINVpCTXhMUjlINkZhUW9BTWVzUHpzQ1Q3WXNwZVZQd2RHR1NnN0gzXzZhdndoT2otUFFORHFKY3E?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA VI, Take-Two gets Leonida taken down on GitHub along with over 3,000 PC port repositories",
-          "ar": "GTA VI: شركة Take-Two تتسبب في إزالة مشروع Leonida على منصة GitHub إلى جانب أكثر من 3,000 مستودع لنسخ PC"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMieEFVX3lxTE5aUGpXNVUzTHdUYXIxNnRVcjZ1VGREUGVzamtITnRERGJLNENiR3RVZGcySDNuM3BJVW9xajhmaHdmM0ZQTlJYcHJsdkhTV3JZMU9VOTJYb3l1U0hTbXZWS3NoTlVtRzVKdTAtTmJIUFV1M2I5OEludQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Fake GTA 6 PC installers are stealing accounts for a port that doesn't exist",
-          "ar": "برامج تثبيت GTA 6 المزيفة على PC تسرق الحسابات لنسخة غير موجودة"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQQTl1T3hHTklTaDNFRnNoZ2o4ai03dVFzTWswSmp6X29hblFBT3M4N09laXducTBHMWhhbXFhZzNPcGMzQXVBZ2wyV2J5THNsNGVWbFZfdnpFMnRxdVYwWEZKcElBaXQ4Tl9tVHA3VWpmNWlSeXluWjlMZGFXOE5GM2ZVbU5fMjk5aG1YdHBvNkJvTWVPMGhRanFGUzJYdDRzaFNN?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
-          "ar": "شركة Take-Two تضرب مشروع نسخة GTA 6 للحاسب الشخصي PC المعنون Leonida بإشعار DMCA، وتزيل 3,007 مستودعاً على GitHub"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQW5mUktjRkp0cGxSXzBqV1BvVWJkdFlFUXNwS1dDaDlJVV9ULUV5amt1QnRQb1BTS2pUNVZQaHRDQkFuZE8zeUdQUlRvbWNhV0VJREtwQm9GU1Z0NXJramNRWkJGYWJ6YUgzYXdRajlrX2VtdTI1OVlHcTNCdzQyVDlCLTFhQ3BrdVBsS3FpLXpUTzJyQmFQWi1YWkVhV1dFOFBYQi1HYmp3VW9laHl1ODJGN0V1WFp1SXgzT0ExLXE0V0pqOXp3U2VJLVlhUzJLdEVaam15R19kNVRNaHFFLTQxUFVSbFBqMU04etIB8gFBVV95cUxQb1JNSGFrQm1nU3BVd1lJaHRSRG0tU2M1bHJTX3NrNTROSUJKbDZ5cUR3VUlSem0zWjhCbDgtTGRnUENvaVVWQW5yTDZRZXV3eFZSSlBxVzVWZXhpdC1oU1NzNVV4RVNIdm10Y0UxSFc5Sm96cjRvZDNvcWM4bGpVZVREZ1ExMmVmaG1VX0JpMUlORm9YaS1ZZ09PV0J0M2hkazc3SDNfcWFxQzY1R1pYaTJLTjVHRUFUSkVDWVVKWDJWNEZaa25XZk9rOHBTYkRfOTZBbW1oNV9XSDJlekNTbDlNRjlMdHdNM1Z0c2wxTnhRZw?oc=5": {
-      "fields": {
-        "title": {
-          "source": "A 15-Year-Old Tried Bringing GTA 6 To PC Before Rockstar Games, Take-Two Shuts Down Project",
-          "ar": "فتى بعمر 15 عاماً حاول جلب GTA 6 إلى الحاسب الشخصي PC قبل Rockstar Games، وشركة Take-Two تغلق المشروع"
-        }
-      }
-    },
-    "headline:https://www.msn.com/en-us/news/other/gta-6-hacker-arion-kurtaj-gets-7-years-and-walks-free-the-same-day/ar-AA2icWUO?ocid=BingNewsVerp": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 hacker Arion Kurtaj gets 7 years and walks free the same day",
-          "ar": "مخترق GTA 6 المدعو Arion Kurtaj يُحكم عليه لمدة 7 أعوام ويُطلق سراحه في اليوم نفسه"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUUZ5SGdMV2V2RFNJdjhrSVplaE1TN2VyRHphTmdkUk5CdVQ1dmNGb012amtNdmNka3ZJV3V0OHhrR2poN1dQaWJaUjlLQzZNcEVxNFk3dlNNZnlJZ1FENHZybnE0Ym1XU0tSSGxNckNqS1FzUFhkZ01qdHdvTDVSU0ZtbDZuRnV4NGZ6Q3cwbHBYLURtVWl1NGpvd0dsYXcxV1dmU2Z4ZU4?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 PC ports reach gameplay despite Take-Two's GitHub DMCA",
-          "ar": "مشاريع نقل GTA 6 إلى PC تصل إلى مرحلة أسلوب اللعب على الرغم من إشعارات إزالة DMCA الخاصة بـ Take-Two على GitHub"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiswFBVV95cUxQWFBFZ0o2WG9qNmJSc190ZjJKeDZkZEZrX19mNXA4OVB6cjd0MTN5S1BQME1YU0JjV0pfaHZJaFJKWEg3NjZUSElxNmpkeXBLWGxGa1Njc0NGQlRVb2hWUkZmbWtaZnpCTkxQQ21WeW10NzFJMFhGODYtdUVXY1FRVzM1NFVEX1BHVXNvNGpRWUotNXFxaFhESnVNZHp4VU41cVgtZnl3TXNZM2k0eERiR0twTQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Any official GTA 6 PC port’s ability to deliver a proper first person mode would be its biggest ace in the hole, so reckon I, a traitor",
-          "ar": "إن قدرة أي نسخة رسمية مخصصة للحاسب الشخصي من GTA 6 PC على تقديم وضع منظور الشخص الأول بشكل متقن ستكون ورقتها الرابحة الأكبر، حسبما أرى، وأنا خائن"
-        }
-      }
-    },
     "project:doomsday": {
       "fields": {
         "byline": {
@@ -198,70 +38,6 @@
         "highlights.3": {
           "source": "Runs mostly on AMD; also works on NVIDIA at a lower frame rate",
           "ar": "يعمل أساسًا على بطاقات AMD؛ ويعمل أيضًا على بطاقات NVIDIA بمعدل إطارات أقل"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiowFBVV95cUxQeEJzVy1lR29zMmNYb3pxT28xWHYzWG5LTm9ySHZuRGZfdXVPR0FrUmxFcVVoODZad2pSdGczc3lyOE55QjBfc3JLMW81Q0VlOEttOHMyT1ZJZHBUcTVmaFczc1FTWG5nQ05TeGRsSlhnVjZhN1dFbnZvclh1aXdmS3hpMFhIc2NIejRQVEE0MS12NmNfNFJKenV4Z0JpNUJPVFpj0gGoAUFVX3lxTFBDQVM2NkRFblJ1TGZqNkE5RTE1eHF3Z3J4cDJzYW51MnVJb0UzNUtsZXJQdTczTUJ5VjZ0WldaRFFaWExLRUgwYkZvUlJ6aUYzckR5ZGNZYWlPUF9ncl9jWkhOUGZseWxXVzRuVzE5aGxlNThWV3gtWjN5dVFueHhMVHFLU1FGb09BTE1PaHlMNXIxVW9tYkFiNlM2WlhqSkRIQTZJeWk5dQ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges",
-          "ar": "نسخ GTA 6 التي يطورها المعجبون تصل إلى 20 FPS على PC، لكنها ما تزال بحاجة إلى مزيد من التحسين"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMisgFBVV95cUxPNzFncERzMlFvZDlNd1ZyelBZeUNNNlh5d0xDTEZ2REFzLVlraDc2N0VlZzZWVEdJREhMSXg0TjlaUHljMlh5YUlJN204VVo0ZUQyQ1d5MmZYVHpFeWlHZDlLMWptMjV0OHdjc0RHakgyekVpWG02eE01alowU2VCaWoxZW5rU0xlVmFrR0tDT2dRTV9GYm1uZ1dha3h0bUZ4TWh5aWVlUGUyMklKV1RpLTZR?oc=5": {
-      "fields": {
-        "title": {
-          "source": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
-          "ar": "نسخ GTA 6 المخصصة لـ PC والمطورة بمساعدة الذكاء الاصطناعي تقوم الآن بتصير الرسوم من داخل اللعبة رغم حملة Take-Two الصارمة"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdTRLQ2Fka0NqbWFUTTVsOFdXUDYzaFJuZDBQWEZGQWgwWGdlYnc1UHNueFBGMnBnS21FSWZtLUJ1UTdYdGZ6Zm1nNEFZX24waGwwT1F2WjRvWFBJWEF0N0tFWFpta291cFhFSlg4NDRQRlgzWDZ2QXI1Y1MxV0VmeklTVG9HWUs2UEVteXRVTTgxQ191cU5na2dnX290MmxORWhhTGxGdU1tcDllTVVBVFN5M3BWbTlLUVA4ZkhOejBLQjA?oc=5": {
-      "fields": {
-        "title": {
-          "source": "After removing GTA 6 PC ports, GitHub celebrates app popular in PS5 piracy groups",
-          "ar": "بعد إزالة نسخ GTA 6 المخصصة لـ PC، منصة GitHub تشيد بتطبيق شائع في مجموعات قرصنة PS5"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MSENnem9iM3RCUE9hY2dXenBRMGhyeFFpNHR1T0FOcFVZd1JVOGttWURZNVZZczUwQUMwM1hOWUVTd2RDVlpHY2ZNdHpvMl85?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 runs on PC at up to 44 FPS",
-          "ar": "لعبة GTA 6 تعمل على PC بمعدل يصل إلى 44 FPS"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMioAFBVV95cUxPR0tYaFdyX1JHQml4UmNVVG8yNmZiRDFmNGhnMEFIcy1zVmF0WERWUWxidHRzWlFGQmY0am9Ma1lpWjNLYjRIN2pEVDdaTEJmcFJTSTZzeEw1TC00TUJ6YWNuVzU0eEhGUThHMWVtMWl1aUZCR1J5QnF5RVU0eE95WGtVbnlidGhBNVQyZ0k1T1piZkt5MUVLaXVoQ0VNM2Zp?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 Graphics Settings Leak: 4 Consoles, 0 Confirmed",
-          "ar": "تسريب إعدادات رسوميات GTA 6: 4 منصات ألعاب، و0 مؤكد"
-        }
-      }
-    },
-    "headline:https://www.tweaktown.com/news/114929/gta-6-pc-port-now-has-multiplayer-running-at-30fps/index.html": {
-      "fields": {
-        "title": {
-          "source": "GTA 6 PC port now has multiplayer running at 30FPS",
-          "ar": "نسخة GTA 6 المخصصة لـ PC تشغّل الآن اللعب الجماعي بمعدل 30FPS"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjcjBadzNBeHJLZ2lLUHBqWnp2aHhPU2JORHpNdmxKeG5ZdTM3RU5zOU5KbmdaRzM1bXY2VVB6cFFKTTR6UGtYeFQxRkNfSldPYVJEdVU2Q0xQRENDSXc1d0lvQ0NtSnhJ?oc=5": {
-      "fields": {
-        "title": {
-          "source": "The unofficial GTA 6 PC port CGBJ posted a Windows launcher on 26 November and its GitHub repository now returns 404 for reasons unknown, with GitHub publishing no takedown notice naming it, while PortWatchVI relays a 25fps average in gameplay",
-          "ar": "نشر مشروع النسخة غير الرسمية CGBJ لـ GTA 6 على PC مشغل Windows في 26 نوفمبر، وأصبح مستودعه على GitHub يعيد الآن الخطأ 404 لأسباب غير معروفة، دون أن تنشر GitHub أي إشعار إزالة يذكره بالاسم، بينما ينقل PortWatchVI متوسط أداء يبلغ 25fps أثناء اللعب"
-        }
-      }
-    },
-    "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMG1oaE9Mam5tU1JtRVZOZ3l6M3ptY2J4N3lxSU5sT29HY054ZzdqWFZXamVBWHEzd3BCX1d2R2ctNWg1ekhPZHI3X0xUSU8yQW5WQWo0TWVsS0pBdk1WT3MtWGJxU2RZZGtZeERQcVNCMGVheEQwTFlwWnZFOUlXMzVoYjdsS1A4a0JzWFJSQ2pTaGlVOHF0RUtab3lEZmR0WFNNRjBBc1g?oc=5": {
-      "fields": {
-        "title": {
-          "source": "GitHub Deletes Post Celebrating GTA 6-Fueled Surge in PS5 Emulator’s Popularity",
-          "ar": "GitHub تحذف منشوراً يحتفي بالارتفاع الكبير في شعبية محاكي PS5 المدفوع بـ GTA 6"
         }
       }
     },
@@ -430,7 +206,7 @@
       }
     },
     "article:2026-11-27-belobug-dmca": {
-      "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
+      "sourceHash": "17bd41ec6f2fc19ca7a4d5b870d6c8d30fa9189cc159b3321742956c5382458d",
       "fields": {
         "title": {
           "source": "Exclusive: GitHub removes Belobug's GTA VI build over its Terms of Service",
@@ -459,7 +235,7 @@
       }
     },
     "article:2026-11-26-multiplayer-running": {
-      "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
+      "sourceHash": "7afe8c43e82ce33ec66c9a519e7d46681e7d1451cae0464459f699bf94d5b70e",
       "fields": {
         "title": {
           "source": "Exclusive: GTA VI multiplayer is running on PC",
@@ -496,7 +272,7 @@
       }
     },
     "article:2026-11-25-belobug-way-ahead": {
-      "sourceHash": "836dcb42a3730f780f03bbd09963730d845760d65e6b70723902c50d2e8e032c",
+      "sourceHash": "80c3ef9a0f8b37644001851faedea8990eb60259f90b8d7cf600a80646ade9be",
       "fields": {
         "body.5": {
           "source": "Update, 2026-11-27: GitHub removed Belobug's repository and account for violating its Terms of Service, which PortWatch has confirmed. Its card on our board is now marked as nuked.",
@@ -505,7 +281,7 @@
       }
     },
     "article:2026-11-24-cgbj-in-game": {
-      "sourceHash": "933f0de3ef7ffb0ee99ac68d7318fb2b7413ee63bee687c2c207668f21ec48d8",
+      "sourceHash": "756ea60acfd9068691b51b672ea28620cabfe7e2e93b19f48f98cfe7c8e60834",
       "fields": {
         "summary": {
           "source": "CGBJ's VIctory and XCL-based build lets a player walk around and talk to NPCs. Its code was public briefly and is private again.",

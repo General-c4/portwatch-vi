@@ -140,6 +140,71 @@
     "draft": "الشفرة خاصة، حتى لا يستطيع أحد خارج المجموعة أن يجربها حتى الآن، إنها ليست على متننا أيضاً:"
   },
   {
+    "id": "5f7ac015894a1b41eb6b430eedaec255f350c6adde70e1d3a77dfb509bf3c319",
+    "sourceHash": "68f47535e7d3b4af466902ea6cd32ea0019135faff66f3e5d26fb0602a6b49b3",
+    "scope": "content",
+    "key": "VIctory fork for NVIDIA: a compatibility layer that runs an Xbox Series (Scarlett) title on Windows. The world works at nearly 20 fps on an RTX 5080. AMD work kept. Source only, no game files.",
+    "source": "VIctory fork for NVIDIA: a compatibility layer that runs an Xbox Series (Scarlett) title on Windows. The world works at nearly 20 fps on an RTX 5080. AMD work kept. Source only, no game files.",
+    "refs": [
+      "candidates:Peppacodes/playablegames-peppa.description"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
+    "id": "b33a0164e49c270a9288f1f1fce8a3597f2eac8b4474da564a7ccff9cb3e17f6",
+    "sourceHash": "9b2a09609d8e9a048c1950211950989374dbebdbb99afd13eb1dbf3c5c4bb1c4",
+    "scope": "content",
+    "key": "Rust-based HLE compatibility layer and D3D12.X → D3D12 translation runtime for running Xbox Series x86-64 GTA VI natively on Windows, tuned for NVIDIA RTX hardware. Does not include any game file.",
+    "source": "Rust-based HLE compatibility layer and D3D12.X → D3D12 translation runtime for running Xbox Series x86-64 GTA VI natively on Windows, tuned for NVIDIA RTX hardware. Does not include any game file.",
+    "refs": [
+      "candidates:0v3rr/Tequesta.description"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ4QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "15274f566279506c9f416896fa42ed0ea544e9156288d443fa9528dd063e93ae",
+    "sourceHash": "e020cb0dd330c920d654ea66868e588befb8fa56fda1f8e9434810c35cd6b370",
+    "scope": "content",
+    "key": "It runs at a stable 25 to 30 frames per second. The build is a private fork of CGBJ's, the VIctory and XCL build that averages 25 fps in single-player, and the group has only just started on multiplayer.",
+    "source": "It runs at a stable 25 to 30 frames per second. The build is a private fork of CGBJ's, the VIctory and XCL build that averages 25 fps in single-player, and the group has only just started on multiplayer.",
+    "refs": [
+      "news:2026-11-26-multiplayer-running.body.1"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "03a5452b83a1bca17bbae29fbae745c950663c392d1ff217f1997b2c0cb0e589",
+    "sourceHash": "436d44409f90083790d0589f2967360418db0aecdd36aea4b127e7a3a8c81c2e",
+    "scope": "content",
+    "key": "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
+    "source": "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
+    "refs": [
+      "news:2026-11-27-belobug-dmca.body.2"
+    ],
+    "attempts": 2,
+    "lastError": "Protected token not preserved: ZXQ0QXZ",
+    "reviewRequired": false
+  },
+  {
+    "id": "e52f256faf2333775bb81619a74d3302b58465922a9d1d93f408b63f389dee3e",
+    "sourceHash": "4f21eded8f9d4822c4a6bca78b9763114501c9f4e307af5d5aa1373ffe7f5d07",
+    "scope": "content",
+    "key": "Hybrid-first Apple Silicon compatibility research built around CrossOver (externally installed), with BetterXen integration, diagnostics and benchmarking, and preserved independent native ARM64 and Metal research (paused).",
+    "source": "Hybrid-first Apple Silicon compatibility research built around CrossOver (externally installed), with BetterXen integration, diagnostics and benchmarking, and preserved independent native ARM64 and Metal research (paused).",
+    "refs": [
+      "candidates:MacosPorters/betterxen.description"
+    ],
+    "attempts": 2,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": false
+  },
+  {
     "id": "4fa8939543e07a148ca721f28da631ac414c10196dd50119feb77252a4c17741",
     "sourceHash": "21f1d3a325ade46a22497f7de14ae35cf13160f3ad1dd8befb9567c02b617e7f",
     "scope": "content",
@@ -231,6 +296,19 @@
     "reviewRequired": false
   },
   {
+    "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
+    "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
+    "scope": "dashboard",
+    "key": "VI",
+    "source": "VI",
+    "refs": [
+      "dashboard.dc7b94e12cff"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
     "id": "afb3d443ca5be2e0db664ca2f7cc9ebd57ccad7ea9ed8826a0178c212692bc65",
     "sourceHash": "18885f27b5af9012df19e496460f9294d5ab76128824c6f993787004f6d9a7db",
     "scope": "content",
@@ -247,6 +325,45 @@
     "reviewRequired": true
   },
   {
+    "id": "48c495dab8672d3377a6f61b79f788760d44cd5f7da0f88ca7f8d11f8502a5f2",
+    "sourceHash": "536fe4600f95bc3718ba7e824f979ecd061afd34a0ffbfb7bfefaaa3b967bcd5",
+    "scope": "dashboard",
+    "key": "4lwayz",
+    "source": "4lwayz",
+    "refs": [
+      "dashboard.536fe4600f95"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "75df85235b9e3758b1bccb5dc9b2c2e4fc72fb795c0647e068ec715d70fc7068",
+    "sourceHash": "4f5f737c1e4ced6eaab61ff2b330b6e0cbf735556691029516fae2975b923c6a",
+    "scope": "dashboard",
+    "key": "PortWatch",
+    "source": "PortWatch",
+    "refs": [
+      "dashboard.4f5f737c1e4c"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "2864c656cf723da3a13e2fd22f4881a7b45e7f68fcd6e0e2d911b081443d2179",
+    "sourceHash": "6181cc3a8737db7e421270778cf4c16c53a399642205868376abec2f6365a514",
+    "scope": "content",
+    "key": "4chan /vg/",
+    "source": "4chan /vg/",
+    "refs": [
+      "candidates:xcl-dev/xcl.sources.0"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
     "id": "66768756eb133dcf59b98aa2c6e9614cb51c377a1c465e05e87835fcaf3cb8de",
     "sourceHash": "c2fd567e124a9151e6435d606cecf1cdefe12159236d130e7b688aa8411fe8d0",
     "scope": "dashboard",
@@ -254,6 +371,19 @@
     "source": "Upload GIF",
     "refs": [
       "dashboard.c2fd567e124a"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
+    "sourceHash": "55ce932f5d6e4506fe43427334e5f3e52b4fdb2133cde39464ad6b2e6a1fda16",
+    "scope": "dashboard",
+    "key": "4lwayz/portwatch-vi",
+    "source": "4lwayz/portwatch-vi",
+    "refs": [
+      "dashboard.55ce932f5d6e"
     ],
     "attempts": 3,
     "lastError": "Missing Arabic output",
@@ -387,6 +517,19 @@
     ],
     "attempts": 3,
     "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
+    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
+    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
+    "scope": "content",
+    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
+    "refs": [
+      "efforts:zettrox.nuked.note"
+    ],
+    "attempts": 3,
+    "lastError": "Protected token not preserved: ZXQ3QXZ",
     "reviewRequired": true
   },
   {
@@ -585,6 +728,19 @@
     "reviewRequired": true
   },
   {
+    "id": "54e1047a2c37cc7615d8417e319fe674156cc3ac57bee389f8d0b52f79132399",
+    "sourceHash": "2c2e669d8ff4cb7bbd72ce258acfa4199e8e1e81f26db63db25801dea9da4ceb",
+    "scope": "content",
+    "key": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+    "source": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
+    "refs": [
+      "candidates:xcl-dev/xcl.description"
+    ],
+    "attempts": 3,
+    "lastError": "Missing Arabic output",
+    "reviewRequired": true
+  },
+  {
     "id": "4f170c2ec880cdbdd7113d85018a66421f258d22817b96e4c77ce3e5d81b285b",
     "sourceHash": "0ec5d35486898c996684f725bb85041aab10ce0c21116dfb4023309c84d068ac",
     "scope": "dashboard",
@@ -660,162 +816,6 @@
     ],
     "attempts": 3,
     "lastError": "Protected token not preserved: ZXQ2QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "5f7ac015894a1b41eb6b430eedaec255f350c6adde70e1d3a77dfb509bf3c319",
-    "sourceHash": "68f47535e7d3b4af466902ea6cd32ea0019135faff66f3e5d26fb0602a6b49b3",
-    "scope": "content",
-    "key": "VIctory fork for NVIDIA: a compatibility layer that runs an Xbox Series (Scarlett) title on Windows. The world works at nearly 20 fps on an RTX 5080. AMD work kept. Source only, no game files.",
-    "source": "VIctory fork for NVIDIA: a compatibility layer that runs an Xbox Series (Scarlett) title on Windows. The world works at nearly 20 fps on an RTX 5080. AMD work kept. Source only, no game files.",
-    "refs": [
-      "candidates:Peppacodes/playablegames-peppa.description"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "b33a0164e49c270a9288f1f1fce8a3597f2eac8b4474da564a7ccff9cb3e17f6",
-    "sourceHash": "9b2a09609d8e9a048c1950211950989374dbebdbb99afd13eb1dbf3c5c4bb1c4",
-    "scope": "content",
-    "key": "Rust-based HLE compatibility layer and D3D12.X → D3D12 translation runtime for running Xbox Series x86-64 GTA VI natively on Windows, tuned for NVIDIA RTX hardware. Does not include any game file.",
-    "source": "Rust-based HLE compatibility layer and D3D12.X → D3D12 translation runtime for running Xbox Series x86-64 GTA VI natively on Windows, tuned for NVIDIA RTX hardware. Does not include any game file.",
-    "refs": [
-      "candidates:0v3rr/Tequesta.description"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ4QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "15274f566279506c9f416896fa42ed0ea544e9156288d443fa9528dd063e93ae",
-    "sourceHash": "e020cb0dd330c920d654ea66868e588befb8fa56fda1f8e9434810c35cd6b370",
-    "scope": "content",
-    "key": "It runs at a stable 25 to 30 frames per second. The build is a private fork of CGBJ's, the VIctory and XCL build that averages 25 fps in single-player, and the group has only just started on multiplayer.",
-    "source": "It runs at a stable 25 to 30 frames per second. The build is a private fork of CGBJ's, the VIctory and XCL build that averages 25 fps in single-player, and the group has only just started on multiplayer.",
-    "refs": [
-      "news:2026-11-26-multiplayer-running.body.1"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "03a5452b83a1bca17bbae29fbae745c950663c392d1ff217f1997b2c0cb0e589",
-    "sourceHash": "436d44409f90083790d0589f2967360418db0aecdd36aea4b127e7a3a8c81c2e",
-    "scope": "content",
-    "key": "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
-    "source": "GitHub hasn't said publicly which of its rules the build broke. Unlike DMCA notices, which it posts in a public log, removals under its Terms of Service aren't published. We'll update this article if we learn more.",
-    "refs": [
-      "news:2026-11-27-belobug-dmca.body.2"
-    ],
-    "attempts": 2,
-    "lastError": "Protected token not preserved: ZXQ0QXZ",
-    "reviewRequired": false
-  },
-  {
-    "id": "e52f256faf2333775bb81619a74d3302b58465922a9d1d93f408b63f389dee3e",
-    "sourceHash": "4f21eded8f9d4822c4a6bca78b9763114501c9f4e307af5d5aa1373ffe7f5d07",
-    "scope": "content",
-    "key": "Hybrid-first Apple Silicon compatibility research built around CrossOver (externally installed), with BetterXen integration, diagnostics and benchmarking, and preserved independent native ARM64 and Metal research (paused).",
-    "source": "Hybrid-first Apple Silicon compatibility research built around CrossOver (externally installed), with BetterXen integration, diagnostics and benchmarking, and preserved independent native ARM64 and Metal research (paused).",
-    "refs": [
-      "candidates:MacosPorters/betterxen.description"
-    ],
-    "attempts": 2,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": false
-  },
-  {
-    "id": "61eff9d802d34bfc408471821a8981c3782a0ccb7129f1bffea2bb91e69efe54",
-    "sourceHash": "dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533",
-    "scope": "dashboard",
-    "key": "VI",
-    "source": "VI",
-    "refs": [
-      "dashboard.dc7b94e12cff"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "48c495dab8672d3377a6f61b79f788760d44cd5f7da0f88ca7f8d11f8502a5f2",
-    "sourceHash": "536fe4600f95bc3718ba7e824f979ecd061afd34a0ffbfb7bfefaaa3b967bcd5",
-    "scope": "dashboard",
-    "key": "4lwayz",
-    "source": "4lwayz",
-    "refs": [
-      "dashboard.536fe4600f95"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "75df85235b9e3758b1bccb5dc9b2c2e4fc72fb795c0647e068ec715d70fc7068",
-    "sourceHash": "4f5f737c1e4ced6eaab61ff2b330b6e0cbf735556691029516fae2975b923c6a",
-    "scope": "dashboard",
-    "key": "PortWatch",
-    "source": "PortWatch",
-    "refs": [
-      "dashboard.4f5f737c1e4c"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "2864c656cf723da3a13e2fd22f4881a7b45e7f68fcd6e0e2d911b081443d2179",
-    "sourceHash": "6181cc3a8737db7e421270778cf4c16c53a399642205868376abec2f6365a514",
-    "scope": "content",
-    "key": "4chan /vg/",
-    "source": "4chan /vg/",
-    "refs": [
-      "candidates:xcl-dev/xcl.sources.0"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "b7f063815eb02d973f450ebe3b4181099ce5177c5e6441f8c4ade3c1df04145c",
-    "sourceHash": "55ce932f5d6e4506fe43427334e5f3e52b4fdb2133cde39464ad6b2e6a1fda16",
-    "scope": "dashboard",
-    "key": "4lwayz/portwatch-vi",
-    "source": "4lwayz/portwatch-vi",
-    "refs": [
-      "dashboard.55ce932f5d6e"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
-    "reviewRequired": true
-  },
-  {
-    "id": "b6a1eef4d0ed7f52258b5b7078d26ccc5c18434936f3f7cb85c9a68f9854a99c",
-    "sourceHash": "34e51fd791fe4a9ded5d54dcbc8b6d726be1ed0ee8b71420ab08edbe5f4f0b12",
-    "scope": "content",
-    "key": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "source": "GitHub repo and the Zettrox account gone on Nov 25 (HTTP 404 by 17:26 UTC). No DMCA notice is published yet.",
-    "refs": [
-      "efforts:zettrox.nuked.note"
-    ],
-    "attempts": 3,
-    "lastError": "Protected token not preserved: ZXQ3QXZ",
-    "reviewRequired": true
-  },
-  {
-    "id": "54e1047a2c37cc7615d8417e319fe674156cc3ac57bee389f8d0b52f79132399",
-    "sourceHash": "2c2e669d8ff4cb7bbd72ce258acfa4199e8e1e81f26db63db25801dea9da4ceb",
-    "scope": "content",
-    "key": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-    "source": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
-    "refs": [
-      "candidates:xcl-dev/xcl.description"
-    ],
-    "attempts": 3,
-    "lastError": "Missing Arabic output",
     "reviewRequired": true
   },
   {
