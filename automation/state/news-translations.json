@@ -309,32 +309,32 @@
   "pending": {
     "article:2026-11-26-multiplayer-running": {
       "sourceHash": "928bdd17be34ceeaed4ca060aa47df083ce42f30cff45707b5c169fdb227e9f0",
-      "attempts": 5,
-      "nextAttemptAt": "2026-11-27T21:16:16.550Z",
+      "attempts": 6,
+      "nextAttemptAt": "2026-11-28T05:16:16.387Z",
       "lastError": "request_or_token_limit"
     },
     "article:2026-11-27-belobug-dmca": {
       "sourceHash": "e319464fa32e02fa842cac7512d4590ea0a4360bb3955a47e8d577102534c1fe",
-      "attempts": 2,
-      "nextAttemptAt": "2026-11-27T20:06:16.550Z",
+      "attempts": 4,
+      "nextAttemptAt": "2026-11-28T03:16:16.387Z",
       "lastError": "protected_facts_or_language_invalid"
     }
   },
   "daily": {
-    "day": "2026-11-27",
-    "requests": 9,
-    "accountedTokens": 26600,
-    "inputTokens": 14972,
-    "outputTokens": 5224,
-    "thinkingTokens": 6404
+    "day": "2026-11-28",
+    "requests": 3,
+    "accountedTokens": 7091,
+    "inputTokens": 4991,
+    "outputTokens": 2100,
+    "thinkingTokens": 0
   },
   "totals": {
-    "requests": 33,
+    "requests": 36,
     "successful": 0,
-    "failed": 7,
+    "failed": 10,
     "cachedFields": 0,
-    "inputTokens": 42976,
-    "outputTokens": 17495,
+    "inputTokens": 47967,
+    "outputTokens": 19595,
     "thinkingTokens": 21137
   },
   "dynamic": {
@@ -884,42 +884,10 @@
         "lastError": "service_unavailable",
         "nextAttemptAt": null
       },
-      "[\"change:2026-11-27:new:Scout spotted felixwaschosenn/littlethings-build (possible effort, substance 67).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted felixwaschosenn/littlethings-build (possible effort, substance 67).",
-        "field": "text",
-        "sourceHash": "6a7c35b16eb699fd1488a8ec38b3351a9b339033f739bae21f2e1b1fe0e17174",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 75).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted x6j1ZiqfbxA3u12HVk/Project-Americas (possible effort, substance 75).",
-        "field": "text",
-        "sourceHash": "4af0ec43be3a60c488645e4a398ac0c77e00ccb1ad14a4cac18fd2b53c847f26",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
       "[\"project:tuxbox\",\"claims.0.text\"]": {
         "id": "project:tuxbox",
         "field": "claims.0.text",
         "sourceHash": "4fbb27320096878e85d43d5e526bbf60deda6b5cb26a15967551e8bd90724fcb",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 67).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted RandomSkelly/Series0nLinux (possible effort, substance 67).",
-        "field": "text",
-        "sourceHash": "f0779558ab30780bce527d7c9dcbce55bd4aca2ea0f16b886b6d8f776c213c53",
-        "attempts": 0,
-        "lastError": "protected_facts_or_language_invalid",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
-        "field": "text",
-        "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
         "attempts": 0,
         "lastError": "protected_facts_or_language_invalid",
         "nextAttemptAt": null
@@ -1100,86 +1068,6 @@
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
       },
-      "[\"headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE5DdXJMMm5obDZka01JMGpIS2Q5NFJ3VVZtVVE2ZTRndDVCT2N1NVZTRTFvNVMtLTFlRnd0My1lYTNER2cwa3Z1MlIzbXo4TkFBaDFUSmhnR0JoS2Fkd2Rka0EwVk1yQXZSRGstdjh3?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMibkFVX3lxTE5DdXJMMm5obDZka01JMGpIS2Q5NFJ3VVZtVVE2ZTRndDVCT2N1NVZTRTFvNVMtLTFlRnd0My1lYTNER2cwa3Z1MlIzbXo4TkFBaDFUSmhnR0JoS2Fkd2Rka0EwVk1yQXZSRGstdjh3?oc=5",
-        "field": "title",
-        "sourceHash": "0841ed9691fba46942939b8eb831e973ad540f9c4ce04a201a5e6903445fb11b",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPUzI2YWtSamMycmVZN0wxS0ZOYmNtTkFTeUdZV2VCcDI4d1YwcHBtTG8zcDU5RUFkSTRvb2poTmRuYnIzcVU3THFCR1RIVGo4Q1d2Q0VNTEFtd1ctQklybTU0TFI4Q0FaeTVZa1haRTRxaHNFODBiR3gxVEpZUUt2eFd3V1BpcEE?oc=5\",\"title\"]": {
-        "id": "headline:https://news.google.com/rss/articles/CBMihwFBVV95cUxPUzI2YWtSamMycmVZN0wxS0ZOYmNtTkFTeUdZV2VCcDI4d1YwcHBtTG8zcDU5RUFkSTRvb2poTmRuYnIzcVU3THFCR1RIVGo4Q1d2Q0VNTEFtd1ctQklybTU0TFI4Q0FaeTVZa1haRTRxaHNFODBiR3gxVEpZUUt2eFd3V1BpcEE?oc=5",
-        "field": "title",
-        "sourceHash": "3b02a0680cdff1708543b96f16cdab4e4d3bdeb641fce821ccdcb4e2941736e1",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.analyticsinsight.net/news/gta-6-pc-port-gets-a-major-multiplayer-upgrade-before-rockstars-official-pc-release\",\"title\"]": {
-        "id": "headline:https://www.analyticsinsight.net/news/gta-6-pc-port-gets-a-major-multiplayer-upgrade-before-rockstars-official-pc-release",
-        "field": "title",
-        "sourceHash": "68e530f26d3a8ce6149fed35a49b8a1be34dcc9584a2964912abd9c566c84d35",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.el-balad.com/17070426\",\"title\"]": {
-        "id": "headline:https://www.el-balad.com/17070426",
-        "field": "title",
-        "sourceHash": "6989215e29484e59a07972b26c62ddfa6593b384b97d3b4601a76ae9c0c14a32",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://tbreak.com/gta-6-pc-release-sooner-ai-ports/\",\"title\"]": {
-        "id": "headline:https://tbreak.com/gta-6-pc-release-sooner-ai-ports/",
-        "field": "title",
-        "sourceHash": "b2509f281cdef71d89d1775205b6a5d9a5a2b6e8425afb7ba693c93e49159eec",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"headline:https://www.msn.com/en-us/entertainment/gaming/gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion/ar-AA2imjYY\",\"title\"]": {
-        "id": "headline:https://www.msn.com/en-us/entertainment/gaming/gta-6-multiplayer-reportedly-running-on-pc-as-unofficial-ports-near-completion/ar-AA2imjYY",
-        "field": "title",
-        "sourceHash": "e8b4726447952aabb153ee0516a8b2c62f8f7d60054fde926e58084b134c0b0d",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
-        "field": "text",
-        "sourceHash": "32cd68c631c7d518991c4e27bcd0c1062e6024c0c7a6829aa89e7d15b0cda207",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
-        "field": "text",
-        "sourceHash": "489bc4653d3d9229e66242bc7cdb1a4cc58b3aec233e44a66d2128de8f338534",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).",
-        "field": "text",
-        "sourceHash": "770807b54969615cc71e890aeb1895a4176894d94ddb98a60acd26b4dbb6b3ce",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
-      "[\"change:2026-11-27:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).\",\"text\"]": {
-        "id": "change:2026-11-27:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
-        "field": "text",
-        "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
-        "attempts": 0,
-        "lastError": "request_or_token_limit",
-        "nextAttemptAt": null
-      },
       "[\"project:victory-nvidia\",\"summary\"]": {
         "id": "project:victory-nvidia",
         "field": "summary",
@@ -1232,6 +1120,158 @@
         "id": "project:victory-nvidia",
         "field": "blockers.2",
         "sourceHash": "db9ba2fc9c320515cea8357c47bf281788a69134d4a1ff088358f1d8452de606",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiswJBVV95cUxPVE5Mb0o0c0I4aWNnU3ZqaFAzWkxXSnZhNDVBZXJqYnd1Q3BsYWF3UHNlOXgwSlp0LUJBWUVLR1hrRE9RcC11am41X0d1VmZjUGNlTm1CR2h0RUx3cVV5aDNlYXFRalhOVzFwU19zbTUwSElFYUZsYnZqOFFZWHBCLXp0NV9xc0loX0lPemdwa2drbllRRUJhWlQ1cndwd280WmFYYXEwSGZFRWdFOXZVdm9CeUNRZzJtdF9ERjNudXg4OXdncHU3VmdEdzFvMmdUNjZ2d3JPbklrOGU0ZXVicUMzZFZSdXltSW1GWE92cHNaMXg0RFFPZXdIY3F6S2tJM0RZNnM2TUZsYlFKMTE4SnhqRVRhUlg1NE9QVXJrbktfbGRBVk15RVhrMUxUaEVfY09F?oc=5",
+        "field": "title",
+        "sourceHash": "bd24c147f8bde4672b422970db62ea440f0449e7356081fb2d3376fd0b42348e",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMilAFBVV95cUxQZENjZGFlWlh4Q3FLTS0zbVJialVleE93cDZ3elFVUVZfZnhZYW55V0VkeS1ueWZOeGVIUjJ6aDlNZldJVlB1N3lxdmM2MUpzbjdSdWk3U0tJaTlFQXl4RmR2MDJjQm1Nb0Y2aGZna2VrTDNnb1Y0Q3NxcDVBNHhZODVkczNuc0VfZWRqLWtrSllDTVI1?oc=5",
+        "field": "title",
+        "sourceHash": "3beab99f3e04c4dbcfeb0fb46417278b8be212270fc81960e1384104d93beb85",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMinwFBVV95cUxQMlVPQndaVEVGV1RPa2c0NlJjR3JsY1Q0YzN4bm9jZGhYT3p3MTdoc2phd2J1R1VHQmV0R1NxdTQzLTI0NFpUcFpWeFJPdVljcV9leWtzLUgtNTl4ZUN5OVBTQzEyU05acVMzWV9zdWZhdkJoZWs0bHc0SGpkRUhmV3ZOOVJDZlh1ci1WZEhybTRfMnFiSUlLVy1rbS1Ta1E?oc=5",
+        "field": "title",
+        "sourceHash": "21b5a23dbbf49c8dc5f24dd514e8342b78ea6f44690781d4f604714e792d520f",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMi3gFBVV95cUxOOFVXb2ZXU2ZhUU1jWlc4NkdiYjZDZ21wUmNvNHZxRzJ2ci1pV2Y1YkZZeTdhT1JOWFN5aU5FX3BiRzVhYWo0WWs3Y1AyOTBpZC1HMGdvNmVQbmpJdlU2OXoxUF9keTljTVdHSTdlNFdobVV5SGl6QzU4VUY1YnJLUUw1TkVzQlRQVHRoRm9rbVhacXJpVkpYeTJjRTEtaTlxWW53NnAtMm9ZTGc3NGlUTmdxV0c4bmxxRUxtdVRpVG1JMlBrd2VOelFtTTRleDk1UlV2ejR6RVA0aW0zZlE?oc=5",
+        "field": "title",
+        "sourceHash": "08cd36b295d5a06218478d1a87e0c2545ec48f42362c78e677ae23a0f95956d5",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnhqS0E0RGtBR0JmaU5zUEpvZFEtLVQ2NWhPQ0U0cVVBbVpMT3pfank3SlFHM0tKWDR4VzdfNGxDZ0tveFloUlJvUVNRTWxDZy1RN25EVDlxTVlHSWJrN0dDWC1MSkZ2R2pSdVNmWjdwWnd6R2dub0tDSkNCNU1YNDBNY2tKdzBfVEZGTVJ4bU5ET00xN3lJWi1YTDg?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnhqS0E0RGtBR0JmaU5zUEpvZFEtLVQ2NWhPQ0U0cVVBbVpMT3pfank3SlFHM0tKWDR4VzdfNGxDZ0tveFloUlJvUVNRTWxDZy1RN25EVDlxTVlHSWJrN0dDWC1MSkZ2R2pSdVNmWjdwWnd6R2dub0tDSkNCNU1YNDBNY2tKdzBfVEZGTVJ4bU5ET00xN3lJWi1YTDg?oc=5",
+        "field": "title",
+        "sourceHash": "f07ea439938b95070c0eabebda39d9f4946aa5c6b230e70baac3afa144261577",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nS0psZUZwa3hZUThEbWRUZTJSbnJIWTV0LU81cGJHNDhpbmY4UWlRanFXS0VIb3lIVEdwY29yUDJXblNsb18xaG5MaGl3OW1wNzZBUHc4OGVuUXlLUXRyVmFsdmNzWFE?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nS0psZUZwa3hZUThEbWRUZTJSbnJIWTV0LU81cGJHNDhpbmY4UWlRanFXS0VIb3lIVEdwY29yUDJXblNsb18xaG5MaGl3OW1wNzZBUHc4OGVuUXlLUXRyVmFsdmNzWFE?oc=5",
+        "field": "title",
+        "sourceHash": "c11d4606ce38844d7c162acf5529f6a93b7ac5f43e87c0abbc60becd89908700",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5\",\"title\"]": {
+        "id": "headline:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcmdaSmFIb0hkUmFWSG5VRWJ1RzFiV3gwLXFtOHNMblVuQXdFTEJOUEx3VTQyb3NnVFZGQ0dDWm01emFKbnVHSEM3VGViWXZ3SVJoeldoWmUwQzRSWUwzSWNJcjVieGJtcm8xNFNhc2lTZ002NmlRcnpKcHRLM0NIMm1IUWRCUTdPRXQzaUdjSmdnX29icm83SmtlaWJWaFVwMlYzR0VfVFQ?oc=5",
+        "field": "title",
+        "sourceHash": "e0745cc9b7112ba7a55f9e8db94ed1e333ccc707284372b85db932d5c09b29cf",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-us/gaming/gaming-platforms/hosts-debate-gta-6-rumors-leaks-and-its-new-direction/vi-AA2inpEH",
+        "field": "title",
+        "sourceHash": "c20211502d0423d22eafd49c4b815b4376dd918ad6065930bea66e2a280bad9c",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T\",\"title\"]": {
+        "id": "headline:https://www.msn.com/en-in/news/other/gta-6-pc-port-makes-significant-progress-in-just-days/ar-AA2io32T",
+        "field": "title",
+        "sourceHash": "4e6286cdb655ec87a7b213d036dcd5ad7a531abe1a368d2742792762a2e04717",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/Percy6Stars (substance 44).",
+        "field": "text",
+        "sourceHash": "2eb83c2e980ea8915da1afb184ce3b7da8b01103a1b3732d41e7680c771753a6",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/OpenScarlett (substance 39).",
+        "field": "text",
+        "sourceHash": "f63a6bf957cdcc33ff96f01f8d4964a80cec2f8827e937552a47b407a78d1a49",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/awesome-gta6-reverse-engineering (substance 52).",
+        "field": "text",
+        "sourceHash": "9647a0426573540e873825e01a34799933dcd9091979751298e8a190ed342617",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/GTA6-Asset-Info (substance 44).",
+        "field": "text",
+        "sourceHash": "264ed3a95055687552bd578fae6950c95e6a1082f06f7b00510b6f0d4a120263",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted gitlab.com/Ahmet-Dedeler/SixNG (substance 52).",
+        "field": "text",
+        "sourceHash": "ab743314b375099a5e6238ce0b2d2753c3ec6afb67db6eed84d6f924395ddedc",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted Slaktarn700/SlaktarnVI (possible effort, substance 60).",
+        "field": "text",
+        "sourceHash": "32cd68c631c7d518991c4e27bcd0c1062e6024c0c7a6829aa89e7d15b0cda207",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted rpfexplorer/ViceViewerVI (possible effort, substance 43).",
+        "field": "text",
+        "sourceHash": "489bc4653d3d9229e66242bc7cdb1a4cc58b3aec233e44a66d2128de8f338534",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted igvcc/lucias-project (possible effort, substance 49).",
+        "field": "text",
+        "sourceHash": "770807b54969615cc71e890aeb1895a4176894d94ddb98a60acd26b4dbb6b3ce",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted progmatios23/scarlett-hle (possible effort, substance 77).",
+        "field": "text",
+        "sourceHash": "53df01c8822fea5088a2fc7adcfda9c87be18c92567d512354dcca32b66db6a2",
+        "attempts": 0,
+        "lastError": "request_or_token_limit",
+        "nextAttemptAt": null
+      },
+      "[\"change:2026-11-28:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).\",\"text\"]": {
+        "id": "change:2026-11-28:new:Scout spotted ExCorvus/whibwhi-linux (possible effort, substance 83).",
+        "field": "text",
+        "sourceHash": "e364fee250e34ddc64b86f4c453d4cb58525db0a3247c9106b2b43e6afc13d33",
         "attempts": 0,
         "lastError": "request_or_token_limit",
         "nextAttemptAt": null
