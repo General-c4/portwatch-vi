@@ -111,14 +111,14 @@
     "translatedFields": 1,
     "failedFields": 0,
     "cachedFields": 0,
-    "inputTokens": 1511,
-    "outputTokens": 222,
+    "inputTokens": 1528,
+    "outputTokens": 225,
     "thinkingTokens": 0,
     "errors": [],
     "model": "qwen/qwen3.8-27b",
     "provider": "groq",
     "pending": 107,
-    "durationMs": 1416
+    "durationMs": 1599
   },
   "missing": [
     {

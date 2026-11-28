@@ -3,10 +3,10 @@
   "latestUpstreamCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestSynchronizedCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
   "latestIntegratedSourceCommitSha": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
-  "latestDeployedCommitSha": "4b0c84475ee79fb1ee81c33d780caa3ab68db2fc",
+  "latestDeployedCommitSha": "29498b46d15274a96abf47464ddbfb17b48b761a",
   "lastDeploymentStatus": "verified-live",
-  "lastSuccessfulSyncTime": "2026-11-28T06:31:32.495Z",
-  "lastUpstreamCheckTime": "2026-11-28T06:31:32.495Z",
+  "lastSuccessfulSyncTime": "2026-11-28T06:34:40.899Z",
+  "lastUpstreamCheckTime": "2026-11-28T06:34:40.899Z",
   "authoritativeSource": "official-live",
   "upstreamUpdated": "2026-11-28T04:10:21.589Z",
   "canonical": {
@@ -14,7 +14,7 @@
     "commit": "e8d8ad37ffa2ce846308aa597064bd8b437fb5b9",
     "updated": "2026-11-28T04:10:21.589Z",
     "hash": "dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa",
-    "fetchedAt": "2026-11-28T06:31:32.495Z"
+    "fetchedAt": "2026-11-28T06:34:40.899Z"
   },
   "records": {
     "new": 0,
@@ -90,7 +90,7 @@
     "failed": 0,
     "cachedFields": 0,
     "pending": 2,
-    "durationMs": 8,
+    "durationMs": 6,
     "errors": [],
     "model": "unavailable"
   },
@@ -104,7 +104,7 @@
     "thinkingTokens": 0,
     "errors": [],
     "pending": 108,
-    "durationMs": 8,
+    "durationMs": 6,
     "coverage": {
       "pinned": {
         "total": 1,
@@ -211,29 +211,29 @@
         "available": false
       },
       "groq": {
-        "requests": 11,
-        "successes": 7,
+        "requests": 12,
+        "successes": 8,
         "failures": 4,
         "daily": {
           "day": "2026-11-28",
-          "requests": 11,
-          "tokens": 23315,
+          "requests": 12,
+          "tokens": 25048,
           "reservedUnknownRequests": 3,
           "reservedUnknownTokens": 7502
         },
         "monthly": {
           "resetAt": 1798436223576,
-          "tokens": 23315
+          "tokens": 25048
         },
         "minute": {
-          "resetAt": 1795847313722,
-          "tokens": 1725
+          "resetAt": 1795847553083,
+          "tokens": 1733
         },
-        "lastRequestAt": 1795847253723,
+        "lastRequestAt": 1795847493083,
         "failureStreak": 0,
         "code": null,
         "cooldownUntil": 0,
-        "latencyMs": 953,
+        "latencyMs": 1360,
         "available": true
       },
       "cloudflare": {
@@ -290,22 +290,6 @@
       }
     },
     "events": [
-      {
-        "at": "2026-11-28T05:59:23.569Z",
-        "type": "cooldown_skip",
-        "provider": "ovh",
-        "code": "quota_or_rate_limit",
-        "resetAt": "2026-12-31T23:59:57.371Z",
-        "costUSD": 0
-      },
-      {
-        "at": "2026-11-28T05:59:23.569Z",
-        "type": "cooldown_skip",
-        "provider": "zai",
-        "code": "timeout",
-        "resetAt": "2026-11-28T06:00:04.012Z",
-        "costUSD": 0
-      },
       {
         "at": "2026-11-28T05:59:23.569Z",
         "type": "disabled",
@@ -487,15 +471,37 @@
         },
         "fallback": false,
         "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:31:33.082Z",
+        "type": "cooldown_skip",
+        "provider": "gemini",
+        "code": "quota_or_rate_limit",
+        "resetAt": "2026-11-28T08:00:29.070Z",
+        "costUSD": 0
+      },
+      {
+        "at": "2026-11-28T06:31:34.444Z",
+        "type": "success",
+        "provider": "groq",
+        "model": "qwen/qwen3.8-27b",
+        "latencyMs": 1360,
+        "usage": {
+          "promptTokenCount": 1511,
+          "candidatesTokenCount": 222,
+          "totalTokenCount": 1733
+        },
+        "fallback": false,
+        "costUSD": 0
       }
     ]
   },
   "latency": {
-    "sourceCheckMs": 398,
-    "dataSyncMs": 20,
+    "sourceCheckMs": 425,
+    "dataSyncMs": 8,
     "translationMs": 1,
     "deploymentMs": null,
-    "totalMs": 458
+    "totalMs": 464
   },
   "apiAnything": {
     "ok": false,
@@ -627,7 +633,7 @@
   },
   "sources": {
     "https://api.github.com/repos/4lwayz/portwatch-vi/commits/main": {
-      "etag": "W/\"a0d02943fcf09ef61b652f4b87d55e184e6daabb424eb1ddf04ba56c6288cd1c\"",
+      "etag": "W/\"426d0778c9d094fd0f6fb4a164c9b904496d48a5d750b74d817d697a33961c0f\"",
       "hash": "c0196914ba2c344c1a697983e4387e5b514d427423ead323dcd2cc740f0e603c"
     },
     "https://portwatch-vi.xyz/data/pinned.json": {
@@ -651,8 +657,8 @@
       "hash": "b9ef8aa522c74b6ca837b7718c76b5b0c76278142d21d5fa7d1755172d4bde39"
     },
     "https://general-c4.github.io/portwatch-vi/deployment.json": {
-      "etag": "\"6b0a74d2-d5\"",
-      "hash": "38b8cd8d5bebf7a59d0c392ea9508327bf1395e669a87210016bc020dc5201a0"
+      "etag": "\"6b0a75ce-d5\"",
+      "hash": "223223bcc7d82252a112142e0c73aae0cc30901f6b69aa057e0d5e7a489de875"
     },
     "https://raw.githubusercontent.com/4lwayz/portwatch-vi/5d81790f4ca0e31117d2bb320b6fed7eef885071/data/tracker.json": {
       "etag": "W/\"7ab28c7c93b9a9065d14d3e88e227d7cb843f0af4c2b1f5e9bdf6991129f44ab\"",

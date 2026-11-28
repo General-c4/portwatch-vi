@@ -487,7 +487,7 @@
     },
     "5b1acf6e24bfdd902ca4dd091917c70281da4f5afaeeef6a67950f74a828d3aa": {
       "source": "**Why the top score is stuck at 91.3%: it's rendering now, not FPS.**\n\nFPS is the easy part. Turn off ray tracing, render at a low resolution and upscale, and you can hit 60. On our scale anything past 30 fps doesn't count, and a blurry low-res picture costs rendering points.\n\nWhat's missing is a picture that looks like the console: full lighting, ray tracing, sharp textures. Like DexNom said, the way forward is fixing rendering.",
-      "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، قم بتصيير اللعبة بدقة منخفضة ثم ارفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة الضبابية منخفضة الدقة تُفقد نقاط التصيير.\n\nما ينقصنا هو صورة تبدو كجهاز الألعاب: إضاءة كاملة، تتبع للأشعة، وخامات حادة. كما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي.",
+      "ar": "**لماذا يتوقف أعلى تقييم عند 91.3%: المشكلة الآن في التصيير الرسومي، وليس FPS.**\n\nFPS هو الجزء السهل. أغلق تتبع الأشعة، وفعّل التصيير بدقة منخفضة ثم ارفع الدقة، وستتمكن من الوصول إلى 60. على مقياسنا، أي شيء يتجاوز 30 fps لا يُحتسب، والصورة الضبابية منخفضة الدقة تُفقد نقاط التصيير.\n\nما ينقصنا هو صورة تضاهي جودة نسخة جهاز الألعاب: إضاءة كاملة، تتبع أشعة، وخامات حادة. وكما ذكر DexNom، فإن الطريق إلى الأمام يكمن في إصلاح التصيير الرسومي.",
       "model": "qwen/qwen3.8-27b"
     }
   },
@@ -507,19 +507,19 @@
   },
   "daily": {
     "day": "2026-11-28",
-    "requests": 21,
-    "accountedTokens": 251627,
-    "inputTokens": 16478,
-    "outputTokens": 5508,
+    "requests": 22,
+    "accountedTokens": 253380,
+    "inputTokens": 18006,
+    "outputTokens": 5733,
     "thinkingTokens": 0
   },
   "totals": {
-    "requests": 54,
+    "requests": 55,
     "successful": 2,
     "failed": 14,
     "cachedFields": 0,
-    "inputTokens": 59454,
-    "outputTokens": 23003,
+    "inputTokens": 60982,
+    "outputTokens": 23228,
     "thinkingTokens": 21137
   },
   "dynamic": {
@@ -1383,11 +1383,11 @@
       }
     },
     "totals": {
-      "requests": 38,
-      "translatedFields": 83,
+      "requests": 39,
+      "translatedFields": 84,
       "failedFields": 179,
-      "inputTokens": 39812,
-      "outputTokens": 15220,
+      "inputTokens": 41340,
+      "outputTokens": 15445,
       "thinkingTokens": 21137
     }
   },
