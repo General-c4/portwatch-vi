@@ -1,11 +1,13 @@
 # Automatic synchronization
 
-The fork runs independently of Codex or a personal computer. GitHub Actions is the selected free host. No upstream pull request, paid provider, server, or secret was created.
+The fork runs independently of Codex or a personal computer. GitHub Actions is the selected free host. No upstream pull request or paid infrastructure was created. The owner supplies free-account AI credentials exclusively through GitHub Actions Secrets.
 
 ```mermaid
 flowchart TD
   Official[Official repository and live JSON] --> Validate[Conditional GET, schema and timestamp validation]
   Validate --> Data[Content pipeline: every five minutes]
+  Data --> CanonicalGate[Validate and publish canonical data before translation]
+  CanonicalGate --> Pages
   Data --> Queue[Stable source hashes and Arabic translation queue]
   Queue --> Gate[Tests and atomic commit in the fork]
   Gate --> Pages[Explicit dispatch: build and GitHub Pages]
@@ -21,7 +23,7 @@ flowchart TD
 
 ## Sources and consistency
 
-`data/tracker.json` and `data/pinned.json` are the observed public sources. The repository commit SHA pins raw GitHub requests. The newer validated live/repository timestamp wins; invalid, regressing, duplicate or suspiciously empty snapshots retain the last good copy. Record diffs preserve original numbers, IDs, evidence, links and timestamps. Rankings remain calculated by the existing upstream scoring module; synchronization does not invent scores. `/api/live` returned HTML during discovery, so no statistics API was invented.
+`data/tracker.json` and `data/pinned.json` are the observed public sources. The repository commit SHA pins raw GitHub requests. The complete validated official production tracker is canonical, with the pinned repository snapshot as an outage fallback; invalid, regressing, duplicate or suspiciously empty snapshots retain the last good copy. Record diffs preserve original numbers, IDs, evidence, links and timestamps. Rankings remain calculated by the existing upstream scoring module; synchronization does not invent scores. `/api/live` returned HTML during discovery, so no statistics API was invented.
 
 API Anything 0.5.0 operations were learned from actual network capture, sanitized and exported in `automation/operations/portwatch-public.json`. Tracker, pinned and interface operations were exercised; repeated `--changes` calls detected an unchanged response. The MCP stdio connection was tested with an actual tool call. Shared catalog publishing and session sharing are disabled. Canonical JSON remains usable if this supplementary operation fails. Repair is limited to supported API Anything healing and its output must pass validation.
 
@@ -42,7 +44,7 @@ No supported upstream webhook was available to this fork without upstream admini
 
 Reviewed Arabic dictionaries are authoritative and never overwritten by the content job. Interface translations are also tied to their reviewed English source to avoid stale meanings. Automatic content translations use exact English text as keys. Changed text gets a new hash and queue item; English fallback never blocks new official data.
 
-The free offline Argos model was tested and found to mistranslate technical and idiomatic meaning. Therefore unrestricted offline results are **review drafts only**, stored in `automation/state/pending-translations.json`. Only narrow deterministic, validated phrases are automatically published. This implementation does not claim professional unattended translation of arbitrary new articles. Reviewed translations and deterministic phrases work immediately; other text remains English until approved.
+The free offline Argos model was tested and found to mistranslate technical and idiomatic meaning. Therefore unrestricted offline results are **review drafts only**, stored in `automation/state/pending-translations.json`. Only narrow deterministic, validated phrases are automatically published. Eligible new/updated news and current editorial fields now use the verified free multi-provider router described in [TRANSLATION-PROVIDERS.md](TRANSLATION-PROVIDERS.md). Validated fields publish automatically, with rejected fields retained in English and queued. Arbitrary legacy offline drafts still require review. Automatic validators are not a guarantee of perfect human-level editorial quality.
 
 The offline model costs no API credits. Its archive SHA-256 and runtime versions are pinned; only data weights/tokenizer files are extracted, never model-bundled Python pickle code. The first uncached run downloads about 89 MB. A configurable LibreTranslate endpoint is supported only with `PW_TRANSLATION_REMOTE_APPROVED=1`; availability, price, quality and credentials depend on the operator. No remote/paid translation service was enabled. ChatGPT/Codex subscriptions were not treated as API credentials.
 
@@ -69,3 +71,37 @@ Manual operation: `gh workflow run content-sync.yml --ref feat/arabic-rtl-locali
 - Docker runtime deployment and an actual remote rollback were not exercised; no server was available and no deliberate production failure was introduced.
 
 Principal files: the three workflows; `automation/content-sync.mjs`, `source-sync.mjs`, `worker.mjs`; `automation/lib/*`; pinned operations/runtime/model loader; persistent `automation/state/*`; browser `live-data.js`, `tracker-source.js`, `sync-config.js`; Arabic source/automatic catalogs; preview build/deployment verifier; Dockerfile/compose; synchronization and deployment tests. Original human dictionaries, RTL and design are retained. Current upstream GPU badges/image were integrated; a long marker label was clamped within the viewport to fix observed mobile overflow.
+
+
+## Production parity repair — 2026-11-28
+
+The failed preview run [46098918497](https://github.com/General-c4/portwatch-vi/actions/runs/46098918497) stopped **before upload/deployment**, in the dynamic-text browser test. The renderer correctly translated the fixed Scout sentence, while the test expected literal English. Repository synchronization had downloaded complete newer data; this pre-deployment failure kept Pages on the old release. Separately, ten cumulative source-review PRs had not integrated upstream changes. The official scoring file had changed, so the browser's scoring-hash guard also correctly refused incompatible live JSON. Missing deployment-status artifacts and deprecation warnings were symptoms, not the failing assertion's cause.
+
+The complete source delta through `e8d8ad37ffa2ce846308aa597064bd8b437fb5b9` was reviewed and integrated. Conflicts in `assets/js/app.js` combined new GPU filters and news timestamps with Arabic text resolution. The ten superseded fork-only draft PRs were closed after integration. Safe source updates retain unit/browser gates and fast-forward pushes; sensitive/conflicting changes remain explicit review failures, not a false successful deployment.
+
+Upstream features restored include Intel/Mac/GPU race filters; archived unranked Belobug visibility and authoritative `keepScore`; published news times and sorting across homepage/static pages/RSS; pinned bold/GIF/call-out support and GIF editor; new project/brand images; upstream API, schema and editor updates. Database migration files were mirrored as source, not executed against someone else's database. The existing Arabic/RTL layer and reviewed dictionaries remain intact; a new Mac label was added. Localized pinned text may exceed the owner's 500-character original-message limit, so only Arabic display gets a bounded 2,500-character allowance.
+
+| Canonical section | Old deployed snapshot | Official snapshot at repair |
+|---|---:|---:|
+| Projects | 39 | 45 |
+| News | 23 | 25 |
+| Toolkit | 22 | 22 (records changed) |
+| Scout candidates | 15 | 30 |
+| Flagged | 6 | 7 |
+| Ignored | 511 | 656 |
+| What's Changed | 83 | 80 |
+| History | 5 | 8 |
+| External headlines | 30 | 30 (records changed) |
+
+New project IDs: `kelvaroq`, `victory-nvidia`, `avatarmanz`, `notnozy`, `darkworldhm`, `keylime`. No project was invented by the mirror. Existing records, removals/status flags, private/public placement, hardware, milestones, progress and statistics are copied together with every unknown field. `site`, `exe` and `dmca` were unchanged in this comparison; Scout metadata changed.
+
+The previous production timestamp was `2026-11-25T16:22:16.626Z`; the official and repaired production snapshots were both `2026-11-28T04:10:21.589Z`. Their initial data lag was 59h 48m 4.963s; verified repaired snapshot lag was 0. This is data-version parity, not a promise of zero scheduler latency. SHA-256 is calculated over the complete parsed object using `JSON.stringify`, including all canonical fields:
+
+- Old production: `1e344f5715b36827627e4445973f035754bdbd6b40317956ca987078bfa5f8d4`.
+- Official/repaired: `dfc2b36d2b3729d85908a96ece0ed4f5ca0c182153c22785174e4fd8199002fa`.
+
+Canonical files are atomically replaced after validation, with a last-known-good journal and Git/Pages artifact recovery. The content workflow commits and dispatches the canonical release before contacting translation providers. A failed translation or exhausted quota cannot hold that release. Preview builds independently refresh a complete canonical snapshot with zero AI requests. The deployment verifier compares the frozen release, live descriptor, every canonical field and the current official snapshot; an upstream advance during publication is recorded separately. It writes an explicit failure/not-deployed status even when a release stops before verification. Hidden status/coverage artifacts are included.
+
+`verify-mirror-browser.mjs` compares actual official/fork race IDs, ranks/scores and archived flags in a real browser, then switches Arabic/English at desktop/mobile widths and checks RTL and overflow. `dynamic-coverage-browser.mjs` checks rendered editorial text, resource failures and console diagnostics, while keeping queued English visible in its coverage report. Strict full-coverage mode remains available; partial free-quota backfills are not labelled 100%.
+
+Successful recovery deployment: [46112184573](https://github.com/General-c4/portwatch-vi/actions/runs/46112184573). Later validated translation deployment: [46115613026](https://github.com/General-c4/portwatch-vi/actions/runs/46115613026). Current tests include canonical additions/deletions/unknown fields, stale production rejection, source conflicts, protected identifiers, provider fallback/recovery, partial queues, free-price fail-closed checks and secret redaction. GitHub scheduling remains best-effort five-minute content checks and hourly source checks; no personal computer is required.
